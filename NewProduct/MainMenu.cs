@@ -60,7 +60,7 @@ namespace NewProduct
         {
             foreach (Form f in this.MdiChildren)
             {
-                f.Close();
+                f.Close(); //test
             }
         }
     }

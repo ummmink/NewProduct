@@ -30,6 +30,7 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbSearchNameProduct = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -51,12 +52,22 @@
             this.lbSearchNameProduct.TabIndex = 1;
             this.lbSearchNameProduct.Text = "Search";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(353, 83);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1284, 662);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbSearchNameProduct);
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
@@ -73,5 +84,6 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbSearchNameProduct;
+        private System.Windows.Forms.Button button1;
     }
 }

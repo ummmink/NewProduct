@@ -19,6 +19,28 @@ namespace NewProduct
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            MdiClient ctlMDI;
+
+            // Loop through all of the form's controls looking
+            // for the control of type MdiClient.
+            foreach (Control ctl in this.Controls)
+            {
+                try
+                {
+                    // Attempt to cast the control to type MdiClient.
+                    ctlMDI = (MdiClient)ctl;
+
+                    // Set the BackColor of the MdiClient control.
+                    ctlMDI.BackColor = this.BackColor;
+                }
+                catch (InvalidCastException exc)
+                {
+                    // Catch and ignore the error if casting failed.
+                }
+            }
+
+            // Display a child form to show this is still an MDI application.
+
             CloseAllChildForm();
 
             //try
@@ -55,7 +77,7 @@ namespace NewProduct
             //                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             //}
 
-            Form f = new Product();
+            Form f = new Home();
             f.MdiParent = this;
             f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
             f.Dock = DockStyle.Fill; //set form's dock property to fill
@@ -70,22 +92,20 @@ namespace NewProduct
             }
         }
 
-        private void lbProduct_Click(object sender, EventArgs e)
+        private void lbLogout_Click(object sender, EventArgs e)
         {
-            CloseAllChildForm();
-
-            Form f = new Product();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            if (MessageBox.Show("คุณต้องการออกจากระบบ? ",
+                "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
-        private void picLogo_Click(object sender, EventArgs e)
+        private void lbProjectName_Click(object sender, EventArgs e)
         {
             CloseAllChildForm();
 
-            Form f = new Product();
+            Form f = new Home();
             f.MdiParent = this;
             f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
             f.Dock = DockStyle.Fill; //set form's dock property to fill

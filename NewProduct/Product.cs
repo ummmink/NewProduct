@@ -16,10 +16,5 @@ namespace NewProduct
         {
             InitializeComponent();
         }
-
-        private void Product_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

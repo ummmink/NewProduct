@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NewProduct
 {
-    public partial class Product : Form
+    public partial class Report : Form
     {
-        public Product()
+        public Report()
         {
             InitializeComponent();
         }

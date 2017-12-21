@@ -28,184 +28,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pnProduct = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.pnProduct.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            this.lbOpenNewForm = new System.Windows.Forms.Label();
+            this.lbOpenStatusForm = new System.Windows.Forms.Label();
+            this.lbOpenReportForm = new System.Windows.Forms.Label();
+            this.lbOpenSearchForm = new System.Windows.Forms.Label();
+            this.lbOpenRepeatForm = new System.Windows.Forms.Label();
+            this.lbOpenRenewForm = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // panel7
+            // lbOpenNewForm
             // 
-            this.panel7.BackColor = System.Drawing.Color.Orange;
-            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel7.Location = new System.Drawing.Point(837, 461);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(342, 165);
-            this.panel7.TabIndex = 61;
+            this.lbOpenNewForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
+            this.lbOpenNewForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbOpenNewForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbOpenNewForm.ForeColor = System.Drawing.Color.White;
+            this.lbOpenNewForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenNewForm.Image")));
+            this.lbOpenNewForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lbOpenNewForm.Location = new System.Drawing.Point(236, 147);
+            this.lbOpenNewForm.Margin = new System.Windows.Forms.Padding(0);
+            this.lbOpenNewForm.Name = "lbOpenNewForm";
+            this.lbOpenNewForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 0);
+            this.lbOpenNewForm.Size = new System.Drawing.Size(272, 198);
+            this.lbOpenNewForm.TabIndex = 43;
+            this.lbOpenNewForm.Text = "New";
+            this.lbOpenNewForm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbOpenNewForm.Click += new System.EventHandler(this.lbOpenNewForm_Click);
             // 
-            // panel4
+            // lbOpenStatusForm
             // 
-            this.panel4.BackColor = System.Drawing.Color.Orange;
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel4.Location = new System.Drawing.Point(837, 290);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(342, 165);
-            this.panel4.TabIndex = 58;
+            this.lbOpenStatusForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lbOpenStatusForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbOpenStatusForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbOpenStatusForm.ForeColor = System.Drawing.Color.White;
+            this.lbOpenStatusForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenStatusForm.Image")));
+            this.lbOpenStatusForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lbOpenStatusForm.Location = new System.Drawing.Point(515, 147);
+            this.lbOpenStatusForm.Margin = new System.Windows.Forms.Padding(0);
+            this.lbOpenStatusForm.Name = "lbOpenStatusForm";
+            this.lbOpenStatusForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
+            this.lbOpenStatusForm.Size = new System.Drawing.Size(272, 198);
+            this.lbOpenStatusForm.TabIndex = 59;
+            this.lbOpenStatusForm.Text = "Status";
+            this.lbOpenStatusForm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbOpenStatusForm.Click += new System.EventHandler(this.lbOpenStatusForm_Click);
             // 
-            // panel8
+            // lbOpenReportForm
             // 
-            this.panel8.BackColor = System.Drawing.Color.LightGreen;
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel8.Location = new System.Drawing.Point(489, 461);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(342, 165);
-            this.panel8.TabIndex = 60;
+            this.lbOpenReportForm.BackColor = System.Drawing.Color.LightGreen;
+            this.lbOpenReportForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbOpenReportForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbOpenReportForm.ForeColor = System.Drawing.Color.White;
+            this.lbOpenReportForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenReportForm.Image")));
+            this.lbOpenReportForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lbOpenReportForm.Location = new System.Drawing.Point(793, 147);
+            this.lbOpenReportForm.Margin = new System.Windows.Forms.Padding(0);
+            this.lbOpenReportForm.Name = "lbOpenReportForm";
+            this.lbOpenReportForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
+            this.lbOpenReportForm.Size = new System.Drawing.Size(272, 198);
+            this.lbOpenReportForm.TabIndex = 60;
+            this.lbOpenReportForm.Text = "Report";
+            this.lbOpenReportForm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbOpenReportForm.Click += new System.EventHandler(this.lbOpenReportForm_Click);
             // 
-            // panel5
+            // lbOpenSearchForm
             // 
-            this.panel5.BackColor = System.Drawing.Color.LightGreen;
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel5.Location = new System.Drawing.Point(489, 290);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(342, 165);
-            this.panel5.TabIndex = 57;
+            this.lbOpenSearchForm.BackColor = System.Drawing.Color.Salmon;
+            this.lbOpenSearchForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbOpenSearchForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbOpenSearchForm.ForeColor = System.Drawing.Color.White;
+            this.lbOpenSearchForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenSearchForm.Image")));
+            this.lbOpenSearchForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lbOpenSearchForm.Location = new System.Drawing.Point(236, 351);
+            this.lbOpenSearchForm.Margin = new System.Windows.Forms.Padding(0);
+            this.lbOpenSearchForm.Name = "lbOpenSearchForm";
+            this.lbOpenSearchForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
+            this.lbOpenSearchForm.Size = new System.Drawing.Size(272, 198);
+            this.lbOpenSearchForm.TabIndex = 61;
+            this.lbOpenSearchForm.Text = "Search";
+            this.lbOpenSearchForm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbOpenSearchForm.Click += new System.EventHandler(this.lbOpenSearchForm_Click);
             // 
-            // panel9
+            // lbOpenRepeatForm
             // 
-            this.panel9.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel9.Location = new System.Drawing.Point(140, 461);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(342, 165);
-            this.panel9.TabIndex = 59;
+            this.lbOpenRepeatForm.BackColor = System.Drawing.Color.Gold;
+            this.lbOpenRepeatForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbOpenRepeatForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbOpenRepeatForm.ForeColor = System.Drawing.Color.White;
+            this.lbOpenRepeatForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenRepeatForm.Image")));
+            this.lbOpenRepeatForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lbOpenRepeatForm.Location = new System.Drawing.Point(515, 351);
+            this.lbOpenRepeatForm.Margin = new System.Windows.Forms.Padding(0);
+            this.lbOpenRepeatForm.Name = "lbOpenRepeatForm";
+            this.lbOpenRepeatForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 0);
+            this.lbOpenRepeatForm.Size = new System.Drawing.Size(272, 198);
+            this.lbOpenRepeatForm.TabIndex = 62;
+            this.lbOpenRepeatForm.Text = "Repeat";
+            this.lbOpenRepeatForm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbOpenRepeatForm.Click += new System.EventHandler(this.lbOpenRepeatForm_Click);
             // 
-            // panel3
+            // lbOpenRenewForm
             // 
-            this.panel3.BackColor = System.Drawing.Color.Orange;
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel3.Location = new System.Drawing.Point(837, 118);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(342, 165);
-            this.panel3.TabIndex = 55;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(129, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Report";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Location = new System.Drawing.Point(140, 290);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(342, 165);
-            this.panel6.TabIndex = 56;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.LightGreen;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Location = new System.Drawing.Point(489, 118);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(342, 165);
-            this.panel2.TabIndex = 54;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(129, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 18);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Status";
-            // 
-            // pnProduct
-            // 
-            this.pnProduct.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pnProduct.Controls.Add(this.label2);
-            this.pnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnProduct.Location = new System.Drawing.Point(140, 118);
-            this.pnProduct.Name = "pnProduct";
-            this.pnProduct.Size = new System.Drawing.Size(342, 165);
-            this.pnProduct.TabIndex = 53;
-            this.pnProduct.Click += new System.EventHandler(this.pnProduct_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(129, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Product";
+            this.lbOpenRenewForm.BackColor = System.Drawing.Color.RosyBrown;
+            this.lbOpenRenewForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbOpenRenewForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbOpenRenewForm.ForeColor = System.Drawing.Color.White;
+            this.lbOpenRenewForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenRenewForm.Image")));
+            this.lbOpenRenewForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lbOpenRenewForm.Location = new System.Drawing.Point(793, 351);
+            this.lbOpenRenewForm.Margin = new System.Windows.Forms.Padding(0);
+            this.lbOpenRenewForm.Name = "lbOpenRenewForm";
+            this.lbOpenRenewForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
+            this.lbOpenRenewForm.Size = new System.Drawing.Size(272, 198);
+            this.lbOpenRenewForm.TabIndex = 63;
+            this.lbOpenRenewForm.Text = "Renew";
+            this.lbOpenRenewForm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbOpenRenewForm.Click += new System.EventHandler(this.lbOpenRenewForm_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1284, 662);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pnProduct);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.Controls.Add(this.lbOpenRenewForm);
+            this.Controls.Add(this.lbOpenRepeatForm);
+            this.Controls.Add(this.lbOpenSearchForm);
+            this.Controls.Add(this.lbOpenReportForm);
+            this.Controls.Add(this.lbOpenStatusForm);
+            this.Controls.Add(this.lbOpenNewForm);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.pnProduct.ResumeLayout(false);
-            this.pnProduct.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel pnProduct;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbOpenNewForm;
+        private System.Windows.Forms.Label lbOpenStatusForm;
+        private System.Windows.Forms.Label lbOpenReportForm;
+        private System.Windows.Forms.Label lbOpenSearchForm;
+        private System.Windows.Forms.Label lbOpenRepeatForm;
+        private System.Windows.Forms.Label lbOpenRenewForm;
     }
 }

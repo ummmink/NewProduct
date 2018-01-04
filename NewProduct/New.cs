@@ -17,9 +17,9 @@ namespace NewProduct
             InitializeComponent();
         }
 
-        private void ChangeColorByTag(Control parent, string tag)
+        private void ChangeColorByTag(string tag)
         {
-            foreach (Control c in parent.Controls)
+            foreach (var c in this.Controls.OfType<Button>())
             {
                 if (c.Tag != null && c.Tag.Equals(tag))
                 {
@@ -39,42 +39,42 @@ namespace NewProduct
         {
             btnDetails.Tag = "Blue";
 
-            ChangeColorByTag(this, "Blue");
+            ChangeColorByTag("Blue");
         }
 
         private void btnDimention_Click(object sender, EventArgs e)
         {
             btnDimention.Tag = "Blue";
 
-            ChangeColorByTag(this, "Blue");
+            ChangeColorByTag("Blue");
         }
 
         private void btnProductID_Click(object sender, EventArgs e)
         {
             btnProductID.Tag = "Blue";
 
-            ChangeColorByTag(this, "Blue");
+            ChangeColorByTag("Blue");
         }
 
         private void btnBarcode_Click(object sender, EventArgs e)
         {
             btnBarcode.Tag = "Blue";
 
-            ChangeColorByTag(this, "Blue");
+            ChangeColorByTag("Blue");
         }
 
         private void btnShortName_Click(object sender, EventArgs e)
         {
             btnShortName.Tag = "Blue";
 
-            ChangeColorByTag(this, "Blue");
+            ChangeColorByTag("Blue");
         }
 
         private void btnMatCodeDK_Click(object sender, EventArgs e)
         {
             btnMatCodeDK.Tag = "Blue";
 
-            ChangeColorByTag(this, "Blue");
+            ChangeColorByTag("Blue");
         }
     }
 }

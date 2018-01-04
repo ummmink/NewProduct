@@ -36,6 +36,7 @@
             this.btnDimention = new System.Windows.Forms.Button();
             this.btnMatCodeDK = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -128,12 +129,20 @@
             this.btnMatCodeDK.UseVisualStyleBackColor = true;
             this.btnMatCodeDK.Click += new System.EventHandler(this.btnMatCodeDK_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(46, 115);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1270, 588);
+            this.panel1.TabIndex = 58;
+            // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1370, 750);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnMatCodeDK);
             this.Controls.Add(this.btnDimention);
             this.Controls.Add(this.btnProductID);
@@ -158,5 +167,6 @@
         private System.Windows.Forms.Button btnDimention;
         private System.Windows.Forms.Button btnMatCodeDK;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -28,111 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.btnDetails = new System.Windows.Forms.Button();
+            this.btnShortName = new System.Windows.Forms.Button();
+            this.btnBarcode = new System.Windows.Forms.Button();
+            this.btnProductID = new System.Windows.Forms.Button();
+            this.btnDimention = new System.Windows.Forms.Button();
+            this.btnMatCodeDK = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
-            // label2
+            // btnDetails
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(43, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 14);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Part";
+            this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetails.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnDetails.Location = new System.Drawing.Point(46, 69);
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.Size = new System.Drawing.Size(175, 40);
+            this.btnDetails.TabIndex = 52;
+            this.btnDetails.Tag = "Black";
+            this.btnDetails.Text = "Details";
+            this.toolTip1.SetToolTip(this.btnDetails, "Trade Marketing / Promotion Support");
+            this.btnDetails.UseVisualStyleBackColor = true;
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
-            // button1
+            // btnShortName
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button1.Location = new System.Drawing.Point(82, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 40);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "Trade MKT : Details";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnShortName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShortName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShortName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnShortName.Location = new System.Drawing.Point(227, 69);
+            this.btnShortName.Name = "btnShortName";
+            this.btnShortName.Size = new System.Drawing.Size(175, 40);
+            this.btnShortName.TabIndex = 53;
+            this.btnShortName.Tag = "Black";
+            this.btnShortName.Text = "Short Name";
+            this.toolTip1.SetToolTip(this.btnShortName, "Sales");
+            this.btnShortName.UseVisualStyleBackColor = true;
+            this.btnShortName.Click += new System.EventHandler(this.btnShortName_Click);
             // 
-            // button2
+            // btnBarcode
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button2.Location = new System.Drawing.Point(263, 69);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 40);
-            this.button2.TabIndex = 53;
-            this.button2.Text = "Sales : Short Name";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBarcode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarcode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarcode.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnBarcode.Location = new System.Drawing.Point(408, 69);
+            this.btnBarcode.Name = "btnBarcode";
+            this.btnBarcode.Size = new System.Drawing.Size(175, 40);
+            this.btnBarcode.TabIndex = 54;
+            this.btnBarcode.Tag = "Black";
+            this.btnBarcode.Text = "Barcode";
+            this.toolTip1.SetToolTip(this.btnBarcode, "Marketing");
+            this.btnBarcode.UseVisualStyleBackColor = true;
+            this.btnBarcode.Click += new System.EventHandler(this.btnBarcode_Click);
             // 
-            // button3
+            // btnProductID
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button3.Location = new System.Drawing.Point(444, 69);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 40);
-            this.button3.TabIndex = 54;
-            this.button3.Text = "Marketing : Barcode";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnProductID.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProductID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductID.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnProductID.Location = new System.Drawing.Point(589, 69);
+            this.btnProductID.Name = "btnProductID";
+            this.btnProductID.Size = new System.Drawing.Size(175, 40);
+            this.btnProductID.TabIndex = 55;
+            this.btnProductID.Tag = "Black";
+            this.btnProductID.Text = "Product ID";
+            this.toolTip1.SetToolTip(this.btnProductID, "Accounting");
+            this.btnProductID.UseVisualStyleBackColor = true;
+            this.btnProductID.Click += new System.EventHandler(this.btnProductID_Click);
             // 
-            // button4
+            // btnDimention
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button4.Location = new System.Drawing.Point(625, 69);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 40);
-            this.button4.TabIndex = 55;
-            this.button4.Text = "Accounting : ID";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDimention.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDimention.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDimention.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnDimention.Location = new System.Drawing.Point(770, 69);
+            this.btnDimention.Name = "btnDimention";
+            this.btnDimention.Size = new System.Drawing.Size(175, 40);
+            this.btnDimention.TabIndex = 56;
+            this.btnDimention.Tag = "Black";
+            this.btnDimention.Text = "Dimention";
+            this.toolTip1.SetToolTip(this.btnDimention, "Production");
+            this.btnDimention.UseVisualStyleBackColor = true;
+            this.btnDimention.Click += new System.EventHandler(this.btnDimention_Click);
             // 
-            // button5
+            // btnMatCodeDK
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button5.Location = new System.Drawing.Point(806, 69);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(175, 40);
-            this.button5.TabIndex = 56;
-            this.button5.Text = "Production : Dimention";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button6.Location = new System.Drawing.Point(987, 69);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(175, 40);
-            this.button6.TabIndex = 57;
-            this.button6.Text = "Trade MKT : Mat Code DK";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnMatCodeDK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMatCodeDK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatCodeDK.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnMatCodeDK.Location = new System.Drawing.Point(951, 69);
+            this.btnMatCodeDK.Name = "btnMatCodeDK";
+            this.btnMatCodeDK.Size = new System.Drawing.Size(175, 40);
+            this.btnMatCodeDK.TabIndex = 57;
+            this.btnMatCodeDK.Tag = "Black";
+            this.btnMatCodeDK.Text = "Mat Code DK";
+            this.toolTip1.SetToolTip(this.btnMatCodeDK, "Trade Marketing");
+            this.btnMatCodeDK.UseVisualStyleBackColor = true;
+            this.btnMatCodeDK.Click += new System.EventHandler(this.btnMatCodeDK_Click);
             // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1386, 754);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1370, 750);
+            this.Controls.Add(this.btnMatCodeDK);
+            this.Controls.Add(this.btnDimention);
+            this.Controls.Add(this.btnProductID);
+            this.Controls.Add(this.btnBarcode);
+            this.Controls.Add(this.btnShortName);
+            this.Controls.Add(this.btnDetails);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -140,18 +147,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnDetails;
+        private System.Windows.Forms.Button btnShortName;
+        private System.Windows.Forms.Button btnBarcode;
+        private System.Windows.Forms.Button btnProductID;
+        private System.Windows.Forms.Button btnDimention;
+        private System.Windows.Forms.Button btnMatCodeDK;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

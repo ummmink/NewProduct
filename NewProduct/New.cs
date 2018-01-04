@@ -16,5 +16,65 @@ namespace NewProduct
         {
             InitializeComponent();
         }
+
+        private void ChangeColorByTag(Control parent, string tag)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c.Tag != null && c.Tag.Equals(tag))
+                {
+                    (c as Button).BackColor = Color.FromArgb(189, 189, 255);
+                    (c as Button).ForeColor = Color.Black;
+                    (c as Button).Tag = "Black";
+                }
+                else
+                {
+                    (c as Button).BackColor = Color.Black;
+                    (c as Button).ForeColor = Color.FromArgb(189, 189, 255);
+                }                    
+            }
+        }
+
+        private void btnDetails_Click(object sender, EventArgs e)
+        {
+            btnDetails.Tag = "Blue";
+
+            ChangeColorByTag(this, "Blue");
+        }
+
+        private void btnDimention_Click(object sender, EventArgs e)
+        {
+            btnDimention.Tag = "Blue";
+
+            ChangeColorByTag(this, "Blue");
+        }
+
+        private void btnProductID_Click(object sender, EventArgs e)
+        {
+            btnProductID.Tag = "Blue";
+
+            ChangeColorByTag(this, "Blue");
+        }
+
+        private void btnBarcode_Click(object sender, EventArgs e)
+        {
+            btnBarcode.Tag = "Blue";
+
+            ChangeColorByTag(this, "Blue");
+        }
+
+        private void btnShortName_Click(object sender, EventArgs e)
+        {
+            btnShortName.Tag = "Blue";
+
+            ChangeColorByTag(this, "Blue");
+        }
+
+        private void btnMatCodeDK_Click(object sender, EventArgs e)
+        {
+            btnMatCodeDK.Tag = "Blue";
+
+            ChangeColorByTag(this, "Blue");
+        }
     }
 }

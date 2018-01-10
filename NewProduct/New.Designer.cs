@@ -76,6 +76,8 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.pnDetails.SuspendLayout();
             this.pnShortName.SuspendLayout();
             this.pnBarcode.SuspendLayout();
@@ -425,6 +427,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.textBox10);
+            this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.textBox9);
@@ -605,6 +609,25 @@
             this.textBox9.TabIndex = 10;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Location = new System.Drawing.Point(105, 177);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(32, 22);
+            this.textBox10.TabIndex = 21;
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label17.Location = new System.Drawing.Point(11, 181);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(31, 14);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "แถม";
+            // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -695,5 +718,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label17;
     }
 }

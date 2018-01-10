@@ -35,46 +35,87 @@ namespace NewProduct
             }
         }
 
+        private void ChangeVisibleByTag(string tag)
+        {
+            foreach (var c in this.Controls.OfType<Panel>())
+            {
+                if (c.Tag != null && c.Tag.Equals(tag))
+                {
+                    (c as Panel).Visible = true;
+                    (c as Panel).Tag = "PanelHide";
+                    (c as Panel).Location = new Point(46, 115);
+                }
+                else
+                {
+                    (c as Panel).Visible = false;
+                }
+            }
+        }
+
         private void btnDetails_Click(object sender, EventArgs e)
         {
+            //Change button color when click
             btnDetails.Tag = "Blue";
-
             ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnDetails.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
 
         private void btnDimention_Click(object sender, EventArgs e)
         {
+            //Change button color when click
             btnDimention.Tag = "Blue";
-
             ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnDimention.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
 
         private void btnProductID_Click(object sender, EventArgs e)
         {
+            //Change button color when click
             btnProductID.Tag = "Blue";
-
             ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnProductID.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
 
         private void btnBarcode_Click(object sender, EventArgs e)
         {
+            //Change button color when click
             btnBarcode.Tag = "Blue";
-
             ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnBarcode.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
 
         private void btnShortName_Click(object sender, EventArgs e)
         {
+            //Change button color when click
             btnShortName.Tag = "Blue";
-
             ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnShortName.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
 
         private void btnMatCodeDK_Click(object sender, EventArgs e)
         {
+            //Change button color when click
             btnMatCodeDK.Tag = "Blue";
-
             ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnMatCodeDK.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
     }
 }

@@ -78,25 +78,17 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btnMixProducts = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.lbProductNormal2 = new System.Windows.Forms.Label();
+            this.lbProductNormal3 = new System.Windows.Forms.Label();
+            this.lbProductNormal4 = new System.Windows.Forms.Label();
+            this.lbProductNormal5 = new System.Windows.Forms.Label();
+            this.lbProductNormal6 = new System.Windows.Forms.Label();
+            this.lbProductNormal7 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lbProductFree2 = new System.Windows.Forms.Label();
+            this.lbProductFree3 = new System.Windows.Forms.Label();
+            this.lbProductNormal1 = new System.Windows.Forms.Label();
+            this.lbProductFree1 = new System.Windows.Forms.Label();
             this.pnDetails.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnShortName.SuspendLayout();
@@ -234,25 +226,17 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox19);
-            this.panel2.Controls.Add(this.label32);
-            this.panel2.Controls.Add(this.textBox18);
-            this.panel2.Controls.Add(this.label31);
-            this.panel2.Controls.Add(this.textBox17);
+            this.panel2.Controls.Add(this.lbProductFree1);
+            this.panel2.Controls.Add(this.lbProductNormal1);
+            this.panel2.Controls.Add(this.lbProductFree3);
+            this.panel2.Controls.Add(this.lbProductFree2);
             this.panel2.Controls.Add(this.label30);
-            this.panel2.Controls.Add(this.textBox16);
-            this.panel2.Controls.Add(this.label29);
-            this.panel2.Controls.Add(this.textBox15);
-            this.panel2.Controls.Add(this.label28);
-            this.panel2.Controls.Add(this.textBox14);
-            this.panel2.Controls.Add(this.label27);
-            this.panel2.Controls.Add(this.textBox13);
-            this.panel2.Controls.Add(this.label26);
-            this.panel2.Controls.Add(this.textBox12);
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.textBox10);
+            this.panel2.Controls.Add(this.lbProductNormal7);
+            this.panel2.Controls.Add(this.lbProductNormal6);
+            this.panel2.Controls.Add(this.lbProductNormal5);
+            this.panel2.Controls.Add(this.lbProductNormal4);
+            this.panel2.Controls.Add(this.lbProductNormal3);
+            this.panel2.Controls.Add(this.lbProductNormal2);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.btnMixProducts);
             this.panel2.Controls.Add(this.label15);
@@ -313,6 +297,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(128, 9);
             this.comboBox1.Name = "comboBox1";
@@ -331,6 +316,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(413, 9);
             this.comboBox2.Name = "comboBox2";
@@ -649,6 +635,7 @@
             // 
             // btnMixProducts
             // 
+            this.btnMixProducts.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMixProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMixProducts.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnMixProducts.Location = new System.Drawing.Point(321, 149);
@@ -668,185 +655,109 @@
             this.label17.TabIndex = 25;
             this.label17.Text = "สินค้าปกติ";
             // 
-            // label24
+            // lbProductNormal2
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label24.Location = new System.Drawing.Point(11, 209);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(61, 14);
-            this.label24.TabIndex = 27;
-            this.label24.Text = "สินค้าปกติ";
+            this.lbProductNormal2.AutoSize = true;
+            this.lbProductNormal2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal2.Location = new System.Drawing.Point(90, 209);
+            this.lbProductNormal2.Name = "lbProductNormal2";
+            this.lbProductNormal2.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal2.TabIndex = 27;
             // 
-            // textBox11
+            // lbProductNormal3
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Location = new System.Drawing.Point(164, 205);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(32, 22);
-            this.textBox11.TabIndex = 28;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lbProductNormal3.AutoSize = true;
+            this.lbProductNormal3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal3.Location = new System.Drawing.Point(90, 237);
+            this.lbProductNormal3.Name = "lbProductNormal3";
+            this.lbProductNormal3.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal3.TabIndex = 29;
             // 
-            // textBox10
+            // lbProductNormal4
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(164, 177);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(32, 22);
-            this.textBox10.TabIndex = 26;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lbProductNormal4.AutoSize = true;
+            this.lbProductNormal4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal4.Location = new System.Drawing.Point(90, 265);
+            this.lbProductNormal4.Name = "lbProductNormal4";
+            this.lbProductNormal4.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal4.TabIndex = 31;
             // 
-            // textBox12
+            // lbProductNormal5
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(164, 233);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(32, 22);
-            this.textBox12.TabIndex = 30;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lbProductNormal5.AutoSize = true;
+            this.lbProductNormal5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal5.Location = new System.Drawing.Point(90, 293);
+            this.lbProductNormal5.Name = "lbProductNormal5";
+            this.lbProductNormal5.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal5.TabIndex = 33;
             // 
-            // label25
+            // lbProductNormal6
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label25.Location = new System.Drawing.Point(11, 237);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(61, 14);
-            this.label25.TabIndex = 29;
-            this.label25.Text = "สินค้าปกติ";
+            this.lbProductNormal6.AutoSize = true;
+            this.lbProductNormal6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal6.Location = new System.Drawing.Point(90, 321);
+            this.lbProductNormal6.Name = "lbProductNormal6";
+            this.lbProductNormal6.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal6.TabIndex = 35;
             // 
-            // textBox13
+            // lbProductNormal7
             // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Location = new System.Drawing.Point(164, 261);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(32, 22);
-            this.textBox13.TabIndex = 32;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label26.Location = new System.Drawing.Point(11, 265);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(61, 14);
-            this.label26.TabIndex = 31;
-            this.label26.Text = "สินค้าปกติ";
-            // 
-            // textBox14
-            // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Location = new System.Drawing.Point(164, 289);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(32, 22);
-            this.textBox14.TabIndex = 34;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label27.Location = new System.Drawing.Point(11, 293);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(61, 14);
-            this.label27.TabIndex = 33;
-            this.label27.Text = "สินค้าปกติ";
-            // 
-            // textBox15
-            // 
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Location = new System.Drawing.Point(164, 317);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(32, 22);
-            this.textBox15.TabIndex = 36;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label28.Location = new System.Drawing.Point(11, 321);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(61, 14);
-            this.label28.TabIndex = 35;
-            this.label28.Text = "สินค้าปกติ";
-            // 
-            // textBox16
-            // 
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Location = new System.Drawing.Point(164, 345);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(32, 22);
-            this.textBox16.TabIndex = 38;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label29.Location = new System.Drawing.Point(11, 349);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(61, 14);
-            this.label29.TabIndex = 37;
-            this.label29.Text = "สินค้าปกติ";
-            // 
-            // textBox17
-            // 
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox17.Location = new System.Drawing.Point(164, 373);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(32, 22);
-            this.textBox17.TabIndex = 40;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lbProductNormal7.AutoSize = true;
+            this.lbProductNormal7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal7.Location = new System.Drawing.Point(90, 349);
+            this.lbProductNormal7.Name = "lbProductNormal7";
+            this.lbProductNormal7.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal7.TabIndex = 37;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label30.Location = new System.Drawing.Point(11, 377);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(61, 14);
             this.label30.TabIndex = 39;
-            this.label30.Text = "สินค้าปกติ";
+            this.label30.Text = "สินค้าแถม";
             // 
-            // textBox18
+            // lbProductFree2
             // 
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox18.Location = new System.Drawing.Point(164, 401);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(32, 22);
-            this.textBox18.TabIndex = 42;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lbProductFree2.AutoSize = true;
+            this.lbProductFree2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductFree2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbProductFree2.Location = new System.Drawing.Point(90, 405);
+            this.lbProductFree2.Name = "lbProductFree2";
+            this.lbProductFree2.Size = new System.Drawing.Size(0, 14);
+            this.lbProductFree2.TabIndex = 41;
             // 
-            // label31
+            // lbProductFree3
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label31.Location = new System.Drawing.Point(11, 405);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(61, 14);
-            this.label31.TabIndex = 41;
-            this.label31.Text = "สินค้าปกติ";
+            this.lbProductFree3.AutoSize = true;
+            this.lbProductFree3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductFree3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbProductFree3.Location = new System.Drawing.Point(90, 433);
+            this.lbProductFree3.Name = "lbProductFree3";
+            this.lbProductFree3.Size = new System.Drawing.Size(0, 14);
+            this.lbProductFree3.TabIndex = 43;
             // 
-            // textBox19
+            // lbProductNormal1
             // 
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox19.Location = new System.Drawing.Point(164, 429);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(32, 22);
-            this.textBox19.TabIndex = 44;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lbProductNormal1.AutoSize = true;
+            this.lbProductNormal1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal1.Location = new System.Drawing.Point(90, 181);
+            this.lbProductNormal1.Name = "lbProductNormal1";
+            this.lbProductNormal1.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal1.TabIndex = 44;
             // 
-            // label32
+            // lbProductFree1
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label32.Location = new System.Drawing.Point(11, 433);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(61, 14);
-            this.label32.TabIndex = 43;
-            this.label32.Text = "สินค้าปกติ";
+            this.lbProductFree1.AutoSize = true;
+            this.lbProductFree1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductFree1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbProductFree1.Location = new System.Drawing.Point(90, 377);
+            this.lbProductFree1.Name = "lbProductFree1";
+            this.lbProductFree1.Size = new System.Drawing.Size(0, 14);
+            this.lbProductFree1.TabIndex = 45;
             // 
             // New
             // 
@@ -939,25 +850,17 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnMixProducts;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lbProductNormal2;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label lbProductFree3;
+        private System.Windows.Forms.Label lbProductFree2;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label lbProductNormal7;
+        private System.Windows.Forms.Label lbProductNormal6;
+        private System.Windows.Forms.Label lbProductNormal5;
+        private System.Windows.Forms.Label lbProductNormal4;
+        private System.Windows.Forms.Label lbProductNormal3;
+        private System.Windows.Forms.Label lbProductFree1;
+        private System.Windows.Forms.Label lbProductNormal1;
     }
 }

@@ -59,9 +59,9 @@
             this.lbProjectName.ForeColor = System.Drawing.SystemColors.Window;
             this.lbProjectName.Location = new System.Drawing.Point(43, 34);
             this.lbProjectName.Name = "lbProjectName";
-            this.lbProjectName.Size = new System.Drawing.Size(177, 25);
+            this.lbProjectName.Size = new System.Drawing.Size(230, 25);
             this.lbProjectName.TabIndex = 43;
-            this.lbProjectName.Text = "Product System";
+            this.lbProjectName.Text = "New Product System";
             this.lbProjectName.Click += new System.EventHandler(this.lbProjectName_Click);
             // 
             // label1
@@ -72,7 +72,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(250, 29);
+            this.label1.Location = new System.Drawing.Point(287, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 35);

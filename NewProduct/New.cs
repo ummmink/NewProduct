@@ -123,7 +123,7 @@ namespace NewProduct
 
         private void New_Load(object sender, EventArgs e)
         {
-            dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
+            dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
         }
     }
 }

@@ -882,6 +882,7 @@
             // 
             // dtpSampleProductDate
             // 
+            this.dtpSampleProductDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpSampleProductDate.Location = new System.Drawing.Point(220, 36);
             this.dtpSampleProductDate.Name = "dtpSampleProductDate";
             this.dtpSampleProductDate.Size = new System.Drawing.Size(129, 22);

@@ -97,7 +97,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpSampleProductDate = new System.Windows.Forms.DateTimePicker();
             this.label28 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -829,7 +829,7 @@
             this.panel3.Controls.Add(this.radioButton2);
             this.panel3.Controls.Add(this.radioButton1);
             this.panel3.Controls.Add(this.label28);
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.dtpSampleProductDate);
             this.panel3.Controls.Add(this.label27);
             this.panel3.Controls.Add(this.comboBox3);
             this.panel3.Controls.Add(this.label26);
@@ -864,9 +864,9 @@
             // 
             this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(156, 8);
+            this.comboBox3.Location = new System.Drawing.Point(120, 8);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(115, 22);
+            this.comboBox3.Size = new System.Drawing.Size(100, 22);
             this.comboBox3.TabIndex = 4;
             // 
             // label27
@@ -880,12 +880,12 @@
             this.label27.TabIndex = 5;
             this.label27.Text = "สินค้าตัวอย่าง";
             // 
-            // dateTimePicker1
+            // dtpSampleProductDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(220, 36);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 22);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtpSampleProductDate.Location = new System.Drawing.Point(220, 36);
+            this.dtpSampleProductDate.Name = "dtpSampleProductDate";
+            this.dtpSampleProductDate.Size = new System.Drawing.Size(129, 22);
+            this.dtpSampleProductDate.TabIndex = 6;
             // 
             // label28
             // 
@@ -1059,6 +1059,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpSampleProductDate;
     }
 }

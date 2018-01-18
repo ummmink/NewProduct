@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace NewProduct
 {
     public partial class New : Form
     {
+        CultureInfo UsaCulture = new CultureInfo("en-US");
+
         public New()
         {
             InitializeComponent();
@@ -120,7 +123,7 @@ namespace NewProduct
 
         private void New_Load(object sender, EventArgs e)
         {
-            
+            dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
         }
     }
 }

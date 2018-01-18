@@ -16,7 +16,7 @@ namespace NewProduct
         {
             InitializeComponent();
         }
-
+       
         private void ChangeColorByTag(string tag)
         {
             foreach (var c in this.Controls.OfType<Button>())
@@ -116,6 +116,11 @@ namespace NewProduct
             //Change panel visible is true when click
             pnMatCodeDK.Tag = "PanelShow";
             ChangeVisibleByTag("PanelShow");
+        }
+
+        private void New_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

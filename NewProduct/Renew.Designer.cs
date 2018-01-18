@@ -53,6 +53,7 @@
             this.Name = "Renew";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Renew";
+            this.Load += new System.EventHandler(this.Renew_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

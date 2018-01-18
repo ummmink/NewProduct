@@ -16,5 +16,10 @@ namespace NewProduct
         {
             InitializeComponent();
         }
+
+        private void Renew_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

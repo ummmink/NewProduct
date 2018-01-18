@@ -38,8 +38,24 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.pnDetails = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbProductFree1 = new System.Windows.Forms.Label();
+            this.lbProductNormal1 = new System.Windows.Forms.Label();
+            this.lbProductFree3 = new System.Windows.Forms.Label();
+            this.lbProductFree2 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.lbProductNormal7 = new System.Windows.Forms.Label();
+            this.lbProductNormal6 = new System.Windows.Forms.Label();
+            this.lbProductNormal5 = new System.Windows.Forms.Label();
+            this.lbProductNormal4 = new System.Windows.Forms.Label();
+            this.lbProductNormal3 = new System.Windows.Forms.Label();
+            this.lbProductNormal2 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnMixProducts = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -76,26 +92,27 @@
             this.pnMatCodeDK = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnMixProducts = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.lbProductNormal2 = new System.Windows.Forms.Label();
-            this.lbProductNormal3 = new System.Windows.Forms.Label();
-            this.lbProductNormal4 = new System.Windows.Forms.Label();
-            this.lbProductNormal5 = new System.Windows.Forms.Label();
-            this.lbProductNormal6 = new System.Windows.Forms.Label();
-            this.lbProductNormal7 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.lbProductFree2 = new System.Windows.Forms.Label();
-            this.lbProductFree3 = new System.Windows.Forms.Label();
-            this.lbProductNormal1 = new System.Windows.Forms.Label();
-            this.lbProductFree1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label28 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.pnDetails.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnShortName.SuspendLayout();
             this.pnBarcode.SuspendLayout();
             this.pnProductID.SuspendLayout();
             this.pnDimention.SuspendLayout();
             this.pnMatCodeDK.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -203,6 +220,10 @@
             // 
             this.pnDetails.BackColor = System.Drawing.Color.Black;
             this.pnDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnDetails.Controls.Add(this.label25);
+            this.pnDetails.Controls.Add(this.panel3);
+            this.pnDetails.Controls.Add(this.label24);
+            this.pnDetails.Controls.Add(this.panel1);
             this.pnDetails.Controls.Add(this.label18);
             this.pnDetails.Controls.Add(this.panel2);
             this.pnDetails.Location = new System.Drawing.Point(46, 115);
@@ -212,12 +233,40 @@
             this.pnDetails.Tag = "PanelHide";
             this.pnDetails.Visible = false;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label24.Location = new System.Drawing.Point(671, 8);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(191, 14);
+            this.label24.TabIndex = 16;
+            this.label24.Text = "รูปภาพสินค้าสำเร็จรูปพร้อมตกแต่ง";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(674, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(523, 242);
+            this.panel1.TabIndex = 15;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(21, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(457, 209);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label18.Location = new System.Drawing.Point(15, 8);
+            this.label18.Location = new System.Drawing.Point(5, 8);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(124, 14);
             this.label18.TabIndex = 14;
@@ -261,15 +310,144 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(18, 25);
+            this.panel2.Location = new System.Drawing.Point(8, 25);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(660, 463);
             this.panel2.TabIndex = 13;
+            // 
+            // lbProductFree1
+            // 
+            this.lbProductFree1.AutoSize = true;
+            this.lbProductFree1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductFree1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbProductFree1.Location = new System.Drawing.Point(90, 377);
+            this.lbProductFree1.Name = "lbProductFree1";
+            this.lbProductFree1.Size = new System.Drawing.Size(0, 14);
+            this.lbProductFree1.TabIndex = 45;
+            // 
+            // lbProductNormal1
+            // 
+            this.lbProductNormal1.AutoSize = true;
+            this.lbProductNormal1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal1.Location = new System.Drawing.Point(90, 181);
+            this.lbProductNormal1.Name = "lbProductNormal1";
+            this.lbProductNormal1.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal1.TabIndex = 44;
+            // 
+            // lbProductFree3
+            // 
+            this.lbProductFree3.AutoSize = true;
+            this.lbProductFree3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductFree3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbProductFree3.Location = new System.Drawing.Point(90, 433);
+            this.lbProductFree3.Name = "lbProductFree3";
+            this.lbProductFree3.Size = new System.Drawing.Size(0, 14);
+            this.lbProductFree3.TabIndex = 43;
+            // 
+            // lbProductFree2
+            // 
+            this.lbProductFree2.AutoSize = true;
+            this.lbProductFree2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductFree2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbProductFree2.Location = new System.Drawing.Point(90, 405);
+            this.lbProductFree2.Name = "lbProductFree2";
+            this.lbProductFree2.Size = new System.Drawing.Size(0, 14);
+            this.lbProductFree2.TabIndex = 41;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label30.Location = new System.Drawing.Point(11, 377);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(61, 14);
+            this.label30.TabIndex = 39;
+            this.label30.Text = "สินค้าแถม";
+            // 
+            // lbProductNormal7
+            // 
+            this.lbProductNormal7.AutoSize = true;
+            this.lbProductNormal7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal7.Location = new System.Drawing.Point(90, 349);
+            this.lbProductNormal7.Name = "lbProductNormal7";
+            this.lbProductNormal7.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal7.TabIndex = 37;
+            // 
+            // lbProductNormal6
+            // 
+            this.lbProductNormal6.AutoSize = true;
+            this.lbProductNormal6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal6.Location = new System.Drawing.Point(90, 321);
+            this.lbProductNormal6.Name = "lbProductNormal6";
+            this.lbProductNormal6.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal6.TabIndex = 35;
+            // 
+            // lbProductNormal5
+            // 
+            this.lbProductNormal5.AutoSize = true;
+            this.lbProductNormal5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal5.Location = new System.Drawing.Point(90, 293);
+            this.lbProductNormal5.Name = "lbProductNormal5";
+            this.lbProductNormal5.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal5.TabIndex = 33;
+            // 
+            // lbProductNormal4
+            // 
+            this.lbProductNormal4.AutoSize = true;
+            this.lbProductNormal4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal4.Location = new System.Drawing.Point(90, 265);
+            this.lbProductNormal4.Name = "lbProductNormal4";
+            this.lbProductNormal4.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal4.TabIndex = 31;
+            // 
+            // lbProductNormal3
+            // 
+            this.lbProductNormal3.AutoSize = true;
+            this.lbProductNormal3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal3.Location = new System.Drawing.Point(90, 237);
+            this.lbProductNormal3.Name = "lbProductNormal3";
+            this.lbProductNormal3.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal3.TabIndex = 29;
+            // 
+            // lbProductNormal2
+            // 
+            this.lbProductNormal2.AutoSize = true;
+            this.lbProductNormal2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbProductNormal2.Location = new System.Drawing.Point(90, 209);
+            this.lbProductNormal2.Name = "lbProductNormal2";
+            this.lbProductNormal2.Size = new System.Drawing.Size(0, 14);
+            this.lbProductNormal2.TabIndex = 27;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(11, 181);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(61, 14);
+            this.label17.TabIndex = 25;
+            this.label17.Text = "สินค้าปกติ";
+            // 
+            // btnMixProducts
+            // 
+            this.btnMixProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMixProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMixProducts.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnMixProducts.ForeColor = System.Drawing.Color.White;
+            this.btnMixProducts.Location = new System.Drawing.Point(321, 149);
+            this.btnMixProducts.Name = "btnMixProducts";
+            this.btnMixProducts.Size = new System.Drawing.Size(98, 23);
+            this.btnMixProducts.TabIndex = 23;
+            this.btnMixProducts.Text = "สินค้าประกอบ";
+            this.btnMixProducts.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(11, 13);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(86, 14);
@@ -280,6 +458,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(292, 13);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(103, 14);
@@ -308,6 +487,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(424, 153);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(109, 14);
@@ -336,6 +516,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(261, 153);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(15, 14);
@@ -355,6 +536,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(202, 153);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(15, 14);
@@ -374,6 +556,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(143, 153);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(15, 14);
@@ -393,6 +576,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(11, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 14);
@@ -411,6 +595,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(11, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(268, 14);
@@ -421,6 +606,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(11, 69);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(281, 14);
@@ -439,6 +625,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(261, 14);
@@ -457,6 +644,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(11, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(248, 14);
@@ -633,131 +821,122 @@
             this.label14.TabIndex = 1;
             this.label14.Text = "Matcode";
             // 
-            // btnMixProducts
+            // panel3
             // 
-            this.btnMixProducts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMixProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMixProducts.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnMixProducts.Location = new System.Drawing.Point(321, 149);
-            this.btnMixProducts.Name = "btnMixProducts";
-            this.btnMixProducts.Size = new System.Drawing.Size(98, 23);
-            this.btnMixProducts.TabIndex = 23;
-            this.btnMixProducts.Text = "สินค้าประกอบ";
-            this.btnMixProducts.UseVisualStyleBackColor = true;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.comboBox4);
+            this.panel3.Controls.Add(this.textBox10);
+            this.panel3.Controls.Add(this.radioButton2);
+            this.panel3.Controls.Add(this.radioButton1);
+            this.panel3.Controls.Add(this.label28);
+            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.label26);
+            this.panel3.Location = new System.Drawing.Point(674, 291);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(523, 197);
+            this.panel3.TabIndex = 17;
             // 
-            // label17
+            // label25
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label17.Location = new System.Drawing.Point(11, 181);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(61, 14);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "สินค้าปกติ";
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label25.Location = new System.Drawing.Point(674, 274);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(148, 14);
+            this.label25.TabIndex = 18;
+            this.label25.Text = "รายละเอียดการจัดจำหน่าย";
             // 
-            // lbProductNormal2
+            // label26
             // 
-            this.lbProductNormal2.AutoSize = true;
-            this.lbProductNormal2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal2.Location = new System.Drawing.Point(90, 209);
-            this.lbProductNormal2.Name = "lbProductNormal2";
-            this.lbProductNormal2.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal2.TabIndex = 27;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(5, 12);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(112, 14);
+            this.label26.TabIndex = 3;
+            this.label26.Text = "ช่องทางจัดจำหน่าย";
             // 
-            // lbProductNormal3
+            // comboBox3
             // 
-            this.lbProductNormal3.AutoSize = true;
-            this.lbProductNormal3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal3.Location = new System.Drawing.Point(90, 237);
-            this.lbProductNormal3.Name = "lbProductNormal3";
-            this.lbProductNormal3.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal3.TabIndex = 29;
+            this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(156, 8);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(115, 22);
+            this.comboBox3.TabIndex = 4;
             // 
-            // lbProductNormal4
+            // label27
             // 
-            this.lbProductNormal4.AutoSize = true;
-            this.lbProductNormal4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal4.Location = new System.Drawing.Point(90, 265);
-            this.lbProductNormal4.Name = "lbProductNormal4";
-            this.lbProductNormal4.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal4.TabIndex = 31;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(5, 40);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(80, 14);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "สินค้าตัวอย่าง";
             // 
-            // lbProductNormal5
+            // dateTimePicker1
             // 
-            this.lbProductNormal5.AutoSize = true;
-            this.lbProductNormal5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal5.Location = new System.Drawing.Point(90, 293);
-            this.lbProductNormal5.Name = "lbProductNormal5";
-            this.lbProductNormal5.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal5.TabIndex = 33;
+            this.dateTimePicker1.Location = new System.Drawing.Point(220, 36);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(129, 22);
+            this.dateTimePicker1.TabIndex = 6;
             // 
-            // lbProductNormal6
+            // label28
             // 
-            this.lbProductNormal6.AutoSize = true;
-            this.lbProductNormal6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal6.Location = new System.Drawing.Point(90, 321);
-            this.lbProductNormal6.Name = "lbProductNormal6";
-            this.lbProductNormal6.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal6.TabIndex = 35;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(349, 40);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(42, 14);
+            this.label28.TabIndex = 7;
+            this.label28.Text = "จำนวน";
             // 
-            // lbProductNormal7
+            // radioButton1
             // 
-            this.lbProductNormal7.AutoSize = true;
-            this.lbProductNormal7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal7.Location = new System.Drawing.Point(90, 349);
-            this.lbProductNormal7.Name = "lbProductNormal7";
-            this.lbProductNormal7.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal7.TabIndex = 37;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
+            this.radioButton1.Location = new System.Drawing.Point(84, 38);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(76, 18);
+            this.radioButton1.TabIndex = 8;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "ไม่ต้องการ";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // label30
+            // radioButton2
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label30.Location = new System.Drawing.Point(11, 377);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(61, 14);
-            this.label30.TabIndex = 39;
-            this.label30.Text = "สินค้าแถม";
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
+            this.radioButton2.Location = new System.Drawing.Point(157, 38);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(63, 18);
+            this.radioButton2.TabIndex = 9;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "ต้องการ";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // lbProductFree2
+            // textBox10
             // 
-            this.lbProductFree2.AutoSize = true;
-            this.lbProductFree2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductFree2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbProductFree2.Location = new System.Drawing.Point(90, 405);
-            this.lbProductFree2.Name = "lbProductFree2";
-            this.lbProductFree2.Size = new System.Drawing.Size(0, 14);
-            this.lbProductFree2.TabIndex = 41;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Location = new System.Drawing.Point(389, 36);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(60, 22);
+            this.textBox10.TabIndex = 10;
             // 
-            // lbProductFree3
+            // comboBox4
             // 
-            this.lbProductFree3.AutoSize = true;
-            this.lbProductFree3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductFree3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbProductFree3.Location = new System.Drawing.Point(90, 433);
-            this.lbProductFree3.Name = "lbProductFree3";
-            this.lbProductFree3.Size = new System.Drawing.Size(0, 14);
-            this.lbProductFree3.TabIndex = 43;
-            // 
-            // lbProductNormal1
-            // 
-            this.lbProductNormal1.AutoSize = true;
-            this.lbProductNormal1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal1.Location = new System.Drawing.Point(90, 181);
-            this.lbProductNormal1.Name = "lbProductNormal1";
-            this.lbProductNormal1.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal1.TabIndex = 44;
-            // 
-            // lbProductFree1
-            // 
-            this.lbProductFree1.AutoSize = true;
-            this.lbProductFree1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductFree1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbProductFree1.Location = new System.Drawing.Point(90, 377);
-            this.lbProductFree1.Name = "lbProductFree1";
-            this.lbProductFree1.Size = new System.Drawing.Size(0, 14);
-            this.lbProductFree1.TabIndex = 45;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(452, 36);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(66, 22);
+            this.comboBox4.TabIndex = 11;
             // 
             // New
             // 
@@ -783,8 +962,11 @@
             this.Name = "New";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New";
+            this.Load += new System.EventHandler(this.New_Load);
             this.pnDetails.ResumeLayout(false);
             this.pnDetails.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pnShortName.ResumeLayout(false);
@@ -797,6 +979,8 @@
             this.pnDimention.PerformLayout();
             this.pnMatCodeDK.ResumeLayout(false);
             this.pnMatCodeDK.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -862,5 +1046,19 @@
         private System.Windows.Forms.Label lbProductNormal3;
         private System.Windows.Forms.Label lbProductFree1;
         private System.Windows.Forms.Label lbProductNormal1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -866,8 +866,9 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(120, 8);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 22);
+            this.comboBox3.Size = new System.Drawing.Size(86, 22);
             this.comboBox3.TabIndex = 4;
+            this.comboBox3.Text = "เดอะมอลล์";
             // 
             // label27
             // 
@@ -883,9 +884,9 @@
             // dtpSampleProductDate
             // 
             this.dtpSampleProductDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpSampleProductDate.Location = new System.Drawing.Point(220, 36);
+            this.dtpSampleProductDate.Location = new System.Drawing.Point(232, 36);
             this.dtpSampleProductDate.Name = "dtpSampleProductDate";
-            this.dtpSampleProductDate.Size = new System.Drawing.Size(129, 22);
+            this.dtpSampleProductDate.Size = new System.Drawing.Size(101, 22);
             this.dtpSampleProductDate.TabIndex = 6;
             // 
             // label28
@@ -893,7 +894,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(349, 40);
+            this.label28.Location = new System.Drawing.Point(338, 40);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(42, 14);
             this.label28.TabIndex = 7;
@@ -903,7 +904,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(84, 38);
+            this.radioButton1.Location = new System.Drawing.Point(86, 38);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(76, 18);
             this.radioButton1.TabIndex = 8;
@@ -915,7 +916,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(157, 38);
+            this.radioButton2.Location = new System.Drawing.Point(165, 38);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(63, 18);
             this.radioButton2.TabIndex = 9;
@@ -926,7 +927,7 @@
             // textBox10
             // 
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(389, 36);
+            this.textBox10.Location = new System.Drawing.Point(381, 36);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(60, 22);
             this.textBox10.TabIndex = 10;
@@ -934,7 +935,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(452, 36);
+            this.comboBox4.Location = new System.Drawing.Point(444, 36);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(66, 22);
             this.comboBox4.TabIndex = 11;

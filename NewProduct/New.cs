@@ -125,5 +125,37 @@ namespace NewProduct
         {
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
         }
+
+        private void rdbNeedSample_Click(object sender, EventArgs e)
+        {
+            if (rdbNeedSample.Checked == true)
+            {
+                dtpSampleProductDate.Enabled = true;
+                tbQtySample.Enabled = true;
+                cbUnitSample.Enabled = true;
+            }
+            else
+            {
+                dtpSampleProductDate.Enabled = false;
+                tbQtySample.Enabled = false;
+                cbUnitSample.Enabled = false;
+            }
+        }
+
+        private void rdbNoSample_Click(object sender, EventArgs e)
+        {
+            if (rdbNoSample.Checked == true)
+            {              
+                dtpSampleProductDate.Enabled = false;
+                tbQtySample.Enabled = false;
+                cbUnitSample.Enabled = false;
+            }
+            else
+            {
+                dtpSampleProductDate.Enabled = true;
+                tbQtySample.Enabled = true;
+                cbUnitSample.Enabled = true;
+            }
+        }
     }
 }

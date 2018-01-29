@@ -40,6 +40,20 @@
             this.pnDetails = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label33 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label31 = new System.Windows.Forms.Label();
+            this.tbScheduleDate = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
             this.cbUnitSample = new System.Windows.Forms.ComboBox();
             this.tbQtySample = new System.Windows.Forms.TextBox();
             this.rdbNeedSample = new System.Windows.Forms.RadioButton();
@@ -54,6 +68,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
             this.lbProductFree1 = new System.Windows.Forms.Label();
             this.lbProductNormal1 = new System.Windows.Forms.Label();
             this.lbProductFree3 = new System.Windows.Forms.Label();
@@ -103,22 +119,9 @@
             this.pnMatCodeDK = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.tbScheduleDate = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
             this.pnDetails.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -127,7 +130,6 @@
             this.pnProductID.SuspendLayout();
             this.pnDimention.SuspendLayout();
             this.pnMatCodeDK.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -227,7 +229,7 @@
             this.textBox5.MaxLength = 36;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(347, 22);
-            this.textBox5.TabIndex = 4;
+            this.textBox5.TabIndex = 5;
             this.toolTip1.SetToolTip(this.textBox5, "จำนวนตัวอักษรถูกจำกัดที่จำนวน 36 ตัวอักษร เนื่องด้วยพื้นที่ช่องใน Invoice จำกัด ต" +
         "้องการเพิ่มจำนวนตัวอักษร ติดต่อที่แผนกบัญชี");
             // 
@@ -286,6 +288,156 @@
             this.panel3.Size = new System.Drawing.Size(523, 197);
             this.panel3.TabIndex = 17;
             // 
+            // textBox11
+            // 
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox11.Location = new System.Drawing.Point(98, 117);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(412, 75);
+            this.textBox11.TabIndex = 10;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(5, 121);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(85, 14);
+            this.label34.TabIndex = 24;
+            this.label34.Text = "รายละเอียดอื่น";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.radioButton3);
+            this.panel4.Controls.Add(this.radioButton2);
+            this.panel4.Controls.Add(this.radioButton1);
+            this.panel4.Controls.Add(this.label33);
+            this.panel4.Location = new System.Drawing.Point(3, 88);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(515, 28);
+            this.panel4.TabIndex = 23;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.radioButton3.ForeColor = System.Drawing.Color.White;
+            this.radioButton3.Location = new System.Drawing.Point(367, 5);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(143, 18);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.Text = "ส่งจนกว่าสินค้าจะหมด";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
+            this.radioButton2.Location = new System.Drawing.Point(251, 5);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(74, 18);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "One Lot";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
+            this.radioButton1.Location = new System.Drawing.Point(156, 5);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(49, 18);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "ทั้งปี";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(4, 7);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(113, 14);
+            this.label33.TabIndex = 23;
+            this.label33.Text = "เงื่อนไขการส่งสินค้า";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(444, 64);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(66, 22);
+            this.comboBox3.TabIndex = 9;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Location = new System.Drawing.Point(381, 64);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(60, 22);
+            this.textBox10.TabIndex = 8;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(338, 68);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(42, 14);
+            this.label32.TabIndex = 16;
+            this.label32.Text = "จำนวน";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(232, 64);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(101, 22);
+            this.dateTimePicker1.TabIndex = 7;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(5, 68);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(228, 14);
+            this.label31.TabIndex = 14;
+            this.label31.Text = "วันที่ให้ Sale เปิด Order(สำหรับฝ่ายขาย)";
+            // 
+            // tbScheduleDate
+            // 
+            this.tbScheduleDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbScheduleDate.Location = new System.Drawing.Point(341, 8);
+            this.tbScheduleDate.Name = "tbScheduleDate";
+            this.tbScheduleDate.Size = new System.Drawing.Size(169, 22);
+            this.tbScheduleDate.TabIndex = 1;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(248, 12);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(84, 14);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "ช่วงจัดรายการ";
+            // 
             // cbUnitSample
             // 
             this.cbUnitSample.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -294,7 +446,7 @@
             this.cbUnitSample.Location = new System.Drawing.Point(444, 36);
             this.cbUnitSample.Name = "cbUnitSample";
             this.cbUnitSample.Size = new System.Drawing.Size(66, 22);
-            this.cbUnitSample.TabIndex = 11;
+            this.cbUnitSample.TabIndex = 6;
             // 
             // tbQtySample
             // 
@@ -303,7 +455,7 @@
             this.tbQtySample.Location = new System.Drawing.Point(381, 36);
             this.tbQtySample.Name = "tbQtySample";
             this.tbQtySample.Size = new System.Drawing.Size(60, 22);
-            this.tbQtySample.TabIndex = 10;
+            this.tbQtySample.TabIndex = 5;
             // 
             // rdbNeedSample
             // 
@@ -313,7 +465,7 @@
             this.rdbNeedSample.Location = new System.Drawing.Point(165, 38);
             this.rdbNeedSample.Name = "rdbNeedSample";
             this.rdbNeedSample.Size = new System.Drawing.Size(63, 18);
-            this.rdbNeedSample.TabIndex = 9;
+            this.rdbNeedSample.TabIndex = 3;
             this.rdbNeedSample.Text = "ต้องการ";
             this.rdbNeedSample.UseVisualStyleBackColor = true;
             this.rdbNeedSample.Click += new System.EventHandler(this.rdbNeedSample_Click);
@@ -327,7 +479,8 @@
             this.rdbNoSample.Location = new System.Drawing.Point(86, 38);
             this.rdbNoSample.Name = "rdbNoSample";
             this.rdbNoSample.Size = new System.Drawing.Size(76, 18);
-            this.rdbNoSample.TabIndex = 8;
+            this.rdbNoSample.TabIndex = 2;
+            this.rdbNoSample.TabStop = true;
             this.rdbNoSample.Text = "ไม่ต้องการ";
             this.rdbNoSample.UseVisualStyleBackColor = true;
             this.rdbNoSample.Click += new System.EventHandler(this.rdbNoSample_Click);
@@ -351,7 +504,7 @@
             this.dtpSampleProductDate.Location = new System.Drawing.Point(232, 36);
             this.dtpSampleProductDate.Name = "dtpSampleProductDate";
             this.dtpSampleProductDate.Size = new System.Drawing.Size(101, 22);
-            this.dtpSampleProductDate.TabIndex = 6;
+            this.dtpSampleProductDate.TabIndex = 4;
             // 
             // label27
             // 
@@ -371,7 +524,7 @@
             this.cbChannel.Location = new System.Drawing.Point(130, 8);
             this.cbChannel.Name = "cbChannel";
             this.cbChannel.Size = new System.Drawing.Size(108, 22);
-            this.cbChannel.TabIndex = 4;
+            this.cbChannel.TabIndex = 0;
             // 
             // label26
             // 
@@ -402,7 +555,7 @@
             this.panel1.Location = new System.Drawing.Point(674, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(523, 242);
-            this.panel1.TabIndex = 15;
+            this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -426,6 +579,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.textBox12);
+            this.panel2.Controls.Add(this.label35);
             this.panel2.Controls.Add(this.lbProductFree1);
             this.panel2.Controls.Add(this.lbProductNormal1);
             this.panel2.Controls.Add(this.lbProductFree3);
@@ -465,6 +620,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(660, 463);
             this.panel2.TabIndex = 13;
+            // 
+            // textBox12
+            // 
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox12.Location = new System.Drawing.Point(539, 9);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(100, 22);
+            this.textBox12.TabIndex = 2;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(488, 13);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(36, 14);
+            this.label35.TabIndex = 46;
+            this.label35.Text = "เลขที่";
             // 
             // lbProductFree1
             // 
@@ -590,7 +764,7 @@
             this.btnMixProducts.Location = new System.Drawing.Point(321, 149);
             this.btnMixProducts.Name = "btnMixProducts";
             this.btnMixProducts.Size = new System.Drawing.Size(98, 23);
-            this.btnMixProducts.TabIndex = 23;
+            this.btnMixProducts.TabIndex = 11;
             this.btnMixProducts.Text = "สินค้าประกอบ";
             this.btnMixProducts.UseVisualStyleBackColor = true;
             // 
@@ -610,11 +784,11 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(292, 13);
+            this.label16.Location = new System.Drawing.Point(258, 13);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(103, 14);
+            this.label16.Size = new System.Drawing.Size(48, 14);
             this.label16.TabIndex = 10;
-            this.label16.Text = "ประเภทผลิตภัณฑ์";
+            this.label16.Text = "ประเภท";
             // 
             // textBox9
             // 
@@ -622,14 +796,14 @@
             this.textBox9.Location = new System.Drawing.Point(539, 149);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 10;
+            this.textBox9.TabIndex = 12;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // comboBox1
             // 
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(128, 9);
+            this.comboBox1.Location = new System.Drawing.Point(110, 9);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(138, 22);
             this.comboBox1.TabIndex = 0;
@@ -649,9 +823,9 @@
             // 
             this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(413, 9);
+            this.comboBox2.Location = new System.Drawing.Point(312, 9);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(138, 22);
+            this.comboBox2.Size = new System.Drawing.Size(162, 22);
             this.comboBox2.TabIndex = 1;
             // 
             // textBox8
@@ -660,7 +834,7 @@
             this.textBox8.Location = new System.Drawing.Point(282, 149);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(32, 22);
-            this.textBox8.TabIndex = 9;
+            this.textBox8.TabIndex = 10;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
@@ -680,7 +854,7 @@
             this.textBox7.Location = new System.Drawing.Point(223, 149);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(32, 22);
-            this.textBox7.TabIndex = 8;
+            this.textBox7.TabIndex = 9;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
@@ -700,7 +874,7 @@
             this.textBox6.Location = new System.Drawing.Point(164, 149);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(32, 22);
-            this.textBox6.TabIndex = 7;
+            this.textBox6.TabIndex = 8;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
@@ -720,7 +894,7 @@
             this.textBox3.Location = new System.Drawing.Point(105, 149);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(32, 22);
-            this.textBox3.TabIndex = 6;
+            this.textBox3.TabIndex = 7;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -740,7 +914,7 @@
             this.textBox2.Location = new System.Drawing.Point(292, 121);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(347, 22);
-            this.textBox2.TabIndex = 5;
+            this.textBox2.TabIndex = 6;
             // 
             // label3
             // 
@@ -770,7 +944,7 @@
             this.textBox4.Location = new System.Drawing.Point(292, 65);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(347, 22);
-            this.textBox4.TabIndex = 3;
+            this.textBox4.TabIndex = 4;
             // 
             // label1
             // 
@@ -789,7 +963,7 @@
             this.textBox1.Location = new System.Drawing.Point(292, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(347, 22);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 3;
             // 
             // label2
             // 
@@ -972,164 +1146,14 @@
             this.label14.TabIndex = 1;
             this.label14.Text = "Matcode";
             // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(248, 12);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(84, 14);
-            this.label29.TabIndex = 12;
-            this.label29.Text = "ช่วงจัดรายการ";
-            // 
-            // tbScheduleDate
-            // 
-            this.tbScheduleDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbScheduleDate.Location = new System.Drawing.Point(341, 8);
-            this.tbScheduleDate.Name = "tbScheduleDate";
-            this.tbScheduleDate.Size = new System.Drawing.Size(169, 22);
-            this.tbScheduleDate.TabIndex = 13;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(5, 68);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(228, 14);
-            this.label31.TabIndex = 14;
-            this.label31.Text = "วันที่ให้ Sale เปิด Order(สำหรับฝ่ายขาย)";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(444, 64);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(66, 22);
-            this.comboBox3.TabIndex = 18;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(381, 64);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(60, 22);
-            this.textBox10.TabIndex = 17;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(338, 68);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(42, 14);
-            this.label32.TabIndex = 16;
-            this.label32.Text = "จำนวน";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(232, 64);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(101, 22);
-            this.dateTimePicker1.TabIndex = 15;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.radioButton3);
-            this.panel4.Controls.Add(this.radioButton2);
-            this.panel4.Controls.Add(this.radioButton1);
-            this.panel4.Controls.Add(this.label33);
-            this.panel4.Location = new System.Drawing.Point(3, 88);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(515, 28);
-            this.panel4.TabIndex = 23;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(367, 5);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(143, 18);
-            this.radioButton3.TabIndex = 26;
-            this.radioButton3.Text = "ส่งจนกว่าสินค้าจะหมด";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(251, 5);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 18);
-            this.radioButton2.TabIndex = 25;
-            this.radioButton2.Text = "One Lot";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(156, 5);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(49, 18);
-            this.radioButton1.TabIndex = 24;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "ทั้งปี";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(4, 7);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(113, 14);
-            this.label33.TabIndex = 23;
-            this.label33.Text = "เงื่อนไขการส่งสินค้า";
-            // 
-            // textBox11
-            // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Location = new System.Drawing.Point(98, 117);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(412, 75);
-            this.textBox11.TabIndex = 25;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(5, 121);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(85, 14);
-            this.label34.TabIndex = 24;
-            this.label34.Text = "รายละเอียดอื่น";
-            // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1300, 700);
-            this.Controls.Add(this.pnShortName);
             this.Controls.Add(this.pnDetails);
+            this.Controls.Add(this.pnShortName);
             this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.pnDimention);
             this.Controls.Add(this.pnProductID);
@@ -1151,6 +1175,8 @@
             this.pnDetails.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -1165,8 +1191,6 @@
             this.pnDimention.PerformLayout();
             this.pnMatCodeDK.ResumeLayout(false);
             this.pnMatCodeDK.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1260,5 +1284,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label35;
     }
 }

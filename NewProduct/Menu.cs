@@ -77,7 +77,7 @@ namespace NewProduct
             //                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             //}
 
-            Form f = new Home();
+            Form f = new Home_Trade();
             f.MdiParent = this;
             f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
             f.Dock = DockStyle.Fill; //set form's dock property to fill
@@ -105,7 +105,7 @@ namespace NewProduct
         {
             CloseAllChildForm();
 
-            Form f = new Home();
+            Form f = new Home_Trade();
             f.MdiParent = this;
             f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
             f.Dock = DockStyle.Fill; //set form's dock property to fill

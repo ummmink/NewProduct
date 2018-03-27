@@ -1,6 +1,6 @@
 ﻿namespace NewProduct
 {
-    partial class Home
+    partial class Home_Trade
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Trade));
             this.lbOpenNewForm = new System.Windows.Forms.Label();
             this.lbOpenStatusForm = new System.Windows.Forms.Label();
             this.lbOpenReportForm = new System.Windows.Forms.Label();

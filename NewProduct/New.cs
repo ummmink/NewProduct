@@ -9,11 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using NewProduct.Business;
+using NewProduct.Data;
+using NewProduct.Entity;
+
 namespace NewProduct
 {
     public partial class New : Form
     {
         CultureInfo UsaCulture = new CultureInfo("en-US");
+
+        CommonBiz commonBiz = new  CommonBiz();
 
         public New()
         {
@@ -156,6 +162,40 @@ namespace NewProduct
                 tbQtySample.Enabled = true;
                 cbUnitSample.Enabled = true;
             }
+        }
+
+        private void btnSave_MouseHover(object sender, EventArgs e)
+        {
+            btnSave.BackColor = Color.FromArgb(255, 128, 0);
+            btnSave.ForeColor = Color.Black;
+        }
+
+        private void btnSave_MouseLeave(object sender, EventArgs e)
+        {
+            btnSave.BackColor = Color.Black;
+            btnSave.ForeColor = Color.FromArgb(255, 128, 0);
+        }
+
+        private void btnCancel_MouseHover(object sender, EventArgs e)
+        {
+            btnCancel.BackColor = Color.FromArgb(255, 128, 0);
+            btnCancel.ForeColor = Color.Black;
+        }
+
+        private void btnCancel_MouseLeave(object sender, EventArgs e)
+        {
+            btnCancel.BackColor = Color.Black;
+            btnCancel.ForeColor = Color.FromArgb(255, 128, 0);
+        }
+
+        private void cmbProductType_DropDown(object sender, EventArgs e)
+        {
+            #region Binding Product Type
+            CommonDataSet dsCategory = commonBiz.select_product_type_all();
+            cmbProductType.DisplayMember = "TYPE_DESC_ENG";
+            cmbProductType.ValueMember = "TYPE_ID";
+            cmbProductType.DataSource = dsCategory.SELECT_PRODUCT_TYPE_ALL;
+            #endregion
         }
     }
 }

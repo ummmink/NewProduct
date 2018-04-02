@@ -86,7 +86,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbProductType = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -119,6 +119,23 @@
             this.pnMatCodeDK = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.pnDetails.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -237,6 +254,8 @@
             // 
             this.pnDetails.BackColor = System.Drawing.Color.Black;
             this.pnDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnDetails.Controls.Add(this.btnCancel);
+            this.pnDetails.Controls.Add(this.btnSave);
             this.pnDetails.Controls.Add(this.label25);
             this.pnDetails.Controls.Add(this.panel3);
             this.pnDetails.Controls.Add(this.label24);
@@ -551,6 +570,21 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBox19);
+            this.panel1.Controls.Add(this.label43);
+            this.panel1.Controls.Add(this.label41);
+            this.panel1.Controls.Add(this.textBox17);
+            this.panel1.Controls.Add(this.label42);
+            this.panel1.Controls.Add(this.textBox18);
+            this.panel1.Controls.Add(this.label39);
+            this.panel1.Controls.Add(this.textBox15);
+            this.panel1.Controls.Add(this.label40);
+            this.panel1.Controls.Add(this.textBox16);
+            this.panel1.Controls.Add(this.label38);
+            this.panel1.Controls.Add(this.textBox14);
+            this.panel1.Controls.Add(this.label37);
+            this.panel1.Controls.Add(this.textBox13);
+            this.panel1.Controls.Add(this.label36);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(674, 25);
             this.panel1.Name = "panel1";
@@ -559,9 +593,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(21, 14);
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(457, 209);
+            this.pictureBox1.Size = new System.Drawing.Size(502, 128);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -597,7 +632,7 @@
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.cmbProductType);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.textBox8);
@@ -799,14 +834,15 @@
             this.textBox9.TabIndex = 12;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // comboBox1
+            // cmbProductType
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(110, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 22);
-            this.comboBox1.TabIndex = 0;
+            this.cmbProductType.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbProductType.FormattingEnabled = true;
+            this.cmbProductType.Location = new System.Drawing.Point(110, 9);
+            this.cmbProductType.Name = "cmbProductType";
+            this.cmbProductType.Size = new System.Drawing.Size(138, 22);
+            this.cmbProductType.TabIndex = 0;
+            this.cmbProductType.DropDown += new System.EventHandler(this.cmbProductType_DropDown);
             // 
             // label23
             // 
@@ -1146,6 +1182,184 @@
             this.label14.TabIndex = 1;
             this.label14.Text = "Matcode";
             // 
+            // textBox13
+            // 
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox13.Location = new System.Drawing.Point(142, 139);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(170, 22);
+            this.textBox13.TabIndex = 13;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(7, 143);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(88, 14);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "อุปกรณ์ตกแต่ง";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(117, 143);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(20, 14);
+            this.label37.TabIndex = 15;
+            this.label37.Text = "1)";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(315, 143);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(68, 14);
+            this.label38.TabIndex = 17;
+            this.label38.Text = "บริเวณที่ติด";
+            // 
+            // textBox14
+            // 
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox14.Location = new System.Drawing.Point(384, 139);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(129, 22);
+            this.textBox14.TabIndex = 16;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(315, 168);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(68, 14);
+            this.label39.TabIndex = 21;
+            this.label39.Text = "บริเวณที่ติด";
+            // 
+            // textBox15
+            // 
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox15.Location = new System.Drawing.Point(384, 164);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(129, 22);
+            this.textBox15.TabIndex = 20;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(117, 168);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(20, 14);
+            this.label40.TabIndex = 19;
+            this.label40.Text = "2)";
+            // 
+            // textBox16
+            // 
+            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox16.Location = new System.Drawing.Point(142, 164);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(170, 22);
+            this.textBox16.TabIndex = 18;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(315, 193);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(68, 14);
+            this.label41.TabIndex = 25;
+            this.label41.Text = "บริเวณที่ติด";
+            // 
+            // textBox17
+            // 
+            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox17.Location = new System.Drawing.Point(384, 189);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(129, 22);
+            this.textBox17.TabIndex = 24;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Location = new System.Drawing.Point(117, 193);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(20, 14);
+            this.label42.TabIndex = 23;
+            this.label42.Text = "3)";
+            // 
+            // textBox18
+            // 
+            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox18.Location = new System.Drawing.Point(142, 189);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(170, 22);
+            this.textBox18.TabIndex = 22;
+            // 
+            // textBox19
+            // 
+            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox19.Location = new System.Drawing.Point(142, 214);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(371, 22);
+            this.textBox19.TabIndex = 27;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label43.ForeColor = System.Drawing.Color.White;
+            this.label43.Location = new System.Drawing.Point(7, 216);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(129, 14);
+            this.label43.TabIndex = 26;
+            this.label43.Text = "จุดสังเกตของลังลูกฟูก";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Black;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSave.Location = new System.Drawing.Point(841, 495);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(175, 40);
+            this.btnSave.TabIndex = 53;
+            this.btnSave.Tag = "";
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.MouseLeave += new System.EventHandler(this.btnSave_MouseLeave);
+            this.btnSave.MouseHover += new System.EventHandler(this.btnSave_MouseHover);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Black;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCancel.Location = new System.Drawing.Point(1022, 495);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(175, 40);
+            this.btnCancel.TabIndex = 54;
+            this.btnCancel.Tag = "";
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.MouseLeave += new System.EventHandler(this.btnCancel_MouseLeave);
+            this.btnCancel.MouseHover += new System.EventHandler(this.btnCancel_MouseHover);
+            // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1178,6 +1392,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -1226,7 +1441,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbProductType;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label19;
@@ -1286,5 +1501,22 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
     }
 }

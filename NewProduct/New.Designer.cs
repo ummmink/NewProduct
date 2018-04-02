@@ -50,7 +50,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpOrderDate = new System.Windows.Forms.DateTimePicker();
             this.label31 = new System.Windows.Forms.Label();
             this.tbScheduleDate = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -85,17 +85,17 @@
             this.btnMixProducts = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbPrice = new System.Windows.Forms.TextBox();
             this.cmbProductType = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.cmbProductItemNo = new System.Windows.Forms.ComboBox();
+            this.tbBottleAmount = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbPackAmount = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbInnerAmount = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbCaseAmount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -136,6 +136,7 @@
             this.label43 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.textBox20 = new System.Windows.Forms.TextBox();
             this.pnDetails.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -289,7 +290,7 @@
             this.panel3.Controls.Add(this.comboBox3);
             this.panel3.Controls.Add(this.textBox10);
             this.panel3.Controls.Add(this.label32);
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.dtpOrderDate);
             this.panel3.Controls.Add(this.label31);
             this.panel3.Controls.Add(this.tbScheduleDate);
             this.panel3.Controls.Add(this.label29);
@@ -418,14 +419,14 @@
             this.label32.TabIndex = 16;
             this.label32.Text = "จำนวน";
             // 
-            // dateTimePicker1
+            // dtpOrderDate
             // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(232, 64);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(101, 22);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpOrderDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpOrderDate.Location = new System.Drawing.Point(232, 64);
+            this.dtpOrderDate.Name = "dtpOrderDate";
+            this.dtpOrderDate.Size = new System.Drawing.Size(101, 22);
+            this.dtpOrderDate.TabIndex = 7;
             // 
             // label31
             // 
@@ -593,12 +594,16 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(10, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(502, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Click เพื่อเลือกรูป");
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label18
             // 
@@ -631,17 +636,17 @@
             this.panel2.Controls.Add(this.btnMixProducts);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.textBox9);
+            this.panel2.Controls.Add(this.tbPrice);
             this.panel2.Controls.Add(this.cmbProductType);
             this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.cmbProductItemNo);
+            this.panel2.Controls.Add(this.tbBottleAmount);
             this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.tbPackAmount);
             this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.tbInnerAmount);
             this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.tbCaseAmount);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label3);
@@ -669,7 +674,7 @@
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(488, 13);
+            this.label35.Location = new System.Drawing.Point(501, 13);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(36, 14);
             this.label35.TabIndex = 46;
@@ -819,30 +824,33 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(258, 13);
+            this.label16.Location = new System.Drawing.Point(198, 13);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(48, 14);
             this.label16.TabIndex = 10;
             this.label16.Text = "ประเภท";
             // 
-            // textBox9
+            // tbPrice
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(539, 149);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 12;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPrice.Location = new System.Drawing.Point(539, 149);
+            this.tbPrice.Name = "tbPrice";
+            this.tbPrice.Size = new System.Drawing.Size(100, 22);
+            this.tbPrice.TabIndex = 12;
+            this.tbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPrice_KeyPress);
+            this.tbPrice.Leave += new System.EventHandler(this.tbPrice_Leave);
             // 
             // cmbProductType
             // 
             this.cmbProductType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbProductType.FormattingEnabled = true;
-            this.cmbProductType.Location = new System.Drawing.Point(110, 9);
+            this.cmbProductType.Location = new System.Drawing.Point(100, 9);
             this.cmbProductType.Name = "cmbProductType";
-            this.cmbProductType.Size = new System.Drawing.Size(138, 22);
+            this.cmbProductType.Size = new System.Drawing.Size(96, 22);
             this.cmbProductType.TabIndex = 0;
             this.cmbProductType.DropDown += new System.EventHandler(this.cmbProductType_DropDown);
+            this.cmbProductType.SelectionChangeCommitted += new System.EventHandler(this.cmbProductType_SelectionChangeCommitted);
             // 
             // label23
             // 
@@ -855,23 +863,27 @@
             this.label23.TabIndex = 20;
             this.label23.Text = "ราคา/ลัง (Ex-Vat)";
             // 
-            // comboBox2
+            // cmbProductItemNo
             // 
-            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(312, 9);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(162, 22);
-            this.comboBox2.TabIndex = 1;
+            this.cmbProductItemNo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbProductItemNo.FormattingEnabled = true;
+            this.cmbProductItemNo.Location = new System.Drawing.Point(248, 9);
+            this.cmbProductItemNo.Name = "cmbProductItemNo";
+            this.cmbProductItemNo.Size = new System.Drawing.Size(252, 22);
+            this.cmbProductItemNo.TabIndex = 1;
+            this.cmbProductItemNo.DropDown += new System.EventHandler(this.cmbProductItemNo_DropDown);
             // 
-            // textBox8
+            // tbBottleAmount
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(282, 149);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(32, 22);
-            this.textBox8.TabIndex = 10;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBottleAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBottleAmount.Location = new System.Drawing.Point(282, 149);
+            this.tbBottleAmount.MaxLength = 2;
+            this.tbBottleAmount.Name = "tbBottleAmount";
+            this.tbBottleAmount.Size = new System.Drawing.Size(32, 22);
+            this.tbBottleAmount.TabIndex = 10;
+            this.tbBottleAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBottleAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbBottleAmount_KeyDown);
+            this.tbBottleAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBottleAmount_KeyPress);
             // 
             // label22
             // 
@@ -884,14 +896,17 @@
             this.label22.TabIndex = 18;
             this.label22.Text = "X";
             // 
-            // textBox7
+            // tbPackAmount
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(223, 149);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(32, 22);
-            this.textBox7.TabIndex = 9;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPackAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackAmount.Location = new System.Drawing.Point(223, 149);
+            this.tbPackAmount.MaxLength = 2;
+            this.tbPackAmount.Name = "tbPackAmount";
+            this.tbPackAmount.Size = new System.Drawing.Size(32, 22);
+            this.tbPackAmount.TabIndex = 9;
+            this.tbPackAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPackAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPackAmount_KeyDown);
+            this.tbPackAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPackAmount_KeyPress);
             // 
             // label21
             // 
@@ -904,14 +919,17 @@
             this.label21.TabIndex = 16;
             this.label21.Text = "X";
             // 
-            // textBox6
+            // tbInnerAmount
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(164, 149);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(32, 22);
-            this.textBox6.TabIndex = 8;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbInnerAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbInnerAmount.Location = new System.Drawing.Point(164, 149);
+            this.tbInnerAmount.MaxLength = 1;
+            this.tbInnerAmount.Name = "tbInnerAmount";
+            this.tbInnerAmount.Size = new System.Drawing.Size(32, 22);
+            this.tbInnerAmount.TabIndex = 8;
+            this.tbInnerAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbInnerAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbInnerAmount_KeyDown);
+            this.tbInnerAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbInnerAmount_KeyPress);
             // 
             // label20
             // 
@@ -924,14 +942,17 @@
             this.label20.TabIndex = 14;
             this.label20.Text = "X";
             // 
-            // textBox3
+            // tbCaseAmount
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(105, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(32, 22);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaseAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCaseAmount.Location = new System.Drawing.Point(105, 149);
+            this.tbCaseAmount.MaxLength = 1;
+            this.tbCaseAmount.Name = "tbCaseAmount";
+            this.tbCaseAmount.Size = new System.Drawing.Size(32, 22);
+            this.tbCaseAmount.TabIndex = 7;
+            this.tbCaseAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaseAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbCaseAmount_KeyDown);
+            this.tbCaseAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCaseAmount_KeyPress);
             // 
             // label4
             // 
@@ -1016,6 +1037,7 @@
             // 
             this.pnShortName.BackColor = System.Drawing.Color.Black;
             this.pnShortName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnShortName.Controls.Add(this.textBox20);
             this.pnShortName.Controls.Add(this.label6);
             this.pnShortName.Controls.Add(this.label8);
             this.pnShortName.Location = new System.Drawing.Point(59, 83);
@@ -1328,37 +1350,43 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.Black;
+            this.btnSave.BackColor = System.Drawing.Color.OrangeRed;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSave.Location = new System.Drawing.Point(841, 495);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(1010, 495);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(175, 40);
+            this.btnSave.Size = new System.Drawing.Size(91, 40);
             this.btnSave.TabIndex = 53;
             this.btnSave.Tag = "";
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.MouseLeave += new System.EventHandler(this.btnSave_MouseLeave);
-            this.btnSave.MouseHover += new System.EventHandler(this.btnSave_MouseHover);
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.Black;
+            this.btnCancel.BackColor = System.Drawing.Color.OrangeRed;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCancel.Location = new System.Drawing.Point(1022, 495);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(1106, 495);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(175, 40);
+            this.btnCancel.Size = new System.Drawing.Size(91, 40);
             this.btnCancel.TabIndex = 54;
             this.btnCancel.Tag = "";
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.MouseLeave += new System.EventHandler(this.btnCancel_MouseLeave);
-            this.btnCancel.MouseHover += new System.EventHandler(this.btnCancel_MouseHover);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // textBox20
+            // 
+            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox20.Location = new System.Drawing.Point(244, 170);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(347, 22);
+            this.textBox20.TabIndex = 5;
+            this.textBox20.Text = "rewerewrewrewrew";
             // 
             // New
             // 
@@ -1442,21 +1470,21 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbProductType;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbProductItemNo;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbCaseAmount;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbPrice;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbBottleAmount;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tbPackAmount;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbInnerAmount;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnMixProducts;
         private System.Windows.Forms.Label lbProductNormal2;
@@ -1490,7 +1518,7 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpOrderDate;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton radioButton3;
@@ -1518,5 +1546,6 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox textBox20;
     }
 }

@@ -13,7 +13,7 @@ namespace NewProduct.Business
     {
         private CommonData commonData = new CommonData();
 
-        public CommonDataSet select_category()
+        public CommonDataSet select_product_all_status()
         {
             try
             {
@@ -37,11 +37,11 @@ namespace NewProduct.Business
             }
         }
 
-        public CommonDataSet select_product_type_all()
+        public CommonDataSet npd_select_product_type()
         {
             try
             {
-                return commonData.select_product_type_all();
+                return commonData.npd_select_product_type();
             }
             catch (Exception ex)
             {

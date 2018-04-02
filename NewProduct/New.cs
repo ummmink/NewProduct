@@ -130,6 +130,7 @@ namespace NewProduct
         private void New_Load(object sender, EventArgs e)
         {
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
+            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
         }
 
         private void rdbNeedSample_Click(object sender, EventArgs e)
@@ -164,38 +165,157 @@ namespace NewProduct
             }
         }
 
-        private void btnSave_MouseHover(object sender, EventArgs e)
-        {
-            btnSave.BackColor = Color.FromArgb(255, 128, 0);
-            btnSave.ForeColor = Color.Black;
-        }
-
-        private void btnSave_MouseLeave(object sender, EventArgs e)
-        {
-            btnSave.BackColor = Color.Black;
-            btnSave.ForeColor = Color.FromArgb(255, 128, 0);
-        }
-
-        private void btnCancel_MouseHover(object sender, EventArgs e)
-        {
-            btnCancel.BackColor = Color.FromArgb(255, 128, 0);
-            btnCancel.ForeColor = Color.Black;
-        }
-
-        private void btnCancel_MouseLeave(object sender, EventArgs e)
-        {
-            btnCancel.BackColor = Color.Black;
-            btnCancel.ForeColor = Color.FromArgb(255, 128, 0);
-        }
-
         private void cmbProductType_DropDown(object sender, EventArgs e)
         {
+            cmbProductItemNo.Text = "";
+
             #region Binding Product Type
-            CommonDataSet dsCategory = commonBiz.select_product_type_all();
+            CommonDataSet dsProductType = commonBiz.npd_select_product_type();
             cmbProductType.DisplayMember = "TYPE_DESC_ENG";
             cmbProductType.ValueMember = "TYPE_ID";
-            cmbProductType.DataSource = dsCategory.SELECT_PRODUCT_TYPE_ALL;
+            cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;                 
             #endregion
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // open file dialog   
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = new Bitmap(open.FileName);
+                // image file path  
+                textBox1.Text = open.FileName;
+            }
+        }
+
+        private void cmbProductItemNo_DropDown(object sender, EventArgs e)
+        {
+            #region Binding Product Item_No
+            CommonDataSet dsProductItemNo = commonBiz.npd_select_product_item_no_desc_item_name_code_by_type_id(variablePublic.type_id);
+            cmbProductItemNo.DisplayMember = "ITEM_NAME";
+            cmbProductItemNo.ValueMember = "ITEM_NO";
+            cmbProductItemNo.DataSource = dsProductItemNo.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
+            #endregion
+        }
+
+        private void cmbProductType_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            variablePublic.type_id = Int32.Parse(cmbProductType.SelectedValue.ToString());
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Form f = new Home_Trade();
+            f.MdiParent = this.ParentForm;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void tbCaseAmount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbInnerAmount.Focus();             
+            }
+        }
+
+        private void tbCaseAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbInnerAmount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbPackAmount.Focus();
+            }
+        }
+
+        private void tbInnerAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPackAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPackAmount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbBottleAmount.Focus();
+            }
+        }
+
+        private void tbBottleAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbBottleAmount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                btnMixProducts.Focus();
+            }
+        }
+
+        private void tbPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPrice_Leave(object sender, EventArgs e)
+        {
+            if (tbPrice.Text == "")
+            {
+                tbPrice.Text = "0";
+                tbPrice.Text = string.Format("{0:#,##0.00}", double.Parse(tbPrice.Text));
+            }
+            else
+            {
+                tbPrice.Text = string.Format("{0:#,##0.00}", double.Parse(tbPrice.Text));
+            }
         }
     }
 }

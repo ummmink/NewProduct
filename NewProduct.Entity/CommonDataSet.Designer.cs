@@ -28,7 +28,7 @@ namespace NewProduct.Entity {
         
         private NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
         
-        private SELECT_PRODUCT_TYPE_ALLDataTable tableSELECT_PRODUCT_TYPE_ALL;
+        private NPD_SELECT_PRODUCT_TYPEDataTable tableNPD_SELECT_PRODUCT_TYPE;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -64,8 +64,8 @@ namespace NewProduct.Entity {
                 if ((ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"] != null)) {
                     base.Tables.Add(new NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable(ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"]));
                 }
-                if ((ds.Tables["SELECT_PRODUCT_TYPE_ALL"] != null)) {
-                    base.Tables.Add(new SELECT_PRODUCT_TYPE_ALLDataTable(ds.Tables["SELECT_PRODUCT_TYPE_ALL"]));
+                if ((ds.Tables["NPD_SELECT_PRODUCT_TYPE"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_PRODUCT_TYPEDataTable(ds.Tables["NPD_SELECT_PRODUCT_TYPE"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -109,9 +109,9 @@ namespace NewProduct.Entity {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SELECT_PRODUCT_TYPE_ALLDataTable SELECT_PRODUCT_TYPE_ALL {
+        public NPD_SELECT_PRODUCT_TYPEDataTable NPD_SELECT_PRODUCT_TYPE {
             get {
-                return this.tableSELECT_PRODUCT_TYPE_ALL;
+                return this.tableNPD_SELECT_PRODUCT_TYPE;
             }
         }
         
@@ -188,8 +188,8 @@ namespace NewProduct.Entity {
                 if ((ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"] != null)) {
                     base.Tables.Add(new NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable(ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"]));
                 }
-                if ((ds.Tables["SELECT_PRODUCT_TYPE_ALL"] != null)) {
-                    base.Tables.Add(new SELECT_PRODUCT_TYPE_ALLDataTable(ds.Tables["SELECT_PRODUCT_TYPE_ALL"]));
+                if ((ds.Tables["NPD_SELECT_PRODUCT_TYPE"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_PRODUCT_TYPEDataTable(ds.Tables["NPD_SELECT_PRODUCT_TYPE"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -236,10 +236,10 @@ namespace NewProduct.Entity {
                     this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.InitVars();
                 }
             }
-            this.tableSELECT_PRODUCT_TYPE_ALL = ((SELECT_PRODUCT_TYPE_ALLDataTable)(base.Tables["SELECT_PRODUCT_TYPE_ALL"]));
+            this.tableNPD_SELECT_PRODUCT_TYPE = ((NPD_SELECT_PRODUCT_TYPEDataTable)(base.Tables["NPD_SELECT_PRODUCT_TYPE"]));
             if ((initTable == true)) {
-                if ((this.tableSELECT_PRODUCT_TYPE_ALL != null)) {
-                    this.tableSELECT_PRODUCT_TYPE_ALL.InitVars();
+                if ((this.tableNPD_SELECT_PRODUCT_TYPE != null)) {
+                    this.tableNPD_SELECT_PRODUCT_TYPE.InitVars();
                 }
             }
         }
@@ -256,8 +256,8 @@ namespace NewProduct.Entity {
             base.Tables.Add(this.tableSELECT_PRODUCT_ALL_STATUS);
             this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID = new NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable();
             base.Tables.Add(this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID);
-            this.tableSELECT_PRODUCT_TYPE_ALL = new SELECT_PRODUCT_TYPE_ALLDataTable();
-            base.Tables.Add(this.tableSELECT_PRODUCT_TYPE_ALL);
+            this.tableNPD_SELECT_PRODUCT_TYPE = new NPD_SELECT_PRODUCT_TYPEDataTable();
+            base.Tables.Add(this.tableNPD_SELECT_PRODUCT_TYPE);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -274,7 +274,7 @@ namespace NewProduct.Entity {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeSELECT_PRODUCT_TYPE_ALL() {
+        private bool ShouldSerializeNPD_SELECT_PRODUCT_TYPE() {
             return false;
         }
         
@@ -340,7 +340,7 @@ namespace NewProduct.Entity {
         public delegate void NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRowChangeEventHandler(object sender, NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void SELECT_PRODUCT_TYPE_ALLRowChangeEventHandler(object sender, SELECT_PRODUCT_TYPE_ALLRowChangeEvent e);
+        public delegate void NPD_SELECT_PRODUCT_TYPERowChangeEventHandler(object sender, NPD_SELECT_PRODUCT_TYPERowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1101,7 +1101,7 @@ namespace NewProduct.Entity {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable : global::System.Data.TypedTableBase<NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow> {
             
-            private global::System.Data.DataColumn columnITEM_NO_DESC;
+            private global::System.Data.DataColumn columnITEM_NO;
             
             private global::System.Data.DataColumn columnITEM_NAME;
             
@@ -1142,9 +1142,9 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ITEM_NO_DESCColumn {
+            public global::System.Data.DataColumn ITEM_NOColumn {
                 get {
-                    return this.columnITEM_NO_DESC;
+                    return this.columnITEM_NO;
                 }
             }
             
@@ -1201,10 +1201,10 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow AddNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow(string ITEM_NO_DESC, string ITEM_NAME, string CODE) {
+            public NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow AddNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow(string ITEM_NO, string ITEM_NAME, string CODE) {
                 NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow rowNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow = ((NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ITEM_NO_DESC,
+                        ITEM_NO,
                         ITEM_NAME,
                         CODE};
                 rowNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow.ItemArray = columnValuesArray;
@@ -1229,7 +1229,7 @@ namespace NewProduct.Entity {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnITEM_NO_DESC = base.Columns["ITEM_NO_DESC"];
+                this.columnITEM_NO = base.Columns["ITEM_NO"];
                 this.columnITEM_NAME = base.Columns["ITEM_NAME"];
                 this.columnCODE = base.Columns["CODE"];
             }
@@ -1237,14 +1237,15 @@ namespace NewProduct.Entity {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnITEM_NO_DESC = new global::System.Data.DataColumn("ITEM_NO_DESC", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnITEM_NO_DESC);
+                this.columnITEM_NO = new global::System.Data.DataColumn("ITEM_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnITEM_NO);
                 this.columnITEM_NAME = new global::System.Data.DataColumn("ITEM_NAME", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnITEM_NAME);
                 this.columnCODE = new global::System.Data.DataColumn("CODE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCODE);
-                this.columnITEM_NO_DESC.MaxLength = 50;
-                this.columnITEM_NAME.MaxLength = 50;
+                this.columnITEM_NO.MaxLength = 10;
+                this.columnITEM_NAME.ReadOnly = true;
+                this.columnITEM_NAME.MaxLength = 103;
                 this.columnCODE.MaxLength = 3;
             }
             
@@ -1377,7 +1378,7 @@ namespace NewProduct.Entity {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SELECT_PRODUCT_TYPE_ALLDataTable : global::System.Data.TypedTableBase<SELECT_PRODUCT_TYPE_ALLRow> {
+        public partial class NPD_SELECT_PRODUCT_TYPEDataTable : global::System.Data.TypedTableBase<NPD_SELECT_PRODUCT_TYPERow> {
             
             private global::System.Data.DataColumn columnTYPE_ID;
             
@@ -1387,8 +1388,8 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SELECT_PRODUCT_TYPE_ALLDataTable() {
-                this.TableName = "SELECT_PRODUCT_TYPE_ALL";
+            public NPD_SELECT_PRODUCT_TYPEDataTable() {
+                this.TableName = "NPD_SELECT_PRODUCT_TYPE";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1396,7 +1397,7 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal SELECT_PRODUCT_TYPE_ALLDataTable(global::System.Data.DataTable table) {
+            internal NPD_SELECT_PRODUCT_TYPEDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1413,7 +1414,7 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected SELECT_PRODUCT_TYPE_ALLDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected NPD_SELECT_PRODUCT_TYPEDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1453,47 +1454,47 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SELECT_PRODUCT_TYPE_ALLRow this[int index] {
+            public NPD_SELECT_PRODUCT_TYPERow this[int index] {
                 get {
-                    return ((SELECT_PRODUCT_TYPE_ALLRow)(this.Rows[index]));
+                    return ((NPD_SELECT_PRODUCT_TYPERow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SELECT_PRODUCT_TYPE_ALLRowChangeEventHandler SELECT_PRODUCT_TYPE_ALLRowChanging;
+            public event NPD_SELECT_PRODUCT_TYPERowChangeEventHandler NPD_SELECT_PRODUCT_TYPERowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SELECT_PRODUCT_TYPE_ALLRowChangeEventHandler SELECT_PRODUCT_TYPE_ALLRowChanged;
+            public event NPD_SELECT_PRODUCT_TYPERowChangeEventHandler NPD_SELECT_PRODUCT_TYPERowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SELECT_PRODUCT_TYPE_ALLRowChangeEventHandler SELECT_PRODUCT_TYPE_ALLRowDeleting;
+            public event NPD_SELECT_PRODUCT_TYPERowChangeEventHandler NPD_SELECT_PRODUCT_TYPERowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SELECT_PRODUCT_TYPE_ALLRowChangeEventHandler SELECT_PRODUCT_TYPE_ALLRowDeleted;
+            public event NPD_SELECT_PRODUCT_TYPERowChangeEventHandler NPD_SELECT_PRODUCT_TYPERowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddSELECT_PRODUCT_TYPE_ALLRow(SELECT_PRODUCT_TYPE_ALLRow row) {
+            public void AddNPD_SELECT_PRODUCT_TYPERow(NPD_SELECT_PRODUCT_TYPERow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SELECT_PRODUCT_TYPE_ALLRow AddSELECT_PRODUCT_TYPE_ALLRow(int TYPE_ID, string TYPE_DESC_TH, string TYPE_DESC_ENG) {
-                SELECT_PRODUCT_TYPE_ALLRow rowSELECT_PRODUCT_TYPE_ALLRow = ((SELECT_PRODUCT_TYPE_ALLRow)(this.NewRow()));
+            public NPD_SELECT_PRODUCT_TYPERow AddNPD_SELECT_PRODUCT_TYPERow(int TYPE_ID, string TYPE_DESC_TH, string TYPE_DESC_ENG) {
+                NPD_SELECT_PRODUCT_TYPERow rowNPD_SELECT_PRODUCT_TYPERow = ((NPD_SELECT_PRODUCT_TYPERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         TYPE_ID,
                         TYPE_DESC_TH,
                         TYPE_DESC_ENG};
-                rowSELECT_PRODUCT_TYPE_ALLRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSELECT_PRODUCT_TYPE_ALLRow);
-                return rowSELECT_PRODUCT_TYPE_ALLRow;
+                rowNPD_SELECT_PRODUCT_TYPERow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowNPD_SELECT_PRODUCT_TYPERow);
+                return rowNPD_SELECT_PRODUCT_TYPERow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                SELECT_PRODUCT_TYPE_ALLDataTable cln = ((SELECT_PRODUCT_TYPE_ALLDataTable)(base.Clone()));
+                NPD_SELECT_PRODUCT_TYPEDataTable cln = ((NPD_SELECT_PRODUCT_TYPEDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1501,7 +1502,7 @@ namespace NewProduct.Entity {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new SELECT_PRODUCT_TYPE_ALLDataTable();
+                return new NPD_SELECT_PRODUCT_TYPEDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1528,28 +1529,28 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SELECT_PRODUCT_TYPE_ALLRow NewSELECT_PRODUCT_TYPE_ALLRow() {
-                return ((SELECT_PRODUCT_TYPE_ALLRow)(this.NewRow()));
+            public NPD_SELECT_PRODUCT_TYPERow NewNPD_SELECT_PRODUCT_TYPERow() {
+                return ((NPD_SELECT_PRODUCT_TYPERow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SELECT_PRODUCT_TYPE_ALLRow(builder);
+                return new NPD_SELECT_PRODUCT_TYPERow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(SELECT_PRODUCT_TYPE_ALLRow);
+                return typeof(NPD_SELECT_PRODUCT_TYPERow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.SELECT_PRODUCT_TYPE_ALLRowChanged != null)) {
-                    this.SELECT_PRODUCT_TYPE_ALLRowChanged(this, new SELECT_PRODUCT_TYPE_ALLRowChangeEvent(((SELECT_PRODUCT_TYPE_ALLRow)(e.Row)), e.Action));
+                if ((this.NPD_SELECT_PRODUCT_TYPERowChanged != null)) {
+                    this.NPD_SELECT_PRODUCT_TYPERowChanged(this, new NPD_SELECT_PRODUCT_TYPERowChangeEvent(((NPD_SELECT_PRODUCT_TYPERow)(e.Row)), e.Action));
                 }
             }
             
@@ -1557,8 +1558,8 @@ namespace NewProduct.Entity {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.SELECT_PRODUCT_TYPE_ALLRowChanging != null)) {
-                    this.SELECT_PRODUCT_TYPE_ALLRowChanging(this, new SELECT_PRODUCT_TYPE_ALLRowChangeEvent(((SELECT_PRODUCT_TYPE_ALLRow)(e.Row)), e.Action));
+                if ((this.NPD_SELECT_PRODUCT_TYPERowChanging != null)) {
+                    this.NPD_SELECT_PRODUCT_TYPERowChanging(this, new NPD_SELECT_PRODUCT_TYPERowChangeEvent(((NPD_SELECT_PRODUCT_TYPERow)(e.Row)), e.Action));
                 }
             }
             
@@ -1566,8 +1567,8 @@ namespace NewProduct.Entity {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.SELECT_PRODUCT_TYPE_ALLRowDeleted != null)) {
-                    this.SELECT_PRODUCT_TYPE_ALLRowDeleted(this, new SELECT_PRODUCT_TYPE_ALLRowChangeEvent(((SELECT_PRODUCT_TYPE_ALLRow)(e.Row)), e.Action));
+                if ((this.NPD_SELECT_PRODUCT_TYPERowDeleted != null)) {
+                    this.NPD_SELECT_PRODUCT_TYPERowDeleted(this, new NPD_SELECT_PRODUCT_TYPERowChangeEvent(((NPD_SELECT_PRODUCT_TYPERow)(e.Row)), e.Action));
                 }
             }
             
@@ -1575,14 +1576,14 @@ namespace NewProduct.Entity {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.SELECT_PRODUCT_TYPE_ALLRowDeleting != null)) {
-                    this.SELECT_PRODUCT_TYPE_ALLRowDeleting(this, new SELECT_PRODUCT_TYPE_ALLRowChangeEvent(((SELECT_PRODUCT_TYPE_ALLRow)(e.Row)), e.Action));
+                if ((this.NPD_SELECT_PRODUCT_TYPERowDeleting != null)) {
+                    this.NPD_SELECT_PRODUCT_TYPERowDeleting(this, new NPD_SELECT_PRODUCT_TYPERowChangeEvent(((NPD_SELECT_PRODUCT_TYPERow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveSELECT_PRODUCT_TYPE_ALLRow(SELECT_PRODUCT_TYPE_ALLRow row) {
+            public void RemoveNPD_SELECT_PRODUCT_TYPERow(NPD_SELECT_PRODUCT_TYPERow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1609,7 +1610,7 @@ namespace NewProduct.Entity {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SELECT_PRODUCT_TYPE_ALLDataTable";
+                attribute2.FixedValue = "NPD_SELECT_PRODUCT_TYPEDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2603,18 +2604,18 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ITEM_NO_DESC {
+            public string ITEM_NO {
                 get {
                     try {
-                        return ((string)(this[this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NO_DESCColumn]));
+                        return ((string)(this[this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ITEM_NO_DESC\' in table \'NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITE" +
-                                "M_NAME_CODE_BY_TYPE_ID\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ITEM_NO\' in table \'NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAM" +
+                                "E_CODE_BY_TYPE_ID\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NO_DESCColumn] = value;
+                    this[this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NOColumn] = value;
                 }
             }
             
@@ -2654,14 +2655,14 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsITEM_NO_DESCNull() {
-                return this.IsNull(this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NO_DESCColumn);
+            public bool IsITEM_NONull() {
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetITEM_NO_DESCNull() {
-                this[this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NO_DESCColumn] = global::System.Convert.DBNull;
+            public void SetITEM_NONull() {
+                this[this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.ITEM_NOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2692,25 +2693,25 @@ namespace NewProduct.Entity {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SELECT_PRODUCT_TYPE_ALLRow : global::System.Data.DataRow {
+        public partial class NPD_SELECT_PRODUCT_TYPERow : global::System.Data.DataRow {
             
-            private SELECT_PRODUCT_TYPE_ALLDataTable tableSELECT_PRODUCT_TYPE_ALL;
+            private NPD_SELECT_PRODUCT_TYPEDataTable tableNPD_SELECT_PRODUCT_TYPE;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal SELECT_PRODUCT_TYPE_ALLRow(global::System.Data.DataRowBuilder rb) : 
+            internal NPD_SELECT_PRODUCT_TYPERow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSELECT_PRODUCT_TYPE_ALL = ((SELECT_PRODUCT_TYPE_ALLDataTable)(this.Table));
+                this.tableNPD_SELECT_PRODUCT_TYPE = ((NPD_SELECT_PRODUCT_TYPEDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int TYPE_ID {
                 get {
-                    return ((int)(this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_IDColumn]));
+                    return ((int)(this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_IDColumn]));
                 }
                 set {
-                    this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_IDColumn] = value;
+                    this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_IDColumn] = value;
                 }
             }
             
@@ -2719,15 +2720,15 @@ namespace NewProduct.Entity {
             public string TYPE_DESC_TH {
                 get {
                     try {
-                        return ((string)(this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_THColumn]));
+                        return ((string)(this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_THColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TYPE_DESC_TH\' in table \'SELECT_PRODUCT_TYPE_ALL\' is DBNull." +
+                        throw new global::System.Data.StrongTypingException("The value for column \'TYPE_DESC_TH\' in table \'NPD_SELECT_PRODUCT_TYPE\' is DBNull." +
                                 "", e);
                     }
                 }
                 set {
-                    this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_THColumn] = value;
+                    this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_THColumn] = value;
                 }
             }
             
@@ -2736,40 +2737,40 @@ namespace NewProduct.Entity {
             public string TYPE_DESC_ENG {
                 get {
                     try {
-                        return ((string)(this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_ENGColumn]));
+                        return ((string)(this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_ENGColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TYPE_DESC_ENG\' in table \'SELECT_PRODUCT_TYPE_ALL\' is DBNull" +
+                        throw new global::System.Data.StrongTypingException("The value for column \'TYPE_DESC_ENG\' in table \'NPD_SELECT_PRODUCT_TYPE\' is DBNull" +
                                 ".", e);
                     }
                 }
                 set {
-                    this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_ENGColumn] = value;
+                    this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_ENGColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTYPE_DESC_THNull() {
-                return this.IsNull(this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_THColumn);
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_THColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetTYPE_DESC_THNull() {
-                this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_THColumn] = global::System.Convert.DBNull;
+                this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_THColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTYPE_DESC_ENGNull() {
-                return this.IsNull(this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_ENGColumn);
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_ENGColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetTYPE_DESC_ENGNull() {
-                this[this.tableSELECT_PRODUCT_TYPE_ALL.TYPE_DESC_ENGColumn] = global::System.Convert.DBNull;
+                this[this.tableNPD_SELECT_PRODUCT_TYPE.TYPE_DESC_ENGColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2845,22 +2846,22 @@ namespace NewProduct.Entity {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class SELECT_PRODUCT_TYPE_ALLRowChangeEvent : global::System.EventArgs {
+        public class NPD_SELECT_PRODUCT_TYPERowChangeEvent : global::System.EventArgs {
             
-            private SELECT_PRODUCT_TYPE_ALLRow eventRow;
+            private NPD_SELECT_PRODUCT_TYPERow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SELECT_PRODUCT_TYPE_ALLRowChangeEvent(SELECT_PRODUCT_TYPE_ALLRow row, global::System.Data.DataRowAction action) {
+            public NPD_SELECT_PRODUCT_TYPERowChangeEvent(NPD_SELECT_PRODUCT_TYPERow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SELECT_PRODUCT_TYPE_ALLRow Row {
+            public NPD_SELECT_PRODUCT_TYPERow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3200,7 +3201,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID";
-            tableMapping.ColumnMappings.Add("ITEM_NO_DESC", "ITEM_NO_DESC");
+            tableMapping.ColumnMappings.Add("ITEM_NO", "ITEM_NO");
             tableMapping.ColumnMappings.Add("ITEM_NAME", "ITEM_NAME");
             tableMapping.ColumnMappings.Add("CODE", "CODE");
             this._adapter.TableMappings.Add(tableMapping);
@@ -3271,7 +3272,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SELECT_PRODUCT_TYPE_ALLTableAdapter : global::System.ComponentModel.Component {
+    public partial class NPD_SELECT_PRODUCT_TYPETableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -3285,7 +3286,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public SELECT_PRODUCT_TYPE_ALLTableAdapter() {
+        public NPD_SELECT_PRODUCT_TYPETableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -3382,7 +3383,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "SELECT_PRODUCT_TYPE_ALL";
+            tableMapping.DataSetTable = "NPD_SELECT_PRODUCT_TYPE";
             tableMapping.ColumnMappings.Add("TYPE_ID", "TYPE_ID");
             tableMapping.ColumnMappings.Add("TYPE_DESC_TH", "TYPE_DESC_TH");
             tableMapping.ColumnMappings.Add("TYPE_DESC_ENG", "TYPE_DESC_ENG");
@@ -3402,7 +3403,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.SELECT_PRODUCT_TYPE_ALL";
+            this._commandCollection[0].CommandText = "dbo.NPD_SELECT_PRODUCT_TYPE";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -3411,7 +3412,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(CommonDataSet.SELECT_PRODUCT_TYPE_ALLDataTable dataTable) {
+        public virtual int Fill(CommonDataSet.NPD_SELECT_PRODUCT_TYPEDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3424,9 +3425,9 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CommonDataSet.SELECT_PRODUCT_TYPE_ALLDataTable GetData() {
+        public virtual CommonDataSet.NPD_SELECT_PRODUCT_TYPEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            CommonDataSet.SELECT_PRODUCT_TYPE_ALLDataTable dataTable = new CommonDataSet.SELECT_PRODUCT_TYPE_ALLDataTable();
+            CommonDataSet.NPD_SELECT_PRODUCT_TYPEDataTable dataTable = new CommonDataSet.NPD_SELECT_PRODUCT_TYPEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

@@ -9,5 +9,7 @@ namespace NewProduct
     class variablePublic
     {
         public static int type_id;
+        public static string item_no;
+        public static string productPrefix;
     }
 }

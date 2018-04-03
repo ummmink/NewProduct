@@ -64,7 +64,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.dtpSampleProductDate = new System.Windows.Forms.DateTimePicker();
             this.label27 = new System.Windows.Forms.Label();
-            this.cbChannel = new System.Windows.Forms.ComboBox();
+            this.cmbChannel = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -279,7 +279,7 @@
             this.pnDetails.Location = new System.Drawing.Point(46, 115);
             this.pnDetails.Name = "pnDetails";
             this.pnDetails.Size = new System.Drawing.Size(1207, 544);
-            this.pnDetails.TabIndex = 58;
+            this.pnDetails.TabIndex = 0;
             this.pnDetails.Tag = "PanelHide";
             this.pnDetails.Visible = false;
             // 
@@ -293,7 +293,7 @@
             this.btnCancel.Location = new System.Drawing.Point(1106, 495);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(91, 40);
-            this.btnCancel.TabIndex = 54;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Tag = "";
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -309,7 +309,7 @@
             this.btnSave.Location = new System.Drawing.Point(1010, 495);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(91, 40);
-            this.btnSave.TabIndex = 53;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Tag = "";
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -345,12 +345,12 @@
             this.panel3.Controls.Add(this.label28);
             this.panel3.Controls.Add(this.dtpSampleProductDate);
             this.panel3.Controls.Add(this.label27);
-            this.panel3.Controls.Add(this.cbChannel);
+            this.panel3.Controls.Add(this.cmbChannel);
             this.panel3.Controls.Add(this.label26);
             this.panel3.Location = new System.Drawing.Point(674, 291);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(523, 197);
-            this.panel3.TabIndex = 17;
+            this.panel3.TabIndex = 2;
             // 
             // textBox11
             // 
@@ -581,14 +581,16 @@
             this.label27.TabIndex = 5;
             this.label27.Text = "สินค้าตัวอย่าง";
             // 
-            // cbChannel
+            // cmbChannel
             // 
-            this.cbChannel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbChannel.FormattingEnabled = true;
-            this.cbChannel.Location = new System.Drawing.Point(130, 8);
-            this.cbChannel.Name = "cbChannel";
-            this.cbChannel.Size = new System.Drawing.Size(108, 22);
-            this.cbChannel.TabIndex = 0;
+            this.cmbChannel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbChannel.FormattingEnabled = true;
+            this.cmbChannel.Location = new System.Drawing.Point(130, 8);
+            this.cmbChannel.Name = "cmbChannel";
+            this.cmbChannel.Size = new System.Drawing.Size(108, 22);
+            this.cmbChannel.TabIndex = 0;
+            this.cmbChannel.DropDown += new System.EventHandler(this.cmbChannel_DropDown);
+            this.cmbChannel.SelectedIndexChanged += new System.EventHandler(this.cmbChannel_SelectedIndexChanged);
             // 
             // label26
             // 
@@ -642,7 +644,7 @@
             this.textBox19.Location = new System.Drawing.Point(142, 214);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(371, 22);
-            this.textBox19.TabIndex = 27;
+            this.textBox19.TabIndex = 6;
             // 
             // label43
             // 
@@ -672,7 +674,7 @@
             this.textBox17.Location = new System.Drawing.Point(384, 189);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(129, 22);
-            this.textBox17.TabIndex = 24;
+            this.textBox17.TabIndex = 5;
             // 
             // label42
             // 
@@ -691,7 +693,7 @@
             this.textBox18.Location = new System.Drawing.Point(142, 189);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(170, 22);
-            this.textBox18.TabIndex = 22;
+            this.textBox18.TabIndex = 4;
             // 
             // label39
             // 
@@ -710,7 +712,7 @@
             this.textBox15.Location = new System.Drawing.Point(384, 164);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(129, 22);
-            this.textBox15.TabIndex = 20;
+            this.textBox15.TabIndex = 3;
             // 
             // label40
             // 
@@ -729,7 +731,7 @@
             this.textBox16.Location = new System.Drawing.Point(142, 164);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(170, 22);
-            this.textBox16.TabIndex = 18;
+            this.textBox16.TabIndex = 2;
             // 
             // label38
             // 
@@ -748,7 +750,7 @@
             this.textBox14.Location = new System.Drawing.Point(384, 139);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(129, 22);
-            this.textBox14.TabIndex = 16;
+            this.textBox14.TabIndex = 1;
             // 
             // label37
             // 
@@ -767,7 +769,7 @@
             this.textBox13.Location = new System.Drawing.Point(142, 139);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(170, 22);
-            this.textBox13.TabIndex = 13;
+            this.textBox13.TabIndex = 0;
             // 
             // label36
             // 
@@ -834,7 +836,8 @@
             this.panel2.Location = new System.Drawing.Point(8, 25);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(660, 463);
-            this.panel2.TabIndex = 13;
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // textBox12
             // 
@@ -1070,7 +1073,7 @@
             this.label22.Location = new System.Drawing.Point(261, 153);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(15, 14);
-            this.label22.TabIndex = 18;
+            this.label22.TabIndex = 11;
             this.label22.Text = "X";
             // 
             // tbPackAmount
@@ -1507,7 +1510,7 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.ComboBox cbChannel;
+        private System.Windows.Forms.ComboBox cmbChannel;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cbUnitSample;
         private System.Windows.Forms.TextBox tbQtySample;

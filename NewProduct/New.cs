@@ -195,13 +195,11 @@ namespace NewProduct
 
         private void cmbProductItemNo_DropDown(object sender, EventArgs e)
         {
-
             #region Binding Product Item_No
             CommonDataSet dsProductItemNo = commonBiz.npd_select_product_item_no_desc_item_name_code_by_type_id(variablePublic.type_id);
             cmbProductItemNo.DisplayMember = "ITEM_NAME".Substring("ITEM_NAME".IndexOf(":") + 1); ;
             cmbProductItemNo.ValueMember = "ITEM_NO";
             cmbProductItemNo.DataSource = dsProductItemNo.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
-
             #endregion
         }
 
@@ -323,7 +321,7 @@ namespace NewProduct
 
         private void cmbProductItemNo_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            variablePublic.productPrefix = cmbProductItemNo.SelectedValue.ToString().Substring(cmbProductItemNo.SelectedValue.ToString().LastIndexOf(':')+1);
+            variablePublic.productPrefix = cmbProductItemNo.SelectedValue.ToString().Substring(cmbProductItemNo.SelectedValue.ToString().LastIndexOf(':') + 1);
             variablePublic.item_no = cmbProductItemNo.SelectedValue.ToString().Substring(0, cmbProductItemNo.SelectedValue.ToString().IndexOf(':'));
             //MessageBox.Show(variablePublic.item_no);
         }
@@ -333,6 +331,27 @@ namespace NewProduct
             //e.Value = e.Value.ToString().Substring(0, e.Value.ToString().Length - 4);
             //e.Value=e.Value.ToString().Substring(e.Value.ToString().LastIndexOf(':') + 1);
             //e.Value = e.Value.ToString().Substring(0, e.Value.ToString().IndexOf(':'));
+        }
+
+        private void cmbChannel_DropDown(object sender, EventArgs e)
+        {
+            #region Binding Channel
+            CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active();
+            cmbChannel.DisplayMember = "SELL_NAME";
+            cmbChannel.ValueMember = "SELL_ID";
+            cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
+            #endregion
+        }
+
+        private void cmbChannel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString().Substring(0, cmbChannel.SelectedValue.ToString().IndexOf(':')));
+            variablePublic.channel = cmbChannel.SelectedValue.ToString().Substring(cmbChannel.SelectedValue.ToString().LastIndexOf(':') + 1);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

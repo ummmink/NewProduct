@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDetails = new System.Windows.Forms.Button();
             this.btnShortName = new System.Windows.Forms.Button();
             this.btnBarcode = new System.Windows.Forms.Button();
@@ -87,17 +95,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.lbProductFree1 = new System.Windows.Forms.Label();
-            this.lbProductNormal1 = new System.Windows.Forms.Label();
-            this.lbProductFree3 = new System.Windows.Forms.Label();
-            this.lbProductFree2 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.lbProductNormal7 = new System.Windows.Forms.Label();
-            this.lbProductNormal6 = new System.Windows.Forms.Label();
-            this.lbProductNormal5 = new System.Windows.Forms.Label();
-            this.lbProductNormal4 = new System.Windows.Forms.Label();
-            this.lbProductNormal3 = new System.Windows.Forms.Label();
-            this.lbProductNormal2 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnMixProducts = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
@@ -137,6 +135,22 @@
             this.pnMatCodeDK = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.grdList = new System.Windows.Forms.DataGridView();
+            this.Product_Code = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Product_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Packing = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bottle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unit_Type = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnDetails.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -148,6 +162,8 @@
             this.pnProductID.SuspendLayout();
             this.pnDimention.SuspendLayout();
             this.pnMatCodeDK.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -796,19 +812,11 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.grdList);
             this.panel2.Controls.Add(this.textBox12);
             this.panel2.Controls.Add(this.label35);
-            this.panel2.Controls.Add(this.lbProductFree1);
-            this.panel2.Controls.Add(this.lbProductNormal1);
-            this.panel2.Controls.Add(this.lbProductFree3);
-            this.panel2.Controls.Add(this.lbProductFree2);
             this.panel2.Controls.Add(this.label30);
-            this.panel2.Controls.Add(this.lbProductNormal7);
-            this.panel2.Controls.Add(this.lbProductNormal6);
-            this.panel2.Controls.Add(this.lbProductNormal5);
-            this.panel2.Controls.Add(this.lbProductNormal4);
-            this.panel2.Controls.Add(this.lbProductNormal3);
-            this.panel2.Controls.Add(this.lbProductNormal2);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.btnMixProducts);
             this.panel2.Controls.Add(this.label15);
@@ -857,109 +865,16 @@
             this.label35.TabIndex = 46;
             this.label35.Text = "เลขที่";
             // 
-            // lbProductFree1
-            // 
-            this.lbProductFree1.AutoSize = true;
-            this.lbProductFree1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductFree1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbProductFree1.Location = new System.Drawing.Point(90, 377);
-            this.lbProductFree1.Name = "lbProductFree1";
-            this.lbProductFree1.Size = new System.Drawing.Size(0, 14);
-            this.lbProductFree1.TabIndex = 45;
-            // 
-            // lbProductNormal1
-            // 
-            this.lbProductNormal1.AutoSize = true;
-            this.lbProductNormal1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal1.Location = new System.Drawing.Point(90, 181);
-            this.lbProductNormal1.Name = "lbProductNormal1";
-            this.lbProductNormal1.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal1.TabIndex = 44;
-            // 
-            // lbProductFree3
-            // 
-            this.lbProductFree3.AutoSize = true;
-            this.lbProductFree3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductFree3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbProductFree3.Location = new System.Drawing.Point(90, 433);
-            this.lbProductFree3.Name = "lbProductFree3";
-            this.lbProductFree3.Size = new System.Drawing.Size(0, 14);
-            this.lbProductFree3.TabIndex = 43;
-            // 
-            // lbProductFree2
-            // 
-            this.lbProductFree2.AutoSize = true;
-            this.lbProductFree2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductFree2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbProductFree2.Location = new System.Drawing.Point(90, 405);
-            this.lbProductFree2.Name = "lbProductFree2";
-            this.lbProductFree2.Size = new System.Drawing.Size(0, 14);
-            this.lbProductFree2.TabIndex = 41;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label30.Location = new System.Drawing.Point(11, 377);
+            this.label30.Location = new System.Drawing.Point(11, 367);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(61, 14);
             this.label30.TabIndex = 39;
             this.label30.Text = "สินค้าแถม";
-            // 
-            // lbProductNormal7
-            // 
-            this.lbProductNormal7.AutoSize = true;
-            this.lbProductNormal7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal7.Location = new System.Drawing.Point(90, 349);
-            this.lbProductNormal7.Name = "lbProductNormal7";
-            this.lbProductNormal7.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal7.TabIndex = 37;
-            // 
-            // lbProductNormal6
-            // 
-            this.lbProductNormal6.AutoSize = true;
-            this.lbProductNormal6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal6.Location = new System.Drawing.Point(90, 321);
-            this.lbProductNormal6.Name = "lbProductNormal6";
-            this.lbProductNormal6.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal6.TabIndex = 35;
-            // 
-            // lbProductNormal5
-            // 
-            this.lbProductNormal5.AutoSize = true;
-            this.lbProductNormal5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal5.Location = new System.Drawing.Point(90, 293);
-            this.lbProductNormal5.Name = "lbProductNormal5";
-            this.lbProductNormal5.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal5.TabIndex = 33;
-            // 
-            // lbProductNormal4
-            // 
-            this.lbProductNormal4.AutoSize = true;
-            this.lbProductNormal4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal4.Location = new System.Drawing.Point(90, 265);
-            this.lbProductNormal4.Name = "lbProductNormal4";
-            this.lbProductNormal4.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal4.TabIndex = 31;
-            // 
-            // lbProductNormal3
-            // 
-            this.lbProductNormal3.AutoSize = true;
-            this.lbProductNormal3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal3.Location = new System.Drawing.Point(90, 237);
-            this.lbProductNormal3.Name = "lbProductNormal3";
-            this.lbProductNormal3.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal3.TabIndex = 29;
-            // 
-            // lbProductNormal2
-            // 
-            this.lbProductNormal2.AutoSize = true;
-            this.lbProductNormal2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbProductNormal2.Location = new System.Drawing.Point(90, 209);
-            this.lbProductNormal2.Name = "lbProductNormal2";
-            this.lbProductNormal2.Size = new System.Drawing.Size(0, 14);
-            this.lbProductNormal2.TabIndex = 27;
             // 
             // label17
             // 
@@ -1392,6 +1307,196 @@
             this.label14.TabIndex = 1;
             this.label14.Text = "Matcode";
             // 
+            // grdList
+            // 
+            this.grdList.AllowUserToOrderColumns = true;
+            this.grdList.AllowUserToResizeColumns = false;
+            this.grdList.AllowUserToResizeRows = false;
+            this.grdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Product_Code,
+            this.Product_Name,
+            this.Size,
+            this.Quantity,
+            this.Packing,
+            this.Bottle,
+            this.Unit_Type});
+            this.grdList.Location = new System.Drawing.Point(80, 177);
+            this.grdList.Name = "grdList";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdList.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.grdList.RowHeadersWidth = 30;
+            this.grdList.Size = new System.Drawing.Size(559, 184);
+            this.grdList.TabIndex = 51;
+            // 
+            // Product_Code
+            // 
+            this.Product_Code.DataPropertyName = "PRODUCT_ID";
+            this.Product_Code.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.Product_Code.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Product_Code.HeaderText = "รหัสสินค้า";
+            this.Product_Code.Name = "Product_Code";
+            this.Product_Code.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Product_Code.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Product_Name
+            // 
+            this.Product_Name.DataPropertyName = "PRODUCT_NAME_TH";
+            this.Product_Name.HeaderText = "รายการสินค้า";
+            this.Product_Name.Name = "Product_Name";
+            this.Product_Name.ReadOnly = true;
+            this.Product_Name.Width = 250;
+            // 
+            // Size
+            // 
+            this.Size.DataPropertyName = "SIZE";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Size.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Size.HeaderText = "ขนาด";
+            this.Size.Name = "Size";
+            this.Size.ReadOnly = true;
+            this.Size.Width = 45;
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "QUANTITY";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.NullValue = "0";
+            this.Quantity.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Quantity.HeaderText = "จำนวน";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 50;
+            // 
+            // Packing
+            // 
+            this.Packing.DataPropertyName = "PACKING";
+            this.Packing.HeaderText = "Column1";
+            this.Packing.Name = "Packing";
+            this.Packing.Visible = false;
+            // 
+            // Bottle
+            // 
+            this.Bottle.DataPropertyName = "BOTTLE";
+            this.Bottle.HeaderText = "Column1";
+            this.Bottle.Name = "Bottle";
+            this.Bottle.Visible = false;
+            // 
+            // Unit_Type
+            // 
+            this.Unit_Type.DataPropertyName = "UNIT";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Unit_Type.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Unit_Type.HeaderText = "หน่วย";
+            this.Unit_Type.Items.AddRange(new object[] {
+            "ลัง",
+            "แพ็ค",
+            "กระเช้า",
+            "โหล",
+            "ขวด"});
+            this.Unit_Type.Name = "Unit_Type";
+            this.Unit_Type.Width = 65;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewComboBoxColumn1,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewComboBoxColumn2});
+            this.dataGridView1.Location = new System.Drawing.Point(78, 367);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowHeadersWidth = 30;
+            this.dataGridView1.Size = new System.Drawing.Size(559, 91);
+            this.dataGridView1.TabIndex = 52;
+            // 
+            // dataGridViewComboBoxColumn1
+            // 
+            this.dataGridViewComboBoxColumn1.DataPropertyName = "PRODUCT_ID";
+            this.dataGridViewComboBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.dataGridViewComboBoxColumn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataGridViewComboBoxColumn1.HeaderText = "รหัสสินค้า";
+            this.dataGridViewComboBoxColumn1.Name = "dataGridViewComboBoxColumn1";
+            this.dataGridViewComboBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "PRODUCT_NAME_TH";
+            this.dataGridViewTextBoxColumn1.HeaderText = "รายการสินค้า";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "SIZE";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewTextBoxColumn2.HeaderText = "ขนาด";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 45;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "QUANTITY";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.NullValue = "0";
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn3.HeaderText = "จำนวน";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PACKING";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Column1";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "BOTTLE";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Column1";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataGridViewComboBoxColumn2
+            // 
+            this.dataGridViewComboBoxColumn2.DataPropertyName = "UNIT";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewComboBoxColumn2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewComboBoxColumn2.HeaderText = "หน่วย";
+            this.dataGridViewComboBoxColumn2.Items.AddRange(new object[] {
+            "ลัง",
+            "แพ็ค",
+            "กระเช้า",
+            "โหล",
+            "ขวด"});
+            this.dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
+            this.dataGridViewComboBoxColumn2.Width = 65;
+            // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1438,6 +1543,8 @@
             this.pnDimention.PerformLayout();
             this.pnMatCodeDK.ResumeLayout(false);
             this.pnMatCodeDK.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1491,18 +1598,8 @@
         private System.Windows.Forms.TextBox tbInnerAmount;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnMixProducts;
-        private System.Windows.Forms.Label lbProductNormal2;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label lbProductFree3;
-        private System.Windows.Forms.Label lbProductFree2;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label lbProductNormal7;
-        private System.Windows.Forms.Label lbProductNormal6;
-        private System.Windows.Forms.Label lbProductNormal5;
-        private System.Windows.Forms.Label lbProductNormal4;
-        private System.Windows.Forms.Label lbProductNormal3;
-        private System.Windows.Forms.Label lbProductFree1;
-        private System.Windows.Forms.Label lbProductNormal1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1551,5 +1648,21 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.DataGridView grdList;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Product_Code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Product_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Size;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Packing;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Bottle;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Unit_Type;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn2;
     }
 }

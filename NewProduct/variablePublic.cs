@@ -13,5 +13,6 @@ namespace NewProduct
         public static string productPrefix;
         public static string channel;
         public static int sell_id;
+        public static string user_group_id;
     }
 }

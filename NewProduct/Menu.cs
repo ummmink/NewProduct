@@ -111,5 +111,174 @@ namespace NewProduct
             f.Dock = DockStyle.Fill; //set form's dock property to fill
             f.Show();
         }
+
+        private void btnTDO_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "TDO";
+
+            CloseAllChildForm();
+
+            Form f = new Home_Trade();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnTDA_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "TDA";
+
+            CloseAllChildForm();
+
+            Form f = new Home_Trade();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnPSO_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "PSO";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnPSA_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "PSA";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnSAO_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "SAO";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnSAA_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "SAA";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnMKO_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "MKO";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnMKA_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "MKA";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnACO_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "ACO";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnACA_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "ACA";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnPDO_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "PDO";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnPDA_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "PDA";
+
+            CloseAllChildForm();
+
+            Form f = new Home();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnPGM_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "PGM";
+
+            CloseAllChildForm();
+
+            Form f = new Home_Trade();
+            f.MdiParent = this;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
     }
 }

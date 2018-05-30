@@ -60,5 +60,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_product_department_role_by_user_group_id(string user_group_id)
+        {
+            try
+            {
+                return commonData.npd_select_product_department_role_by_user_group_id(user_group_id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

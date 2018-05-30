@@ -8,10 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using NewProduct.Business;
+using NewProduct.Data;
+using NewProduct.Entity;
+
 namespace NewProduct
 {
     public partial class Menu : Form
     {
+        CommonBiz commonBiz = new CommonBiz();
+
         public Menu()
         {
             InitializeComponent();
@@ -114,171 +120,478 @@ namespace NewProduct
 
         private void btnTDO_Click(object sender, EventArgs e)
         {
-            variablePublic.user_group_id = "TDO";
+            variablePublic.user_group_id = "TDU";           
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home_Trade();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }                
+            #endregion
         }
 
         private void btnTDA_Click(object sender, EventArgs e)
         {
             variablePublic.user_group_id = "TDA";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home_Trade();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnPSO_Click(object sender, EventArgs e)
         {
-            variablePublic.user_group_id = "PSO";
+            variablePublic.user_group_id = "PSU";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnPSA_Click(object sender, EventArgs e)
         {
             variablePublic.user_group_id = "PSA";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnSAO_Click(object sender, EventArgs e)
         {
-            variablePublic.user_group_id = "SAO";
+            variablePublic.user_group_id = "SAU";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnSAA_Click(object sender, EventArgs e)
         {
             variablePublic.user_group_id = "SAA";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnMKO_Click(object sender, EventArgs e)
         {
-            variablePublic.user_group_id = "MKO";
+            variablePublic.user_group_id = "MKU";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnMKA_Click(object sender, EventArgs e)
         {
             variablePublic.user_group_id = "MKA";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnACO_Click(object sender, EventArgs e)
         {
-            variablePublic.user_group_id = "ACO";
+            variablePublic.user_group_id = "ACU";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnACA_Click(object sender, EventArgs e)
         {
             variablePublic.user_group_id = "ACA";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnPDO_Click(object sender, EventArgs e)
         {
-            variablePublic.user_group_id = "PDO";
+            variablePublic.user_group_id = "PDU";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnPDA_Click(object sender, EventArgs e)
         {
             variablePublic.user_group_id = "PDA";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
 
         private void btnPGM_Click(object sender, EventArgs e)
         {
             variablePublic.user_group_id = "PGM";
 
-            CloseAllChildForm();
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
 
-            Form f = new Home_Trade();
-            f.MdiParent = this;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
+        }
+
+        private void btnTDD_Click(object sender, EventArgs e)
+        {
+            variablePublic.user_group_id = "TDD";
+
+            #region Binding Permission
+            CommonDataSet dsPermission = commonBiz.npd_select_product_department_role_by_user_group_id(variablePublic.user_group_id);
+
+            bool canAddProduct = false;
+
+            canAddProduct = dsPermission.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID[0].ADD_NEW_PRODUCT;
+
+            if (canAddProduct == true)
+            {
+                CloseAllChildForm();
+
+                Form f = new Home_Trade();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else
+            {
+                CloseAllChildForm();
+
+                Form f = new Home();
+                f.MdiParent = this;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            #endregion
         }
     }
 }

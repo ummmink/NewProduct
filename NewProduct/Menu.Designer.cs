@@ -45,6 +45,7 @@
             this.btnPDA = new System.Windows.Forms.Button();
             this.btnPDO = new System.Windows.Forms.Button();
             this.btnPGM = new System.Windows.Forms.Button();
+            this.btnTDD = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbLogout
@@ -222,12 +223,23 @@
             this.btnPGM.UseVisualStyleBackColor = true;
             this.btnPGM.Click += new System.EventHandler(this.btnPGM_Click);
             // 
+            // btnTDD
+            // 
+            this.btnTDD.Location = new System.Drawing.Point(1000, 39);
+            this.btnTDD.Name = "btnTDD";
+            this.btnTDD.Size = new System.Drawing.Size(89, 23);
+            this.btnTDD.TabIndex = 61;
+            this.btnTDD.Text = "Trade DK";
+            this.btnTDD.UseVisualStyleBackColor = true;
+            this.btnTDD.Click += new System.EventHandler(this.btnTDD_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.Controls.Add(this.btnTDD);
             this.Controls.Add(this.btnPGM);
             this.Controls.Add(this.btnPDA);
             this.Controls.Add(this.btnPDO);
@@ -275,6 +287,7 @@
         private System.Windows.Forms.Button btnPDA;
         private System.Windows.Forms.Button btnPDO;
         private System.Windows.Forms.Button btnPGM;
+        private System.Windows.Forms.Button btnTDD;
     }
 }
 

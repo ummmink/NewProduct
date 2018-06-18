@@ -24,6 +24,14 @@ namespace NewProduct
         public New()
         {
             InitializeComponent();
+
+            //Change button color when click
+            btnDetails.Tag = "Blue";
+            ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnDetails.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
        
         private void ChangeColorByTag(string tag)
@@ -130,7 +138,7 @@ namespace NewProduct
         private void New_Load(object sender, EventArgs e)
         {
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
-            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
+            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);            
         }
 
         private void rdbNeedSample_Click(object sender, EventArgs e)

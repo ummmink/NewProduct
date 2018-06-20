@@ -37,7 +37,7 @@ namespace NewProduct
 
         private void lbOpenNewForm_Click(object sender, EventArgs e)
         {
-            Form f = new New();
+            Form f = new New_Popup();
             f.MdiParent = this.ParentForm;
             f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
             f.Dock = DockStyle.Fill; //set form's dock property to fill

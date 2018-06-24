@@ -22,6 +22,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_TYPE = "npd_select_product_type";
         private static string _NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE = "npd_select_product_sell_all_active";
         private static string _NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID = "npd_select_product_department_role_by_user_group_id";
+        private static string _NPD_SELECT_MAIN_PRODUCT = "npd_select_main_product";
 
         public CommonDataSet select_product_all_status()
         {
@@ -107,6 +108,23 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID.TableName, _NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_main_product()
+        {
+            try
+            {
+                SqlParameter[] pm = null;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_MAIN_PRODUCT.TableName, _NPD_SELECT_MAIN_PRODUCT, pm, strConnCommon);
             }
             catch (Exception ex)
             {

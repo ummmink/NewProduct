@@ -72,5 +72,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_main_product()
+        {
+            try
+            {
+                return commonData.npd_select_main_product();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

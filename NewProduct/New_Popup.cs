@@ -356,5 +356,176 @@ namespace NewProduct
             variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString().Substring(0, cmbChannel.SelectedValue.ToString().IndexOf(':')));
             variablePublic.channel = cmbChannel.SelectedValue.ToString().Substring(cmbChannel.SelectedValue.ToString().LastIndexOf(':') + 1);
         }
+
+        private void btnMixProducts_Click(object sender, EventArgs e)
+        {
+            pnDetailsSub1.Visible = false;
+
+            pnDetailsProductMix.Visible = true;
+            lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            pnDetailsProductMix.Visible = false;
+
+            pnDetailsSub1.Visible = true;
+            lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
+        }
+
+        private void grdMainProduct_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            #region bindind product
+            CommonDataSet dsPD = commonBiz.npd_select_main_product();
+            grdMainProductList.AutoGenerateColumns = false;
+            bindingProduct.DataSource = dsPD.NPD_SELECT_MAIN_PRODUCT;
+            grdMainProductList.DataSource = bindingProduct;
+            #endregion
+
+            DataGridViewComboBoxColumn cboBoxColumn =
+               (DataGridViewComboBoxColumn)grdMainProduct.Columns["Product_ID"];
+
+            cboBoxColumn.DataSource = bindingProduct;
+            cboBoxColumn.DisplayMember = "PRODUCT_ID";
+            cboBoxColumn.ValueMember = "PRODUCT_ID";
+
+            int x = grdMainProductList.Location.X;
+
+            DataGridView dataGridView = (DataGridView)sender;
+            int iScroll = dataGridView.FirstDisplayedScrollingRowIndex;
+
+            int iFac = dataGridView.CurrentCell.RowIndex;
+
+            if (dataGridView.CurrentCell.ColumnIndex == 0)
+            {
+                grdMainProductList.Visible = true;
+                grdMainProductList.Location = new Point(x, (69 + (22 * (iFac - iScroll))));
+            }
+        }
+
+        private void grdMainProduct_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                DataGridView dataGridView = (DataGridView)sender;
+                int colIndex;
+                int rowIndex;
+
+                colIndex = dataGridView.CurrentCell.ColumnIndex;
+                rowIndex = dataGridView.CurrentCell.RowIndex;
+
+                dataGridView.Rows[rowIndex].Cells["Product_Name_TH"].Value =
+                        grdMainProductList.Rows[bindingProduct.Position].Cells["productNameTH"].Value.ToString();
+
+                dataGridView.Rows[rowIndex].Cells["Size"].Value =
+                    grdMainProductList.Rows[bindingProduct.Position].Cells["productSize"].Value.ToString();
+
+                SendKeys.Send("{up}");               
+
+                grdMainProductList.Visible = false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "ข้อความแจ้งเตือน",
+                        MessageBoxButtons.OK,
+                         MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                SendKeys.Send("{tab}");
+            }
+        }
+
+        private void grdMainProduct_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            DataGridView dataGridView = (DataGridView)sender;
+
+            ComboBox cmbBox = new ComboBox();
+
+            if (dataGridView.CurrentCell.ColumnIndex == 0) //Product_ID
+            {
+                if (e.Control is ComboBox)
+                {
+                    if (cmbBox is ComboBox)
+                    {
+                        if (cmbBox != null)
+                        {
+                            cmbBox.TextChanged += new EventHandler(cmbBox_TextChanged);
+                            cmbBox.KeyDown += new KeyEventHandler(cmbBox_KeyDown);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void cmbBox_TextChanged(object sender, EventArgs e)
+        {
+            if ((sender as ComboBox).Text.Length >= 1)
+            {
+                string searchValue = (sender as ComboBox).Text.ToString();
+                int rowIndex = -1;
+
+                foreach (DataGridViewRow row in grdMainProductList.Rows)
+                {
+                    if (row.Cells[0].Value.ToString().StartsWith(searchValue))
+                    {
+                        rowIndex = row.Index;
+                        bindingProduct.Position = rowIndex;
+                        grdMainProductList.Rows[rowIndex].Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        grdMainProductList.Rows[0].Selected = true;
+                    }
+                }
+
+            }
+        }
+
+        private void cmbBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+            {
+                e.SuppressKeyPress = true;
+
+                if (grdMainProductList.Rows.Count >= 1)
+                {
+                    int i = grdMainProductList.SelectedCells[0].RowIndex - 1;
+
+                    if (i > -1 && i < grdMainProductList.Rows.Count)
+                    {
+                        grdMainProductList.Rows[i].Selected = true;
+                        bindingProduct.Position = i;
+                    }
+
+                }
+
+            }
+
+
+            else if (e.KeyCode == Keys.Down)
+            {
+                e.SuppressKeyPress = true;
+
+                if (grdMainProductList.Rows.Count >= 1)
+                {
+                    int i = grdMainProductList.SelectedCells[0].RowIndex + 1;
+
+                    if (i > -1 && i < grdMainProductList.Rows.Count)
+                    {
+                        grdMainProductList.Rows[i].Selected = true;
+                        bindingProduct.Position = i;
+                    }
+                }
+            }
+        }
     }
 }

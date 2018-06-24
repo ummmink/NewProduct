@@ -399,7 +399,7 @@ namespace NewProduct
             if (dataGridView.CurrentCell.ColumnIndex == 0)
             {
                 grdMainProductList.Visible = true;
-                grdMainProductList.Location = new Point(x, (69 + (22 * (iFac - iScroll))));
+                grdMainProductList.Location = new Point(x, (71 + (22 * (iFac - iScroll))));
             }
         }
 
@@ -462,6 +462,20 @@ namespace NewProduct
                         }
                     }
                 }
+            }
+
+            if (dataGridView.CurrentCell.ColumnIndex == 3) //Quantity
+            {
+                e.Control.KeyPress += new KeyPressEventHandler(Control_KeyPressInt);
+            }
+        }
+
+        private void Control_KeyPressInt(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+                return;
             }
         }
 

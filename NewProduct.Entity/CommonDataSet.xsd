@@ -152,6 +152,11 @@
             <Mappings>
               <Mapping SourceColumn="PRODUCT_ID" DataSetColumn="PRODUCT_ID" />
               <Mapping SourceColumn="PRODUCT_NAME_TH" DataSetColumn="PRODUCT_NAME_TH" />
+              <Mapping SourceColumn="SIZE" DataSetColumn="SIZE" />
+              <Mapping SourceColumn="UNIT_PRICE" DataSetColumn="UNIT_PRICE" />
+              <Mapping SourceColumn="INNER_BOX" DataSetColumn="INNER_BOX" />
+              <Mapping SourceColumn="PACKING" DataSetColumn="PACKING" />
+              <Mapping SourceColumn="BOTTLE" DataSetColumn="BOTTLE" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -372,6 +377,11 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="SIZE" msprop:Generator_ColumnVarNameInTable="columnSIZE" msprop:Generator_ColumnPropNameInRow="SIZE" msprop:Generator_ColumnPropNameInTable="SIZEColumn" msprop:Generator_UserColumnName="SIZE" type="xs:double" minOccurs="0" />
+              <xs:element name="UNIT_PRICE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUNIT_PRICE" msprop:Generator_ColumnPropNameInRow="UNIT_PRICE" msprop:Generator_ColumnPropNameInTable="UNIT_PRICEColumn" msprop:Generator_UserColumnName="UNIT_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="INNER_BOX" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnINNER_BOX" msprop:Generator_ColumnPropNameInRow="INNER_BOX" msprop:Generator_ColumnPropNameInTable="INNER_BOXColumn" msprop:Generator_UserColumnName="INNER_BOX" type="xs:int" minOccurs="0" />
+              <xs:element name="PACKING" msprop:Generator_ColumnVarNameInTable="columnPACKING" msprop:Generator_ColumnPropNameInRow="PACKING" msprop:Generator_ColumnPropNameInTable="PACKINGColumn" msprop:Generator_UserColumnName="PACKING" type="xs:int" minOccurs="0" />
+              <xs:element name="BOTTLE" msprop:Generator_ColumnVarNameInTable="columnBOTTLE" msprop:Generator_ColumnPropNameInRow="BOTTLE" msprop:Generator_ColumnPropNameInTable="BOTTLEColumn" msprop:Generator_UserColumnName="BOTTLE" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

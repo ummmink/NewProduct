@@ -176,6 +176,10 @@
       <Project>{935f962b-7c04-4455-999e-5740ef5ac658}</Project>
       <Name>NewProduct.Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NewProduct.Utility\NewProduct.Utility.csproj">
+      <Project>{8c96f13c-31c7-4870-8348-fae4e4f08bb3}</Project>
+      <Name>NewProduct.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

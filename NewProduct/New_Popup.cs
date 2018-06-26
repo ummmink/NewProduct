@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using NewProduct.Business;
 using NewProduct.Data;
 using NewProduct.Entity;
+using NewProduct.Utility;
 
 namespace NewProduct
 {
@@ -399,7 +400,7 @@ namespace NewProduct
             if (dataGridView.CurrentCell.ColumnIndex == 0)
             {
                 grdMainProductList.Visible = true;
-                grdMainProductList.Location = new Point(x, (71 + (22 * (iFac - iScroll))));
+                grdMainProductList.Location = new Point(x, (73 + (22 * (iFac - iScroll))));
             }
         }
 
@@ -414,14 +415,45 @@ namespace NewProduct
                 colIndex = dataGridView.CurrentCell.ColumnIndex;
                 rowIndex = dataGridView.CurrentCell.RowIndex;
 
-                dataGridView.Rows[rowIndex].Cells["Product_Name_TH"].Value =
+                if (colIndex == 0)
+                {
+                    dataGridView.Rows[rowIndex].Cells["Product_Name_TH"].Value =
                         grdMainProductList.Rows[bindingProduct.Position].Cells["productNameTH"].Value.ToString();
 
-                dataGridView.Rows[rowIndex].Cells["Size"].Value =
-                    grdMainProductList.Rows[bindingProduct.Position].Cells["productSize"].Value.ToString();
+                    dataGridView.Rows[rowIndex].Cells["Size"].Value =
+                        grdMainProductList.Rows[bindingProduct.Position].Cells["productSize"].Value.ToString();
 
-                SendKeys.Send("{up}");               
+                    dataGridView.Rows[rowIndex].Cells["UNIT_PRICE"].Value =
+                        grdMainProductList.Rows[bindingProduct.Position].Cells["unitPrice"].Value.ToString();
 
+                    dataGridView.Rows[rowIndex].Cells["INNER_BOX"].Value =
+                        grdMainProductList.Rows[bindingProduct.Position].Cells["innerBox"].Value.ToString();
+
+                    dataGridView.Rows[rowIndex].Cells["PACKING"].Value =
+                        grdMainProductList.Rows[bindingProduct.Position].Cells["packingP"].Value.ToString();
+
+                    dataGridView.Rows[rowIndex].Cells["BOTTLE"].Value =
+                        grdMainProductList.Rows[bindingProduct.Position].Cells["bottleP"].Value.ToString();
+
+                    SendKeys.Send("{up}");
+                }
+
+                else if (colIndex == 3) //Quantity
+                {
+                    SendKeys.Send("{up}");
+                    calPrice(dataGridView, rowIndex);
+                }
+
+                else if (colIndex == 4) //Unit
+                {
+                    calPrice(dataGridView, rowIndex);
+                    SendKeys.Send("{up}");
+                }
+                //else
+                //{
+                //    dataGridView.Rows[rowIndex].Cells["Qty"].Value = 0;
+                //    calPrice(dataGridView, rowIndex);
+                //}
                 grdMainProductList.Visible = false;
 
             }
@@ -431,6 +463,178 @@ namespace NewProduct
                         MessageBoxButtons.OK,
                          MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void calPrice(DataGridView grd, int rowIndex)
+        {
+            try
+            {
+                #region declare variable
+                float fBottle = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["BOTTLE"].Value);
+                float fPack = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["PACKING"].Value);
+                float fInner = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["INNER_BOX"].Value);
+                double fUnitPriceNew = ConvertUtil.parseDouble(grd.Rows[rowIndex].Cells["UNIT_PRICE"].Value);                          
+                double iQuantity = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["QTY"].Value);
+
+                string strUnit = "ขวด";
+                #endregion
+
+                //แปลงราคาต่อหน่วย ให้เป็นตามหน่วยที่ขาย
+                if (strUnit == "ขวด")
+                {
+                    fUnitPriceNew = (fUnitPriceNew / 12) * iQuantity;
+                }
+                else if ((strUnit == "แพ็ค") || (strUnit == "กระเช้า"))
+                {
+                    fUnitPriceNew = ((fUnitPriceNew / 12) * fBottle) * iQuantity;
+                }
+
+                else if (strUnit == "ลัง")
+                {
+                    fUnitPriceNew = ((fUnitPriceNew / 12) * fInner * fBottle * fPack) * iQuantity;
+                }
+
+                grd.Rows[rowIndex].Cells["LTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);
+
+                ////หาส่วนลดก่อน
+                //if (strUnit == "ขวด")
+                //{
+                //    if ((strUnitDiscBefore == "แพ็ค") || (strUnitDiscBefore == "กระเช้า"))
+                //    {
+                //        fDiscBefore = fDiscBefore / fBottle;
+                //    }
+                //    else if (strUnitDiscBefore == "ลัง")
+                //    {
+                //        fDiscBefore = fDiscBefore / (fBottle * fPack);
+                //    }
+                //}
+                //else if ((strUnit == "แพ็ค") || (strUnit == "กระเช้า"))
+                //{
+                //    if (strUnitDiscBefore == "ขวด")
+                //    {
+                //        fDiscBefore = fDiscBefore / fBottle;
+                //    }
+                //    else if (strUnitDiscBefore == "ลัง")
+                //    {
+                //        fDiscBefore = fDiscBefore / fPack;
+                //    }
+                //}
+
+                //else if (strUnit == "ลัง")
+                //{
+                //    if (strUnitDiscBefore == "ขวด")
+                //    {
+                //        fDiscBefore = fDiscBefore * fPack * fBottle;
+                //    }
+                //    else if ((strUnitDiscBefore == "แพ็ค") || (strUnitDiscBefore == "กระเช้า"))
+                //    {
+                //        fDiscBefore = fDiscBefore / fPack;
+                //    }
+                //}
+
+                //double f1 = Math.Round((fUnitPriceNew - fDiscBefore), 2, MidpointRounding.AwayFromZero)
+                //    * (fDiscount1 / 100);
+                //f1 = Math.Round((fUnitPriceNew - fDiscBefore), 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f1, 2, MidpointRounding.AwayFromZero);
+
+                //double f2 = Math.Round(f1, 2, MidpointRounding.AwayFromZero) * (fDiscount2 / 100);
+                //f2 = Math.Round(f1, 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f2, 2, MidpointRounding.AwayFromZero);
+
+                //double f3 = Math.Round(f2, 2, MidpointRounding.AwayFromZero) * (fDiscount3 / 100);
+                //f3 = Math.Round(f2, 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f3, 2, MidpointRounding.AwayFromZero);
+
+                ////Discount 4, 5 Oct 9, 2014
+                //double f4 = Math.Round(f3, 2, MidpointRounding.AwayFromZero) * (fDiscount4 / 100);
+                //f4 = Math.Round(f3, 2, MidpointRounding.AwayFromZero) - Math.Round(f4, 2, MidpointRounding.AwayFromZero);
+
+                //double f5 = Math.Round(f4, 2, MidpointRounding.AwayFromZero) * (fDiscount5 / 100);
+                //f5 = Math.Round(f4, 2, MidpointRounding.AwayFromZero) - Math.Round(f5, 2, MidpointRounding.AwayFromZero);
+
+                //double f1o = Math.Round(((fUnitPriceOld * iQuantity) - fDiscBefore), 2, MidpointRounding.AwayFromZero) * (fDiscount1 / 100);
+                //f1o = Math.Round(((fUnitPriceOld * iQuantity) - fDiscBefore), 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f1o, 2, MidpointRounding.AwayFromZero);
+
+                //double f2o = Math.Round(f1o, 2, MidpointRounding.AwayFromZero) * (fDiscount2 / 100);
+                //f2o = Math.Round(f1o, 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f2o, 2, MidpointRounding.AwayFromZero);
+
+                //double f3o = Math.Round(f2o, 2, MidpointRounding.AwayFromZero) * (fDiscount3 / 100);
+                //f3o = Math.Round(f2o, 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f3o, 2, MidpointRounding.AwayFromZero);
+
+                ////Discount 4, 5 Oct 9, 2014
+                //double f4o = Math.Round(f3o, 2, MidpointRounding.AwayFromZero) * (fDiscount4 / 100);
+                //f4o = Math.Round(f3o, 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f4o, 2, MidpointRounding.AwayFromZero);
+
+                //double f5o = Math.Round(f4o, 2, MidpointRounding.AwayFromZero) * (fDiscount5 / 100);
+                //f5o = Math.Round(f4o, 2, MidpointRounding.AwayFromZero)
+                //    - Math.Round(f5o, 2, MidpointRounding.AwayFromZero);
+
+                //fUnitDiscNew = Math.Round(f5, 2, MidpointRounding.AwayFromZero);
+                //fUnitDiscOld = Math.Round(f5o, 2, MidpointRounding.AwayFromZero);
+
+
+                ////หาราคาลดเพิ่ม ลดหลัง
+                //if (strUnit == "ขวด")
+                //{
+                //    if ((strUnitDisc == "แพ็ค") || (strUnitDisc == "กระเช้า"))
+                //    {
+                //        fDiscount = fDiscount / fBottle;
+                //    }
+                //    else if (strUnitDisc == "ลัง")
+                //    {
+                //        fDiscount = fDiscount / (fBottle * fPack);
+                //    }
+                //}
+                //else if ((strUnit == "แพ็ค") || (strUnit == "กระเช้า"))
+                //{
+                //    if (strUnitDisc == "ขวด")
+                //    {
+                //        fDiscount = fDiscount / fBottle;
+                //    }
+                //    else if (strUnitDisc == "ลัง")
+                //    {
+                //        fDiscount = fDiscount / fPack;
+                //    }
+                //}
+
+                //else if (strUnit == "ลัง")
+                //{
+                //    if (strUnitDisc == "ขวด")
+                //    {
+                //        fDiscount = fDiscount * fPack * fBottle;
+                //    }
+                //    else if ((strUnitDisc == "แพ็ค") || (strUnitDisc == "กระเช้า"))
+                //    {
+                //        fDiscount = fDiscount / fPack;
+                //    }
+                //}
+
+                //if (grd.Rows[rowIndex].Cells["PriceNew"].Value.ToString() == "True")
+                //{
+                //    grd.Rows[rowIndex].Cells["PriceNew"].Value = true;
+
+                //    grd.Rows[rowIndex].Cells["UnitPrice"].Value =
+                //        ConvertUtil.parseFloat(fUnitPriceNew);
+                //    grd.Rows[rowIndex].Cells["Amount"].Value = ((fUnitDiscNew - fDiscount) * iQuantity) - fDiscOther;
+                //}
+                //else
+                //{
+                //    grd.Rows[rowIndex].Cells["UnitPrice"].Value =
+                //        ConvertUtil.parseFloat(fUnitPriceOld);
+                //    grd.Rows[rowIndex].Cells["Amount"].Value = ((fUnitDiscOld - fDiscount) * iQuantity) - fDiscOther;
+                //}
+
+
+                //calculateNetPrice();
+            }
+            catch
+            {
+            }
+
         }
 
         private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)

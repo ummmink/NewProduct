@@ -2278,6 +2278,16 @@ namespace NewProduct.Entity {
             
             private global::System.Data.DataColumn columnPRODUCT_NAME_TH;
             
+            private global::System.Data.DataColumn columnSIZE;
+            
+            private global::System.Data.DataColumn columnUNIT_PRICE;
+            
+            private global::System.Data.DataColumn columnINNER_BOX;
+            
+            private global::System.Data.DataColumn columnPACKING;
+            
+            private global::System.Data.DataColumn columnBOTTLE;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public NPD_SELECT_MAIN_PRODUCTDataTable() {
@@ -2329,6 +2339,46 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SIZEColumn {
+                get {
+                    return this.columnSIZE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UNIT_PRICEColumn {
+                get {
+                    return this.columnUNIT_PRICE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn INNER_BOXColumn {
+                get {
+                    return this.columnINNER_BOX;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PACKINGColumn {
+                get {
+                    return this.columnPACKING;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BOTTLEColumn {
+                get {
+                    return this.columnBOTTLE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2364,11 +2414,16 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NPD_SELECT_MAIN_PRODUCTRow AddNPD_SELECT_MAIN_PRODUCTRow(string PRODUCT_ID, string PRODUCT_NAME_TH) {
+            public NPD_SELECT_MAIN_PRODUCTRow AddNPD_SELECT_MAIN_PRODUCTRow(string PRODUCT_ID, string PRODUCT_NAME_TH, double SIZE, double UNIT_PRICE, int INNER_BOX, int PACKING, int BOTTLE) {
                 NPD_SELECT_MAIN_PRODUCTRow rowNPD_SELECT_MAIN_PRODUCTRow = ((NPD_SELECT_MAIN_PRODUCTRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PRODUCT_ID,
-                        PRODUCT_NAME_TH};
+                        PRODUCT_NAME_TH,
+                        SIZE,
+                        UNIT_PRICE,
+                        INNER_BOX,
+                        PACKING,
+                        BOTTLE};
                 rowNPD_SELECT_MAIN_PRODUCTRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowNPD_SELECT_MAIN_PRODUCTRow);
                 return rowNPD_SELECT_MAIN_PRODUCTRow;
@@ -2400,6 +2455,11 @@ namespace NewProduct.Entity {
             internal void InitVars() {
                 this.columnPRODUCT_ID = base.Columns["PRODUCT_ID"];
                 this.columnPRODUCT_NAME_TH = base.Columns["PRODUCT_NAME_TH"];
+                this.columnSIZE = base.Columns["SIZE"];
+                this.columnUNIT_PRICE = base.Columns["UNIT_PRICE"];
+                this.columnINNER_BOX = base.Columns["INNER_BOX"];
+                this.columnPACKING = base.Columns["PACKING"];
+                this.columnBOTTLE = base.Columns["BOTTLE"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2409,12 +2469,24 @@ namespace NewProduct.Entity {
                 base.Columns.Add(this.columnPRODUCT_ID);
                 this.columnPRODUCT_NAME_TH = new global::System.Data.DataColumn("PRODUCT_NAME_TH", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPRODUCT_NAME_TH);
+                this.columnSIZE = new global::System.Data.DataColumn("SIZE", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSIZE);
+                this.columnUNIT_PRICE = new global::System.Data.DataColumn("UNIT_PRICE", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUNIT_PRICE);
+                this.columnINNER_BOX = new global::System.Data.DataColumn("INNER_BOX", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnINNER_BOX);
+                this.columnPACKING = new global::System.Data.DataColumn("PACKING", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPACKING);
+                this.columnBOTTLE = new global::System.Data.DataColumn("BOTTLE", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBOTTLE);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnPRODUCT_ID}, true));
                 this.columnPRODUCT_ID.AllowDBNull = false;
                 this.columnPRODUCT_ID.Unique = true;
                 this.columnPRODUCT_ID.MaxLength = 12;
                 this.columnPRODUCT_NAME_TH.MaxLength = 350;
+                this.columnUNIT_PRICE.ReadOnly = true;
+                this.columnINNER_BOX.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3825,6 +3897,86 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double SIZE {
+                get {
+                    try {
+                        return ((double)(this[this.tableNPD_SELECT_MAIN_PRODUCT.SIZEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SIZE\' in table \'NPD_SELECT_MAIN_PRODUCT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_MAIN_PRODUCT.SIZEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double UNIT_PRICE {
+                get {
+                    try {
+                        return ((double)(this[this.tableNPD_SELECT_MAIN_PRODUCT.UNIT_PRICEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UNIT_PRICE\' in table \'NPD_SELECT_MAIN_PRODUCT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_MAIN_PRODUCT.UNIT_PRICEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int INNER_BOX {
+                get {
+                    try {
+                        return ((int)(this[this.tableNPD_SELECT_MAIN_PRODUCT.INNER_BOXColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'INNER_BOX\' in table \'NPD_SELECT_MAIN_PRODUCT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_MAIN_PRODUCT.INNER_BOXColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int PACKING {
+                get {
+                    try {
+                        return ((int)(this[this.tableNPD_SELECT_MAIN_PRODUCT.PACKINGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PACKING\' in table \'NPD_SELECT_MAIN_PRODUCT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_MAIN_PRODUCT.PACKINGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int BOTTLE {
+                get {
+                    try {
+                        return ((int)(this[this.tableNPD_SELECT_MAIN_PRODUCT.BOTTLEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BOTTLE\' in table \'NPD_SELECT_MAIN_PRODUCT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_MAIN_PRODUCT.BOTTLEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPRODUCT_NAME_THNull() {
                 return this.IsNull(this.tableNPD_SELECT_MAIN_PRODUCT.PRODUCT_NAME_THColumn);
             }
@@ -3833,6 +3985,66 @@ namespace NewProduct.Entity {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPRODUCT_NAME_THNull() {
                 this[this.tableNPD_SELECT_MAIN_PRODUCT.PRODUCT_NAME_THColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSIZENull() {
+                return this.IsNull(this.tableNPD_SELECT_MAIN_PRODUCT.SIZEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSIZENull() {
+                this[this.tableNPD_SELECT_MAIN_PRODUCT.SIZEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUNIT_PRICENull() {
+                return this.IsNull(this.tableNPD_SELECT_MAIN_PRODUCT.UNIT_PRICEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUNIT_PRICENull() {
+                this[this.tableNPD_SELECT_MAIN_PRODUCT.UNIT_PRICEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsINNER_BOXNull() {
+                return this.IsNull(this.tableNPD_SELECT_MAIN_PRODUCT.INNER_BOXColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetINNER_BOXNull() {
+                this[this.tableNPD_SELECT_MAIN_PRODUCT.INNER_BOXColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPACKINGNull() {
+                return this.IsNull(this.tableNPD_SELECT_MAIN_PRODUCT.PACKINGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPACKINGNull() {
+                this[this.tableNPD_SELECT_MAIN_PRODUCT.PACKINGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBOTTLENull() {
+                return this.IsNull(this.tableNPD_SELECT_MAIN_PRODUCT.BOTTLEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBOTTLENull() {
+                this[this.tableNPD_SELECT_MAIN_PRODUCT.BOTTLEColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5070,6 +5282,11 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             tableMapping.DataSetTable = "NPD_SELECT_MAIN_PRODUCT";
             tableMapping.ColumnMappings.Add("PRODUCT_ID", "PRODUCT_ID");
             tableMapping.ColumnMappings.Add("PRODUCT_NAME_TH", "PRODUCT_NAME_TH");
+            tableMapping.ColumnMappings.Add("SIZE", "SIZE");
+            tableMapping.ColumnMappings.Add("UNIT_PRICE", "UNIT_PRICE");
+            tableMapping.ColumnMappings.Add("INNER_BOX", "INNER_BOX");
+            tableMapping.ColumnMappings.Add("PACKING", "PACKING");
+            tableMapping.ColumnMappings.Add("BOTTLE", "BOTTLE");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

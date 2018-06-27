@@ -20,7 +20,7 @@ namespace NewProduct
     {
         CultureInfo UsaCulture = new CultureInfo("en-US");
 
-        CommonBiz commonBiz = new  CommonBiz();
+        CommonBiz commonBiz = new CommonBiz();
 
         public New_Popup()
         {
@@ -34,7 +34,7 @@ namespace NewProduct
             pnDetails.Tag = "PanelShow";
             ChangeVisibleByTag("PanelShow");
         }
-       
+
         private void ChangeColorByTag(string tag)
         {
             foreach (var c in this.Controls.OfType<Button>())
@@ -49,7 +49,7 @@ namespace NewProduct
                 {
                     (c as Button).BackColor = Color.Black;
                     (c as Button).ForeColor = Color.FromArgb(189, 189, 255);
-                }                    
+                }
             }
         }
 
@@ -139,7 +139,7 @@ namespace NewProduct
         private void New_Load(object sender, EventArgs e)
         {
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
-            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);            
+            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
         }
 
         private void rdbNeedSample_Click(object sender, EventArgs e)
@@ -161,7 +161,7 @@ namespace NewProduct
         private void rdbNoSample_Click(object sender, EventArgs e)
         {
             if (rdbNoSample.Checked == true)
-            {              
+            {
                 dtpSampleProductDate.Enabled = false;
                 tbQtySample.Enabled = false;
                 cbUnitSample.Enabled = false;
@@ -182,7 +182,7 @@ namespace NewProduct
             CommonDataSet dsProductType = commonBiz.npd_select_product_type();
             cmbProductType.DisplayMember = "TYPE_DESC_ENG";
             cmbProductType.ValueMember = "TYPE_ID";
-            cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;                 
+            cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
             #endregion
         }
 
@@ -233,7 +233,7 @@ namespace NewProduct
             {
                 e.SuppressKeyPress = true;
                 e.Handled = true;
-                tbInnerAmount.Focus();             
+                tbInnerAmount.Focus();
             }
         }
 
@@ -409,11 +409,12 @@ namespace NewProduct
             try
             {
                 DataGridView dataGridView = (DataGridView)sender;
+
                 int colIndex;
                 int rowIndex;
 
                 colIndex = dataGridView.CurrentCell.ColumnIndex;
-                rowIndex = dataGridView.CurrentCell.RowIndex;
+                rowIndex = dataGridView.CurrentCell.RowIndex;                
 
                 if (colIndex == 0)
                 {
@@ -438,7 +439,7 @@ namespace NewProduct
                     SendKeys.Send("{up}");
                 }
 
-                else if (colIndex == 3) //Quantity
+                else if (colIndex == 3) //Qty
                 {
                     SendKeys.Send("{up}");
                     calPrice(dataGridView, rowIndex);
@@ -446,14 +447,10 @@ namespace NewProduct
 
                 else if (colIndex == 4) //Unit
                 {
+                    //colName = dataGridView.Columns[colIndex].Name.ToString();
                     calPrice(dataGridView, rowIndex);
-                    SendKeys.Send("{up}");
                 }
-                //else
-                //{
-                //    dataGridView.Rows[rowIndex].Cells["Qty"].Value = 0;
-                //    calPrice(dataGridView, rowIndex);
-                //}
+
                 grdMainProductList.Visible = false;
 
             }
@@ -473,7 +470,7 @@ namespace NewProduct
                 float fBottle = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["BOTTLE"].Value);
                 float fPack = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["PACKING"].Value);
                 float fInner = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["INNER_BOX"].Value);
-                double fUnitPriceNew = ConvertUtil.parseDouble(grd.Rows[rowIndex].Cells["UNIT_PRICE"].Value);                          
+                double fUnitPriceNew = ConvertUtil.parseDouble(grd.Rows[rowIndex].Cells["UNIT_PRICE"].Value);
                 double iQuantity = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["QTY"].Value);
 
                 string strUnit = "ขวด";
@@ -743,6 +740,126 @@ namespace NewProduct
                         bindingProduct.Position = i;
                     }
                 }
+            }
+        }
+
+        private void grdFreeProduct_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            #region bindind free product
+            CommonDataSet dsPD = commonBiz.npd_select_main_product();
+            grdFreeProductList.AutoGenerateColumns = false;
+            bindingFreeProduct.DataSource = dsPD.NPD_SELECT_MAIN_PRODUCT;
+            grdFreeProductList.DataSource = bindingFreeProduct;
+            #endregion
+
+            DataGridViewComboBoxColumn cboBoxColumn =
+               (DataGridViewComboBoxColumn)grdFreeProduct.Columns["FPRODUCT_ID"];
+
+            cboBoxColumn.DataSource = bindingFreeProduct;
+            cboBoxColumn.DisplayMember = "PRODUCT_ID";
+            cboBoxColumn.ValueMember = "PRODUCT_ID";
+
+            int x = grdFreeProductList.Location.X;
+
+            DataGridView dataGridView = (DataGridView)sender;
+            int iScroll = dataGridView.FirstDisplayedScrollingRowIndex;
+
+            int iFac = dataGridView.CurrentCell.RowIndex;
+
+            if (dataGridView.CurrentCell.ColumnIndex == 0)
+            {
+                grdFreeProductList.Visible = true;
+                grdFreeProductList.Location = new Point(x, (279 + (22 * (iFac - iScroll))));
+            }
+        }
+
+        private void grdFreeProduct_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                DataGridView dataGridView = (DataGridView)sender;
+
+                int colIndex;
+                int rowIndex;
+
+                colIndex = dataGridView.CurrentCell.ColumnIndex;
+                rowIndex = dataGridView.CurrentCell.RowIndex;
+
+                if (colIndex == 0)
+                {
+                    dataGridView.Rows[rowIndex].Cells["FproductNameTHp"].Value =
+                        grdFreeProductList.Rows[bindingFreeProduct.Position].Cells["FproductNameTH"].Value.ToString();
+
+                    dataGridView.Rows[rowIndex].Cells["FSIZE"].Value =
+                        grdFreeProductList.Rows[bindingFreeProduct.Position].Cells["fSizeP"].Value.ToString();
+
+                    dataGridView.Rows[rowIndex].Cells["FUNIT_PRICE"].Value =
+                        grdFreeProductList.Rows[bindingFreeProduct.Position].Cells["fUnitPrice"].Value.ToString();
+
+                    dataGridView.Rows[rowIndex].Cells["FINNER_BOX"].Value =
+                        grdFreeProductList.Rows[bindingFreeProduct.Position].Cells["fInnerBox"].Value.ToString();
+
+                    dataGridView.Rows[rowIndex].Cells["FPACKING"].Value =
+                        grdFreeProductList.Rows[bindingFreeProduct.Position].Cells["fPackingP"].Value.ToString();
+
+                    dataGridView.Rows[rowIndex].Cells["FBOTTLE"].Value =
+                        grdFreeProductList.Rows[bindingFreeProduct.Position].Cells["fBottleP"].Value.ToString();
+
+                    SendKeys.Send("{up}");
+                }
+
+                else if (colIndex == 3) //Qty
+                {
+                    SendKeys.Send("{up}");
+                    //colName = dataGridView.Columns[colIndex+2].Name.ToString();
+                    //calPrice(dataGridView, rowIndex);
+                }
+
+                grdFreeProductList.Visible = false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "ข้อความแจ้งเตือน",
+                        MessageBoxButtons.OK,
+                         MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void grdFreeProduct_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            DataGridView dataGridView = (DataGridView)sender;
+
+            ComboBox cmbBox = new ComboBox();
+
+            if (dataGridView.CurrentCell.ColumnIndex == 0) //Product_ID
+            {
+                if (e.Control is ComboBox)
+                {
+                    if (cmbBox is ComboBox)
+                    {
+                        if (cmbBox != null)
+                        {
+                            cmbBox.TextChanged += new EventHandler(cmbBox_TextChanged);
+                            cmbBox.KeyDown += new KeyEventHandler(cmbBox_KeyDown);
+                        }
+                    }
+                }
+            }
+
+            if (dataGridView.CurrentCell.ColumnIndex == 3) //Quantity
+            {
+                e.Control.KeyPress += new KeyPressEventHandler(Control_KeyPressInt);
+            }
+        }
+
+        private void grdFreeProduct_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                SendKeys.Send("{tab}");
             }
         }
     }

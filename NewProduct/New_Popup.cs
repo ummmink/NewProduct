@@ -352,12 +352,6 @@ namespace NewProduct
             #endregion
         }
 
-        private void cmbChannel_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString().Substring(0, cmbChannel.SelectedValue.ToString().IndexOf(':')));
-            variablePublic.channel = cmbChannel.SelectedValue.ToString().Substring(cmbChannel.SelectedValue.ToString().LastIndexOf(':') + 1);
-        }
-
         private void btnMixProducts_Click(object sender, EventArgs e)
         {
             pnDetailsSub1.Visible = false;
@@ -861,6 +855,28 @@ namespace NewProduct
                 e.Handled = true;
                 SendKeys.Send("{tab}");
             }
+        }
+
+        private void cmbChannel_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString().Substring(0, cmbChannel.SelectedValue.ToString().IndexOf(':')));
+            variablePublic.channel = cmbChannel.SelectedValue.ToString().Substring(cmbChannel.SelectedValue.ToString().LastIndexOf(':') + 1);
+        }
+
+        private void cmbOther_DropDown(object sender, EventArgs e)
+        {
+            #region Binding Product Other 
+            CommonDataSet dsProductOther = commonBiz.npd_select_product_other();
+            cmbOther.DisplayMember = "OTHER_NAME";
+            cmbOther.ValueMember = "OTHER_ID";
+            cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
+            #endregion
+        }
+
+        private void cmbOther_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            variablePublic.product_other_id = Int32.Parse(cmbOther.SelectedValue.ToString().Substring(0, cmbOther.SelectedValue.ToString().IndexOf(':')));
+            variablePublic.product_other_name = cmbOther.SelectedValue.ToString().Substring(cmbOther.SelectedValue.ToString().LastIndexOf(':') + 1);
         }
     }
 }

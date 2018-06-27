@@ -14,5 +14,7 @@ namespace NewProduct
         public static string channel;
         public static int sell_id;
         public static string user_group_id;
+        public static string product_other_name;
+        public static int product_other_id;
     }
 }

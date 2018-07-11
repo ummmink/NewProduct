@@ -16,5 +16,6 @@ namespace NewProduct
         public static string user_group_id;
         public static string product_other_name;
         public static int product_other_id;
+        public static string picturePath;
     }
 }

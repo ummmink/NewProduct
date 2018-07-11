@@ -198,7 +198,8 @@ namespace NewProduct
                 //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Image = new Bitmap(open.FileName);
                 // image file path  
-                textBox1.Text = open.FileName;
+                variablePublic.picturePath = open.FileName;
+                MessageBox.Show(variablePublic.picturePath);
             }
         }
 

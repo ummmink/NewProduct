@@ -395,7 +395,7 @@ namespace NewProduct
             if (dataGridView.CurrentCell.ColumnIndex == 0)
             {
                 grdMainProductList.Visible = true;
-                grdMainProductList.Location = new Point(x, (73 + (22 * (iFac - iScroll))));
+                grdMainProductList.Location = new Point(x, (81 + (22 * (iFac - iScroll))));
             }
         }
 
@@ -764,7 +764,7 @@ namespace NewProduct
             if (dataGridView.CurrentCell.ColumnIndex == 0)
             {
                 grdFreeProductList.Visible = true;
-                grdFreeProductList.Location = new Point(x, (279 + (22 * (iFac - iScroll))));
+                grdFreeProductList.Location = new Point(x, (305 + (22 * (iFac - iScroll))));
             }
         }
 

@@ -412,7 +412,7 @@ namespace NewProduct
                 rowIndex = dataGridView.CurrentCell.RowIndex;                
 
                 if (colIndex == 0)
-                {
+                {                   
                     dataGridView.Rows[rowIndex].Cells["Product_Name_TH"].Value =
                         grdMainProductList.Rows[bindingProduct.Position].Cells["productNameTH"].Value.ToString();
 
@@ -430,6 +430,11 @@ namespace NewProduct
 
                     dataGridView.Rows[rowIndex].Cells["BOTTLE"].Value =
                         grdMainProductList.Rows[bindingProduct.Position].Cells["bottleP"].Value.ToString();
+
+                    if (ConvertUtil.parseFloat(dataGridView.Rows[rowIndex].Cells["QTY"].Value) > 0)
+                    {
+                        calPrice(dataGridView, rowIndex);
+                    }
 
                     SendKeys.Send("{up}");
                 }
@@ -629,6 +634,43 @@ namespace NewProduct
 
         }
 
+        private void calPriceDetail(DataGridView grd, int rowIndex)
+        {
+            try
+            {
+                #region declare variable
+                float fBottle = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["FBOTTLE"].Value);
+                float fPack = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["FPACKING"].Value);
+                float fInner = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["FINNER_BOX"].Value);
+                double fUnitPriceNew = ConvertUtil.parseDouble(grd.Rows[rowIndex].Cells["FUNIT_PRICE"].Value);
+                double iQuantity = ConvertUtil.parseFloat(grd.Rows[rowIndex].Cells["FQTY"].Value);
+
+                string strUnit = "ขวด";
+                #endregion
+
+                //แปลงราคาต่อหน่วย ให้เป็นตามหน่วยที่ขาย
+                if (strUnit == "ขวด")
+                {
+                    fUnitPriceNew = (fUnitPriceNew / 12) * iQuantity;
+                }
+                else if ((strUnit == "แพ็ค") || (strUnit == "กระเช้า"))
+                {
+                    fUnitPriceNew = ((fUnitPriceNew / 12) * fBottle) * iQuantity;
+                }
+
+                else if (strUnit == "ลัง")
+                {
+                    fUnitPriceNew = ((fUnitPriceNew / 12) * fInner * fBottle * fPack) * iQuantity;
+                }
+
+                grd.Rows[rowIndex].Cells["FLTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);               
+            }
+            catch
+            {
+            }
+
+        }
+
         private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -800,14 +842,31 @@ namespace NewProduct
                     dataGridView.Rows[rowIndex].Cells["FBOTTLE"].Value =
                         grdFreeProductList.Rows[bindingFreeProduct.Position].Cells["fBottleP"].Value.ToString();
 
+                    if (ConvertUtil.parseFloat(dataGridView.Rows[rowIndex].Cells["FQTY"].Value) > 0)
+                    {
+                        calPriceDetail(dataGridView, rowIndex);
+                    }
+
                     SendKeys.Send("{up}");
                 }
+
+                //else if (colIndex == 3) //Qty
+                //{
+                //    SendKeys.Send("{up}");
+                //    //colName = dataGridView.Columns[colIndex+2].Name.ToString();
+                //    //calPrice(dataGridView, rowIndex);
+                //}
 
                 else if (colIndex == 3) //Qty
                 {
                     SendKeys.Send("{up}");
-                    //colName = dataGridView.Columns[colIndex+2].Name.ToString();
-                    //calPrice(dataGridView, rowIndex);
+                    calPriceDetail(dataGridView, rowIndex);
+                }
+
+                else if (colIndex == 4) //Unit
+                {
+                    //colName = dataGridView.Columns[colIndex].Name.ToString();
+                    calPriceDetail(dataGridView, rowIndex);
                 }
 
                 grdFreeProductList.Visible = false;

@@ -492,146 +492,12 @@ namespace NewProduct
                 }
 
                 grd.Rows[rowIndex].Cells["LTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);
-
-                ////หาส่วนลดก่อน
-                //if (strUnit == "ขวด")
-                //{
-                //    if ((strUnitDiscBefore == "แพ็ค") || (strUnitDiscBefore == "กระเช้า"))
-                //    {
-                //        fDiscBefore = fDiscBefore / fBottle;
-                //    }
-                //    else if (strUnitDiscBefore == "ลัง")
-                //    {
-                //        fDiscBefore = fDiscBefore / (fBottle * fPack);
-                //    }
-                //}
-                //else if ((strUnit == "แพ็ค") || (strUnit == "กระเช้า"))
-                //{
-                //    if (strUnitDiscBefore == "ขวด")
-                //    {
-                //        fDiscBefore = fDiscBefore / fBottle;
-                //    }
-                //    else if (strUnitDiscBefore == "ลัง")
-                //    {
-                //        fDiscBefore = fDiscBefore / fPack;
-                //    }
-                //}
-
-                //else if (strUnit == "ลัง")
-                //{
-                //    if (strUnitDiscBefore == "ขวด")
-                //    {
-                //        fDiscBefore = fDiscBefore * fPack * fBottle;
-                //    }
-                //    else if ((strUnitDiscBefore == "แพ็ค") || (strUnitDiscBefore == "กระเช้า"))
-                //    {
-                //        fDiscBefore = fDiscBefore / fPack;
-                //    }
-                //}
-
-                //double f1 = Math.Round((fUnitPriceNew - fDiscBefore), 2, MidpointRounding.AwayFromZero)
-                //    * (fDiscount1 / 100);
-                //f1 = Math.Round((fUnitPriceNew - fDiscBefore), 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f1, 2, MidpointRounding.AwayFromZero);
-
-                //double f2 = Math.Round(f1, 2, MidpointRounding.AwayFromZero) * (fDiscount2 / 100);
-                //f2 = Math.Round(f1, 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f2, 2, MidpointRounding.AwayFromZero);
-
-                //double f3 = Math.Round(f2, 2, MidpointRounding.AwayFromZero) * (fDiscount3 / 100);
-                //f3 = Math.Round(f2, 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f3, 2, MidpointRounding.AwayFromZero);
-
-                ////Discount 4, 5 Oct 9, 2014
-                //double f4 = Math.Round(f3, 2, MidpointRounding.AwayFromZero) * (fDiscount4 / 100);
-                //f4 = Math.Round(f3, 2, MidpointRounding.AwayFromZero) - Math.Round(f4, 2, MidpointRounding.AwayFromZero);
-
-                //double f5 = Math.Round(f4, 2, MidpointRounding.AwayFromZero) * (fDiscount5 / 100);
-                //f5 = Math.Round(f4, 2, MidpointRounding.AwayFromZero) - Math.Round(f5, 2, MidpointRounding.AwayFromZero);
-
-                //double f1o = Math.Round(((fUnitPriceOld * iQuantity) - fDiscBefore), 2, MidpointRounding.AwayFromZero) * (fDiscount1 / 100);
-                //f1o = Math.Round(((fUnitPriceOld * iQuantity) - fDiscBefore), 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f1o, 2, MidpointRounding.AwayFromZero);
-
-                //double f2o = Math.Round(f1o, 2, MidpointRounding.AwayFromZero) * (fDiscount2 / 100);
-                //f2o = Math.Round(f1o, 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f2o, 2, MidpointRounding.AwayFromZero);
-
-                //double f3o = Math.Round(f2o, 2, MidpointRounding.AwayFromZero) * (fDiscount3 / 100);
-                //f3o = Math.Round(f2o, 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f3o, 2, MidpointRounding.AwayFromZero);
-
-                ////Discount 4, 5 Oct 9, 2014
-                //double f4o = Math.Round(f3o, 2, MidpointRounding.AwayFromZero) * (fDiscount4 / 100);
-                //f4o = Math.Round(f3o, 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f4o, 2, MidpointRounding.AwayFromZero);
-
-                //double f5o = Math.Round(f4o, 2, MidpointRounding.AwayFromZero) * (fDiscount5 / 100);
-                //f5o = Math.Round(f4o, 2, MidpointRounding.AwayFromZero)
-                //    - Math.Round(f5o, 2, MidpointRounding.AwayFromZero);
-
-                //fUnitDiscNew = Math.Round(f5, 2, MidpointRounding.AwayFromZero);
-                //fUnitDiscOld = Math.Round(f5o, 2, MidpointRounding.AwayFromZero);
-
-
-                ////หาราคาลดเพิ่ม ลดหลัง
-                //if (strUnit == "ขวด")
-                //{
-                //    if ((strUnitDisc == "แพ็ค") || (strUnitDisc == "กระเช้า"))
-                //    {
-                //        fDiscount = fDiscount / fBottle;
-                //    }
-                //    else if (strUnitDisc == "ลัง")
-                //    {
-                //        fDiscount = fDiscount / (fBottle * fPack);
-                //    }
-                //}
-                //else if ((strUnit == "แพ็ค") || (strUnit == "กระเช้า"))
-                //{
-                //    if (strUnitDisc == "ขวด")
-                //    {
-                //        fDiscount = fDiscount / fBottle;
-                //    }
-                //    else if (strUnitDisc == "ลัง")
-                //    {
-                //        fDiscount = fDiscount / fPack;
-                //    }
-                //}
-
-                //else if (strUnit == "ลัง")
-                //{
-                //    if (strUnitDisc == "ขวด")
-                //    {
-                //        fDiscount = fDiscount * fPack * fBottle;
-                //    }
-                //    else if ((strUnitDisc == "แพ็ค") || (strUnitDisc == "กระเช้า"))
-                //    {
-                //        fDiscount = fDiscount / fPack;
-                //    }
-                //}
-
-                //if (grd.Rows[rowIndex].Cells["PriceNew"].Value.ToString() == "True")
-                //{
-                //    grd.Rows[rowIndex].Cells["PriceNew"].Value = true;
-
-                //    grd.Rows[rowIndex].Cells["UnitPrice"].Value =
-                //        ConvertUtil.parseFloat(fUnitPriceNew);
-                //    grd.Rows[rowIndex].Cells["Amount"].Value = ((fUnitDiscNew - fDiscount) * iQuantity) - fDiscOther;
-                //}
-                //else
-                //{
-                //    grd.Rows[rowIndex].Cells["UnitPrice"].Value =
-                //        ConvertUtil.parseFloat(fUnitPriceOld);
-                //    grd.Rows[rowIndex].Cells["Amount"].Value = ((fUnitDiscOld - fDiscount) * iQuantity) - fDiscOther;
-                //}
-
-
-                //calculateNetPrice();
+              
+                calculateNetPrice();
             }
             catch
             {
             }
-
         }
 
         private void calPriceDetail(DataGridView grd, int rowIndex)
@@ -663,12 +529,45 @@ namespace NewProduct
                     fUnitPriceNew = ((fUnitPriceNew / 12) * fInner * fBottle * fPack) * iQuantity;
                 }
 
-                grd.Rows[rowIndex].Cells["FLTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);               
+                grd.Rows[rowIndex].Cells["FLTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);
+
+                calculateNetPriceFree();             
             }
             catch
             {
             }
+        }
 
+        private void calculateNetPrice()
+        {
+            //sum
+            double fSumAmount = 0;
+            int fSumQty = 0;
+
+            for (int i = 0; i < grdMainProduct.Rows.Count - 1; i++)
+            {
+                fSumAmount += Math.Round(ConvertUtil.parseDouble(grdMainProduct.Rows[i].Cells["LTP"].Value), 2);
+                fSumQty += ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value);
+            }
+
+            tbSumPrice.Text = fSumAmount.ToString("#,##0.00");
+            tbSumQty.Text = fSumQty.ToString();        
+        }
+
+        private void calculateNetPriceFree()
+        {
+            //sum
+            double fSumAmount = 0;
+            int fSumQty = 0;
+
+            for (int i = 0; i < grdFreeProduct.Rows.Count - 1; i++)
+            {
+                fSumAmount += Math.Round(ConvertUtil.parseDouble(grdFreeProduct.Rows[i].Cells["FLTP"].Value), 2);
+                fSumQty += ConvertUtil.parseInt(grdFreeProduct.Rows[i].Cells["FQTY"].Value);
+            }
+
+            tbSumPriceFree.Text = fSumAmount.ToString("#,##0.00");
+            tbSumQtyFree.Text = fSumQty.ToString();
         }
 
         private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)
@@ -937,6 +836,16 @@ namespace NewProduct
         {
             variablePublic.product_other_id = Int32.Parse(cmbOther.SelectedValue.ToString().Substring(0, cmbOther.SelectedValue.ToString().IndexOf(':')));
             variablePublic.product_other_name = cmbOther.SelectedValue.ToString().Substring(cmbOther.SelectedValue.ToString().LastIndexOf(':') + 1);
+        }
+
+        private void grdMainProduct_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            calculateNetPrice();
+        }
+
+        private void grdFreeProduct_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            calculateNetPriceFree();
         }
     }
 }

@@ -551,7 +551,10 @@ namespace NewProduct
             }
 
             tbSumPrice.Text = fSumAmount.ToString("#,##0.00");
-            tbSumQty.Text = fSumQty.ToString();        
+            tbSumQty.Text = fSumQty.ToString();
+
+            tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
+            tbSumPriceTotal.Text = tbSumPrice.Text;
         }
 
         private void calculateNetPriceFree()
@@ -568,6 +571,8 @@ namespace NewProduct
 
             tbSumPriceFree.Text = fSumAmount.ToString("#,##0.00");
             tbSumQtyFree.Text = fSumQty.ToString();
+
+            tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
         }
 
         private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)

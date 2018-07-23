@@ -361,14 +361,6 @@ namespace NewProduct
             lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
         }
 
-        private void button25_Click(object sender, EventArgs e)
-        {
-            pnDetailsProductMix.Visible = false;
-
-            pnDetailsSub1.Visible = true;
-            lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
-        }
-
         private void grdMainProduct_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
             #region bindind product
@@ -851,6 +843,14 @@ namespace NewProduct
         private void grdFreeProduct_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
         {
             calculateNetPriceFree();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            pnDetailsProductMix.Visible = false;
+
+            pnDetailsSub1.Visible = true;
+            lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
         }
     }
 }

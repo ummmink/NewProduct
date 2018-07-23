@@ -118,6 +118,8 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.pnDetailsProductMix = new System.Windows.Forms.Panel();
+            this.label128 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
             this.grdMainProductList = new System.Windows.Forms.DataGridView();
             this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -162,7 +164,7 @@
             this.FBOTTLE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label18 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
-            this.button25 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.grdMainProduct = new System.Windows.Forms.DataGridView();
             this.PRODUCT_ID = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.PRODUCT_NAME_TH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -435,8 +437,6 @@
             this.label70 = new System.Windows.Forms.Label();
             this.bindingProduct = new System.Windows.Forms.BindingSource(this.components);
             this.bindingFreeProduct = new System.Windows.Forms.BindingSource(this.components);
-            this.label127 = new System.Windows.Forms.Label();
-            this.label128 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnDetails.SuspendLayout();
@@ -1199,13 +1199,35 @@
             this.pnDetailsProductMix.Controls.Add(this.grdFreeProduct);
             this.pnDetailsProductMix.Controls.Add(this.label18);
             this.pnDetailsProductMix.Controls.Add(this.label116);
-            this.pnDetailsProductMix.Controls.Add(this.button25);
+            this.pnDetailsProductMix.Controls.Add(this.btnBack);
             this.pnDetailsProductMix.Controls.Add(this.grdMainProduct);
             this.pnDetailsProductMix.Location = new System.Drawing.Point(8, 25);
             this.pnDetailsProductMix.Name = "pnDetailsProductMix";
             this.pnDetailsProductMix.Size = new System.Drawing.Size(660, 463);
             this.pnDetailsProductMix.TabIndex = 10;
             this.pnDetailsProductMix.Visible = false;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label128.ForeColor = System.Drawing.Color.Tomato;
+            this.label128.Location = new System.Drawing.Point(222, 440);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(124, 13);
+            this.label128.TabIndex = 63;
+            this.label128.Text = "* ไม่รวมราคาสินค้าแถม";
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label127.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label127.Location = new System.Drawing.Point(222, 420);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(133, 14);
+            this.label127.TabIndex = 62;
+            this.label127.Text = "ราคาขายต่อแพ็คแนะนำ";
             // 
             // grdMainProductList
             // 
@@ -1457,7 +1479,7 @@
             this.label121.AutoSize = true;
             this.label121.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label121.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label121.Location = new System.Drawing.Point(433, 420);
+            this.label121.Location = new System.Drawing.Point(446, 420);
             this.label121.Name = "label121";
             this.label121.Size = new System.Drawing.Size(30, 14);
             this.label121.TabIndex = 56;
@@ -1466,7 +1488,7 @@
             // tbSumPriceTotal
             // 
             this.tbSumPriceTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumPriceTotal.Location = new System.Drawing.Point(347, 416);
+            this.tbSumPriceTotal.Location = new System.Drawing.Point(360, 416);
             this.tbSumPriceTotal.Name = "tbSumPriceTotal";
             this.tbSumPriceTotal.Size = new System.Drawing.Size(77, 22);
             this.tbSumPriceTotal.TabIndex = 55;
@@ -1705,19 +1727,20 @@
             this.label116.TabIndex = 40;
             this.label116.Text = "สินค้าปกติ";
             // 
-            // button25
+            // btnBack
             // 
-            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.Location = new System.Drawing.Point(550, 422);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(98, 23);
-            this.button25.TabIndex = 12;
-            this.button25.Text = "สินค้าประกอบ";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
+            this.btnBack.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(550, 416);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(98, 37);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "กลับหน้าหลัก";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // grdMainProduct
             // 
@@ -4701,28 +4724,6 @@
             this.label70.TabIndex = 14;
             this.label70.Text = "Charge";
             // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label127.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label127.Location = new System.Drawing.Point(222, 420);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(117, 14);
-            this.label127.TabIndex = 62;
-            this.label127.Text = "ราคาขายแพ็คแนะนำ";
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label128.ForeColor = System.Drawing.Color.Tomato;
-            this.label128.Location = new System.Drawing.Point(222, 440);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(103, 11);
-            this.label128.TabIndex = 63;
-            this.label128.Text = "* ไม่รวมราคาสินค้าแถม";
-            // 
             // New_Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -5125,7 +5126,7 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel pnDetailsProductMix;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label116;
         private System.Windows.Forms.DataGridView grdMainProductList;

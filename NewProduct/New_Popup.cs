@@ -702,7 +702,7 @@ namespace NewProduct
             if (dataGridView.CurrentCell.ColumnIndex == 0)
             {
                 grdFreeProductList.Visible = true;
-                grdFreeProductList.Location = new Point(x, (305 + (22 * (iFac - iScroll))));
+                grdFreeProductList.Location = new Point(x, (292 + (22 * (iFac - iScroll))));
             }
         }
 

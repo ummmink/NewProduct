@@ -17,5 +17,19 @@ namespace NewProduct
         public static string product_other_name;
         public static int product_other_id;
         public static string picturePath;
+        //Price
+        public static decimal productMainPrice;
+        public static decimal productFreePrice;
+        public static decimal productTotalPackPrice;
+        public static decimal productTotalCasePrice;
+        //Qty
+        public static int productMainQty;
+        public static int productFreeQty;
+        public static int productTotalQty;
+        //Packing
+        public static int productBottle;
+        public static int productPack;
+        public static int productInnerBox;
+        public static int productCase;
     }
 }

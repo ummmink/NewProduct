@@ -228,78 +228,6 @@ namespace NewProduct
             f.Show();
         }
 
-        private void tbCaseAmount_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.SuppressKeyPress = true;
-                e.Handled = true;
-                tbInnerAmount.Focus();
-            }
-        }
-
-        private void tbCaseAmount_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tbInnerAmount_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.SuppressKeyPress = true;
-                e.Handled = true;
-                tbPackAmount.Focus();
-            }
-        }
-
-        private void tbInnerAmount_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tbPackAmount_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tbPackAmount_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.SuppressKeyPress = true;
-                e.Handled = true;
-                tbBottleAmount.Focus();
-            }
-        }
-
-        private void tbBottleAmount_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tbBottleAmount_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.SuppressKeyPress = true;
-                e.Handled = true;
-                btnMixProducts.Focus();
-            }
-        }
-
         private void tbPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
             //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
@@ -547,6 +475,7 @@ namespace NewProduct
 
             tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
             tbSumPriceTotal.Text = tbSumPrice.Text;
+            tbSumPriceCaseTotal.Text = (float.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString();
         }
 
         private void calculateNetPriceFree()
@@ -851,6 +780,98 @@ namespace NewProduct
 
             pnDetailsSub1.Visible = true;
             lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
+        }
+
+        private void tbCaseQty_Leave(object sender, EventArgs e)
+        {
+            variablePublic.productCaseQty = Int32.Parse(tbCaseQty.Text);
+        }
+
+        private void tbInnerQty_Leave(object sender, EventArgs e)
+        {
+            variablePublic.productInnerBoxQty = Int32.Parse(tbInnerQty.Text);
+        }
+
+        private void tbPackQty_Leave(object sender, EventArgs e)
+        {
+            variablePublic.productPackQty = Int32.Parse(tbPackQty.Text);
+        }
+
+        private void tbBottleQty_Leave(object sender, EventArgs e)
+        {
+            variablePublic.productBottleQty = Int32.Parse(tbBottleQty.Text);
+        }
+
+        private void tbCaseQty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbInnerQty.Focus();
+            }
+        }
+
+        private void tbCaseQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbInnerQty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbPackQty.Focus();
+            }
+        }
+
+        private void tbInnerQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPackQty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbBottleQty.Focus();
+            }
+        }
+
+        private void tbPackQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbBottleQty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                btnMixProducts.Focus();
+            }
+        }
+
+        private void tbBottleQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -27,9 +27,9 @@ namespace NewProduct
         public static int productFreeQty;
         public static int productTotalQty;
         //Packing
-        public static int productBottle;
-        public static int productPack;
-        public static int productInnerBox;
-        public static int productCase;
+        public static int productBottleQty;
+        public static int productPackQty;
+        public static int productInnerBoxQty;
+        public static int productCaseQty;
     }
 }

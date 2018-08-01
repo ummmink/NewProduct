@@ -283,10 +283,17 @@ namespace NewProduct
 
         private void btnMixProducts_Click(object sender, EventArgs e)
         {
-            pnDetailsSub1.Visible = false;
+            if (tbPackQty.Text == "")
+            {
+                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!");
+            }
+            else
+            {
+                pnDetailsSub1.Visible = false;
 
-            pnDetailsProductMix.Visible = true;
-            lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+                pnDetailsProductMix.Visible = true;
+                lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+            }            
         }
 
         private void grdMainProduct_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)

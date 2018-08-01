@@ -285,7 +285,7 @@ namespace NewProduct
         {
             if (tbPackQty.Text == "")
             {
-                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!");
+                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning");
             }
             else
             {
@@ -791,22 +791,34 @@ namespace NewProduct
 
         private void tbCaseQty_Leave(object sender, EventArgs e)
         {
-            variablePublic.productCaseQty = Int32.Parse(tbCaseQty.Text);
+            if (tbCaseQty.Text != "")
+            {
+                variablePublic.productCaseQty = Int32.Parse(tbCaseQty.Text);
+            }           
         }
 
         private void tbInnerQty_Leave(object sender, EventArgs e)
         {
-            variablePublic.productInnerBoxQty = Int32.Parse(tbInnerQty.Text);
+            if (tbInnerQty.Text != "")
+            {
+                variablePublic.productInnerBoxQty = Int32.Parse(tbInnerQty.Text);
+            }            
         }
 
         private void tbPackQty_Leave(object sender, EventArgs e)
         {
-            variablePublic.productPackQty = Int32.Parse(tbPackQty.Text);
+            if (tbPackQty.Text != "")
+            {
+                variablePublic.productPackQty = Int32.Parse(tbPackQty.Text);
+            }          
         }
 
         private void tbBottleQty_Leave(object sender, EventArgs e)
         {
-            variablePublic.productBottleQty = Int32.Parse(tbBottleQty.Text);
+            if (tbBottleQty.Text != "")
+            {
+                variablePublic.productBottleQty = Int32.Parse(tbBottleQty.Text);
+            }          
         }
 
         private void tbCaseQty_KeyDown(object sender, KeyEventArgs e)

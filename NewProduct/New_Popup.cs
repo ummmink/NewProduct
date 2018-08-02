@@ -246,14 +246,14 @@ namespace NewProduct
 
         private void tbPrice_Leave(object sender, EventArgs e)
         {
-            if (tbPrice.Text == "")
+            if (tbPriceRecommend.Text == "")
             {
-                tbPrice.Text = "0";
-                tbPrice.Text = string.Format("{0:#,##0.00}", double.Parse(tbPrice.Text));
+                tbPriceRecommend.Text = "0";
+                tbPriceRecommend.Text = string.Format("{0:#,##0.00}", double.Parse(tbPriceRecommend.Text));
             }
             else
             {
-                tbPrice.Text = string.Format("{0:#,##0.00}", double.Parse(tbPrice.Text));
+                tbPriceRecommend.Text = string.Format("{0:#,##0.00}", double.Parse(tbPriceRecommend.Text));
             }
         }
 

@@ -18,14 +18,14 @@ namespace NewProduct
         public static int product_other_id;
         public static string picturePath;
         //Price
-        public static decimal productMainPrice;
-        public static decimal productFreePrice;
-        public static decimal productTotalPackPrice;
-        public static decimal productTotalCasePrice;
+        public static decimal productMainPrice; //ราคาสินค้าปกติ
+        public static decimal productFreePrice; //ราคาสินค้าแถม
+        public static decimal productTotalPackPrice; //ราคาแนะนำแพ็ค
+        public static decimal productTotalCasePrice; //ราคาแนะนำลัง
         //Qty
-        public static int productMainQty;
-        public static int productFreeQty;
-        public static int productTotalQty;
+        public static int productMainQty; //จำนวนสินค้าปกติ
+        public static int productFreeQty; //จำนวนสินค้าแถม
+        public static int productTotalQty; //จำนวนสินค้ารวม
         //Packing
         public static int productBottleQty;
         public static int productPackQty;

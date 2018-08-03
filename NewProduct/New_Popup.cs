@@ -476,13 +476,25 @@ namespace NewProduct
                 fSumAmount += Math.Round(ConvertUtil.parseDouble(grdMainProduct.Rows[i].Cells["LTP"].Value), 2);
                 fSumQty += ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value);
             }
-
+            //ราคาสินค้าปกติ
             tbSumPrice.Text = fSumAmount.ToString("#,##0.00");
-            tbSumQty.Text = fSumQty.ToString();
+            variablePublic.productMainPrice = decimal.Parse(tbSumPrice.Text);
 
+            //จำนวนสินค้าปกติ
+            tbSumQty.Text = fSumQty.ToString();
+            variablePublic.productMainQty = Int32.Parse(tbSumQty.Text);
+
+            //จำนวนสินค้ารวม
             tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
+            variablePublic.productTotalQty = Int32.Parse(tbSumQtyTotal.Text);
+
+            //ราคาแนะนำ/แพ็ค
             tbSumPriceTotal.Text = tbSumPrice.Text;
-            tbSumPriceCaseTotal.Text = (float.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString();
+            variablePublic.productTotalPackPrice = decimal.Parse(tbSumPriceTotal.Text);
+
+            //ราคาแนะนำ/ลัง
+            tbSumPriceCaseTotal.Text = (decimal.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString("#,##0.00");
+            variablePublic.productTotalCasePrice = decimal.Parse(tbSumPriceCaseTotal.Text);
         }
 
         private void calculateNetPriceFree()
@@ -497,10 +509,17 @@ namespace NewProduct
                 fSumQty += ConvertUtil.parseInt(grdFreeProduct.Rows[i].Cells["FQTY"].Value);
             }
 
+            //ราคาสินค้าแถม
             tbSumPriceFree.Text = fSumAmount.ToString("#,##0.00");
-            tbSumQtyFree.Text = fSumQty.ToString();
+            variablePublic.productFreePrice = decimal.Parse(tbSumPriceFree.Text);
 
+            //จำนวนสินค้าแถม
+            tbSumQtyFree.Text = fSumQty.ToString();
+            variablePublic.productFreeQty = Int32.Parse(tbSumQtyFree.Text);
+
+            //จำนวนสินค้ารวม
             tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
+            variablePublic.productTotalQty = Int32.Parse(tbSumQtyTotal.Text);
         }
 
         private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)
@@ -787,6 +806,8 @@ namespace NewProduct
 
             pnDetailsSub1.Visible = true;
             lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
+
+            tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
         }
 
         private void tbCaseQty_Leave(object sender, EventArgs e)

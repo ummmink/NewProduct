@@ -913,5 +913,15 @@ namespace NewProduct
                 e.Handled = true;
             }
         }
+
+        private void pnBarcode_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

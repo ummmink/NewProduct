@@ -145,12 +145,12 @@
             this.lbOpenRenewForm.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lbOpenRenewForm.Click += new System.EventHandler(this.lbOpenRenewForm_Click);
             // 
-            // Home
+            // Home_Trade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.lbOpenRenewForm);
             this.Controls.Add(this.lbOpenRepeatForm);
             this.Controls.Add(this.lbOpenSearchForm);
@@ -159,7 +159,7 @@
             this.Controls.Add(this.lbOpenNewForm);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Home";
+            this.Name = "Home_Trade";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.ResumeLayout(false);

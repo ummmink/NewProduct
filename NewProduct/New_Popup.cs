@@ -147,14 +147,14 @@ namespace NewProduct
             if (rdbNeedSample.Checked == true)
             {
                 dtpSampleProductDate.Enabled = true;
-                tbQtySample.Enabled = true;
-                cbUnitSample.Enabled = true;
+                tbQtySamplePiece.Enabled = true;
+                tbQtySampleCase.Enabled = true;
             }
             else
             {
                 dtpSampleProductDate.Enabled = false;
-                tbQtySample.Enabled = false;
-                cbUnitSample.Enabled = false;
+                tbQtySamplePiece.Enabled = false;
+                tbQtySampleCase.Enabled = false;
             }
         }
 
@@ -163,14 +163,14 @@ namespace NewProduct
             if (rdbNoSample.Checked == true)
             {
                 dtpSampleProductDate.Enabled = false;
-                tbQtySample.Enabled = false;
-                cbUnitSample.Enabled = false;
+                tbQtySamplePiece.Enabled = false;
+                tbQtySampleCase.Enabled = false;
             }
             else
             {
                 dtpSampleProductDate.Enabled = true;
-                tbQtySample.Enabled = true;
-                cbUnitSample.Enabled = true;
+                tbQtySamplePiece.Enabled = true;
+                tbQtySampleCase.Enabled = true;
             }
         }
 
@@ -920,6 +920,21 @@ namespace NewProduct
         }
 
         private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbUnitSample_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
 
         }

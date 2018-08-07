@@ -42,7 +42,7 @@
             this.lbOpenStatusForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenStatusForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenStatusForm.Image")));
             this.lbOpenStatusForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenStatusForm.Location = new System.Drawing.Point(515, 248);
+            this.lbOpenStatusForm.Location = new System.Drawing.Point(543, 251);
             this.lbOpenStatusForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenStatusForm.Name = "lbOpenStatusForm";
             this.lbOpenStatusForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
@@ -60,7 +60,7 @@
             this.lbOpenReportForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenReportForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenReportForm.Image")));
             this.lbOpenReportForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenReportForm.Location = new System.Drawing.Point(793, 248);
+            this.lbOpenReportForm.Location = new System.Drawing.Point(821, 251);
             this.lbOpenReportForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenReportForm.Name = "lbOpenReportForm";
             this.lbOpenReportForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
@@ -78,7 +78,7 @@
             this.lbOpenSearchForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenSearchForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenSearchForm.Image")));
             this.lbOpenSearchForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenSearchForm.Location = new System.Drawing.Point(236, 248);
+            this.lbOpenSearchForm.Location = new System.Drawing.Point(264, 251);
             this.lbOpenSearchForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenSearchForm.Name = "lbOpenSearchForm";
             this.lbOpenSearchForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
@@ -93,7 +93,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 750);
             this.Controls.Add(this.lbOpenSearchForm);
             this.Controls.Add(this.lbOpenReportForm);
             this.Controls.Add(this.lbOpenStatusForm);

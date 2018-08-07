@@ -45,7 +45,7 @@
             this.lbOpenNewForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenNewForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenNewForm.Image")));
             this.lbOpenNewForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenNewForm.Location = new System.Drawing.Point(236, 147);
+            this.lbOpenNewForm.Location = new System.Drawing.Point(264, 165);
             this.lbOpenNewForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenNewForm.Name = "lbOpenNewForm";
             this.lbOpenNewForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 0);
@@ -63,7 +63,7 @@
             this.lbOpenStatusForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenStatusForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenStatusForm.Image")));
             this.lbOpenStatusForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenStatusForm.Location = new System.Drawing.Point(515, 147);
+            this.lbOpenStatusForm.Location = new System.Drawing.Point(543, 165);
             this.lbOpenStatusForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenStatusForm.Name = "lbOpenStatusForm";
             this.lbOpenStatusForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
@@ -81,7 +81,7 @@
             this.lbOpenReportForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenReportForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenReportForm.Image")));
             this.lbOpenReportForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenReportForm.Location = new System.Drawing.Point(793, 147);
+            this.lbOpenReportForm.Location = new System.Drawing.Point(821, 165);
             this.lbOpenReportForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenReportForm.Name = "lbOpenReportForm";
             this.lbOpenReportForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
@@ -99,7 +99,7 @@
             this.lbOpenSearchForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenSearchForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenSearchForm.Image")));
             this.lbOpenSearchForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenSearchForm.Location = new System.Drawing.Point(236, 351);
+            this.lbOpenSearchForm.Location = new System.Drawing.Point(264, 369);
             this.lbOpenSearchForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenSearchForm.Name = "lbOpenSearchForm";
             this.lbOpenSearchForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
@@ -117,7 +117,7 @@
             this.lbOpenRepeatForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenRepeatForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenRepeatForm.Image")));
             this.lbOpenRepeatForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenRepeatForm.Location = new System.Drawing.Point(515, 351);
+            this.lbOpenRepeatForm.Location = new System.Drawing.Point(543, 369);
             this.lbOpenRepeatForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenRepeatForm.Name = "lbOpenRepeatForm";
             this.lbOpenRepeatForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 0);
@@ -135,7 +135,7 @@
             this.lbOpenRenewForm.ForeColor = System.Drawing.Color.White;
             this.lbOpenRenewForm.Image = ((System.Drawing.Image)(resources.GetObject("lbOpenRenewForm.Image")));
             this.lbOpenRenewForm.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbOpenRenewForm.Location = new System.Drawing.Point(793, 351);
+            this.lbOpenRenewForm.Location = new System.Drawing.Point(821, 369);
             this.lbOpenRenewForm.Margin = new System.Windows.Forms.Padding(0);
             this.lbOpenRenewForm.Name = "lbOpenRenewForm";
             this.lbOpenRenewForm.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
@@ -150,7 +150,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 750);
             this.Controls.Add(this.lbOpenRenewForm);
             this.Controls.Add(this.lbOpenRepeatForm);
             this.Controls.Add(this.lbOpenSearchForm);

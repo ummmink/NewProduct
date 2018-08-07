@@ -657,7 +657,7 @@ namespace NewProduct
             if (dataGridView.CurrentCell.ColumnIndex == 0)
             {
                 grdFreeProductList.Visible = true;
-                grdFreeProductList.Location = new Point(x, (292 + (22 * (iFac - iScroll))));
+                grdFreeProductList.Location = new Point(x, (331 + (22 * (iFac - iScroll))));
             }
         }
 
@@ -935,6 +935,11 @@ namespace NewProduct
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnDetailsSub1_Paint(object sender, PaintEventArgs e)
         {
 
         }

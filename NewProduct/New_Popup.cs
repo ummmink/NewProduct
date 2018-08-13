@@ -953,19 +953,22 @@ namespace NewProduct
                 //Create the msg object to be sent
                 MailMessage msg = new MailMessage();
                 //Add your email address to the recipients             
-                msg.To.Add("n.sarawana@gmail.com");
+                msg.To.Add(txtName.Text);
                 //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
-                MailAddress address = new MailAddress("n.sarawana@gmail.com");
+                MailAddress address = new MailAddress(txtName.Text);
                 msg.From = address;
                 //Append their name in the beginning of the subject
-                msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
-                msg.Body = txtMessage.Text;
+                //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
+                //msg.Body = txtMessage.Text;
+                msg.Subject = "NPD Test";
+                msg.Body = "Test";
+
 
                 //Configure an SmtpClient to send the mail.
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 client.EnableSsl = true; //only enable this if your provider requires it
                                          //Setup credentials to login to our sender email address ("UserName", "Password")
-                NetworkCredential credentials = new NetworkCredential("n.sarawana@gmail.com", "delphI2623");
+                NetworkCredential credentials = new NetworkCredential(txtName.Text, ddlSubject.Text);
 
                 client.Credentials = credentials;
 

@@ -70,6 +70,10 @@
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox66 = new System.Windows.Forms.TextBox();
             this.pnDetails = new System.Windows.Forms.Panel();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.txtMessage = new System.Windows.Forms.TextBox();
+            this.ddlSubject = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.lbProductDetails = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -510,10 +514,6 @@
             this.label70 = new System.Windows.Forms.Label();
             this.bindingProduct = new System.Windows.Forms.BindingSource(this.components);
             this.bindingFreeProduct = new System.Windows.Forms.BindingSource(this.components);
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.ddlSubject = new System.Windows.Forms.TextBox();
-            this.txtMessage = new System.Windows.Forms.TextBox();
-            this.lblResult = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnDetails.SuspendLayout();
@@ -714,14 +714,46 @@
             this.pnDetails.Controls.Add(this.panel3);
             this.pnDetails.Controls.Add(this.label24);
             this.pnDetails.Controls.Add(this.panel1);
-            this.pnDetails.Controls.Add(this.pnDetailsProductMix);
             this.pnDetails.Controls.Add(this.pnDetailsSub1);
+            this.pnDetails.Controls.Add(this.pnDetailsProductMix);
             this.pnDetails.Location = new System.Drawing.Point(46, 115);
             this.pnDetails.Name = "pnDetails";
             this.pnDetails.Size = new System.Drawing.Size(1270, 600);
             this.pnDetails.TabIndex = 0;
             this.pnDetails.Tag = "PanelHide";
             this.pnDetails.Visible = false;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblResult.ForeColor = System.Drawing.Color.White;
+            this.lblResult.Location = new System.Drawing.Point(792, 570);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(84, 14);
+            this.lblResult.TabIndex = 22;
+            this.lblResult.Text = "ช่วงจัดรายการ";
+            // 
+            // txtMessage
+            // 
+            this.txtMessage.Location = new System.Drawing.Point(685, 567);
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(100, 22);
+            this.txtMessage.TabIndex = 21;
+            // 
+            // ddlSubject
+            // 
+            this.ddlSubject.Location = new System.Drawing.Point(791, 542);
+            this.ddlSubject.Name = "ddlSubject";
+            this.ddlSubject.Size = new System.Drawing.Size(100, 22);
+            this.ddlSubject.TabIndex = 20;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(685, 542);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 22);
+            this.txtName.TabIndex = 19;
             // 
             // lbProductDetails
             // 
@@ -741,9 +773,9 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(1169, 549);
+            this.btnCancel.Location = new System.Drawing.Point(1169, 552);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(91, 40);
+            this.btnCancel.Size = new System.Drawing.Size(91, 35);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Tag = "";
             this.btnCancel.Text = "Cancel";
@@ -757,9 +789,9 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(1073, 549);
+            this.btnSave.Location = new System.Drawing.Point(1073, 552);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(91, 40);
+            this.btnSave.Size = new System.Drawing.Size(91, 35);
             this.btnSave.TabIndex = 4;
             this.btnSave.Tag = "";
             this.btnSave.Text = "Save";
@@ -5729,38 +5761,6 @@
             this.label70.Size = new System.Drawing.Size(50, 14);
             this.label70.TabIndex = 14;
             this.label70.Text = "Charge";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(685, 542);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 22);
-            this.txtName.TabIndex = 19;
-            // 
-            // ddlSubject
-            // 
-            this.ddlSubject.Location = new System.Drawing.Point(791, 542);
-            this.ddlSubject.Name = "ddlSubject";
-            this.ddlSubject.Size = new System.Drawing.Size(100, 22);
-            this.ddlSubject.TabIndex = 20;
-            // 
-            // txtMessage
-            // 
-            this.txtMessage.Location = new System.Drawing.Point(685, 567);
-            this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(100, 22);
-            this.txtMessage.TabIndex = 21;
-            // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblResult.ForeColor = System.Drawing.Color.White;
-            this.lblResult.Location = new System.Drawing.Point(792, 570);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(84, 14);
-            this.lblResult.TabIndex = 22;
-            this.lblResult.Text = "ช่วงจัดรายการ";
             // 
             // New_Popup
             // 

@@ -927,11 +927,11 @@
             this.btnAddChennel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddChennel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnAddChennel.ForeColor = System.Drawing.Color.White;
-            this.btnAddChennel.Location = new System.Drawing.Point(232, 8);
+            this.btnAddChennel.Image = ((System.Drawing.Image)(resources.GetObject("btnAddChennel.Image")));
+            this.btnAddChennel.Location = new System.Drawing.Point(232, 6);
             this.btnAddChennel.Name = "btnAddChennel";
-            this.btnAddChennel.Size = new System.Drawing.Size(41, 23);
+            this.btnAddChennel.Size = new System.Drawing.Size(36, 27);
             this.btnAddChennel.TabIndex = 54;
-            this.btnAddChennel.Text = "เพิ่ม";
             this.btnAddChennel.UseVisualStyleBackColor = false;
             this.btnAddChennel.Click += new System.EventHandler(this.btnAddChennel_Click);
             // 
@@ -942,11 +942,11 @@
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button25.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.Location = new System.Drawing.Point(538, 8);
+            this.button25.Image = ((System.Drawing.Image)(resources.GetObject("button25.Image")));
+            this.button25.Location = new System.Drawing.Point(538, 6);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(41, 23);
+            this.button25.Size = new System.Drawing.Size(36, 27);
             this.button25.TabIndex = 53;
-            this.button25.Text = "เพิ่ม";
             this.button25.UseVisualStyleBackColor = false;
             // 
             // cmbOther
@@ -1470,11 +1470,12 @@
             this.btnProductType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductType.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnProductType.ForeColor = System.Drawing.Color.White;
-            this.btnProductType.Location = new System.Drawing.Point(559, 34);
+            this.btnProductType.Image = ((System.Drawing.Image)(resources.GetObject("btnProductType.Image")));
+            this.btnProductType.Location = new System.Drawing.Point(602, 32);
             this.btnProductType.Name = "btnProductType";
-            this.btnProductType.Size = new System.Drawing.Size(80, 23);
+            this.btnProductType.Size = new System.Drawing.Size(36, 27);
             this.btnProductType.TabIndex = 52;
-            this.btnProductType.Text = "เพิ่มประเภท";
+            this.btnProductType.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProductType.UseVisualStyleBackColor = false;
             // 
             // btnProductGroup
@@ -1484,11 +1485,11 @@
             this.btnProductGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductGroup.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnProductGroup.ForeColor = System.Drawing.Color.White;
-            this.btnProductGroup.Location = new System.Drawing.Point(205, 34);
+            this.btnProductGroup.Image = ((System.Drawing.Image)(resources.GetObject("btnProductGroup.Image")));
+            this.btnProductGroup.Location = new System.Drawing.Point(242, 32);
             this.btnProductGroup.Name = "btnProductGroup";
-            this.btnProductGroup.Size = new System.Drawing.Size(63, 23);
+            this.btnProductGroup.Size = new System.Drawing.Size(36, 27);
             this.btnProductGroup.TabIndex = 51;
-            this.btnProductGroup.Text = "เพิ่มกลุ่ม";
             this.btnProductGroup.UseVisualStyleBackColor = false;
             // 
             // tbPrice
@@ -2287,7 +2288,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(272, 38);
+            this.label16.Location = new System.Drawing.Point(292, 38);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(48, 14);
             this.label16.TabIndex = 10;
@@ -2313,7 +2314,7 @@
             "เพิ่มกลุ่มผลิตภัณฑ์"});
             this.cmbProductType.Location = new System.Drawing.Point(100, 34);
             this.cmbProductType.Name = "cmbProductType";
-            this.cmbProductType.Size = new System.Drawing.Size(100, 22);
+            this.cmbProductType.Size = new System.Drawing.Size(136, 22);
             this.cmbProductType.TabIndex = 0;
             this.cmbProductType.DropDown += new System.EventHandler(this.cmbProductType_DropDown);
             this.cmbProductType.SelectionChangeCommitted += new System.EventHandler(this.cmbProductType_SelectionChangeCommitted);
@@ -2333,9 +2334,9 @@
             // 
             this.cmbProductItemNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbProductItemNo.FormattingEnabled = true;
-            this.cmbProductItemNo.Location = new System.Drawing.Point(323, 34);
+            this.cmbProductItemNo.Location = new System.Drawing.Point(345, 34);
             this.cmbProductItemNo.Name = "cmbProductItemNo";
-            this.cmbProductItemNo.Size = new System.Drawing.Size(231, 22);
+            this.cmbProductItemNo.Size = new System.Drawing.Size(250, 22);
             this.cmbProductItemNo.TabIndex = 1;
             this.cmbProductItemNo.DropDown += new System.EventHandler(this.cmbProductItemNo_DropDown);
             this.cmbProductItemNo.SelectionChangeCommitted += new System.EventHandler(this.cmbProductItemNo_SelectionChangeCommitted);

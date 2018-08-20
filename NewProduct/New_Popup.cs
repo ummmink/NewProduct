@@ -223,11 +223,7 @@ namespace NewProduct
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Form f = new Home_Trade();
-            f.MdiParent = this.ParentForm;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
-            f.Dock = DockStyle.Fill; //set form's dock property to fill
-            f.Show();
+            
         }
 
         private void tbPrice_KeyPress(object sender, KeyPressEventArgs e)
@@ -287,7 +283,7 @@ namespace NewProduct
         {
             if (tbPackQty.Text == "")
             {
-                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning");
+                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning!!!");
             }
             else
             {
@@ -981,12 +977,22 @@ namespace NewProduct
                 //Clear the form
                 txtName.Text = "";
                 txtMessage.Text = "";
+                ddlSubject.Text = "";
             }
             catch
             {
                 //If the message failed at some point, let the user know
                 lblResult.Text = "Your message failed to send, please try again.";
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Form f = new Home_Trade();
+            f.MdiParent = this.ParentForm;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
         }
     }
 }

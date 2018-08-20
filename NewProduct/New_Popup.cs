@@ -140,8 +140,8 @@ namespace NewProduct
 
         private void New_Load(object sender, EventArgs e)
         {
-            dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
-            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MM-yyyy", UsaCulture), UsaCulture);
+            dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
+            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
         }
 
         private void rdbNeedSample_Click(object sender, EventArgs e)
@@ -283,7 +283,7 @@ namespace NewProduct
         {
             if (tbPackQty.Text == "")
             {
-                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning!!!");
+                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
             {

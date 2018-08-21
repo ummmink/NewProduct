@@ -2300,9 +2300,10 @@
             this.btnMixProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMixProducts.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnMixProducts.ForeColor = System.Drawing.Color.White;
+            this.btnMixProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMixProducts.Location = new System.Drawing.Point(323, 174);
             this.btnMixProducts.Name = "btnMixProducts";
-            this.btnMixProducts.Size = new System.Drawing.Size(98, 23);
+            this.btnMixProducts.Size = new System.Drawing.Size(97, 23);
             this.btnMixProducts.TabIndex = 11;
             this.btnMixProducts.Text = "สินค้าประกอบ";
             this.btnMixProducts.UseVisualStyleBackColor = false;

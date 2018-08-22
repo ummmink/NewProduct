@@ -196,7 +196,7 @@
             this.label131 = new System.Windows.Forms.Label();
             this.label130 = new System.Windows.Forms.Label();
             this.label129 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.btnReferenceNo = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -719,8 +719,8 @@
             this.pnDetails.Controls.Add(this.panel3);
             this.pnDetails.Controls.Add(this.label24);
             this.pnDetails.Controls.Add(this.panel1);
-            this.pnDetails.Controls.Add(this.pnDetailsSub1);
             this.pnDetails.Controls.Add(this.pnDetailsProductMix);
+            this.pnDetails.Controls.Add(this.pnDetailsSub1);
             this.pnDetails.Location = new System.Drawing.Point(46, 115);
             this.pnDetails.Name = "pnDetails";
             this.pnDetails.Size = new System.Drawing.Size(1270, 600);
@@ -774,6 +774,7 @@
             this.lblResult.Size = new System.Drawing.Size(84, 14);
             this.lblResult.TabIndex = 22;
             this.lblResult.Text = "ช่วงจัดรายการ";
+            this.lblResult.Visible = false;
             // 
             // txtMessage
             // 
@@ -781,6 +782,7 @@
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.Size = new System.Drawing.Size(100, 22);
             this.txtMessage.TabIndex = 21;
+            this.txtMessage.Visible = false;
             // 
             // ddlSubject
             // 
@@ -789,6 +791,7 @@
             this.ddlSubject.PasswordChar = '*';
             this.ddlSubject.Size = new System.Drawing.Size(100, 22);
             this.ddlSubject.TabIndex = 20;
+            this.ddlSubject.Visible = false;
             // 
             // txtName
             // 
@@ -796,6 +799,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 22);
             this.txtName.TabIndex = 19;
+            this.txtName.Visible = false;
             // 
             // lbProductDetails
             // 
@@ -1302,7 +1306,7 @@
             this.pnDetailsSub1.Controls.Add(this.label188);
             this.pnDetailsSub1.Controls.Add(this.panel2);
             this.pnDetailsSub1.Controls.Add(this.panel15);
-            this.pnDetailsSub1.Controls.Add(this.textBox12);
+            this.pnDetailsSub1.Controls.Add(this.btnReferenceNo);
             this.pnDetailsSub1.Controls.Add(this.label35);
             this.pnDetailsSub1.Controls.Add(this.label30);
             this.pnDetailsSub1.Controls.Add(this.label17);
@@ -2252,13 +2256,13 @@
             this.label129.TabIndex = 26;
             this.label129.Text = "PP004506XXXX";
             // 
-            // textBox12
+            // btnReferenceNo
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(100, 6);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 22);
-            this.textBox12.TabIndex = 2;
+            this.btnReferenceNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnReferenceNo.Location = new System.Drawing.Point(100, 6);
+            this.btnReferenceNo.Name = "btnReferenceNo";
+            this.btnReferenceNo.Size = new System.Drawing.Size(179, 22);
+            this.btnReferenceNo.TabIndex = 2;
             // 
             // label35
             // 
@@ -5964,7 +5968,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox btnReferenceNo;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;

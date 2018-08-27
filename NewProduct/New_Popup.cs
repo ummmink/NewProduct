@@ -800,12 +800,23 @@ namespace NewProduct
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            int iInsert = 0;
             pnDetailsProductMix.Visible = false;
 
             pnDetailsSub1.Visible = true;
             lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
 
             tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
+
+            for (int i = 0; i < grdMainProduct.Rows.Count; i++)
+            {
+                //iInsert = commonBiz.
+                    //.insert_po_letter(po_no, i + 1,
+                    //grdMainProduct.Rows[i].Cells["LetterID"].Value.ToString(),
+                    //grdMainProduct.Rows[i].Cells["PremiumID"].Value.ToString(),
+                    //ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["PremiumQty"].Value),
+                    //variablePublic.compName);
+            }
         }
 
         private void tbCaseQty_Leave(object sender, EventArgs e)

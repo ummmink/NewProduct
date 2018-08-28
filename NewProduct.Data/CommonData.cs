@@ -24,6 +24,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_DEPARTMENT_ROLE_BY_USER_GROUP_ID = "npd_select_product_department_role_by_user_group_id";
         private static string _NPD_SELECT_MAIN_PRODUCT = "npd_select_main_product";
         private static string _NPD_SELECT_PRODUCT_OTHER = "npd_select_product_other";
+        private static string _NPD_INSERT_PRODUCT_HAMPER_TEMP = "npd_insert_product_hamper_temp";
 
         public CommonDataSet select_product_all_status()
         {
@@ -143,6 +144,43 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_PRODUCT_OTHER.TableName, _NPD_SELECT_PRODUCT_OTHER, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_insert_product_hamper_temp(string reference_no, string product_id,
+            string product_sub_id, int quantity, int hamper_extra, float price)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[6];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                pm[1] = new SqlParameter("@PRODUCT_ID", SqlDbType.VarChar);
+                pm[1].Value = product_id;
+
+                pm[2] = new SqlParameter("@PRODUCT_SUB_ID", SqlDbType.VarChar);
+                pm[2].Value = product_sub_id;
+
+                pm[3] = new SqlParameter("@QUANTITY", SqlDbType.Int);
+                pm[3].Value = quantity;
+
+                pm[4] = new SqlParameter("@HAMPER_EXTRA", SqlDbType.Int);
+                pm[4].Value = hamper_extra;
+
+                pm[5] = new SqlParameter("@PRICE", SqlDbType.Float);
+                pm[5].Value = price;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_INSERT_PRODUCT_HAMPER_TEMP.TableName, _NPD_INSERT_PRODUCT_HAMPER_TEMP, pm, strConnCommon);
+
             }
             catch (Exception ex)
             {

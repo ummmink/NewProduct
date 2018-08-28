@@ -800,23 +800,30 @@ namespace NewProduct
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            int iInsert = 0;
             pnDetailsProductMix.Visible = false;
 
             pnDetailsSub1.Visible = true;
             lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
 
             tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
-
-            for (int i = 0; i < grdMainProduct.Rows.Count; i++)
+            // Save MainProduct
+            for (int i = 0; i < grdMainProduct.Rows.Count - 1; i++)
             {
-                //iInsert = commonBiz.
-                    //.insert_po_letter(po_no, i + 1,
-                    //grdMainProduct.Rows[i].Cells["LetterID"].Value.ToString(),
-                    //grdMainProduct.Rows[i].Cells["PremiumID"].Value.ToString(),
-                    //ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["PremiumQty"].Value),
-                    //variablePublic.compName);
+                CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_hamper_temp(btnReferenceNo.Text, "12345678XXXX",
+                    grdMainProduct.Rows[i].Cells["PRODUCT_ID"].Value.ToString(),
+                    ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value),
+                    0,
+                    ConvertUtil.parseFloat(grdMainProduct.Rows[i].Cells["LTP"].Value));
             }
+            // Save FreeProduct
+            for (int i = 0; i < grdFreeProduct.Rows.Count - 1; i++)
+            {
+                CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_hamper_temp(btnReferenceNo.Text, "12345678XXXX",
+                    grdFreeProduct.Rows[i].Cells["FPRODUCT_ID"].Value.ToString(),
+                    ConvertUtil.parseInt(grdFreeProduct.Rows[i].Cells["FQTY"].Value),
+                    1,
+                    ConvertUtil.parseFloat(grdFreeProduct.Rows[i].Cells["FLTP"].Value));
+            }           
         }
 
         private void tbCaseQty_Leave(object sender, EventArgs e)

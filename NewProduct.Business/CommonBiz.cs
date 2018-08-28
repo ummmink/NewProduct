@@ -96,5 +96,19 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_insert_product_hamper_temp(string reference_no, string product_id,
+            string product_sub_id, int quantity, int hamper_extra, float price)
+        {
+            try
+            {
+                return commonData.npd_insert_product_hamper_temp(reference_no, product_id, product_sub_id, 
+                    quantity, hamper_extra, price);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

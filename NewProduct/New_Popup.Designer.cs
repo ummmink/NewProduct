@@ -249,7 +249,7 @@
             this.label131 = new System.Windows.Forms.Label();
             this.label130 = new System.Windows.Forms.Label();
             this.label129 = new System.Windows.Forms.Label();
-            this.btnReferenceNo = new System.Windows.Forms.TextBox();
+            this.tbReferenceNo = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -719,8 +719,8 @@
             this.pnDetails.Controls.Add(this.panel3);
             this.pnDetails.Controls.Add(this.label24);
             this.pnDetails.Controls.Add(this.panel1);
-            this.pnDetails.Controls.Add(this.pnDetailsProductMix);
             this.pnDetails.Controls.Add(this.pnDetailsSub1);
+            this.pnDetails.Controls.Add(this.pnDetailsProductMix);
             this.pnDetails.Location = new System.Drawing.Point(46, 115);
             this.pnDetails.Name = "pnDetails";
             this.pnDetails.Size = new System.Drawing.Size(1270, 600);
@@ -935,7 +935,7 @@
             this.tbQtySampleCase.Location = new System.Drawing.Point(480, 63);
             this.tbQtySampleCase.Name = "tbQtySampleCase";
             this.tbQtySampleCase.Size = new System.Drawing.Size(71, 22);
-            this.tbQtySampleCase.TabIndex = 57;
+            this.tbQtySampleCase.TabIndex = 5;
             this.tbQtySampleCase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label190
@@ -996,7 +996,7 @@
             this.cmbOther.Location = new System.Drawing.Point(405, 8);
             this.cmbOther.Name = "cmbOther";
             this.cmbOther.Size = new System.Drawing.Size(129, 22);
-            this.cmbOther.TabIndex = 25;
+            this.cmbOther.TabIndex = 1;
             this.cmbOther.DropDown += new System.EventHandler(this.cmbOther_DropDown);
             this.cmbOther.SelectionChangeCommitted += new System.EventHandler(this.cmbOther_SelectionChangeCommitted);
             // 
@@ -1136,7 +1136,7 @@
             this.dtpOrderDate.Location = new System.Drawing.Point(232, 91);
             this.dtpOrderDate.Name = "dtpOrderDate";
             this.dtpOrderDate.Size = new System.Drawing.Size(101, 22);
-            this.dtpOrderDate.TabIndex = 5;
+            this.dtpOrderDate.TabIndex = 6;
             // 
             // label31
             // 
@@ -1155,7 +1155,7 @@
             this.tbScheduleDate.Location = new System.Drawing.Point(120, 35);
             this.tbScheduleDate.Name = "tbScheduleDate";
             this.tbScheduleDate.Size = new System.Drawing.Size(169, 22);
-            this.tbScheduleDate.TabIndex = 1;
+            this.tbScheduleDate.TabIndex = 2;
             // 
             // label29
             // 
@@ -1175,7 +1175,7 @@
             this.tbQtySamplePiece.Location = new System.Drawing.Point(378, 63);
             this.tbQtySamplePiece.Name = "tbQtySamplePiece";
             this.tbQtySamplePiece.Size = new System.Drawing.Size(71, 22);
-            this.tbQtySamplePiece.TabIndex = 3;
+            this.tbQtySamplePiece.TabIndex = 4;
             this.tbQtySamplePiece.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // rdbNeedSample
@@ -1225,7 +1225,7 @@
             this.dtpSampleProductDate.Location = new System.Drawing.Point(232, 63);
             this.dtpSampleProductDate.Name = "dtpSampleProductDate";
             this.dtpSampleProductDate.Size = new System.Drawing.Size(101, 22);
-            this.dtpSampleProductDate.TabIndex = 2;
+            this.dtpSampleProductDate.TabIndex = 3;
             // 
             // label27
             // 
@@ -1278,7 +1278,7 @@
             this.panel1.Location = new System.Drawing.Point(674, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(586, 292);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 0;
             // 
             // pnDetailsProductMix
             // 
@@ -1966,7 +1966,7 @@
             this.pnDetailsSub1.Controls.Add(this.label188);
             this.pnDetailsSub1.Controls.Add(this.panel2);
             this.pnDetailsSub1.Controls.Add(this.panel15);
-            this.pnDetailsSub1.Controls.Add(this.btnReferenceNo);
+            this.pnDetailsSub1.Controls.Add(this.tbReferenceNo);
             this.pnDetailsSub1.Controls.Add(this.label35);
             this.pnDetailsSub1.Controls.Add(this.label30);
             this.pnDetailsSub1.Controls.Add(this.label17);
@@ -2006,7 +2006,7 @@
             this.textBox74.Multiline = true;
             this.textBox74.Name = "textBox74";
             this.textBox74.Size = new System.Drawing.Size(478, 22);
-            this.textBox74.TabIndex = 68;
+            this.textBox74.TabIndex = 20;
             // 
             // label189
             // 
@@ -2025,7 +2025,7 @@
             this.textBox19.Location = new System.Drawing.Point(161, 499);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(478, 22);
-            this.textBox19.TabIndex = 59;
+            this.textBox19.TabIndex = 19;
             // 
             // label43
             // 
@@ -2055,7 +2055,7 @@
             this.textBox17.Location = new System.Drawing.Point(466, 471);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(173, 22);
-            this.textBox17.TabIndex = 58;
+            this.textBox17.TabIndex = 18;
             // 
             // label42
             // 
@@ -2074,7 +2074,7 @@
             this.textBox18.Location = new System.Drawing.Point(161, 471);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(226, 22);
-            this.textBox18.TabIndex = 57;
+            this.textBox18.TabIndex = 17;
             // 
             // label39
             // 
@@ -2093,7 +2093,7 @@
             this.textBox15.Location = new System.Drawing.Point(466, 443);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(173, 22);
-            this.textBox15.TabIndex = 56;
+            this.textBox15.TabIndex = 16;
             // 
             // label40
             // 
@@ -2112,7 +2112,7 @@
             this.textBox16.Location = new System.Drawing.Point(161, 443);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(226, 22);
-            this.textBox16.TabIndex = 55;
+            this.textBox16.TabIndex = 15;
             // 
             // label38
             // 
@@ -2131,7 +2131,7 @@
             this.textBox14.Location = new System.Drawing.Point(466, 415);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(173, 22);
-            this.textBox14.TabIndex = 54;
+            this.textBox14.TabIndex = 14;
             // 
             // label37
             // 
@@ -2150,7 +2150,7 @@
             this.textBox13.Location = new System.Drawing.Point(161, 415);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(226, 22);
-            this.textBox13.TabIndex = 53;
+            this.textBox13.TabIndex = 13;
             // 
             // label36
             // 
@@ -2198,7 +2198,7 @@
             this.tbPrice.Location = new System.Drawing.Point(539, 174);
             this.tbPrice.Name = "tbPrice";
             this.tbPrice.Size = new System.Drawing.Size(100, 22);
-            this.tbPrice.TabIndex = 49;
+            this.tbPrice.TabIndex = 12;
             this.tbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label188
@@ -2916,13 +2916,13 @@
             this.label129.TabIndex = 26;
             this.label129.Text = "PP004506XXXX";
             // 
-            // btnReferenceNo
+            // tbReferenceNo
             // 
-            this.btnReferenceNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnReferenceNo.Location = new System.Drawing.Point(100, 6);
-            this.btnReferenceNo.Name = "btnReferenceNo";
-            this.btnReferenceNo.Size = new System.Drawing.Size(179, 22);
-            this.btnReferenceNo.TabIndex = 2;
+            this.tbReferenceNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbReferenceNo.Location = new System.Drawing.Point(100, 6);
+            this.tbReferenceNo.Name = "tbReferenceNo";
+            this.tbReferenceNo.Size = new System.Drawing.Size(179, 22);
+            this.tbReferenceNo.TabIndex = 0;
             // 
             // label35
             // 
@@ -3016,7 +3016,7 @@
             this.cmbProductType.Location = new System.Drawing.Point(100, 34);
             this.cmbProductType.Name = "cmbProductType";
             this.cmbProductType.Size = new System.Drawing.Size(136, 22);
-            this.cmbProductType.TabIndex = 0;
+            this.cmbProductType.TabIndex = 1;
             this.cmbProductType.DropDown += new System.EventHandler(this.cmbProductType_DropDown);
             this.cmbProductType.SelectionChangeCommitted += new System.EventHandler(this.cmbProductType_SelectionChangeCommitted);
             // 
@@ -3038,7 +3038,7 @@
             this.cmbProductItemNo.Location = new System.Drawing.Point(345, 34);
             this.cmbProductItemNo.Name = "cmbProductItemNo";
             this.cmbProductItemNo.Size = new System.Drawing.Size(250, 22);
-            this.cmbProductItemNo.TabIndex = 1;
+            this.cmbProductItemNo.TabIndex = 2;
             this.cmbProductItemNo.DropDown += new System.EventHandler(this.cmbProductItemNo_DropDown);
             this.cmbProductItemNo.SelectionChangeCommitted += new System.EventHandler(this.cmbProductItemNo_SelectionChangeCommitted);
             this.cmbProductItemNo.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.cmbProductItemNo_Format);
@@ -5968,7 +5968,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox btnReferenceNo;
+        private System.Windows.Forms.TextBox tbReferenceNo;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;

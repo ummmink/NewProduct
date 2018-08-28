@@ -281,17 +281,26 @@ namespace NewProduct
 
         private void btnMixProducts_Click(object sender, EventArgs e)
         {
-            if (tbPackQty.Text == "")
+            if (tbReferenceNo.Text == "")
             {
-                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("กรุณาใส่เลขที่อ้างอิง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                tbReferenceNo.Focus();
             }
             else
             {
-                pnDetailsSub1.Visible = false;
+                if (tbPackQty.Text == "")
+                {
+                    MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    tbPackQty.Focus();
+                }
+                else
+                {
+                    pnDetailsSub1.Visible = false;
 
-                pnDetailsProductMix.Visible = true;
-                lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
-            }            
+                    pnDetailsProductMix.Visible = true;
+                    lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+                }
+            }                       
         }
 
         private void grdMainProduct_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
@@ -806,24 +815,37 @@ namespace NewProduct
             lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
 
             tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
-            // Save MainProduct
+
+            SaveProductHamper();
+        }
+
+        private void SaveProductHamper()
+        {
+            #region Delete Old MainProduct and FreeProduct
+            CommonDataSet dsDelete = commonBiz.npd_delete_all_product_hamper_temp_by_reference_no(tbReferenceNo.Text);
+            #endregion
+
+            #region Save MainProduct
             for (int i = 0; i < grdMainProduct.Rows.Count - 1; i++)
             {
-                CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_hamper_temp(btnReferenceNo.Text, "12345678XXXX",
+                CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_hamper_temp(tbReferenceNo.Text, "12345678XXXX",
                     grdMainProduct.Rows[i].Cells["PRODUCT_ID"].Value.ToString(),
                     ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value),
                     0,
                     ConvertUtil.parseFloat(grdMainProduct.Rows[i].Cells["LTP"].Value));
             }
-            // Save FreeProduct
+            #endregion
+
+            #region Save FreeProduct
             for (int i = 0; i < grdFreeProduct.Rows.Count - 1; i++)
             {
-                CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_hamper_temp(btnReferenceNo.Text, "12345678XXXX",
+                CommonDataSet dsInsertFreeProduct = commonBiz.npd_insert_product_hamper_temp(tbReferenceNo.Text, "12345678XXXX",
                     grdFreeProduct.Rows[i].Cells["FPRODUCT_ID"].Value.ToString(),
                     ConvertUtil.parseInt(grdFreeProduct.Rows[i].Cells["FQTY"].Value),
                     1,
                     ConvertUtil.parseFloat(grdFreeProduct.Rows[i].Cells["FLTP"].Value));
-            }           
+            }
+            #endregion
         }
 
         private void tbCaseQty_Leave(object sender, EventArgs e)

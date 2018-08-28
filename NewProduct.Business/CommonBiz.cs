@@ -110,5 +110,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_delete_all_product_hamper_temp_by_reference_no(string reference_no)
+        {
+            try
+            {
+                return commonData.npd_delete_all_product_hamper_temp_by_reference_no(reference_no);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

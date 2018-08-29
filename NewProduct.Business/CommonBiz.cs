@@ -122,5 +122,29 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_product_hamper_temp_by_reference_no(string reference_no)
+        {
+            try
+            {
+                return commonData.npd_select_product_hamper_temp_by_reference_no(reference_no);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_name_th_by_product_id(string product_id)
+        {
+            try
+            {
+                return commonData.npd_select_product_name_th_by_product_id(product_id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

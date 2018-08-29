@@ -42,6 +42,10 @@ namespace NewProduct.Entity {
         
         private NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable tableNPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO;
         
+        private NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO;
+        
+        private NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -96,6 +100,12 @@ namespace NewProduct.Entity {
                 }
                 if ((ds.Tables["NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"] != null)) {
                     base.Tables.Add(new NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable(ds.Tables["NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"]));
+                }
+                if ((ds.Tables["NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable(ds.Tables["NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"]));
+                }
+                if ((ds.Tables["NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable(ds.Tables["NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -207,6 +217,26 @@ namespace NewProduct.Entity {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO {
+            get {
+                return this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID {
+            get {
+                return this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -299,6 +329,12 @@ namespace NewProduct.Entity {
                 if ((ds.Tables["NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"] != null)) {
                     base.Tables.Add(new NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable(ds.Tables["NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"]));
                 }
+                if ((ds.Tables["NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable(ds.Tables["NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"]));
+                }
+                if ((ds.Tables["NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable(ds.Tables["NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -386,6 +422,18 @@ namespace NewProduct.Entity {
                     this.tableNPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.InitVars();
                 }
             }
+            this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO = ((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable)(base.Tables["NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO"]));
+            if ((initTable == true)) {
+                if ((this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO != null)) {
+                    this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.InitVars();
+                }
+            }
+            this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID = ((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable)(base.Tables["NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID"]));
+            if ((initTable == true)) {
+                if ((this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID != null)) {
+                    this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -414,6 +462,10 @@ namespace NewProduct.Entity {
             base.Tables.Add(this.tableNPD_INSERT_PRODUCT_HAMPER_TEMP);
             this.tableNPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO = new NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable();
             base.Tables.Add(this.tableNPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO);
+            this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO = new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable();
+            base.Tables.Add(this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO);
+            this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID = new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable();
+            base.Tables.Add(this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -467,6 +519,18 @@ namespace NewProduct.Entity {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeNPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID() {
             return false;
         }
         
@@ -551,6 +615,12 @@ namespace NewProduct.Entity {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEventHandler(object sender, NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEventHandler(object sender, NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEventHandler(object sender, NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -3449,6 +3519,591 @@ namespace NewProduct.Entity {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable : global::System.Data.TypedTableBase<NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow> {
+            
+            private global::System.Data.DataColumn columnREFERENCE_NO;
+            
+            private global::System.Data.DataColumn columnPRODUCT_ID;
+            
+            private global::System.Data.DataColumn columnPRODUCT_SUB_ID;
+            
+            private global::System.Data.DataColumn columnQUANTITY;
+            
+            private global::System.Data.DataColumn columnHAMPER_EXTRA;
+            
+            private global::System.Data.DataColumn columnPRICE;
+            
+            private global::System.Data.DataColumn columnSTATUS;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable() {
+                this.TableName = "NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn REFERENCE_NOColumn {
+                get {
+                    return this.columnREFERENCE_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCT_IDColumn {
+                get {
+                    return this.columnPRODUCT_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCT_SUB_IDColumn {
+                get {
+                    return this.columnPRODUCT_SUB_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn QUANTITYColumn {
+                get {
+                    return this.columnQUANTITY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HAMPER_EXTRAColumn {
+                get {
+                    return this.columnHAMPER_EXTRA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRICEColumn {
+                get {
+                    return this.columnPRICE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn STATUSColumn {
+                get {
+                    return this.columnSTATUS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow this[int index] {
+                get {
+                    return ((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow(NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow AddNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow(string REFERENCE_NO, string PRODUCT_ID, string PRODUCT_SUB_ID, int QUANTITY, int HAMPER_EXTRA, double PRICE, bool STATUS) {
+                NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow rowNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow = ((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        REFERENCE_NO,
+                        PRODUCT_ID,
+                        PRODUCT_SUB_ID,
+                        QUANTITY,
+                        HAMPER_EXTRA,
+                        PRICE,
+                        STATUS};
+                rowNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow);
+                return rowNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable cln = ((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnREFERENCE_NO = base.Columns["REFERENCE_NO"];
+                this.columnPRODUCT_ID = base.Columns["PRODUCT_ID"];
+                this.columnPRODUCT_SUB_ID = base.Columns["PRODUCT_SUB_ID"];
+                this.columnQUANTITY = base.Columns["QUANTITY"];
+                this.columnHAMPER_EXTRA = base.Columns["HAMPER_EXTRA"];
+                this.columnPRICE = base.Columns["PRICE"];
+                this.columnSTATUS = base.Columns["STATUS"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnREFERENCE_NO = new global::System.Data.DataColumn("REFERENCE_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnREFERENCE_NO);
+                this.columnPRODUCT_ID = new global::System.Data.DataColumn("PRODUCT_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCT_ID);
+                this.columnPRODUCT_SUB_ID = new global::System.Data.DataColumn("PRODUCT_SUB_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCT_SUB_ID);
+                this.columnQUANTITY = new global::System.Data.DataColumn("QUANTITY", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQUANTITY);
+                this.columnHAMPER_EXTRA = new global::System.Data.DataColumn("HAMPER_EXTRA", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHAMPER_EXTRA);
+                this.columnPRICE = new global::System.Data.DataColumn("PRICE", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRICE);
+                this.columnSTATUS = new global::System.Data.DataColumn("STATUS", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSTATUS);
+                this.columnREFERENCE_NO.AllowDBNull = false;
+                this.columnREFERENCE_NO.MaxLength = 20;
+                this.columnPRODUCT_ID.AllowDBNull = false;
+                this.columnPRODUCT_ID.MaxLength = 15;
+                this.columnPRODUCT_SUB_ID.AllowDBNull = false;
+                this.columnPRODUCT_SUB_ID.MaxLength = 15;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow NewNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow() {
+                return ((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChanged != null)) {
+                    this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChanged(this, new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChanging != null)) {
+                    this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChanging(this, new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowDeleted != null)) {
+                    this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowDeleted(this, new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowDeleting != null)) {
+                    this.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowDeleting(this, new NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow(NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                CommonDataSet ds = new CommonDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable : global::System.Data.TypedTableBase<NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow> {
+            
+            private global::System.Data.DataColumn columnPRODUCT_NAME_TH;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable() {
+                this.TableName = "NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCT_NAME_THColumn {
+                get {
+                    return this.columnPRODUCT_NAME_TH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow this[int index] {
+                get {
+                    return ((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEventHandler NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEventHandler NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEventHandler NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEventHandler NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow(NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow AddNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow(string PRODUCT_NAME_TH) {
+                NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow rowNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow = ((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        PRODUCT_NAME_TH};
+                rowNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow);
+                return rowNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable cln = ((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnPRODUCT_NAME_TH = base.Columns["PRODUCT_NAME_TH"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnPRODUCT_NAME_TH = new global::System.Data.DataColumn("PRODUCT_NAME_TH", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCT_NAME_TH);
+                this.columnPRODUCT_NAME_TH.MaxLength = 350;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow NewNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow() {
+                return ((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChanged != null)) {
+                    this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChanged(this, new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEvent(((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChanging != null)) {
+                    this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChanging(this, new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEvent(((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowDeleted != null)) {
+                    this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowDeleted(this, new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEvent(((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowDeleting != null)) {
+                    this.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowDeleting(this, new NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEvent(((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow(NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                CommonDataSet ds = new CommonDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class SELECT_PRODUCT_ALL_STATUSRow : global::System.Data.DataRow {
@@ -4985,6 +5640,214 @@ namespace NewProduct.Entity {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow : global::System.Data.DataRow {
+            
+            private NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO = ((NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string REFERENCE_NO {
+                get {
+                    return ((string)(this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.REFERENCE_NOColumn]));
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.REFERENCE_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PRODUCT_ID {
+                get {
+                    return ((string)(this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRODUCT_IDColumn]));
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRODUCT_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PRODUCT_SUB_ID {
+                get {
+                    return ((string)(this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRODUCT_SUB_IDColumn]));
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRODUCT_SUB_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int QUANTITY {
+                get {
+                    try {
+                        return ((int)(this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.QUANTITYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'QUANTITY\' in table \'NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFER" +
+                                "ENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.QUANTITYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int HAMPER_EXTRA {
+                get {
+                    try {
+                        return ((int)(this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.HAMPER_EXTRAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HAMPER_EXTRA\' in table \'NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_R" +
+                                "EFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.HAMPER_EXTRAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double PRICE {
+                get {
+                    try {
+                        return ((double)(this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRICEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PRICE\' in table \'NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENC" +
+                                "E_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRICEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool STATUS {
+                get {
+                    try {
+                        return ((bool)(this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.STATUSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'STATUS\' in table \'NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFEREN" +
+                                "CE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.STATUSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsQUANTITYNull() {
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.QUANTITYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetQUANTITYNull() {
+                this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.QUANTITYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsHAMPER_EXTRANull() {
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.HAMPER_EXTRAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetHAMPER_EXTRANull() {
+                this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.HAMPER_EXTRAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPRICENull() {
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRICEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPRICENull() {
+                this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.PRICEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSTATUSNull() {
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.STATUSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSTATUSNull() {
+                this[this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.STATUSColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow : global::System.Data.DataRow {
+            
+            private NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID = ((NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PRODUCT_NAME_TH {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID.PRODUCT_NAME_THColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PRODUCT_NAME_TH\' in table \'NPD_SELECT_PRODUCT_NAME_TH_BY_PR" +
+                                "ODUCT_ID\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID.PRODUCT_NAME_THColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPRODUCT_NAME_THNull() {
+                return this.IsNull(this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID.PRODUCT_NAME_THColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPRODUCT_NAME_THNull() {
+                this[this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID.PRODUCT_NAME_THColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -5276,6 +6139,74 @@ namespace NewProduct.Entity {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent : global::System.EventArgs {
+            
+            private NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORowChangeEvent(NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NORow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEvent : global::System.EventArgs {
+            
+            private NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRowChangeEvent(NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -6952,6 +7883,374 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(REFERENCE_NO));
             }
             CommonDataSet.NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable dataTable = new CommonDataSet.NPD_DELETE_ALL_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NOTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NOTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO";
+            tableMapping.ColumnMappings.Add("REFERENCE_NO", "REFERENCE_NO");
+            tableMapping.ColumnMappings.Add("PRODUCT_ID", "PRODUCT_ID");
+            tableMapping.ColumnMappings.Add("PRODUCT_SUB_ID", "PRODUCT_SUB_ID");
+            tableMapping.ColumnMappings.Add("QUANTITY", "QUANTITY");
+            tableMapping.ColumnMappings.Add("HAMPER_EXTRA", "HAMPER_EXTRA");
+            tableMapping.ColumnMappings.Add("PRICE", "PRICE");
+            tableMapping.ColumnMappings.Add("STATUS", "STATUS");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::NewProduct.Entity.Properties.Settings.Default.COMMONConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@REFERENCE_NO", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(CommonDataSet.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable dataTable, string REFERENCE_NO) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((REFERENCE_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(REFERENCE_NO));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual CommonDataSet.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable GetData(string REFERENCE_NO) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((REFERENCE_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(REFERENCE_NO));
+            }
+            CommonDataSet.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable dataTable = new CommonDataSet.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NODataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID";
+            tableMapping.ColumnMappings.Add("PRODUCT_NAME_TH", "PRODUCT_NAME_TH");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::NewProduct.Entity.Properties.Settings.Default.COMMONConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_ID", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(CommonDataSet.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable dataTable, string PRODUCT_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((PRODUCT_ID == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(PRODUCT_ID));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual CommonDataSet.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable GetData(string PRODUCT_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((PRODUCT_ID == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(PRODUCT_ID));
+            }
+            CommonDataSet.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable dataTable = new CommonDataSet.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_IDDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

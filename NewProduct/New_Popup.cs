@@ -24,6 +24,8 @@ namespace NewProduct
 
         CommonBiz commonBiz = new CommonBiz();
 
+        int y = 2; // axis y
+
         public New_Popup()
         {
             InitializeComponent();
@@ -817,6 +819,81 @@ namespace NewProduct
             tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
 
             SaveProductHamper();
+
+            PreviewProductHamper();
+        }
+
+        private void PreviewProductHamper()
+        {
+            CommonDataSet dsProductHamper = commonBiz.npd_select_product_hamper_temp_by_reference_no(tbReferenceNo.Text);
+
+            for (int i = 0; i < dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.Count; i++)
+            {
+                //Label Product_Id
+                Label dtProductId = new Label();
+                string headerProductId = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString();
+                dtProductId.Text = headerProductId;
+                dtProductId.Location = new System.Drawing.Point(7, y);
+                dtProductId.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                dtProductId.Size = new System.Drawing.Size(91, 14);
+                dtProductId.AutoSize = true;
+                dtProductId.ForeColor = Color.White;
+                dtProductId.TextAlign = ContentAlignment.MiddleCenter;
+                pnMainProduct.Controls.Add(dtProductId);
+
+                //Label Product_Name_TH
+                CommonDataSet dsProductName = commonBiz.npd_select_product_name_th_by_product_id(dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString());
+                Label dtProductNameTH = new Label();
+                string headerProductNameTH = dsProductName.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID[0].PRODUCT_NAME_TH.ToString();
+                dtProductNameTH.Text = headerProductNameTH;
+                dtProductNameTH.Location = new System.Drawing.Point(106, y);
+                dtProductNameTH.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                dtProductNameTH.Size = new System.Drawing.Size(317, 14);
+                dtProductNameTH.AutoSize = true;
+                dtProductNameTH.ForeColor = Color.White;
+                dtProductNameTH.TextAlign = ContentAlignment.MiddleLeft;
+                dtProductNameTH.UseMnemonic = false;
+                pnMainProduct.Controls.Add(dtProductNameTH);
+
+                //Label Quantity
+                Label dtQuantity = new Label();
+                string headerQuantity = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].QUANTITY.ToString();
+                dtQuantity.Text = String.Format("{0:#,##0}", double.Parse(headerQuantity));
+                dtQuantity.Location = new System.Drawing.Point(430, y);
+                dtQuantity.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                dtQuantity.Size = new System.Drawing.Size(76, 14);
+                dtQuantity.AutoSize = false;
+                dtQuantity.ForeColor = Color.White;
+                dtQuantity.TextAlign = ContentAlignment.MiddleRight;
+                pnMainProduct.Controls.Add(dtQuantity);
+
+                //Label Unit
+                Label dtUnit = new Label();
+                //string headerMedia = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].MEDIA_NAME.ToString();
+                dtUnit.Text = "ขวด";
+                dtUnit.Location = new System.Drawing.Point(510, y);
+                dtUnit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                dtUnit.Size = new System.Drawing.Size(27, 14);
+                dtUnit.AutoSize = false;
+                dtUnit.ForeColor = Color.White;
+                dtUnit.TextAlign = ContentAlignment.MiddleLeft;
+                dtUnit.UseMnemonic = false;
+                pnMainProduct.Controls.Add(dtUnit);
+
+                //Label Amount
+                //Label dtAmount = new Label();
+                //string headerAmount = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].AMOUNT.ToString();
+                //dtAmount.Text = String.Format("{0:#,##0.00}", double.Parse(headerAmount));
+                //dtAmount.Location = new System.Drawing.Point(445, y);
+                //dtAmount.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                //dtAmount.Size = new System.Drawing.Size(110, 14);
+                //dtAmount.AutoSize = false;
+                //dtAmount.ForeColor = Color.Black;
+                //dtAmount.TextAlign = ContentAlignment.MiddleRight;
+                //pnTransactionDetail.Controls.Add(dtAmount);
+
+                y = dtProductId.Location.Y + 21;
+            }
         }
 
         private void SaveProductHamper()

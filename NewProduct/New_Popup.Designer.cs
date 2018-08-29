@@ -30,34 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_Popup));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDetails = new System.Windows.Forms.Button();
             this.btnShortName = new System.Windows.Forms.Button();
             this.btnBarcode = new System.Windows.Forms.Button();
@@ -116,6 +116,84 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnDetailsSub1 = new System.Windows.Forms.Panel();
+            this.textBox74 = new System.Windows.Forms.TextBox();
+            this.label189 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.btnProductType = new System.Windows.Forms.Button();
+            this.btnProductGroup = new System.Windows.Forms.Button();
+            this.tbPrice = new System.Windows.Forms.TextBox();
+            this.label188 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label160 = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
+            this.label165 = new System.Windows.Forms.Label();
+            this.label166 = new System.Windows.Forms.Label();
+            this.label167 = new System.Windows.Forms.Label();
+            this.label168 = new System.Windows.Forms.Label();
+            this.label169 = new System.Windows.Forms.Label();
+            this.label170 = new System.Windows.Forms.Label();
+            this.label171 = new System.Windows.Forms.Label();
+            this.label172 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
+            this.label174 = new System.Windows.Forms.Label();
+            this.label175 = new System.Windows.Forms.Label();
+            this.label176 = new System.Windows.Forms.Label();
+            this.label177 = new System.Windows.Forms.Label();
+            this.label178 = new System.Windows.Forms.Label();
+            this.label179 = new System.Windows.Forms.Label();
+            this.label180 = new System.Windows.Forms.Label();
+            this.label181 = new System.Windows.Forms.Label();
+            this.label182 = new System.Windows.Forms.Label();
+            this.label183 = new System.Windows.Forms.Label();
+            this.label184 = new System.Windows.Forms.Label();
+            this.label185 = new System.Windows.Forms.Label();
+            this.label186 = new System.Windows.Forms.Label();
+            this.label187 = new System.Windows.Forms.Label();
+            this.pnMainProduct = new System.Windows.Forms.Panel();
+            this.tbReferenceNo = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnMixProducts = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbPriceRecommend = new System.Windows.Forms.TextBox();
+            this.cmbProductType = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cmbProductItemNo = new System.Windows.Forms.ComboBox();
+            this.tbBottleQty = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tbPackQty = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbInnerQty = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tbCaseQty = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnDetailsProductMix = new System.Windows.Forms.Panel();
             this.grdFreeProductList = new System.Windows.Forms.DataGridView();
             this.FproductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -169,112 +247,16 @@
             this.label116 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.grdMainProduct = new System.Windows.Forms.DataGridView();
-            this.pnDetailsSub1 = new System.Windows.Forms.Panel();
-            this.textBox74 = new System.Windows.Forms.TextBox();
-            this.label189 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.btnProductType = new System.Windows.Forms.Button();
-            this.btnProductGroup = new System.Windows.Forms.Button();
-            this.tbPrice = new System.Windows.Forms.TextBox();
-            this.label188 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label160 = new System.Windows.Forms.Label();
-            this.label161 = new System.Windows.Forms.Label();
-            this.label162 = new System.Windows.Forms.Label();
-            this.label163 = new System.Windows.Forms.Label();
-            this.label164 = new System.Windows.Forms.Label();
-            this.label165 = new System.Windows.Forms.Label();
-            this.label166 = new System.Windows.Forms.Label();
-            this.label167 = new System.Windows.Forms.Label();
-            this.label168 = new System.Windows.Forms.Label();
-            this.label169 = new System.Windows.Forms.Label();
-            this.label170 = new System.Windows.Forms.Label();
-            this.label171 = new System.Windows.Forms.Label();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.label174 = new System.Windows.Forms.Label();
-            this.label175 = new System.Windows.Forms.Label();
-            this.label176 = new System.Windows.Forms.Label();
-            this.label177 = new System.Windows.Forms.Label();
-            this.label178 = new System.Windows.Forms.Label();
-            this.label179 = new System.Windows.Forms.Label();
-            this.label180 = new System.Windows.Forms.Label();
-            this.label181 = new System.Windows.Forms.Label();
-            this.label182 = new System.Windows.Forms.Label();
-            this.label183 = new System.Windows.Forms.Label();
-            this.label184 = new System.Windows.Forms.Label();
-            this.label185 = new System.Windows.Forms.Label();
-            this.label186 = new System.Windows.Forms.Label();
-            this.label187 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label156 = new System.Windows.Forms.Label();
-            this.label157 = new System.Windows.Forms.Label();
-            this.label158 = new System.Windows.Forms.Label();
-            this.label159 = new System.Windows.Forms.Label();
-            this.label152 = new System.Windows.Forms.Label();
-            this.label153 = new System.Windows.Forms.Label();
-            this.label154 = new System.Windows.Forms.Label();
-            this.label155 = new System.Windows.Forms.Label();
-            this.label148 = new System.Windows.Forms.Label();
-            this.label149 = new System.Windows.Forms.Label();
-            this.label150 = new System.Windows.Forms.Label();
-            this.label151 = new System.Windows.Forms.Label();
-            this.label144 = new System.Windows.Forms.Label();
-            this.label145 = new System.Windows.Forms.Label();
-            this.label146 = new System.Windows.Forms.Label();
-            this.label147 = new System.Windows.Forms.Label();
-            this.label140 = new System.Windows.Forms.Label();
-            this.label141 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
-            this.label143 = new System.Windows.Forms.Label();
-            this.label134 = new System.Windows.Forms.Label();
-            this.label133 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
-            this.label136 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
-            this.label131 = new System.Windows.Forms.Label();
-            this.label130 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.tbReferenceNo = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnMixProducts = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tbPriceRecommend = new System.Windows.Forms.TextBox();
-            this.cmbProductType = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.cmbProductItemNo = new System.Windows.Forms.ComboBox();
-            this.tbBottleQty = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.tbPackQty = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.tbInnerQty = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.tbCaseQty = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.PRODUCT_ID = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.PRODUCT_NAME_TH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SIZE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UNIT_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.INNER_BOX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PACKING = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BOTTLE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnShortName = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -507,30 +489,19 @@
             this.label70 = new System.Windows.Forms.Label();
             this.bindingProduct = new System.Windows.Forms.BindingSource(this.components);
             this.bindingFreeProduct = new System.Windows.Forms.BindingSource(this.components);
-            this.PRODUCT_ID = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.PRODUCT_NAME_TH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SIZE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UNIT_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.INNER_BOX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PACKING = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BOTTLE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnDetails.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnDetailsSub1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.pnDetailsProductMix.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdFreeProductList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdMainProductList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdFreeProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdMainProduct)).BeginInit();
-            this.pnDetailsSub1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.pnShortName.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnMatCodeDK.SuspendLayout();
@@ -1280,666 +1251,6 @@
             this.panel1.Size = new System.Drawing.Size(586, 292);
             this.panel1.TabIndex = 0;
             // 
-            // pnDetailsProductMix
-            // 
-            this.pnDetailsProductMix.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnDetailsProductMix.Controls.Add(this.grdFreeProductList);
-            this.pnDetailsProductMix.Controls.Add(this.grdMainProductList);
-            this.pnDetailsProductMix.Controls.Add(this.label138);
-            this.pnDetailsProductMix.Controls.Add(this.label139);
-            this.pnDetailsProductMix.Controls.Add(this.tbSumPriceCaseTotal);
-            this.pnDetailsProductMix.Controls.Add(this.label137);
-            this.pnDetailsProductMix.Controls.Add(this.label128);
-            this.pnDetailsProductMix.Controls.Add(this.label127);
-            this.pnDetailsProductMix.Controls.Add(this.label124);
-            this.pnDetailsProductMix.Controls.Add(this.tbSumPriceFree);
-            this.pnDetailsProductMix.Controls.Add(this.label125);
-            this.pnDetailsProductMix.Controls.Add(this.label126);
-            this.pnDetailsProductMix.Controls.Add(this.tbSumQtyFree);
-            this.pnDetailsProductMix.Controls.Add(this.label121);
-            this.pnDetailsProductMix.Controls.Add(this.tbSumPriceTotal);
-            this.pnDetailsProductMix.Controls.Add(this.label122);
-            this.pnDetailsProductMix.Controls.Add(this.label123);
-            this.pnDetailsProductMix.Controls.Add(this.tbSumQtyTotal);
-            this.pnDetailsProductMix.Controls.Add(this.label120);
-            this.pnDetailsProductMix.Controls.Add(this.tbSumPrice);
-            this.pnDetailsProductMix.Controls.Add(this.label119);
-            this.pnDetailsProductMix.Controls.Add(this.label118);
-            this.pnDetailsProductMix.Controls.Add(this.tbSumQty);
-            this.pnDetailsProductMix.Controls.Add(this.grdFreeProduct);
-            this.pnDetailsProductMix.Controls.Add(this.label18);
-            this.pnDetailsProductMix.Controls.Add(this.label116);
-            this.pnDetailsProductMix.Controls.Add(this.btnBack);
-            this.pnDetailsProductMix.Controls.Add(this.grdMainProduct);
-            this.pnDetailsProductMix.Location = new System.Drawing.Point(8, 25);
-            this.pnDetailsProductMix.Name = "pnDetailsProductMix";
-            this.pnDetailsProductMix.Size = new System.Drawing.Size(660, 564);
-            this.pnDetailsProductMix.TabIndex = 10;
-            this.pnDetailsProductMix.Visible = false;
-            // 
-            // grdFreeProductList
-            // 
-            this.grdFreeProductList.AllowUserToAddRows = false;
-            this.grdFreeProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.grdFreeProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdFreeProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FproductID,
-            this.FproductNameTH,
-            this.fSizeP,
-            this.fUnitPrice,
-            this.fInnerBox,
-            this.fPackingP,
-            this.fBottleP});
-            this.grdFreeProductList.Location = new System.Drawing.Point(25, 331);
-            this.grdFreeProductList.Name = "grdFreeProductList";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.grdFreeProductList.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.NullValue = null;
-            this.grdFreeProductList.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.grdFreeProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.grdFreeProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.grdFreeProductList.Size = new System.Drawing.Size(447, 84);
-            this.grdFreeProductList.TabIndex = 45;
-            this.grdFreeProductList.Visible = false;
-            // 
-            // FproductID
-            // 
-            this.FproductID.DataPropertyName = "PRODUCT_ID";
-            this.FproductID.HeaderText = "รหัสสินค้า";
-            this.FproductID.Name = "FproductID";
-            // 
-            // FproductNameTH
-            // 
-            this.FproductNameTH.DataPropertyName = "PRODUCT_NAME_TH";
-            this.FproductNameTH.HeaderText = "ชื่อสินค้า";
-            this.FproductNameTH.Name = "FproductNameTH";
-            this.FproductNameTH.ReadOnly = true;
-            this.FproductNameTH.Width = 270;
-            // 
-            // fSizeP
-            // 
-            this.fSizeP.DataPropertyName = "SIZE";
-            this.fSizeP.HeaderText = "ขนาด";
-            this.fSizeP.Name = "fSizeP";
-            this.fSizeP.ReadOnly = true;
-            this.fSizeP.Width = 50;
-            // 
-            // fUnitPrice
-            // 
-            this.fUnitPrice.DataPropertyName = "UNIT_PRICE";
-            this.fUnitPrice.HeaderText = "UNIT_PRICE";
-            this.fUnitPrice.Name = "fUnitPrice";
-            this.fUnitPrice.Visible = false;
-            this.fUnitPrice.Width = 50;
-            // 
-            // fInnerBox
-            // 
-            this.fInnerBox.DataPropertyName = "INNER_BOX";
-            this.fInnerBox.HeaderText = "INNER_BOX";
-            this.fInnerBox.Name = "fInnerBox";
-            this.fInnerBox.Visible = false;
-            this.fInnerBox.Width = 30;
-            // 
-            // fPackingP
-            // 
-            this.fPackingP.DataPropertyName = "PACKING";
-            this.fPackingP.HeaderText = "PACKING";
-            this.fPackingP.Name = "fPackingP";
-            this.fPackingP.Visible = false;
-            this.fPackingP.Width = 30;
-            // 
-            // fBottleP
-            // 
-            this.fBottleP.DataPropertyName = "BOTTLE";
-            this.fBottleP.HeaderText = "BOTTLE";
-            this.fBottleP.Name = "fBottleP";
-            this.fBottleP.Visible = false;
-            this.fBottleP.Width = 30;
-            // 
-            // grdMainProductList
-            // 
-            this.grdMainProductList.AllowUserToAddRows = false;
-            this.grdMainProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.grdMainProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdMainProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productID,
-            this.productNameTH,
-            this.productSize,
-            this.unitPrice,
-            this.innerBox,
-            this.packingP,
-            this.bottleP});
-            this.grdMainProductList.Location = new System.Drawing.Point(25, 81);
-            this.grdMainProductList.Name = "grdMainProductList";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.NullValue = null;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.grdMainProductList.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.NullValue = null;
-            this.grdMainProductList.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.grdMainProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.grdMainProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.grdMainProductList.Size = new System.Drawing.Size(447, 84);
-            this.grdMainProductList.TabIndex = 43;
-            this.grdMainProductList.Visible = false;
-            // 
-            // productID
-            // 
-            this.productID.DataPropertyName = "PRODUCT_ID";
-            this.productID.HeaderText = "รหัสสินค้า";
-            this.productID.Name = "productID";
-            // 
-            // productNameTH
-            // 
-            this.productNameTH.DataPropertyName = "PRODUCT_NAME_TH";
-            this.productNameTH.HeaderText = "ชื่อสินค้า";
-            this.productNameTH.Name = "productNameTH";
-            this.productNameTH.ReadOnly = true;
-            this.productNameTH.Width = 270;
-            // 
-            // productSize
-            // 
-            this.productSize.DataPropertyName = "SIZE";
-            this.productSize.HeaderText = "ขนาด";
-            this.productSize.Name = "productSize";
-            this.productSize.ReadOnly = true;
-            this.productSize.Width = 50;
-            // 
-            // unitPrice
-            // 
-            this.unitPrice.DataPropertyName = "UNIT_PRICE";
-            this.unitPrice.HeaderText = "UNIT_PRICE";
-            this.unitPrice.Name = "unitPrice";
-            this.unitPrice.Visible = false;
-            this.unitPrice.Width = 50;
-            // 
-            // innerBox
-            // 
-            this.innerBox.DataPropertyName = "INNER_BOX";
-            this.innerBox.HeaderText = "INNER_BOX";
-            this.innerBox.Name = "innerBox";
-            this.innerBox.Visible = false;
-            this.innerBox.Width = 30;
-            // 
-            // packingP
-            // 
-            this.packingP.DataPropertyName = "PACKING";
-            this.packingP.HeaderText = "PACKING";
-            this.packingP.Name = "packingP";
-            this.packingP.Visible = false;
-            this.packingP.Width = 30;
-            // 
-            // bottleP
-            // 
-            this.bottleP.DataPropertyName = "BOTTLE";
-            this.bottleP.HeaderText = "BOTTLE";
-            this.bottleP.Name = "bottleP";
-            this.bottleP.Visible = false;
-            this.bottleP.Width = 30;
-            // 
-            // label138
-            // 
-            this.label138.AutoSize = true;
-            this.label138.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label138.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label138.Location = new System.Drawing.Point(402, 532);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(22, 14);
-            this.label138.TabIndex = 67;
-            this.label138.Text = "ลัง";
-            // 
-            // label139
-            // 
-            this.label139.AutoSize = true;
-            this.label139.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label139.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label139.Location = new System.Drawing.Point(513, 532);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(30, 14);
-            this.label139.TabIndex = 66;
-            this.label139.Text = "บาท";
-            // 
-            // tbSumPriceCaseTotal
-            // 
-            this.tbSumPriceCaseTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumPriceCaseTotal.Location = new System.Drawing.Point(429, 528);
-            this.tbSumPriceCaseTotal.Name = "tbSumPriceCaseTotal";
-            this.tbSumPriceCaseTotal.ReadOnly = true;
-            this.tbSumPriceCaseTotal.Size = new System.Drawing.Size(77, 22);
-            this.tbSumPriceCaseTotal.TabIndex = 65;
-            this.tbSumPriceCaseTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label137
-            // 
-            this.label137.AutoSize = true;
-            this.label137.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label137.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label137.Location = new System.Drawing.Point(345, 502);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(79, 14);
-            this.label137.TabIndex = 64;
-            this.label137.Text = "แพ็ค/กระเช้า";
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label128.ForeColor = System.Drawing.Color.Tomato;
-            this.label128.Location = new System.Drawing.Point(242, 537);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(124, 13);
-            this.label128.TabIndex = 63;
-            this.label128.Text = "* ไม่รวมราคาสินค้าแถม";
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label127.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label127.Location = new System.Drawing.Point(242, 516);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(69, 14);
-            this.label127.TabIndex = 62;
-            this.label127.Text = "ราคาแนะนำ";
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label124.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label124.Location = new System.Drawing.Point(618, 266);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(30, 14);
-            this.label124.TabIndex = 61;
-            this.label124.Text = "บาท";
-            // 
-            // tbSumPriceFree
-            // 
-            this.tbSumPriceFree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumPriceFree.Location = new System.Drawing.Point(533, 262);
-            this.tbSumPriceFree.Name = "tbSumPriceFree";
-            this.tbSumPriceFree.ReadOnly = true;
-            this.tbSumPriceFree.Size = new System.Drawing.Size(76, 22);
-            this.tbSumPriceFree.TabIndex = 60;
-            this.tbSumPriceFree.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label125
-            // 
-            this.label125.AutoSize = true;
-            this.label125.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label125.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label125.Location = new System.Drawing.Point(496, 266);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(29, 14);
-            this.label125.TabIndex = 59;
-            this.label125.Text = "ขวด";
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label126.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label126.Location = new System.Drawing.Point(334, 266);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(96, 14);
-            this.label126.TabIndex = 58;
-            this.label126.Text = "จำนวนสินค้าแถม";
-            // 
-            // tbSumQtyFree
-            // 
-            this.tbSumQtyFree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumQtyFree.Location = new System.Drawing.Point(438, 262);
-            this.tbSumQtyFree.Name = "tbSumQtyFree";
-            this.tbSumQtyFree.ReadOnly = true;
-            this.tbSumQtyFree.Size = new System.Drawing.Size(54, 22);
-            this.tbSumQtyFree.TabIndex = 57;
-            this.tbSumQtyFree.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label121
-            // 
-            this.label121.AutoSize = true;
-            this.label121.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label121.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label121.Location = new System.Drawing.Point(513, 502);
-            this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(30, 14);
-            this.label121.TabIndex = 56;
-            this.label121.Text = "บาท";
-            // 
-            // tbSumPriceTotal
-            // 
-            this.tbSumPriceTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumPriceTotal.Location = new System.Drawing.Point(429, 498);
-            this.tbSumPriceTotal.Name = "tbSumPriceTotal";
-            this.tbSumPriceTotal.ReadOnly = true;
-            this.tbSumPriceTotal.Size = new System.Drawing.Size(77, 22);
-            this.tbSumPriceTotal.TabIndex = 55;
-            this.tbSumPriceTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label122.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label122.Location = new System.Drawing.Point(178, 516);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(29, 14);
-            this.label122.TabIndex = 54;
-            this.label122.Text = "ขวด";
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label123.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label123.Location = new System.Drawing.Point(10, 516);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(92, 14);
-            this.label123.TabIndex = 53;
-            this.label123.Text = "จำนวนสินค้ารวม";
-            // 
-            // tbSumQtyTotal
-            // 
-            this.tbSumQtyTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumQtyTotal.Location = new System.Drawing.Point(114, 512);
-            this.tbSumQtyTotal.Name = "tbSumQtyTotal";
-            this.tbSumQtyTotal.ReadOnly = true;
-            this.tbSumQtyTotal.Size = new System.Drawing.Size(55, 22);
-            this.tbSumQtyTotal.TabIndex = 52;
-            this.tbSumQtyTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label120.ForeColor = System.Drawing.Color.White;
-            this.label120.Location = new System.Drawing.Point(618, 17);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(30, 14);
-            this.label120.TabIndex = 51;
-            this.label120.Text = "บาท";
-            // 
-            // tbSumPrice
-            // 
-            this.tbSumPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumPrice.Location = new System.Drawing.Point(533, 13);
-            this.tbSumPrice.Name = "tbSumPrice";
-            this.tbSumPrice.ReadOnly = true;
-            this.tbSumPrice.Size = new System.Drawing.Size(76, 22);
-            this.tbSumPrice.TabIndex = 50;
-            this.tbSumPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label119
-            // 
-            this.label119.AutoSize = true;
-            this.label119.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label119.ForeColor = System.Drawing.Color.White;
-            this.label119.Location = new System.Drawing.Point(496, 17);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(29, 14);
-            this.label119.TabIndex = 49;
-            this.label119.Text = "ขวด";
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label118.ForeColor = System.Drawing.Color.White;
-            this.label118.Location = new System.Drawing.Point(334, 17);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(96, 14);
-            this.label118.TabIndex = 48;
-            this.label118.Text = "จำนวนสินค้าปกติ";
-            // 
-            // tbSumQty
-            // 
-            this.tbSumQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSumQty.Location = new System.Drawing.Point(438, 13);
-            this.tbSumQty.Name = "tbSumQty";
-            this.tbSumQty.ReadOnly = true;
-            this.tbSumQty.Size = new System.Drawing.Size(54, 22);
-            this.tbSumQty.TabIndex = 47;
-            this.tbSumQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // grdFreeProduct
-            // 
-            this.grdFreeProduct.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.grdFreeProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdFreeProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FPRODUCT_ID,
-            this.FproductNameTHp,
-            this.FSIZE,
-            this.FQTY,
-            this.FUNIT,
-            this.FLTP,
-            this.FUNIT_PRICE,
-            this.FINNER_BOX,
-            this.FPACKING,
-            this.FBOTTLE});
-            this.grdFreeProduct.Location = new System.Drawing.Point(10, 287);
-            this.grdFreeProduct.Name = "grdFreeProduct";
-            this.grdFreeProduct.RowHeadersWidth = 15;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            this.grdFreeProduct.RowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.grdFreeProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.grdFreeProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.grdFreeProduct.Size = new System.Drawing.Size(638, 202);
-            this.grdFreeProduct.TabIndex = 46;
-            this.grdFreeProduct.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.grdFreeProduct_CellBeginEdit);
-            this.grdFreeProduct.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdFreeProduct_CellEndEdit);
-            this.grdFreeProduct.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.grdFreeProduct_EditingControlShowing);
-            this.grdFreeProduct.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.grdFreeProduct_RowsRemoved);
-            this.grdFreeProduct.KeyDown += new System.Windows.Forms.KeyEventHandler(this.grdFreeProduct_KeyDown);
-            // 
-            // FPRODUCT_ID
-            // 
-            this.FPRODUCT_ID.DataPropertyName = "PRODUCT_ID";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FPRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle8;
-            this.FPRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.FPRODUCT_ID.HeaderText = "รหัสสินค้า";
-            this.FPRODUCT_ID.Name = "FPRODUCT_ID";
-            this.FPRODUCT_ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.FPRODUCT_ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // FproductNameTHp
-            // 
-            this.FproductNameTHp.DataPropertyName = "PRODUCT_NAME_TH";
-            this.FproductNameTHp.HeaderText = "ชื่อสินค้า";
-            this.FproductNameTHp.Name = "FproductNameTHp";
-            this.FproductNameTHp.ReadOnly = true;
-            this.FproductNameTHp.Width = 270;
-            // 
-            // FSIZE
-            // 
-            this.FSIZE.DataPropertyName = "SIZE";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FSIZE.DefaultCellStyle = dataGridViewCellStyle9;
-            this.FSIZE.HeaderText = "ขนาด";
-            this.FSIZE.Name = "FSIZE";
-            this.FSIZE.ReadOnly = true;
-            this.FSIZE.Width = 50;
-            // 
-            // FQTY
-            // 
-            this.FQTY.DataPropertyName = "QTY";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.NullValue = null;
-            this.FQTY.DefaultCellStyle = dataGridViewCellStyle10;
-            this.FQTY.HeaderText = "จำนวน";
-            this.FQTY.Name = "FQTY";
-            this.FQTY.Width = 50;
-            // 
-            // FUNIT
-            // 
-            this.FUNIT.DataPropertyName = "UNIT";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.NullValue = "ขวด";
-            this.FUNIT.DefaultCellStyle = dataGridViewCellStyle11;
-            this.FUNIT.HeaderText = "หน่วย";
-            this.FUNIT.Name = "FUNIT";
-            this.FUNIT.ReadOnly = true;
-            this.FUNIT.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.FUNIT.Width = 50;
-            // 
-            // FLTP
-            // 
-            this.FLTP.DataPropertyName = "LTP";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "C2";
-            this.FLTP.DefaultCellStyle = dataGridViewCellStyle12;
-            this.FLTP.HeaderText = "LTP";
-            this.FLTP.Name = "FLTP";
-            this.FLTP.ReadOnly = true;
-            this.FLTP.Width = 80;
-            // 
-            // FUNIT_PRICE
-            // 
-            this.FUNIT_PRICE.DataPropertyName = "UNIT_PRICE";
-            this.FUNIT_PRICE.HeaderText = "UNIT_PRICE";
-            this.FUNIT_PRICE.Name = "FUNIT_PRICE";
-            this.FUNIT_PRICE.Visible = false;
-            // 
-            // FINNER_BOX
-            // 
-            this.FINNER_BOX.DataPropertyName = "INNER_BOX";
-            this.FINNER_BOX.HeaderText = "INNER_BOX";
-            this.FINNER_BOX.Name = "FINNER_BOX";
-            this.FINNER_BOX.Visible = false;
-            // 
-            // FPACKING
-            // 
-            this.FPACKING.DataPropertyName = "PACKING";
-            this.FPACKING.HeaderText = "PACKING";
-            this.FPACKING.Name = "FPACKING";
-            this.FPACKING.Visible = false;
-            // 
-            // FBOTTLE
-            // 
-            this.FBOTTLE.DataPropertyName = "BOTTLE";
-            this.FBOTTLE.HeaderText = "BOTTLE";
-            this.FBOTTLE.Name = "FBOTTLE";
-            this.FBOTTLE.Visible = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label18.Location = new System.Drawing.Point(7, 266);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(61, 14);
-            this.label18.TabIndex = 41;
-            this.label18.Text = "สินค้าแถม";
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label116.ForeColor = System.Drawing.Color.White;
-            this.label116.Location = new System.Drawing.Point(7, 17);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(61, 14);
-            this.label116.TabIndex = 40;
-            this.label116.Text = "สินค้าปกติ";
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(550, 505);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(98, 37);
-            this.btnBack.TabIndex = 12;
-            this.btnBack.Text = "กลับหน้าหลัก";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // grdMainProduct
-            // 
-            this.grdMainProduct.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.grdMainProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdMainProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PRODUCT_ID,
-            this.PRODUCT_NAME_TH,
-            this.SIZE,
-            this.QTY,
-            this.unitType,
-            this.LTP,
-            this.UNIT_PRICE,
-            this.INNER_BOX,
-            this.PACKING,
-            this.BOTTLE});
-            this.grdMainProduct.Location = new System.Drawing.Point(10, 37);
-            this.grdMainProduct.Name = "grdMainProduct";
-            this.grdMainProduct.RowHeadersWidth = 15;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
-            this.grdMainProduct.RowsDefaultCellStyle = dataGridViewCellStyle20;
-            this.grdMainProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.grdMainProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.grdMainProduct.Size = new System.Drawing.Size(638, 211);
-            this.grdMainProduct.TabIndex = 44;
-            this.grdMainProduct.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.grdMainProduct_CellBeginEdit);
-            this.grdMainProduct.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdMainProduct_CellEndEdit);
-            this.grdMainProduct.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.grdMainProduct_EditingControlShowing);
-            this.grdMainProduct.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.grdMainProduct_RowsRemoved);
-            this.grdMainProduct.KeyDown += new System.Windows.Forms.KeyEventHandler(this.grdMainProduct_KeyDown);
-            // 
             // pnDetailsSub1
             // 
             this.pnDetailsSub1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1965,7 +1276,7 @@
             this.pnDetailsSub1.Controls.Add(this.tbPrice);
             this.pnDetailsSub1.Controls.Add(this.label188);
             this.pnDetailsSub1.Controls.Add(this.panel2);
-            this.pnDetailsSub1.Controls.Add(this.panel15);
+            this.pnDetailsSub1.Controls.Add(this.pnMainProduct);
             this.pnDetailsSub1.Controls.Add(this.tbReferenceNo);
             this.pnDetailsSub1.Controls.Add(this.label35);
             this.pnDetailsSub1.Controls.Add(this.label30);
@@ -2564,357 +1875,14 @@
             this.label187.TabIndex = 26;
             this.label187.Text = "PP004506XXXX";
             // 
-            // panel15
+            // pnMainProduct
             // 
-            this.panel15.AutoScroll = true;
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.label156);
-            this.panel15.Controls.Add(this.label157);
-            this.panel15.Controls.Add(this.label158);
-            this.panel15.Controls.Add(this.label159);
-            this.panel15.Controls.Add(this.label152);
-            this.panel15.Controls.Add(this.label153);
-            this.panel15.Controls.Add(this.label154);
-            this.panel15.Controls.Add(this.label155);
-            this.panel15.Controls.Add(this.label148);
-            this.panel15.Controls.Add(this.label149);
-            this.panel15.Controls.Add(this.label150);
-            this.panel15.Controls.Add(this.label151);
-            this.panel15.Controls.Add(this.label144);
-            this.panel15.Controls.Add(this.label145);
-            this.panel15.Controls.Add(this.label146);
-            this.panel15.Controls.Add(this.label147);
-            this.panel15.Controls.Add(this.label140);
-            this.panel15.Controls.Add(this.label141);
-            this.panel15.Controls.Add(this.label142);
-            this.panel15.Controls.Add(this.label143);
-            this.panel15.Controls.Add(this.label134);
-            this.panel15.Controls.Add(this.label133);
-            this.panel15.Controls.Add(this.label135);
-            this.panel15.Controls.Add(this.label136);
-            this.panel15.Controls.Add(this.label132);
-            this.panel15.Controls.Add(this.label131);
-            this.panel15.Controls.Add(this.label130);
-            this.panel15.Controls.Add(this.label129);
-            this.panel15.Location = new System.Drawing.Point(78, 206);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(561, 105);
-            this.panel15.TabIndex = 47;
-            // 
-            // label156
-            // 
-            this.label156.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label156.ForeColor = System.Drawing.Color.White;
-            this.label156.Location = new System.Drawing.Point(430, 127);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(76, 14);
-            this.label156.TabIndex = 54;
-            this.label156.Text = "2,000";
-            this.label156.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label157
-            // 
-            this.label157.AutoSize = true;
-            this.label157.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label157.ForeColor = System.Drawing.Color.White;
-            this.label157.Location = new System.Drawing.Point(510, 127);
-            this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(27, 14);
-            this.label157.TabIndex = 53;
-            this.label157.Text = "ขวด";
-            this.label157.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label158
-            // 
-            this.label158.AutoSize = true;
-            this.label158.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label158.ForeColor = System.Drawing.Color.White;
-            this.label158.Location = new System.Drawing.Point(106, 127);
-            this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(317, 14);
-            this.label158.TabIndex = 52;
-            this.label158.Text = "สก๊อต เพียวเร่ พรุนสกัดเข้มข้น ผสมวิตามิน (ชุดของขวัญแพค 12)";
-            // 
-            // label159
-            // 
-            this.label159.AutoSize = true;
-            this.label159.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label159.ForeColor = System.Drawing.Color.White;
-            this.label159.Location = new System.Drawing.Point(7, 127);
-            this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(91, 14);
-            this.label159.TabIndex = 51;
-            this.label159.Text = "PP004506XXXX";
-            // 
-            // label152
-            // 
-            this.label152.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label152.ForeColor = System.Drawing.Color.White;
-            this.label152.Location = new System.Drawing.Point(430, 106);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(76, 14);
-            this.label152.TabIndex = 50;
-            this.label152.Text = "2,000";
-            this.label152.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label153.ForeColor = System.Drawing.Color.White;
-            this.label153.Location = new System.Drawing.Point(510, 106);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(27, 14);
-            this.label153.TabIndex = 49;
-            this.label153.Text = "ขวด";
-            this.label153.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label154.ForeColor = System.Drawing.Color.White;
-            this.label154.Location = new System.Drawing.Point(106, 106);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(317, 14);
-            this.label154.TabIndex = 48;
-            this.label154.Text = "สก๊อต เพียวเร่ พรุนสกัดเข้มข้น ผสมวิตามิน (ชุดของขวัญแพค 12)";
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label155.ForeColor = System.Drawing.Color.White;
-            this.label155.Location = new System.Drawing.Point(7, 106);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(91, 14);
-            this.label155.TabIndex = 47;
-            this.label155.Text = "PP004506XXXX";
-            // 
-            // label148
-            // 
-            this.label148.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label148.ForeColor = System.Drawing.Color.White;
-            this.label148.Location = new System.Drawing.Point(430, 86);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(76, 14);
-            this.label148.TabIndex = 46;
-            this.label148.Text = "2,000";
-            this.label148.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label149
-            // 
-            this.label149.AutoSize = true;
-            this.label149.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label149.ForeColor = System.Drawing.Color.White;
-            this.label149.Location = new System.Drawing.Point(510, 86);
-            this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(27, 14);
-            this.label149.TabIndex = 45;
-            this.label149.Text = "ขวด";
-            this.label149.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label150.ForeColor = System.Drawing.Color.White;
-            this.label150.Location = new System.Drawing.Point(106, 86);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(317, 14);
-            this.label150.TabIndex = 44;
-            this.label150.Text = "สก๊อต เพียวเร่ พรุนสกัดเข้มข้น ผสมวิตามิน (ชุดของขวัญแพค 12)";
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label151.ForeColor = System.Drawing.Color.White;
-            this.label151.Location = new System.Drawing.Point(7, 86);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(91, 14);
-            this.label151.TabIndex = 43;
-            this.label151.Text = "PP004506XXXX";
-            // 
-            // label144
-            // 
-            this.label144.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label144.ForeColor = System.Drawing.Color.White;
-            this.label144.Location = new System.Drawing.Point(430, 65);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(76, 14);
-            this.label144.TabIndex = 42;
-            this.label144.Text = "2,000";
-            this.label144.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label145
-            // 
-            this.label145.AutoSize = true;
-            this.label145.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label145.ForeColor = System.Drawing.Color.White;
-            this.label145.Location = new System.Drawing.Point(510, 65);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(27, 14);
-            this.label145.TabIndex = 41;
-            this.label145.Text = "ขวด";
-            this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label146
-            // 
-            this.label146.AutoSize = true;
-            this.label146.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label146.ForeColor = System.Drawing.Color.White;
-            this.label146.Location = new System.Drawing.Point(106, 65);
-            this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(317, 14);
-            this.label146.TabIndex = 40;
-            this.label146.Text = "สก๊อต เพียวเร่ พรุนสกัดเข้มข้น ผสมวิตามิน (ชุดของขวัญแพค 12)";
-            // 
-            // label147
-            // 
-            this.label147.AutoSize = true;
-            this.label147.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label147.ForeColor = System.Drawing.Color.White;
-            this.label147.Location = new System.Drawing.Point(7, 65);
-            this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(91, 14);
-            this.label147.TabIndex = 39;
-            this.label147.Text = "PP004506XXXX";
-            // 
-            // label140
-            // 
-            this.label140.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label140.ForeColor = System.Drawing.Color.White;
-            this.label140.Location = new System.Drawing.Point(430, 44);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(76, 14);
-            this.label140.TabIndex = 38;
-            this.label140.Text = "2,000";
-            this.label140.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label141
-            // 
-            this.label141.AutoSize = true;
-            this.label141.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label141.ForeColor = System.Drawing.Color.White;
-            this.label141.Location = new System.Drawing.Point(510, 44);
-            this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(27, 14);
-            this.label141.TabIndex = 37;
-            this.label141.Text = "ขวด";
-            this.label141.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label142
-            // 
-            this.label142.AutoSize = true;
-            this.label142.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label142.ForeColor = System.Drawing.Color.White;
-            this.label142.Location = new System.Drawing.Point(106, 44);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(317, 14);
-            this.label142.TabIndex = 36;
-            this.label142.Text = "สก๊อต เพียวเร่ พรุนสกัดเข้มข้น ผสมวิตามิน (ชุดของขวัญแพค 12)";
-            // 
-            // label143
-            // 
-            this.label143.AutoSize = true;
-            this.label143.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label143.ForeColor = System.Drawing.Color.White;
-            this.label143.Location = new System.Drawing.Point(7, 44);
-            this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(91, 14);
-            this.label143.TabIndex = 35;
-            this.label143.Text = "PP004506XXXX";
-            // 
-            // label134
-            // 
-            this.label134.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label134.ForeColor = System.Drawing.Color.White;
-            this.label134.Location = new System.Drawing.Point(430, 23);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(76, 14);
-            this.label134.TabIndex = 34;
-            this.label134.Text = "2,000";
-            this.label134.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label133
-            // 
-            this.label133.AutoSize = true;
-            this.label133.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label133.ForeColor = System.Drawing.Color.White;
-            this.label133.Location = new System.Drawing.Point(510, 23);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(27, 14);
-            this.label133.TabIndex = 33;
-            this.label133.Text = "ขวด";
-            this.label133.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label135.ForeColor = System.Drawing.Color.White;
-            this.label135.Location = new System.Drawing.Point(106, 23);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(317, 14);
-            this.label135.TabIndex = 31;
-            this.label135.Text = "สก๊อต เพียวเร่ พรุนสกัดเข้มข้น ผสมวิตามิน (ชุดของขวัญแพค 12)";
-            // 
-            // label136
-            // 
-            this.label136.AutoSize = true;
-            this.label136.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label136.ForeColor = System.Drawing.Color.White;
-            this.label136.Location = new System.Drawing.Point(7, 23);
-            this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(91, 14);
-            this.label136.TabIndex = 30;
-            this.label136.Text = "PP004506XXXX";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label132.ForeColor = System.Drawing.Color.White;
-            this.label132.Location = new System.Drawing.Point(510, 2);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(27, 14);
-            this.label132.TabIndex = 29;
-            this.label132.Text = "ขวด";
-            this.label132.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label131
-            // 
-            this.label131.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label131.ForeColor = System.Drawing.Color.White;
-            this.label131.Location = new System.Drawing.Point(430, 2);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(76, 14);
-            this.label131.TabIndex = 28;
-            this.label131.Text = "2,000";
-            this.label131.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label130.ForeColor = System.Drawing.Color.White;
-            this.label130.Location = new System.Drawing.Point(106, 2);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(317, 14);
-            this.label130.TabIndex = 27;
-            this.label130.Text = "สก๊อต เพียวเร่ พรุนสกัดเข้มข้น ผสมวิตามิน (ชุดของขวัญแพค 12)";
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label129.ForeColor = System.Drawing.Color.White;
-            this.label129.Location = new System.Drawing.Point(7, 2);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(91, 14);
-            this.label129.TabIndex = 26;
-            this.label129.Text = "PP004506XXXX";
+            this.pnMainProduct.AutoScroll = true;
+            this.pnMainProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnMainProduct.Location = new System.Drawing.Point(78, 206);
+            this.pnMainProduct.Name = "pnMainProduct";
+            this.pnMainProduct.Size = new System.Drawing.Size(561, 105);
+            this.pnMainProduct.TabIndex = 47;
             // 
             // tbReferenceNo
             // 
@@ -3206,6 +2174,756 @@
             this.label2.Size = new System.Drawing.Size(248, 14);
             this.label2.TabIndex = 3;
             this.label2.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (ไทย)";
+            // 
+            // pnDetailsProductMix
+            // 
+            this.pnDetailsProductMix.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnDetailsProductMix.Controls.Add(this.grdFreeProductList);
+            this.pnDetailsProductMix.Controls.Add(this.grdMainProductList);
+            this.pnDetailsProductMix.Controls.Add(this.label138);
+            this.pnDetailsProductMix.Controls.Add(this.label139);
+            this.pnDetailsProductMix.Controls.Add(this.tbSumPriceCaseTotal);
+            this.pnDetailsProductMix.Controls.Add(this.label137);
+            this.pnDetailsProductMix.Controls.Add(this.label128);
+            this.pnDetailsProductMix.Controls.Add(this.label127);
+            this.pnDetailsProductMix.Controls.Add(this.label124);
+            this.pnDetailsProductMix.Controls.Add(this.tbSumPriceFree);
+            this.pnDetailsProductMix.Controls.Add(this.label125);
+            this.pnDetailsProductMix.Controls.Add(this.label126);
+            this.pnDetailsProductMix.Controls.Add(this.tbSumQtyFree);
+            this.pnDetailsProductMix.Controls.Add(this.label121);
+            this.pnDetailsProductMix.Controls.Add(this.tbSumPriceTotal);
+            this.pnDetailsProductMix.Controls.Add(this.label122);
+            this.pnDetailsProductMix.Controls.Add(this.label123);
+            this.pnDetailsProductMix.Controls.Add(this.tbSumQtyTotal);
+            this.pnDetailsProductMix.Controls.Add(this.label120);
+            this.pnDetailsProductMix.Controls.Add(this.tbSumPrice);
+            this.pnDetailsProductMix.Controls.Add(this.label119);
+            this.pnDetailsProductMix.Controls.Add(this.label118);
+            this.pnDetailsProductMix.Controls.Add(this.tbSumQty);
+            this.pnDetailsProductMix.Controls.Add(this.grdFreeProduct);
+            this.pnDetailsProductMix.Controls.Add(this.label18);
+            this.pnDetailsProductMix.Controls.Add(this.label116);
+            this.pnDetailsProductMix.Controls.Add(this.btnBack);
+            this.pnDetailsProductMix.Controls.Add(this.grdMainProduct);
+            this.pnDetailsProductMix.Location = new System.Drawing.Point(8, 25);
+            this.pnDetailsProductMix.Name = "pnDetailsProductMix";
+            this.pnDetailsProductMix.Size = new System.Drawing.Size(660, 564);
+            this.pnDetailsProductMix.TabIndex = 10;
+            this.pnDetailsProductMix.Visible = false;
+            // 
+            // grdFreeProductList
+            // 
+            this.grdFreeProductList.AllowUserToAddRows = false;
+            this.grdFreeProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            this.grdFreeProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdFreeProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FproductID,
+            this.FproductNameTH,
+            this.fSizeP,
+            this.fUnitPrice,
+            this.fInnerBox,
+            this.fPackingP,
+            this.fBottleP});
+            this.grdFreeProductList.Location = new System.Drawing.Point(25, 331);
+            this.grdFreeProductList.Name = "grdFreeProductList";
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle30.NullValue = null;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            this.grdFreeProductList.RowHeadersVisible = false;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle31.NullValue = null;
+            this.grdFreeProductList.RowsDefaultCellStyle = dataGridViewCellStyle31;
+            this.grdFreeProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.grdFreeProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.grdFreeProductList.Size = new System.Drawing.Size(447, 84);
+            this.grdFreeProductList.TabIndex = 45;
+            this.grdFreeProductList.Visible = false;
+            // 
+            // FproductID
+            // 
+            this.FproductID.DataPropertyName = "PRODUCT_ID";
+            this.FproductID.HeaderText = "รหัสสินค้า";
+            this.FproductID.Name = "FproductID";
+            // 
+            // FproductNameTH
+            // 
+            this.FproductNameTH.DataPropertyName = "PRODUCT_NAME_TH";
+            this.FproductNameTH.HeaderText = "ชื่อสินค้า";
+            this.FproductNameTH.Name = "FproductNameTH";
+            this.FproductNameTH.ReadOnly = true;
+            this.FproductNameTH.Width = 270;
+            // 
+            // fSizeP
+            // 
+            this.fSizeP.DataPropertyName = "SIZE";
+            this.fSizeP.HeaderText = "ขนาด";
+            this.fSizeP.Name = "fSizeP";
+            this.fSizeP.ReadOnly = true;
+            this.fSizeP.Width = 50;
+            // 
+            // fUnitPrice
+            // 
+            this.fUnitPrice.DataPropertyName = "UNIT_PRICE";
+            this.fUnitPrice.HeaderText = "UNIT_PRICE";
+            this.fUnitPrice.Name = "fUnitPrice";
+            this.fUnitPrice.Visible = false;
+            this.fUnitPrice.Width = 50;
+            // 
+            // fInnerBox
+            // 
+            this.fInnerBox.DataPropertyName = "INNER_BOX";
+            this.fInnerBox.HeaderText = "INNER_BOX";
+            this.fInnerBox.Name = "fInnerBox";
+            this.fInnerBox.Visible = false;
+            this.fInnerBox.Width = 30;
+            // 
+            // fPackingP
+            // 
+            this.fPackingP.DataPropertyName = "PACKING";
+            this.fPackingP.HeaderText = "PACKING";
+            this.fPackingP.Name = "fPackingP";
+            this.fPackingP.Visible = false;
+            this.fPackingP.Width = 30;
+            // 
+            // fBottleP
+            // 
+            this.fBottleP.DataPropertyName = "BOTTLE";
+            this.fBottleP.HeaderText = "BOTTLE";
+            this.fBottleP.Name = "fBottleP";
+            this.fBottleP.Visible = false;
+            this.fBottleP.Width = 30;
+            // 
+            // grdMainProductList
+            // 
+            this.grdMainProductList.AllowUserToAddRows = false;
+            this.grdMainProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            this.grdMainProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdMainProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productID,
+            this.productNameTH,
+            this.productSize,
+            this.unitPrice,
+            this.innerBox,
+            this.packingP,
+            this.bottleP});
+            this.grdMainProductList.Location = new System.Drawing.Point(25, 81);
+            this.grdMainProductList.Name = "grdMainProductList";
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle33.NullValue = null;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
+            this.grdMainProductList.RowHeadersVisible = false;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle34.NullValue = null;
+            this.grdMainProductList.RowsDefaultCellStyle = dataGridViewCellStyle34;
+            this.grdMainProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.grdMainProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.grdMainProductList.Size = new System.Drawing.Size(447, 84);
+            this.grdMainProductList.TabIndex = 43;
+            this.grdMainProductList.Visible = false;
+            // 
+            // productID
+            // 
+            this.productID.DataPropertyName = "PRODUCT_ID";
+            this.productID.HeaderText = "รหัสสินค้า";
+            this.productID.Name = "productID";
+            // 
+            // productNameTH
+            // 
+            this.productNameTH.DataPropertyName = "PRODUCT_NAME_TH";
+            this.productNameTH.HeaderText = "ชื่อสินค้า";
+            this.productNameTH.Name = "productNameTH";
+            this.productNameTH.ReadOnly = true;
+            this.productNameTH.Width = 270;
+            // 
+            // productSize
+            // 
+            this.productSize.DataPropertyName = "SIZE";
+            this.productSize.HeaderText = "ขนาด";
+            this.productSize.Name = "productSize";
+            this.productSize.ReadOnly = true;
+            this.productSize.Width = 50;
+            // 
+            // unitPrice
+            // 
+            this.unitPrice.DataPropertyName = "UNIT_PRICE";
+            this.unitPrice.HeaderText = "UNIT_PRICE";
+            this.unitPrice.Name = "unitPrice";
+            this.unitPrice.Visible = false;
+            this.unitPrice.Width = 50;
+            // 
+            // innerBox
+            // 
+            this.innerBox.DataPropertyName = "INNER_BOX";
+            this.innerBox.HeaderText = "INNER_BOX";
+            this.innerBox.Name = "innerBox";
+            this.innerBox.Visible = false;
+            this.innerBox.Width = 30;
+            // 
+            // packingP
+            // 
+            this.packingP.DataPropertyName = "PACKING";
+            this.packingP.HeaderText = "PACKING";
+            this.packingP.Name = "packingP";
+            this.packingP.Visible = false;
+            this.packingP.Width = 30;
+            // 
+            // bottleP
+            // 
+            this.bottleP.DataPropertyName = "BOTTLE";
+            this.bottleP.HeaderText = "BOTTLE";
+            this.bottleP.Name = "bottleP";
+            this.bottleP.Visible = false;
+            this.bottleP.Width = 30;
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label138.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label138.Location = new System.Drawing.Point(402, 532);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(22, 14);
+            this.label138.TabIndex = 67;
+            this.label138.Text = "ลัง";
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label139.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label139.Location = new System.Drawing.Point(513, 532);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(30, 14);
+            this.label139.TabIndex = 66;
+            this.label139.Text = "บาท";
+            // 
+            // tbSumPriceCaseTotal
+            // 
+            this.tbSumPriceCaseTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSumPriceCaseTotal.Location = new System.Drawing.Point(429, 528);
+            this.tbSumPriceCaseTotal.Name = "tbSumPriceCaseTotal";
+            this.tbSumPriceCaseTotal.ReadOnly = true;
+            this.tbSumPriceCaseTotal.Size = new System.Drawing.Size(77, 22);
+            this.tbSumPriceCaseTotal.TabIndex = 65;
+            this.tbSumPriceCaseTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label137.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label137.Location = new System.Drawing.Point(345, 502);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(79, 14);
+            this.label137.TabIndex = 64;
+            this.label137.Text = "แพ็ค/กระเช้า";
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label128.ForeColor = System.Drawing.Color.Tomato;
+            this.label128.Location = new System.Drawing.Point(242, 537);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(124, 13);
+            this.label128.TabIndex = 63;
+            this.label128.Text = "* ไม่รวมราคาสินค้าแถม";
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label127.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label127.Location = new System.Drawing.Point(242, 516);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(69, 14);
+            this.label127.TabIndex = 62;
+            this.label127.Text = "ราคาแนะนำ";
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label124.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label124.Location = new System.Drawing.Point(618, 266);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(30, 14);
+            this.label124.TabIndex = 61;
+            this.label124.Text = "บาท";
+            // 
+            // tbSumPriceFree
+            // 
+            this.tbSumPriceFree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSumPriceFree.Location = new System.Drawing.Point(533, 262);
+            this.tbSumPriceFree.Name = "tbSumPriceFree";
+            this.tbSumPriceFree.ReadOnly = true;
+            this.tbSumPriceFree.Size = new System.Drawing.Size(76, 22);
+            this.tbSumPriceFree.TabIndex = 60;
+            this.tbSumPriceFree.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label125.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label125.Location = new System.Drawing.Point(496, 266);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(29, 14);
+            this.label125.TabIndex = 59;
+            this.label125.Text = "ขวด";
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label126.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label126.Location = new System.Drawing.Point(334, 266);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(96, 14);
+            this.label126.TabIndex = 58;
+            this.label126.Text = "จำนวนสินค้าแถม";
+            // 
+            // tbSumQtyFree
+            // 
+            this.tbSumQtyFree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSumQtyFree.Location = new System.Drawing.Point(438, 262);
+            this.tbSumQtyFree.Name = "tbSumQtyFree";
+            this.tbSumQtyFree.ReadOnly = true;
+            this.tbSumQtyFree.Size = new System.Drawing.Size(54, 22);
+            this.tbSumQtyFree.TabIndex = 57;
+            this.tbSumQtyFree.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label121.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label121.Location = new System.Drawing.Point(513, 502);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(30, 14);
+            this.label121.TabIndex = 56;
+            this.label121.Text = "บาท";
+            // 
+            // tbSumPriceTotal
+            // 
+            this.tbSumPriceTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSumPriceTotal.Location = new System.Drawing.Point(429, 498);
+            this.tbSumPriceTotal.Name = "tbSumPriceTotal";
+            this.tbSumPriceTotal.ReadOnly = true;
+            this.tbSumPriceTotal.Size = new System.Drawing.Size(77, 22);
+            this.tbSumPriceTotal.TabIndex = 55;
+            this.tbSumPriceTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label122.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label122.Location = new System.Drawing.Point(178, 516);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(29, 14);
+            this.label122.TabIndex = 54;
+            this.label122.Text = "ขวด";
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label123.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label123.Location = new System.Drawing.Point(10, 516);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(92, 14);
+            this.label123.TabIndex = 53;
+            this.label123.Text = "จำนวนสินค้ารวม";
+            // 
+            // tbSumQtyTotal
+            // 
+            this.tbSumQtyTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSumQtyTotal.Location = new System.Drawing.Point(114, 512);
+            this.tbSumQtyTotal.Name = "tbSumQtyTotal";
+            this.tbSumQtyTotal.ReadOnly = true;
+            this.tbSumQtyTotal.Size = new System.Drawing.Size(55, 22);
+            this.tbSumQtyTotal.TabIndex = 52;
+            this.tbSumQtyTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label120.ForeColor = System.Drawing.Color.White;
+            this.label120.Location = new System.Drawing.Point(618, 17);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(30, 14);
+            this.label120.TabIndex = 51;
+            this.label120.Text = "บาท";
+            // 
+            // tbSumPrice
+            // 
+            this.tbSumPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSumPrice.Location = new System.Drawing.Point(533, 13);
+            this.tbSumPrice.Name = "tbSumPrice";
+            this.tbSumPrice.ReadOnly = true;
+            this.tbSumPrice.Size = new System.Drawing.Size(76, 22);
+            this.tbSumPrice.TabIndex = 50;
+            this.tbSumPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label119.ForeColor = System.Drawing.Color.White;
+            this.label119.Location = new System.Drawing.Point(496, 17);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(29, 14);
+            this.label119.TabIndex = 49;
+            this.label119.Text = "ขวด";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label118.ForeColor = System.Drawing.Color.White;
+            this.label118.Location = new System.Drawing.Point(334, 17);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(96, 14);
+            this.label118.TabIndex = 48;
+            this.label118.Text = "จำนวนสินค้าปกติ";
+            // 
+            // tbSumQty
+            // 
+            this.tbSumQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSumQty.Location = new System.Drawing.Point(438, 13);
+            this.tbSumQty.Name = "tbSumQty";
+            this.tbSumQty.ReadOnly = true;
+            this.tbSumQty.Size = new System.Drawing.Size(54, 22);
+            this.tbSumQty.TabIndex = 47;
+            this.tbSumQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // grdFreeProduct
+            // 
+            this.grdFreeProduct.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            this.grdFreeProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdFreeProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FPRODUCT_ID,
+            this.FproductNameTHp,
+            this.FSIZE,
+            this.FQTY,
+            this.FUNIT,
+            this.FLTP,
+            this.FUNIT_PRICE,
+            this.FINNER_BOX,
+            this.FPACKING,
+            this.FBOTTLE});
+            this.grdFreeProduct.Location = new System.Drawing.Point(10, 287);
+            this.grdFreeProduct.Name = "grdFreeProduct";
+            this.grdFreeProduct.RowHeadersWidth = 15;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.Black;
+            this.grdFreeProduct.RowsDefaultCellStyle = dataGridViewCellStyle41;
+            this.grdFreeProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.grdFreeProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.grdFreeProduct.Size = new System.Drawing.Size(638, 202);
+            this.grdFreeProduct.TabIndex = 46;
+            this.grdFreeProduct.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.grdFreeProduct_CellBeginEdit);
+            this.grdFreeProduct.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdFreeProduct_CellEndEdit);
+            this.grdFreeProduct.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.grdFreeProduct_EditingControlShowing);
+            this.grdFreeProduct.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.grdFreeProduct_RowsRemoved);
+            this.grdFreeProduct.KeyDown += new System.Windows.Forms.KeyEventHandler(this.grdFreeProduct_KeyDown);
+            // 
+            // FPRODUCT_ID
+            // 
+            this.FPRODUCT_ID.DataPropertyName = "PRODUCT_ID";
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FPRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle36;
+            this.FPRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.FPRODUCT_ID.HeaderText = "รหัสสินค้า";
+            this.FPRODUCT_ID.Name = "FPRODUCT_ID";
+            this.FPRODUCT_ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FPRODUCT_ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // FproductNameTHp
+            // 
+            this.FproductNameTHp.DataPropertyName = "PRODUCT_NAME_TH";
+            this.FproductNameTHp.HeaderText = "ชื่อสินค้า";
+            this.FproductNameTHp.Name = "FproductNameTHp";
+            this.FproductNameTHp.ReadOnly = true;
+            this.FproductNameTHp.Width = 270;
+            // 
+            // FSIZE
+            // 
+            this.FSIZE.DataPropertyName = "SIZE";
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FSIZE.DefaultCellStyle = dataGridViewCellStyle37;
+            this.FSIZE.HeaderText = "ขนาด";
+            this.FSIZE.Name = "FSIZE";
+            this.FSIZE.ReadOnly = true;
+            this.FSIZE.Width = 50;
+            // 
+            // FQTY
+            // 
+            this.FQTY.DataPropertyName = "QTY";
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle38.NullValue = null;
+            this.FQTY.DefaultCellStyle = dataGridViewCellStyle38;
+            this.FQTY.HeaderText = "จำนวน";
+            this.FQTY.Name = "FQTY";
+            this.FQTY.Width = 50;
+            // 
+            // FUNIT
+            // 
+            this.FUNIT.DataPropertyName = "UNIT";
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle39.NullValue = "ขวด";
+            this.FUNIT.DefaultCellStyle = dataGridViewCellStyle39;
+            this.FUNIT.HeaderText = "หน่วย";
+            this.FUNIT.Name = "FUNIT";
+            this.FUNIT.ReadOnly = true;
+            this.FUNIT.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FUNIT.Width = 50;
+            // 
+            // FLTP
+            // 
+            this.FLTP.DataPropertyName = "LTP";
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle40.Format = "C2";
+            this.FLTP.DefaultCellStyle = dataGridViewCellStyle40;
+            this.FLTP.HeaderText = "LTP";
+            this.FLTP.Name = "FLTP";
+            this.FLTP.ReadOnly = true;
+            this.FLTP.Width = 80;
+            // 
+            // FUNIT_PRICE
+            // 
+            this.FUNIT_PRICE.DataPropertyName = "UNIT_PRICE";
+            this.FUNIT_PRICE.HeaderText = "UNIT_PRICE";
+            this.FUNIT_PRICE.Name = "FUNIT_PRICE";
+            this.FUNIT_PRICE.Visible = false;
+            // 
+            // FINNER_BOX
+            // 
+            this.FINNER_BOX.DataPropertyName = "INNER_BOX";
+            this.FINNER_BOX.HeaderText = "INNER_BOX";
+            this.FINNER_BOX.Name = "FINNER_BOX";
+            this.FINNER_BOX.Visible = false;
+            // 
+            // FPACKING
+            // 
+            this.FPACKING.DataPropertyName = "PACKING";
+            this.FPACKING.HeaderText = "PACKING";
+            this.FPACKING.Name = "FPACKING";
+            this.FPACKING.Visible = false;
+            // 
+            // FBOTTLE
+            // 
+            this.FBOTTLE.DataPropertyName = "BOTTLE";
+            this.FBOTTLE.HeaderText = "BOTTLE";
+            this.FBOTTLE.Name = "FBOTTLE";
+            this.FBOTTLE.Visible = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label18.Location = new System.Drawing.Point(7, 266);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(61, 14);
+            this.label18.TabIndex = 41;
+            this.label18.Text = "สินค้าแถม";
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label116.ForeColor = System.Drawing.Color.White;
+            this.label116.Location = new System.Drawing.Point(7, 17);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(61, 14);
+            this.label116.TabIndex = 40;
+            this.label116.Text = "สินค้าปกติ";
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(550, 505);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(98, 37);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "กลับหน้าหลัก";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // grdMainProduct
+            // 
+            this.grdMainProduct.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            this.grdMainProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdMainProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PRODUCT_ID,
+            this.PRODUCT_NAME_TH,
+            this.SIZE,
+            this.QTY,
+            this.unitType,
+            this.LTP,
+            this.UNIT_PRICE,
+            this.INNER_BOX,
+            this.PACKING,
+            this.BOTTLE});
+            this.grdMainProduct.Location = new System.Drawing.Point(10, 37);
+            this.grdMainProduct.Name = "grdMainProduct";
+            this.grdMainProduct.RowHeadersWidth = 15;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black;
+            this.grdMainProduct.RowsDefaultCellStyle = dataGridViewCellStyle48;
+            this.grdMainProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.grdMainProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.grdMainProduct.Size = new System.Drawing.Size(638, 211);
+            this.grdMainProduct.TabIndex = 44;
+            this.grdMainProduct.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.grdMainProduct_CellBeginEdit);
+            this.grdMainProduct.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdMainProduct_CellEndEdit);
+            this.grdMainProduct.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.grdMainProduct_EditingControlShowing);
+            this.grdMainProduct.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.grdMainProduct_RowsRemoved);
+            this.grdMainProduct.KeyDown += new System.Windows.Forms.KeyEventHandler(this.grdMainProduct_KeyDown);
+            // 
+            // PRODUCT_ID
+            // 
+            this.PRODUCT_ID.DataPropertyName = "PRODUCT_ID";
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.PRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle43;
+            this.PRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.PRODUCT_ID.HeaderText = "รหัสสินค้า";
+            this.PRODUCT_ID.Name = "PRODUCT_ID";
+            this.PRODUCT_ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PRODUCT_ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // PRODUCT_NAME_TH
+            // 
+            this.PRODUCT_NAME_TH.DataPropertyName = "PRODUCT_NAME_TH";
+            this.PRODUCT_NAME_TH.HeaderText = "ชื่อสินค้า";
+            this.PRODUCT_NAME_TH.Name = "PRODUCT_NAME_TH";
+            this.PRODUCT_NAME_TH.ReadOnly = true;
+            this.PRODUCT_NAME_TH.Width = 270;
+            // 
+            // SIZE
+            // 
+            this.SIZE.DataPropertyName = "SIZE";
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SIZE.DefaultCellStyle = dataGridViewCellStyle44;
+            this.SIZE.HeaderText = "ขนาด";
+            this.SIZE.Name = "SIZE";
+            this.SIZE.ReadOnly = true;
+            this.SIZE.Width = 50;
+            // 
+            // QTY
+            // 
+            this.QTY.DataPropertyName = "QTY";
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle45.NullValue = null;
+            this.QTY.DefaultCellStyle = dataGridViewCellStyle45;
+            this.QTY.HeaderText = "จำนวน";
+            this.QTY.Name = "QTY";
+            this.QTY.Width = 50;
+            // 
+            // unitType
+            // 
+            this.unitType.DataPropertyName = "UNIT";
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle46.NullValue = "ขวด";
+            this.unitType.DefaultCellStyle = dataGridViewCellStyle46;
+            this.unitType.HeaderText = "หน่วย";
+            this.unitType.Name = "unitType";
+            this.unitType.ReadOnly = true;
+            this.unitType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.unitType.Width = 50;
+            // 
+            // LTP
+            // 
+            this.LTP.DataPropertyName = "LTP";
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle47.Format = "C2";
+            this.LTP.DefaultCellStyle = dataGridViewCellStyle47;
+            this.LTP.HeaderText = "LTP";
+            this.LTP.Name = "LTP";
+            this.LTP.ReadOnly = true;
+            this.LTP.Width = 80;
+            // 
+            // UNIT_PRICE
+            // 
+            this.UNIT_PRICE.DataPropertyName = "UNIT_PRICE";
+            this.UNIT_PRICE.HeaderText = "UNIT_PRICE";
+            this.UNIT_PRICE.Name = "UNIT_PRICE";
+            this.UNIT_PRICE.Visible = false;
+            // 
+            // INNER_BOX
+            // 
+            this.INNER_BOX.DataPropertyName = "INNER_BOX";
+            this.INNER_BOX.HeaderText = "INNER_BOX";
+            this.INNER_BOX.Name = "INNER_BOX";
+            this.INNER_BOX.Visible = false;
+            // 
+            // PACKING
+            // 
+            this.PACKING.DataPropertyName = "PACKING";
+            this.PACKING.HeaderText = "PACKING";
+            this.PACKING.Name = "PACKING";
+            this.PACKING.Visible = false;
+            // 
+            // BOTTLE
+            // 
+            this.BOTTLE.DataPropertyName = "BOTTLE";
+            this.BOTTLE.HeaderText = "BOTTLE";
+            this.BOTTLE.Name = "BOTTLE";
+            this.BOTTLE.Visible = false;
             // 
             // pnShortName
             // 
@@ -5199,14 +4917,14 @@
             this.dataGridViewTextBoxColumn61});
             this.dataGridView5.Location = new System.Drawing.Point(78, 367);
             this.dataGridView5.Name = "dataGridView5";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle52;
             this.dataGridView5.RowHeadersWidth = 30;
             this.dataGridView5.Size = new System.Drawing.Size(559, 91);
             this.dataGridView5.TabIndex = 52;
@@ -5232,8 +4950,8 @@
             // dataGridViewTextBoxColumn59
             // 
             this.dataGridViewTextBoxColumn59.DataPropertyName = "SIZE";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn59.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn59.DefaultCellStyle = dataGridViewCellStyle49;
             this.dataGridViewTextBoxColumn59.HeaderText = "ขนาด";
             this.dataGridViewTextBoxColumn59.Name = "dataGridViewTextBoxColumn59";
             this.dataGridViewTextBoxColumn59.ReadOnly = true;
@@ -5242,9 +4960,9 @@
             // dataGridViewTextBoxColumn60
             // 
             this.dataGridViewTextBoxColumn60.DataPropertyName = "QUANTITY";
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle22.NullValue = "0";
-            this.dataGridViewTextBoxColumn60.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle50.NullValue = "0";
+            this.dataGridViewTextBoxColumn60.DefaultCellStyle = dataGridViewCellStyle50;
             this.dataGridViewTextBoxColumn60.HeaderText = "จำนวน";
             this.dataGridViewTextBoxColumn60.Name = "dataGridViewTextBoxColumn60";
             this.dataGridViewTextBoxColumn60.Width = 50;
@@ -5252,9 +4970,9 @@
             // dataGridViewTextBoxColumn61
             // 
             this.dataGridViewTextBoxColumn61.DataPropertyName = "UNIT";
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.NullValue = "ขวด";
-            this.dataGridViewTextBoxColumn61.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.NullValue = "ขวด";
+            this.dataGridViewTextBoxColumn61.DefaultCellStyle = dataGridViewCellStyle51;
             this.dataGridViewTextBoxColumn61.HeaderText = "หน่วย";
             this.dataGridViewTextBoxColumn61.Name = "dataGridViewTextBoxColumn61";
             this.dataGridViewTextBoxColumn61.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -5275,14 +4993,14 @@
             this.dataGridViewTextBoxColumn65});
             this.dataGridView6.Location = new System.Drawing.Point(80, 177);
             this.dataGridView6.Name = "dataGridView6";
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle56;
             this.dataGridView6.RowHeadersWidth = 30;
             this.dataGridView6.Size = new System.Drawing.Size(559, 184);
             this.dataGridView6.TabIndex = 51;
@@ -5308,8 +5026,8 @@
             // dataGridViewTextBoxColumn63
             // 
             this.dataGridViewTextBoxColumn63.DataPropertyName = "SIZE";
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn63.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn63.DefaultCellStyle = dataGridViewCellStyle53;
             this.dataGridViewTextBoxColumn63.HeaderText = "ขนาด";
             this.dataGridViewTextBoxColumn63.Name = "dataGridViewTextBoxColumn63";
             this.dataGridViewTextBoxColumn63.ReadOnly = true;
@@ -5318,9 +5036,9 @@
             // dataGridViewTextBoxColumn64
             // 
             this.dataGridViewTextBoxColumn64.DataPropertyName = "QUANTITY";
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle26.NullValue = "0";
-            this.dataGridViewTextBoxColumn64.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle54.NullValue = "0";
+            this.dataGridViewTextBoxColumn64.DefaultCellStyle = dataGridViewCellStyle54;
             this.dataGridViewTextBoxColumn64.HeaderText = "จำนวน";
             this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
             this.dataGridViewTextBoxColumn64.Width = 50;
@@ -5328,9 +5046,9 @@
             // dataGridViewTextBoxColumn65
             // 
             this.dataGridViewTextBoxColumn65.DataPropertyName = "UNIT";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.NullValue = "ขวด";
-            this.dataGridViewTextBoxColumn65.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle55.NullValue = "ขวด";
+            this.dataGridViewTextBoxColumn65.DefaultCellStyle = dataGridViewCellStyle55;
             this.dataGridViewTextBoxColumn65.HeaderText = "หน่วย";
             this.dataGridViewTextBoxColumn65.Name = "dataGridViewTextBoxColumn65";
             this.dataGridViewTextBoxColumn65.ReadOnly = true;
@@ -5726,96 +5444,6 @@
             this.label70.TabIndex = 14;
             this.label70.Text = "Charge";
             // 
-            // PRODUCT_ID
-            // 
-            this.PRODUCT_ID.DataPropertyName = "PRODUCT_ID";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle15;
-            this.PRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.PRODUCT_ID.HeaderText = "รหัสสินค้า";
-            this.PRODUCT_ID.Name = "PRODUCT_ID";
-            this.PRODUCT_ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PRODUCT_ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // PRODUCT_NAME_TH
-            // 
-            this.PRODUCT_NAME_TH.DataPropertyName = "PRODUCT_NAME_TH";
-            this.PRODUCT_NAME_TH.HeaderText = "ชื่อสินค้า";
-            this.PRODUCT_NAME_TH.Name = "PRODUCT_NAME_TH";
-            this.PRODUCT_NAME_TH.ReadOnly = true;
-            this.PRODUCT_NAME_TH.Width = 270;
-            // 
-            // SIZE
-            // 
-            this.SIZE.DataPropertyName = "SIZE";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SIZE.DefaultCellStyle = dataGridViewCellStyle16;
-            this.SIZE.HeaderText = "ขนาด";
-            this.SIZE.Name = "SIZE";
-            this.SIZE.ReadOnly = true;
-            this.SIZE.Width = 50;
-            // 
-            // QTY
-            // 
-            this.QTY.DataPropertyName = "QTY";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle17.NullValue = null;
-            this.QTY.DefaultCellStyle = dataGridViewCellStyle17;
-            this.QTY.HeaderText = "จำนวน";
-            this.QTY.Name = "QTY";
-            this.QTY.Width = 50;
-            // 
-            // unitType
-            // 
-            this.unitType.DataPropertyName = "UNIT";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.NullValue = "ขวด";
-            this.unitType.DefaultCellStyle = dataGridViewCellStyle18;
-            this.unitType.HeaderText = "หน่วย";
-            this.unitType.Name = "unitType";
-            this.unitType.ReadOnly = true;
-            this.unitType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.unitType.Width = 50;
-            // 
-            // LTP
-            // 
-            this.LTP.DataPropertyName = "LTP";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle19.Format = "C2";
-            this.LTP.DefaultCellStyle = dataGridViewCellStyle19;
-            this.LTP.HeaderText = "LTP";
-            this.LTP.Name = "LTP";
-            this.LTP.ReadOnly = true;
-            this.LTP.Width = 80;
-            // 
-            // UNIT_PRICE
-            // 
-            this.UNIT_PRICE.DataPropertyName = "UNIT_PRICE";
-            this.UNIT_PRICE.HeaderText = "UNIT_PRICE";
-            this.UNIT_PRICE.Name = "UNIT_PRICE";
-            this.UNIT_PRICE.Visible = false;
-            // 
-            // INNER_BOX
-            // 
-            this.INNER_BOX.DataPropertyName = "INNER_BOX";
-            this.INNER_BOX.HeaderText = "INNER_BOX";
-            this.INNER_BOX.Name = "INNER_BOX";
-            this.INNER_BOX.Visible = false;
-            // 
-            // PACKING
-            // 
-            this.PACKING.DataPropertyName = "PACKING";
-            this.PACKING.HeaderText = "PACKING";
-            this.PACKING.Name = "PACKING";
-            this.PACKING.Visible = false;
-            // 
-            // BOTTLE
-            // 
-            this.BOTTLE.DataPropertyName = "BOTTLE";
-            this.BOTTLE.HeaderText = "BOTTLE";
-            this.BOTTLE.Name = "BOTTLE";
-            this.BOTTLE.Visible = false;
-            // 
             // New_Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -5850,18 +5478,16 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.pnDetailsSub1.ResumeLayout(false);
+            this.pnDetailsSub1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.pnDetailsProductMix.ResumeLayout(false);
             this.pnDetailsProductMix.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdFreeProductList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdMainProductList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdFreeProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdMainProduct)).EndInit();
-            this.pnDetailsSub1.ResumeLayout(false);
-            this.pnDetailsSub1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
             this.pnShortName.ResumeLayout(false);
             this.pnShortName.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -6201,7 +5827,7 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.TextBox textBox73;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel pnMainProduct;
         private System.Windows.Forms.Panel pnDetailsProductMix;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label18;
@@ -6255,30 +5881,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FBOTTLE;
         private System.Windows.Forms.Label label128;
         private System.Windows.Forms.Label label127;
-        private System.Windows.Forms.Label label132;
-        private System.Windows.Forms.Label label131;
-        private System.Windows.Forms.Label label130;
-        private System.Windows.Forms.Label label129;
-        private System.Windows.Forms.Label label133;
-        private System.Windows.Forms.Label label135;
-        private System.Windows.Forms.Label label136;
-        private System.Windows.Forms.Label label134;
         private System.Windows.Forms.Label label138;
         private System.Windows.Forms.Label label139;
         private System.Windows.Forms.TextBox tbSumPriceCaseTotal;
         private System.Windows.Forms.Label label137;
-        private System.Windows.Forms.Label label148;
-        private System.Windows.Forms.Label label149;
-        private System.Windows.Forms.Label label150;
-        private System.Windows.Forms.Label label151;
-        private System.Windows.Forms.Label label144;
-        private System.Windows.Forms.Label label145;
-        private System.Windows.Forms.Label label146;
-        private System.Windows.Forms.Label label147;
-        private System.Windows.Forms.Label label140;
-        private System.Windows.Forms.Label label141;
-        private System.Windows.Forms.Label label142;
-        private System.Windows.Forms.Label label143;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label160;
         private System.Windows.Forms.Label label161;
@@ -6308,14 +5914,6 @@
         private System.Windows.Forms.Label label185;
         private System.Windows.Forms.Label label186;
         private System.Windows.Forms.Label label187;
-        private System.Windows.Forms.Label label156;
-        private System.Windows.Forms.Label label157;
-        private System.Windows.Forms.Label label158;
-        private System.Windows.Forms.Label label159;
-        private System.Windows.Forms.Label label152;
-        private System.Windows.Forms.Label label153;
-        private System.Windows.Forms.Label label154;
-        private System.Windows.Forms.Label label155;
         private System.Windows.Forms.TextBox tbPrice;
         private System.Windows.Forms.Label label188;
         private System.Windows.Forms.Button btnProductType;

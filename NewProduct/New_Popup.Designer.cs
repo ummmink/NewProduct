@@ -993,9 +993,9 @@
             this.radioButton4.ForeColor = System.Drawing.Color.White;
             this.radioButton4.Location = new System.Drawing.Point(478, 5);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(79, 18);
+            this.radioButton4.Size = new System.Drawing.Size(73, 18);
             this.radioButton4.TabIndex = 24;
-            this.radioButton4.Text = "ทะยอยส่ง";
+            this.radioButton4.Text = "ทยอยส่ง";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton3

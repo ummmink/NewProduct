@@ -24,7 +24,7 @@ namespace NewProduct
 
         CommonBiz commonBiz = new CommonBiz();
 
-        int y,z = 2; // axis y
+        int y,z = 2; // y = axis y of Main Product, z = axis y of Free Product 
 
         public New_Popup()
         {

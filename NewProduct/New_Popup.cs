@@ -848,6 +848,8 @@ namespace NewProduct
             SaveProductHamper();
 
             PreviewProductHamper();
+
+            tbPrice.Focus();
         }
 
         private void ClearPanel()
@@ -1182,6 +1184,16 @@ namespace NewProduct
                 //If the message failed at some point, let the user know
                 lblResult.Text = "Your message failed to send, please try again.";
             }
+        }
+
+        private void cmbProductType_SelectedValueChanged(object sender, EventArgs e)
+        {
+            cmbProductItemNo.Focus();
+        }
+
+        private void cmbProductItemNo_SelectedValueChanged(object sender, EventArgs e)
+        {
+            tbProductNameTH.Focus();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

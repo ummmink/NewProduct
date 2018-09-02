@@ -377,13 +377,13 @@ namespace NewProduct
 
                 else if (colIndex == 3) //Qty
                 {
-                    SendKeys.Send("{up}");
+                    SendKeys.Send("{up}");                  
                     calPrice(dataGridView, rowIndex);
                 }
 
                 else if (colIndex == 4) //Unit
                 {
-                    //colName = dataGridView.Columns[colIndex].Name.ToString();
+                    //colName = dataGridView.Columns[colIndex].Name.ToString();                  
                     calPrice(dataGridView, rowIndex);
                 }
 
@@ -429,7 +429,7 @@ namespace NewProduct
 
                 grd.Rows[rowIndex].Cells["LTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);
               
-                calculateNetPrice();
+                calculateNetPrice();                
             }
             catch
             {
@@ -483,27 +483,40 @@ namespace NewProduct
             for (int i = 0; i < grdMainProduct.Rows.Count - 1; i++)
             {
                 fSumAmount += Math.Round(ConvertUtil.parseDouble(grdMainProduct.Rows[i].Cells["LTP"].Value), 2);
-                fSumQty += ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value);
+                fSumQty += ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value);                
             }
-            //ราคาสินค้าปกติ
-            tbSumPrice.Text = fSumAmount.ToString("#,##0.00");
-            variablePublic.productMainPrice = decimal.Parse(tbSumPrice.Text);
 
-            //จำนวนสินค้าปกติ
-            tbSumQty.Text = fSumQty.ToString();
-            variablePublic.productMainQty = Int32.Parse(tbSumQty.Text);
+            if (fSumQty > variablePublic.productBottleQty)
+            {
+                MessageBox.Show("จำนวนขวดมากเกินกว่าที่ระบุ!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-            //จำนวนสินค้ารวม
-            tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
-            variablePublic.productTotalQty = Int32.Parse(tbSumQtyTotal.Text);
+                foreach (DataGridViewRow item in this.grdMainProduct.SelectedRows)
+                {
+                    grdMainProduct.Rows.RemoveAt(item.Index);
+                }                
+            }
+            else
+            {
+                //ราคาสินค้าปกติ
+                tbSumPrice.Text = fSumAmount.ToString("#,##0.00");
+                variablePublic.productMainPrice = decimal.Parse(tbSumPrice.Text);
 
-            //ราคาแนะนำ/แพ็ค
-            tbSumPriceTotal.Text = tbSumPrice.Text;
-            variablePublic.productTotalPackPrice = decimal.Parse(tbSumPriceTotal.Text);
+                //จำนวนสินค้าปกติ
+                tbSumQty.Text = fSumQty.ToString();
+                variablePublic.productMainQty = Int32.Parse(tbSumQty.Text);
 
-            //ราคาแนะนำ/ลัง
-            tbSumPriceCaseTotal.Text = (decimal.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString("#,##0.00");
-            variablePublic.productTotalCasePrice = decimal.Parse(tbSumPriceCaseTotal.Text);
+                //จำนวนสินค้ารวม
+                tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
+                variablePublic.productTotalQty = Int32.Parse(tbSumQtyTotal.Text);
+
+                //ราคาแนะนำ/แพ็ค
+                tbSumPriceTotal.Text = tbSumPrice.Text;
+                variablePublic.productTotalPackPrice = decimal.Parse(tbSumPriceTotal.Text);
+
+                //ราคาแนะนำ/ลัง
+                tbSumPriceCaseTotal.Text = (decimal.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString("#,##0.00");
+                variablePublic.productTotalCasePrice = decimal.Parse(tbSumPriceCaseTotal.Text);
+            }
         }
 
         private void calculateNetPriceFree()
@@ -518,17 +531,29 @@ namespace NewProduct
                 fSumQty += ConvertUtil.parseInt(grdFreeProduct.Rows[i].Cells["FQTY"].Value);
             }
 
-            //ราคาสินค้าแถม
-            tbSumPriceFree.Text = fSumAmount.ToString("#,##0.00");
-            variablePublic.productFreePrice = decimal.Parse(tbSumPriceFree.Text);
+            if ((fSumQty + ConvertUtil.parseInt(tbSumQty.Text)) > variablePublic.productBottleQty)
+            {
+                MessageBox.Show("จำนวนขวดมากเกินกว่าที่ระบุ!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-            //จำนวนสินค้าแถม
-            tbSumQtyFree.Text = fSumQty.ToString();
-            variablePublic.productFreeQty = Int32.Parse(tbSumQtyFree.Text);
+                foreach (DataGridViewRow item in this.grdFreeProduct.SelectedRows)
+                {
+                    grdFreeProduct.Rows.RemoveAt(item.Index);
+                }
+            }
+            else
+            {
+                //ราคาสินค้าแถม
+                tbSumPriceFree.Text = fSumAmount.ToString("#,##0.00");
+                variablePublic.productFreePrice = decimal.Parse(tbSumPriceFree.Text);
 
-            //จำนวนสินค้ารวม
-            tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
-            variablePublic.productTotalQty = Int32.Parse(tbSumQtyTotal.Text);
+                //จำนวนสินค้าแถม
+                tbSumQtyFree.Text = fSumQty.ToString();
+                variablePublic.productFreeQty = Int32.Parse(tbSumQtyFree.Text);
+
+                //จำนวนสินค้ารวม
+                tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
+                variablePublic.productTotalQty = Int32.Parse(tbSumQtyTotal.Text);
+            }           
         }
 
         private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)

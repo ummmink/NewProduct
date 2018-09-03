@@ -242,9 +242,10 @@ namespace NewProduct
 
         private void cmbProductItemNo_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            variablePublic.productPrefix = cmbProductItemNo.SelectedValue.ToString().Substring(cmbProductItemNo.SelectedValue.ToString().LastIndexOf(':') + 1);
+            variablePublic.productPrefix = cmbProductItemNo.SelectedValue.ToString().Substring(cmbProductItemNo.SelectedValue.ToString().LastIndexOf(':') + 1, 3);
             variablePublic.item_no = cmbProductItemNo.SelectedValue.ToString().Substring(0, cmbProductItemNo.SelectedValue.ToString().IndexOf(':'));
-            //MessageBox.Show(variablePublic.item_no);
+            variablePublic.item_no2 = ConvertUtil.parseInt(cmbProductItemNo.SelectedValue.ToString().Substring(cmbProductItemNo.SelectedValue.ToString().LastIndexOf(' ') + 1));
+            MessageBox.Show("Prefix : "+ variablePublic.productPrefix + ", Item_no : " + variablePublic.item_no + ", Item_no2 : " + variablePublic.item_no2);
         }
 
         private void cmbProductItemNo_Format(object sender, ListControlConvertEventArgs e)

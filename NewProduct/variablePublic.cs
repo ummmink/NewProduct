@@ -10,6 +10,7 @@ namespace NewProduct
     {
         public static int type_id;
         public static string item_no;
+        public static int item_no2;
         public static string productPrefix;
         public static string channel;
         public static int sell_id;

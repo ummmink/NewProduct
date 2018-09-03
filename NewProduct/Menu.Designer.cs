@@ -92,6 +92,7 @@
             this.label1.Size = new System.Drawing.Size(32, 35);
             this.label1.TabIndex = 45;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Visible = false;
             // 
             // btnTDO
             // 

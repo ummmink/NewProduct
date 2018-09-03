@@ -24,7 +24,7 @@ namespace NewProduct
 
         CommonBiz commonBiz = new CommonBiz();
 
-        int y,z = 2; // y = axis y of Main Product, z = axis y of Free Product 
+        int y, z = 2; // y = axis y of Main Product, z = axis y of Free Product 
 
         public New_Popup()
         {
@@ -190,23 +190,6 @@ namespace NewProduct
             #endregion
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            // open file dialog   
-            OpenFileDialog open = new OpenFileDialog();
-            // image filters  
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                // display image in picture box  
-                //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox1.Image = new Bitmap(open.FileName);
-                // image file path  
-                variablePublic.picturePath = open.FileName;
-                MessageBox.Show(variablePublic.picturePath);
-            }
-        }
-
         private void cmbProductItemNo_DropDown(object sender, EventArgs e)
         {
             #region Binding Product Item_No
@@ -225,7 +208,7 @@ namespace NewProduct
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void tbPrice_KeyPress(object sender, KeyPressEventArgs e)
@@ -302,7 +285,7 @@ namespace NewProduct
                     pnDetailsProductMix.Visible = true;
                     lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
                 }
-            }                       
+            }
         }
 
         private void grdMainProduct_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
@@ -345,10 +328,10 @@ namespace NewProduct
                 int rowIndex;
 
                 colIndex = dataGridView.CurrentCell.ColumnIndex;
-                rowIndex = dataGridView.CurrentCell.RowIndex;                
+                rowIndex = dataGridView.CurrentCell.RowIndex;
 
                 if (colIndex == 0)
-                {                   
+                {
                     dataGridView.Rows[rowIndex].Cells["Product_Name_TH"].Value =
                         grdMainProductList.Rows[bindingProduct.Position].Cells["productNameTH"].Value.ToString();
 
@@ -377,7 +360,7 @@ namespace NewProduct
 
                 else if (colIndex == 3) //Qty
                 {
-                    SendKeys.Send("{up}");                  
+                    SendKeys.Send("{up}");
                     calPrice(dataGridView, rowIndex);
                 }
 
@@ -428,8 +411,8 @@ namespace NewProduct
                 }
 
                 grd.Rows[rowIndex].Cells["LTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);
-              
-                calculateNetPrice();                
+
+                calculateNetPrice();
             }
             catch
             {
@@ -467,7 +450,7 @@ namespace NewProduct
 
                 grd.Rows[rowIndex].Cells["FLTP"].Value = ConvertUtil.parseFloat(fUnitPriceNew);
 
-                calculateNetPriceFree();             
+                calculateNetPriceFree();
             }
             catch
             {
@@ -483,7 +466,7 @@ namespace NewProduct
             for (int i = 0; i < grdMainProduct.Rows.Count - 1; i++)
             {
                 fSumAmount += Math.Round(ConvertUtil.parseDouble(grdMainProduct.Rows[i].Cells["LTP"].Value), 2);
-                fSumQty += ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value);                
+                fSumQty += ConvertUtil.parseInt(grdMainProduct.Rows[i].Cells["QTY"].Value);
             }
 
             if (fSumQty > variablePublic.productBottleQty)
@@ -493,7 +476,7 @@ namespace NewProduct
                 foreach (DataGridViewRow item in this.grdMainProduct.SelectedRows)
                 {
                     grdMainProduct.Rows.RemoveAt(item.Index);
-                }                
+                }
             }
             else
             {
@@ -553,7 +536,7 @@ namespace NewProduct
                 //จำนวนสินค้ารวม
                 tbSumQtyTotal.Text = (ConvertUtil.parseInt(tbSumQty.Text) + ConvertUtil.parseInt(tbSumQtyFree.Text)).ToString();
                 variablePublic.productTotalQty = Int32.Parse(tbSumQtyTotal.Text);
-            }           
+            }
         }
 
         private void grdMainProduct_KeyDown(object sender, KeyEventArgs e)
@@ -975,7 +958,7 @@ namespace NewProduct
                     pnFreeProduct.Controls.Add(dtUnit);
 
                     z = dtProductId.Location.Y + 21;
-                }               
+                }
             }
         }
 
@@ -1013,7 +996,7 @@ namespace NewProduct
             if (tbCaseQty.Text != "")
             {
                 variablePublic.productCaseQty = Int32.Parse(tbCaseQty.Text);
-            }           
+            }
         }
 
         private void tbInnerQty_Leave(object sender, EventArgs e)
@@ -1021,7 +1004,7 @@ namespace NewProduct
             if (tbInnerQty.Text != "")
             {
                 variablePublic.productInnerBoxQty = Int32.Parse(tbInnerQty.Text);
-            }            
+            }
         }
 
         private void tbPackQty_Leave(object sender, EventArgs e)
@@ -1029,7 +1012,7 @@ namespace NewProduct
             if (tbPackQty.Text != "")
             {
                 variablePublic.productPackQty = Int32.Parse(tbPackQty.Text);
-            }          
+            }
         }
 
         private void tbBottleQty_Leave(object sender, EventArgs e)
@@ -1037,7 +1020,7 @@ namespace NewProduct
             if (tbBottleQty.Text != "")
             {
                 variablePublic.productBottleQty = Int32.Parse(tbBottleQty.Text);
-            }          
+            }
         }
 
         private void tbCaseQty_KeyDown(object sender, KeyEventArgs e)
@@ -1144,46 +1127,48 @@ namespace NewProduct
 
         private void btnAddChennel_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //Create the msg object to be sent
-                MailMessage msg = new MailMessage();
-                //Add your email address to the recipients             
-                msg.To.Add(txtName.Text);
-                //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
-                MailAddress address = new MailAddress(txtName.Text);
-                msg.From = address;
-                //Append their name in the beginning of the subject
-                //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
-                //msg.Body = txtMessage.Text;
-                msg.Subject = "NPD Test";
-                msg.Body = "Test";
+            PanelRequestFormShow();
+
+            //try
+            //{
+            //    //Create the msg object to be sent
+            //    MailMessage msg = new MailMessage();
+            //    //Add your email address to the recipients             
+            //    msg.To.Add(txtName.Text);
+            //    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+            //    MailAddress address = new MailAddress(txtName.Text);
+            //    msg.From = address;
+            //    //Append their name in the beginning of the subject
+            //    //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
+            //    //msg.Body = txtMessage.Text;
+            //    msg.Subject = "NPD Test";
+            //    msg.Body = "Test";
 
 
-                //Configure an SmtpClient to send the mail.
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                client.EnableSsl = true; //only enable this if your provider requires it
-                                         //Setup credentials to login to our sender email address ("UserName", "Password")
-                NetworkCredential credentials = new NetworkCredential(txtName.Text, ddlSubject.Text);
+            //    //Configure an SmtpClient to send the mail.
+            //    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            //    client.EnableSsl = true; //only enable this if your provider requires it
+            //                             //Setup credentials to login to our sender email address ("UserName", "Password")
+            //    NetworkCredential credentials = new NetworkCredential(txtName.Text, ddlSubject.Text);
 
-                client.Credentials = credentials;
+            //    client.Credentials = credentials;
 
-                //Send the msg
-                client.Send(msg);
+            //    //Send the msg
+            //    client.Send(msg);
 
-                //Display some feedback to the user to let them know it was sent
-                lblResult.Text = "Your message was sent!";
+            //    //Display some feedback to the user to let them know it was sent
+            //    lblResult.Text = "Your message was sent!";
 
-                //Clear the form
-                txtName.Text = "";
-                txtMessage.Text = "";
-                ddlSubject.Text = "";
-            }
-            catch
-            {
-                //If the message failed at some point, let the user know
-                lblResult.Text = "Your message failed to send, please try again.";
-            }
+            //    //Clear the form
+            //    txtName.Text = "";
+            //    txtMessage.Text = "";
+            //    ddlSubject.Text = "";
+            //}
+            //catch
+            //{
+            //    //If the message failed at some point, let the user know
+            //    lblResult.Text = "Your message failed to send, please try again.";
+            //}
         }
 
         private void cmbProductType_SelectedValueChanged(object sender, EventArgs e)
@@ -1194,6 +1179,55 @@ namespace NewProduct
         private void cmbProductItemNo_SelectedValueChanged(object sender, EventArgs e)
         {
             tbProductNameTH.Focus();
+        }
+
+        private void pbImageOfProduct_Click(object sender, EventArgs e)
+        {
+            // open file dialog   
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.png)|*.jpg; *.jpeg; *.gif; *.png";
+            open.FilterIndex = 1;
+            open.RestoreDirectory = true;
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                pbImageOfProduct.Image = new Bitmap(open.FileName);
+                // image file path  
+                variablePublic.picturePath = open.FileName;
+                MessageBox.Show(variablePublic.picturePath);
+            }
+        }
+
+        private void btnProductGroup_Click(object sender, EventArgs e)
+        {
+            PanelRequestFormShow();
+        }
+
+        private void PanelRequestFormShow()
+        {
+            pnRequestForm.Visible = true;
+            pnRequestForm.Location = new Point(488, 195);
+        }
+
+        private void btnSendMail_Click(object sender, EventArgs e)
+        {
+            pnRequestForm.Visible = false;
+        }
+
+        private void btnCloseMail_Click(object sender, EventArgs e)
+        {
+            pnRequestForm.Visible = false;
+        }
+
+        private void btnProductType_Click(object sender, EventArgs e)
+        {
+            PanelRequestFormShow();
+        }
+
+        private void btnExtraPackaging_Click(object sender, EventArgs e)
+        {
+            PanelRequestFormShow();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

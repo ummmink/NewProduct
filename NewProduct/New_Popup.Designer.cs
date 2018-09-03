@@ -66,7 +66,7 @@
             this.btnMatCodeDK = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tbProductNameInvTH = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbImageOfProduct = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox66 = new System.Windows.Forms.TextBox();
@@ -89,7 +89,7 @@
             this.label190 = new System.Windows.Forms.Label();
             this.label191 = new System.Windows.Forms.Label();
             this.btnAddChennel = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.btnExtraPackaging = new System.Windows.Forms.Button();
             this.cmbOther = new System.Windows.Forms.ComboBox();
             this.label117 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -232,16 +232,22 @@
             this.pnShortName = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
             this.label55 = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.pnMatCodeDK = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.label111 = new System.Windows.Forms.Label();
             this.textBox73 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox72 = new System.Windows.Forms.TextBox();
             this.pnDimention = new System.Windows.Forms.Panel();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.label92 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.textBox71 = new System.Windows.Forms.TextBox();
@@ -323,6 +329,8 @@
             this.textBox36 = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.pnBarcode = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -361,6 +369,8 @@
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.pnProductID = new System.Windows.Forms.Panel();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button20 = new System.Windows.Forms.Button();
@@ -451,17 +461,20 @@
             this.label70 = new System.Windows.Forms.Label();
             this.bindingProduct = new System.Windows.Forms.BindingSource(this.components);
             this.bindingFreeProduct = new System.Windows.Forms.BindingSource(this.components);
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnRequestForm = new System.Windows.Forms.Panel();
+            this.label129 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label130 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label131 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label132 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label133 = new System.Windows.Forms.Label();
+            this.btnCloseMail = new System.Windows.Forms.Button();
+            this.btnSendMail = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnDetails.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -494,6 +507,7 @@
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingFreeProduct)).BeginInit();
+            this.pnRequestForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -597,18 +611,18 @@
             this.toolTip1.SetToolTip(this.tbProductNameInvTH, "จำนวนตัวอักษรถูกจำกัดที่จำนวน 36 ตัวอักษร เนื่องด้วยพื้นที่ช่องใน Invoice จำกัด ต" +
         "้องการเพิ่มจำนวนตัวอักษร ติดต่อที่แผนกบัญชี");
             // 
-            // pictureBox1
+            // pbImageOfProduct
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(565, 277);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "Click เพื่อเลือกรูป");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pbImageOfProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbImageOfProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbImageOfProduct.Location = new System.Drawing.Point(10, 6);
+            this.pbImageOfProduct.Name = "pbImageOfProduct";
+            this.pbImageOfProduct.Size = new System.Drawing.Size(565, 277);
+            this.pbImageOfProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImageOfProduct.TabIndex = 0;
+            this.pbImageOfProduct.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbImageOfProduct, "Click เพื่อเลือกรูป");
+            this.pbImageOfProduct.Click += new System.EventHandler(this.pbImageOfProduct_Click);
             // 
             // pictureBox2
             // 
@@ -813,7 +827,7 @@
             this.panel3.Controls.Add(this.label190);
             this.panel3.Controls.Add(this.label191);
             this.panel3.Controls.Add(this.btnAddChennel);
-            this.panel3.Controls.Add(this.button25);
+            this.panel3.Controls.Add(this.btnExtraPackaging);
             this.panel3.Controls.Add(this.cmbOther);
             this.panel3.Controls.Add(this.label117);
             this.panel3.Controls.Add(this.textBox11);
@@ -917,19 +931,20 @@
             this.btnAddChennel.UseVisualStyleBackColor = false;
             this.btnAddChennel.Click += new System.EventHandler(this.btnAddChennel_Click);
             // 
-            // button25
+            // btnExtraPackaging
             // 
-            this.button25.BackColor = System.Drawing.Color.SteelBlue;
-            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.Image = ((System.Drawing.Image)(resources.GetObject("button25.Image")));
-            this.button25.Location = new System.Drawing.Point(538, 6);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(36, 27);
-            this.button25.TabIndex = 53;
-            this.button25.UseVisualStyleBackColor = false;
+            this.btnExtraPackaging.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnExtraPackaging.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExtraPackaging.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExtraPackaging.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnExtraPackaging.ForeColor = System.Drawing.Color.White;
+            this.btnExtraPackaging.Image = ((System.Drawing.Image)(resources.GetObject("btnExtraPackaging.Image")));
+            this.btnExtraPackaging.Location = new System.Drawing.Point(538, 6);
+            this.btnExtraPackaging.Name = "btnExtraPackaging";
+            this.btnExtraPackaging.Size = new System.Drawing.Size(36, 27);
+            this.btnExtraPackaging.TabIndex = 53;
+            this.btnExtraPackaging.UseVisualStyleBackColor = false;
+            this.btnExtraPackaging.Click += new System.EventHandler(this.btnExtraPackaging_Click);
             // 
             // cmbOther
             // 
@@ -1216,7 +1231,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pbImageOfProduct);
             this.panel1.Location = new System.Drawing.Point(674, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(586, 292);
@@ -1459,6 +1474,7 @@
             this.btnProductType.TabIndex = 52;
             this.btnProductType.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProductType.UseVisualStyleBackColor = false;
+            this.btnProductType.Click += new System.EventHandler(this.btnProductType_Click);
             // 
             // btnProductGroup
             // 
@@ -1473,6 +1489,7 @@
             this.btnProductGroup.Size = new System.Drawing.Size(36, 27);
             this.btnProductGroup.TabIndex = 51;
             this.btnProductGroup.UseVisualStyleBackColor = false;
+            this.btnProductGroup.Click += new System.EventHandler(this.btnProductGroup_Click);
             // 
             // tbPrice
             // 
@@ -2593,6 +2610,42 @@
             this.panel5.Size = new System.Drawing.Size(587, 140);
             this.panel5.TabIndex = 15;
             // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.Color.Firebrick;
+            this.button28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button28.ForeColor = System.Drawing.Color.White;
+            this.button28.Image = ((System.Drawing.Image)(resources.GetObject("button28.Image")));
+            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.Location = new System.Drawing.Point(469, 87);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(67, 35);
+            this.button28.TabIndex = 9;
+            this.button28.Tag = "";
+            this.button28.Text = "ปิด";
+            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button28.UseVisualStyleBackColor = false;
+            // 
+            // button29
+            // 
+            this.button29.BackColor = System.Drawing.Color.DarkKhaki;
+            this.button29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button29.ForeColor = System.Drawing.Color.White;
+            this.button29.Image = ((System.Drawing.Image)(resources.GetObject("button29.Image")));
+            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button29.Location = new System.Drawing.Point(382, 87);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(80, 35);
+            this.button29.TabIndex = 8;
+            this.button29.Tag = "";
+            this.button29.Text = "บันทึก";
+            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button29.UseVisualStyleBackColor = false;
+            // 
             // label55
             // 
             this.label55.AutoSize = true;
@@ -2650,6 +2703,42 @@
             this.panel14.Size = new System.Drawing.Size(526, 175);
             this.panel14.TabIndex = 17;
             // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.Firebrick;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button21.ForeColor = System.Drawing.Color.White;
+            this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(413, 116);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(67, 35);
+            this.button21.TabIndex = 11;
+            this.button21.Tag = "";
+            this.button21.Text = "ปิด";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.DarkKhaki;
+            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button22.ForeColor = System.Drawing.Color.White;
+            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(328, 116);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(80, 35);
+            this.button22.TabIndex = 10;
+            this.button22.Tag = "";
+            this.button22.Text = "บันทึก";
+            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button22.UseVisualStyleBackColor = false;
+            // 
             // label111
             // 
             this.label111.AutoSize = true;
@@ -2706,6 +2795,42 @@
             this.pnDimention.TabIndex = 62;
             this.pnDimention.Tag = "PanelHide";
             this.pnDimention.Visible = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.Firebrick;
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button16.ForeColor = System.Drawing.Color.White;
+            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
+            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.Location = new System.Drawing.Point(1070, 503);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(67, 35);
+            this.button16.TabIndex = 24;
+            this.button16.Tag = "";
+            this.button16.Text = "ปิด";
+            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.DarkKhaki;
+            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button17.ForeColor = System.Drawing.Color.White;
+            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
+            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button17.Location = new System.Drawing.Point(984, 503);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(80, 35);
+            this.button17.TabIndex = 23;
+            this.button17.Tag = "";
+            this.button17.Text = "บันทึก";
+            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button17.UseVisualStyleBackColor = false;
             // 
             // label92
             // 
@@ -3615,6 +3740,42 @@
             this.pnBarcode.Visible = false;
             this.pnBarcode.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBarcode_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1130, 406);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 35);
+            this.button1.TabIndex = 24;
+            this.button1.Tag = "";
+            this.button1.Text = "ปิด";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkKhaki;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(1045, 406);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 35);
+            this.button2.TabIndex = 23;
+            this.button2.Tag = "";
+            this.button2.Text = "บันทึก";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -4024,6 +4185,42 @@
             this.pnProductID.TabIndex = 61;
             this.pnProductID.Tag = "PanelHide";
             this.pnProductID.Visible = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Firebrick;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(1131, 498);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(67, 35);
+            this.button14.TabIndex = 28;
+            this.button14.Tag = "";
+            this.button14.Text = "ปิด";
+            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.DarkKhaki;
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
+            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.Location = new System.Drawing.Point(1045, 498);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(80, 35);
+            this.button15.TabIndex = 27;
+            this.button15.Tag = "";
+            this.button15.Text = "บันทึก";
+            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button15.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
@@ -4926,185 +5123,170 @@
             this.label70.TabIndex = 14;
             this.label70.Text = "Charge";
             // 
-            // button28
+            // pnRequestForm
             // 
-            this.button28.BackColor = System.Drawing.Color.Firebrick;
-            this.button28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.Image = ((System.Drawing.Image)(resources.GetObject("button28.Image")));
-            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.Location = new System.Drawing.Point(469, 87);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(67, 35);
-            this.button28.TabIndex = 9;
-            this.button28.Tag = "";
-            this.button28.Text = "ปิด";
-            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button28.UseVisualStyleBackColor = false;
+            this.pnRequestForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnRequestForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnRequestForm.Controls.Add(this.btnCloseMail);
+            this.pnRequestForm.Controls.Add(this.btnSendMail);
+            this.pnRequestForm.Controls.Add(this.label133);
+            this.pnRequestForm.Controls.Add(this.textBox1);
+            this.pnRequestForm.Controls.Add(this.comboBox5);
+            this.pnRequestForm.Controls.Add(this.label132);
+            this.pnRequestForm.Controls.Add(this.label131);
+            this.pnRequestForm.Controls.Add(this.comboBox4);
+            this.pnRequestForm.Controls.Add(this.comboBox3);
+            this.pnRequestForm.Controls.Add(this.textBox2);
+            this.pnRequestForm.Controls.Add(this.label130);
+            this.pnRequestForm.Controls.Add(this.label129);
+            this.pnRequestForm.Location = new System.Drawing.Point(305, 9);
+            this.pnRequestForm.Name = "pnRequestForm";
+            this.pnRequestForm.Size = new System.Drawing.Size(390, 360);
+            this.pnRequestForm.TabIndex = 64;
+            this.pnRequestForm.Visible = false;
             // 
-            // button29
+            // label129
             // 
-            this.button29.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button29.ForeColor = System.Drawing.Color.White;
-            this.button29.Image = ((System.Drawing.Image)(resources.GetObject("button29.Image")));
-            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button29.Location = new System.Drawing.Point(382, 87);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(80, 35);
-            this.button29.TabIndex = 8;
-            this.button29.Tag = "";
-            this.button29.Text = "บันทึก";
-            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button29.UseVisualStyleBackColor = false;
+            this.label129.AutoSize = true;
+            this.label129.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label129.ForeColor = System.Drawing.Color.White;
+            this.label129.Location = new System.Drawing.Point(28, 24);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(103, 14);
+            this.label129.TabIndex = 48;
+            this.label129.Text = "E-mail : ผู้รับเรื่อง";
             // 
-            // button1
+            // textBox2
             // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1130, 406);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 35);
-            this.button1.TabIndex = 24;
-            this.button1.Tag = "";
-            this.button1.Text = "ปิด";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(144, 81);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox2.Size = new System.Drawing.Size(219, 147);
+            this.textBox2.TabIndex = 49;
             // 
-            // button2
+            // label130
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1045, 406);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 35);
-            this.button2.TabIndex = 23;
-            this.button2.Tag = "";
-            this.button2.Text = "บันทึก";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
+            this.label130.AutoSize = true;
+            this.label130.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label130.ForeColor = System.Drawing.Color.White;
+            this.label130.Location = new System.Drawing.Point(82, 54);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(49, 14);
+            this.label130.TabIndex = 50;
+            this.label130.Text = "ชื่อเรื่อง";
             // 
-            // button14
+            // comboBox3
             // 
-            this.button14.BackColor = System.Drawing.Color.Firebrick;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(1131, 498);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(67, 35);
-            this.button14.TabIndex = 28;
-            this.button14.Tag = "";
-            this.button14.Text = "ปิด";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button14.UseVisualStyleBackColor = false;
+            this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(144, 20);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(219, 22);
+            this.comboBox3.TabIndex = 51;
+            this.comboBox3.Text = "sarawana.n@scotch.co.th";
             // 
-            // button15
+            // comboBox4
             // 
-            this.button15.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(1045, 498);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(80, 35);
-            this.button15.TabIndex = 27;
-            this.button15.Tag = "";
-            this.button15.Text = "บันทึก";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button15.UseVisualStyleBackColor = false;
+            this.comboBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "เพิ่มกลุ่มผลิตภัณฑ์"});
+            this.comboBox4.Location = new System.Drawing.Point(144, 50);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(219, 22);
+            this.comboBox4.TabIndex = 52;
             // 
-            // button16
+            // label131
             // 
-            this.button16.BackColor = System.Drawing.Color.Firebrick;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(1070, 503);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(67, 35);
-            this.button16.TabIndex = 24;
-            this.button16.Tag = "";
-            this.button16.Text = "ปิด";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button16.UseVisualStyleBackColor = false;
+            this.label131.AutoSize = true;
+            this.label131.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label131.ForeColor = System.Drawing.Color.White;
+            this.label131.Location = new System.Drawing.Point(62, 81);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(69, 14);
+            this.label131.TabIndex = 53;
+            this.label131.Text = "รายละเอียด";
             // 
-            // button17
+            // comboBox5
             // 
-            this.button17.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(984, 503);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(80, 35);
-            this.button17.TabIndex = 23;
-            this.button17.Tag = "";
-            this.button17.Text = "บันทึก";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button17.UseVisualStyleBackColor = false;
+            this.comboBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(144, 237);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(219, 22);
+            this.comboBox5.TabIndex = 55;
+            this.comboBox5.Text = "sarawana.n@scotch.co.th";
             // 
-            // button21
+            // label132
             // 
-            this.button21.BackColor = System.Drawing.Color.Firebrick;
-            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(413, 116);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(67, 35);
-            this.button21.TabIndex = 11;
-            this.button21.Tag = "";
-            this.button21.Text = "ปิด";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button21.UseVisualStyleBackColor = false;
+            this.label132.AutoSize = true;
+            this.label132.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label132.ForeColor = System.Drawing.Color.White;
+            this.label132.Location = new System.Drawing.Point(20, 241);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(111, 14);
+            this.label132.TabIndex = 54;
+            this.label132.Text = "E-mail : ผู้แจ้งเรื่อง";
             // 
-            // button22
+            // textBox1
             // 
-            this.button22.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(328, 116);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(80, 35);
-            this.button22.TabIndex = 10;
-            this.button22.Tag = "";
-            this.button22.Text = "บันทึก";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button22.UseVisualStyleBackColor = false;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(144, 268);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
+            this.textBox1.Size = new System.Drawing.Size(219, 22);
+            this.textBox1.TabIndex = 56;
+            // 
+            // label133
+            // 
+            this.label133.AutoSize = true;
+            this.label133.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label133.ForeColor = System.Drawing.Color.White;
+            this.label133.Location = new System.Drawing.Point(65, 272);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(66, 14);
+            this.label133.TabIndex = 57;
+            this.label133.Text = "Password";
+            // 
+            // btnCloseMail
+            // 
+            this.btnCloseMail.BackColor = System.Drawing.Color.Black;
+            this.btnCloseMail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCloseMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseMail.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnCloseMail.ForeColor = System.Drawing.Color.White;
+            this.btnCloseMail.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseMail.Image")));
+            this.btnCloseMail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCloseMail.Location = new System.Drawing.Point(215, 306);
+            this.btnCloseMail.Name = "btnCloseMail";
+            this.btnCloseMail.Size = new System.Drawing.Size(67, 35);
+            this.btnCloseMail.TabIndex = 59;
+            this.btnCloseMail.Tag = "";
+            this.btnCloseMail.Text = "ปิด";
+            this.btnCloseMail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCloseMail.UseVisualStyleBackColor = false;
+            this.btnCloseMail.Click += new System.EventHandler(this.btnCloseMail_Click);
+            // 
+            // btnSendMail
+            // 
+            this.btnSendMail.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnSendMail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSendMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSendMail.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSendMail.ForeColor = System.Drawing.Color.White;
+            this.btnSendMail.Image = ((System.Drawing.Image)(resources.GetObject("btnSendMail.Image")));
+            this.btnSendMail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSendMail.Location = new System.Drawing.Point(108, 306);
+            this.btnSendMail.Name = "btnSendMail";
+            this.btnSendMail.Size = new System.Drawing.Size(101, 35);
+            this.btnSendMail.TabIndex = 58;
+            this.btnSendMail.Tag = "";
+            this.btnSendMail.Text = "ส่งข้อมูล";
+            this.btnSendMail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSendMail.UseVisualStyleBackColor = false;
+            this.btnSendMail.Click += new System.EventHandler(this.btnSendMail_Click);
             // 
             // New_Popup
             // 
@@ -5112,6 +5294,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
+            this.Controls.Add(this.pnRequestForm);
             this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.pnDimention);
@@ -5131,7 +5314,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New";
             this.Load += new System.EventHandler(this.New_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnDetails.ResumeLayout(false);
             this.pnDetails.PerformLayout();
@@ -5184,6 +5367,8 @@
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingFreeProduct)).EndInit();
+            this.pnRequestForm.ResumeLayout(false);
+            this.pnRequestForm.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5230,7 +5415,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbImageOfProduct;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label27;
@@ -5558,7 +5743,7 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button btnAddChennel;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button btnExtraPackaging;
         private System.Windows.Forms.Label label192;
         private System.Windows.Forms.Label label193;
         private System.Windows.Forms.TextBox textBox75;
@@ -5592,5 +5777,18 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Panel pnRequestForm;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label130;
+        private System.Windows.Forms.Label label129;
+        private System.Windows.Forms.Button btnCloseMail;
+        private System.Windows.Forms.Button btnSendMail;
+        private System.Windows.Forms.Label label133;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label132;
+        private System.Windows.Forms.Label label131;
     }
 }

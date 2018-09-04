@@ -102,7 +102,7 @@ namespace NewProduct.Business
         {
             try
             {
-                return commonData.npd_insert_product_hamper_temp(reference_no, product_id, product_sub_id, 
+                return commonData.npd_insert_product_hamper_temp(reference_no, product_id, product_sub_id,
                     quantity, hamper_extra, price);
             }
             catch (Exception ex)
@@ -140,6 +140,30 @@ namespace NewProduct.Business
             try
             {
                 return commonData.npd_select_product_name_th_by_product_id(product_id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_insert_product_temp(string reference_no, string product_id, string nickname, string item_no
+            , int type_id, string product_name_th, string product_unit, string product_name_eng, int packing, int bottle, float size
+            , DateTime sell_date, int inner_box, int free, string user_create, string item_no2, string product_name_eng_invoice
+            , string product_name_th_invoice, string decorated_area1, string decorated_area2, string decorated_area3
+            , string decoration_other_details, string decoration_remarkable_of_box, string decoration1, string decoration2
+            , string decoration3, string image_path, int other_id, float price_per_case, float price_recommend, string product_prefix
+            , DateTime sample_date, int sample_qty_bottle, int sample_qty_box, string schedule, int sell_id, int sell_qty_bottle
+            , int sell_qty_box, string remark, int shipping_terms_id)
+        {
+            try
+            {
+                return commonData.npd_insert_product_temp(reference_no, product_id, nickname, item_no, type_id, product_name_th
+                    , product_unit, product_name_eng, packing, bottle, size, sell_date, inner_box, free, user_create, item_no2
+                    , product_name_eng_invoice, product_name_th_invoice, decorated_area1, decorated_area2, decorated_area3
+                    , decoration_other_details, decoration_remarkable_of_box, decoration1, decoration2, decoration3, image_path
+                    , other_id, price_per_case, price_recommend, product_prefix, sample_date, sample_qty_bottle, sample_qty_box
+                    , schedule, sell_id, sell_qty_bottle, sell_qty_box, remark, shipping_terms_id);
             }
             catch (Exception ex)
             {

@@ -46,6 +46,8 @@ namespace NewProduct.Entity {
         
         private NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
         
+        private NPD_INSERT_PRODUCT_TEMPDataTable tableNPD_INSERT_PRODUCT_TEMP;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -106,6 +108,9 @@ namespace NewProduct.Entity {
                 }
                 if ((ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"] != null)) {
                     base.Tables.Add(new NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable(ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"]));
+                }
+                if ((ds.Tables["NPD_INSERT_PRODUCT_TEMP"] != null)) {
+                    base.Tables.Add(new NPD_INSERT_PRODUCT_TEMPDataTable(ds.Tables["NPD_INSERT_PRODUCT_TEMP"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -237,6 +242,16 @@ namespace NewProduct.Entity {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public NPD_INSERT_PRODUCT_TEMPDataTable NPD_INSERT_PRODUCT_TEMP {
+            get {
+                return this.tableNPD_INSERT_PRODUCT_TEMP;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -334,6 +349,9 @@ namespace NewProduct.Entity {
                 }
                 if ((ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"] != null)) {
                     base.Tables.Add(new NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable(ds.Tables["NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID"]));
+                }
+                if ((ds.Tables["NPD_INSERT_PRODUCT_TEMP"] != null)) {
+                    base.Tables.Add(new NPD_INSERT_PRODUCT_TEMPDataTable(ds.Tables["NPD_INSERT_PRODUCT_TEMP"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -434,6 +452,12 @@ namespace NewProduct.Entity {
                     this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID.InitVars();
                 }
             }
+            this.tableNPD_INSERT_PRODUCT_TEMP = ((NPD_INSERT_PRODUCT_TEMPDataTable)(base.Tables["NPD_INSERT_PRODUCT_TEMP"]));
+            if ((initTable == true)) {
+                if ((this.tableNPD_INSERT_PRODUCT_TEMP != null)) {
+                    this.tableNPD_INSERT_PRODUCT_TEMP.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -466,6 +490,8 @@ namespace NewProduct.Entity {
             base.Tables.Add(this.tableNPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID);
             this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID = new NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable();
             base.Tables.Add(this.tableNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID);
+            this.tableNPD_INSERT_PRODUCT_TEMP = new NPD_INSERT_PRODUCT_TEMPDataTable();
+            base.Tables.Add(this.tableNPD_INSERT_PRODUCT_TEMP);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -531,6 +557,12 @@ namespace NewProduct.Entity {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeNPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeNPD_INSERT_PRODUCT_TEMP() {
             return false;
         }
         
@@ -621,6 +653,9 @@ namespace NewProduct.Entity {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRowChangeEventHandler(object sender, NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void NPD_INSERT_PRODUCT_TEMPRowChangeEventHandler(object sender, NPD_INSERT_PRODUCT_TEMPRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4089,6 +4124,239 @@ namespace NewProduct.Entity {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class NPD_INSERT_PRODUCT_TEMPDataTable : global::System.Data.TypedTableBase<NPD_INSERT_PRODUCT_TEMPRow> {
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_INSERT_PRODUCT_TEMPDataTable() {
+                this.TableName = "NPD_INSERT_PRODUCT_TEMP";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_INSERT_PRODUCT_TEMPDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected NPD_INSERT_PRODUCT_TEMPDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_INSERT_PRODUCT_TEMPRow this[int index] {
+                get {
+                    return ((NPD_INSERT_PRODUCT_TEMPRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_INSERT_PRODUCT_TEMPRowChangeEventHandler NPD_INSERT_PRODUCT_TEMPRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_INSERT_PRODUCT_TEMPRowChangeEventHandler NPD_INSERT_PRODUCT_TEMPRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_INSERT_PRODUCT_TEMPRowChangeEventHandler NPD_INSERT_PRODUCT_TEMPRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_INSERT_PRODUCT_TEMPRowChangeEventHandler NPD_INSERT_PRODUCT_TEMPRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddNPD_INSERT_PRODUCT_TEMPRow(NPD_INSERT_PRODUCT_TEMPRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_INSERT_PRODUCT_TEMPRow AddNPD_INSERT_PRODUCT_TEMPRow() {
+                NPD_INSERT_PRODUCT_TEMPRow rowNPD_INSERT_PRODUCT_TEMPRow = ((NPD_INSERT_PRODUCT_TEMPRow)(this.NewRow()));
+                object[] columnValuesArray = new object[0];
+                rowNPD_INSERT_PRODUCT_TEMPRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowNPD_INSERT_PRODUCT_TEMPRow);
+                return rowNPD_INSERT_PRODUCT_TEMPRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                NPD_INSERT_PRODUCT_TEMPDataTable cln = ((NPD_INSERT_PRODUCT_TEMPDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new NPD_INSERT_PRODUCT_TEMPDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_INSERT_PRODUCT_TEMPRow NewNPD_INSERT_PRODUCT_TEMPRow() {
+                return ((NPD_INSERT_PRODUCT_TEMPRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new NPD_INSERT_PRODUCT_TEMPRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(NPD_INSERT_PRODUCT_TEMPRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.NPD_INSERT_PRODUCT_TEMPRowChanged != null)) {
+                    this.NPD_INSERT_PRODUCT_TEMPRowChanged(this, new NPD_INSERT_PRODUCT_TEMPRowChangeEvent(((NPD_INSERT_PRODUCT_TEMPRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.NPD_INSERT_PRODUCT_TEMPRowChanging != null)) {
+                    this.NPD_INSERT_PRODUCT_TEMPRowChanging(this, new NPD_INSERT_PRODUCT_TEMPRowChangeEvent(((NPD_INSERT_PRODUCT_TEMPRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.NPD_INSERT_PRODUCT_TEMPRowDeleted != null)) {
+                    this.NPD_INSERT_PRODUCT_TEMPRowDeleted(this, new NPD_INSERT_PRODUCT_TEMPRowChangeEvent(((NPD_INSERT_PRODUCT_TEMPRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.NPD_INSERT_PRODUCT_TEMPRowDeleting != null)) {
+                    this.NPD_INSERT_PRODUCT_TEMPRowDeleting(this, new NPD_INSERT_PRODUCT_TEMPRowChangeEvent(((NPD_INSERT_PRODUCT_TEMPRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveNPD_INSERT_PRODUCT_TEMPRow(NPD_INSERT_PRODUCT_TEMPRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                CommonDataSet ds = new CommonDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "NPD_INSERT_PRODUCT_TEMPDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class SELECT_PRODUCT_ALL_STATUSRow : global::System.Data.DataRow {
@@ -5804,6 +6072,21 @@ namespace NewProduct.Entity {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class NPD_INSERT_PRODUCT_TEMPRow : global::System.Data.DataRow {
+            
+            private NPD_INSERT_PRODUCT_TEMPDataTable tableNPD_INSERT_PRODUCT_TEMP;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_INSERT_PRODUCT_TEMPRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableNPD_INSERT_PRODUCT_TEMP = ((NPD_INSERT_PRODUCT_TEMPDataTable)(this.Table));
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -6163,6 +6446,40 @@ namespace NewProduct.Entity {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class NPD_INSERT_PRODUCT_TEMPRowChangeEvent : global::System.EventArgs {
+            
+            private NPD_INSERT_PRODUCT_TEMPRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_INSERT_PRODUCT_TEMPRowChangeEvent(NPD_INSERT_PRODUCT_TEMPRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_INSERT_PRODUCT_TEMPRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -8206,6 +8523,770 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             CommonDataSet.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable dataTable = new CommonDataSet.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_IDDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class NPD_INSERT_PRODUCT_TEMPTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public NPD_INSERT_PRODUCT_TEMPTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::NewProduct.Entity.Properties.Settings.Default.COMMONConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.NPD_INSERT_PRODUCT_TEMP";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@REFERENCE_NO", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_ID", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NICKNAME", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ITEM_NO", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TYPE_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_NAME_TH", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_UNIT", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_NAME_ENG", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PACKING", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BOTTLE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SIZE", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SELL_DATE", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@INNER_BOX", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FREE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_CREATE", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ITEM_NO2", global::System.Data.SqlDbType.VarChar, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_NAME_ENG_Invoice", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_NAME_TH_Invoice", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATED_AREA1", global::System.Data.SqlDbType.VarChar, 150, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATED_AREA2", global::System.Data.SqlDbType.VarChar, 150, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATED_AREA3", global::System.Data.SqlDbType.VarChar, 150, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATION_OTHER_DETAILS", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATION_REMARKABLE_OF_BOX", global::System.Data.SqlDbType.VarChar, 250, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATION1", global::System.Data.SqlDbType.VarChar, 150, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATION2", global::System.Data.SqlDbType.VarChar, 150, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DECORATION3", global::System.Data.SqlDbType.VarChar, 150, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IMAGE_PATH", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OTHER_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRICE_PER_CASE", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRICE_RECOMMEND", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_PREFIX", global::System.Data.SqlDbType.VarChar, 3, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SAMPLE_DATE", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SAMPLE_QTY_BOTTLE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SAMPLE_QTY_BOX", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SCHEDULE", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SELL_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SELL_QTY_BOTTLE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SELL_QTY_BOX", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@REMARK", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SHIPPING_TERMS_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(
+                    CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable dataTable, 
+                    string REFERENCE_NO, 
+                    string PRODUCT_ID, 
+                    string NICKNAME, 
+                    string ITEM_NO, 
+                    global::System.Nullable<int> TYPE_ID, 
+                    string PRODUCT_NAME_TH, 
+                    string PRODUCT_UNIT, 
+                    string PRODUCT_NAME_ENG, 
+                    global::System.Nullable<int> PACKING, 
+                    global::System.Nullable<int> BOTTLE, 
+                    global::System.Nullable<double> SIZE, 
+                    global::System.Nullable<global::System.DateTime> SELL_DATE, 
+                    global::System.Nullable<int> INNER_BOX, 
+                    global::System.Nullable<int> FREE, 
+                    string USER_CREATE, 
+                    string ITEM_NO2, 
+                    string PRODUCT_NAME_ENG_Invoice, 
+                    string PRODUCT_NAME_TH_Invoice, 
+                    string DECORATED_AREA1, 
+                    string DECORATED_AREA2, 
+                    string DECORATED_AREA3, 
+                    string DECORATION_OTHER_DETAILS, 
+                    string DECORATION_REMARKABLE_OF_BOX, 
+                    string DECORATION1, 
+                    string DECORATION2, 
+                    string DECORATION3, 
+                    string IMAGE_PATH, 
+                    global::System.Nullable<int> OTHER_ID, 
+                    global::System.Nullable<double> PRICE_PER_CASE, 
+                    global::System.Nullable<double> PRICE_RECOMMEND, 
+                    string PRODUCT_PREFIX, 
+                    global::System.Nullable<global::System.DateTime> SAMPLE_DATE, 
+                    global::System.Nullable<int> SAMPLE_QTY_BOTTLE, 
+                    global::System.Nullable<int> SAMPLE_QTY_BOX, 
+                    string SCHEDULE, 
+                    global::System.Nullable<int> SELL_ID, 
+                    global::System.Nullable<int> SELL_QTY_BOTTLE, 
+                    global::System.Nullable<int> SELL_QTY_BOX, 
+                    string REMARK, 
+                    global::System.Nullable<int> SHIPPING_TERMS_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((REFERENCE_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(REFERENCE_NO));
+            }
+            if ((PRODUCT_ID == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PRODUCT_ID));
+            }
+            if ((NICKNAME == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(NICKNAME));
+            }
+            if ((ITEM_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(ITEM_NO));
+            }
+            if ((TYPE_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(TYPE_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((PRODUCT_NAME_TH == null)) {
+                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[6].Value = ((string)(PRODUCT_NAME_TH));
+            }
+            if ((PRODUCT_UNIT == null)) {
+                this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[7].Value = ((string)(PRODUCT_UNIT));
+            }
+            if ((PRODUCT_NAME_ENG == null)) {
+                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(PRODUCT_NAME_ENG));
+            }
+            if ((PACKING.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((int)(PACKING.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((BOTTLE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[10].Value = ((int)(BOTTLE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((SIZE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[11].Value = ((double)(SIZE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((SELL_DATE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[12].Value = ((System.DateTime)(SELL_DATE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((INNER_BOX.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((int)(INNER_BOX.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((FREE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[14].Value = ((int)(FREE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((USER_CREATE == null)) {
+                this.Adapter.SelectCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[15].Value = ((string)(USER_CREATE));
+            }
+            if ((ITEM_NO2 == null)) {
+                this.Adapter.SelectCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[16].Value = ((string)(ITEM_NO2));
+            }
+            if ((PRODUCT_NAME_ENG_Invoice == null)) {
+                this.Adapter.SelectCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[17].Value = ((string)(PRODUCT_NAME_ENG_Invoice));
+            }
+            if ((PRODUCT_NAME_TH_Invoice == null)) {
+                this.Adapter.SelectCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[18].Value = ((string)(PRODUCT_NAME_TH_Invoice));
+            }
+            if ((DECORATED_AREA1 == null)) {
+                this.Adapter.SelectCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[19].Value = ((string)(DECORATED_AREA1));
+            }
+            if ((DECORATED_AREA2 == null)) {
+                this.Adapter.SelectCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[20].Value = ((string)(DECORATED_AREA2));
+            }
+            if ((DECORATED_AREA3 == null)) {
+                this.Adapter.SelectCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[21].Value = ((string)(DECORATED_AREA3));
+            }
+            if ((DECORATION_OTHER_DETAILS == null)) {
+                this.Adapter.SelectCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[22].Value = ((string)(DECORATION_OTHER_DETAILS));
+            }
+            if ((DECORATION_REMARKABLE_OF_BOX == null)) {
+                this.Adapter.SelectCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[23].Value = ((string)(DECORATION_REMARKABLE_OF_BOX));
+            }
+            if ((DECORATION1 == null)) {
+                this.Adapter.SelectCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[24].Value = ((string)(DECORATION1));
+            }
+            if ((DECORATION2 == null)) {
+                this.Adapter.SelectCommand.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[25].Value = ((string)(DECORATION2));
+            }
+            if ((DECORATION3 == null)) {
+                this.Adapter.SelectCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[26].Value = ((string)(DECORATION3));
+            }
+            if ((IMAGE_PATH == null)) {
+                this.Adapter.SelectCommand.Parameters[27].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[27].Value = ((string)(IMAGE_PATH));
+            }
+            if ((OTHER_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[28].Value = ((int)(OTHER_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            if ((PRICE_PER_CASE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[29].Value = ((double)(PRICE_PER_CASE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            if ((PRICE_RECOMMEND.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[30].Value = ((double)(PRICE_RECOMMEND.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            if ((PRODUCT_PREFIX == null)) {
+                this.Adapter.SelectCommand.Parameters[31].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[31].Value = ((string)(PRODUCT_PREFIX));
+            }
+            if ((SAMPLE_DATE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[32].Value = ((System.DateTime)(SAMPLE_DATE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[32].Value = global::System.DBNull.Value;
+            }
+            if ((SAMPLE_QTY_BOTTLE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[33].Value = ((int)(SAMPLE_QTY_BOTTLE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[33].Value = global::System.DBNull.Value;
+            }
+            if ((SAMPLE_QTY_BOX.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[34].Value = ((int)(SAMPLE_QTY_BOX.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[34].Value = global::System.DBNull.Value;
+            }
+            if ((SCHEDULE == null)) {
+                this.Adapter.SelectCommand.Parameters[35].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[35].Value = ((string)(SCHEDULE));
+            }
+            if ((SELL_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[36].Value = ((int)(SELL_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[36].Value = global::System.DBNull.Value;
+            }
+            if ((SELL_QTY_BOTTLE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[37].Value = ((int)(SELL_QTY_BOTTLE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[37].Value = global::System.DBNull.Value;
+            }
+            if ((SELL_QTY_BOX.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[38].Value = ((int)(SELL_QTY_BOX.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[38].Value = global::System.DBNull.Value;
+            }
+            if ((REMARK == null)) {
+                this.Adapter.SelectCommand.Parameters[39].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[39].Value = ((string)(REMARK));
+            }
+            if ((SHIPPING_TERMS_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[40].Value = ((int)(SHIPPING_TERMS_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[40].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable GetData(
+                    string REFERENCE_NO, 
+                    string PRODUCT_ID, 
+                    string NICKNAME, 
+                    string ITEM_NO, 
+                    global::System.Nullable<int> TYPE_ID, 
+                    string PRODUCT_NAME_TH, 
+                    string PRODUCT_UNIT, 
+                    string PRODUCT_NAME_ENG, 
+                    global::System.Nullable<int> PACKING, 
+                    global::System.Nullable<int> BOTTLE, 
+                    global::System.Nullable<double> SIZE, 
+                    global::System.Nullable<global::System.DateTime> SELL_DATE, 
+                    global::System.Nullable<int> INNER_BOX, 
+                    global::System.Nullable<int> FREE, 
+                    string USER_CREATE, 
+                    string ITEM_NO2, 
+                    string PRODUCT_NAME_ENG_Invoice, 
+                    string PRODUCT_NAME_TH_Invoice, 
+                    string DECORATED_AREA1, 
+                    string DECORATED_AREA2, 
+                    string DECORATED_AREA3, 
+                    string DECORATION_OTHER_DETAILS, 
+                    string DECORATION_REMARKABLE_OF_BOX, 
+                    string DECORATION1, 
+                    string DECORATION2, 
+                    string DECORATION3, 
+                    string IMAGE_PATH, 
+                    global::System.Nullable<int> OTHER_ID, 
+                    global::System.Nullable<double> PRICE_PER_CASE, 
+                    global::System.Nullable<double> PRICE_RECOMMEND, 
+                    string PRODUCT_PREFIX, 
+                    global::System.Nullable<global::System.DateTime> SAMPLE_DATE, 
+                    global::System.Nullable<int> SAMPLE_QTY_BOTTLE, 
+                    global::System.Nullable<int> SAMPLE_QTY_BOX, 
+                    string SCHEDULE, 
+                    global::System.Nullable<int> SELL_ID, 
+                    global::System.Nullable<int> SELL_QTY_BOTTLE, 
+                    global::System.Nullable<int> SELL_QTY_BOX, 
+                    string REMARK, 
+                    global::System.Nullable<int> SHIPPING_TERMS_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((REFERENCE_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(REFERENCE_NO));
+            }
+            if ((PRODUCT_ID == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PRODUCT_ID));
+            }
+            if ((NICKNAME == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(NICKNAME));
+            }
+            if ((ITEM_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(ITEM_NO));
+            }
+            if ((TYPE_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(TYPE_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((PRODUCT_NAME_TH == null)) {
+                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[6].Value = ((string)(PRODUCT_NAME_TH));
+            }
+            if ((PRODUCT_UNIT == null)) {
+                this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[7].Value = ((string)(PRODUCT_UNIT));
+            }
+            if ((PRODUCT_NAME_ENG == null)) {
+                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(PRODUCT_NAME_ENG));
+            }
+            if ((PACKING.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((int)(PACKING.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((BOTTLE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[10].Value = ((int)(BOTTLE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((SIZE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[11].Value = ((double)(SIZE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((SELL_DATE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[12].Value = ((System.DateTime)(SELL_DATE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((INNER_BOX.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((int)(INNER_BOX.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((FREE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[14].Value = ((int)(FREE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((USER_CREATE == null)) {
+                this.Adapter.SelectCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[15].Value = ((string)(USER_CREATE));
+            }
+            if ((ITEM_NO2 == null)) {
+                this.Adapter.SelectCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[16].Value = ((string)(ITEM_NO2));
+            }
+            if ((PRODUCT_NAME_ENG_Invoice == null)) {
+                this.Adapter.SelectCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[17].Value = ((string)(PRODUCT_NAME_ENG_Invoice));
+            }
+            if ((PRODUCT_NAME_TH_Invoice == null)) {
+                this.Adapter.SelectCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[18].Value = ((string)(PRODUCT_NAME_TH_Invoice));
+            }
+            if ((DECORATED_AREA1 == null)) {
+                this.Adapter.SelectCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[19].Value = ((string)(DECORATED_AREA1));
+            }
+            if ((DECORATED_AREA2 == null)) {
+                this.Adapter.SelectCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[20].Value = ((string)(DECORATED_AREA2));
+            }
+            if ((DECORATED_AREA3 == null)) {
+                this.Adapter.SelectCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[21].Value = ((string)(DECORATED_AREA3));
+            }
+            if ((DECORATION_OTHER_DETAILS == null)) {
+                this.Adapter.SelectCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[22].Value = ((string)(DECORATION_OTHER_DETAILS));
+            }
+            if ((DECORATION_REMARKABLE_OF_BOX == null)) {
+                this.Adapter.SelectCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[23].Value = ((string)(DECORATION_REMARKABLE_OF_BOX));
+            }
+            if ((DECORATION1 == null)) {
+                this.Adapter.SelectCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[24].Value = ((string)(DECORATION1));
+            }
+            if ((DECORATION2 == null)) {
+                this.Adapter.SelectCommand.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[25].Value = ((string)(DECORATION2));
+            }
+            if ((DECORATION3 == null)) {
+                this.Adapter.SelectCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[26].Value = ((string)(DECORATION3));
+            }
+            if ((IMAGE_PATH == null)) {
+                this.Adapter.SelectCommand.Parameters[27].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[27].Value = ((string)(IMAGE_PATH));
+            }
+            if ((OTHER_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[28].Value = ((int)(OTHER_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            if ((PRICE_PER_CASE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[29].Value = ((double)(PRICE_PER_CASE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            if ((PRICE_RECOMMEND.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[30].Value = ((double)(PRICE_RECOMMEND.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            if ((PRODUCT_PREFIX == null)) {
+                this.Adapter.SelectCommand.Parameters[31].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[31].Value = ((string)(PRODUCT_PREFIX));
+            }
+            if ((SAMPLE_DATE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[32].Value = ((System.DateTime)(SAMPLE_DATE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[32].Value = global::System.DBNull.Value;
+            }
+            if ((SAMPLE_QTY_BOTTLE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[33].Value = ((int)(SAMPLE_QTY_BOTTLE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[33].Value = global::System.DBNull.Value;
+            }
+            if ((SAMPLE_QTY_BOX.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[34].Value = ((int)(SAMPLE_QTY_BOX.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[34].Value = global::System.DBNull.Value;
+            }
+            if ((SCHEDULE == null)) {
+                this.Adapter.SelectCommand.Parameters[35].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[35].Value = ((string)(SCHEDULE));
+            }
+            if ((SELL_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[36].Value = ((int)(SELL_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[36].Value = global::System.DBNull.Value;
+            }
+            if ((SELL_QTY_BOTTLE.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[37].Value = ((int)(SELL_QTY_BOTTLE.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[37].Value = global::System.DBNull.Value;
+            }
+            if ((SELL_QTY_BOX.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[38].Value = ((int)(SELL_QTY_BOX.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[38].Value = global::System.DBNull.Value;
+            }
+            if ((REMARK == null)) {
+                this.Adapter.SelectCommand.Parameters[39].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[39].Value = ((string)(REMARK));
+            }
+            if ((SHIPPING_TERMS_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[40].Value = ((int)(SHIPPING_TERMS_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[40].Value = global::System.DBNull.Value;
+            }
+            CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable dataTable = new CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

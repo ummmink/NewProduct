@@ -1365,6 +1365,11 @@ namespace NewProduct
 
         private void btnRejectSendMail_Click(object sender, EventArgs e)
         {
+            #region Update Temp Status
+            int iUpdate = 0;
+            iUpdate = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 0); //Status = 0 ยกเลิก (Details)
+            #endregion
+
             try
             {
                 //Create the msg object to be sent

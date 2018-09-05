@@ -29,6 +29,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO = "npd_select_product_hamper_temp_by_reference_no";
         private static string _NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID = "npd_select_product_name_th_by_product_id";
         private static string _NPD_INSERT_PRODUCT_TEMP = "npd_insert_product_temp";
+        private static string _NPD_UPDATE_TEMP_STATUS_PRODUCT_TEMP = "npd_update_temp_status_product_temp";
 
         public CommonDataSet select_product_all_status()
         {
@@ -390,6 +391,31 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_INSERT_PRODUCT_TEMP.TableName, _NPD_INSERT_PRODUCT_TEMP, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int npd_update_temp_status_product_temp(string reference_no, int temp_status)
+        {
+            int row = 0;
+
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[2];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                pm[1] = new SqlParameter("@TEMP_STATUS", SqlDbType.Int);
+                pm[1].Value = temp_status;
+
+                row = DAOFactory.getInstance().getDatabaseDAO().NonExcecute(_NPD_UPDATE_TEMP_STATUS_PRODUCT_TEMP, pm,
+                    strConnCommon);
+                return row;
+
             }
             catch (Exception ex)
             {

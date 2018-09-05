@@ -170,5 +170,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public int npd_update_temp_status_product_temp(string reference_no, int temp_status)
+        {
+            try
+            {
+                return commonData.npd_update_temp_status_product_temp(reference_no, temp_status);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

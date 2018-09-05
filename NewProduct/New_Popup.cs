@@ -15,6 +15,8 @@ using NewProduct.Business;
 using NewProduct.Data;
 using NewProduct.Entity;
 using NewProduct.Utility;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace NewProduct
 {
@@ -1106,55 +1108,44 @@ namespace NewProduct
             DialogResult dialogResult = MessageBox.Show("คุณต้องการจะบันทึกข้อมูล?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
-                //#region upload File
-                //string strFile = "";
+                #region Upload Image               
+                try
+                {
+                    using (var bitmap = new Bitmap(pbImageOfProduct.Width, pbImageOfProduct.Height))
+                    {
+                        //string sPath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
+                        pbImageOfProduct.DrawToBitmap(bitmap, pbImageOfProduct.ClientRectangle);
+                        ImageFormat imageFormat = null;                       
 
-                //if (txtFile.Text.ToString().Trim() != "")
-                //{
-                //    string root = variablePublic.uploadPath.ToString();
+                        var extension = Path.GetExtension(variablePublic.imagePath);
+                        variablePublic.imagePath = variablePublic.saveImagePath + "\\" + tbReferenceNo.Text + extension;
+                        switch (extension)
+                        {
+                            case ".bmp":
+                                imageFormat = ImageFormat.Bmp;
+                                break;
+                            case ".png":
+                                imageFormat = ImageFormat.Png;
+                                break;
+                            case ".jpeg":
+                            case ".jpg":
+                                imageFormat = ImageFormat.Jpeg;
+                                break;
+                            case ".gif":
+                                imageFormat = ImageFormat.Gif;
+                                break;
+                            default:
+                                throw new NotSupportedException("File extension is not supported");
+                        }
 
-                //    string[] FName;
-                //    string[] FType;
-
-                //    FName = txtFile.Text.ToString().Trim().Split('\\');
-
-                //    //Check File Type
-                //    FType = FName[FName.Length - 1].Split('.');
-
-                //    if ((FType[1].ToString().Trim().ToLower() != "jpg") &&
-                //        (FType[1].ToString().Trim().ToLower() != "png") &&
-                //        (FType[1].ToString().Trim().ToLower() != "gif") &&
-                //        (FType[1].ToString().Trim().ToLower() != "jpeg"))
-                //    {
-                //        MessageBox.Show("ไฟล์รูปภาพมีรูปแบบที่ไม่ถูกต้อง", "เกิดข้อผิดพลาด",
-                //            MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //        return;
-                //    }
-
-                //    //check exist file
-                //    if (File.Exists(root + "\\" + FName[FName.Length - 1]))
-                //    {
-                //        string rStr = Path.GetRandomFileName();
-                //        rStr = rStr.Replace(".", ""); // For Removing the .
-
-                //        string[] sType = FName[FName.Length - 1].Split('.');
-
-                //        File.Copy(txtFile.Text.ToString().Trim(), root +
-                //        "\\" + rStr + "." + sType[sType.Length - 1]);
-
-                //        strFile = root + "\\" + rStr + "." + sType[sType.Length - 1];
-                //    }
-                //    else
-                //    {
-                //        File.Copy(txtFile.Text.ToString().Trim(), root +
-                //        "\\" + FName[FName.Length - 1]);
-
-                //        strFile = root + "\\" + FName[FName.Length - 1];
-                //    }
-
-
-                //}
-                //#endregion
+                        bitmap.Save(variablePublic.imagePath, imageFormat);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                #endregion
 
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
                     , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
@@ -1162,7 +1153,7 @@ namespace NewProduct
                     , variablePublic.productInnerBoxQty, variablePublic.productFreeQty, "Mink", (variablePublic.item_no2).ToString()
                     , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
                     , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text
-                    , tbDecoration2.Text, tbDecoration3.Text, "ImagePath", variablePublic.product_other_id
+                    , tbDecoration2.Text, tbDecoration3.Text, variablePublic.imagePath, variablePublic.product_other_id
                     , ConvertUtil.parseFloat(tbPrice.Text), variablePublic.productTotalCasePrice, variablePublic.productPrefix
                     , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
                     , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
@@ -1225,8 +1216,8 @@ namespace NewProduct
                 // display image in picture box  
                 pbImageOfProduct.Image = new Bitmap(open.FileName);
                 // image file path  
-                variablePublic.picturePath = open.FileName;
-                MessageBox.Show(variablePublic.picturePath);
+                variablePublic.imagePath = open.FileName;
+                //MessageBox.Show(variablePublic.imagePath);
             }
         }
 

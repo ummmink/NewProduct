@@ -5243,9 +5243,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
+            this.Controls.Add(this.pnRequestForm);
             this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnShortName);
-            this.Controls.Add(this.pnRequestForm);
             this.Controls.Add(this.pnDimention);
             this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.pnProductID);

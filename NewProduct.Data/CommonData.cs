@@ -253,14 +253,14 @@ namespace NewProduct.Data
             }
         }
 
-        public CommonDataSet npd_insert_product_temp(string reference_no, string product_id, string nickname, string item_no,
- int type_id, string product_name_th, string product_unit, string product_name_eng, int packing, int bottle, float size,
- DateTime sell_date, int inner_box, int free, string user_create, string item_no2, string product_name_eng_invoice,
- string product_name_th_invoice, string decorated_area1, string decorated_area2, string decorated_area3,
- string decoration_other_details, string decoration_remarkable_of_box, string decoration1, string decoration2,
- string decoration3, string image_path, int other_id, float price_per_case, float price_recommend, string product_prefix,
- DateTime sample_date, int sample_qty_bottle, int sample_qty_box, string schedule, int sell_id, int sell_qty_bottle,
- int sell_qty_box, string remark, int shipping_terms_id)
+        public CommonDataSet npd_insert_product_temp(string reference_no, string product_id, string nickname, string item_no
+            , int type_id, string product_name_th, string product_unit, string product_name_eng, int packing, int bottle
+            , float size, DateTime sell_date, int inner_box, int free, string user_create, string item_no2
+            , string product_name_eng_invoice, string product_name_th_invoice, string decorated_area1, string decorated_area2
+            , string decorated_area3, string decoration_other_details, string decoration_remarkable_of_box, string decoration1
+            , string decoration2, string decoration3, string image_path, int other_id, float price_per_case, float price_recommend
+            , string product_prefix, DateTime sample_date, int sample_qty_bottle, int sample_qty_box, string schedule, int sell_id
+            , int sell_qty_bottle, int sell_qty_box, string remark, int shipping_terms_id)
         {
             try
             {

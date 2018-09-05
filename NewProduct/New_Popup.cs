@@ -245,7 +245,7 @@ namespace NewProduct
             variablePublic.productPrefix = cmbProductItemNo.SelectedValue.ToString().Substring(cmbProductItemNo.SelectedValue.ToString().LastIndexOf(':') + 1, 3);
             variablePublic.item_no = cmbProductItemNo.SelectedValue.ToString().Substring(0, cmbProductItemNo.SelectedValue.ToString().IndexOf(':'));
             variablePublic.item_no2 = ConvertUtil.parseInt(cmbProductItemNo.SelectedValue.ToString().Substring(cmbProductItemNo.SelectedValue.ToString().LastIndexOf(' ') + 1));
-            MessageBox.Show("Prefix : "+ variablePublic.productPrefix + ", Item_no : " + variablePublic.item_no + ", Item_no2 : " + variablePublic.item_no2);
+            //MessageBox.Show("Prefix : " + variablePublic.productPrefix + ", Item_no : " + variablePublic.item_no + ", Item_no2 : " + variablePublic.item_no2);
         }
 
         private void cmbProductItemNo_Format(object sender, ListControlConvertEventArgs e)
@@ -483,7 +483,7 @@ namespace NewProduct
             {
                 //ราคาสินค้าปกติ
                 tbSumPrice.Text = fSumAmount.ToString("#,##0.00");
-                variablePublic.productMainPrice = decimal.Parse(tbSumPrice.Text);
+                variablePublic.productMainPrice = float.Parse(tbSumPrice.Text);
 
                 //จำนวนสินค้าปกติ
                 tbSumQty.Text = fSumQty.ToString();
@@ -495,11 +495,11 @@ namespace NewProduct
 
                 //ราคาแนะนำ/แพ็ค
                 tbSumPriceTotal.Text = tbSumPrice.Text;
-                variablePublic.productTotalPackPrice = decimal.Parse(tbSumPriceTotal.Text);
+                variablePublic.productTotalPackPrice = float.Parse(tbSumPriceTotal.Text);
 
                 //ราคาแนะนำ/ลัง
-                tbSumPriceCaseTotal.Text = (decimal.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString("#,##0.00");
-                variablePublic.productTotalCasePrice = decimal.Parse(tbSumPriceCaseTotal.Text);
+                tbSumPriceCaseTotal.Text = (float.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString("#,##0.00");
+                variablePublic.productTotalCasePrice = float.Parse(tbSumPriceCaseTotal.Text);
             }
         }
 
@@ -528,7 +528,7 @@ namespace NewProduct
             {
                 //ราคาสินค้าแถม
                 tbSumPriceFree.Text = fSumAmount.ToString("#,##0.00");
-                variablePublic.productFreePrice = decimal.Parse(tbSumPriceFree.Text);
+                variablePublic.productFreePrice = float.Parse(tbSumPriceFree.Text);
 
                 //จำนวนสินค้าแถม
                 tbSumQtyFree.Text = fSumQty.ToString();
@@ -1103,7 +1103,77 @@ namespace NewProduct
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            DialogResult dialogResult = MessageBox.Show("คุณต้องการจะบันทึกข้อมูล?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                //#region upload File
+                //string strFile = "";
 
+                //if (txtFile.Text.ToString().Trim() != "")
+                //{
+                //    string root = variablePublic.uploadPath.ToString();
+
+                //    string[] FName;
+                //    string[] FType;
+
+                //    FName = txtFile.Text.ToString().Trim().Split('\\');
+
+                //    //Check File Type
+                //    FType = FName[FName.Length - 1].Split('.');
+
+                //    if ((FType[1].ToString().Trim().ToLower() != "jpg") &&
+                //        (FType[1].ToString().Trim().ToLower() != "png") &&
+                //        (FType[1].ToString().Trim().ToLower() != "gif") &&
+                //        (FType[1].ToString().Trim().ToLower() != "jpeg"))
+                //    {
+                //        MessageBox.Show("ไฟล์รูปภาพมีรูปแบบที่ไม่ถูกต้อง", "เกิดข้อผิดพลาด",
+                //            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //        return;
+                //    }
+
+                //    //check exist file
+                //    if (File.Exists(root + "\\" + FName[FName.Length - 1]))
+                //    {
+                //        string rStr = Path.GetRandomFileName();
+                //        rStr = rStr.Replace(".", ""); // For Removing the .
+
+                //        string[] sType = FName[FName.Length - 1].Split('.');
+
+                //        File.Copy(txtFile.Text.ToString().Trim(), root +
+                //        "\\" + rStr + "." + sType[sType.Length - 1]);
+
+                //        strFile = root + "\\" + rStr + "." + sType[sType.Length - 1];
+                //    }
+                //    else
+                //    {
+                //        File.Copy(txtFile.Text.ToString().Trim(), root +
+                //        "\\" + FName[FName.Length - 1]);
+
+                //        strFile = root + "\\" + FName[FName.Length - 1];
+                //    }
+
+
+                //}
+                //#endregion
+
+                CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
+                    , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
+                    , variablePublic.productPackQty, variablePublic.productBottleQty, 45, dtpOrderDate.Value
+                    , variablePublic.productInnerBoxQty, variablePublic.productFreeQty, "Mink", (variablePublic.item_no2).ToString()
+                    , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
+                    , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text
+                    , tbDecoration2.Text, tbDecoration3.Text, "ImagePath", variablePublic.product_other_id
+                    , ConvertUtil.parseFloat(tbPrice.Text), variablePublic.productTotalCasePrice, variablePublic.productPrefix
+                    , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
+                    , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
+                    , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text, 1);
+
+                MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
         }
 
         private void cbUnitSample_SelectedIndexChanged(object sender, EventArgs e)
@@ -1129,7 +1199,7 @@ namespace NewProduct
         private void btnAddChennel_Click(object sender, EventArgs e)
         {
             txtRequestSubject.Text = "ช่องทางจัดจำหน่าย";
-            PanelRequestFormShow();           
+            PanelRequestFormShow();
         }
 
         private void cmbProductType_SelectedValueChanged(object sender, EventArgs e)
@@ -1202,7 +1272,7 @@ namespace NewProduct
                 client.Send(msg);
 
                 //Display some feedback to the user to let them know it was sent
-                MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearAllRequestTextbox();
                 pnRequestForm.Visible = false;
@@ -1211,7 +1281,7 @@ namespace NewProduct
             {
                 //If the message failed at some point, let the user know
                 MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }            
+            }
         }
 
         private void ClearAllRequestTextbox()

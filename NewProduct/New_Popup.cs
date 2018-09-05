@@ -1115,7 +1115,7 @@ namespace NewProduct
                     {
                         //string sPath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
                         pbImageOfProduct.DrawToBitmap(bitmap, pbImageOfProduct.ClientRectangle);
-                        ImageFormat imageFormat = null;                       
+                        ImageFormat imageFormat = null;
 
                         var extension = Path.GetExtension(variablePublic.imagePath);
                         variablePublic.imagePath = variablePublic.saveImagePath + "\\" + tbReferenceNo.Text + extension;
@@ -1146,6 +1146,43 @@ namespace NewProduct
                     MessageBox.Show(ex.Message);
                 }
                 #endregion
+
+                #region Send Mail
+                try
+                {
+                    //Create the msg object to be sent
+                    MailMessage msg = new MailMessage();
+                    //Add your email address to the recipients             
+                    msg.To.Add("sarawana.n@scotch.co.th");
+                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                    MailAddress address = new MailAddress("npd.scotch@gmail.com");
+                    msg.From = address;
+                    //Append their name in the beginning of the subject
+                    msg.Subject = "NPD : Waiting for approval!!";
+                    msg.Body = "Reference No : " + tbReferenceNo.Text;
+
+
+                    //Configure an SmtpClient to send the mail.
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true; //only enable this if your provider requires it
+                                             //Setup credentials to login to our sender email address ("UserName", "Password")
+                    NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");
+
+                    client.Credentials = credentials;
+
+                    //Send the msg
+                    client.Send(msg);
+
+                    //Display some feedback to the user to let them know it was sent
+                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    //If the message failed at some point, let the user know
+                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                #endregion
+
 
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
                     , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
@@ -1297,6 +1334,148 @@ namespace NewProduct
         {
             txtRequestSubject.Text = "ส่วนเพิ่มเติมบรรจุภัณฑ์";
             PanelRequestFormShow();
+        }
+
+        private void tbPrice_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbDecoration1.Focus();
+            }
+        }
+
+        private void btnReject_Click(object sender, EventArgs e)
+        {
+            txtRejectSubject.Text = "Disapproved/Reference No : " + tbReferenceNo.Text;
+            PanelRejectFormShow();
+        }
+
+        private void PanelRejectFormShow()
+        {
+            pnRejectForm.Visible = true;
+            pnRejectForm.Location = new Point(488, 195);
+        }
+
+        private void btnRejectCloseMail_Click(object sender, EventArgs e)
+        {
+            pnRejectForm.Visible = false;
+        }
+
+        private void btnRejectSendMail_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Create the msg object to be sent
+                MailMessage msg = new MailMessage();
+                //Add your email address to the recipients             
+                msg.To.Add(cmbRejectRecipients.Text);
+                //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                MailAddress address = new MailAddress(txtRejectSender.Text);
+                msg.From = address;
+                //Append their name in the beginning of the subject
+                //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
+                //msg.Body = txtMessage.Text;
+                msg.Subject = "NPD : " + txtRejectSubject.Text;
+                msg.Body = txtRejectDescription.Text;
+
+
+                //Configure an SmtpClient to send the mail.
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.EnableSsl = true; //only enable this if your provider requires it
+                                         //Setup credentials to login to our sender email address ("UserName", "Password")
+                NetworkCredential credentials = new NetworkCredential(txtRejectSender.Text, txtRejectPassword.Text);
+
+                client.Credentials = credentials;
+
+                //Send the msg
+                client.Send(msg);
+
+                //Display some feedback to the user to let them know it was sent
+                MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                ClearAllRejectTextbox();
+                pnRejectForm.Visible = false;
+            }
+            catch
+            {
+                //If the message failed at some point, let the user know
+                MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void ClearAllRejectTextbox()
+        {
+            txtRejectDescription.Text = "";
+            txtRejectSender.Text = "";
+            txtRejectPassword.Text = "";
+        }
+
+        private void tbQtySamplePiece_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbQtySampleCase.Focus();
+            }
+        }
+
+        private void tbQtySamplePiece_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbQtySampleCase_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbQtyOrderPiece_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbQtyOrderCase_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)

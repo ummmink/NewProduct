@@ -822,20 +822,53 @@ namespace NewProduct
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            pnDetailsProductMix.Visible = false;
+            if (Int32.Parse(tbSumQtyTotal.Text) == variablePublic.productBottleQty)
+            {
+                pnDetailsProductMix.Visible = false;
 
-            pnDetailsSub1.Visible = true;
-            lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
+                pnDetailsSub1.Visible = true;
+                lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
 
-            tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
+                tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
 
-            ClearPanel();
+                ClearPanel();
 
-            SaveProductHamper();
+                SaveProductHamper();
 
-            PreviewProductHamper();
+                PreviewProductHamper();
 
-            tbPrice.Focus();
+                tbPrice.Focus();
+            }
+            else if (Int32.Parse(tbSumQtyTotal.Text) < variablePublic.productBottleQty)
+            {
+                DialogResult dialogResult = MessageBox.Show("จำนวนขวดของสินค้าน้อยกว่าที่ระบุ!" + Environment.NewLine + 
+                    "คุณต้องการเปลี่ยนจำนวนตามที่เพิ่มในรายละเอียด?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    pnDetailsProductMix.Visible = false;
+
+                    pnDetailsSub1.Visible = true;
+                    lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
+
+                    tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
+
+                    ClearPanel();
+
+                    SaveProductHamper();
+
+                    PreviewProductHamper();
+
+                    tbBottleQty.Text = tbSumQtyTotal.Text;
+                    variablePublic.productBottleQty = Int32.Parse(tbBottleQty.Text);
+
+                    tbPrice.Focus();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    //do something else
+                }
+            }
+            
         }
 
         private void ClearPanel()

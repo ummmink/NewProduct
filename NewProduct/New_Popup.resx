@@ -800,6 +800,56 @@
         DoYDAd2wnwx4AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAAmJL
+        R0QAAKqNIzIAAAAHdElNRQfiCQYKLiXyt3U5AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA5LTA2VDEw
+        OjQ2OjM3KzAyOjAwjwGeowAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wOS0wNlQxMDo0NjozNyswMjow
+        MP5cJh8AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAB6ElEQVRIS52WP04CQRTG
+        MVBQU9BQWIuh5QIUFHS2JFa23ACBY9BaUcMBPIDR2gsIB5AY/8SIv294LwzLssvyS77IvvftvN2ZebOW
+        sthsNnXUQ2O0QCu0RHM0RF1UM/vpcFMF3aMflMcHGqALuz0bjFfoCaWxRhowjUd0acOkg+EWfcpt/KEZ
+        6qCGecqoifpoin6R845uwmBJSOjJ48HfUMvSR8HTRq+6wVCR/TchoDlPm5aJWTLBV0UP4Y4tmq7dmnCh
+        BXX05DFFisRvMvCEtqLvFs15C03C1Y5Ti2i6fE20GWoKap87M/Mqfm4RLbzTVUBN5HTMF+C6cBE82l3O
+        UAF1qBO2YgyxQkXIaws7cwXU/mJtngPInVyEnPrEm3EZF1CwbL4DyBUpoo4XK13EU9Q0Tyrkc4sQa2xT
+        gYUC8SL3zXcUPJlFuNax4owViLfp1HyZ4DtahN86u5yeAnGjqUna5s0E30ERpCZVswqNWXdzfFSo3ash
+        kQO+ZJH4mBmZLRiTh50OrnOLiGdUMcsWAsnjWm+SO114NC3xk3+ha0vvQyL5wdGa6GxR+6tDQ5/wV1tR
+        u0UL6nMuvtFdGOwYGLI+mWpGb6IkLyj3AxXAWOSjL88I7c/5KXBT2r8tkn4rptx2K6ZSKv0D9Umry9PR
+        xUkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnCancelCloseMail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAB3RJ
+        TUUH4ggUBw4TZyHh9QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGHSURBVEhL
+        vZShTgNBEIYvIU2QEJCIyjqegBSFBFNTyxOgKkl1BYEHwGOa1KJKeACQBIfGAIqkAcr3z+1cru31cnvh
+        +JMvNzc7O/92btNk3rDc4A6GaVgYl6EaV77e8m4wTNC6uEyqSUtNWb1iJbxRY3KDKqOIZXVEfyn1VOP/
+        NdCzhEPbiRQvrS0QahSvGJQp+5WK01Sx8jW1DKpI9dpUy4C48RFdpqm12oF6BjxP4AteYQBd6EAfxiA9
+        wbWCKAM4gE+4hV3tWRb5HszAFGvwADq5Ned5Bu2C+BxMCwZlomYbvmEQ3tVQegH/Joq3oAUfSsQYaPZS
+        N7y3QQ3zyvoQT2EWY+An7oSUcvnb9A42Ion4RrkYg6O0dN4P724oqblkIwrrzzB1gyp/11cgjUMDH5HW
+        sjis7cMPjNwgVr3QyE4recxTH1i3Tb9qzxarSk3gHnTPdRVbYcnEu06u5tJpSMeJjZswsRbpVdRt0QfV
+        zDUWnbxecxcNNuAYLuAR3kBGI8iNJUl+ASf4tf5NFACjAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnCancelSendMail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAAmJL
+        R0QAAKqNIzIAAAAHdElNRQfiCQMHDw10m6tBAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA5LTAzVDA3
+        OjE1OjEzKzAyOjAwOS6QtAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wOS0wM1QwNzoxNToxMyswMjow
+        MEhzKAgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAB70lEQVRYR+2WzStEURTA
+        h/IRqSkbokkWCguxsEBYUgrZCAvJQrOws/IHKIWykCTFX2CJsiQlpGwslJSNBeUj38bvXOc+Y+bNmKeR
+        1PvVr3n3vHPvOfM+7kzAx8fnXxCJRIqx7BfM1xKJIakWf4sjLZMYklo/cg1b2JYmpzBii4RwxMUKtA3M
+        4huuYJaZ6BHmZWIT5uAgOg2M44OLM2gbkHvWi4+4gQVmcoqQn4+r+IpF+NlAMshplkQI6VgausIDLDZJ
+        30BeCe7jDXZoLOUG5LJ16tDAuBrP8BQrNewK5+vwXPNrNPzZAA7gvAfDuoB8q0O8xCazagzEu/AOd/HL
+        1WLsNDCJOx5cwExdJIgXeI89ZmWF8RjK/d7DPA07EEvtFgjkteihAzG5NUv4gpsoxUYxCxdR2EZ5c4Z0
+        mgOxlJ+BRkmEUg3FFu/X2AQKJyhvUB9m4BzGNcHYvQFi8pTfon0Vn1Ao0/NxxS2Mw3iMDRqSmGsTHCds
+        IBeH0W5G0yjIPpCweDLIjWuCT+chlEWlaLTZZiZwbDeicvRc3MKcL02g08C6HMTwjPU60Tawhj8qbmFu
+        dBOym5oGqlC22Gi70b5qtgFhGd1+WLzYjrIrGkxnySBHLv21yU4/11omOSQWYvQfiXQZ1BI+Pj5/RSDw
+        DoYDAd2wnwx4AAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>54</value>
   </metadata>

@@ -841,7 +841,7 @@ namespace NewProduct
             }
             else if (Int32.Parse(tbSumQtyTotal.Text) < variablePublic.productBottleQty)
             {
-                DialogResult dialogResult = MessageBox.Show("จำนวนขวดของสินค้าน้อยกว่าที่ระบุ!" + Environment.NewLine + 
+                DialogResult dialogResult = MessageBox.Show("จำนวนขวดของสินค้าน้อยกว่าที่ระบุ!" + Environment.NewLine +
                     "คุณต้องการเปลี่ยนจำนวนตามที่เพิ่มในรายละเอียด?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
@@ -868,7 +868,7 @@ namespace NewProduct
                     //do something else
                 }
             }
-            
+
         }
 
         private void ClearPanel()
@@ -1216,7 +1216,7 @@ namespace NewProduct
                 }
                 #endregion
 
-
+                // Status = 2 บันทึก : เพิ่มข้อมูลใหม่ รออนุมัติ : ขั้นตอน Details
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
                     , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
                     , variablePublic.productPackQty, variablePublic.productBottleQty, 45, dtpOrderDate.Value
@@ -1400,46 +1400,50 @@ namespace NewProduct
         {
             #region Update Temp Status
             int iUpdate = 0;
-            iUpdate = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 0); //Status = 0 ยกเลิก (Details)
+            // Status = 1 ไม่อนุมัติ : มีร้องขอให้แก้ไขข้อมูล : ขั้นตอน Details
+            iUpdate = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 1);
             #endregion
 
-            try
+            if (iUpdate != 0)
             {
-                //Create the msg object to be sent
-                MailMessage msg = new MailMessage();
-                //Add your email address to the recipients             
-                msg.To.Add(cmbRejectRecipients.Text);
-                //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
-                MailAddress address = new MailAddress(txtRejectSender.Text);
-                msg.From = address;
-                //Append their name in the beginning of the subject
-                //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
-                //msg.Body = txtMessage.Text;
-                msg.Subject = "NPD : " + txtRejectSubject.Text;
-                msg.Body = txtRejectDescription.Text;
+                try
+                {
+                    //Create the msg object to be sent
+                    MailMessage msg = new MailMessage();
+                    //Add your email address to the recipients             
+                    msg.To.Add(cmbRejectRecipients.Text);
+                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                    MailAddress address = new MailAddress(txtRejectSender.Text);
+                    msg.From = address;
+                    //Append their name in the beginning of the subject
+                    //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
+                    //msg.Body = txtMessage.Text;
+                    msg.Subject = "NPD : " + txtRejectSubject.Text;
+                    msg.Body = txtRejectDescription.Text;
 
 
-                //Configure an SmtpClient to send the mail.
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                client.EnableSsl = true; //only enable this if your provider requires it
-                                         //Setup credentials to login to our sender email address ("UserName", "Password")
-                NetworkCredential credentials = new NetworkCredential(txtRejectSender.Text, txtRejectPassword.Text);
+                    //Configure an SmtpClient to send the mail.
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true; //only enable this if your provider requires it
+                                             //Setup credentials to login to our sender email address ("UserName", "Password")
+                    NetworkCredential credentials = new NetworkCredential(txtRejectSender.Text, txtRejectPassword.Text);
 
-                client.Credentials = credentials;
+                    client.Credentials = credentials;
 
-                //Send the msg
-                client.Send(msg);
+                    //Send the msg
+                    client.Send(msg);
 
-                //Display some feedback to the user to let them know it was sent
-                MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //Display some feedback to the user to let them know it was sent
+                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                ClearAllRejectTextbox();
-                pnRejectForm.Visible = false;
-            }
-            catch
-            {
-                //If the message failed at some point, let the user know
-                MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ClearAllRejectTextbox();
+                    pnRejectForm.Visible = false;
+                }
+                catch
+                {
+                    //If the message failed at some point, let the user know
+                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
@@ -1514,6 +1518,127 @@ namespace NewProduct
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnApproved_Click(object sender, EventArgs e)
+        {
+            #region Update Temp Status
+            int iUpdate = 0;
+            // Status = 3 อนุมัติ : Details อนุมัติแล้ว รอเพิ่มชื่อย่อ : ขั้นตอน Short Name
+            iUpdate = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 3);
+            #endregion
+
+            if (iUpdate != 0)
+            {
+                try
+                {
+                    //Create the msg object to be sent
+                    MailMessage msg = new MailMessage();
+                    //Add your email address to the recipients             
+                    msg.To.Add("sarawana.n@scotch.co.th");
+                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                    MailAddress address = new MailAddress("npd.scotch@gmail.com");
+                    msg.From = address;
+                    //Append their name in the beginning of the subject
+                    msg.Subject = "NPD : Approved";
+                    msg.Body = "Reference No : " + tbReferenceNo.Text;
+
+
+                    //Configure an SmtpClient to send the mail.
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true; //only enable this if your provider requires it
+                                             //Setup credentials to login to our sender email address ("UserName", "Password")
+                    NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");
+
+                    client.Credentials = credentials;
+
+                    //Send the msg
+                    client.Send(msg);
+
+                    //Display some feedback to the user to let them know it was sent
+                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    //If the message failed at some point, let the user know
+                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            txtCancelSubject.Text = "Discard/Reference No : " + tbReferenceNo.Text;
+            PanelCancelFormShow();
+        }
+
+        private void PanelCancelFormShow()
+        {
+            pnCancelForm.Visible = true;
+            pnCancelForm.Location = new Point(488, 195);
+        }
+
+        private void btnCancelCloseMail_Click(object sender, EventArgs e)
+        {
+            pnCancelForm.Visible = false;
+        }
+
+        private void btnCancelSendMail_Click(object sender, EventArgs e)
+        {
+            #region Update Temp Status
+            int iUpdate = 0;
+            // Status = 0 ยกเลิก : ยกเลิก : ขั้นตอน Details
+            iUpdate = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 0);
+            #endregion
+
+            if (iUpdate != 0)
+            {
+                try
+                {
+                    //Create the msg object to be sent
+                    MailMessage msg = new MailMessage();
+                    //Add your email address to the recipients             
+                    msg.To.Add(cmbCancelRecipients.Text);
+                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                    MailAddress address = new MailAddress(txtCancelSender.Text);
+                    msg.From = address;
+                    //Append their name in the beginning of the subject
+                    //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
+                    //msg.Body = txtMessage.Text;
+                    msg.Subject = "NPD : " + txtCancelSubject.Text;
+                    msg.Body = txtCancelDescription.Text;
+
+
+                    //Configure an SmtpClient to send the mail.
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true; //only enable this if your provider requires it
+                                             //Setup credentials to login to our sender email address ("UserName", "Password")
+                    NetworkCredential credentials = new NetworkCredential(txtCancelSender.Text, txtCancelPassword.Text);
+
+                    client.Credentials = credentials;
+
+                    //Send the msg
+                    client.Send(msg);
+
+                    //Display some feedback to the user to let them know it was sent
+                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    ClearAllCancelTextbox();
+                    pnCancelForm.Visible = false;
+                }
+                catch
+                {
+                    //If the message failed at some point, let the user know
+                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void ClearAllCancelTextbox()
+        {
+            txtCancelDescription.Text = "";
+            txtCancelSender.Text = "";
+            txtCancelPassword.Text = "";
         }
 
         private void btnClose_Click(object sender, EventArgs e)

@@ -17,6 +17,7 @@ namespace NewProduct
         public static string user_group_id;
         public static string product_other_name;
         public static int product_other_id;
+        //Image
         public static string saveImagePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
         public static string imagePath;
         //Price

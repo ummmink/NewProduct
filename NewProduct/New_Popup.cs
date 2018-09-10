@@ -1196,7 +1196,7 @@ namespace NewProduct
 
 
                     //Configure an SmtpClient to send the mail.
-                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                     client.EnableSsl = true; //only enable this if your provider requires it
                                              //Setup credentials to login to our sender email address ("UserName", "Password")
                     NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");

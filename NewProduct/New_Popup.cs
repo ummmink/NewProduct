@@ -208,11 +208,6 @@ namespace NewProduct
             variablePublic.item_no = "";
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
             //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
@@ -1231,32 +1226,12 @@ namespace NewProduct
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-                lineNotify("มีการเพิ่ม NPD ใหม่ Reference No : " + tbReferenceNo.Text);
+                lineNotify("มีการเพิ่ม NPD ใหม่" + Environment.NewLine + "Reference No : " + tbReferenceNo.Text);
             }
             else if (dialogResult == DialogResult.No)
             {
                 //do something else
             }
-        }
-
-        private void cbUnitSample_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnDetailsSub1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnAddChennel_Click(object sender, EventArgs e)
@@ -1568,12 +1543,6 @@ namespace NewProduct
             }
         }
 
-        private void btnCancel_Click_1(object sender, EventArgs e)
-        {
-            txtCancelSubject.Text = "Discard/Reference No : " + tbReferenceNo.Text;
-            PanelCancelFormShow();
-        }
-
         private void PanelCancelFormShow()
         {
             pnCancelForm.Visible = true;
@@ -1650,6 +1619,12 @@ namespace NewProduct
             f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
             f.Dock = DockStyle.Fill; //set form's dock property to fill
             f.Show();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtCancelSubject.Text = "Discard/Reference No : " + tbReferenceNo.Text;
+            PanelCancelFormShow();
         }
 
         private void lineNotify(string msg)

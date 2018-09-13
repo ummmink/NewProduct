@@ -1227,6 +1227,12 @@ namespace NewProduct
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 lineNotify("มีการเพิ่ม NPD ใหม่" + Environment.NewLine + "Reference No : " + tbReferenceNo.Text);
+
+                Form f = new Home_Trade();
+                f.MdiParent = this.ParentForm;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
             }
             else if (dialogResult == DialogResult.No)
             {

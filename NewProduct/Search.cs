@@ -19,7 +19,25 @@ namespace NewProduct
 
         private void Product_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void lsbSearchItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbItem.Text = lsbSearchItems.SelectedItem.ToString();
+            lsbSearchItems.Visible = false;
+        }
+
+        private void lbItem_Click(object sender, EventArgs e)
+        {
+            if (lsbSearchItems.Visible == true)
+            {
+                lsbSearchItems.Visible = false;
+            }
+            else
+            {
+                lsbSearchItems.Visible = true;
+            }
         }
     }
 }

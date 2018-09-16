@@ -32,15 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lbItem = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbItem = new System.Windows.Forms.Label();
             this.lsbSearchItems = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +64,50 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1277, 45);
             this.panel1.TabIndex = 47;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(35, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 18);
+            this.label4.TabIndex = 73;
+            this.label4.Text = "Search";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Salmon;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(677, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 35);
+            this.button1.TabIndex = 72;
+            this.button1.Tag = "";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // lbItem
+            // 
+            this.lbItem.AutoSize = true;
+            this.lbItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbItem.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbItem.ForeColor = System.Drawing.Color.White;
+            this.lbItem.Location = new System.Drawing.Point(730, 13);
+            this.lbItem.Name = "lbItem";
+            this.lbItem.Size = new System.Drawing.Size(88, 18);
+            this.lbItem.TabIndex = 1;
+            this.lbItem.Text = "เลขที่อ้างอิง";
+            this.toolTip1.SetToolTip(this.lbItem, "คลิ๊กเพื่อเลือกหัวข้อที่ต้องการค้นหา");
+            this.lbItem.Click += new System.EventHandler(this.lbItem_Click);
             // 
             // panel2
             // 
@@ -114,20 +158,6 @@
             this.label3.TabIndex = 51;
             this.label3.Text = "Short Name";
             // 
-            // lbItem
-            // 
-            this.lbItem.AutoSize = true;
-            this.lbItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbItem.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbItem.ForeColor = System.Drawing.Color.White;
-            this.lbItem.Location = new System.Drawing.Point(730, 13);
-            this.lbItem.Name = "lbItem";
-            this.lbItem.Size = new System.Drawing.Size(88, 18);
-            this.lbItem.TabIndex = 1;
-            this.lbItem.Text = "เลขที่อ้างอิง";
-            this.toolTip1.SetToolTip(this.lbItem, "คลิ๊กเพื่อเลือกหัวข้อที่ต้องการค้นหา");
-            this.lbItem.Click += new System.EventHandler(this.lbItem_Click);
-            // 
             // lsbSearchItems
             // 
             this.lsbSearchItems.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -142,41 +172,10 @@
             "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (English)"});
             this.lsbSearchItems.Location = new System.Drawing.Point(774, 134);
             this.lsbSearchItems.Name = "lsbSearchItems";
-            this.lsbSearchItems.ScrollAlwaysVisible = true;
             this.lsbSearchItems.Size = new System.Drawing.Size(332, 94);
             this.lsbSearchItems.TabIndex = 52;
             this.lsbSearchItems.Visible = false;
             this.lsbSearchItems.SelectedIndexChanged += new System.EventHandler(this.lsbSearchItems_SelectedIndexChanged);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Salmon;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(677, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 35);
-            this.button1.TabIndex = 72;
-            this.button1.Tag = "";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(35, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 18);
-            this.label4.TabIndex = 73;
-            this.label4.Text = "Search";
             // 
             // Search
             // 

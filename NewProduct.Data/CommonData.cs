@@ -30,6 +30,8 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID = "npd_select_product_name_th_by_product_id";
         private static string _NPD_INSERT_PRODUCT_TEMP = "npd_insert_product_temp";
         private static string _NPD_UPDATE_TEMP_STATUS_PRODUCT_TEMP = "npd_update_temp_status_product_temp";
+        private static string _NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE = "npd_select_product_temp_by_fieldname_and_fieldvalue";
+        private static string _NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO = "npd_select_product_temp_by_reference_no";
 
         public CommonDataSet select_product_all_status()
         {
@@ -416,6 +418,49 @@ namespace NewProduct.Data
                     strConnCommon);
                 return row;
 
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_temp_by_fieldname_and_fieldvalue(string fieldname, string fieldvalue)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[2];
+
+                pm[0] = new SqlParameter("@FIELD_NAME", SqlDbType.VarChar);
+                pm[0].Value = fieldname;
+
+                pm[1] = new SqlParameter("@FIELD_VALUE", SqlDbType.VarChar);
+                pm[1].Value = fieldvalue;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE.TableName, _NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_temp_by_reference_no(string reference_no)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[1];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO.TableName, _NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO, pm, strConnCommon);
             }
             catch (Exception ex)
             {

@@ -102,6 +102,7 @@
             this.btnTDO.TabIndex = 47;
             this.btnTDO.Text = "Trade Officer";
             this.btnTDO.UseVisualStyleBackColor = true;
+            this.btnTDO.Visible = false;
             this.btnTDO.Click += new System.EventHandler(this.btnTDO_Click);
             // 
             // btnTDA
@@ -112,6 +113,7 @@
             this.btnTDA.TabIndex = 48;
             this.btnTDA.Text = "Trade Admin";
             this.btnTDA.UseVisualStyleBackColor = true;
+            this.btnTDA.Visible = false;
             this.btnTDA.Click += new System.EventHandler(this.btnTDA_Click);
             // 
             // btnPSA
@@ -122,6 +124,7 @@
             this.btnPSA.TabIndex = 50;
             this.btnPSA.Text = "PC Sup Admin";
             this.btnPSA.UseVisualStyleBackColor = true;
+            this.btnPSA.Visible = false;
             this.btnPSA.Click += new System.EventHandler(this.btnPSA_Click);
             // 
             // btnPSO
@@ -132,6 +135,7 @@
             this.btnPSO.TabIndex = 49;
             this.btnPSO.Text = "PC Sup Officer";
             this.btnPSO.UseVisualStyleBackColor = true;
+            this.btnPSO.Visible = false;
             this.btnPSO.Click += new System.EventHandler(this.btnPSO_Click);
             // 
             // btnSAA
@@ -142,6 +146,7 @@
             this.btnSAA.TabIndex = 52;
             this.btnSAA.Text = "Sales Admin";
             this.btnSAA.UseVisualStyleBackColor = true;
+            this.btnSAA.Visible = false;
             this.btnSAA.Click += new System.EventHandler(this.btnSAA_Click);
             // 
             // btnSAO
@@ -152,6 +157,7 @@
             this.btnSAO.TabIndex = 51;
             this.btnSAO.Text = "Sales Officer";
             this.btnSAO.UseVisualStyleBackColor = true;
+            this.btnSAO.Visible = false;
             this.btnSAO.Click += new System.EventHandler(this.btnSAO_Click);
             // 
             // btnMKA
@@ -162,6 +168,7 @@
             this.btnMKA.TabIndex = 54;
             this.btnMKA.Text = "Marketing Admin";
             this.btnMKA.UseVisualStyleBackColor = true;
+            this.btnMKA.Visible = false;
             this.btnMKA.Click += new System.EventHandler(this.btnMKA_Click);
             // 
             // btnMKO
@@ -172,6 +179,7 @@
             this.btnMKO.TabIndex = 53;
             this.btnMKO.Text = "Marketing Officer";
             this.btnMKO.UseVisualStyleBackColor = true;
+            this.btnMKO.Visible = false;
             this.btnMKO.Click += new System.EventHandler(this.btnMKO_Click);
             // 
             // btnACA
@@ -182,6 +190,7 @@
             this.btnACA.TabIndex = 56;
             this.btnACA.Text = "Accounting Admin";
             this.btnACA.UseVisualStyleBackColor = true;
+            this.btnACA.Visible = false;
             this.btnACA.Click += new System.EventHandler(this.btnACA_Click);
             // 
             // btnACO
@@ -192,6 +201,7 @@
             this.btnACO.TabIndex = 55;
             this.btnACO.Text = "Accounting Officer";
             this.btnACO.UseVisualStyleBackColor = true;
+            this.btnACO.Visible = false;
             this.btnACO.Click += new System.EventHandler(this.btnACO_Click);
             // 
             // btnPDA
@@ -202,6 +212,7 @@
             this.btnPDA.TabIndex = 58;
             this.btnPDA.Text = "Production Admin";
             this.btnPDA.UseVisualStyleBackColor = true;
+            this.btnPDA.Visible = false;
             this.btnPDA.Click += new System.EventHandler(this.btnPDA_Click);
             // 
             // btnPDO
@@ -212,6 +223,7 @@
             this.btnPDO.TabIndex = 57;
             this.btnPDO.Text = "Production Officer";
             this.btnPDO.UseVisualStyleBackColor = true;
+            this.btnPDO.Visible = false;
             this.btnPDO.Click += new System.EventHandler(this.btnPDO_Click);
             // 
             // btnPGM
@@ -222,6 +234,7 @@
             this.btnPGM.TabIndex = 59;
             this.btnPGM.Text = "Programmer";
             this.btnPGM.UseVisualStyleBackColor = true;
+            this.btnPGM.Visible = false;
             this.btnPGM.Click += new System.EventHandler(this.btnPGM_Click);
             // 
             // btnTDD
@@ -232,6 +245,7 @@
             this.btnTDD.TabIndex = 61;
             this.btnTDD.Text = "Trade DK";
             this.btnTDD.UseVisualStyleBackColor = true;
+            this.btnTDD.Visible = false;
             this.btnTDD.Click += new System.EventHandler(this.btnTDD_Click);
             // 
             // Menu

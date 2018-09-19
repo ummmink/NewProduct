@@ -111,7 +111,7 @@ namespace NewProduct
                             ToolTip tip = new ToolTip();
                             tip.SetToolTip(dtbtnView, "View Data");
                             dtbtnView.Text = "";
-                            dtbtnView.Location = new System.Drawing.Point(800, y-9);
+                            dtbtnView.Location = new System.Drawing.Point(800, y - 9);
                             dtbtnView.Size = new System.Drawing.Size(39, 35);
                             dtbtnView.FlatStyle = FlatStyle.Flat;
                             dtbtnView.BackColor = Color.Black;
@@ -123,7 +123,27 @@ namespace NewProduct
                             dtbtnView.Image = new Bitmap(NewProduct.Properties.Resources.post_it);
                             dtbtnView.ImageAlign = ContentAlignment.MiddleCenter;
                             dtbtnView.Click += new EventHandler(dtbtnView_Click);
-                            pnSearchResult.Controls.Add(dtbtnView);                            
+                            pnSearchResult.Controls.Add(dtbtnView);
+
+                            //Button Edit
+                            Button dtbtnEdit = new Button();
+                            dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                            //ToolTip tipEdit = new ToolTip();
+                            tip.SetToolTip(dtbtnEdit, "Edit Data");
+                            dtbtnEdit.Text = "";
+                            dtbtnEdit.Location = new System.Drawing.Point(850, y - 9);
+                            dtbtnEdit.Size = new System.Drawing.Size(39, 35);
+                            dtbtnEdit.FlatStyle = FlatStyle.Flat;
+                            dtbtnEdit.BackColor = Color.Black;
+                            dtbtnEdit.Cursor = Cursors.Hand;
+                            dtbtnEdit.FlatAppearance.BorderColor = Color.Black;
+                            dtbtnEdit.FlatAppearance.BorderSize = 1;
+                            dtbtnEdit.FlatAppearance.MouseDownBackColor = Color.Black;
+                            dtbtnEdit.FlatAppearance.MouseOverBackColor = Color.Black;
+                            dtbtnEdit.Image = new Bitmap(NewProduct.Properties.Resources.eraser);
+                            dtbtnEdit.ImageAlign = ContentAlignment.MiddleCenter;
+                            dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
+                            pnSearchResult.Controls.Add(dtbtnEdit);
 
                             y = dtProductId.Location.Y + 40;
                         }
@@ -159,6 +179,11 @@ namespace NewProduct
         private void dtbtnView_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void dtbtnEdit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

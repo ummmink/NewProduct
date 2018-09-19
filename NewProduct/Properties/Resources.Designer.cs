@@ -63,9 +63,9 @@ namespace NewProduct.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap seo {
+        internal static System.Drawing.Bitmap post_it {
             get {
-                object obj = ResourceManager.GetObject("seo", resourceCulture);
+                object obj = ResourceManager.GetObject("post_it", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

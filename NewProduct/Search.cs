@@ -76,9 +76,9 @@ namespace NewProduct
                             dtReferenceNo.Location = new System.Drawing.Point(38, y);
                             dtReferenceNo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                             dtReferenceNo.Size = new System.Drawing.Size(160, 16);
-                            dtReferenceNo.AutoSize = true;
+                            dtReferenceNo.AutoSize = false;
                             dtReferenceNo.ForeColor = Color.White;
-                            dtReferenceNo.TextAlign = ContentAlignment.MiddleCenter;
+                            dtReferenceNo.TextAlign = ContentAlignment.MiddleLeft;
                             pnSearchResult.Controls.Add(dtReferenceNo);
 
                             //Label Product_Id
@@ -88,9 +88,9 @@ namespace NewProduct
                             dtProductId.Location = new System.Drawing.Point(226, y);
                             dtProductId.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                             dtProductId.Size = new System.Drawing.Size(160, 16);
-                            dtProductId.AutoSize = true;
+                            dtProductId.AutoSize = false;
                             dtProductId.ForeColor = Color.White;
-                            dtProductId.TextAlign = ContentAlignment.MiddleCenter;
+                            dtProductId.TextAlign = ContentAlignment.MiddleLeft;
                             pnSearchResult.Controls.Add(dtProductId);
 
                             //Label Product_Name_TH
@@ -100,16 +100,18 @@ namespace NewProduct
                             dtProductName.Location = new System.Drawing.Point(417, y);
                             dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                             dtProductName.Size = new System.Drawing.Size(360, 16);
-                            dtProductName.AutoSize = true;
+                            dtProductName.AutoSize = false;
                             dtProductName.ForeColor = Color.White;
-                            dtProductName.TextAlign = ContentAlignment.MiddleCenter;
+                            dtProductName.TextAlign = ContentAlignment.MiddleLeft;
                             pnSearchResult.Controls.Add(dtProductName);
 
                             //Button View
                             Button dtbtnView = new Button();
                             dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                            ToolTip tip = new ToolTip();
+                            tip.SetToolTip(dtbtnView, "View Data");
                             dtbtnView.Text = "";
-                            dtbtnView.Location = new System.Drawing.Point(800, y);
+                            dtbtnView.Location = new System.Drawing.Point(800, y-9);
                             dtbtnView.Size = new System.Drawing.Size(39, 35);
                             dtbtnView.FlatStyle = FlatStyle.Flat;
                             dtbtnView.BackColor = Color.Black;
@@ -118,10 +120,10 @@ namespace NewProduct
                             dtbtnView.FlatAppearance.BorderSize = 1;
                             dtbtnView.FlatAppearance.MouseDownBackColor = Color.Black;
                             dtbtnView.FlatAppearance.MouseOverBackColor = Color.Black;
-                            dtbtnView.Image = new Bitmap(NewProduct.Properties.Resources.seo);
+                            dtbtnView.Image = new Bitmap(NewProduct.Properties.Resources.post_it);
                             dtbtnView.ImageAlign = ContentAlignment.MiddleCenter;
                             dtbtnView.Click += new EventHandler(dtbtnView_Click);
-                            pnSearchResult.Controls.Add(dtbtnView);
+                            pnSearchResult.Controls.Add(dtbtnView);                            
 
                             y = dtProductId.Location.Y + 40;
                         }

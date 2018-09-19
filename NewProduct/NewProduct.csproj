@@ -185,6 +185,21 @@
   <ItemGroup>
     <None Include="Resources\seo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-viewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\views.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-it.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

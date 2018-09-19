@@ -35,13 +35,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lbItem = new System.Windows.Forms.Label();
+            this.lsbSearchItems = new System.Windows.Forms.ListBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lsbSearchItems = new System.Windows.Forms.ListBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pnSearchResult = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,55 +112,6 @@
             this.toolTip1.SetToolTip(this.lbItem, "คลิ๊กเพื่อเลือกหัวข้อที่ต้องการค้นหา");
             this.lbItem.Click += new System.EventHandler(this.lbItem_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Salmon;
-            this.panel2.Location = new System.Drawing.Point(44, 128);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1273, 1);
-            this.panel2.TabIndex = 48;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Salmon;
-            this.panel3.Location = new System.Drawing.Point(44, 159);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1273, 1);
-            this.panel3.TabIndex = 49;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.ForeColor = System.Drawing.Color.Salmon;
-            this.label1.Location = new System.Drawing.Point(82, 135);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Product Id";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(313, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 16);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Product Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(719, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 16);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "Short Name";
-            // 
             // lsbSearchItems
             // 
             this.lsbSearchItems.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -179,6 +131,60 @@
             this.lsbSearchItems.Visible = false;
             this.lsbSearchItems.SelectedIndexChanged += new System.EventHandler(this.lsbSearchItems_SelectedIndexChanged);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Salmon;
+            this.panel2.Location = new System.Drawing.Point(44, 128);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1273, 1);
+            this.panel2.TabIndex = 48;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Salmon;
+            this.panel3.Location = new System.Drawing.Point(44, 159);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1273, 1);
+            this.panel3.TabIndex = 49;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.ForeColor = System.Drawing.Color.Salmon;
+            this.label1.Location = new System.Drawing.Point(82, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Reference No.";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.ForeColor = System.Drawing.Color.Salmon;
+            this.label2.Location = new System.Drawing.Point(270, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(160, 16);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Product ID";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.ForeColor = System.Drawing.Color.Salmon;
+            this.label3.Location = new System.Drawing.Point(461, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(360, 16);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Product Name TH";
+            // 
+            // pnSearchResult
+            // 
+            this.pnSearchResult.AutoScroll = true;
+            this.pnSearchResult.Location = new System.Drawing.Point(44, 162);
+            this.pnSearchResult.Name = "pnSearchResult";
+            this.pnSearchResult.Size = new System.Drawing.Size(1273, 547);
+            this.pnSearchResult.TabIndex = 53;
+            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -186,6 +192,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
             this.Controls.Add(this.lsbSearchItems);
+            this.Controls.Add(this.pnSearchResult);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -201,7 +208,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -209,15 +215,16 @@
 
         private System.Windows.Forms.TextBox txtSearchBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbItem;
         private System.Windows.Forms.ListBox lsbSearchItems;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel pnSearchResult;
     }
 }

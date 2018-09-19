@@ -146,6 +146,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Status.resx">
       <DependentUpon>Status.cs</DependentUpon>
@@ -180,6 +181,9 @@
       <Project>{8c96f13c-31c7-4870-8348-fae4e4f08bb3}</Project>
       <Name>NewProduct.Utility</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

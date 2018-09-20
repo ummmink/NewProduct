@@ -28,7 +28,7 @@ namespace NewProduct
 
         private void Product_Load(object sender, EventArgs e)
         {
-            
+            cbSelectTableNPD.SelectedIndex = 0;
         }
 
         private void lsbSearchItems_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,112 +60,140 @@ namespace NewProduct
             {
                 if (txtSearchBox.Text != "")
                 {
-                    ClearPanel();
-
-                    if (lbItem.Text == "เลขที่อ้างอิง")
+                    if (cbSelectTableNPD.SelectedIndex == 0) // In progress
                     {
-                        CommonDataSet dsSearch = commonBiz.npd_select_product_temp_by_reference_no(txtSearchBox.Text);
-                        //MessageBox.Show(dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[0].REFERENCE_NO.ToString());
+                        ClearPanel();
 
-                        for (int i = 0; i < dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO.Count; i++)
+                        if (lbItem.Text == "เลขที่อ้างอิง")
                         {
-                            //Label Reference_No
-                            Label dtReferenceNo = new Label();
-                            string headerReferenceNo = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
-                            dtReferenceNo.Text = headerReferenceNo;
-                            dtReferenceNo.Location = new System.Drawing.Point(38, y);
-                            dtReferenceNo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                            dtReferenceNo.Size = new System.Drawing.Size(160, 16);
-                            dtReferenceNo.AutoSize = false;
-                            dtReferenceNo.ForeColor = Color.White;
-                            dtReferenceNo.TextAlign = ContentAlignment.MiddleLeft;
-                            pnSearchResult.Controls.Add(dtReferenceNo);
+                            CommonDataSet dsSearch = commonBiz.npd_select_product_temp_by_reference_no(txtSearchBox.Text);
+                            //MessageBox.Show(dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[0].REFERENCE_NO.ToString());
 
-                            //Label Product_Id
-                            Label dtProductId = new Label();
-                            string headerProductId = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].PRODUCT_ID.ToString();
-                            dtProductId.Text = headerProductId;
-                            dtProductId.Location = new System.Drawing.Point(226, y);
-                            dtProductId.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                            dtProductId.Size = new System.Drawing.Size(160, 16);
-                            dtProductId.AutoSize = false;
-                            dtProductId.ForeColor = Color.White;
-                            dtProductId.TextAlign = ContentAlignment.MiddleLeft;
-                            pnSearchResult.Controls.Add(dtProductId);
+                            for (int i = 0; i < dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO.Count; i++)
+                            {
+                                //Label Reference_No
+                                Label dtReferenceNo = new Label();
+                                string headerReferenceNo = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                                dtReferenceNo.Text = headerReferenceNo;
+                                dtReferenceNo.Location = new System.Drawing.Point(38, y);
+                                dtReferenceNo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                                dtReferenceNo.Size = new System.Drawing.Size(160, 16);
+                                dtReferenceNo.AutoSize = false;
+                                dtReferenceNo.ForeColor = Color.White;
+                                dtReferenceNo.TextAlign = ContentAlignment.MiddleLeft;
+                                pnSearchResult.Controls.Add(dtReferenceNo);
 
-                            //Label Product_Name_TH
-                            Label dtProductName = new Label();
-                            string headerProductName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].PRODUCT_NAME_TH.ToString();
-                            dtProductName.Text = headerProductName;
-                            dtProductName.Location = new System.Drawing.Point(417, y);
-                            dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                            dtProductName.Size = new System.Drawing.Size(360, 16);
-                            dtProductName.AutoSize = false;
-                            dtProductName.ForeColor = Color.White;
-                            dtProductName.TextAlign = ContentAlignment.MiddleLeft;
-                            pnSearchResult.Controls.Add(dtProductName);
+                                //Label Product_Id
+                                Label dtProductId = new Label();
+                                string headerProductId = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].PRODUCT_ID.ToString();
+                                dtProductId.Text = headerProductId;
+                                dtProductId.Location = new System.Drawing.Point(226, y);
+                                dtProductId.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                                dtProductId.Size = new System.Drawing.Size(160, 16);
+                                dtProductId.AutoSize = false;
+                                dtProductId.ForeColor = Color.White;
+                                dtProductId.TextAlign = ContentAlignment.MiddleLeft;
+                                pnSearchResult.Controls.Add(dtProductId);
 
-                            //Button View
-                            Button dtbtnView = new Button();
-                            dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
-                            ToolTip tip = new ToolTip();
-                            tip.SetToolTip(dtbtnView, "View Data");
-                            dtbtnView.Text = "";
-                            dtbtnView.Location = new System.Drawing.Point(800, y - 9);
-                            dtbtnView.Size = new System.Drawing.Size(39, 35);
-                            dtbtnView.FlatStyle = FlatStyle.Flat;
-                            dtbtnView.BackColor = Color.Black;
-                            dtbtnView.Cursor = Cursors.Hand;
-                            dtbtnView.FlatAppearance.BorderColor = Color.Black;
-                            dtbtnView.FlatAppearance.BorderSize = 1;
-                            dtbtnView.FlatAppearance.MouseDownBackColor = Color.Black;
-                            dtbtnView.FlatAppearance.MouseOverBackColor = Color.Black;
-                            dtbtnView.Image = new Bitmap(NewProduct.Properties.Resources.post_it);
-                            dtbtnView.ImageAlign = ContentAlignment.MiddleCenter;
-                            dtbtnView.Click += new EventHandler(dtbtnView_Click);
-                            pnSearchResult.Controls.Add(dtbtnView);
+                                //Label Product_Name_TH
+                                Label dtProductName = new Label();
+                                string headerProductName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].PRODUCT_NAME_TH.ToString();
+                                dtProductName.Text = headerProductName;
+                                dtProductName.Location = new System.Drawing.Point(417, y);
+                                dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                                dtProductName.Size = new System.Drawing.Size(360, 16);
+                                dtProductName.AutoSize = false;
+                                dtProductName.ForeColor = Color.White;
+                                dtProductName.TextAlign = ContentAlignment.MiddleLeft;
+                                pnSearchResult.Controls.Add(dtProductName);
 
-                            //Button Edit
-                            Button dtbtnEdit = new Button();
-                            dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
-                            //ToolTip tipEdit = new ToolTip();
-                            tip.SetToolTip(dtbtnEdit, "Edit Data");
-                            dtbtnEdit.Text = "";
-                            dtbtnEdit.Location = new System.Drawing.Point(850, y - 9);
-                            dtbtnEdit.Size = new System.Drawing.Size(39, 35);
-                            dtbtnEdit.FlatStyle = FlatStyle.Flat;
-                            dtbtnEdit.BackColor = Color.Black;
-                            dtbtnEdit.Cursor = Cursors.Hand;
-                            dtbtnEdit.FlatAppearance.BorderColor = Color.Black;
-                            dtbtnEdit.FlatAppearance.BorderSize = 1;
-                            dtbtnEdit.FlatAppearance.MouseDownBackColor = Color.Black;
-                            dtbtnEdit.FlatAppearance.MouseOverBackColor = Color.Black;
-                            dtbtnEdit.Image = new Bitmap(NewProduct.Properties.Resources.eraser);
-                            dtbtnEdit.ImageAlign = ContentAlignment.MiddleCenter;
-                            dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
-                            pnSearchResult.Controls.Add(dtbtnEdit);
+                                //Button View
+                                Button dtbtnView = new Button();
+                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                                ToolTip tip = new ToolTip();
+                                tip.SetToolTip(dtbtnView, "View Data");
+                                dtbtnView.Text = "";
+                                dtbtnView.Location = new System.Drawing.Point(800, y - 9);
+                                dtbtnView.Size = new System.Drawing.Size(39, 35);
+                                dtbtnView.FlatStyle = FlatStyle.Flat;
+                                dtbtnView.BackColor = Color.Black;
+                                dtbtnView.Cursor = Cursors.Hand;
+                                dtbtnView.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnView.FlatAppearance.BorderSize = 1;
+                                dtbtnView.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnView.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnView.Image = new Bitmap(NewProduct.Properties.Resources.post_it);
+                                dtbtnView.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnView.Click += new EventHandler(dtbtnView_Click);
+                                pnSearchResult.Controls.Add(dtbtnView);
 
-                            y = dtProductId.Location.Y + 40;
+                                //Button Edit
+                                Button dtbtnEdit = new Button();
+                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnEdit, "Edit Data");
+                                dtbtnEdit.Text = "";
+                                dtbtnEdit.Location = new System.Drawing.Point(850, y - 9);
+                                dtbtnEdit.Size = new System.Drawing.Size(39, 35);
+                                dtbtnEdit.FlatStyle = FlatStyle.Flat;
+                                dtbtnEdit.BackColor = Color.Black;
+                                dtbtnEdit.Cursor = Cursors.Hand;
+                                dtbtnEdit.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnEdit.FlatAppearance.BorderSize = 1;
+                                dtbtnEdit.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnEdit.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnEdit.Image = new Bitmap(NewProduct.Properties.Resources.eraser);
+                                dtbtnEdit.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
+                                pnSearchResult.Controls.Add(dtbtnEdit);
+
+                                //Button Print
+                                Button dtbtnPrint = new Button();
+                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnPrint, "Print");
+                                dtbtnPrint.Text = "";
+                                dtbtnPrint.Location = new System.Drawing.Point(900, y - 9);
+                                dtbtnPrint.Size = new System.Drawing.Size(39, 35);
+                                dtbtnPrint.FlatStyle = FlatStyle.Flat;
+                                dtbtnPrint.BackColor = Color.Black;
+                                dtbtnPrint.Cursor = Cursors.Hand;
+                                dtbtnPrint.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnPrint.FlatAppearance.BorderSize = 1;
+                                dtbtnPrint.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnPrint.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnPrint.Image = new Bitmap(NewProduct.Properties.Resources.paper_printer);
+                                dtbtnPrint.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnPrint.Click += new EventHandler(dtbtnPrint_Click);
+                                pnSearchResult.Controls.Add(dtbtnPrint);
+
+                                y = dtProductId.Location.Y + 40;
+                            }
+                        }
+                        else if (lbItem.Text == "กลุ่มผลิตภัณฑ์")
+                        {
+
+                        }
+                        else if (lbItem.Text == "ประเภทผลิตภัณฑ์")
+                        {
+
+                        }
+                        else if (lbItem.Text == "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(ไทย)")
+                        {
+                            CommonDataSet dsSearch = commonBiz.npd_select_product_temp_by_fieldname_and_fieldvalue("PRODUCT_NAME_TH", txtSearchBox.Text);
+                            MessageBox.Show(dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE[0].ToString());
+                        }
+                        else if (lbItem.Text == "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(English)")
+                        {
+                            CommonDataSet dsSearch = commonBiz.npd_select_product_temp_by_fieldname_and_fieldvalue("PRODUCT_NAME_ENG", txtSearchBox.Text);
+                            MessageBox.Show(dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE[0].ToString());
                         }
                     }
-                    else if (lbItem.Text == "กลุ่มผลิตภัณฑ์")
+                    else if (cbSelectTableNPD.SelectedIndex == 1) // Approved
                     {
-
-                    }
-                    else if (lbItem.Text == "ประเภทผลิตภัณฑ์")
-                    {
-
-                    }
-                    else if (lbItem.Text == "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(ไทย)")
-                    {
-                        CommonDataSet dsSearch = commonBiz.npd_select_product_temp_by_fieldname_and_fieldvalue("PRODUCT_NAME_TH", txtSearchBox.Text);
-                        MessageBox.Show(dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE[0].ToString());
-                    }
-                    else if (lbItem.Text == "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(English)")
-                    {
-                        CommonDataSet dsSearch = commonBiz.npd_select_product_temp_by_fieldname_and_fieldvalue("PRODUCT_NAME_ENG", txtSearchBox.Text);
-                        MessageBox.Show(dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE[0].ToString());
-                    }
+                        ClearPanel();
+                        MessageBox.Show("Approved");
+                    }                    
                 }
             }
         }
@@ -182,6 +210,11 @@ namespace NewProduct
         }
 
         private void dtbtnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtbtnPrint_Click(object sender, EventArgs e)
         {
 
         }

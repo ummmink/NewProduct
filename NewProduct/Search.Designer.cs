@@ -43,15 +43,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pnSearchResult = new System.Windows.Forms.Panel();
+            this.cbSelectTableNPD = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtSearchBox
             // 
             this.txtSearchBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtSearchBox.Location = new System.Drawing.Point(133, 5);
+            this.txtSearchBox.Location = new System.Drawing.Point(237, 5);
             this.txtSearchBox.Name = "txtSearchBox";
-            this.txtSearchBox.Size = new System.Drawing.Size(528, 27);
+            this.txtSearchBox.Size = new System.Drawing.Size(425, 27);
             this.txtSearchBox.TabIndex = 0;
             this.txtSearchBox.Enter += new System.EventHandler(this.txtSearchBox_Enter);
             this.txtSearchBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearchBox_KeyDown);
@@ -59,6 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Salmon;
+            this.panel1.Controls.Add(this.cbSelectTableNPD);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lbItem);
@@ -185,6 +187,18 @@
             this.pnSearchResult.Size = new System.Drawing.Size(1273, 547);
             this.pnSearchResult.TabIndex = 53;
             // 
+            // cbSelectTableNPD
+            // 
+            this.cbSelectTableNPD.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSelectTableNPD.FormattingEnabled = true;
+            this.cbSelectTableNPD.Items.AddRange(new object[] {
+            "In progress",
+            "Approved"});
+            this.cbSelectTableNPD.Location = new System.Drawing.Point(115, 5);
+            this.cbSelectTableNPD.Name = "cbSelectTableNPD";
+            this.cbSelectTableNPD.Size = new System.Drawing.Size(116, 27);
+            this.cbSelectTableNPD.TabIndex = 74;
+            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -226,5 +240,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pnSearchResult;
+        private System.Windows.Forms.ComboBox cbSelectTableNPD;
     }
 }

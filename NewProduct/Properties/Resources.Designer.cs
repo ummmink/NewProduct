@@ -63,9 +63,9 @@ namespace NewProduct.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap brush {
+        internal static System.Drawing.Bitmap eraser {
             get {
-                object obj = ResourceManager.GetObject("brush", resourceCulture);
+                object obj = ResourceManager.GetObject("eraser", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace NewProduct.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap eraser {
+        internal static System.Drawing.Bitmap paper_printer {
             get {
-                object obj = ResourceManager.GetObject("eraser", resourceCulture);
+                object obj = ResourceManager.GetObject("paper_printer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

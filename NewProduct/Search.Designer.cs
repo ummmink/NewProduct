@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             this.txtSearchBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbSelectTableNPD = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lbItem = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pnSearchResult = new System.Windows.Forms.Panel();
-            this.cbSelectTableNPD = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1273, 38);
             this.panel1.TabIndex = 47;
+            // 
+            // cbSelectTableNPD
+            // 
+            this.cbSelectTableNPD.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSelectTableNPD.FormattingEnabled = true;
+            this.cbSelectTableNPD.Items.AddRange(new object[] {
+            "In progress",
+            "Approved"});
+            this.cbSelectTableNPD.Location = new System.Drawing.Point(115, 5);
+            this.cbSelectTableNPD.Name = "cbSelectTableNPD";
+            this.cbSelectTableNPD.Size = new System.Drawing.Size(116, 27);
+            this.cbSelectTableNPD.TabIndex = 74;
             // 
             // label4
             // 
@@ -155,7 +167,7 @@
             this.label1.ForeColor = System.Drawing.Color.Salmon;
             this.label1.Location = new System.Drawing.Point(82, 135);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 16);
+            this.label1.Size = new System.Drawing.Size(126, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Reference No.";
             // 
@@ -163,9 +175,9 @@
             // 
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(270, 135);
+            this.label2.Location = new System.Drawing.Point(223, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 16);
+            this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 50;
             this.label2.Text = "Product ID";
             // 
@@ -173,7 +185,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(461, 135);
+            this.label3.Location = new System.Drawing.Point(366, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(360, 16);
             this.label3.TabIndex = 51;
@@ -186,18 +198,6 @@
             this.pnSearchResult.Name = "pnSearchResult";
             this.pnSearchResult.Size = new System.Drawing.Size(1273, 547);
             this.pnSearchResult.TabIndex = 53;
-            // 
-            // cbSelectTableNPD
-            // 
-            this.cbSelectTableNPD.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSelectTableNPD.FormattingEnabled = true;
-            this.cbSelectTableNPD.Items.AddRange(new object[] {
-            "In progress",
-            "Approved"});
-            this.cbSelectTableNPD.Location = new System.Drawing.Point(115, 5);
-            this.cbSelectTableNPD.Name = "cbSelectTableNPD";
-            this.cbSelectTableNPD.Size = new System.Drawing.Size(116, 27);
-            this.cbSelectTableNPD.TabIndex = 74;
             // 
             // Search
             // 

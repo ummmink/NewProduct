@@ -29,23 +29,46 @@ namespace NewProduct
         private void Product_Load(object sender, EventArgs e)
         {
             cbSelectTableNPD.SelectedIndex = 0;
+            AddListBoxInprogreddItems();
+            lsbInProgressSearchItems.SelectedIndex = 0;
+            lbItem.Text = lsbInProgressSearchItems.SelectedValue.ToString();
+        }
+
+        private void AddListBoxInprogreddItems()
+        {
+            lsbInProgressSearchItems.Items.Clear();
+            lsbInProgressSearchItems.Items.Add("เลขที่อ้างอิง");
+            lsbInProgressSearchItems.Items.Add("กลุ่มผลิตภัณฑ์");
+            lsbInProgressSearchItems.Items.Add("ประเภทผลิตภัณฑ์");
+            lsbInProgressSearchItems.Items.Add("ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(ไทย)");
+            lsbInProgressSearchItems.Items.Add("ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(English)");
+        }
+
+        private void AddListBoxApprovedItems()
+        {
+            lsbInProgressSearchItems.Items.Clear();
+            lsbInProgressSearchItems.Items.Add("รหัสสินค้า");
+            lsbInProgressSearchItems.Items.Add("กลุ่มผลิตภัณฑ์");
+            lsbInProgressSearchItems.Items.Add("ประเภทผลิตภัณฑ์");
+            lsbInProgressSearchItems.Items.Add("ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(ไทย)");
+            lsbInProgressSearchItems.Items.Add("ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า(English)");
         }
 
         private void lsbSearchItems_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lbItem.Text = lsbSearchItems.SelectedItem.ToString();
-            lsbSearchItems.Visible = false;
+            lbItem.Text = lsbInProgressSearchItems.SelectedItem.ToString();
+            lsbInProgressSearchItems.Visible = false;
         }
 
         private void lbItem_Click(object sender, EventArgs e)
         {
-            if (lsbSearchItems.Visible == true)
+            if (lsbInProgressSearchItems.Visible == true)
             {
-                lsbSearchItems.Visible = false;
+                lsbInProgressSearchItems.Visible = false;
             }
             else
             {
-                lsbSearchItems.Visible = true;
+                lsbInProgressSearchItems.Visible = true;
             }
         }
 
@@ -346,6 +369,22 @@ namespace NewProduct
         private void dtbtnPrint_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbSelectTableNPD_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbSelectTableNPD.SelectedIndex == 0) // In Progress
+            {
+                AddListBoxInprogreddItems();
+                lsbInProgressSearchItems.SelectedIndex = 0;
+                lbItem.Text = lsbInProgressSearchItems.SelectedValue.ToString();
+            }
+            else if (cbSelectTableNPD.SelectedIndex == 1) // Approved
+            {
+                AddListBoxApprovedItems();
+                lsbInProgressSearchItems.SelectedIndex = 0;
+                lbItem.Text = lsbInProgressSearchItems.SelectedValue.ToString();
+            }
         }
     }
 }

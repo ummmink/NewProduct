@@ -36,7 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lbItem = new System.Windows.Forms.Label();
-            this.lsbSearchItems = new System.Windows.Forms.ListBox();
+            this.lsbInProgressSearchItems = new System.Windows.Forms.ListBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnLineTop = new System.Windows.Forms.Panel();
             this.pnLineBottom = new System.Windows.Forms.Panel();
@@ -81,6 +81,7 @@
             this.cbSelectTableNPD.Name = "cbSelectTableNPD";
             this.cbSelectTableNPD.Size = new System.Drawing.Size(116, 27);
             this.cbSelectTableNPD.TabIndex = 74;
+            this.cbSelectTableNPD.SelectedIndexChanged += new System.EventHandler(this.cbSelectTableNPD_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -120,30 +121,24 @@
             this.lbItem.ForeColor = System.Drawing.Color.White;
             this.lbItem.Location = new System.Drawing.Point(730, 9);
             this.lbItem.Name = "lbItem";
-            this.lbItem.Size = new System.Drawing.Size(88, 18);
+            this.lbItem.Size = new System.Drawing.Size(48, 18);
             this.lbItem.TabIndex = 1;
-            this.lbItem.Text = "เลขที่อ้างอิง";
+            this.lbItem.Text = "XXXX";
             this.toolTip1.SetToolTip(this.lbItem, "คลิ๊กเพื่อเลือกหัวข้อที่ต้องการค้นหา");
             this.lbItem.Click += new System.EventHandler(this.lbItem_Click);
             // 
-            // lsbSearchItems
+            // lsbInProgressSearchItems
             // 
-            this.lsbSearchItems.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lsbSearchItems.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lsbSearchItems.FormattingEnabled = true;
-            this.lsbSearchItems.ItemHeight = 18;
-            this.lsbSearchItems.Items.AddRange(new object[] {
-            "เลขที่อ้างอิง",
-            "กลุ่มผลิตภัณฑ์",
-            "ประเภทผลิตภัณฑ์",
-            "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (ไทย)",
-            "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (English)"});
-            this.lsbSearchItems.Location = new System.Drawing.Point(774, 112);
-            this.lsbSearchItems.Name = "lsbSearchItems";
-            this.lsbSearchItems.Size = new System.Drawing.Size(332, 94);
-            this.lsbSearchItems.TabIndex = 52;
-            this.lsbSearchItems.Visible = false;
-            this.lsbSearchItems.SelectedIndexChanged += new System.EventHandler(this.lsbSearchItems_SelectedIndexChanged);
+            this.lsbInProgressSearchItems.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lsbInProgressSearchItems.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lsbInProgressSearchItems.FormattingEnabled = true;
+            this.lsbInProgressSearchItems.ItemHeight = 18;
+            this.lsbInProgressSearchItems.Location = new System.Drawing.Point(774, 112);
+            this.lsbInProgressSearchItems.Name = "lsbInProgressSearchItems";
+            this.lsbInProgressSearchItems.Size = new System.Drawing.Size(332, 94);
+            this.lsbInProgressSearchItems.TabIndex = 52;
+            this.lsbInProgressSearchItems.Visible = false;
+            this.lsbInProgressSearchItems.SelectedIndexChanged += new System.EventHandler(this.lsbSearchItems_SelectedIndexChanged);
             // 
             // pnLineTop
             // 
@@ -210,7 +205,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
-            this.Controls.Add(this.lsbSearchItems);
+            this.Controls.Add(this.lsbInProgressSearchItems);
             this.Controls.Add(this.pnSearchResult);
             this.Controls.Add(this.lbItemHeader3);
             this.Controls.Add(this.lbItemHeader2);
@@ -235,7 +230,7 @@
         private System.Windows.Forms.TextBox txtSearchBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbItem;
-        private System.Windows.Forms.ListBox lsbSearchItems;
+        private System.Windows.Forms.ListBox lsbInProgressSearchItems;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip1;

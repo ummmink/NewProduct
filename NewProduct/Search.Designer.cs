@@ -38,11 +38,11 @@
             this.lbItem = new System.Windows.Forms.Label();
             this.lsbSearchItems = new System.Windows.Forms.ListBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pnLineTop = new System.Windows.Forms.Panel();
+            this.pnLineBottom = new System.Windows.Forms.Panel();
+            this.lbItemHeader1 = new System.Windows.Forms.Label();
+            this.lbItemHeader2 = new System.Windows.Forms.Label();
+            this.lbItemHeader3 = new System.Windows.Forms.Label();
             this.pnSearchResult = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -145,51 +145,56 @@
             this.lsbSearchItems.Visible = false;
             this.lsbSearchItems.SelectedIndexChanged += new System.EventHandler(this.lsbSearchItems_SelectedIndexChanged);
             // 
-            // panel2
+            // pnLineTop
             // 
-            this.panel2.BackColor = System.Drawing.Color.Salmon;
-            this.panel2.Location = new System.Drawing.Point(44, 128);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1273, 1);
-            this.panel2.TabIndex = 48;
+            this.pnLineTop.BackColor = System.Drawing.Color.Salmon;
+            this.pnLineTop.Location = new System.Drawing.Point(44, 128);
+            this.pnLineTop.Name = "pnLineTop";
+            this.pnLineTop.Size = new System.Drawing.Size(1273, 1);
+            this.pnLineTop.TabIndex = 48;
+            this.pnLineTop.Visible = false;
             // 
-            // panel3
+            // pnLineBottom
             // 
-            this.panel3.BackColor = System.Drawing.Color.Salmon;
-            this.panel3.Location = new System.Drawing.Point(44, 159);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1273, 1);
-            this.panel3.TabIndex = 49;
+            this.pnLineBottom.BackColor = System.Drawing.Color.Salmon;
+            this.pnLineBottom.Location = new System.Drawing.Point(44, 159);
+            this.pnLineBottom.Name = "pnLineBottom";
+            this.pnLineBottom.Size = new System.Drawing.Size(1273, 1);
+            this.pnLineBottom.TabIndex = 49;
+            this.pnLineBottom.Visible = false;
             // 
-            // label1
+            // lbItemHeader1
             // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.ForeColor = System.Drawing.Color.Salmon;
-            this.label1.Location = new System.Drawing.Point(82, 135);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Reference No.";
+            this.lbItemHeader1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbItemHeader1.ForeColor = System.Drawing.Color.Salmon;
+            this.lbItemHeader1.Location = new System.Drawing.Point(82, 135);
+            this.lbItemHeader1.Name = "lbItemHeader1";
+            this.lbItemHeader1.Size = new System.Drawing.Size(126, 16);
+            this.lbItemHeader1.TabIndex = 2;
+            this.lbItemHeader1.Text = "Reference No.";
+            this.lbItemHeader1.Visible = false;
             // 
-            // label2
+            // lbItemHeader2
             // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(223, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 16);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Product ID";
+            this.lbItemHeader2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbItemHeader2.ForeColor = System.Drawing.Color.Salmon;
+            this.lbItemHeader2.Location = new System.Drawing.Point(223, 135);
+            this.lbItemHeader2.Name = "lbItemHeader2";
+            this.lbItemHeader2.Size = new System.Drawing.Size(126, 16);
+            this.lbItemHeader2.TabIndex = 50;
+            this.lbItemHeader2.Text = "Product ID";
+            this.lbItemHeader2.Visible = false;
             // 
-            // label3
+            // lbItemHeader3
             // 
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(366, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(360, 16);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "Product Name TH";
+            this.lbItemHeader3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbItemHeader3.ForeColor = System.Drawing.Color.Salmon;
+            this.lbItemHeader3.Location = new System.Drawing.Point(366, 135);
+            this.lbItemHeader3.Name = "lbItemHeader3";
+            this.lbItemHeader3.Size = new System.Drawing.Size(360, 16);
+            this.lbItemHeader3.TabIndex = 51;
+            this.lbItemHeader3.Text = "Product Name TH";
+            this.lbItemHeader3.Visible = false;
             // 
             // pnSearchResult
             // 
@@ -207,11 +212,11 @@
             this.ClientSize = new System.Drawing.Size(1366, 750);
             this.Controls.Add(this.lsbSearchItems);
             this.Controls.Add(this.pnSearchResult);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.lbItemHeader3);
+            this.Controls.Add(this.lbItemHeader2);
+            this.Controls.Add(this.lbItemHeader1);
+            this.Controls.Add(this.pnLineBottom);
+            this.Controls.Add(this.pnLineTop);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -234,11 +239,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel pnLineTop;
+        private System.Windows.Forms.Panel pnLineBottom;
+        private System.Windows.Forms.Label lbItemHeader1;
+        private System.Windows.Forms.Label lbItemHeader2;
+        private System.Windows.Forms.Label lbItemHeader3;
         private System.Windows.Forms.Panel pnSearchResult;
         private System.Windows.Forms.ComboBox cbSelectTableNPD;
     }

@@ -32,6 +32,7 @@ namespace NewProduct.Data
         private static string _NPD_UPDATE_TEMP_STATUS_PRODUCT_TEMP = "npd_update_temp_status_product_temp";
         private static string _NPD_SELECT_PRODUCT_TEMP_BY_FIELDNAME_AND_FIELDVALUE = "npd_select_product_temp_by_fieldname_and_fieldvalue";
         private static string _NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO = "npd_select_product_temp_by_reference_no";
+        private static string _NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE = "npd_select_product_temp_by_product_type";
 
         public CommonDataSet select_product_all_status()
         {
@@ -461,6 +462,26 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO.TableName, _NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_temp_by_product_type(string type_desc_eng)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[1];
+
+                pm[0] = new SqlParameter("@TYPE_DESC_ENG", SqlDbType.VarChar);
+                pm[0].Value = type_desc_eng;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE.TableName, _NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE, pm, strConnCommon);
             }
             catch (Exception ex)
             {

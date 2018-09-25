@@ -206,5 +206,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_product_temp_by_product_type(string type_desc_eng)
+        {
+            try
+            {
+                return commonData.npd_select_product_temp_by_product_type(type_desc_eng);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -135,7 +135,7 @@
             this.lsbInProgressSearchItems.ItemHeight = 18;
             this.lsbInProgressSearchItems.Location = new System.Drawing.Point(774, 112);
             this.lsbInProgressSearchItems.Name = "lsbInProgressSearchItems";
-            this.lsbInProgressSearchItems.Size = new System.Drawing.Size(332, 94);
+            this.lsbInProgressSearchItems.Size = new System.Drawing.Size(332, 76);
             this.lsbInProgressSearchItems.TabIndex = 52;
             this.lsbInProgressSearchItems.Visible = false;
             this.lsbInProgressSearchItems.SelectedIndexChanged += new System.EventHandler(this.lsbSearchItems_SelectedIndexChanged);

@@ -218,5 +218,53 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_product_temp_by_product_name_th_invoice(string product_name_th_invoice)
+        {
+            try
+            {
+                return commonData.npd_select_product_temp_by_product_name_th_invoice(product_name_th_invoice);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_temp_by_product_name_eng_invoice(string product_name_eng_invoice)
+        {
+            try
+            {
+                return commonData.npd_select_product_temp_by_product_name_eng_invoice(product_name_eng_invoice);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_by_product_id(string product_id)
+        {
+            try
+            {
+                return commonData.npd_select_product_by_product_id(product_id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_by_product_type(string type_desc_eng)
+        {
+            try
+            {
+                return commonData.npd_select_product_by_product_type (type_desc_eng);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -8,15 +8,6 @@ namespace NewProduct
 {
     class variablePublic
     {
-        public static int type_id;
-        public static string item_no;
-        public static int item_no2;
-        public static string productPrefix;
-        public static string channel;
-        public static int sell_id;
-        public static string user_group_id;
-        public static string product_other_name;
-        public static int product_other_id;
         //Image
         public static string saveImagePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
         public static string imagePath;
@@ -34,5 +25,18 @@ namespace NewProduct
         public static int productPackQty;
         public static int productInnerBoxQty;
         public static int productCaseQty;
+        // Pass Value
+        public static string productID;
+        public static string referenceNO;
+        public static int type_id;
+        public static string item_no;
+        public static int item_no2;
+        public static string productPrefix;
+        public static string channel;
+        public static int sell_id;
+        public static string user_group_id;
+        public static string product_other_name;
+        public static int product_other_id;
+        public static bool editPassing; // for pass value from search.cs to new.cs (User want to edit data.)
     }
 }

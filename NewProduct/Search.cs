@@ -19,7 +19,7 @@ namespace NewProduct
     {
         CommonBiz commonBiz = new CommonBiz();
 
-        int y = 10;
+        int y = 4;
 
         public Search()
         {
@@ -74,7 +74,7 @@ namespace NewProduct
 
         private void txtSearchBox_Enter(object sender, EventArgs e)
         {
-                              
+
         }
 
         private void txtSearchBox_KeyDown(object sender, KeyEventArgs e)
@@ -173,7 +173,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -193,7 +193,7 @@ namespace NewProduct
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -293,7 +293,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE[i].REFERENCE_NO.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -313,7 +313,7 @@ namespace NewProduct
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE[i].REFERENCE_NO.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -417,7 +417,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_TH_Invoice[i].REFERENCE_NO.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_TH_Invoice[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -437,7 +437,7 @@ namespace NewProduct
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_TH_Invoice[i].REFERENCE_NO.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_TH_Invoice[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -537,7 +537,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice[i].REFERENCE_NO.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -557,7 +557,7 @@ namespace NewProduct
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice[i].REFERENCE_NO.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice[i].REFERENCE_NO.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -581,7 +581,7 @@ namespace NewProduct
                         }
                     }
                     else if (cbSelectTableNPD.SelectedIndex == 1) // Approved
-                    {                       
+                    {
                         //Change Item Header 
                         lbItemHeader1.Text = "Product ID";
                         lbItemHeader2.Text = "Short Name";
@@ -669,7 +669,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_ID.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -682,14 +682,14 @@ namespace NewProduct
                                 dtbtnEdit.FlatAppearance.BorderSize = 1;
                                 dtbtnEdit.FlatAppearance.MouseDownBackColor = Color.Black;
                                 dtbtnEdit.FlatAppearance.MouseOverBackColor = Color.Black;
-                                dtbtnEdit.Image = new Bitmap(NewProduct.Properties.Resources.eraser);
+                                dtbtnEdit.Image = new Bitmap(NewProduct.Properties.Resources.repeat);
                                 dtbtnEdit.ImageAlign = ContentAlignment.MiddleCenter;
                                 dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
                                 pnSearchResult.Controls.Add(dtbtnEdit);
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_ID.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -788,7 +788,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_ID.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -808,7 +808,7 @@ namespace NewProduct
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_ID.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -907,7 +907,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_ID.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -927,7 +927,7 @@ namespace NewProduct
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_ID.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -1026,7 +1026,7 @@ namespace NewProduct
 
                                 //Button Edit
                                 Button dtbtnEdit = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_ID.ToString();
+                                dtbtnEdit.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
@@ -1046,7 +1046,7 @@ namespace NewProduct
 
                                 //Button Print
                                 Button dtbtnPrint = new Button();
-                                dtbtnView.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_ID.ToString();
+                                dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
@@ -1068,7 +1068,7 @@ namespace NewProduct
                             }
                             #endregion                           
                         }
-                    }                    
+                    }
                 }
             }
         }
@@ -1086,17 +1086,32 @@ namespace NewProduct
         private void ClearPanel()
         {
             pnSearchResult.Controls.Clear();
-            y = 10;
+            y = 4;
         }
 
         private void dtbtnView_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dtbtnEdit_Click(object sender, EventArgs e)
         {
-
+            Button button = (sender as Button);
+            if (MessageBox.Show("คุณต้องการแก้ไขสินค้านี้ใช่หรือไม่? ", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+                if (cbSelectTableNPD.SelectedIndex == 0) // In Progress
+                {
+                    variablePublic.referenceNO = button.Name;
+                    variablePublic.editPassing = true;
+                    //MessageBox.Show(button.Name);
+                }
+                else if (cbSelectTableNPD.SelectedIndex == 1) // Approved
+                {
+                    variablePublic.productID = button.Name;
+                    variablePublic.editPassing = true;
+                    //MessageBox.Show(button.Name);
+                }
+            }
         }
 
         private void dtbtnPrint_Click(object sender, EventArgs e)

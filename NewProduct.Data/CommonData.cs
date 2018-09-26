@@ -37,6 +37,8 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice = "npd_select_product_temp_by_product_name_eng_invoice";
         private static string _NPD_SELECT_PRODUCT_BY_PRODUCT_ID = "npd_select_product_by_product_id";
         private static string _NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE = "npd_select_product_by_product_type";
+        private static string _NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH = "npd_select_product_by_product_name_th";
+        private static string _NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG = "npd_select_product_by_product_name_eng";
 
         public CommonDataSet select_product_all_status()
         {
@@ -566,6 +568,46 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE.TableName, _NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_by_product_name_th(string product_name_th)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[1];
+
+                pm[0] = new SqlParameter("@PRODUCT_NAME_TH", SqlDbType.VarChar);
+                pm[0].Value = product_name_th;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH.TableName, _NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_by_product_name_eng(string product_name_eng)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[1];
+
+                pm[0] = new SqlParameter("@PRODUCT_NAME_ENG", SqlDbType.VarChar);
+                pm[0].Value = product_name_eng;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG.TableName, _NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG, pm, strConnCommon);
             }
             catch (Exception ex)
             {

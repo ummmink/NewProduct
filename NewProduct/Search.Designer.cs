@@ -44,6 +44,7 @@
             this.lbItemHeader2 = new System.Windows.Forms.Label();
             this.lbItemHeader3 = new System.Windows.Forms.Label();
             this.pnSearchResult = new System.Windows.Forms.Panel();
+            this.lbItemHeader4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,6 +200,17 @@
             this.pnSearchResult.Size = new System.Drawing.Size(1273, 547);
             this.pnSearchResult.TabIndex = 53;
             // 
+            // lbItemHeader4
+            // 
+            this.lbItemHeader4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbItemHeader4.ForeColor = System.Drawing.Color.Salmon;
+            this.lbItemHeader4.Location = new System.Drawing.Point(740, 135);
+            this.lbItemHeader4.Name = "lbItemHeader4";
+            this.lbItemHeader4.Size = new System.Drawing.Size(360, 16);
+            this.lbItemHeader4.TabIndex = 54;
+            this.lbItemHeader4.Text = "Product Name EN";
+            this.lbItemHeader4.Visible = false;
+            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -213,6 +225,7 @@
             this.Controls.Add(this.pnLineBottom);
             this.Controls.Add(this.pnLineTop);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lbItemHeader4);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Search";
@@ -241,5 +254,6 @@
         private System.Windows.Forms.Label lbItemHeader3;
         private System.Windows.Forms.Panel pnSearchResult;
         private System.Windows.Forms.ComboBox cbSelectTableNPD;
+        private System.Windows.Forms.Label lbItemHeader4;
     }
 }

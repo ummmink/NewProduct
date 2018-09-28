@@ -160,8 +160,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\eco-tag.png" />
     <None Include="Resources\eraser.png" />
+    <None Include="Resources\paper-printer.png" />
     <None Include="Resources\post-it.png" />
+    <None Include="Resources\recycling-day-calendar-reminder-page.png" />
     <None Include="Resources\repeat.png" />
   </ItemGroup>
   <ItemGroup>
@@ -184,9 +187,6 @@
       <Project>{8c96f13c-31c7-4870-8348-fae4e4f08bb3}</Project>
       <Name>NewProduct.Utility</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\paper-printer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

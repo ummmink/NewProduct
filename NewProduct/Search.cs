@@ -31,7 +31,7 @@ namespace NewProduct
             cbSelectTableNPD.SelectedIndex = 0;
             AddListBoxInprogreddItems();
             lsbInProgressSearchItems.SelectedIndex = 0;
-            lbItem.Text = lsbInProgressSearchItems.SelectedValue.ToString();
+            lbItem.Text = lsbInProgressSearchItems.SelectedItem.ToString();
         }
 
         private void AddListBoxInprogreddItems()
@@ -682,7 +682,7 @@ namespace NewProduct
                                 dtbtnEdit.FlatAppearance.BorderSize = 1;
                                 dtbtnEdit.FlatAppearance.MouseDownBackColor = Color.Black;
                                 dtbtnEdit.FlatAppearance.MouseOverBackColor = Color.Black;
-                                dtbtnEdit.Image = new Bitmap(NewProduct.Properties.Resources.repeat);
+                                dtbtnEdit.Image = new Bitmap(NewProduct.Properties.Resources.eraser);
                                 dtbtnEdit.ImageAlign = ContentAlignment.MiddleCenter;
                                 dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
                                 pnSearchResult.Controls.Add(dtbtnEdit);
@@ -1125,13 +1125,13 @@ namespace NewProduct
             {
                 AddListBoxInprogreddItems();
                 lsbInProgressSearchItems.SelectedIndex = 0;
-                lbItem.Text = lsbInProgressSearchItems.SelectedValue.ToString();
+                lbItem.Text = lsbInProgressSearchItems.SelectedItem.ToString();
             }
             else if (cbSelectTableNPD.SelectedIndex == 1) // Approved
             {
                 AddListBoxApprovedItems();
                 lsbInProgressSearchItems.SelectedIndex = 0;
-                lbItem.Text = lsbInProgressSearchItems.SelectedValue.ToString();
+                lbItem.Text = lsbInProgressSearchItems.SelectedItem.ToString();
             }
         }
     }

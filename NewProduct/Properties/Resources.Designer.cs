@@ -63,6 +63,16 @@ namespace NewProduct.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eco_tag {
+            get {
+                object obj = ResourceManager.GetObject("eco_tag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eraser {
             get {
                 object obj = ResourceManager.GetObject("eraser", resourceCulture);
@@ -86,6 +96,16 @@ namespace NewProduct.Properties {
         internal static System.Drawing.Bitmap post_it {
             get {
                 object obj = ResourceManager.GetObject("post_it", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recycling_day_calendar_reminder_page {
+            get {
+                object obj = ResourceManager.GetObject("recycling_day_calendar_reminder_page", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

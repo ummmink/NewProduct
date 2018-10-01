@@ -109,7 +109,7 @@ namespace NewProduct
                                 dtReferenceNo.Text = headerReferenceNo;
                                 dtReferenceNo.Location = new System.Drawing.Point(38, y);
                                 dtReferenceNo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtReferenceNo.Size = new System.Drawing.Size(126, 16);
+                                dtReferenceNo.Size = new System.Drawing.Size(118, 16);
                                 dtReferenceNo.AutoSize = false;
                                 dtReferenceNo.ForeColor = Color.White;
                                 dtReferenceNo.TextAlign = ContentAlignment.MiddleLeft;
@@ -119,9 +119,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -131,7 +131,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -143,7 +143,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_REFERENCE_NO[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -157,7 +157,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -177,7 +177,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -197,7 +197,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1099, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -229,7 +229,7 @@ namespace NewProduct
                                 dtReferenceNo.Text = headerReferenceNo;
                                 dtReferenceNo.Location = new System.Drawing.Point(38, y);
                                 dtReferenceNo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtReferenceNo.Size = new System.Drawing.Size(126, 16);
+                                dtReferenceNo.Size = new System.Drawing.Size(118, 16);
                                 dtReferenceNo.AutoSize = false;
                                 dtReferenceNo.ForeColor = Color.White;
                                 dtReferenceNo.TextAlign = ContentAlignment.MiddleLeft;
@@ -239,9 +239,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -251,7 +251,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -263,7 +263,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_TYPE[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -277,7 +277,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -297,7 +297,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -317,7 +317,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1099, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -353,7 +353,7 @@ namespace NewProduct
                                 dtReferenceNo.Text = headerReferenceNo;
                                 dtReferenceNo.Location = new System.Drawing.Point(38, y);
                                 dtReferenceNo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtReferenceNo.Size = new System.Drawing.Size(126, 16);
+                                dtReferenceNo.Size = new System.Drawing.Size(118, 16);
                                 dtReferenceNo.AutoSize = false;
                                 dtReferenceNo.ForeColor = Color.White;
                                 dtReferenceNo.TextAlign = ContentAlignment.MiddleLeft;
@@ -363,9 +363,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_TH_Invoice[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -375,7 +375,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_TH_Invoice[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -387,7 +387,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_TH_Invoice[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -401,7 +401,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -421,7 +421,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -441,7 +441,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1099, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -473,7 +473,7 @@ namespace NewProduct
                                 dtReferenceNo.Text = headerReferenceNo;
                                 dtReferenceNo.Location = new System.Drawing.Point(38, y);
                                 dtReferenceNo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtReferenceNo.Size = new System.Drawing.Size(126, 16);
+                                dtReferenceNo.Size = new System.Drawing.Size(118, 16);
                                 dtReferenceNo.AutoSize = false;
                                 dtReferenceNo.ForeColor = Color.White;
                                 dtReferenceNo.TextAlign = ContentAlignment.MiddleLeft;
@@ -483,9 +483,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -495,7 +495,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -507,7 +507,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_TEMP_BY_PRODUCT_NAME_ENG_Invoice[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -521,7 +521,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -541,7 +541,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -561,7 +561,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1099, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -605,7 +605,7 @@ namespace NewProduct
                                 dtProductID.Text = headerProductID;
                                 dtProductID.Location = new System.Drawing.Point(38, y);
                                 dtProductID.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtProductID.Size = new System.Drawing.Size(126, 16);
+                                dtProductID.Size = new System.Drawing.Size(118, 16);
                                 dtProductID.AutoSize = false;
                                 dtProductID.ForeColor = Color.White;
                                 dtProductID.TextAlign = ContentAlignment.MiddleLeft;
@@ -615,9 +615,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -627,7 +627,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -639,7 +639,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -653,7 +653,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -673,7 +673,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -687,13 +687,53 @@ namespace NewProduct
                                 dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
                                 pnSearchResult.Controls.Add(dtbtnEdit);
 
+                                //Button Repeat
+                                Button dtbtnRepeat = new Button();
+                                dtbtnRepeat.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnRepeat, "Repeat");
+                                dtbtnRepeat.Text = "";
+                                dtbtnRepeat.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnRepeat.Size = new System.Drawing.Size(39, 35);
+                                dtbtnRepeat.FlatStyle = FlatStyle.Flat;
+                                dtbtnRepeat.BackColor = Color.Black;
+                                dtbtnRepeat.Cursor = Cursors.Hand;
+                                dtbtnRepeat.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.BorderSize = 1;
+                                dtbtnRepeat.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnRepeat.Image = new Bitmap(NewProduct.Properties.Resources.repeat);
+                                dtbtnRepeat.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnRepeat.Click += new EventHandler(dtbtnRepeat_Click);
+                                pnSearchResult.Controls.Add(dtbtnRepeat);
+
+                                //Button Reuse
+                                Button dtbtnReuse = new Button();
+                                dtbtnReuse.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnReuse, "Reuse");
+                                dtbtnReuse.Text = "";
+                                dtbtnReuse.Location = new System.Drawing.Point(1141, y - 9);
+                                dtbtnReuse.Size = new System.Drawing.Size(39, 35);
+                                dtbtnReuse.FlatStyle = FlatStyle.Flat;
+                                dtbtnReuse.BackColor = Color.Black;
+                                dtbtnReuse.Cursor = Cursors.Hand;
+                                dtbtnReuse.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.BorderSize = 1;
+                                dtbtnReuse.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnReuse.Image = new Bitmap(NewProduct.Properties.Resources.eco_tag);
+                                dtbtnReuse.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnReuse.Click += new EventHandler(dtbtnReuse_Click);
+                                pnSearchResult.Controls.Add(dtbtnReuse);
+
                                 //Button Print
                                 Button dtbtnPrint = new Button();
                                 dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_ID[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1183, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -724,7 +764,7 @@ namespace NewProduct
                                 dtProductID.Text = headerProductID;
                                 dtProductID.Location = new System.Drawing.Point(38, y);
                                 dtProductID.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtProductID.Size = new System.Drawing.Size(126, 16);
+                                dtProductID.Size = new System.Drawing.Size(118, 16);
                                 dtProductID.AutoSize = false;
                                 dtProductID.ForeColor = Color.White;
                                 dtProductID.TextAlign = ContentAlignment.MiddleLeft;
@@ -734,9 +774,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -746,7 +786,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -758,7 +798,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -772,7 +812,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -792,7 +832,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -806,13 +846,53 @@ namespace NewProduct
                                 dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
                                 pnSearchResult.Controls.Add(dtbtnEdit);
 
+                                //Button Repeat
+                                Button dtbtnRepeat = new Button();
+                                dtbtnRepeat.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnRepeat, "Repeat");
+                                dtbtnRepeat.Text = "";
+                                dtbtnRepeat.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnRepeat.Size = new System.Drawing.Size(39, 35);
+                                dtbtnRepeat.FlatStyle = FlatStyle.Flat;
+                                dtbtnRepeat.BackColor = Color.Black;
+                                dtbtnRepeat.Cursor = Cursors.Hand;
+                                dtbtnRepeat.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.BorderSize = 1;
+                                dtbtnRepeat.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnRepeat.Image = new Bitmap(NewProduct.Properties.Resources.repeat);
+                                dtbtnRepeat.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnRepeat.Click += new EventHandler(dtbtnRepeat_Click);
+                                pnSearchResult.Controls.Add(dtbtnRepeat);
+
+                                //Button Reuse
+                                Button dtbtnReuse = new Button();
+                                dtbtnReuse.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnReuse, "Reuse");
+                                dtbtnReuse.Text = "";
+                                dtbtnReuse.Location = new System.Drawing.Point(1141, y - 9);
+                                dtbtnReuse.Size = new System.Drawing.Size(39, 35);
+                                dtbtnReuse.FlatStyle = FlatStyle.Flat;
+                                dtbtnReuse.BackColor = Color.Black;
+                                dtbtnReuse.Cursor = Cursors.Hand;
+                                dtbtnReuse.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.BorderSize = 1;
+                                dtbtnReuse.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnReuse.Image = new Bitmap(NewProduct.Properties.Resources.eco_tag);
+                                dtbtnReuse.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnReuse.Click += new EventHandler(dtbtnReuse_Click);
+                                pnSearchResult.Controls.Add(dtbtnReuse);
+
                                 //Button Print
                                 Button dtbtnPrint = new Button();
                                 dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_TYPE[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1183, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -843,7 +923,7 @@ namespace NewProduct
                                 dtProductID.Text = headerProductID;
                                 dtProductID.Location = new System.Drawing.Point(38, y);
                                 dtProductID.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtProductID.Size = new System.Drawing.Size(126, 16);
+                                dtProductID.Size = new System.Drawing.Size(118, 16);
                                 dtProductID.AutoSize = false;
                                 dtProductID.ForeColor = Color.White;
                                 dtProductID.TextAlign = ContentAlignment.MiddleLeft;
@@ -853,9 +933,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -865,7 +945,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -877,7 +957,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -891,7 +971,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -911,7 +991,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -925,13 +1005,53 @@ namespace NewProduct
                                 dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
                                 pnSearchResult.Controls.Add(dtbtnEdit);
 
+                                //Button Repeat
+                                Button dtbtnRepeat = new Button();
+                                dtbtnRepeat.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnRepeat, "Repeat");
+                                dtbtnRepeat.Text = "";
+                                dtbtnRepeat.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnRepeat.Size = new System.Drawing.Size(39, 35);
+                                dtbtnRepeat.FlatStyle = FlatStyle.Flat;
+                                dtbtnRepeat.BackColor = Color.Black;
+                                dtbtnRepeat.Cursor = Cursors.Hand;
+                                dtbtnRepeat.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.BorderSize = 1;
+                                dtbtnRepeat.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnRepeat.Image = new Bitmap(NewProduct.Properties.Resources.repeat);
+                                dtbtnRepeat.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnRepeat.Click += new EventHandler(dtbtnRepeat_Click);
+                                pnSearchResult.Controls.Add(dtbtnRepeat);
+
+                                //Button Reuse
+                                Button dtbtnReuse = new Button();
+                                dtbtnReuse.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnReuse, "Reuse");
+                                dtbtnReuse.Text = "";
+                                dtbtnReuse.Location = new System.Drawing.Point(1141, y - 9);
+                                dtbtnReuse.Size = new System.Drawing.Size(39, 35);
+                                dtbtnReuse.FlatStyle = FlatStyle.Flat;
+                                dtbtnReuse.BackColor = Color.Black;
+                                dtbtnReuse.Cursor = Cursors.Hand;
+                                dtbtnReuse.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.BorderSize = 1;
+                                dtbtnReuse.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnReuse.Image = new Bitmap(NewProduct.Properties.Resources.eco_tag);
+                                dtbtnReuse.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnReuse.Click += new EventHandler(dtbtnReuse_Click);
+                                pnSearchResult.Controls.Add(dtbtnReuse);
+
                                 //Button Print
                                 Button dtbtnPrint = new Button();
                                 dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1183, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -962,7 +1082,7 @@ namespace NewProduct
                                 dtProductID.Text = headerProductID;
                                 dtProductID.Location = new System.Drawing.Point(38, y);
                                 dtProductID.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtProductID.Size = new System.Drawing.Size(126, 16);
+                                dtProductID.Size = new System.Drawing.Size(118, 16);
                                 dtProductID.AutoSize = false;
                                 dtProductID.ForeColor = Color.White;
                                 dtProductID.TextAlign = ContentAlignment.MiddleLeft;
@@ -972,9 +1092,9 @@ namespace NewProduct
                                 Label dtShortName = new Label();
                                 string headerShortName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].SHORT_NAME.ToString();
                                 dtShortName.Text = headerShortName;
-                                dtShortName.Location = new System.Drawing.Point(179, y);
+                                dtShortName.Location = new System.Drawing.Point(161, y);
                                 dtShortName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-                                dtShortName.Size = new System.Drawing.Size(126, 16);
+                                dtShortName.Size = new System.Drawing.Size(118, 16);
                                 dtShortName.AutoSize = false;
                                 dtShortName.ForeColor = Color.White;
                                 dtShortName.TextAlign = ContentAlignment.MiddleLeft;
@@ -984,7 +1104,7 @@ namespace NewProduct
                                 Label dtProductName = new Label();
                                 string headerProductName = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_NAME_TH.ToString();
                                 dtProductName.Text = headerProductName;
-                                dtProductName.Location = new System.Drawing.Point(322, y);
+                                dtProductName.Location = new System.Drawing.Point(284, y);
                                 dtProductName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductName.Size = new System.Drawing.Size(360, 16);
                                 dtProductName.AutoSize = false;
@@ -996,7 +1116,7 @@ namespace NewProduct
                                 Label dtProductNameEN = new Label();
                                 string headerProductNameEN = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_NAME_ENG.ToString();
                                 dtProductNameEN.Text = headerProductNameEN;
-                                dtProductNameEN.Location = new System.Drawing.Point(696, y);
+                                dtProductNameEN.Location = new System.Drawing.Point(649, y);
                                 dtProductNameEN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
                                 dtProductNameEN.Size = new System.Drawing.Size(360, 16);
                                 dtProductNameEN.AutoSize = false;
@@ -1010,7 +1130,7 @@ namespace NewProduct
                                 ToolTip tip = new ToolTip();
                                 tip.SetToolTip(dtbtnView, "View Data");
                                 dtbtnView.Text = "";
-                                dtbtnView.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnView.Location = new System.Drawing.Point(1015, y - 9);
                                 dtbtnView.Size = new System.Drawing.Size(39, 35);
                                 dtbtnView.FlatStyle = FlatStyle.Flat;
                                 dtbtnView.BackColor = Color.Black;
@@ -1030,7 +1150,7 @@ namespace NewProduct
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnEdit, "Edit Data");
                                 dtbtnEdit.Text = "";
-                                dtbtnEdit.Location = new System.Drawing.Point(1149, y - 9);
+                                dtbtnEdit.Location = new System.Drawing.Point(1057, y - 9);
                                 dtbtnEdit.Size = new System.Drawing.Size(39, 35);
                                 dtbtnEdit.FlatStyle = FlatStyle.Flat;
                                 dtbtnEdit.BackColor = Color.Black;
@@ -1044,13 +1164,53 @@ namespace NewProduct
                                 dtbtnEdit.Click += new EventHandler(dtbtnEdit_Click);
                                 pnSearchResult.Controls.Add(dtbtnEdit);
 
+                                //Button Repeat
+                                Button dtbtnRepeat = new Button();
+                                dtbtnRepeat.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnRepeat, "Repeat");
+                                dtbtnRepeat.Text = "";
+                                dtbtnRepeat.Location = new System.Drawing.Point(1099, y - 9);
+                                dtbtnRepeat.Size = new System.Drawing.Size(39, 35);
+                                dtbtnRepeat.FlatStyle = FlatStyle.Flat;
+                                dtbtnRepeat.BackColor = Color.Black;
+                                dtbtnRepeat.Cursor = Cursors.Hand;
+                                dtbtnRepeat.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.BorderSize = 1;
+                                dtbtnRepeat.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnRepeat.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnRepeat.Image = new Bitmap(NewProduct.Properties.Resources.repeat);
+                                dtbtnRepeat.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnRepeat.Click += new EventHandler(dtbtnRepeat_Click);
+                                pnSearchResult.Controls.Add(dtbtnRepeat);
+
+                                //Button Reuse
+                                Button dtbtnReuse = new Button();
+                                dtbtnReuse.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_ID.ToString();
+                                //ToolTip tipEdit = new ToolTip();
+                                tip.SetToolTip(dtbtnReuse, "Reuse");
+                                dtbtnReuse.Text = "";
+                                dtbtnReuse.Location = new System.Drawing.Point(1141, y - 9);
+                                dtbtnReuse.Size = new System.Drawing.Size(39, 35);
+                                dtbtnReuse.FlatStyle = FlatStyle.Flat;
+                                dtbtnReuse.BackColor = Color.Black;
+                                dtbtnReuse.Cursor = Cursors.Hand;
+                                dtbtnReuse.FlatAppearance.BorderColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.BorderSize = 1;
+                                dtbtnReuse.FlatAppearance.MouseDownBackColor = Color.Black;
+                                dtbtnReuse.FlatAppearance.MouseOverBackColor = Color.Black;
+                                dtbtnReuse.Image = new Bitmap(NewProduct.Properties.Resources.eco_tag);
+                                dtbtnReuse.ImageAlign = ContentAlignment.MiddleCenter;
+                                dtbtnReuse.Click += new EventHandler(dtbtnReuse_Click);
+                                pnSearchResult.Controls.Add(dtbtnReuse);
+
                                 //Button Print
                                 Button dtbtnPrint = new Button();
                                 dtbtnPrint.Name = dsSearch.NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG[i].PRODUCT_ID.ToString();
                                 //ToolTip tipEdit = new ToolTip();
                                 tip.SetToolTip(dtbtnPrint, "Print");
                                 dtbtnPrint.Text = "";
-                                dtbtnPrint.Location = new System.Drawing.Point(1199, y - 9);
+                                dtbtnPrint.Location = new System.Drawing.Point(1183, y - 9);
                                 dtbtnPrint.Size = new System.Drawing.Size(39, 35);
                                 dtbtnPrint.FlatStyle = FlatStyle.Flat;
                                 dtbtnPrint.BackColor = Color.Black;
@@ -1112,6 +1272,16 @@ namespace NewProduct
                     //MessageBox.Show(button.Name);
                 }
             }
+        }
+
+        private void dtbtnRepeat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtbtnReuse_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void dtbtnPrint_Click(object sender, EventArgs e)

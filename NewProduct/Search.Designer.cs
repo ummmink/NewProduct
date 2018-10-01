@@ -45,17 +45,7 @@
             this.lbItemHeader3 = new System.Windows.Forms.Label();
             this.pnSearchResult = new System.Windows.Forms.Panel();
             this.lbItemHeader4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.pnSearchResult.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtSearchBox
@@ -186,16 +176,16 @@
             this.lbItemHeader2.ForeColor = System.Drawing.Color.Salmon;
             this.lbItemHeader2.Location = new System.Drawing.Point(205, 135);
             this.lbItemHeader2.Name = "lbItemHeader2";
-            this.lbItemHeader2.Size = new System.Drawing.Size(112, 16);
+            this.lbItemHeader2.Size = new System.Drawing.Size(118, 16);
             this.lbItemHeader2.TabIndex = 50;
-            this.lbItemHeader2.Text = "Product ID";
+            this.lbItemHeader2.Text = "Short Name";
             this.lbItemHeader2.Visible = false;
             // 
             // lbItemHeader3
             // 
             this.lbItemHeader3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbItemHeader3.ForeColor = System.Drawing.Color.Salmon;
-            this.lbItemHeader3.Location = new System.Drawing.Point(322, 135);
+            this.lbItemHeader3.Location = new System.Drawing.Point(328, 135);
             this.lbItemHeader3.Name = "lbItemHeader3";
             this.lbItemHeader3.Size = new System.Drawing.Size(360, 16);
             this.lbItemHeader3.TabIndex = 51;
@@ -205,15 +195,6 @@
             // pnSearchResult
             // 
             this.pnSearchResult.AutoScroll = true;
-            this.pnSearchResult.Controls.Add(this.button6);
-            this.pnSearchResult.Controls.Add(this.button5);
-            this.pnSearchResult.Controls.Add(this.button4);
-            this.pnSearchResult.Controls.Add(this.button3);
-            this.pnSearchResult.Controls.Add(this.button2);
-            this.pnSearchResult.Controls.Add(this.label1);
-            this.pnSearchResult.Controls.Add(this.label2);
-            this.pnSearchResult.Controls.Add(this.label3);
-            this.pnSearchResult.Controls.Add(this.label5);
             this.pnSearchResult.Location = new System.Drawing.Point(44, 162);
             this.pnSearchResult.Name = "pnSearchResult";
             this.pnSearchResult.Size = new System.Drawing.Size(1273, 547);
@@ -223,103 +204,12 @@
             // 
             this.lbItemHeader4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbItemHeader4.ForeColor = System.Drawing.Color.Salmon;
-            this.lbItemHeader4.Location = new System.Drawing.Point(687, 135);
+            this.lbItemHeader4.Location = new System.Drawing.Point(693, 135);
             this.lbItemHeader4.Name = "lbItemHeader4";
             this.lbItemHeader4.Size = new System.Drawing.Size(360, 16);
             this.lbItemHeader4.TabIndex = 54;
             this.lbItemHeader4.Text = "Product Name EN";
             this.lbItemHeader4.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.ForeColor = System.Drawing.Color.Salmon;
-            this.label1.Location = new System.Drawing.Point(278, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 16);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Product Name TH1 Product Name TH2 Product Name TH3 Product Name TH4 Product Name " +
-    "TH5 Product Name TH6 Product Name TH7 Product Name TH8";
-            this.label1.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(161, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 16);
-            this.label2.TabIndex = 56;
-            this.label2.Text = "DD075012DKDK";
-            this.label2.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(38, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 16);
-            this.label3.TabIndex = 55;
-            this.label3.Text = "CY - Y18 - 00100";
-            this.label3.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label5.ForeColor = System.Drawing.Color.Salmon;
-            this.label5.Location = new System.Drawing.Point(643, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(360, 16);
-            this.label5.TabIndex = 58;
-            this.label5.Text = "Product Name EN1 Product Name EN2 Product Name EN3 Product Name EN4 Product Name " +
-    "EN5 Product Name EN6";
-            this.label5.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1008, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 35);
-            this.button2.TabIndex = 59;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(1050, 1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 35);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(1092, 1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 35);
-            this.button4.TabIndex = 61;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(1134, 1);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 35);
-            this.button5.TabIndex = 62;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(1176, 1);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 35);
-            this.button6.TabIndex = 63;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // Search
             // 
@@ -327,8 +217,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
-            this.Controls.Add(this.pnSearchResult);
             this.Controls.Add(this.lsbInProgressSearchItems);
+            this.Controls.Add(this.pnSearchResult);
             this.Controls.Add(this.lbItemHeader3);
             this.Controls.Add(this.lbItemHeader2);
             this.Controls.Add(this.lbItemHeader1);
@@ -344,7 +234,6 @@
             this.Load += new System.EventHandler(this.Product_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnSearchResult.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -366,14 +255,5 @@
         private System.Windows.Forms.Panel pnSearchResult;
         private System.Windows.Forms.ComboBox cbSelectTableNPD;
         private System.Windows.Forms.Label lbItemHeader4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
     }
 }

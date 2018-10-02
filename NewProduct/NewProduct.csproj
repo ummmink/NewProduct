@@ -164,7 +164,6 @@
     <None Include="Resources\eraser.png" />
     <None Include="Resources\paper-printer.png" />
     <None Include="Resources\post-it.png" />
-    <None Include="Resources\recycling-day-calendar-reminder-page.png" />
     <None Include="Resources\repeat.png" />
   </ItemGroup>
   <ItemGroup>

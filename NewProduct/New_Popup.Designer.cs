@@ -547,7 +547,7 @@
             this.btnDetails.TabIndex = 52;
             this.btnDetails.Tag = "Black";
             this.btnDetails.Text = "Details";
-            this.toolTip1.SetToolTip(this.btnDetails, "Trade Marketing / Promotion Support");
+            this.toolTip1.SetToolTip(this.btnDetails, "Marketing / Trade Marketing / Promotion Support");
             this.btnDetails.UseVisualStyleBackColor = true;
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 

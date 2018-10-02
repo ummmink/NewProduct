@@ -1263,7 +1263,12 @@ namespace NewProduct
                 {
                     variablePublic.referenceNO = button.Name;
                     variablePublic.editPassing = true;
-                    //MessageBox.Show(button.Name);
+                    // Open New Form
+                    Form f = new New_Popup();
+                    f.MdiParent = this.ParentForm;
+                    f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                    f.Dock = DockStyle.Fill; //set form's dock property to fill
+                    f.Show();
                 }
                 else if (cbSelectTableNPD.SelectedIndex == 1) // Approved
                 {

@@ -1240,12 +1240,6 @@ namespace NewProduct
             }
         }
 
-        private void btnAddChennel_Click(object sender, EventArgs e)
-        {
-            txtRequestSubject.Text = "ช่องทางจัดจำหน่าย";
-            PanelRequestFormShow();
-        }
-
         private void cmbProductType_SelectedValueChanged(object sender, EventArgs e)
         {
             cmbProductItemNo.Focus();
@@ -1273,85 +1267,7 @@ namespace NewProduct
                 //MessageBox.Show(variablePublic.imagePath);
             }
         }
-
-        private void btnProductGroup_Click(object sender, EventArgs e)
-        {
-            txtRequestSubject.Text = "กลุ่มผลิตภัณฑ์";
-            PanelRequestFormShow();
-        }
-
-        private void PanelRequestFormShow()
-        {
-            pnRequestForm.Visible = true;
-            pnRequestForm.Location = new Point(488, 195);
-        }
-
-        private void btnSendMail_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                //Create the msg object to be sent
-                MailMessage msg = new MailMessage();
-                //Add your email address to the recipients             
-                msg.To.Add(cmbRequestRecipients.Text);
-                //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
-                MailAddress address = new MailAddress(txtRequestSender.Text);
-                msg.From = address;
-                //Append their name in the beginning of the subject
-                //msg.Subject = txtName.Text + " :  " + ddlSubject.Text;
-                //msg.Body = txtMessage.Text;
-                msg.Subject = "NPD : " + txtRequestSubject.Text;
-                msg.Body = txtRequestDescription.Text;
-
-
-                //Configure an SmtpClient to send the mail.
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                client.EnableSsl = true; //only enable this if your provider requires it
-                                         //Setup credentials to login to our sender email address ("UserName", "Password")
-                NetworkCredential credentials = new NetworkCredential(txtRequestSender.Text, txtRequestPassword.Text);
-
-                client.Credentials = credentials;
-
-                //Send the msg
-                client.Send(msg);
-
-                //Display some feedback to the user to let them know it was sent
-                MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                ClearAllRequestTextbox();
-                pnRequestForm.Visible = false;
-            }
-            catch
-            {
-                //If the message failed at some point, let the user know
-                MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void ClearAllRequestTextbox()
-        {
-            txtRequestDescription.Text = "";
-            txtRequestSender.Text = "";
-            txtRequestPassword.Text = "";
-        }
-
-        private void btnCloseMail_Click(object sender, EventArgs e)
-        {
-            pnRequestForm.Visible = false;
-        }
-
-        private void btnProductType_Click(object sender, EventArgs e)
-        {
-            txtRequestSubject.Text = "ประเภทผลิตภัณฑ์";
-            PanelRequestFormShow();
-        }
-
-        private void btnExtraPackaging_Click(object sender, EventArgs e)
-        {
-            txtRequestSubject.Text = "ส่วนเพิ่มเติมบรรจุภัณฑ์";
-            PanelRequestFormShow();
-        }
-
+        
         private void tbPrice_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

@@ -34,7 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbSelectTableNPD = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.lbItem = new System.Windows.Forms.Label();
             this.lsbInProgressSearchItems = new System.Windows.Forms.ListBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -45,6 +45,7 @@
             this.lbItemHeader3 = new System.Windows.Forms.Label();
             this.pnSearchResult = new System.Windows.Forms.Panel();
             this.lbItemHeader4 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,15 +56,15 @@
             this.txtSearchBox.Name = "txtSearchBox";
             this.txtSearchBox.Size = new System.Drawing.Size(425, 27);
             this.txtSearchBox.TabIndex = 0;
-            this.txtSearchBox.Enter += new System.EventHandler(this.txtSearchBox_Enter);
             this.txtSearchBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearchBox_KeyDown);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Salmon;
+            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.cbSelectTableNPD);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.lbItem);
             this.panel1.Controls.Add(this.txtSearchBox);
             this.panel1.Location = new System.Drawing.Point(44, 73);
@@ -95,24 +96,26 @@
             this.label4.TabIndex = 73;
             this.label4.Text = "Search";
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.BackColor = System.Drawing.Color.Salmon;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(677, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 35);
-            this.button1.TabIndex = 72;
-            this.button1.Tag = "";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.Salmon;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
+            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(677, 1);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(39, 35);
+            this.btnSearch.TabIndex = 72;
+            this.btnSearch.Tag = "";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnSearch, "Search");
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lbItem
             // 
@@ -211,6 +214,27 @@
             this.lbItemHeader4.Text = "Product Name EN";
             this.lbItemHeader4.Visible = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Salmon;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1230, 1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(39, 35);
+            this.btnExit.TabIndex = 75;
+            this.btnExit.Tag = "";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnExit, "Close");
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -244,7 +268,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbItem;
         private System.Windows.Forms.ListBox lsbInProgressSearchItems;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Panel pnLineTop;
@@ -255,5 +279,6 @@
         private System.Windows.Forms.Panel pnSearchResult;
         private System.Windows.Forms.ComboBox cbSelectTableNPD;
         private System.Windows.Forms.Label lbItemHeader4;
+        private System.Windows.Forms.Button btnExit;
     }
 }

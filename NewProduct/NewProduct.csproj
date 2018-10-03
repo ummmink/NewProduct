@@ -77,6 +77,12 @@
     <Compile Include="New_Popup.Designer.cs">
       <DependentUpon>New_Popup.cs</DependentUpon>
     </Compile>
+    <Compile Include="OldProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldProducts.Designer.cs">
+      <DependentUpon>OldProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Renew.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="New_Popup.resx">
       <DependentUpon>New_Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldProducts.resx">
+      <DependentUpon>OldProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Renew.resx">
       <DependentUpon>Renew.cs</DependentUpon>

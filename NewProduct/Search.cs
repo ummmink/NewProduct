@@ -1274,7 +1274,12 @@ namespace NewProduct
                 {
                     variablePublic.productID = button.Name;
                     variablePublic.editPassing = true;
-                    //MessageBox.Show(button.Name);
+                    // Open Old Products Form
+                    Form f = new OldProducts();
+                    f.MdiParent = this.ParentForm;
+                    f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                    f.Dock = DockStyle.Fill; //set form's dock property to fill
+                    f.Show();
                 }
             }
         }

@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             this.txtSearchBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.cbSelectTableNPD = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.lbItemHeader3 = new System.Windows.Forms.Label();
             this.pnSearchResult = new System.Windows.Forms.Panel();
             this.lbItemHeader4 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1273, 38);
             this.panel1.TabIndex = 47;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Salmon;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1230, 1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(39, 35);
+            this.btnExit.TabIndex = 75;
+            this.btnExit.Tag = "";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnExit, "Close");
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // cbSelectTableNPD
             // 
@@ -214,27 +235,6 @@
             this.lbItemHeader4.Text = "Product Name EN";
             this.lbItemHeader4.Visible = false;
             // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Salmon;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Salmon;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1230, 1);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(39, 35);
-            this.btnExit.TabIndex = 75;
-            this.btnExit.Tag = "";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.btnExit, "Close");
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -255,7 +255,7 @@
             this.Name = "Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product";
-            this.Load += new System.EventHandler(this.Product_Load);
+            this.Load += new System.EventHandler(this.Search_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

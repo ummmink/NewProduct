@@ -498,6 +498,7 @@
             this.txtCancelDescription = new System.Windows.Forms.TextBox();
             this.label145 = new System.Windows.Forms.Label();
             this.label146 = new System.Windows.Forms.Label();
+            this.bindingEditProduct = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnDetails.SuspendLayout();
@@ -534,6 +535,7 @@
             this.pnRequestForm.SuspendLayout();
             this.pnRejectForm.SuspendLayout();
             this.pnCancelForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingEditProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -5720,6 +5722,7 @@
             this.pnRejectForm.PerformLayout();
             this.pnCancelForm.ResumeLayout(false);
             this.pnCancelForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingEditProduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6165,5 +6168,6 @@
         private System.Windows.Forms.Label label145;
         private System.Windows.Forms.Label label146;
         private System.Windows.Forms.Button btnComment;
+        private System.Windows.Forms.BindingSource bindingEditProduct;
     }
 }

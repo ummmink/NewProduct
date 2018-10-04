@@ -28,10 +28,7 @@ namespace NewProduct
 
         private void Product_Load(object sender, EventArgs e)
         {
-            cbSelectTableNPD.SelectedIndex = 0;
-            AddListBoxInprogreddItems();
-            lsbInProgressSearchItems.SelectedIndex = 0;
-            lbItem.Text = lsbInProgressSearchItems.SelectedItem.ToString();
+            
         }
 
         private void AddListBoxInprogreddItems()
@@ -1327,6 +1324,18 @@ namespace NewProduct
         private void btnSearch_Click(object sender, EventArgs e)
         {
             SearchData();
+        }
+
+        private void Search_Load(object sender, EventArgs e)
+        {
+            cbSelectTableNPD.SelectedIndex = 0;
+            AddListBoxInprogreddItems();
+            lsbInProgressSearchItems.SelectedIndex = 0;
+            lbItem.Text = lsbInProgressSearchItems.SelectedItem.ToString();
+
+            // Clear Passing Value
+            variablePublic.referenceNO = "";
+            variablePublic.editPassing = false;
         }
     }
 }

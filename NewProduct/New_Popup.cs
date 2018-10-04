@@ -146,6 +146,20 @@ namespace NewProduct
         {
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
             dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
+            
+            // Edit Case
+            if (variablePublic.editPassing == true)
+            {
+                if (variablePublic.referenceNO != "")
+                {
+                    CommonDataSet ds = commonBiz.npd_select_all_product_temp_by_reference_no(variablePublic.referenceNO);
+                    bindingEditProduct.DataSource = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO;
+                }
+                else
+                {
+
+                }
+            }
         }
 
         private void rdbNeedSample_Click(object sender, EventArgs e)

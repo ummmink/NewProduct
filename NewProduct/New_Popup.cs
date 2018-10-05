@@ -145,8 +145,17 @@ namespace NewProduct
         private void New_Load(object sender, EventArgs e)
         {
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
-            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
-            
+            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);            
+
+            #region Binding Product Type
+            CommonDataSet dsProductType = commonBiz.npd_select_product_type();
+            cmbProductType.DisplayMember = "TYPE_DESC_ENG";
+            cmbProductType.ValueMember = "TYPE_ID";
+            cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
+
+            //cmbProductType.Text = "";
+            #endregion
+
             // Edit Case
             if (variablePublic.editPassing == true)
             {
@@ -154,6 +163,30 @@ namespace NewProduct
                 {
                     CommonDataSet ds = commonBiz.npd_select_all_product_temp_by_reference_no(variablePublic.referenceNO);
                     bindingEditProduct.DataSource = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO;
+
+                    #region Binding Edit Product
+                    tbReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
+                    cmbProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
+
+                    tbProductNameTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH");
+                    tbProductNameEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG");
+                    tbProductNameInvTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH_Invoice");
+                    tbProductNameInvEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG_Invoice");
+                    tbCaseQty.Text = "1"; // ลัง เป็น 1 เสมอ
+                    tbInnerQty.DataBindings.Add("Text", bindingEditProduct, "INNER_BOX");
+                    tbPackQty.DataBindings.Add("Text", bindingEditProduct, "PACKING");
+                    tbBottleQty.DataBindings.Add("Text", bindingEditProduct, "BOTTLE");
+                    tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND");
+                    tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE");
+                    tbDecoration1.DataBindings.Add("Text", bindingEditProduct, "DECORATION1");
+                    tbDecoratedArea1.DataBindings.Add("Text", bindingEditProduct, "DECORATED_AREA1");
+                    tbDecoration2.DataBindings.Add("Text", bindingEditProduct, "DECORATION2");
+                    tbDecoratedArea2.DataBindings.Add("Text", bindingEditProduct, "DECORATED_AREA2");
+                    tbDecoration3.DataBindings.Add("Text", bindingEditProduct, "DECORATION3");
+                    tbDecoratedArea3.DataBindings.Add("Text", bindingEditProduct, "DECORATED_AREA3");
+                    tbDecorationRemarkableOfBox.DataBindings.Add("Text", bindingEditProduct, "DECORATION_REMARKABLE_OF_BOX");
+                    tbDecorationOtherDetails.DataBindings.Add("Text", bindingEditProduct, "DECORATION_OTHER_DETAILS");
+                    #endregion
                 }
                 else
                 {
@@ -197,13 +230,6 @@ namespace NewProduct
         private void cmbProductType_DropDown(object sender, EventArgs e)
         {
             cmbProductItemNo.Text = "";
-
-            #region Binding Product Type
-            CommonDataSet dsProductType = commonBiz.npd_select_product_type();
-            cmbProductType.DisplayMember = "TYPE_DESC_ENG";
-            cmbProductType.ValueMember = "TYPE_ID";
-            cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
-            #endregion
         }
 
         private void cmbProductItemNo_DropDown(object sender, EventArgs e)
@@ -1262,7 +1288,7 @@ namespace NewProduct
 
         private void cmbProductType_SelectedValueChanged(object sender, EventArgs e)
         {
-            cmbProductItemNo.Focus();
+
         }
 
         private void cmbProductItemNo_SelectedValueChanged(object sender, EventArgs e)

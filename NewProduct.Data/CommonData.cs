@@ -40,6 +40,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_TH = "npd_select_product_by_product_name_th";
         private static string _NPD_SELECT_PRODUCT_BY_PRODUCT_NAME_ENG = "npd_select_product_by_product_name_eng";
         private static string _NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO = "npd_select_all_product_temp_by_reference_no";
+        private static string _NPD_SELECT_PRODUCT_ITEM_NO2 = "npd_select_product_item_no2";
 
         public CommonDataSet select_product_all_status()
         {
@@ -629,6 +630,23 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO.TableName, _NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_item_no2()
+        {
+            try
+            {
+                SqlParameter[] pm = null;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_PRODUCT_ITEM_NO2.TableName, _NPD_SELECT_PRODUCT_ITEM_NO2, pm, strConnCommon);
             }
             catch (Exception ex)
             {

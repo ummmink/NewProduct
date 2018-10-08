@@ -145,7 +145,7 @@ namespace NewProduct
         private void New_Load(object sender, EventArgs e)
         {
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
-            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);            
+            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
 
             #region Binding Product Type
             CommonDataSet dsProductType = commonBiz.npd_select_product_type();
@@ -165,9 +165,10 @@ namespace NewProduct
                     bindingEditProduct.DataSource = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO;
 
                     #region Binding Edit Product
+                    #region Details
                     tbReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
-                    cmbProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
-
+                    cmbProductType.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
+                    cmbProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO");
                     tbProductNameTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH");
                     tbProductNameEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG");
                     tbProductNameInvTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH_Invoice");
@@ -186,6 +187,19 @@ namespace NewProduct
                     tbDecoratedArea3.DataBindings.Add("Text", bindingEditProduct, "DECORATED_AREA3");
                     tbDecorationRemarkableOfBox.DataBindings.Add("Text", bindingEditProduct, "DECORATION_REMARKABLE_OF_BOX");
                     tbDecorationOtherDetails.DataBindings.Add("Text", bindingEditProduct, "DECORATION_OTHER_DETAILS");
+                    pbImageOfProduct.DataBindings.Add("ImageLocation", bindingEditProduct, "IMAGE_PATH");
+                    //cmbChannel
+                    //cmbOther
+                    tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
+                    dtpSampleProductDate.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_DATE");
+                    tbQtySamplePiece.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOTTLE");
+                    tbQtySampleCase.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOX");
+                    dtpOrderDate.DataBindings.Add("Text", bindingEditProduct, "SELL_DATE");
+                    tbQtyOrderPiece.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOTTLE");
+                    tbQtyOrderCase.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOX");
+                    //เงื่อนไขการส่ง
+                    tbRemark.DataBindings.Add("Text", bindingEditProduct, "REMARK");
+                    #endregion                    
                     #endregion
                 }
                 else
@@ -234,12 +248,7 @@ namespace NewProduct
 
         private void cmbProductItemNo_DropDown(object sender, EventArgs e)
         {
-            #region Binding Product Item_No
-            CommonDataSet dsProductItemNo = commonBiz.npd_select_product_item_no_desc_item_name_code_by_type_id(variablePublic.type_id);
-            cmbProductItemNo.DisplayMember = "ITEM_NAME".Substring("ITEM_NAME".IndexOf(":") + 1); ;
-            cmbProductItemNo.ValueMember = "ITEM_NO";
-            cmbProductItemNo.DataSource = dsProductItemNo.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
-            #endregion
+
         }
 
         private void cmbProductType_SelectionChangeCommitted(object sender, EventArgs e)
@@ -1231,7 +1240,7 @@ namespace NewProduct
 
 
                     //Configure an SmtpClient to send the mail.
-                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                     client.EnableSsl = true; //only enable this if your provider requires it
                                              //Setup credentials to login to our sender email address ("UserName", "Password")
                     NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");

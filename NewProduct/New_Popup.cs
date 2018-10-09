@@ -147,36 +147,37 @@ namespace NewProduct
             dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
             dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
 
-            #region Binding Product Type
-            CommonDataSet dsProductType = commonBiz.npd_select_product_type();
-            cmbProductType.DisplayMember = "TYPE_DESC_ENG";
-            cmbProductType.ValueMember = "TYPE_ID";
-            cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
-
-            //cmbProductType.Text = "";
-            #endregion
-
-            #region Binding Item NO2
-            CommonDataSet dsItemNO2 = commonBiz.npd_select_product_item_no2();
-            cmbProductItemNo.DisplayMember = "ITEM_NAME";
-            cmbProductItemNo.ValueMember = "ITEM_NO";
-            cmbProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
-            #endregion
-
-            // Edit Case
-            if (variablePublic.editPassing == true)
+            if (variablePublic.editPassing == false)
+            {
+                #region Binding Product Type
+                CommonDataSet dsProductType = commonBiz.npd_select_product_type();
+                cmbProductType.DisplayMember = "TYPE_DESC_ENG";
+                cmbProductType.ValueMember = "TYPE_ID";
+                cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
+                cmbProductType.Text = "";
+                #endregion
+            }
+            else if (variablePublic.editPassing == true)// Edit Case
             {
                 if (variablePublic.referenceNO != "")
                 {
                     CommonDataSet ds = commonBiz.npd_select_all_product_temp_by_reference_no(variablePublic.referenceNO);
                     bindingEditProduct.DataSource = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO;
 
-                    //#region Binding Item No
-                    //CommonDataSet dsItemNO = commonBiz.npd_select_product_item_no_desc_item_name_code_by_type_id(ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].TYPE_ID);
-                    //cmbProductItemNo.DisplayMember = "ITEM_NAME";
-                    //cmbProductItemNo.ValueMember = "ITEM_NO";
-                    //cmbProductItemNo.DataSource = dsItemNO.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
-                    //#endregion
+                    #region Binding Product Type
+                    CommonDataSet dsProductType = commonBiz.npd_select_product_type();
+                    cmbProductType.DisplayMember = "TYPE_DESC_ENG";
+                    cmbProductType.ValueMember = "TYPE_ID";
+                    cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
+                    //cmbProductType.Text = "";
+                    #endregion
+
+                    #region Binding Item NO2
+                    CommonDataSet dsItemNO2 = commonBiz.npd_select_product_item_no2();
+                    cmbProductItemNo.DisplayMember = "ITEM_NAME";
+                    cmbProductItemNo.ValueMember = "ITEM_NO";
+                    cmbProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
+                    #endregion
 
                     #region Binding Edit Product
                     #region Details
@@ -213,7 +214,27 @@ namespace NewProduct
                     tbQtyOrderCase.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOX");
                     //เงื่อนไขการส่ง
                     tbRemark.DataBindings.Add("Text", bindingEditProduct, "REMARK");
-                    #endregion                    
+                    #endregion
+
+                    #region Short Name
+
+                    #endregion
+
+                    #region Barcode
+
+                    #endregion
+
+                    #region Dimention
+
+                    #endregion
+
+                    #region Product ID
+
+                    #endregion
+
+                    #region Mat Code
+
+                    #endregion
                     #endregion
                 }
                 else
@@ -262,12 +283,12 @@ namespace NewProduct
 
         private void cmbProductItemNo_DropDown(object sender, EventArgs e)
         {
-            //#region Binding Item No
-            //CommonDataSet dsItemNO = commonBiz.npd_select_product_item_no_desc_item_name_code_by_type_id(variablePublic.type_id);
-            //cmbProductItemNo.DisplayMember = "ITEM_NAME";
-            //cmbProductItemNo.ValueMember = "ITEM_NO";
-            //cmbProductItemNo.DataSource = dsItemNO.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
-            //#endregion
+            #region Binding Item No
+            CommonDataSet dsItemNO = commonBiz.npd_select_product_item_no_desc_item_name_code_by_type_id(variablePublic.type_id);
+            cmbProductItemNo.DisplayMember = "ITEM_NAME";
+            cmbProductItemNo.ValueMember = "ITEM_NO";
+            cmbProductItemNo.DataSource = dsItemNO.NPD_SELECT_PRODUCT_ITEM_NO_DESC_ITEM_NAME_CODE_BY_TYPE_ID;
+            #endregion
         }
 
         private void cmbProductType_SelectionChangeCommitted(object sender, EventArgs e)

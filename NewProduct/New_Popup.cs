@@ -156,6 +156,22 @@ namespace NewProduct
                 cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
                 cmbProductType.Text = "";
                 #endregion
+
+                #region Binding Channel
+                CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active();
+                cmbChannel.DisplayMember = "SELL_NAME";
+                cmbChannel.ValueMember = "SELL_ID";
+                cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
+                cmbChannel.Text = "";
+                #endregion
+
+                #region Binding Product Other 
+                CommonDataSet dsProductOther = commonBiz.npd_select_product_other();
+                cmbOther.DisplayMember = "OTHER_NAME";
+                cmbOther.ValueMember = "OTHER_ID";
+                cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
+                cmbOther.Text = "";
+                #endregion
             }
             else if (variablePublic.editPassing == true)// Edit Case
             {
@@ -177,6 +193,20 @@ namespace NewProduct
                     cmbProductItemNo.DisplayMember = "ITEM_NAME";
                     cmbProductItemNo.ValueMember = "ITEM_NO";
                     cmbProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
+                    #endregion
+
+                    #region Binding Channel
+                    CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active();
+                    cmbChannel.DisplayMember = "SELL_NAME";
+                    cmbChannel.ValueMember = "SELL_ID";
+                    cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
+                    #endregion
+
+                    #region Binding Product Other 
+                    CommonDataSet dsProductOther = commonBiz.npd_select_product_other();
+                    cmbOther.DisplayMember = "OTHER_NAME";
+                    cmbOther.ValueMember = "OTHER_ID";
+                    cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
                     #endregion
 
                     #region Binding Edit Product
@@ -205,7 +235,7 @@ namespace NewProduct
                     tbDecorationRemarkableOfBox.DataBindings.Add("Text", bindingEditProduct, "DECORATION_REMARKABLE_OF_BOX");
                     tbDecorationOtherDetails.DataBindings.Add("Text", bindingEditProduct, "DECORATION_OTHER_DETAILS");
                     pbImageOfProduct.DataBindings.Add("ImageLocation", bindingEditProduct, "IMAGE_PATH");
-                    //cmbChannel
+                    cmbChannel.DataBindings.Add("Text", bindingEditProduct, "OTHER_ID");
                     //cmbOther
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
                     dtpSampleProductDate.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_DATE");
@@ -354,16 +384,6 @@ namespace NewProduct
             //e.Value = e.Value.ToString().Substring(0, e.Value.ToString().Length - 4);
             //e.Value=e.Value.ToString().Substring(e.Value.ToString().LastIndexOf(':') + 1);
             //e.Value = e.Value.ToString().Substring(0, e.Value.ToString().IndexOf(':'));
-        }
-
-        private void cmbChannel_DropDown(object sender, EventArgs e)
-        {
-            #region Binding Channel
-            CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active();
-            cmbChannel.DisplayMember = "SELL_NAME";
-            cmbChannel.ValueMember = "SELL_ID";
-            cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
-            #endregion
         }
 
         private void btnMixProducts_Click(object sender, EventArgs e)
@@ -891,16 +911,6 @@ namespace NewProduct
         {
             variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString().Substring(0, cmbChannel.SelectedValue.ToString().IndexOf(':')));
             variablePublic.channel = cmbChannel.SelectedValue.ToString().Substring(cmbChannel.SelectedValue.ToString().LastIndexOf(':') + 1);
-        }
-
-        private void cmbOther_DropDown(object sender, EventArgs e)
-        {
-            #region Binding Product Other 
-            CommonDataSet dsProductOther = commonBiz.npd_select_product_other();
-            cmbOther.DisplayMember = "OTHER_NAME";
-            cmbOther.ValueMember = "OTHER_ID";
-            cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
-            #endregion
         }
 
         private void cmbOther_SelectionChangeCommitted(object sender, EventArgs e)

@@ -192,8 +192,10 @@ namespace NewProduct
                     tbInnerQty.DataBindings.Add("Text", bindingEditProduct, "INNER_BOX");
                     tbPackQty.DataBindings.Add("Text", bindingEditProduct, "PACKING");
                     tbBottleQty.DataBindings.Add("Text", bindingEditProduct, "BOTTLE");
-                    tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND");
-                    tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE");
+                    tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
+                    tbPriceRecommend.DataBindings[0].FormatString = "c";
+                    tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
+                    tbPrice.DataBindings[0].FormatString = "c";
                     tbDecoration1.DataBindings.Add("Text", bindingEditProduct, "DECORATION1");
                     tbDecoratedArea1.DataBindings.Add("Text", bindingEditProduct, "DECORATED_AREA1");
                     tbDecoration2.DataBindings.Add("Text", bindingEditProduct, "DECORATION2");
@@ -235,6 +237,19 @@ namespace NewProduct
                     #region Mat Code
 
                     #endregion
+                    #endregion
+
+                    #region Show Product Mix on Panel
+                    pnDetailsProductMix.Visible = false;
+
+                    pnDetailsSub1.Visible = true;
+                    lbProductDetails.Text = "รายละเอียดผลิตภัณฑ์";
+
+                    //tbPriceRecommend.Text = (variablePublic.productTotalCasePrice).ToString("#,##0.00");
+
+                    ClearPanel();
+
+                    PreviewProductHamper();
                     #endregion
                 }
                 else
@@ -906,7 +921,7 @@ namespace NewProduct
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(tbSumQtyTotal.Text) == variablePublic.productBottleQty)
+            if (Int32.Parse(tbSumQtyTotal.Text) == variablePublic.productBottleQty) 
             {
                 pnDetailsProductMix.Visible = false;
 

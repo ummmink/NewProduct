@@ -255,7 +255,7 @@ namespace NewProduct
         private void cmbChannel_DropDown(object sender, EventArgs e)
         {
             #region Binding Channel
-            CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active();
+            CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active(variablePublic.editPassing);
             cmbChannel.DisplayMember = "SELL_NAME";
             cmbChannel.ValueMember = "SELL_ID";
             cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;

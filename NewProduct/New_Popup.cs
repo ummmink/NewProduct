@@ -144,11 +144,16 @@ namespace NewProduct
 
         private void New_Load(object sender, EventArgs e)
         {
-            dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
-            dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
-
-            if (variablePublic.editPassing == false)
+            if (variablePublic.editPassing == false) // New Case
             {
+                if (rdbNoSample.Checked == true)
+                {
+                    dtpSampleProductDate.CustomFormat = " ";
+                    dtpSampleProductDate.Format = DateTimePickerFormat.Custom;
+                }
+
+                dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
+
                 #region Binding Product Type
                 CommonDataSet dsProductType = commonBiz.npd_select_product_type();
                 cmbProductType.DisplayMember = "TYPE_DESC_ENG";
@@ -158,7 +163,7 @@ namespace NewProduct
                 #endregion
 
                 #region Binding Channel
-                CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active();
+                CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active(variablePublic.editPassing);
                 cmbChannel.DisplayMember = "SELL_NAME";
                 cmbChannel.ValueMember = "SELL_ID";
                 cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
@@ -196,7 +201,7 @@ namespace NewProduct
                     #endregion
 
                     #region Binding Channel
-                    CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active();
+                    CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active(variablePublic.editPassing);
                     cmbChannel.DisplayMember = "SELL_NAME";
                     cmbChannel.ValueMember = "SELL_ID";
                     cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
@@ -235,7 +240,7 @@ namespace NewProduct
                     tbDecorationRemarkableOfBox.DataBindings.Add("Text", bindingEditProduct, "DECORATION_REMARKABLE_OF_BOX");
                     tbDecorationOtherDetails.DataBindings.Add("Text", bindingEditProduct, "DECORATION_OTHER_DETAILS");
                     pbImageOfProduct.DataBindings.Add("ImageLocation", bindingEditProduct, "IMAGE_PATH");
-                    cmbChannel.DataBindings.Add("Text", bindingEditProduct, "OTHER_ID");
+                    cmbChannel.DataBindings.Add("SelectedValue", bindingEditProduct, "SELL_ID");
                     //cmbOther
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
                     dtpSampleProductDate.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_DATE");
@@ -294,12 +299,17 @@ namespace NewProduct
             if (rdbNeedSample.Checked == true)
             {
                 dtpSampleProductDate.Enabled = true;
+                dtpSampleProductDate.Format = DateTimePickerFormat.Custom;
+                dtpSampleProductDate.CustomFormat = "dd/MM/yyyy";
+                dtpSampleProductDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
                 tbQtySamplePiece.Enabled = true;
                 tbQtySampleCase.Enabled = true;
             }
             else
             {
                 dtpSampleProductDate.Enabled = false;
+                dtpSampleProductDate.CustomFormat = " ";
+                dtpSampleProductDate.Format = DateTimePickerFormat.Custom;
                 tbQtySamplePiece.Enabled = false;
                 tbQtySampleCase.Enabled = false;
             }
@@ -310,6 +320,8 @@ namespace NewProduct
             if (rdbNoSample.Checked == true)
             {
                 dtpSampleProductDate.Enabled = false;
+                dtpSampleProductDate.CustomFormat = " ";
+                dtpSampleProductDate.Format = DateTimePickerFormat.Custom;
                 tbQtySamplePiece.Enabled = false;
                 tbQtySampleCase.Enabled = false;
             }
@@ -931,7 +943,7 @@ namespace NewProduct
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(tbSumQtyTotal.Text) == variablePublic.productBottleQty) 
+            if (Int32.Parse(tbSumQtyTotal.Text) == variablePublic.productBottleQty)
             {
                 pnDetailsProductMix.Visible = false;
 
@@ -1327,16 +1339,16 @@ namespace NewProduct
 
                 // Status = 2 บันทึก : เพิ่มข้อมูลใหม่ รออนุมัติ : ขั้นตอน Details
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
-                    , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
-                    , variablePublic.productPackQty, variablePublic.productBottleQty, 45, dtpOrderDate.Value
-                    , variablePublic.productInnerBoxQty, variablePublic.productFreeQty, "Mink", (variablePublic.item_no2).ToString()
-                    , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
-                    , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text
-                    , tbDecoration2.Text, tbDecoration3.Text, variablePublic.imagePath, variablePublic.product_other_id
-                    , ConvertUtil.parseFloat(tbPrice.Text), variablePublic.productTotalCasePrice, variablePublic.productPrefix
-                    , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
-                    , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
-                    , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text, 1);
+                , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
+                , variablePublic.productPackQty, variablePublic.productBottleQty, 45, dtpOrderDate.Value
+                , variablePublic.productInnerBoxQty, variablePublic.productFreeQty, "Mink", (variablePublic.item_no2).ToString()
+                , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
+                , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text
+                , tbDecoration2.Text, tbDecoration3.Text, variablePublic.imagePath, variablePublic.product_other_id
+                , ConvertUtil.parseFloat(tbPrice.Text), variablePublic.productTotalCasePrice, variablePublic.productPrefix
+                , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
+                , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
+                , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text, 1);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
@@ -1745,6 +1757,17 @@ namespace NewProduct
         {
             txtCancelSubject.Text = "Discard/Reference No : " + tbReferenceNo.Text;
             PanelCancelFormShow();
+        }
+
+        private void cmbChannel_DropDown(object sender, EventArgs e)
+        {
+            #region Binding Channel
+            CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active(false);
+            cmbChannel.DisplayMember = "SELL_NAME";
+            cmbChannel.ValueMember = "SELL_ID";
+            cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
+            cmbChannel.Text = "";
+            #endregion
         }
 
         private void lineNotify(string msg)

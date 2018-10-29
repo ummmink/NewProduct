@@ -96,11 +96,14 @@ namespace NewProduct.Data
             }
         }
 
-        public CommonDataSet npd_select_product_sell_all_active()
+        public CommonDataSet npd_select_product_sell_all_active(bool editpassing)
         {
             try
             {
-                SqlParameter[] pm = null;
+                SqlParameter[] pm = new SqlParameter[1];
+
+                pm[0] = new SqlParameter("@EDITPASSING", SqlDbType.Bit);
+                pm[0].Value = editpassing;
 
                 CommonDataSet ds = new CommonDataSet();
 

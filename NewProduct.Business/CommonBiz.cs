@@ -49,11 +49,11 @@ namespace NewProduct.Business
             }
         }
 
-        public CommonDataSet npd_select_product_sell_all_active()
+        public CommonDataSet npd_select_product_sell_all_active(bool editpassing)
         {
             try
             {
-                return commonData.npd_select_product_sell_all_active();
+                return commonData.npd_select_product_sell_all_active(editpassing);
             }
             catch (Exception ex)
             {

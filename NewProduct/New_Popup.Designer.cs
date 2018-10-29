@@ -1234,6 +1234,7 @@
             this.cmbChannel.Name = "cmbChannel";
             this.cmbChannel.Size = new System.Drawing.Size(108, 22);
             this.cmbChannel.TabIndex = 0;
+            this.cmbChannel.DropDown += new System.EventHandler(this.cmbChannel_DropDown);
             this.cmbChannel.SelectionChangeCommitted += new System.EventHandler(this.cmbChannel_SelectionChangeCommitted);
             // 
             // label26
@@ -5638,10 +5639,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
+            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnRejectForm);
             this.Controls.Add(this.pnRequestForm);
             this.Controls.Add(this.pnCancelForm);
-            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnDimention);
             this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnBarcode);

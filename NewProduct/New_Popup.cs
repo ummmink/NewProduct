@@ -243,10 +243,24 @@ namespace NewProduct
                     cmbChannel.DataBindings.Add("SelectedValue", bindingEditProduct, "SELL_ID");
                     //cmbOther
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
-                    dtpSampleProductDate.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_DATE");
+                    //string testDate;
+                    //testDate = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_DATE.ToString();
+                    dtpSampleProductDate.DataBindings.Add("Value", bindingEditProduct, "SAMPLE_DATE", true);
+
+                    if (dtpSampleProductDate.Value.ToString() == "NULL")
+                    {
+                        rdbNoSample.Checked = true;
+                        dtpSampleProductDate.CustomFormat = " ";
+                        dtpSampleProductDate.Format = DateTimePickerFormat.Custom;
+                    }
+                    else
+                    {
+                        rdbNeedSample.Checked = true;
+                        //dtpSampleProductDate.DataBindings.Add("Value", bindingEditProduct, "SAMPLE_DATE");
+                    }
                     tbQtySamplePiece.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOTTLE");
                     tbQtySampleCase.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOX");
-                    dtpOrderDate.DataBindings.Add("Text", bindingEditProduct, "SELL_DATE");
+                    dtpOrderDate.DataBindings.Add("Value", bindingEditProduct, "SELL_DATE");
                     tbQtyOrderPiece.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOTTLE");
                     tbQtyOrderCase.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOX");
                     //เงื่อนไขการส่ง

@@ -1338,6 +1338,17 @@ namespace NewProduct
                 #endregion
 
                 // Status = 2 บันทึก : เพิ่มข้อมูลใหม่ รออนุมัติ : ขั้นตอน Details
+                bool wantSample;
+
+                if (rdbNeedSample.Checked == true)
+                {
+                    wantSample = true;
+                }
+                else
+                {
+                    wantSample = false;
+                }
+
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
                 , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
                 , variablePublic.productPackQty, variablePublic.productBottleQty, 45, dtpOrderDate.Value
@@ -1348,7 +1359,8 @@ namespace NewProduct
                 , ConvertUtil.parseFloat(tbPrice.Text), variablePublic.productTotalCasePrice, variablePublic.productPrefix
                 , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
                 , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
-                , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text, 1);
+                , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text, 1
+                , wantSample);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 

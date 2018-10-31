@@ -243,11 +243,8 @@ namespace NewProduct
                     cmbChannel.DataBindings.Add("SelectedValue", bindingEditProduct, "SELL_ID");
                     //cmbOther
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
-                    //string testDate;
-                    //testDate = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_DATE.ToString();
-                    dtpSampleProductDate.DataBindings.Add("Value", bindingEditProduct, "SAMPLE_DATE", true);
 
-                    if (dtpSampleProductDate.Value.ToString() == "NULL")
+                    if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_FLAG.ToString().Trim() == "0")
                     {
                         rdbNoSample.Checked = true;
                         dtpSampleProductDate.CustomFormat = " ";
@@ -256,7 +253,8 @@ namespace NewProduct
                     else
                     {
                         rdbNeedSample.Checked = true;
-                        //dtpSampleProductDate.DataBindings.Add("Value", bindingEditProduct, "SAMPLE_DATE");
+                        dtpSampleProductDate.Enabled = true;
+                        dtpSampleProductDate.DataBindings.Add("Value", bindingEditProduct, "SAMPLE_DATE");
                     }
                     tbQtySamplePiece.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOTTLE");
                     tbQtySampleCase.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOX");

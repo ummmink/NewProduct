@@ -244,18 +244,21 @@ namespace NewProduct
                     //cmbOther
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
 
-                    if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_FLAG.ToString().Trim() == "0")
+                    if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_FLAG.ToString().Trim() == "0") // ไม่ต้องการตัวอย่าง
                     {
                         rdbNoSample.Checked = true;
                         dtpSampleProductDate.CustomFormat = " ";
                         dtpSampleProductDate.Format = DateTimePickerFormat.Custom;
                     }
-                    else
+                    else //ต้องการตัวอย่าง
                     {
                         rdbNeedSample.Checked = true;
                         dtpSampleProductDate.Enabled = true;
+                        tbQtySamplePiece.Enabled = true;
+                        tbQtySampleCase.Enabled = true;
                         dtpSampleProductDate.DataBindings.Add("Value", bindingEditProduct, "SAMPLE_DATE");
                     }
+
                     tbQtySamplePiece.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOTTLE");
                     tbQtySampleCase.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOX");
                     dtpOrderDate.DataBindings.Add("Value", bindingEditProduct, "SELL_DATE");

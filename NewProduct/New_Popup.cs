@@ -259,11 +259,15 @@ namespace NewProduct
                         dtpSampleProductDate.DataBindings.Add("Value", bindingEditProduct, "SAMPLE_DATE");
                     }
 
-                    tbQtySamplePiece.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOTTLE");
-                    tbQtySampleCase.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOX");
+                    tbQtySamplePiece.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOTTLE", true);
+                    tbQtySamplePiece.DataBindings[0].FormatString = "c0";
+                    tbQtySampleCase.DataBindings.Add("Text", bindingEditProduct, "SAMPLE_QTY_BOX", true);
+                    tbQtySampleCase.DataBindings[0].FormatString = "c0";
                     dtpOrderDate.DataBindings.Add("Value", bindingEditProduct, "SELL_DATE");
-                    tbQtyOrderPiece.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOTTLE");
-                    tbQtyOrderCase.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOX");
+                    tbQtyOrderPiece.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOTTLE", true);
+                    tbQtyOrderPiece.DataBindings[0].FormatString = "c0";
+                    tbQtyOrderCase.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOX", true);
+                    tbQtyOrderCase.DataBindings[0].FormatString = "c0";
                     //เงื่อนไขการส่ง
                     tbRemark.DataBindings.Add("Text", bindingEditProduct, "REMARK");
                     #endregion
@@ -1795,6 +1799,59 @@ namespace NewProduct
             cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
             cmbChannel.Text = "";
             #endregion
+        }
+
+        private void btnShortNameSave_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("คุณต้องการจะบันทึกข้อมูล? ",
+                "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+                #region Update Short Name
+                int iUpdate = 0;
+                iUpdate = commonBiz.npd_update_short_name_in_product_temp(tbReferenceNo.Text, tbShortName.Text);
+                #endregion
+
+                if (iUpdate != 0)
+                {
+                    try
+                    {
+                        //Create the msg object to be sent
+                        MailMessage msg = new MailMessage();
+                        //Add your email address to the recipients             
+                        msg.To.Add("sarawana.n@scotch.co.th");
+                        //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                        MailAddress address = new MailAddress("npd.scotch@gmail.com");
+                        msg.From = address;
+                        //Append their name in the beginning of the subject
+                        msg.Subject = "NPD : Update Short Name success";
+                        msg.Body = "Reference No : " + tbReferenceNo.Text;
+
+
+                        //Configure an SmtpClient to send the mail.
+                        SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                        client.EnableSsl = true; //only enable this if your provider requires it
+                                                 //Setup credentials to login to our sender email address ("UserName", "Password")
+                        NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");
+
+                        client.Credentials = credentials;
+
+                        //Send the msg
+                        client.Send(msg);
+
+                        //Display some feedback to the user to let them know it was sent
+                        MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        //If the message failed at some point, let the user know
+                        MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+
+                MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                lineNotify("มีการเพิ่ม Short Name" + Environment.NewLine + "Reference No : " + tbReferenceNo.Text);
+            }            
         }
 
         private void lineNotify(string msg)

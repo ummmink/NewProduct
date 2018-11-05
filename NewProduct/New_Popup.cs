@@ -1331,7 +1331,7 @@ namespace NewProduct
                     MailAddress address = new MailAddress("npd.scotch@gmail.com");
                     msg.From = address;
                     //Append their name in the beginning of the subject
-                    msg.Subject = "NPD : Waiting for approval!!";
+                    msg.Subject = "NPD --> Details : Waiting for approval!!";
                     msg.Body = "Reference No : " + tbReferenceNo.Text;
 
 
@@ -1823,7 +1823,7 @@ namespace NewProduct
                         MailAddress address = new MailAddress("npd.scotch@gmail.com");
                         msg.From = address;
                         //Append their name in the beginning of the subject
-                        msg.Subject = "NPD : Update Short Name success";
+                        msg.Subject = "NPD --> Short Name : Successfully updated";
                         msg.Body = "Reference No : " + tbReferenceNo.Text;
 
 
@@ -1852,6 +1852,24 @@ namespace NewProduct
 
                 lineNotify("มีการเพิ่ม Short Name" + Environment.NewLine + "Reference No : " + tbReferenceNo.Text);
             }            
+        }
+
+        private void btnShortNameClose_Click(object sender, EventArgs e)
+        {
+            Form f = new Home_Trade();
+            f.MdiParent = this.ParentForm;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void btnMatCodeDKClose_Click(object sender, EventArgs e)
+        {
+            Form f = new Home_Trade();
+            f.MdiParent = this.ParentForm;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
         }
 
         private void lineNotify(string msg)

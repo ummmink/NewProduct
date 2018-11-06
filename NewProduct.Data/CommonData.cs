@@ -42,6 +42,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO = "npd_select_all_product_temp_by_reference_no";
         private static string _NPD_SELECT_PRODUCT_ITEM_NO2 = "npd_select_product_item_no2";
         private static string _NPD_UPDATE_SHORT_NAME_IN_PRODUCT_TEMP = "npd_update_short_name_in_product_temp";
+        private static string _NPD_INSERT_DK_PRODUCT_MAP_TEMP = "npd_insert_dk_product_map_temp";
 
         public CommonDataSet select_product_all_status()
         {
@@ -678,6 +679,33 @@ namespace NewProduct.Data
                 row = DAOFactory.getInstance().getDatabaseDAO().NonExcecute(_NPD_UPDATE_SHORT_NAME_IN_PRODUCT_TEMP, pm,
                     strConnCommon);
                 return row;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_insert_dk_product_map_temp(string reference_no, string mat_code, string product_id)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[3];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                pm[1] = new SqlParameter("@MAT_CODE", SqlDbType.VarChar);
+                pm[1].Value = mat_code;
+
+                pm[2] = new SqlParameter("@PRODUCT_ID", SqlDbType.VarChar);
+                pm[2].Value = product_id;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_INSERT_DK_PRODUCT_MAP_TEMP.TableName, _NPD_INSERT_DK_PRODUCT_MAP_TEMP, pm, strConnCommon);
 
             }
             catch (Exception ex)

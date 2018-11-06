@@ -326,5 +326,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_insert_dk_product_map_temp(string reference_no, string mat_code, string product_id)
+        {
+            try
+            {
+                return commonData.npd_insert_dk_product_map_temp(reference_no, mat_code, product_id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

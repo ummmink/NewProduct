@@ -30,26 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_Popup));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDetails = new System.Windows.Forms.Button();
             this.btnShortName = new System.Windows.Forms.Button();
             this.btnBarcode = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@
             this.pbImageOfProduct = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox66 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
             this.pnDetails = new System.Windows.Forms.Panel();
             this.btnComment = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -230,8 +231,6 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.btnMatCodeDKClose = new System.Windows.Forms.Button();
             this.btnMatCodeDKSave = new System.Windows.Forms.Button();
-            this.label111 = new System.Windows.Forms.Label();
-            this.tbMatCodeRemark = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tbMatCode = new System.Windows.Forms.TextBox();
             this.pnDimention = new System.Windows.Forms.Panel();
@@ -358,13 +357,63 @@
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.pnProductID = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.button23 = new System.Windows.Forms.Button();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label147 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label148 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label149 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label150 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label151 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label152 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label153 = new System.Windows.Forms.Label();
+            this.label154 = new System.Windows.Forms.Label();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.label155 = new System.Windows.Forms.Label();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.label156 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button18 = new System.Windows.Forms.Button();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.tbProductID = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -412,57 +461,6 @@
             this.label145 = new System.Windows.Forms.Label();
             this.label146 = new System.Windows.Forms.Label();
             this.bindingEditProduct = new System.Windows.Forms.BindingSource(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label72 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label147 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label148 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label149 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label150 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label151 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label152 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label153 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.label154 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.label155 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.label156 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnDetails.SuspendLayout();
@@ -487,6 +485,7 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.pnProductID.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingProduct)).BeginInit();
@@ -495,7 +494,6 @@
             this.pnRejectForm.SuspendLayout();
             this.pnCancelForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingEditProduct)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -634,6 +632,17 @@
             this.textBox66.Size = new System.Drawing.Size(478, 22);
             this.textBox66.TabIndex = 5;
             this.toolTip1.SetToolTip(this.textBox66, "จำนวนตัวอักษรถูกจำกัดที่จำนวน 36 ตัวอักษร เนื่องด้วยพื้นที่ช่องใน Invoice จำกัด ต" +
+        "้องการเพิ่มจำนวนตัวอักษร ติดต่อที่แผนกบัญชี");
+            // 
+            // textBox26
+            // 
+            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox26.Location = new System.Drawing.Point(292, 118);
+            this.textBox26.MaxLength = 36;
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(347, 22);
+            this.textBox26.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBox26, "จำนวนตัวอักษรถูกจำกัดที่จำนวน 36 ตัวอักษร เนื่องด้วยพื้นที่ช่องใน Invoice จำกัด ต" +
         "้องการเพิ่มจำนวนตัวอักษร ติดต่อที่แผนกบัญชี");
             // 
             // pnDetails
@@ -1841,14 +1850,14 @@
             // 
             this.grdFreeProductList.AllowUserToAddRows = false;
             this.grdFreeProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.grdFreeProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdFreeProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FproductID,
@@ -1860,20 +1869,20 @@
             this.fBottleP});
             this.grdFreeProductList.Location = new System.Drawing.Point(25, 331);
             this.grdFreeProductList.Name = "grdFreeProductList";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.NullValue = null;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.grdFreeProductList.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.NullValue = null;
-            this.grdFreeProductList.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.NullValue = null;
+            this.grdFreeProductList.RowsDefaultCellStyle = dataGridViewCellStyle23;
             this.grdFreeProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdFreeProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdFreeProductList.Size = new System.Drawing.Size(447, 84);
@@ -1938,14 +1947,14 @@
             // 
             this.grdMainProductList.AllowUserToAddRows = false;
             this.grdMainProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.grdMainProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productID,
@@ -1957,20 +1966,20 @@
             this.bottleP});
             this.grdMainProductList.Location = new System.Drawing.Point(25, 81);
             this.grdMainProductList.Name = "grdMainProductList";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.NullValue = null;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.NullValue = null;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.grdMainProductList.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.NullValue = null;
-            this.grdMainProductList.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.NullValue = null;
+            this.grdMainProductList.RowsDefaultCellStyle = dataGridViewCellStyle26;
             this.grdMainProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdMainProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdMainProductList.Size = new System.Drawing.Size(447, 84);
@@ -2258,14 +2267,14 @@
             // grdFreeProduct
             // 
             this.grdFreeProduct.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.grdFreeProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdFreeProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FPRODUCT_ID,
@@ -2281,9 +2290,9 @@
             this.grdFreeProduct.Location = new System.Drawing.Point(10, 287);
             this.grdFreeProduct.Name = "grdFreeProduct";
             this.grdFreeProduct.RowHeadersWidth = 15;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            this.grdFreeProduct.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
+            this.grdFreeProduct.RowsDefaultCellStyle = dataGridViewCellStyle33;
             this.grdFreeProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdFreeProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdFreeProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -2298,8 +2307,8 @@
             // FPRODUCT_ID
             // 
             this.FPRODUCT_ID.DataPropertyName = "PRODUCT_ID";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FPRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FPRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle28;
             this.FPRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.FPRODUCT_ID.HeaderText = "รหัสสินค้า";
             this.FPRODUCT_ID.Name = "FPRODUCT_ID";
@@ -2317,8 +2326,8 @@
             // FSIZE
             // 
             this.FSIZE.DataPropertyName = "SIZE";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FSIZE.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FSIZE.DefaultCellStyle = dataGridViewCellStyle29;
             this.FSIZE.HeaderText = "ขนาด";
             this.FSIZE.Name = "FSIZE";
             this.FSIZE.ReadOnly = true;
@@ -2327,9 +2336,9 @@
             // FQTY
             // 
             this.FQTY.DataPropertyName = "QTY";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.NullValue = null;
-            this.FQTY.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle30.NullValue = null;
+            this.FQTY.DefaultCellStyle = dataGridViewCellStyle30;
             this.FQTY.HeaderText = "จำนวน";
             this.FQTY.Name = "FQTY";
             this.FQTY.Width = 50;
@@ -2337,9 +2346,9 @@
             // FUNIT
             // 
             this.FUNIT.DataPropertyName = "UNIT";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.NullValue = "ขวด";
-            this.FUNIT.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.NullValue = "ขวด";
+            this.FUNIT.DefaultCellStyle = dataGridViewCellStyle31;
             this.FUNIT.HeaderText = "หน่วย";
             this.FUNIT.Name = "FUNIT";
             this.FUNIT.ReadOnly = true;
@@ -2349,9 +2358,9 @@
             // FLTP
             // 
             this.FLTP.DataPropertyName = "LTP";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "C2";
-            this.FLTP.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle32.Format = "C2";
+            this.FLTP.DefaultCellStyle = dataGridViewCellStyle32;
             this.FLTP.HeaderText = "LTP";
             this.FLTP.Name = "FLTP";
             this.FLTP.ReadOnly = true;
@@ -2425,14 +2434,14 @@
             // grdMainProduct
             // 
             this.grdMainProduct.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.grdMainProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PRODUCT_ID,
@@ -2448,9 +2457,9 @@
             this.grdMainProduct.Location = new System.Drawing.Point(10, 37);
             this.grdMainProduct.Name = "grdMainProduct";
             this.grdMainProduct.RowHeadersWidth = 15;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
-            this.grdMainProduct.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black;
+            this.grdMainProduct.RowsDefaultCellStyle = dataGridViewCellStyle40;
             this.grdMainProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdMainProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdMainProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -2465,8 +2474,8 @@
             // PRODUCT_ID
             // 
             this.PRODUCT_ID.DataPropertyName = "PRODUCT_ID";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.PRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle35;
             this.PRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.PRODUCT_ID.HeaderText = "รหัสสินค้า";
             this.PRODUCT_ID.Name = "PRODUCT_ID";
@@ -2484,8 +2493,8 @@
             // SIZE
             // 
             this.SIZE.DataPropertyName = "SIZE";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SIZE.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SIZE.DefaultCellStyle = dataGridViewCellStyle36;
             this.SIZE.HeaderText = "ขนาด";
             this.SIZE.Name = "SIZE";
             this.SIZE.ReadOnly = true;
@@ -2494,9 +2503,9 @@
             // QTY
             // 
             this.QTY.DataPropertyName = "QTY";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle17.NullValue = null;
-            this.QTY.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle37.NullValue = null;
+            this.QTY.DefaultCellStyle = dataGridViewCellStyle37;
             this.QTY.HeaderText = "จำนวน";
             this.QTY.Name = "QTY";
             this.QTY.Width = 50;
@@ -2504,9 +2513,9 @@
             // unitType
             // 
             this.unitType.DataPropertyName = "UNIT";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.NullValue = "ขวด";
-            this.unitType.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle38.NullValue = "ขวด";
+            this.unitType.DefaultCellStyle = dataGridViewCellStyle38;
             this.unitType.HeaderText = "หน่วย";
             this.unitType.Name = "unitType";
             this.unitType.ReadOnly = true;
@@ -2516,9 +2525,9 @@
             // LTP
             // 
             this.LTP.DataPropertyName = "LTP";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle19.Format = "C2";
-            this.LTP.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle39.Format = "C2";
+            this.LTP.DefaultCellStyle = dataGridViewCellStyle39;
             this.LTP.HeaderText = "LTP";
             this.LTP.Name = "LTP";
             this.LTP.ReadOnly = true;
@@ -2674,13 +2683,11 @@
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.btnMatCodeDKClose);
             this.panel14.Controls.Add(this.btnMatCodeDKSave);
-            this.panel14.Controls.Add(this.label111);
-            this.panel14.Controls.Add(this.tbMatCodeRemark);
             this.panel14.Controls.Add(this.label14);
             this.panel14.Controls.Add(this.tbMatCode);
             this.panel14.Location = new System.Drawing.Point(37, 44);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(509, 227);
+            this.panel14.Size = new System.Drawing.Size(509, 168);
             this.panel14.TabIndex = 17;
             // 
             // btnMatCodeDKClose
@@ -2692,7 +2699,7 @@
             this.btnMatCodeDKClose.ForeColor = System.Drawing.Color.White;
             this.btnMatCodeDKClose.Image = ((System.Drawing.Image)(resources.GetObject("btnMatCodeDKClose.Image")));
             this.btnMatCodeDKClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMatCodeDKClose.Location = new System.Drawing.Point(413, 157);
+            this.btnMatCodeDKClose.Location = new System.Drawing.Point(413, 92);
             this.btnMatCodeDKClose.Name = "btnMatCodeDKClose";
             this.btnMatCodeDKClose.Size = new System.Drawing.Size(67, 35);
             this.btnMatCodeDKClose.TabIndex = 11;
@@ -2711,7 +2718,7 @@
             this.btnMatCodeDKSave.ForeColor = System.Drawing.Color.White;
             this.btnMatCodeDKSave.Image = ((System.Drawing.Image)(resources.GetObject("btnMatCodeDKSave.Image")));
             this.btnMatCodeDKSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMatCodeDKSave.Location = new System.Drawing.Point(328, 157);
+            this.btnMatCodeDKSave.Location = new System.Drawing.Point(328, 92);
             this.btnMatCodeDKSave.Name = "btnMatCodeDKSave";
             this.btnMatCodeDKSave.Size = new System.Drawing.Size(80, 35);
             this.btnMatCodeDKSave.TabIndex = 10;
@@ -2719,26 +2726,7 @@
             this.btnMatCodeDKSave.Text = "บันทึก";
             this.btnMatCodeDKSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMatCodeDKSave.UseVisualStyleBackColor = false;
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label111.ForeColor = System.Drawing.Color.White;
-            this.label111.Location = new System.Drawing.Point(36, 71);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(59, 14);
-            this.label111.TabIndex = 8;
-            this.label111.Text = "หมายเหตุ";
-            // 
-            // tbMatCodeRemark
-            // 
-            this.tbMatCodeRemark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbMatCodeRemark.Location = new System.Drawing.Point(133, 67);
-            this.tbMatCodeRemark.Multiline = true;
-            this.tbMatCodeRemark.Name = "tbMatCodeRemark";
-            this.tbMatCodeRemark.Size = new System.Drawing.Size(347, 78);
-            this.tbMatCodeRemark.TabIndex = 9;
+            this.btnMatCodeDKSave.Click += new System.EventHandler(this.btnMatCodeDKSave_Click);
             // 
             // label14
             // 
@@ -4168,6 +4156,564 @@
             this.pnProductID.Tag = "PanelHide";
             this.pnProductID.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label47);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.label48);
+            this.panel2.Controls.Add(this.label49);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.label54);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.label56);
+            this.panel2.Controls.Add(this.textBox10);
+            this.panel2.Controls.Add(this.label57);
+            this.panel2.Controls.Add(this.textBox11);
+            this.panel2.Controls.Add(this.label71);
+            this.panel2.Controls.Add(this.textBox12);
+            this.panel2.Controls.Add(this.label72);
+            this.panel2.Controls.Add(this.textBox13);
+            this.panel2.Controls.Add(this.label73);
+            this.panel2.Controls.Add(this.button19);
+            this.panel2.Controls.Add(this.button20);
+            this.panel2.Controls.Add(this.textBox14);
+            this.panel2.Controls.Add(this.label74);
+            this.panel2.Controls.Add(this.panel9);
+            this.panel2.Controls.Add(this.panel15);
+            this.panel2.Controls.Add(this.textBox15);
+            this.panel2.Controls.Add(this.label75);
+            this.panel2.Controls.Add(this.label76);
+            this.panel2.Controls.Add(this.label77);
+            this.panel2.Controls.Add(this.button23);
+            this.panel2.Controls.Add(this.label78);
+            this.panel2.Controls.Add(this.label147);
+            this.panel2.Controls.Add(this.textBox16);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.label148);
+            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.textBox17);
+            this.panel2.Controls.Add(this.label149);
+            this.panel2.Controls.Add(this.textBox18);
+            this.panel2.Controls.Add(this.label150);
+            this.panel2.Controls.Add(this.textBox19);
+            this.panel2.Controls.Add(this.label151);
+            this.panel2.Controls.Add(this.textBox20);
+            this.panel2.Controls.Add(this.label152);
+            this.panel2.Controls.Add(this.textBox21);
+            this.panel2.Controls.Add(this.label153);
+            this.panel2.Controls.Add(this.textBox26);
+            this.panel2.Controls.Add(this.label154);
+            this.panel2.Controls.Add(this.textBox38);
+            this.panel2.Controls.Add(this.label155);
+            this.panel2.Controls.Add(this.textBox39);
+            this.panel2.Controls.Add(this.label156);
+            this.panel2.Location = new System.Drawing.Point(10, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(660, 564);
+            this.panel2.TabIndex = 29;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(161, 527);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(478, 22);
+            this.textBox1.TabIndex = 20;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label47.ForeColor = System.Drawing.Color.White;
+            this.label47.Location = new System.Drawing.Point(11, 531);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(111, 14);
+            this.label47.TabIndex = 69;
+            this.label47.Text = "รายละเอียดเพิ่มเติม";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(161, 499);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(478, 22);
+            this.textBox2.TabIndex = 19;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Location = new System.Drawing.Point(11, 501);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(129, 14);
+            this.label48.TabIndex = 67;
+            this.label48.Text = "จุดสังเกตของลังลูกฟูก";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label49.ForeColor = System.Drawing.Color.White;
+            this.label49.Location = new System.Drawing.Point(392, 475);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(68, 14);
+            this.label49.TabIndex = 66;
+            this.label49.Text = "บริเวณที่ติด";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Location = new System.Drawing.Point(466, 471);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(173, 22);
+            this.textBox4.TabIndex = 18;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label54.ForeColor = System.Drawing.Color.White;
+            this.label54.Location = new System.Drawing.Point(136, 475);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(20, 14);
+            this.label54.TabIndex = 65;
+            this.label54.Text = "3)";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Location = new System.Drawing.Point(161, 471);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(226, 22);
+            this.textBox5.TabIndex = 17;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label56.ForeColor = System.Drawing.Color.White;
+            this.label56.Location = new System.Drawing.Point(392, 447);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(68, 14);
+            this.label56.TabIndex = 64;
+            this.label56.Text = "บริเวณที่ติด";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Location = new System.Drawing.Point(466, 443);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(173, 22);
+            this.textBox10.TabIndex = 16;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label57.ForeColor = System.Drawing.Color.White;
+            this.label57.Location = new System.Drawing.Point(136, 447);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(20, 14);
+            this.label57.TabIndex = 63;
+            this.label57.Text = "2)";
+            // 
+            // textBox11
+            // 
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox11.Location = new System.Drawing.Point(161, 443);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(226, 22);
+            this.textBox11.TabIndex = 15;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label71.ForeColor = System.Drawing.Color.White;
+            this.label71.Location = new System.Drawing.Point(392, 419);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(68, 14);
+            this.label71.TabIndex = 62;
+            this.label71.Text = "บริเวณที่ติด";
+            // 
+            // textBox12
+            // 
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox12.Location = new System.Drawing.Point(466, 415);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(173, 22);
+            this.textBox12.TabIndex = 14;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label72.ForeColor = System.Drawing.Color.White;
+            this.label72.Location = new System.Drawing.Point(136, 419);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(20, 14);
+            this.label72.TabIndex = 61;
+            this.label72.Text = "1)";
+            // 
+            // textBox13
+            // 
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox13.Location = new System.Drawing.Point(161, 415);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(226, 22);
+            this.textBox13.TabIndex = 13;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label73.ForeColor = System.Drawing.Color.White;
+            this.label73.Location = new System.Drawing.Point(11, 419);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(88, 14);
+            this.label73.TabIndex = 60;
+            this.label73.Text = "อุปกรณ์ตกแต่ง";
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.SteelBlue;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button19.ForeColor = System.Drawing.Color.White;
+            this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
+            this.button19.Location = new System.Drawing.Point(602, 32);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(36, 27);
+            this.button19.TabIndex = 52;
+            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.SteelBlue;
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button20.ForeColor = System.Drawing.Color.White;
+            this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
+            this.button20.Location = new System.Drawing.Point(242, 32);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(36, 27);
+            this.button20.TabIndex = 51;
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox14.Location = new System.Drawing.Point(539, 386);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 22);
+            this.textBox14.TabIndex = 12;
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label74.ForeColor = System.Drawing.Color.White;
+            this.label74.Location = new System.Drawing.Point(433, 178);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(99, 14);
+            this.label74.TabIndex = 50;
+            this.label74.Text = "ราคาแนะนำ / ลัง";
+            // 
+            // panel9
+            // 
+            this.panel9.AutoScroll = true;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Location = new System.Drawing.Point(78, 318);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(561, 61);
+            this.panel9.TabIndex = 48;
+            // 
+            // panel15
+            // 
+            this.panel15.AutoScroll = true;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Location = new System.Drawing.Point(78, 206);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(561, 105);
+            this.panel15.TabIndex = 47;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox15.Location = new System.Drawing.Point(100, 6);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(179, 22);
+            this.textBox15.TabIndex = 0;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label75.ForeColor = System.Drawing.Color.White;
+            this.label75.Location = new System.Drawing.Point(11, 10);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(72, 14);
+            this.label75.TabIndex = 46;
+            this.label75.Text = "เลขที่อ้างอิง";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label76.Location = new System.Drawing.Point(11, 318);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(61, 14);
+            this.label76.TabIndex = 39;
+            this.label76.Text = "สินค้าแถม";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label77.ForeColor = System.Drawing.Color.White;
+            this.label77.Location = new System.Drawing.Point(11, 206);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(61, 14);
+            this.label77.TabIndex = 25;
+            this.label77.Text = "สินค้าปกติ";
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.Goldenrod;
+            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button23.ForeColor = System.Drawing.Color.White;
+            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button23.Location = new System.Drawing.Point(323, 174);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(97, 23);
+            this.button23.TabIndex = 11;
+            this.button23.Text = "สินค้าประกอบ";
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label78.ForeColor = System.Drawing.Color.White;
+            this.label78.Location = new System.Drawing.Point(11, 38);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(86, 14);
+            this.label78.TabIndex = 8;
+            this.label78.Text = "กลุ่มผลิตภัณฑ์";
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label147.ForeColor = System.Drawing.Color.White;
+            this.label147.Location = new System.Drawing.Point(292, 38);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(48, 14);
+            this.label147.TabIndex = 10;
+            this.label147.Text = "ประเภท";
+            // 
+            // textBox16
+            // 
+            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox16.Location = new System.Drawing.Point(539, 174);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(100, 22);
+            this.textBox16.TabIndex = 12;
+            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(100, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(136, 22);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // label148
+            // 
+            this.label148.AutoSize = true;
+            this.label148.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label148.ForeColor = System.Drawing.Color.White;
+            this.label148.Location = new System.Drawing.Point(401, 390);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(131, 14);
+            this.label148.TabIndex = 20;
+            this.label148.Text = "ราคาขาย/ลัง (Ex-Vat)";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(345, 34);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(250, 22);
+            this.comboBox2.TabIndex = 2;
+            // 
+            // textBox17
+            // 
+            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox17.Location = new System.Drawing.Point(282, 174);
+            this.textBox17.MaxLength = 2;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(32, 22);
+            this.textBox17.TabIndex = 10;
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label149
+            // 
+            this.label149.AutoSize = true;
+            this.label149.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label149.ForeColor = System.Drawing.Color.White;
+            this.label149.Location = new System.Drawing.Point(261, 178);
+            this.label149.Name = "label149";
+            this.label149.Size = new System.Drawing.Size(15, 14);
+            this.label149.TabIndex = 11;
+            this.label149.Text = "X";
+            // 
+            // textBox18
+            // 
+            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox18.Location = new System.Drawing.Point(223, 174);
+            this.textBox18.MaxLength = 2;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(32, 22);
+            this.textBox18.TabIndex = 9;
+            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label150.ForeColor = System.Drawing.Color.White;
+            this.label150.Location = new System.Drawing.Point(202, 178);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(15, 14);
+            this.label150.TabIndex = 16;
+            this.label150.Text = "X";
+            // 
+            // textBox19
+            // 
+            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox19.Location = new System.Drawing.Point(164, 174);
+            this.textBox19.MaxLength = 1;
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(32, 22);
+            this.textBox19.TabIndex = 8;
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label151.ForeColor = System.Drawing.Color.White;
+            this.label151.Location = new System.Drawing.Point(143, 178);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(15, 14);
+            this.label151.TabIndex = 14;
+            this.label151.Text = "X";
+            // 
+            // textBox20
+            // 
+            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox20.Location = new System.Drawing.Point(105, 174);
+            this.textBox20.MaxLength = 1;
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(32, 22);
+            this.textBox20.TabIndex = 7;
+            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label152.ForeColor = System.Drawing.Color.White;
+            this.label152.Location = new System.Drawing.Point(11, 178);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(86, 14);
+            this.label152.TabIndex = 13;
+            this.label152.Text = "ขนาดบรรจุ/ลัง";
+            // 
+            // textBox21
+            // 
+            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox21.Location = new System.Drawing.Point(292, 146);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(347, 22);
+            this.textBox21.TabIndex = 6;
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label153.ForeColor = System.Drawing.Color.White;
+            this.label153.Location = new System.Drawing.Point(11, 150);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(268, 14);
+            this.label153.TabIndex = 11;
+            this.label153.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (English)";
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label154.ForeColor = System.Drawing.Color.White;
+            this.label154.Location = new System.Drawing.Point(11, 94);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(281, 14);
+            this.label154.TabIndex = 8;
+            this.label154.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (English)";
+            // 
+            // textBox38
+            // 
+            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox38.Location = new System.Drawing.Point(292, 90);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(347, 22);
+            this.textBox38.TabIndex = 4;
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label155.ForeColor = System.Drawing.Color.White;
+            this.label155.Location = new System.Drawing.Point(11, 66);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(261, 14);
+            this.label155.TabIndex = 1;
+            this.label155.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (ไทย)";
+            // 
+            // textBox39
+            // 
+            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox39.Location = new System.Drawing.Point(292, 62);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(347, 22);
+            this.textBox39.TabIndex = 3;
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label156.ForeColor = System.Drawing.Color.White;
+            this.label156.Location = new System.Drawing.Point(11, 122);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(248, 14);
+            this.label156.TabIndex = 3;
+            this.label156.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (ไทย)";
+            // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.Firebrick;
@@ -4230,7 +4776,7 @@
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.button18);
-            this.panel8.Controls.Add(this.textBox25);
+            this.panel8.Controls.Add(this.tbProductID);
             this.panel8.Controls.Add(this.label53);
             this.panel8.Location = new System.Drawing.Point(675, 25);
             this.panel8.Name = "panel8";
@@ -4247,13 +4793,13 @@
             this.button18.Text = "ตรวจสอบ";
             this.button18.UseVisualStyleBackColor = true;
             // 
-            // textBox25
+            // tbProductID
             // 
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox25.Location = new System.Drawing.Point(87, 13);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(169, 22);
-            this.textBox25.TabIndex = 1;
+            this.tbProductID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductID.Location = new System.Drawing.Point(87, 13);
+            this.tbProductID.Name = "tbProductID";
+            this.tbProductID.Size = new System.Drawing.Size(169, 22);
+            this.tbProductID.TabIndex = 1;
             // 
             // label53
             // 
@@ -4788,586 +5334,17 @@
             this.label146.TabIndex = 62;
             this.label146.Text = "E-mail : ผู้รับเรื่อง";
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label47);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.label48);
-            this.panel2.Controls.Add(this.label49);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.label54);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.label56);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.label57);
-            this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Controls.Add(this.label71);
-            this.panel2.Controls.Add(this.textBox12);
-            this.panel2.Controls.Add(this.label72);
-            this.panel2.Controls.Add(this.textBox13);
-            this.panel2.Controls.Add(this.label73);
-            this.panel2.Controls.Add(this.button19);
-            this.panel2.Controls.Add(this.button20);
-            this.panel2.Controls.Add(this.textBox14);
-            this.panel2.Controls.Add(this.label74);
-            this.panel2.Controls.Add(this.panel9);
-            this.panel2.Controls.Add(this.panel15);
-            this.panel2.Controls.Add(this.textBox15);
-            this.panel2.Controls.Add(this.label75);
-            this.panel2.Controls.Add(this.label76);
-            this.panel2.Controls.Add(this.label77);
-            this.panel2.Controls.Add(this.button23);
-            this.panel2.Controls.Add(this.label78);
-            this.panel2.Controls.Add(this.label147);
-            this.panel2.Controls.Add(this.textBox16);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.label148);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.textBox17);
-            this.panel2.Controls.Add(this.label149);
-            this.panel2.Controls.Add(this.textBox18);
-            this.panel2.Controls.Add(this.label150);
-            this.panel2.Controls.Add(this.textBox19);
-            this.panel2.Controls.Add(this.label151);
-            this.panel2.Controls.Add(this.textBox20);
-            this.panel2.Controls.Add(this.label152);
-            this.panel2.Controls.Add(this.textBox21);
-            this.panel2.Controls.Add(this.label153);
-            this.panel2.Controls.Add(this.textBox26);
-            this.panel2.Controls.Add(this.label154);
-            this.panel2.Controls.Add(this.textBox38);
-            this.panel2.Controls.Add(this.label155);
-            this.panel2.Controls.Add(this.textBox39);
-            this.panel2.Controls.Add(this.label156);
-            this.panel2.Location = new System.Drawing.Point(10, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(660, 564);
-            this.panel2.TabIndex = 29;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(161, 527);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(478, 22);
-            this.textBox1.TabIndex = 20;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Location = new System.Drawing.Point(11, 531);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(111, 14);
-            this.label47.TabIndex = 69;
-            this.label47.Text = "รายละเอียดเพิ่มเติม";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(161, 499);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(478, 22);
-            this.textBox2.TabIndex = 19;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(11, 501);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(129, 14);
-            this.label48.TabIndex = 67;
-            this.label48.Text = "จุดสังเกตของลังลูกฟูก";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label49.ForeColor = System.Drawing.Color.White;
-            this.label49.Location = new System.Drawing.Point(392, 475);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(68, 14);
-            this.label49.TabIndex = 66;
-            this.label49.Text = "บริเวณที่ติด";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(466, 471);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(173, 22);
-            this.textBox4.TabIndex = 18;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label54.ForeColor = System.Drawing.Color.White;
-            this.label54.Location = new System.Drawing.Point(136, 475);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(20, 14);
-            this.label54.TabIndex = 65;
-            this.label54.Text = "3)";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(161, 471);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(226, 22);
-            this.textBox5.TabIndex = 17;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label56.ForeColor = System.Drawing.Color.White;
-            this.label56.Location = new System.Drawing.Point(392, 447);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(68, 14);
-            this.label56.TabIndex = 64;
-            this.label56.Text = "บริเวณที่ติด";
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(466, 443);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(173, 22);
-            this.textBox10.TabIndex = 16;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label57.ForeColor = System.Drawing.Color.White;
-            this.label57.Location = new System.Drawing.Point(136, 447);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(20, 14);
-            this.label57.TabIndex = 63;
-            this.label57.Text = "2)";
-            // 
-            // textBox11
-            // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Location = new System.Drawing.Point(161, 443);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(226, 22);
-            this.textBox11.TabIndex = 15;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label71.ForeColor = System.Drawing.Color.White;
-            this.label71.Location = new System.Drawing.Point(392, 419);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(68, 14);
-            this.label71.TabIndex = 62;
-            this.label71.Text = "บริเวณที่ติด";
-            // 
-            // textBox12
-            // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(466, 415);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(173, 22);
-            this.textBox12.TabIndex = 14;
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label72.ForeColor = System.Drawing.Color.White;
-            this.label72.Location = new System.Drawing.Point(136, 419);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(20, 14);
-            this.label72.TabIndex = 61;
-            this.label72.Text = "1)";
-            // 
-            // textBox13
-            // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Location = new System.Drawing.Point(161, 415);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(226, 22);
-            this.textBox13.TabIndex = 13;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label73.ForeColor = System.Drawing.Color.White;
-            this.label73.Location = new System.Drawing.Point(11, 419);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(88, 14);
-            this.label73.TabIndex = 60;
-            this.label73.Text = "อุปกรณ์ตกแต่ง";
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.SteelBlue;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
-            this.button19.Location = new System.Drawing.Point(602, 32);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(36, 27);
-            this.button19.TabIndex = 52;
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.SteelBlue;
-            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
-            this.button20.Location = new System.Drawing.Point(242, 32);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(36, 27);
-            this.button20.TabIndex = 51;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // textBox14
-            // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Location = new System.Drawing.Point(539, 386);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 22);
-            this.textBox14.TabIndex = 12;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label74.ForeColor = System.Drawing.Color.White;
-            this.label74.Location = new System.Drawing.Point(433, 178);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(99, 14);
-            this.label74.TabIndex = 50;
-            this.label74.Text = "ราคาแนะนำ / ลัง";
-            // 
-            // panel9
-            // 
-            this.panel9.AutoScroll = true;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(78, 318);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(561, 61);
-            this.panel9.TabIndex = 48;
-            // 
-            // panel15
-            // 
-            this.panel15.AutoScroll = true;
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Location = new System.Drawing.Point(78, 206);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(561, 105);
-            this.panel15.TabIndex = 47;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Location = new System.Drawing.Point(100, 6);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(179, 22);
-            this.textBox15.TabIndex = 0;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label75.ForeColor = System.Drawing.Color.White;
-            this.label75.Location = new System.Drawing.Point(11, 10);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(72, 14);
-            this.label75.TabIndex = 46;
-            this.label75.Text = "เลขที่อ้างอิง";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label76.Location = new System.Drawing.Point(11, 318);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(61, 14);
-            this.label76.TabIndex = 39;
-            this.label76.Text = "สินค้าแถม";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label77.ForeColor = System.Drawing.Color.White;
-            this.label77.Location = new System.Drawing.Point(11, 206);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(61, 14);
-            this.label77.TabIndex = 25;
-            this.label77.Text = "สินค้าปกติ";
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.Goldenrod;
-            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button23.ForeColor = System.Drawing.Color.White;
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(323, 174);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(97, 23);
-            this.button23.TabIndex = 11;
-            this.button23.Text = "สินค้าประกอบ";
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label78.ForeColor = System.Drawing.Color.White;
-            this.label78.Location = new System.Drawing.Point(11, 38);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(86, 14);
-            this.label78.TabIndex = 8;
-            this.label78.Text = "กลุ่มผลิตภัณฑ์";
-            // 
-            // label147
-            // 
-            this.label147.AutoSize = true;
-            this.label147.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label147.ForeColor = System.Drawing.Color.White;
-            this.label147.Location = new System.Drawing.Point(292, 38);
-            this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(48, 14);
-            this.label147.TabIndex = 10;
-            this.label147.Text = "ประเภท";
-            // 
-            // textBox16
-            // 
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Location = new System.Drawing.Point(539, 174);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(100, 22);
-            this.textBox16.TabIndex = 12;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(136, 22);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // label148
-            // 
-            this.label148.AutoSize = true;
-            this.label148.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label148.ForeColor = System.Drawing.Color.White;
-            this.label148.Location = new System.Drawing.Point(401, 390);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(131, 14);
-            this.label148.TabIndex = 20;
-            this.label148.Text = "ราคาขาย/ลัง (Ex-Vat)";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(345, 34);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(250, 22);
-            this.comboBox2.TabIndex = 2;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox17.Location = new System.Drawing.Point(282, 174);
-            this.textBox17.MaxLength = 2;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(32, 22);
-            this.textBox17.TabIndex = 10;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label149
-            // 
-            this.label149.AutoSize = true;
-            this.label149.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label149.ForeColor = System.Drawing.Color.White;
-            this.label149.Location = new System.Drawing.Point(261, 178);
-            this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(15, 14);
-            this.label149.TabIndex = 11;
-            this.label149.Text = "X";
-            // 
-            // textBox18
-            // 
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox18.Location = new System.Drawing.Point(223, 174);
-            this.textBox18.MaxLength = 2;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(32, 22);
-            this.textBox18.TabIndex = 9;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label150.ForeColor = System.Drawing.Color.White;
-            this.label150.Location = new System.Drawing.Point(202, 178);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(15, 14);
-            this.label150.TabIndex = 16;
-            this.label150.Text = "X";
-            // 
-            // textBox19
-            // 
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox19.Location = new System.Drawing.Point(164, 174);
-            this.textBox19.MaxLength = 1;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(32, 22);
-            this.textBox19.TabIndex = 8;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label151.ForeColor = System.Drawing.Color.White;
-            this.label151.Location = new System.Drawing.Point(143, 178);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(15, 14);
-            this.label151.TabIndex = 14;
-            this.label151.Text = "X";
-            // 
-            // textBox20
-            // 
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox20.Location = new System.Drawing.Point(105, 174);
-            this.textBox20.MaxLength = 1;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(32, 22);
-            this.textBox20.TabIndex = 7;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label152
-            // 
-            this.label152.AutoSize = true;
-            this.label152.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label152.ForeColor = System.Drawing.Color.White;
-            this.label152.Location = new System.Drawing.Point(11, 178);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(86, 14);
-            this.label152.TabIndex = 13;
-            this.label152.Text = "ขนาดบรรจุ/ลัง";
-            // 
-            // textBox21
-            // 
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox21.Location = new System.Drawing.Point(292, 146);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(347, 22);
-            this.textBox21.TabIndex = 6;
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label153.ForeColor = System.Drawing.Color.White;
-            this.label153.Location = new System.Drawing.Point(11, 150);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(268, 14);
-            this.label153.TabIndex = 11;
-            this.label153.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (English)";
-            // 
-            // textBox26
-            // 
-            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox26.Location = new System.Drawing.Point(292, 118);
-            this.textBox26.MaxLength = 36;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(347, 22);
-            this.textBox26.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.textBox26, "จำนวนตัวอักษรถูกจำกัดที่จำนวน 36 ตัวอักษร เนื่องด้วยพื้นที่ช่องใน Invoice จำกัด ต" +
-        "้องการเพิ่มจำนวนตัวอักษร ติดต่อที่แผนกบัญชี");
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label154.ForeColor = System.Drawing.Color.White;
-            this.label154.Location = new System.Drawing.Point(11, 94);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(281, 14);
-            this.label154.TabIndex = 8;
-            this.label154.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (English)";
-            // 
-            // textBox38
-            // 
-            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox38.Location = new System.Drawing.Point(292, 90);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(347, 22);
-            this.textBox38.TabIndex = 4;
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label155.ForeColor = System.Drawing.Color.White;
-            this.label155.Location = new System.Drawing.Point(11, 66);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(261, 14);
-            this.label155.TabIndex = 1;
-            this.label155.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (ไทย)";
-            // 
-            // textBox39
-            // 
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox39.Location = new System.Drawing.Point(292, 62);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(347, 22);
-            this.textBox39.TabIndex = 3;
-            // 
-            // label156
-            // 
-            this.label156.AutoSize = true;
-            this.label156.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label156.ForeColor = System.Drawing.Color.White;
-            this.label156.Location = new System.Drawing.Point(11, 122);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(248, 14);
-            this.label156.TabIndex = 3;
-            this.label156.Text = "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (ไทย)";
-            // 
             // New_Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
-            this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.pnShortName);
+            this.Controls.Add(this.pnMatCodeDK);
+            this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnDimention);
-            this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnBarcode);
             this.Controls.Add(this.pnRejectForm);
             this.Controls.Add(this.pnRequestForm);
@@ -5426,6 +5403,8 @@
             this.panel7.PerformLayout();
             this.pnProductID.ResumeLayout(false);
             this.pnProductID.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -5439,8 +5418,6 @@
             this.pnCancelForm.ResumeLayout(false);
             this.pnCancelForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingEditProduct)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5561,7 +5538,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox tbProductID;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Panel panel10;
@@ -5653,8 +5630,6 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox tbMatCode;
-        private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.TextBox tbMatCodeRemark;
         private System.Windows.Forms.Panel pnMainProduct;
         private System.Windows.Forms.Panel pnDetailsProductMix;
         private System.Windows.Forms.Button btnBack;

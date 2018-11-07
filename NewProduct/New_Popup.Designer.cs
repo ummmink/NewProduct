@@ -60,7 +60,7 @@
             this.tbProductNameInvTH = new System.Windows.Forms.TextBox();
             this.pbImageOfProduct = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox66 = new System.Windows.Forms.TextBox();
+            this.tbTechPrintCreatedDate = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.pnDetails = new System.Windows.Forms.Panel();
             this.btnComment = new System.Windows.Forms.Button();
@@ -234,87 +234,87 @@
             this.label14 = new System.Windows.Forms.Label();
             this.tbMatCode = new System.Windows.Forms.TextBox();
             this.pnDimention = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnDimentionClose = new System.Windows.Forms.Button();
+            this.btnDimentionSave = new System.Windows.Forms.Button();
             this.label92 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox71 = new System.Windows.Forms.TextBox();
+            this.tbOther = new System.Windows.Forms.TextBox();
             this.label110 = new System.Windows.Forms.Label();
-            this.textBox70 = new System.Windows.Forms.TextBox();
+            this.tbOtherProduction = new System.Windows.Forms.TextBox();
             this.label108 = new System.Windows.Forms.Label();
-            this.textBox69 = new System.Windows.Forms.TextBox();
+            this.tbCaseProduction = new System.Windows.Forms.TextBox();
             this.label107 = new System.Windows.Forms.Label();
-            this.textBox64 = new System.Windows.Forms.TextBox();
+            this.tbInnerProduction = new System.Windows.Forms.TextBox();
             this.label104 = new System.Windows.Forms.Label();
-            this.textBox63 = new System.Windows.Forms.TextBox();
+            this.tbPackProduction = new System.Windows.Forms.TextBox();
             this.label101 = new System.Windows.Forms.Label();
-            this.textBox60 = new System.Windows.Forms.TextBox();
+            this.tbCapacity = new System.Windows.Forms.TextBox();
             this.label100 = new System.Windows.Forms.Label();
-            this.textBox57 = new System.Windows.Forms.TextBox();
+            this.tbArrangingPallet = new System.Windows.Forms.TextBox();
             this.label97 = new System.Windows.Forms.Label();
-            this.textBox54 = new System.Windows.Forms.TextBox();
+            this.tbArranging = new System.Windows.Forms.TextBox();
             this.label96 = new System.Windows.Forms.Label();
-            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.tbBarcodeArea = new System.Windows.Forms.TextBox();
             this.label93 = new System.Windows.Forms.Label();
-            this.textBox65 = new System.Windows.Forms.TextBox();
+            this.tbPrintArea = new System.Windows.Forms.TextBox();
             this.label112 = new System.Windows.Forms.Label();
             this.label113 = new System.Windows.Forms.Label();
-            this.textBox67 = new System.Windows.Forms.TextBox();
+            this.tbPackaging = new System.Windows.Forms.TextBox();
             this.label114 = new System.Windows.Forms.Label();
-            this.textBox68 = new System.Windows.Forms.TextBox();
+            this.tbShortNameFactory = new System.Windows.Forms.TextBox();
             this.label115 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label91 = new System.Windows.Forms.Label();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.tbCaseGrossWeight = new System.Windows.Forms.TextBox();
+            this.tbCaseNetWeight = new System.Windows.Forms.TextBox();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
+            this.tbInnerGrossWeight = new System.Windows.Forms.TextBox();
+            this.tbInnerNetWeight = new System.Windows.Forms.TextBox();
             this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
+            this.tbPackGrossWeight = new System.Windows.Forms.TextBox();
+            this.tbPackNetWeight = new System.Windows.Forms.TextBox();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
             this.label106 = new System.Windows.Forms.Label();
-            this.textBox61 = new System.Windows.Forms.TextBox();
-            this.textBox62 = new System.Windows.Forms.TextBox();
+            this.tbBottleGrossWeight = new System.Windows.Forms.TextBox();
+            this.tbBottleNetWeight = new System.Windows.Forms.TextBox();
             this.label109 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label86 = new System.Windows.Forms.Label();
-            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.tbCaseHeight = new System.Windows.Forms.TextBox();
             this.label87 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.tbCaseLength = new System.Windows.Forms.TextBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.tbCaseWidth = new System.Windows.Forms.TextBox();
             this.label89 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
-            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.tbInnerHeight = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.tbInnerLength = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.tbInnerWidth = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.tbPackHeight = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.tbPackLength = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.tbPackWidth = new System.Windows.Forms.TextBox();
             this.label81 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.tbBottleHeight = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.tbBottleLength = new System.Windows.Forms.TextBox();
             this.label79 = new System.Windows.Forms.Label();
-            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.tbBottleWidth = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.pnBarcode = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -623,15 +623,15 @@
             this.pictureBox2.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox2, "Click เพื่อเลือกรูป");
             // 
-            // textBox66
+            // tbTechPrintCreatedDate
             // 
-            this.textBox66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox66.Location = new System.Drawing.Point(164, 79);
-            this.textBox66.MaxLength = 36;
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(478, 22);
-            this.textBox66.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.textBox66, "จำนวนตัวอักษรถูกจำกัดที่จำนวน 36 ตัวอักษร เนื่องด้วยพื้นที่ช่องใน Invoice จำกัด ต" +
+            this.tbTechPrintCreatedDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTechPrintCreatedDate.Location = new System.Drawing.Point(164, 79);
+            this.tbTechPrintCreatedDate.MaxLength = 36;
+            this.tbTechPrintCreatedDate.Name = "tbTechPrintCreatedDate";
+            this.tbTechPrintCreatedDate.Size = new System.Drawing.Size(478, 22);
+            this.tbTechPrintCreatedDate.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.tbTechPrintCreatedDate, "จำนวนตัวอักษรถูกจำกัดที่จำนวน 36 ตัวอักษร เนื่องด้วยพื้นที่ช่องใน Invoice จำกัด ต" +
         "้องการเพิ่มจำนวนตัวอักษร ติดต่อที่แผนกบัญชี");
             // 
             // textBox26
@@ -2751,8 +2751,8 @@
             // 
             this.pnDimention.BackColor = System.Drawing.Color.Black;
             this.pnDimention.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnDimention.Controls.Add(this.button16);
-            this.pnDimention.Controls.Add(this.button17);
+            this.pnDimention.Controls.Add(this.btnDimentionClose);
+            this.pnDimention.Controls.Add(this.btnDimentionSave);
             this.pnDimention.Controls.Add(this.label92);
             this.pnDimention.Controls.Add(this.panel13);
             this.pnDimention.Controls.Add(this.label90);
@@ -2766,41 +2766,41 @@
             this.pnDimention.Tag = "PanelHide";
             this.pnDimention.Visible = false;
             // 
-            // button16
+            // btnDimentionClose
             // 
-            this.button16.BackColor = System.Drawing.Color.Firebrick;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(1070, 503);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(67, 35);
-            this.button16.TabIndex = 24;
-            this.button16.Tag = "";
-            this.button16.Text = "ปิด";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnDimentionClose.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDimentionClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDimentionClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDimentionClose.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnDimentionClose.ForeColor = System.Drawing.Color.White;
+            this.btnDimentionClose.Image = ((System.Drawing.Image)(resources.GetObject("btnDimentionClose.Image")));
+            this.btnDimentionClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDimentionClose.Location = new System.Drawing.Point(1070, 503);
+            this.btnDimentionClose.Name = "btnDimentionClose";
+            this.btnDimentionClose.Size = new System.Drawing.Size(67, 35);
+            this.btnDimentionClose.TabIndex = 24;
+            this.btnDimentionClose.Tag = "";
+            this.btnDimentionClose.Text = "ปิด";
+            this.btnDimentionClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDimentionClose.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnDimentionSave
             // 
-            this.button17.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(984, 503);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(80, 35);
-            this.button17.TabIndex = 23;
-            this.button17.Tag = "";
-            this.button17.Text = "บันทึก";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnDimentionSave.BackColor = System.Drawing.Color.DarkKhaki;
+            this.btnDimentionSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDimentionSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDimentionSave.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnDimentionSave.ForeColor = System.Drawing.Color.White;
+            this.btnDimentionSave.Image = ((System.Drawing.Image)(resources.GetObject("btnDimentionSave.Image")));
+            this.btnDimentionSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDimentionSave.Location = new System.Drawing.Point(984, 503);
+            this.btnDimentionSave.Name = "btnDimentionSave";
+            this.btnDimentionSave.Size = new System.Drawing.Size(80, 35);
+            this.btnDimentionSave.TabIndex = 23;
+            this.btnDimentionSave.Tag = "";
+            this.btnDimentionSave.Text = "บันทึก";
+            this.btnDimentionSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDimentionSave.UseVisualStyleBackColor = false;
             // 
             // label92
             // 
@@ -2816,44 +2816,44 @@
             // panel13
             // 
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.textBox71);
+            this.panel13.Controls.Add(this.tbOther);
             this.panel13.Controls.Add(this.label110);
-            this.panel13.Controls.Add(this.textBox70);
+            this.panel13.Controls.Add(this.tbOtherProduction);
             this.panel13.Controls.Add(this.label108);
-            this.panel13.Controls.Add(this.textBox69);
+            this.panel13.Controls.Add(this.tbCaseProduction);
             this.panel13.Controls.Add(this.label107);
-            this.panel13.Controls.Add(this.textBox64);
+            this.panel13.Controls.Add(this.tbInnerProduction);
             this.panel13.Controls.Add(this.label104);
-            this.panel13.Controls.Add(this.textBox63);
+            this.panel13.Controls.Add(this.tbPackProduction);
             this.panel13.Controls.Add(this.label101);
-            this.panel13.Controls.Add(this.textBox60);
+            this.panel13.Controls.Add(this.tbCapacity);
             this.panel13.Controls.Add(this.label100);
-            this.panel13.Controls.Add(this.textBox57);
+            this.panel13.Controls.Add(this.tbArrangingPallet);
             this.panel13.Controls.Add(this.label97);
-            this.panel13.Controls.Add(this.textBox54);
+            this.panel13.Controls.Add(this.tbArranging);
             this.panel13.Controls.Add(this.label96);
-            this.panel13.Controls.Add(this.textBox51);
+            this.panel13.Controls.Add(this.tbBarcodeArea);
             this.panel13.Controls.Add(this.label93);
-            this.panel13.Controls.Add(this.textBox65);
+            this.panel13.Controls.Add(this.tbPrintArea);
             this.panel13.Controls.Add(this.label112);
-            this.panel13.Controls.Add(this.textBox66);
+            this.panel13.Controls.Add(this.tbTechPrintCreatedDate);
             this.panel13.Controls.Add(this.label113);
-            this.panel13.Controls.Add(this.textBox67);
+            this.panel13.Controls.Add(this.tbPackaging);
             this.panel13.Controls.Add(this.label114);
-            this.panel13.Controls.Add(this.textBox68);
+            this.panel13.Controls.Add(this.tbShortNameFactory);
             this.panel13.Controls.Add(this.label115);
             this.panel13.Location = new System.Drawing.Point(477, 25);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(660, 472);
             this.panel13.TabIndex = 19;
             // 
-            // textBox71
+            // tbOther
             // 
-            this.textBox71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox71.Location = new System.Drawing.Point(164, 425);
-            this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(478, 22);
-            this.textBox71.TabIndex = 28;
+            this.tbOther.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbOther.Location = new System.Drawing.Point(164, 425);
+            this.tbOther.Name = "tbOther";
+            this.tbOther.Size = new System.Drawing.Size(478, 22);
+            this.tbOther.TabIndex = 28;
             // 
             // label110
             // 
@@ -2866,13 +2866,13 @@
             this.label110.TabIndex = 29;
             this.label110.Text = "อื่นๆ";
             // 
-            // textBox70
+            // tbOtherProduction
             // 
-            this.textBox70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox70.Location = new System.Drawing.Point(164, 392);
-            this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(478, 22);
-            this.textBox70.TabIndex = 26;
+            this.tbOtherProduction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbOtherProduction.Location = new System.Drawing.Point(164, 392);
+            this.tbOtherProduction.Name = "tbOtherProduction";
+            this.tbOtherProduction.Size = new System.Drawing.Size(478, 22);
+            this.tbOtherProduction.TabIndex = 26;
             // 
             // label108
             // 
@@ -2885,13 +2885,13 @@
             this.label108.TabIndex = 27;
             this.label108.Text = "สั่งอุปกรณ์อื่นโดย";
             // 
-            // textBox69
+            // tbCaseProduction
             // 
-            this.textBox69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox69.Location = new System.Drawing.Point(164, 359);
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(478, 22);
-            this.textBox69.TabIndex = 24;
+            this.tbCaseProduction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCaseProduction.Location = new System.Drawing.Point(164, 359);
+            this.tbCaseProduction.Name = "tbCaseProduction";
+            this.tbCaseProduction.Size = new System.Drawing.Size(478, 22);
+            this.tbCaseProduction.TabIndex = 24;
             // 
             // label107
             // 
@@ -2904,13 +2904,13 @@
             this.label107.TabIndex = 25;
             this.label107.Text = "สั่งผลิตกล่องลูกฟูกโดย";
             // 
-            // textBox64
+            // tbInnerProduction
             // 
-            this.textBox64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox64.Location = new System.Drawing.Point(164, 325);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(478, 22);
-            this.textBox64.TabIndex = 22;
+            this.tbInnerProduction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbInnerProduction.Location = new System.Drawing.Point(164, 325);
+            this.tbInnerProduction.Name = "tbInnerProduction";
+            this.tbInnerProduction.Size = new System.Drawing.Size(478, 22);
+            this.tbInnerProduction.TabIndex = 22;
             // 
             // label104
             // 
@@ -2923,13 +2923,13 @@
             this.label104.TabIndex = 23;
             this.label104.Text = "สั่งผลิตกล่อง Inner โดย";
             // 
-            // textBox63
+            // tbPackProduction
             // 
-            this.textBox63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox63.Location = new System.Drawing.Point(164, 291);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(478, 22);
-            this.textBox63.TabIndex = 20;
+            this.tbPackProduction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackProduction.Location = new System.Drawing.Point(164, 291);
+            this.tbPackProduction.Name = "tbPackProduction";
+            this.tbPackProduction.Size = new System.Drawing.Size(478, 22);
+            this.tbPackProduction.TabIndex = 20;
             // 
             // label101
             // 
@@ -2942,13 +2942,14 @@
             this.label101.TabIndex = 21;
             this.label101.Text = "สั่งผลิตกล่อง Pack โดย";
             // 
-            // textBox60
+            // tbCapacity
             // 
-            this.textBox60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox60.Location = new System.Drawing.Point(164, 256);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(478, 22);
-            this.textBox60.TabIndex = 18;
+            this.tbCapacity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCapacity.Location = new System.Drawing.Point(164, 256);
+            this.tbCapacity.Name = "tbCapacity";
+            this.tbCapacity.Size = new System.Drawing.Size(478, 22);
+            this.tbCapacity.TabIndex = 18;
+            this.tbCapacity.TextChanged += new System.EventHandler(this.textBox60_TextChanged);
             // 
             // label100
             // 
@@ -2961,13 +2962,13 @@
             this.label100.TabIndex = 19;
             this.label100.Text = "กำลังการผลิต/วัน";
             // 
-            // textBox57
+            // tbArrangingPallet
             // 
-            this.textBox57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox57.Location = new System.Drawing.Point(164, 221);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(478, 22);
-            this.textBox57.TabIndex = 16;
+            this.tbArrangingPallet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbArrangingPallet.Location = new System.Drawing.Point(164, 221);
+            this.tbArrangingPallet.Name = "tbArrangingPallet";
+            this.tbArrangingPallet.Size = new System.Drawing.Size(478, 22);
+            this.tbArrangingPallet.TabIndex = 16;
             // 
             // label97
             // 
@@ -2980,13 +2981,13 @@
             this.label97.TabIndex = 17;
             this.label97.Text = "การจัดเรียงบน Pallet";
             // 
-            // textBox54
+            // tbArranging
             // 
-            this.textBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox54.Location = new System.Drawing.Point(164, 186);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(478, 22);
-            this.textBox54.TabIndex = 14;
+            this.tbArranging.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbArranging.Location = new System.Drawing.Point(164, 186);
+            this.tbArranging.Name = "tbArranging";
+            this.tbArranging.Size = new System.Drawing.Size(478, 22);
+            this.tbArranging.TabIndex = 14;
             // 
             // label96
             // 
@@ -2999,13 +3000,13 @@
             this.label96.TabIndex = 15;
             this.label96.Text = "การจัดเรียงลงลัง";
             // 
-            // textBox51
+            // tbBarcodeArea
             // 
-            this.textBox51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox51.Location = new System.Drawing.Point(164, 151);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(478, 22);
-            this.textBox51.TabIndex = 12;
+            this.tbBarcodeArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBarcodeArea.Location = new System.Drawing.Point(164, 151);
+            this.tbBarcodeArea.Name = "tbBarcodeArea";
+            this.tbBarcodeArea.Size = new System.Drawing.Size(478, 22);
+            this.tbBarcodeArea.TabIndex = 12;
             // 
             // label93
             // 
@@ -3018,13 +3019,13 @@
             this.label93.TabIndex = 13;
             this.label93.Text = "บริเวณที่ติด Barcode";
             // 
-            // textBox65
+            // tbPrintArea
             // 
-            this.textBox65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox65.Location = new System.Drawing.Point(164, 115);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(478, 22);
-            this.textBox65.TabIndex = 6;
+            this.tbPrintArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPrintArea.Location = new System.Drawing.Point(164, 115);
+            this.tbPrintArea.Name = "tbPrintArea";
+            this.tbPrintArea.Size = new System.Drawing.Size(478, 22);
+            this.tbPrintArea.TabIndex = 6;
             // 
             // label112
             // 
@@ -3048,13 +3049,13 @@
             this.label113.TabIndex = 8;
             this.label113.Text = "การแพ็ค";
             // 
-            // textBox67
+            // tbPackaging
             // 
-            this.textBox67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox67.Location = new System.Drawing.Point(164, 45);
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(478, 22);
-            this.textBox67.TabIndex = 4;
+            this.tbPackaging.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackaging.Location = new System.Drawing.Point(164, 45);
+            this.tbPackaging.Name = "tbPackaging";
+            this.tbPackaging.Size = new System.Drawing.Size(478, 22);
+            this.tbPackaging.TabIndex = 4;
             // 
             // label114
             // 
@@ -3067,13 +3068,13 @@
             this.label114.TabIndex = 1;
             this.label114.Text = "รหัสย่อ (ส่วนโรงงาน)";
             // 
-            // textBox68
+            // tbShortNameFactory
             // 
-            this.textBox68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox68.Location = new System.Drawing.Point(164, 11);
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(176, 22);
-            this.textBox68.TabIndex = 3;
+            this.tbShortNameFactory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbShortNameFactory.Location = new System.Drawing.Point(164, 11);
+            this.tbShortNameFactory.Name = "tbShortNameFactory";
+            this.tbShortNameFactory.Size = new System.Drawing.Size(176, 22);
+            this.tbShortNameFactory.TabIndex = 3;
             // 
             // label115
             // 
@@ -3101,22 +3102,22 @@
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label91);
-            this.panel12.Controls.Add(this.textBox52);
-            this.panel12.Controls.Add(this.textBox53);
+            this.panel12.Controls.Add(this.tbCaseGrossWeight);
+            this.panel12.Controls.Add(this.tbCaseNetWeight);
             this.panel12.Controls.Add(this.label94);
             this.panel12.Controls.Add(this.label95);
-            this.panel12.Controls.Add(this.textBox55);
-            this.panel12.Controls.Add(this.textBox56);
+            this.panel12.Controls.Add(this.tbInnerGrossWeight);
+            this.panel12.Controls.Add(this.tbInnerNetWeight);
             this.panel12.Controls.Add(this.label98);
             this.panel12.Controls.Add(this.label99);
-            this.panel12.Controls.Add(this.textBox58);
-            this.panel12.Controls.Add(this.textBox59);
+            this.panel12.Controls.Add(this.tbPackGrossWeight);
+            this.panel12.Controls.Add(this.tbPackNetWeight);
             this.panel12.Controls.Add(this.label102);
             this.panel12.Controls.Add(this.label103);
             this.panel12.Controls.Add(this.label105);
             this.panel12.Controls.Add(this.label106);
-            this.panel12.Controls.Add(this.textBox61);
-            this.panel12.Controls.Add(this.textBox62);
+            this.panel12.Controls.Add(this.tbBottleGrossWeight);
+            this.panel12.Controls.Add(this.tbBottleNetWeight);
             this.panel12.Controls.Add(this.label109);
             this.panel12.Location = new System.Drawing.Point(8, 273);
             this.panel12.Name = "panel12";
@@ -3134,25 +3135,25 @@
             this.label91.TabIndex = 41;
             this.label91.Text = "Kg.";
             // 
-            // textBox52
+            // tbCaseGrossWeight
             // 
-            this.textBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox52.Location = new System.Drawing.Point(259, 177);
-            this.textBox52.MaxLength = 1;
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(70, 22);
-            this.textBox52.TabIndex = 36;
-            this.textBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaseGrossWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCaseGrossWeight.Location = new System.Drawing.Point(259, 177);
+            this.tbCaseGrossWeight.MaxLength = 1;
+            this.tbCaseGrossWeight.Name = "tbCaseGrossWeight";
+            this.tbCaseGrossWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbCaseGrossWeight.TabIndex = 36;
+            this.tbCaseGrossWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox53
+            // tbCaseNetWeight
             // 
-            this.textBox53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox53.Location = new System.Drawing.Point(157, 177);
-            this.textBox53.MaxLength = 1;
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(70, 22);
-            this.textBox53.TabIndex = 35;
-            this.textBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaseNetWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCaseNetWeight.Location = new System.Drawing.Point(157, 177);
+            this.tbCaseNetWeight.MaxLength = 1;
+            this.tbCaseNetWeight.Name = "tbCaseNetWeight";
+            this.tbCaseNetWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbCaseNetWeight.TabIndex = 35;
+            this.tbCaseNetWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label94
             // 
@@ -3176,25 +3177,25 @@
             this.label95.TabIndex = 34;
             this.label95.Text = "Kg.";
             // 
-            // textBox55
+            // tbInnerGrossWeight
             // 
-            this.textBox55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox55.Location = new System.Drawing.Point(259, 129);
-            this.textBox55.MaxLength = 1;
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(70, 22);
-            this.textBox55.TabIndex = 29;
-            this.textBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbInnerGrossWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbInnerGrossWeight.Location = new System.Drawing.Point(259, 129);
+            this.tbInnerGrossWeight.MaxLength = 1;
+            this.tbInnerGrossWeight.Name = "tbInnerGrossWeight";
+            this.tbInnerGrossWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbInnerGrossWeight.TabIndex = 29;
+            this.tbInnerGrossWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox56
+            // tbInnerNetWeight
             // 
-            this.textBox56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox56.Location = new System.Drawing.Point(157, 129);
-            this.textBox56.MaxLength = 1;
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(70, 22);
-            this.textBox56.TabIndex = 28;
-            this.textBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbInnerNetWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbInnerNetWeight.Location = new System.Drawing.Point(157, 129);
+            this.tbInnerNetWeight.MaxLength = 1;
+            this.tbInnerNetWeight.Name = "tbInnerNetWeight";
+            this.tbInnerNetWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbInnerNetWeight.TabIndex = 28;
+            this.tbInnerNetWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label98
             // 
@@ -3218,25 +3219,25 @@
             this.label99.TabIndex = 27;
             this.label99.Text = "Kg.";
             // 
-            // textBox58
+            // tbPackGrossWeight
             // 
-            this.textBox58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox58.Location = new System.Drawing.Point(259, 80);
-            this.textBox58.MaxLength = 1;
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(70, 22);
-            this.textBox58.TabIndex = 22;
-            this.textBox58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPackGrossWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackGrossWeight.Location = new System.Drawing.Point(259, 80);
+            this.tbPackGrossWeight.MaxLength = 1;
+            this.tbPackGrossWeight.Name = "tbPackGrossWeight";
+            this.tbPackGrossWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbPackGrossWeight.TabIndex = 22;
+            this.tbPackGrossWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox59
+            // tbPackNetWeight
             // 
-            this.textBox59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox59.Location = new System.Drawing.Point(157, 80);
-            this.textBox59.MaxLength = 1;
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(70, 22);
-            this.textBox59.TabIndex = 21;
-            this.textBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPackNetWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackNetWeight.Location = new System.Drawing.Point(157, 80);
+            this.tbPackNetWeight.MaxLength = 1;
+            this.tbPackNetWeight.Name = "tbPackNetWeight";
+            this.tbPackNetWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbPackNetWeight.TabIndex = 21;
+            this.tbPackNetWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label102
             // 
@@ -3282,25 +3283,25 @@
             this.label106.TabIndex = 17;
             this.label106.Text = "Net Weight";
             // 
-            // textBox61
+            // tbBottleGrossWeight
             // 
-            this.textBox61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox61.Location = new System.Drawing.Point(259, 31);
-            this.textBox61.MaxLength = 1;
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(70, 22);
-            this.textBox61.TabIndex = 8;
-            this.textBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBottleGrossWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBottleGrossWeight.Location = new System.Drawing.Point(259, 31);
+            this.tbBottleGrossWeight.MaxLength = 1;
+            this.tbBottleGrossWeight.Name = "tbBottleGrossWeight";
+            this.tbBottleGrossWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbBottleGrossWeight.TabIndex = 8;
+            this.tbBottleGrossWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox62
+            // tbBottleNetWeight
             // 
-            this.textBox62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox62.Location = new System.Drawing.Point(157, 31);
-            this.textBox62.MaxLength = 1;
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(70, 22);
-            this.textBox62.TabIndex = 7;
-            this.textBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBottleNetWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBottleNetWeight.Location = new System.Drawing.Point(157, 31);
+            this.tbBottleNetWeight.MaxLength = 1;
+            this.tbBottleNetWeight.Name = "tbBottleNetWeight";
+            this.tbBottleNetWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbBottleNetWeight.TabIndex = 7;
+            this.tbBottleNetWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label109
             // 
@@ -3328,35 +3329,35 @@
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label86);
-            this.panel11.Controls.Add(this.textBox48);
+            this.panel11.Controls.Add(this.tbCaseHeight);
             this.panel11.Controls.Add(this.label87);
-            this.panel11.Controls.Add(this.textBox49);
+            this.panel11.Controls.Add(this.tbCaseLength);
             this.panel11.Controls.Add(this.label88);
-            this.panel11.Controls.Add(this.textBox50);
+            this.panel11.Controls.Add(this.tbCaseWidth);
             this.panel11.Controls.Add(this.label89);
             this.panel11.Controls.Add(this.label82);
-            this.panel11.Controls.Add(this.textBox45);
+            this.panel11.Controls.Add(this.tbInnerHeight);
             this.panel11.Controls.Add(this.label83);
-            this.panel11.Controls.Add(this.textBox46);
+            this.panel11.Controls.Add(this.tbInnerLength);
             this.panel11.Controls.Add(this.label84);
-            this.panel11.Controls.Add(this.textBox47);
+            this.panel11.Controls.Add(this.tbInnerWidth);
             this.panel11.Controls.Add(this.label85);
             this.panel11.Controls.Add(this.label66);
-            this.panel11.Controls.Add(this.textBox27);
+            this.panel11.Controls.Add(this.tbPackHeight);
             this.panel11.Controls.Add(this.label67);
-            this.panel11.Controls.Add(this.textBox28);
+            this.panel11.Controls.Add(this.tbPackLength);
             this.panel11.Controls.Add(this.label68);
-            this.panel11.Controls.Add(this.textBox33);
+            this.panel11.Controls.Add(this.tbPackWidth);
             this.panel11.Controls.Add(this.label81);
             this.panel11.Controls.Add(this.label61);
             this.panel11.Controls.Add(this.label60);
             this.panel11.Controls.Add(this.label59);
             this.panel11.Controls.Add(this.label12);
-            this.panel11.Controls.Add(this.textBox34);
+            this.panel11.Controls.Add(this.tbBottleHeight);
             this.panel11.Controls.Add(this.label69);
-            this.panel11.Controls.Add(this.textBox35);
+            this.panel11.Controls.Add(this.tbBottleLength);
             this.panel11.Controls.Add(this.label79);
-            this.panel11.Controls.Add(this.textBox36);
+            this.panel11.Controls.Add(this.tbBottleWidth);
             this.panel11.Controls.Add(this.label80);
             this.panel11.Location = new System.Drawing.Point(8, 25);
             this.panel11.Name = "panel11";
@@ -3370,19 +3371,19 @@
             this.label86.ForeColor = System.Drawing.Color.White;
             this.label86.Location = new System.Drawing.Point(377, 181);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(37, 14);
+            this.label86.Size = new System.Drawing.Size(28, 14);
             this.label86.TabIndex = 41;
-            this.label86.Text = "mm3";
+            this.label86.Text = "cm.";
             // 
-            // textBox48
+            // tbCaseHeight
             // 
-            this.textBox48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox48.Location = new System.Drawing.Point(311, 177);
-            this.textBox48.MaxLength = 2;
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(50, 22);
-            this.textBox48.TabIndex = 37;
-            this.textBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaseHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCaseHeight.Location = new System.Drawing.Point(311, 177);
+            this.tbCaseHeight.MaxLength = 2;
+            this.tbCaseHeight.Name = "tbCaseHeight";
+            this.tbCaseHeight.Size = new System.Drawing.Size(50, 22);
+            this.tbCaseHeight.TabIndex = 37;
+            this.tbCaseHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label87
             // 
@@ -3395,15 +3396,15 @@
             this.label87.TabIndex = 40;
             this.label87.Text = "X";
             // 
-            // textBox49
+            // tbCaseLength
             // 
-            this.textBox49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox49.Location = new System.Drawing.Point(234, 177);
-            this.textBox49.MaxLength = 1;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(50, 22);
-            this.textBox49.TabIndex = 36;
-            this.textBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaseLength.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCaseLength.Location = new System.Drawing.Point(234, 177);
+            this.tbCaseLength.MaxLength = 1;
+            this.tbCaseLength.Name = "tbCaseLength";
+            this.tbCaseLength.Size = new System.Drawing.Size(50, 22);
+            this.tbCaseLength.TabIndex = 36;
+            this.tbCaseLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label88
             // 
@@ -3416,15 +3417,15 @@
             this.label88.TabIndex = 39;
             this.label88.Text = "X";
             // 
-            // textBox50
+            // tbCaseWidth
             // 
-            this.textBox50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox50.Location = new System.Drawing.Point(157, 177);
-            this.textBox50.MaxLength = 1;
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(50, 22);
-            this.textBox50.TabIndex = 35;
-            this.textBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaseWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCaseWidth.Location = new System.Drawing.Point(157, 177);
+            this.tbCaseWidth.MaxLength = 1;
+            this.tbCaseWidth.Name = "tbCaseWidth";
+            this.tbCaseWidth.Size = new System.Drawing.Size(50, 22);
+            this.tbCaseWidth.TabIndex = 35;
+            this.tbCaseWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label89
             // 
@@ -3444,19 +3445,19 @@
             this.label82.ForeColor = System.Drawing.Color.White;
             this.label82.Location = new System.Drawing.Point(377, 133);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(37, 14);
+            this.label82.Size = new System.Drawing.Size(28, 14);
             this.label82.TabIndex = 34;
-            this.label82.Text = "mm3";
+            this.label82.Text = "cm.";
             // 
-            // textBox45
+            // tbInnerHeight
             // 
-            this.textBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox45.Location = new System.Drawing.Point(311, 129);
-            this.textBox45.MaxLength = 2;
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(50, 22);
-            this.textBox45.TabIndex = 30;
-            this.textBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbInnerHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbInnerHeight.Location = new System.Drawing.Point(311, 129);
+            this.tbInnerHeight.MaxLength = 2;
+            this.tbInnerHeight.Name = "tbInnerHeight";
+            this.tbInnerHeight.Size = new System.Drawing.Size(50, 22);
+            this.tbInnerHeight.TabIndex = 30;
+            this.tbInnerHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label83
             // 
@@ -3469,15 +3470,15 @@
             this.label83.TabIndex = 33;
             this.label83.Text = "X";
             // 
-            // textBox46
+            // tbInnerLength
             // 
-            this.textBox46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox46.Location = new System.Drawing.Point(234, 129);
-            this.textBox46.MaxLength = 1;
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(50, 22);
-            this.textBox46.TabIndex = 29;
-            this.textBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbInnerLength.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbInnerLength.Location = new System.Drawing.Point(234, 129);
+            this.tbInnerLength.MaxLength = 1;
+            this.tbInnerLength.Name = "tbInnerLength";
+            this.tbInnerLength.Size = new System.Drawing.Size(50, 22);
+            this.tbInnerLength.TabIndex = 29;
+            this.tbInnerLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label84
             // 
@@ -3490,15 +3491,15 @@
             this.label84.TabIndex = 32;
             this.label84.Text = "X";
             // 
-            // textBox47
+            // tbInnerWidth
             // 
-            this.textBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox47.Location = new System.Drawing.Point(157, 129);
-            this.textBox47.MaxLength = 1;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(50, 22);
-            this.textBox47.TabIndex = 28;
-            this.textBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbInnerWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbInnerWidth.Location = new System.Drawing.Point(157, 129);
+            this.tbInnerWidth.MaxLength = 1;
+            this.tbInnerWidth.Name = "tbInnerWidth";
+            this.tbInnerWidth.Size = new System.Drawing.Size(50, 22);
+            this.tbInnerWidth.TabIndex = 28;
+            this.tbInnerWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label85
             // 
@@ -3518,19 +3519,19 @@
             this.label66.ForeColor = System.Drawing.Color.White;
             this.label66.Location = new System.Drawing.Point(377, 84);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(37, 14);
+            this.label66.Size = new System.Drawing.Size(28, 14);
             this.label66.TabIndex = 27;
-            this.label66.Text = "mm3";
+            this.label66.Text = "cm.";
             // 
-            // textBox27
+            // tbPackHeight
             // 
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Location = new System.Drawing.Point(311, 80);
-            this.textBox27.MaxLength = 2;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(50, 22);
-            this.textBox27.TabIndex = 23;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPackHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackHeight.Location = new System.Drawing.Point(311, 80);
+            this.tbPackHeight.MaxLength = 2;
+            this.tbPackHeight.Name = "tbPackHeight";
+            this.tbPackHeight.Size = new System.Drawing.Size(50, 22);
+            this.tbPackHeight.TabIndex = 23;
+            this.tbPackHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label67
             // 
@@ -3543,15 +3544,15 @@
             this.label67.TabIndex = 26;
             this.label67.Text = "X";
             // 
-            // textBox28
+            // tbPackLength
             // 
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox28.Location = new System.Drawing.Point(234, 80);
-            this.textBox28.MaxLength = 1;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(50, 22);
-            this.textBox28.TabIndex = 22;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPackLength.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackLength.Location = new System.Drawing.Point(234, 80);
+            this.tbPackLength.MaxLength = 1;
+            this.tbPackLength.Name = "tbPackLength";
+            this.tbPackLength.Size = new System.Drawing.Size(50, 22);
+            this.tbPackLength.TabIndex = 22;
+            this.tbPackLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label68
             // 
@@ -3564,15 +3565,15 @@
             this.label68.TabIndex = 25;
             this.label68.Text = "X";
             // 
-            // textBox33
+            // tbPackWidth
             // 
-            this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox33.Location = new System.Drawing.Point(157, 80);
-            this.textBox33.MaxLength = 1;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(50, 22);
-            this.textBox33.TabIndex = 21;
-            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPackWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPackWidth.Location = new System.Drawing.Point(157, 80);
+            this.tbPackWidth.MaxLength = 1;
+            this.tbPackWidth.Name = "tbPackWidth";
+            this.tbPackWidth.Size = new System.Drawing.Size(50, 22);
+            this.tbPackWidth.TabIndex = 21;
+            this.tbPackWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label81
             // 
@@ -3592,9 +3593,9 @@
             this.label61.ForeColor = System.Drawing.Color.White;
             this.label61.Location = new System.Drawing.Point(377, 35);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(37, 14);
+            this.label61.Size = new System.Drawing.Size(28, 14);
             this.label61.TabIndex = 20;
-            this.label61.Text = "mm3";
+            this.label61.Text = "cm.";
             // 
             // label60
             // 
@@ -3629,15 +3630,15 @@
             this.label12.TabIndex = 17;
             this.label12.Text = "กว้าง";
             // 
-            // textBox34
+            // tbBottleHeight
             // 
-            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox34.Location = new System.Drawing.Point(311, 31);
-            this.textBox34.MaxLength = 2;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(50, 22);
-            this.textBox34.TabIndex = 9;
-            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBottleHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBottleHeight.Location = new System.Drawing.Point(311, 31);
+            this.tbBottleHeight.MaxLength = 2;
+            this.tbBottleHeight.Name = "tbBottleHeight";
+            this.tbBottleHeight.Size = new System.Drawing.Size(50, 22);
+            this.tbBottleHeight.TabIndex = 9;
+            this.tbBottleHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label69
             // 
@@ -3650,15 +3651,15 @@
             this.label69.TabIndex = 16;
             this.label69.Text = "X";
             // 
-            // textBox35
+            // tbBottleLength
             // 
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox35.Location = new System.Drawing.Point(234, 31);
-            this.textBox35.MaxLength = 1;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(50, 22);
-            this.textBox35.TabIndex = 8;
-            this.textBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBottleLength.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBottleLength.Location = new System.Drawing.Point(234, 31);
+            this.tbBottleLength.MaxLength = 1;
+            this.tbBottleLength.Name = "tbBottleLength";
+            this.tbBottleLength.Size = new System.Drawing.Size(50, 22);
+            this.tbBottleLength.TabIndex = 8;
+            this.tbBottleLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label79
             // 
@@ -3671,15 +3672,15 @@
             this.label79.TabIndex = 14;
             this.label79.Text = "X";
             // 
-            // textBox36
+            // tbBottleWidth
             // 
-            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox36.Location = new System.Drawing.Point(157, 31);
-            this.textBox36.MaxLength = 1;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(50, 22);
-            this.textBox36.TabIndex = 7;
-            this.textBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbBottleWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBottleWidth.Location = new System.Drawing.Point(157, 31);
+            this.tbBottleWidth.MaxLength = 1;
+            this.tbBottleWidth.Name = "tbBottleWidth";
+            this.tbBottleWidth.Size = new System.Drawing.Size(50, 22);
+            this.tbBottleWidth.TabIndex = 7;
+            this.tbBottleWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label80
             // 
@@ -5548,83 +5549,83 @@
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.TextBox tbCaseGrossWeight;
+        private System.Windows.Forms.TextBox tbCaseNetWeight;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
+        private System.Windows.Forms.TextBox tbInnerGrossWeight;
+        private System.Windows.Forms.TextBox tbInnerNetWeight;
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox59;
+        private System.Windows.Forms.TextBox tbPackGrossWeight;
+        private System.Windows.Forms.TextBox tbPackNetWeight;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label105;
         private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.TextBox textBox61;
-        private System.Windows.Forms.TextBox textBox62;
+        private System.Windows.Forms.TextBox tbBottleGrossWeight;
+        private System.Windows.Forms.TextBox tbBottleNetWeight;
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox tbCaseHeight;
         private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox tbCaseLength;
         private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox tbCaseWidth;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox tbInnerHeight;
         private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox tbInnerLength;
         private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox tbInnerWidth;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox tbPackHeight;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox tbPackLength;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox tbPackWidth;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox tbBottleHeight;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox tbBottleLength;
         private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.TextBox tbBottleWidth;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox71;
+        private System.Windows.Forms.TextBox tbOther;
         private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.TextBox textBox70;
+        private System.Windows.Forms.TextBox tbOtherProduction;
         private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.TextBox textBox69;
+        private System.Windows.Forms.TextBox tbCaseProduction;
         private System.Windows.Forms.Label label107;
-        private System.Windows.Forms.TextBox textBox64;
+        private System.Windows.Forms.TextBox tbInnerProduction;
         private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.TextBox textBox63;
+        private System.Windows.Forms.TextBox tbPackProduction;
         private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.TextBox textBox60;
+        private System.Windows.Forms.TextBox tbCapacity;
         private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.TextBox textBox57;
+        private System.Windows.Forms.TextBox tbArrangingPallet;
         private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.TextBox textBox54;
+        private System.Windows.Forms.TextBox tbArranging;
         private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox tbBarcodeArea;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.TextBox textBox65;
+        private System.Windows.Forms.TextBox tbPrintArea;
         private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.TextBox textBox66;
+        private System.Windows.Forms.TextBox tbTechPrintCreatedDate;
         private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.TextBox textBox67;
+        private System.Windows.Forms.TextBox tbPackaging;
         private System.Windows.Forms.Label label114;
-        private System.Windows.Forms.TextBox textBox68;
+        private System.Windows.Forms.TextBox tbShortNameFactory;
         private System.Windows.Forms.Label label115;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel14;
@@ -5737,8 +5738,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnDimentionClose;
+        private System.Windows.Forms.Button btnDimentionSave;
         private System.Windows.Forms.Button btnMatCodeDKClose;
         private System.Windows.Forms.Button btnMatCodeDKSave;
         private System.Windows.Forms.Panel pnRequestForm;

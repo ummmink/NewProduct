@@ -1933,6 +1933,11 @@ namespace NewProduct
             }
         }
 
+        private void textBox60_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void lineNotify(string msg)
         {
             string token = "pBdAZm9ZyK6dJU8SYKeeEWM3uAjceuN2SO9tzueZsaK";

@@ -338,5 +338,29 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_insert_product_dimension_temp(string reference_no, string product_id, decimal bottle_width, decimal bottle_length, decimal bottle_height,
+            decimal pack_width, decimal pack_length, decimal pack_height, decimal inner_width, decimal inner_length,
+            decimal inner_height, decimal case_width, decimal case_length, decimal case_height, decimal bottle_netweight,
+            decimal bottle_grossweight, decimal pack_netweight, decimal pack_grossweight, decimal inner_netweight, decimal inner_grossweight,
+            decimal case_netweight, decimal case_grossweight, string short_name_factory, string packaging, string techprint_create_date,
+            string print_area, string barcode_area, string arranging, string arranging_pallet, string capacity,
+            string pack_production_by, string inner_production_by, string case_production_by, string other_production_by, string other)
+        {
+            try
+            {
+                return commonData.npd_insert_product_dimension_temp(reference_no, product_id, bottle_width, bottle_length, bottle_height,
+                    pack_width, pack_length, pack_height, inner_width, inner_length,
+                    inner_height, case_width, case_length, case_height, bottle_netweight,
+                    bottle_grossweight, pack_netweight, pack_grossweight, inner_netweight, inner_grossweight,
+                    case_netweight, case_grossweight, short_name_factory, packaging, techprint_create_date,
+                    print_area, barcode_area, arranging, arranging_pallet, capacity,
+                    pack_production_by, inner_production_by, case_production_by, other_production_by, other);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

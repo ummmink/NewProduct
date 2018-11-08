@@ -87,17 +87,6 @@ namespace NewProduct
             ChangeVisibleByTag("PanelShow");
         }
 
-        private void btnDimention_Click(object sender, EventArgs e)
-        {
-            //Change button color when click
-            btnDimention.Tag = "Blue";
-            ChangeColorByTag("Blue");
-
-            //Change panel visible is true when click
-            pnDimention.Tag = "PanelShow";
-            ChangeVisibleByTag("PanelShow");
-        }
-
         private void btnProductID_Click(object sender, EventArgs e)
         {
             //Change button color when click
@@ -1936,6 +1925,78 @@ namespace NewProduct
         private void textBox60_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDimensionSave_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("คุณต้องการจะบันทึกข้อมูล? ",
+                "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+                #region Send Mail
+                try
+                {
+                    //Create the msg object to be sent
+                    MailMessage msg = new MailMessage();
+                    //Add your email address to the recipients             
+                    msg.To.Add("sarawana.n@scotch.co.th");
+                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                    MailAddress address = new MailAddress("npd.scotch@gmail.com");
+                    msg.From = address;
+                    //Append their name in the beginning of the subject
+                    msg.Subject = "NPD --> Dimension : Successfully updated";
+                    msg.Body = "Reference No : " + tbReferenceNo.Text;
+
+
+                    //Configure an SmtpClient to send the mail.
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true; //only enable this if your provider requires it
+                                             //Setup credentials to login to our sender email address ("UserName", "Password")
+                    NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");
+
+                    client.Credentials = credentials;
+
+                    //Send the msg
+                    client.Send(msg);
+
+                    //Display some feedback to the user to let them know it was sent
+                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    //If the message failed at some point, let the user know
+                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                #endregion
+
+                CommonDataSet dsInsertDimension = commonBiz.npd_insert_product_dimension_temp(tbReferenceNo.Text, "12345678XXXX", decimal.Parse(tbBottleWidth.Text), decimal.Parse(tbBottleLength.Text),
+                    decimal.Parse(tbBottleHeight.Text), decimal.Parse(tbPackWidth.Text), decimal.Parse(tbPackLength.Text), decimal.Parse(tbPackHeight.Text), decimal.Parse(tbInnerWidth.Text),
+                    decimal.Parse(tbInnerLength.Text), decimal.Parse(tbInnerHeight.Text), decimal.Parse(tbCaseWidth.Text), decimal.Parse(tbCaseLength.Text), decimal.Parse(tbCaseHeight.Text),
+                    decimal.Parse(tbBottleNetWeight.Text), decimal.Parse(tbBottleGrossWeight.Text), decimal.Parse(tbPackNetWeight.Text), decimal.Parse(tbPackGrossWeight.Text),
+                    decimal.Parse(tbInnerNetWeight.Text), decimal.Parse(tbInnerGrossWeight.Text), decimal.Parse(tbCaseNetWeight.Text), decimal.Parse(tbCaseGrossWeight.Text),
+                    tbShortNameFactory.Text, tbPackaging.Text, tbTechPrintCreatedDate.Text, tbPrintArea.Text, tbBarcodeArea.Text,
+                    tbArranging.Text, tbArrangingPallet.Text, tbCapacity.Text, tbPackProduction.Text, tbInnerProduction.Text, tbCaseProduction.Text, tbOtherProduction.Text, tbOther.Text);
+
+                MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                lineNotify("มีการเพิ่ม Dimension" + Environment.NewLine + "Reference No : " + tbReferenceNo.Text);
+
+                Form f = new Home_Trade();
+                f.MdiParent = this.ParentForm;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+        }
+
+        private void btnDimension_Click(object sender, EventArgs e)
+        {
+            //Change button color when click
+            btnDimension.Tag = "Blue";
+            ChangeColorByTag("Blue");
+
+            //Change panel visible is true when click
+            pnDimention.Tag = "PanelShow";
+            ChangeVisibleByTag("PanelShow");
         }
 
         private void lineNotify(string msg)

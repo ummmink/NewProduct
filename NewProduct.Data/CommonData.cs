@@ -43,6 +43,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_ITEM_NO2 = "npd_select_product_item_no2";
         private static string _NPD_UPDATE_SHORT_NAME_IN_PRODUCT_TEMP = "npd_update_short_name_in_product_temp";
         private static string _NPD_INSERT_DK_PRODUCT_MAP_TEMP = "npd_insert_dk_product_map_temp";
+        private static string _NPD_INSERT_PRODUCT_DIMENSION_TEMP = "npd_insert_product_dimension_temp";
 
         public CommonDataSet select_product_all_status()
         {
@@ -706,6 +707,135 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_INSERT_DK_PRODUCT_MAP_TEMP.TableName, _NPD_INSERT_DK_PRODUCT_MAP_TEMP, pm, strConnCommon);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_insert_product_dimension_temp(string reference_no, string product_id, decimal bottle_width, decimal bottle_length, decimal bottle_height,
+            decimal pack_width, decimal pack_length, decimal pack_height, decimal inner_width, decimal inner_length,
+            decimal inner_height, decimal case_width, decimal case_length, decimal case_height, decimal bottle_netweight,
+            decimal bottle_grossweight, decimal pack_netweight, decimal pack_grossweight, decimal inner_netweight, decimal inner_grossweight,
+            decimal case_netweight, decimal case_grossweight, string short_name_factory, string packaging, string techprint_create_date,
+            string print_area, string barcode_area, string arranging, string arranging_pallet, string capacity,
+            string pack_production_by, string inner_production_by, string case_production_by, string other_production_by, string other)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[35];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                pm[1] = new SqlParameter("@PRODUCT_ID", SqlDbType.VarChar);
+                pm[1].Value = product_id;
+
+                pm[2] = new SqlParameter("@BOTTLE_WIDTH", SqlDbType.Decimal);
+                pm[2].Value = bottle_width;
+
+                pm[3] = new SqlParameter("@BOTTLE_LENGTH", SqlDbType.Decimal);
+                pm[3].Value = bottle_length;
+
+                pm[4] = new SqlParameter("@BOTTLE_HEIGHT", SqlDbType.Decimal);
+                pm[4].Value = bottle_height;
+
+                pm[5] = new SqlParameter("@PACK_WIDTH", SqlDbType.Decimal);
+                pm[5].Value = pack_width;
+
+                pm[6] = new SqlParameter("@PACK_LENGTH", SqlDbType.Decimal);
+                pm[6].Value = pack_length;
+
+                pm[7] = new SqlParameter("@PACK_HEIGHT", SqlDbType.Decimal);
+                pm[7].Value = pack_height;
+
+                pm[8] = new SqlParameter("@INNER_WIDTH", SqlDbType.Decimal);
+                pm[8].Value = inner_width;
+
+                pm[9] = new SqlParameter("@INNER_LENGTH", SqlDbType.Decimal);
+                pm[9].Value = inner_length;
+
+                pm[10] = new SqlParameter("@INNER_HEIGHT", SqlDbType.Decimal);
+                pm[10].Value = inner_height;
+
+                pm[11] = new SqlParameter("@CASE_WIDTH", SqlDbType.Decimal);
+                pm[11].Value = case_width;
+
+                pm[12] = new SqlParameter("@CASE_LENGTH", SqlDbType.Decimal);
+                pm[12].Value = case_length;
+
+                pm[13] = new SqlParameter("@CASE_HEIGHT", SqlDbType.Decimal);
+                pm[13].Value = case_height;
+
+                pm[14] = new SqlParameter("@BOTTLE_NETWEIGHT", SqlDbType.Decimal);
+                pm[14].Value = bottle_netweight;
+
+                pm[15] = new SqlParameter("@BOTTLE_GROSSWEIGHT", SqlDbType.Decimal);
+                pm[15].Value = bottle_grossweight;
+
+                pm[16] = new SqlParameter("@PACK_NETWEIGHT", SqlDbType.Decimal);
+                pm[16].Value = pack_netweight;
+
+                pm[17] = new SqlParameter("@PACK_GROSSWEIGHT", SqlDbType.Decimal);
+                pm[17].Value = pack_grossweight;
+
+                pm[18] = new SqlParameter("@INNER_NETWEIGHT", SqlDbType.Decimal);
+                pm[18].Value = inner_netweight;
+
+                pm[19] = new SqlParameter("@INNER_GROSSWEIGHT", SqlDbType.Decimal);
+                pm[19].Value = inner_grossweight;
+
+                pm[20] = new SqlParameter("@CASE_NETWEIGHT", SqlDbType.Decimal);
+                pm[20].Value = case_netweight;
+
+                pm[21] = new SqlParameter("@CASE_GROSSWEIGHT", SqlDbType.Decimal);
+                pm[21].Value = case_grossweight;
+
+                pm[22] = new SqlParameter("@SHORT_NAME_FACTORY", SqlDbType.VarChar);
+                pm[22].Value = short_name_factory;
+
+                pm[23] = new SqlParameter("@PACKAGING", SqlDbType.VarChar);
+                pm[23].Value = packaging;
+
+                pm[24] = new SqlParameter("@TECHPRINT_CREATE_DATE", SqlDbType.VarChar);
+                pm[24].Value = techprint_create_date;
+
+                pm[25] = new SqlParameter("@PRINT_AREA", SqlDbType.VarChar);
+                pm[25].Value = print_area;
+
+                pm[26] = new SqlParameter("@BARCODE_AREA", SqlDbType.VarChar);
+                pm[26].Value = barcode_area;
+
+                pm[27] = new SqlParameter("@ARRANGING", SqlDbType.VarChar);
+                pm[27].Value = arranging;
+
+                pm[28] = new SqlParameter("@ARRANGING_PALLET", SqlDbType.VarChar);
+                pm[28].Value = arranging_pallet;
+
+                pm[29] = new SqlParameter("@CAPACITY", SqlDbType.VarChar);
+                pm[29].Value = capacity;
+
+                pm[30] = new SqlParameter("@PACK_PRODUCTION_BY", SqlDbType.VarChar);
+                pm[30].Value = pack_production_by;
+
+                pm[31] = new SqlParameter("@INNER_PRODUCTION_BY", SqlDbType.VarChar);
+                pm[31].Value = inner_production_by;
+
+                pm[32] = new SqlParameter("@CASE_PRODUCTION_BY", SqlDbType.VarChar);
+                pm[32].Value = case_production_by;
+
+                pm[33] = new SqlParameter("@OTHER_PRODUCTION_BY", SqlDbType.VarChar);
+                pm[33].Value = other_production_by;
+
+                pm[34] = new SqlParameter("@OTHER", SqlDbType.VarChar);
+                pm[34].Value = other;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_INSERT_PRODUCT_DIMENSION_TEMP.TableName, _NPD_INSERT_PRODUCT_DIMENSION_TEMP, pm, strConnCommon);
 
             }
             catch (Exception ex)

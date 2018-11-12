@@ -30,26 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_Popup));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDetails = new System.Windows.Forms.Button();
             this.btnShortName = new System.Windows.Forms.Button();
             this.btnBarcode = new System.Windows.Forms.Button();
@@ -327,34 +327,21 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
             this.textBox31 = new System.Windows.Forms.TextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.pnProductID = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -461,6 +448,22 @@
             this.label145 = new System.Windows.Forms.Label();
             this.label146 = new System.Windows.Forms.Label();
             this.bindingEditProduct = new System.Windows.Forms.BindingSource(this.components);
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label157 = new System.Windows.Forms.Label();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.label158 = new System.Windows.Forms.Label();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.label159 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnDetails.SuspendLayout();
@@ -494,6 +497,7 @@
             this.pnRejectForm.SuspendLayout();
             this.pnCancelForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingEditProduct)).BeginInit();
+            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -1850,14 +1854,14 @@
             // 
             this.grdFreeProductList.AllowUserToAddRows = false;
             this.grdFreeProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle61.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.grdFreeProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdFreeProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FproductID,
@@ -1869,20 +1873,20 @@
             this.fBottleP});
             this.grdFreeProductList.Location = new System.Drawing.Point(25, 331);
             this.grdFreeProductList.Name = "grdFreeProductList";
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle62.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle62.NullValue = null;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.NullValue = null;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.grdFreeProductList.RowHeadersVisible = false;
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle63.NullValue = null;
-            this.grdFreeProductList.RowsDefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle43.NullValue = null;
+            this.grdFreeProductList.RowsDefaultCellStyle = dataGridViewCellStyle43;
             this.grdFreeProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdFreeProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdFreeProductList.Size = new System.Drawing.Size(447, 84);
@@ -1947,14 +1951,14 @@
             // 
             this.grdMainProductList.AllowUserToAddRows = false;
             this.grdMainProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle64.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle64.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
             this.grdMainProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productID,
@@ -1966,20 +1970,20 @@
             this.bottleP});
             this.grdMainProductList.Location = new System.Drawing.Point(25, 81);
             this.grdMainProductList.Name = "grdMainProductList";
-            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle65.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle65.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle65.NullValue = null;
-            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle45.NullValue = null;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProductList.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
             this.grdMainProductList.RowHeadersVisible = false;
-            dataGridViewCellStyle66.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle66.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle66.NullValue = null;
-            this.grdMainProductList.RowsDefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle46.NullValue = null;
+            this.grdMainProductList.RowsDefaultCellStyle = dataGridViewCellStyle46;
             this.grdMainProductList.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdMainProductList.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdMainProductList.Size = new System.Drawing.Size(447, 84);
@@ -2267,14 +2271,14 @@
             // grdFreeProduct
             // 
             this.grdFreeProduct.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle67.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle67.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle67.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle67.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle67.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle67.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdFreeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle67;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdFreeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.grdFreeProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdFreeProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FPRODUCT_ID,
@@ -2290,9 +2294,9 @@
             this.grdFreeProduct.Location = new System.Drawing.Point(10, 287);
             this.grdFreeProduct.Name = "grdFreeProduct";
             this.grdFreeProduct.RowHeadersWidth = 15;
-            dataGridViewCellStyle73.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle73.ForeColor = System.Drawing.Color.Black;
-            this.grdFreeProduct.RowsDefaultCellStyle = dataGridViewCellStyle73;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Black;
+            this.grdFreeProduct.RowsDefaultCellStyle = dataGridViewCellStyle53;
             this.grdFreeProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdFreeProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdFreeProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -2307,8 +2311,8 @@
             // FPRODUCT_ID
             // 
             this.FPRODUCT_ID.DataPropertyName = "PRODUCT_ID";
-            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FPRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle68;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FPRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle48;
             this.FPRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.FPRODUCT_ID.HeaderText = "รหัสสินค้า";
             this.FPRODUCT_ID.Name = "FPRODUCT_ID";
@@ -2326,8 +2330,8 @@
             // FSIZE
             // 
             this.FSIZE.DataPropertyName = "SIZE";
-            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FSIZE.DefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FSIZE.DefaultCellStyle = dataGridViewCellStyle49;
             this.FSIZE.HeaderText = "ขนาด";
             this.FSIZE.Name = "FSIZE";
             this.FSIZE.ReadOnly = true;
@@ -2336,9 +2340,9 @@
             // FQTY
             // 
             this.FQTY.DataPropertyName = "QTY";
-            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle70.NullValue = null;
-            this.FQTY.DefaultCellStyle = dataGridViewCellStyle70;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle50.NullValue = null;
+            this.FQTY.DefaultCellStyle = dataGridViewCellStyle50;
             this.FQTY.HeaderText = "จำนวน";
             this.FQTY.Name = "FQTY";
             this.FQTY.Width = 50;
@@ -2346,9 +2350,9 @@
             // FUNIT
             // 
             this.FUNIT.DataPropertyName = "UNIT";
-            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle71.NullValue = "ขวด";
-            this.FUNIT.DefaultCellStyle = dataGridViewCellStyle71;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.NullValue = "ขวด";
+            this.FUNIT.DefaultCellStyle = dataGridViewCellStyle51;
             this.FUNIT.HeaderText = "หน่วย";
             this.FUNIT.Name = "FUNIT";
             this.FUNIT.ReadOnly = true;
@@ -2358,9 +2362,9 @@
             // FLTP
             // 
             this.FLTP.DataPropertyName = "LTP";
-            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle72.Format = "C2";
-            this.FLTP.DefaultCellStyle = dataGridViewCellStyle72;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle52.Format = "C2";
+            this.FLTP.DefaultCellStyle = dataGridViewCellStyle52;
             this.FLTP.HeaderText = "LTP";
             this.FLTP.Name = "FLTP";
             this.FLTP.ReadOnly = true;
@@ -2434,14 +2438,14 @@
             // grdMainProduct
             // 
             this.grdMainProduct.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle74.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle74.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle74.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdMainProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle74;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdMainProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle54;
             this.grdMainProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMainProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PRODUCT_ID,
@@ -2457,9 +2461,9 @@
             this.grdMainProduct.Location = new System.Drawing.Point(10, 37);
             this.grdMainProduct.Name = "grdMainProduct";
             this.grdMainProduct.RowHeadersWidth = 15;
-            dataGridViewCellStyle80.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            dataGridViewCellStyle80.ForeColor = System.Drawing.Color.Black;
-            this.grdMainProduct.RowsDefaultCellStyle = dataGridViewCellStyle80;
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.Black;
+            this.grdMainProduct.RowsDefaultCellStyle = dataGridViewCellStyle60;
             this.grdMainProduct.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.grdMainProduct.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdMainProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -2474,8 +2478,8 @@
             // PRODUCT_ID
             // 
             this.PRODUCT_ID.DataPropertyName = "PRODUCT_ID";
-            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.PRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle75;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.PRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle55;
             this.PRODUCT_ID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.PRODUCT_ID.HeaderText = "รหัสสินค้า";
             this.PRODUCT_ID.Name = "PRODUCT_ID";
@@ -2493,8 +2497,8 @@
             // SIZE
             // 
             this.SIZE.DataPropertyName = "SIZE";
-            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SIZE.DefaultCellStyle = dataGridViewCellStyle76;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SIZE.DefaultCellStyle = dataGridViewCellStyle56;
             this.SIZE.HeaderText = "ขนาด";
             this.SIZE.Name = "SIZE";
             this.SIZE.ReadOnly = true;
@@ -2503,9 +2507,9 @@
             // QTY
             // 
             this.QTY.DataPropertyName = "QTY";
-            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle77.NullValue = null;
-            this.QTY.DefaultCellStyle = dataGridViewCellStyle77;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle57.NullValue = null;
+            this.QTY.DefaultCellStyle = dataGridViewCellStyle57;
             this.QTY.HeaderText = "จำนวน";
             this.QTY.Name = "QTY";
             this.QTY.Width = 50;
@@ -2513,9 +2517,9 @@
             // unitType
             // 
             this.unitType.DataPropertyName = "UNIT";
-            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle78.NullValue = "ขวด";
-            this.unitType.DefaultCellStyle = dataGridViewCellStyle78;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle58.NullValue = "ขวด";
+            this.unitType.DefaultCellStyle = dataGridViewCellStyle58;
             this.unitType.HeaderText = "หน่วย";
             this.unitType.Name = "unitType";
             this.unitType.ReadOnly = true;
@@ -2525,9 +2529,9 @@
             // LTP
             // 
             this.LTP.DataPropertyName = "LTP";
-            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle79.Format = "C2";
-            this.LTP.DefaultCellStyle = dataGridViewCellStyle79;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle59.Format = "C2";
+            this.LTP.DefaultCellStyle = dataGridViewCellStyle59;
             this.LTP.HeaderText = "LTP";
             this.LTP.Name = "LTP";
             this.LTP.ReadOnly = true;
@@ -3678,6 +3682,8 @@
             // 
             this.pnBarcode.BackColor = System.Drawing.Color.Black;
             this.pnBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnBarcode.Controls.Add(this.label45);
+            this.pnBarcode.Controls.Add(this.panel16);
             this.pnBarcode.Controls.Add(this.button1);
             this.pnBarcode.Controls.Add(this.button2);
             this.pnBarcode.Controls.Add(this.label5);
@@ -3701,7 +3707,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1130, 406);
+            this.button1.Location = new System.Drawing.Point(1190, 487);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(67, 35);
             this.button1.TabIndex = 24;
@@ -3719,7 +3725,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1045, 406);
+            this.button2.Location = new System.Drawing.Point(1102, 487);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 35);
             this.button2.TabIndex = 23;
@@ -3733,7 +3739,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(677, 11);
+            this.label5.Location = new System.Drawing.Point(14, 247);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 14);
             this.label5.TabIndex = 20;
@@ -3748,24 +3754,21 @@
             this.panel6.Controls.Add(this.button10);
             this.panel6.Controls.Add(this.button11);
             this.panel6.Controls.Add(this.button12);
-            this.panel6.Controls.Add(this.button13);
             this.panel6.Controls.Add(this.textBox6);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.textBox7);
             this.panel6.Controls.Add(this.label44);
             this.panel6.Controls.Add(this.textBox8);
-            this.panel6.Controls.Add(this.label45);
-            this.panel6.Controls.Add(this.textBox9);
             this.panel6.Controls.Add(this.label46);
-            this.panel6.Location = new System.Drawing.Point(674, 28);
+            this.panel6.Location = new System.Drawing.Point(11, 267);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(523, 360);
+            this.panel6.Size = new System.Drawing.Size(617, 207);
             this.panel6.TabIndex = 18;
             // 
             // button9
             // 
             this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(434, 149);
+            this.button9.Location = new System.Drawing.Point(493, 151);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 33;
@@ -3775,9 +3778,9 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(106, 149);
+            this.textBox3.Location = new System.Drawing.Point(160, 151);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(322, 22);
+            this.textBox3.Size = new System.Drawing.Size(323, 22);
             this.textBox3.TabIndex = 31;
             // 
             // label7
@@ -3785,16 +3788,16 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(16, 149);
+            this.label7.Location = new System.Drawing.Point(35, 151);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 14);
+            this.label7.Size = new System.Drawing.Size(64, 14);
             this.label7.TabIndex = 32;
-            this.label7.Text = "บาร์โค๊ดขวด";
+            this.label7.Text = "กล่องเดี่ยว";
             // 
             // button10
             // 
             this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(434, 121);
+            this.button10.Location = new System.Drawing.Point(493, 110);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 30;
@@ -3804,7 +3807,7 @@
             // button11
             // 
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(434, 93);
+            this.button11.Location = new System.Drawing.Point(493, 69);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 29;
@@ -3814,29 +3817,19 @@
             // button12
             // 
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(434, 65);
+            this.button12.Location = new System.Drawing.Point(493, 28);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 28;
             this.button12.Text = "ดูข้อมูล";
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // button13
-            // 
-            this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(434, 37);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
-            this.button13.TabIndex = 27;
-            this.button13.Text = "ดูข้อมูล";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
             // textBox6
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(106, 121);
+            this.textBox6.Location = new System.Drawing.Point(160, 110);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(322, 22);
+            this.textBox6.Size = new System.Drawing.Size(323, 22);
             this.textBox6.TabIndex = 24;
             // 
             // label8
@@ -3844,18 +3837,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(16, 121);
+            this.label8.Location = new System.Drawing.Point(35, 110);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 14);
+            this.label8.Size = new System.Drawing.Size(64, 14);
             this.label8.TabIndex = 26;
-            this.label8.Text = "บาร์โค๊ดแพ็ค";
+            this.label8.Text = "กล่องแพ็ค";
             // 
             // textBox7
             // 
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(106, 93);
+            this.textBox7.Location = new System.Drawing.Point(160, 69);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(322, 22);
+            this.textBox7.Size = new System.Drawing.Size(323, 22);
             this.textBox7.TabIndex = 23;
             // 
             // label44
@@ -3863,133 +3856,64 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(16, 65);
+            this.label44.Location = new System.Drawing.Point(35, 28);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(64, 14);
+            this.label44.Size = new System.Drawing.Size(22, 14);
             this.label44.TabIndex = 25;
-            this.label44.Text = "บาร์โค๊ดลัง";
+            this.label44.Text = "ลัง";
             // 
             // textBox8
             // 
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(106, 65);
+            this.textBox8.Location = new System.Drawing.Point(160, 28);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(322, 22);
+            this.textBox8.Size = new System.Drawing.Size(323, 22);
             this.textBox8.TabIndex = 22;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(16, 37);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(70, 14);
-            this.label45.TabIndex = 19;
-            this.label45.Text = "ชื่อย่อสินค้า";
-            // 
-            // textBox9
-            // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(106, 37);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(322, 22);
-            this.textBox9.TabIndex = 20;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(16, 93);
+            this.label46.Location = new System.Drawing.Point(35, 69);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(88, 14);
+            this.label46.Size = new System.Drawing.Size(121, 14);
             this.label46.TabIndex = 21;
-            this.label46.Text = "บาร์โค๊ดลังย่อย";
+            this.label46.Text = "Inner Box \\ ลังย่อย";
             // 
             // label50
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label50.Location = new System.Drawing.Point(11, 11);
+            this.label50.Location = new System.Drawing.Point(14, 11);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(69, 14);
+            this.label50.Size = new System.Drawing.Size(78, 14);
             this.label50.TabIndex = 19;
-            this.label50.Text = "ข้อมูลสินค้า";
+            this.label50.Text = "Barcode เก่า";
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.button8);
-            this.panel7.Controls.Add(this.textBox23);
-            this.panel7.Controls.Add(this.label52);
-            this.panel7.Controls.Add(this.button7);
             this.panel7.Controls.Add(this.textBox22);
             this.panel7.Controls.Add(this.label51);
-            this.panel7.Controls.Add(this.button6);
-            this.panel7.Controls.Add(this.button5);
-            this.panel7.Controls.Add(this.button4);
-            this.panel7.Controls.Add(this.button3);
             this.panel7.Controls.Add(this.textBox29);
             this.panel7.Controls.Add(this.label62);
             this.panel7.Controls.Add(this.textBox30);
             this.panel7.Controls.Add(this.label63);
             this.panel7.Controls.Add(this.textBox31);
-            this.panel7.Controls.Add(this.label64);
-            this.panel7.Controls.Add(this.textBox32);
             this.panel7.Controls.Add(this.label65);
-            this.panel7.Location = new System.Drawing.Point(8, 28);
+            this.panel7.Location = new System.Drawing.Point(11, 28);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(660, 360);
+            this.panel7.Size = new System.Drawing.Size(617, 207);
             this.panel7.TabIndex = 17;
-            // 
-            // button8
-            // 
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(273, 304);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 34);
-            this.button8.TabIndex = 21;
-            this.button8.Text = "บันทึก";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // textBox23
-            // 
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox23.Location = new System.Drawing.Point(137, 177);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(347, 115);
-            this.textBox23.TabIndex = 19;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label52.ForeColor = System.Drawing.Color.White;
-            this.label52.Location = new System.Drawing.Point(35, 181);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(59, 14);
-            this.label52.TabIndex = 20;
-            this.label52.Text = "หมายเหตุ";
-            // 
-            // button7
-            // 
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(493, 149);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 18;
-            this.button7.Text = "ตรวจสอบ";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // textBox22
             // 
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox22.Location = new System.Drawing.Point(137, 149);
+            this.textBox22.Location = new System.Drawing.Point(160, 151);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(347, 22);
+            this.textBox22.Size = new System.Drawing.Size(323, 22);
             this.textBox22.TabIndex = 16;
             // 
             // label51
@@ -3997,58 +3921,18 @@
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label51.ForeColor = System.Drawing.Color.White;
-            this.label51.Location = new System.Drawing.Point(35, 153);
+            this.label51.Location = new System.Drawing.Point(35, 155);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(71, 14);
+            this.label51.Size = new System.Drawing.Size(64, 14);
             this.label51.TabIndex = 17;
-            this.label51.Text = "บาร์โค๊ดขวด";
-            // 
-            // button6
-            // 
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(493, 121);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "ตรวจสอบ";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(493, 93);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "ตรวจสอบ";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(493, 65);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "ตรวจสอบ";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(493, 37);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "ตรวจสอบ";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label51.Text = "กล่องเดี่ยว";
             // 
             // textBox29
             // 
             this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox29.Location = new System.Drawing.Point(137, 121);
+            this.textBox29.Location = new System.Drawing.Point(160, 112);
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(347, 22);
+            this.textBox29.Size = new System.Drawing.Size(323, 22);
             this.textBox29.TabIndex = 6;
             // 
             // label62
@@ -4056,18 +3940,18 @@
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label62.ForeColor = System.Drawing.Color.White;
-            this.label62.Location = new System.Drawing.Point(35, 125);
+            this.label62.Location = new System.Drawing.Point(35, 116);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(75, 14);
+            this.label62.Size = new System.Drawing.Size(64, 14);
             this.label62.TabIndex = 11;
-            this.label62.Text = "บาร์โค๊ดแพ็ค";
+            this.label62.Text = "กล่องแพ็ค";
             // 
             // textBox30
             // 
             this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox30.Location = new System.Drawing.Point(137, 93);
+            this.textBox30.Location = new System.Drawing.Point(160, 71);
             this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(347, 22);
+            this.textBox30.Size = new System.Drawing.Size(323, 22);
             this.textBox30.TabIndex = 5;
             // 
             // label63
@@ -4075,49 +3959,30 @@
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label63.ForeColor = System.Drawing.Color.White;
-            this.label63.Location = new System.Drawing.Point(35, 69);
+            this.label63.Location = new System.Drawing.Point(35, 36);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(64, 14);
+            this.label63.Size = new System.Drawing.Size(22, 14);
             this.label63.TabIndex = 8;
-            this.label63.Text = "บาร์โค๊ดลัง";
+            this.label63.Text = "ลัง";
             // 
             // textBox31
             // 
             this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox31.Location = new System.Drawing.Point(137, 65);
+            this.textBox31.Location = new System.Drawing.Point(160, 32);
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(347, 22);
+            this.textBox31.Size = new System.Drawing.Size(323, 22);
             this.textBox31.TabIndex = 4;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label64.ForeColor = System.Drawing.Color.White;
-            this.label64.Location = new System.Drawing.Point(35, 41);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(70, 14);
-            this.label64.TabIndex = 1;
-            this.label64.Text = "ชื่อย่อสินค้า";
-            // 
-            // textBox32
-            // 
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox32.Location = new System.Drawing.Point(137, 37);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(347, 22);
-            this.textBox32.TabIndex = 3;
             // 
             // label65
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label65.ForeColor = System.Drawing.Color.White;
-            this.label65.Location = new System.Drawing.Point(35, 97);
+            this.label65.Location = new System.Drawing.Point(35, 75);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(88, 14);
+            this.label65.Size = new System.Drawing.Size(121, 14);
             this.label65.TabIndex = 3;
-            this.label65.Text = "บาร์โค๊ดลังย่อย";
+            this.label65.Text = "Inner Box \\ ลังย่อย";
             // 
             // pnProductID
             // 
@@ -5316,18 +5181,187 @@
             this.label146.TabIndex = 62;
             this.label146.Text = "E-mail : ผู้รับเรื่อง";
             // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label45.Location = new System.Drawing.Point(643, 11);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(83, 14);
+            this.label45.TabIndex = 26;
+            this.label45.Text = "Barcode ใหม่";
+            // 
+            // panel16
+            // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.textBox9);
+            this.panel16.Controls.Add(this.label64);
+            this.panel16.Controls.Add(this.button3);
+            this.panel16.Controls.Add(this.textBox24);
+            this.panel16.Controls.Add(this.label111);
+            this.panel16.Controls.Add(this.button8);
+            this.panel16.Controls.Add(this.button13);
+            this.panel16.Controls.Add(this.button16);
+            this.panel16.Controls.Add(this.textBox25);
+            this.panel16.Controls.Add(this.label157);
+            this.panel16.Controls.Add(this.textBox27);
+            this.panel16.Controls.Add(this.label158);
+            this.panel16.Controls.Add(this.textBox28);
+            this.panel16.Controls.Add(this.label159);
+            this.panel16.Location = new System.Drawing.Point(640, 28);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(617, 446);
+            this.panel16.TabIndex = 25;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.Location = new System.Drawing.Point(160, 194);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(323, 115);
+            this.textBox9.TabIndex = 19;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label64.ForeColor = System.Drawing.Color.White;
+            this.label64.Location = new System.Drawing.Point(35, 198);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(59, 14);
+            this.label64.TabIndex = 20;
+            this.label64.Text = "หมายเหตุ";
+            // 
+            // button3
+            // 
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(493, 151);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "ตรวจสอบ";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox24
+            // 
+            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox24.Location = new System.Drawing.Point(160, 151);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(323, 22);
+            this.textBox24.TabIndex = 16;
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label111.ForeColor = System.Drawing.Color.White;
+            this.label111.Location = new System.Drawing.Point(35, 155);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(64, 14);
+            this.label111.TabIndex = 17;
+            this.label111.Text = "กล่องเดี่ยว";
+            // 
+            // button8
+            // 
+            this.button8.ForeColor = System.Drawing.Color.Black;
+            this.button8.Location = new System.Drawing.Point(493, 112);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "ตรวจสอบ";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.ForeColor = System.Drawing.Color.Black;
+            this.button13.Location = new System.Drawing.Point(493, 71);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.TabIndex = 14;
+            this.button13.Text = "ตรวจสอบ";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.ForeColor = System.Drawing.Color.Black;
+            this.button16.Location = new System.Drawing.Point(493, 32);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 13;
+            this.button16.Text = "ตรวจสอบ";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // textBox25
+            // 
+            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox25.Location = new System.Drawing.Point(160, 112);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(323, 22);
+            this.textBox25.TabIndex = 6;
+            // 
+            // label157
+            // 
+            this.label157.AutoSize = true;
+            this.label157.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label157.ForeColor = System.Drawing.Color.White;
+            this.label157.Location = new System.Drawing.Point(35, 116);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(64, 14);
+            this.label157.TabIndex = 11;
+            this.label157.Text = "กล่องแพ็ค";
+            // 
+            // textBox27
+            // 
+            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox27.Location = new System.Drawing.Point(160, 71);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(323, 22);
+            this.textBox27.TabIndex = 5;
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label158.ForeColor = System.Drawing.Color.White;
+            this.label158.Location = new System.Drawing.Point(35, 36);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(22, 14);
+            this.label158.TabIndex = 8;
+            this.label158.Text = "ลัง";
+            // 
+            // textBox28
+            // 
+            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox28.Location = new System.Drawing.Point(160, 32);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(323, 22);
+            this.textBox28.TabIndex = 4;
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label159.ForeColor = System.Drawing.Color.White;
+            this.label159.Location = new System.Drawing.Point(35, 75);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(121, 14);
+            this.label159.TabIndex = 3;
+            this.label159.Text = "Inner Box \\ ลังย่อย";
+            // 
             // New_Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
+            this.Controls.Add(this.pnBarcode);
+            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnDimention);
             this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.pnShortName);
             this.Controls.Add(this.pnProductID);
-            this.Controls.Add(this.pnDetails);
-            this.Controls.Add(this.pnBarcode);
             this.Controls.Add(this.pnRejectForm);
             this.Controls.Add(this.pnRequestForm);
             this.Controls.Add(this.pnCancelForm);
@@ -5400,6 +5434,8 @@
             this.pnCancelForm.ResumeLayout(false);
             this.pnCancelForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingEditProduct)).EndInit();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5482,23 +5518,13 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox textBox3;
@@ -5506,14 +5532,11 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Panel pnProductID;
         private System.Windows.Forms.Label label10;
@@ -5816,5 +5839,21 @@
         private System.Windows.Forms.Label label155;
         private System.Windows.Forms.TextBox textBox39;
         private System.Windows.Forms.Label label156;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Label label157;
+        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.Label label158;
+        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.Label label159;
     }
 }

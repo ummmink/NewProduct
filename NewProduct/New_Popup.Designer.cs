@@ -690,6 +690,7 @@
             this.btnComment.Text = "Comment";
             this.btnComment.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnComment.UseVisualStyleBackColor = false;
+            this.btnComment.Click += new System.EventHandler(this.btnComment_Click);
             // 
             // btnCancel
             // 

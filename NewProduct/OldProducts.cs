@@ -792,7 +792,7 @@ namespace NewProduct
         private void cmbOther_DropDown(object sender, EventArgs e)
         {
             #region Binding Product Other 
-            CommonDataSet dsProductOther = commonBiz.npd_select_product_other();
+            CommonDataSet dsProductOther = commonBiz.npd_select_product_other(false);
             cmbOther.DisplayMember = "OTHER_NAME";
             cmbOther.ValueMember = "OTHER_ID";
             cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;

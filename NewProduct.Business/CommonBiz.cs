@@ -85,11 +85,11 @@ namespace NewProduct.Business
             }
         }
 
-        public CommonDataSet npd_select_product_other()
+        public CommonDataSet npd_select_product_other(bool editpassing)
         {
             try
             {
-                return commonData.npd_select_product_other();
+                return commonData.npd_select_product_other(editpassing);
             }
             catch (Exception ex)
             {

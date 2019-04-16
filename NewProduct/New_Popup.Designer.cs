@@ -947,6 +947,7 @@
             this.cmbOther.Name = "cmbOther";
             this.cmbOther.Size = new System.Drawing.Size(129, 22);
             this.cmbOther.TabIndex = 1;
+            this.cmbOther.DropDown += new System.EventHandler(this.cmbOther_DropDown);
             this.cmbOther.SelectionChangeCommitted += new System.EventHandler(this.cmbOther_SelectionChangeCommitted);
             // 
             // label117

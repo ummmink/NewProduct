@@ -160,7 +160,7 @@ namespace NewProduct
                 #endregion
 
                 #region Binding Product Other 
-                CommonDataSet dsProductOther = commonBiz.npd_select_product_other();
+                CommonDataSet dsProductOther = commonBiz.npd_select_product_other(variablePublic.editPassing);
                 cmbOther.DisplayMember = "OTHER_NAME";
                 cmbOther.ValueMember = "OTHER_ID";
                 cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
@@ -197,7 +197,7 @@ namespace NewProduct
                     #endregion
 
                     #region Binding Product Other 
-                    CommonDataSet dsProductOther = commonBiz.npd_select_product_other();
+                    CommonDataSet dsProductOther = commonBiz.npd_select_product_other(variablePublic.editPassing);
                     cmbOther.DisplayMember = "OTHER_NAME";
                     cmbOther.ValueMember = "OTHER_ID";
                     cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
@@ -230,7 +230,7 @@ namespace NewProduct
                     tbDecorationOtherDetails.DataBindings.Add("Text", bindingEditProduct, "DECORATION_OTHER_DETAILS");
                     pbImageOfProduct.DataBindings.Add("ImageLocation", bindingEditProduct, "IMAGE_PATH");
                     cmbChannel.DataBindings.Add("SelectedValue", bindingEditProduct, "SELL_ID");
-                    //cmbOther
+                    cmbOther.DataBindings.Add("SelectedValue", bindingEditProduct, "OTHER_ID");
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
 
                     if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_FLAG.ToString().Trim() == "0") // ไม่ต้องการตัวอย่าง
@@ -415,17 +415,41 @@ namespace NewProduct
             }
             else
             {
-                if (tbPackQty.Text == "")
+                if (tbCaseQty.Text == "")
                 {
                     MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    tbPackQty.Focus();
+                    tbCaseQty.Focus();
                 }
                 else
                 {
-                    pnDetailsSub1.Visible = false;
+                    if (tbInnerQty.Text == "")
+                    {
+                        MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        tbInnerQty.Focus();
+                    }
+                    else
+                    {
+                        if (tbPackQty.Text == "")
+                        {
+                            MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            tbPackQty.Focus();
+                        }
+                        else
+                        {
+                            if (tbBottleQty.Text == "")
+                            {
+                                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                tbBottleQty.Focus();
+                            }
+                            else
+                            {
+                                pnDetailsSub1.Visible = false;
 
-                    pnDetailsProductMix.Visible = true;
-                    lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+                                pnDetailsProductMix.Visible = true;
+                                lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1781,13 +1805,13 @@ namespace NewProduct
 
         private void cmbChannel_DropDown(object sender, EventArgs e)
         {
-            #region Binding Channel
-            CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active(false);
-            cmbChannel.DisplayMember = "SELL_NAME";
-            cmbChannel.ValueMember = "SELL_ID";
-            cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
-            cmbChannel.Text = "";
-            #endregion
+            //#region Binding Channel
+            //CommonDataSet dsProductChannel = commonBiz.npd_select_product_sell_all_active(false);
+            //cmbChannel.DisplayMember = "SELL_NAME";
+            //cmbChannel.ValueMember = "SELL_ID";
+            //cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
+            //cmbChannel.Text = "";
+            //#endregion
         }
 
         private void btnShortNameSave_Click(object sender, EventArgs e)
@@ -2002,6 +2026,17 @@ namespace NewProduct
         private void btnComment_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbOther_DropDown(object sender, EventArgs e)
+        {
+            //#region Binding Product Other 
+            //CommonDataSet dsProductOther = commonBiz.npd_select_product_other(false);
+            //cmbOther.DisplayMember = "OTHER_NAME";
+            //cmbOther.ValueMember = "OTHER_ID";
+            //cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
+            ////cmbOther.Text = "";
+            //#endregion
         }
 
         private void lineNotify(string msg)

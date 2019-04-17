@@ -1370,7 +1370,7 @@ namespace NewProduct
                     MailAddress address = new MailAddress("noreply.scotch@gmail.com");
                     msg.From = address;
                     //Append their name in the beginning of the subject
-                    msg.Subject = "NPD --> Details : Waiting for approval!!";
+                    msg.Subject = "NPD --> Details of Reference No. " + tbReferenceNo.Text + " : Waiting for approval!!";
                     msg.Body = "Reference No : " + tbReferenceNo.Text;
 
 

@@ -257,7 +257,20 @@ namespace NewProduct
                     tbQtyOrderPiece.DataBindings[0].FormatString = "c0";
                     tbQtyOrderCase.DataBindings.Add("Text", bindingEditProduct, "SELL_QTY_BOX", true);
                     tbQtyOrderCase.DataBindings[0].FormatString = "c0";
-                    //เงื่อนไขการส่ง
+
+                    if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SHIPPING_TERMS_ID == 1) // ทั้งปี
+                    {
+                        rdbWholeYear.Checked = true;
+                    }
+                    else if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SHIPPING_TERMS_ID == 2) // One Lot
+                    {
+                        rdbOneLot.Checked = true;
+                    }
+                    else if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SHIPPING_TERMS_ID == 3) //Until Out of Stock
+                    {
+                        rdbOutOfStock.Checked = true;
+                    }
+
                     tbRemark.DataBindings.Add("Text", bindingEditProduct, "REMARK");
                     #endregion
 

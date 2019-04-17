@@ -18,6 +18,10 @@ using NewProduct.Utility;
 using System.IO;
 using System.Drawing.Imaging;
 
+using System.Reflection;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+
 namespace NewProduct
 {
     public partial class New_Popup : Form
@@ -1345,6 +1349,15 @@ namespace NewProduct
                     MessageBox.Show(ex.Message);
                 }
                 #endregion
+
+                //#region Create PDF
+                //Document document = new Document();
+                //PdfWriter.GetInstance(document, new FileStream("E:/a.pdf", FileMode.Create));
+                //document.Open();
+                //Paragraph p = new Paragraph("Test");
+                //document.Add(p);
+                //document.Close();
+                //#endregion
 
                 #region Send Mail
                 try

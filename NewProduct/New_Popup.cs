@@ -1391,7 +1391,8 @@ namespace NewProduct
                 , ConvertUtil.parseFloat(tbPrice.Text), variablePublic.productTotalCasePrice, variablePublic.productPrefix
                 , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
                 , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
-                , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text, 1
+                , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text
+                , rdbWholeYear.Checked == true ? 1 : rdbOneLot.Checked == true ? 2 : 3 
                 , wantSample);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

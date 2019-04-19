@@ -9,6 +9,7 @@ namespace NewProduct
     class variablePublic
     {
         //Image
+        //public static string saveImagePath = @"E:\NewProductSystem\NPD_Images";
         public static string saveImagePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
         public static string imagePath;
         //Price

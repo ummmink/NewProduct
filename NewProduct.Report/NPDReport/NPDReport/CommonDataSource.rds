@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CommonDataSource">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=IT_NB_04;Initial Catalog=COMMON</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>abb7fe06-4c5c-4bf6-9df4-cdd2768030f0</DataSourceID>
+</RptDataSource>

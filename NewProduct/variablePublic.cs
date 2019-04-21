@@ -10,7 +10,8 @@ namespace NewProduct
     {
         //Image
         //public static string saveImagePath = @"E:\NewProductSystem\NPD_Images";
-        public static string saveImagePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
+        //public static string saveImagePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
+        public static string saveImagePath = @"D:\Mink\My work\NPD\NPD_Images";
         public static string imagePath;
         //Price
         public static float productMainPrice; //ราคาสินค้าปกติ

@@ -1370,7 +1370,7 @@ namespace NewProduct
                     MailAddress address = new MailAddress("noreply.scotch@gmail.com");
                     msg.From = address;
                     //Append their name in the beginning of the subject
-                    msg.Subject = "NPD --> Details of Reference No. " + tbReferenceNo.Text + " : Waiting for approval!!";
+                    msg.Subject = "NPD : Details of Reference No. " + tbReferenceNo.Text + " >> Waiting for approval!!";
                     msg.Body = "Reference No : " + tbReferenceNo.Text;
 
 
@@ -1858,12 +1858,12 @@ namespace NewProduct
                         //Create the msg object to be sent
                         MailMessage msg = new MailMessage();
                         //Add your email address to the recipients             
-                        msg.To.Add("sarawana.n@scotch.co.th");
+                        msg.To.Add("n.sarawana@gmail.com");
                         //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
-                        MailAddress address = new MailAddress("npd.scotch@gmail.com");
+                        MailAddress address = new MailAddress("noreply.scotch@gmail.com");
                         msg.From = address;
                         //Append their name in the beginning of the subject
-                        msg.Subject = "NPD --> Short Name : Successfully updated";
+                        msg.Subject = "NPD : Short Name of Reference No. " + tbReferenceNo.Text + " : Successfully updated >> Waiting for Barcode!!";
                         msg.Body = "Reference No : " + tbReferenceNo.Text;
 
 
@@ -1871,7 +1871,7 @@ namespace NewProduct
                         SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                         client.EnableSsl = true; //only enable this if your provider requires it
                                                  //Setup credentials to login to our sender email address ("UserName", "Password")
-                        NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");
+                        NetworkCredential credentials = new NetworkCredential("noreply.scotch@gmail.com", "masterkey@noreply");
 
                         client.Credentials = credentials;
 

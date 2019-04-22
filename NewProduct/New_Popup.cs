@@ -1373,7 +1373,6 @@ namespace NewProduct
                     msg.Subject = "NPD : Details of Reference No. " + tbReferenceNo.Text + " >> Waiting for approval!!";
                     msg.Body = "Reference No : " + tbReferenceNo.Text;
 
-
                     //Configure an SmtpClient to send the mail.
                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                     client.EnableSsl = true; //only enable this if your provider requires it
@@ -1989,12 +1988,12 @@ namespace NewProduct
                     //Create the msg object to be sent
                     MailMessage msg = new MailMessage();
                     //Add your email address to the recipients             
-                    msg.To.Add("sarawana.n@scotch.co.th");
+                    msg.To.Add("n.sarawana@gmail.com");
                     //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
-                    MailAddress address = new MailAddress("npd.scotch@gmail.com");
+                    MailAddress address = new MailAddress("noreply.scotch@gmail.com");
                     msg.From = address;
                     //Append their name in the beginning of the subject
-                    msg.Subject = "NPD --> Dimension : Successfully updated";
+                    msg.Subject = "NPD : Dimension of Reference No. " + tbReferenceNo.Text + " : Successfully updated >> Waiting for Product ID!!";
                     msg.Body = "Reference No : " + tbReferenceNo.Text;
 
 
@@ -2002,7 +2001,7 @@ namespace NewProduct
                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                     client.EnableSsl = true; //only enable this if your provider requires it
                                              //Setup credentials to login to our sender email address ("UserName", "Password")
-                    NetworkCredential credentials = new NetworkCredential("npd.scotch@gmail.com", "masterkey@npd");
+                    NetworkCredential credentials = new NetworkCredential("noreply.scotch@gmail.com", "masterkey@noreply");
 
                     client.Credentials = credentials;
 
@@ -2064,6 +2063,188 @@ namespace NewProduct
             //cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
             ////cmbOther.Text = "";
             //#endregion
+        }
+
+        private void tbBottleWidth_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbBottleLength.Focus();
+            }
+        }
+
+        private void tbBottleWidth_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbBottleLength_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbBottleHeight.Focus();
+            }
+        }
+
+        private void tbBottleLength_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbBottleHeight_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbPackWidth.Focus();
+            }
+        }
+
+        private void tbBottleHeight_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPackWidth_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbPackLength.Focus();
+            }
+        }
+
+        private void tbPackWidth_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPackLength_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPackLength_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbPackHeight.Focus();
+            }
+        }
+
+        private void tbPackHeight_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPackHeight_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbInnerWidth.Focus();
+            }
+        }
+
+        private void tbInnerWidth_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbInnerWidth_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+                tbDecoration1.Focus();
+            }
         }
 
         private void lineNotify(string msg)

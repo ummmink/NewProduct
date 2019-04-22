@@ -279,7 +279,7 @@ namespace NewProduct
                     #endregion
 
                     #region Short Name
-
+                    tbShortName.DataBindings.Add("Text", bindingEditProduct, "SHORT_NAME");
                     #endregion
 
                     #region Barcode

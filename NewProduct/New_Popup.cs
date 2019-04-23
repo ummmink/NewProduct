@@ -390,7 +390,25 @@ namespace NewProduct
                         pnProductID.Tag = "PanelShow";
                         ChangeVisibleByTag("PanelShow");
 
-                        
+                        foreach (var c in pnDetailsSub1.Controls.OfType<Button>())
+                        {
+                            (c as Button).Enabled = false;
+                        }
+
+                        pbImageOfProduct.Enabled = false;
+
+                        foreach (var c in pnChannel.Controls.OfType<Button>())
+                        {
+                            (c as Button).Enabled = false;
+                        }
+
+                        btnApproved.Visible = false;
+                        btnReject.Visible = false;
+                        btnCancel.Visible = false;
+                        btnSave.Visible = false;
+                        btnClose.Visible = false;
+                        btnComment.Visible = true;
+                        btnComment.Location= new Point(1159, 552);
                     }
                 }
                 else

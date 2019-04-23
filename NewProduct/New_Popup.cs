@@ -379,6 +379,19 @@ namespace NewProduct
 
                     PreviewProductHamper();
                     #endregion
+
+                    if (variablePublic.user_group_id == "ACU" || variablePublic.user_group_id == "ACA")
+                    {
+                        //Change button color when click
+                        btnProductID.Tag = "Blue";
+                        ChangeColorByTag("Blue");
+
+                        //Change panel visible is true when click
+                        pnProductID.Tag = "PanelShow";
+                        ChangeVisibleByTag("PanelShow");
+
+                        
+                    }
                 }
                 else
                 {

@@ -286,8 +286,76 @@ namespace NewProduct
 
                     #endregion
 
-                    #region Dimention
+                    #region Dimension
+                    CommonDataSet dsDimension = commonBiz.npd_select_all_product_dimension_temp_by_reference_no(variablePublic.referenceNO);
+                    bindingDimension.DataSource = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO;
 
+                    // ขนาดผลิตภัณฑ์ กล่องเดี่ยว
+                    tbBottleWidth.DataBindings.Add("Text", bindingDimension, "BOTTLE_WIDTH", true);
+                    tbBottleWidth.DataBindings[0].FormatString = "c";
+                    tbBottleLength.DataBindings.Add("Text", bindingDimension, "BOTTLE_LENGTH", true);
+                    tbBottleLength.DataBindings[0].FormatString = "c";
+                    tbBottleHeight.DataBindings.Add("Text", bindingDimension, "BOTTLE_HEIGHT", true);
+                    tbBottleHeight.DataBindings[0].FormatString = "c";
+                    // ขนาดผลิตภัณฑ์ กล่องแพ็ค
+                    tbPackWidth.DataBindings.Add("Text", bindingDimension, "PACK_WIDTH", true);
+                    tbPackWidth.DataBindings[0].FormatString = "c";
+                    tbPackLength.DataBindings.Add("Text", bindingDimension, "PACK_LENGTH", true);
+                    tbPackLength.DataBindings[0].FormatString = "c";
+                    tbPackHeight.DataBindings.Add("Text", bindingDimension, "PACK_HEIGHT", true);
+                    tbPackHeight.DataBindings[0].FormatString = "c";
+                    // ขนาดผลิตภัณฑ์ Inner Box/ลังย่อย
+                    tbInnerWidth.DataBindings.Add("Text", bindingDimension, "INNER_WIDTH", true);
+                    tbInnerWidth.DataBindings[0].FormatString = "c";
+                    tbInnerLength.DataBindings.Add("Text", bindingDimension, "INNER_LENGTH", true);
+                    tbInnerLength.DataBindings[0].FormatString = "c";
+                    tbInnerHeight.DataBindings.Add("Text", bindingDimension, "INNER_HEIGHT", true);
+                    tbInnerHeight.DataBindings[0].FormatString = "c";
+                    // ขนาดผลิตภัณฑ์ ลังลูกฟูก
+                    tbCaseWidth.DataBindings.Add("Text", bindingDimension, "CASE_WIDTH", true);
+                    tbCaseWidth.DataBindings[0].FormatString = "c";
+                    tbCaseLength.DataBindings.Add("Text", bindingDimension, "CASE_LENGTH", true);
+                    tbCaseLength.DataBindings[0].FormatString = "c";
+                    tbCaseHeight.DataBindings.Add("Text", bindingDimension, "CASE_HEIGHT", true);
+                    tbCaseHeight.DataBindings[0].FormatString = "c";
+
+                    // น้ำหนักผลิตภัณฑ์ กล่องเดี่ยว
+                    tbBottleNetWeight.DataBindings.Add("Text", bindingDimension, "BOTTLE_NETWEIGHT", true);
+                    tbBottleNetWeight.DataBindings[0].FormatString = "c";
+                    tbBottleGrossWeight.DataBindings.Add("Text", bindingDimension, "BOTTLE_GROSSWEIGHT", true);
+                    tbBottleGrossWeight.DataBindings[0].FormatString = "c";
+
+                    // น้ำหนักผลิตภัณฑ์ กล่องแพ็ค
+                    tbPackNetWeight.DataBindings.Add("Text", bindingDimension, "PACK_NETWEIGHT", true);
+                    tbPackNetWeight.DataBindings[0].FormatString = "c";
+                    tbPackGrossWeight.DataBindings.Add("Text", bindingDimension, "PACK_GROSSWEIGHT", true);
+                    tbPackGrossWeight.DataBindings[0].FormatString = "c";
+
+                    // น้ำหนักผลิตภัณฑ์ Inner Box/ลังย่อย
+                    tbInnerNetWeight.DataBindings.Add("Text", bindingDimension, "INNER_NETWEIGHT", true);
+                    tbInnerNetWeight.DataBindings[0].FormatString = "c";
+                    tbInnerGrossWeight.DataBindings.Add("Text", bindingDimension, "INNER_GROSSWEIGHT", true);
+                    tbInnerGrossWeight.DataBindings[0].FormatString = "c";
+
+                    // น้ำหนักผลิตภัณฑ์ ลังลูกฟูก
+                    tbCaseNetWeight.DataBindings.Add("Text", bindingDimension, "CASE_NETWEIGHT", true);
+                    tbCaseNetWeight.DataBindings[0].FormatString = "c";
+                    tbCaseGrossWeight.DataBindings.Add("Text", bindingDimension, "CASE_GROSSWEIGHT", true);
+                    tbCaseGrossWeight.DataBindings[0].FormatString = "c";
+
+                    tbShortNameFactory.DataBindings.Add("Text", bindingDimension, "SHORT_NAME_FACTORY");
+                    tbPackaging.DataBindings.Add("Text", bindingDimension, "PACKAGING");
+                    tbTechPrintCreatedDate.DataBindings.Add("Text", bindingDimension, "TECHPRINT_CREATE_DATE");
+                    tbPrintArea.DataBindings.Add("Text", bindingDimension, "PRINT_AREA");
+                    tbBarcodeArea.DataBindings.Add("Text", bindingDimension, "BARCODE_AREA");
+                    tbArranging.DataBindings.Add("Text", bindingDimension, "ARRANGING");
+                    tbArrangingPallet.DataBindings.Add("Text", bindingDimension, "ARRANGING_PALLET");
+                    tbCapacity.DataBindings.Add("Text", bindingDimension, "CAPACITY");
+                    tbPackProduction.DataBindings.Add("Text", bindingDimension, "PACK_PRODUCTION_BY");
+                    tbInnerProduction.DataBindings.Add("Text", bindingDimension, "INNER_PRODUCTION_BY");
+                    tbCaseProduction.DataBindings.Add("Text", bindingDimension, "CASE_PRODUCTION_BY");
+                    tbOtherProduction.DataBindings.Add("Text", bindingDimension, "OTHER_PRODUCTION_BY");
+                    tbOther.DataBindings.Add("Text", bindingDimension, "OTHER");
                     #endregion
 
                     #region Product ID

@@ -362,5 +362,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_all_product_dimension_temp_by_reference_no(string reference_no)
+        {
+            try
+            {
+                return commonData.npd_select_all_product_dimension_temp_by_reference_no(reference_no);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

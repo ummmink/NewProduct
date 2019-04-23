@@ -44,6 +44,7 @@ namespace NewProduct.Data
         private static string _NPD_UPDATE_SHORT_NAME_IN_PRODUCT_TEMP = "npd_update_short_name_in_product_temp";
         private static string _NPD_INSERT_DK_PRODUCT_MAP_TEMP = "npd_insert_dk_product_map_temp";
         private static string _NPD_INSERT_PRODUCT_DIMENSION_TEMP = "npd_insert_product_dimension_temp";
+        private static string _NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO = "npd_select_all_product_dimension_temp_by_reference_no";
 
         public CommonDataSet select_product_all_status()
         {
@@ -840,6 +841,26 @@ namespace NewProduct.Data
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_INSERT_PRODUCT_DIMENSION_TEMP.TableName, _NPD_INSERT_PRODUCT_DIMENSION_TEMP, pm, strConnCommon);
 
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_all_product_dimension_temp_by_reference_no(string reference_no)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[1];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO.TableName, _NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO, pm, strConnCommon);
             }
             catch (Exception ex)
             {

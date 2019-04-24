@@ -56,7 +56,7 @@
             this.lbLogout.ForeColor = System.Drawing.Color.White;
             this.lbLogout.Image = ((System.Drawing.Image)(resources.GetObject("lbLogout.Image")));
             this.lbLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbLogout.Location = new System.Drawing.Point(1253, 29);
+            this.lbLogout.Location = new System.Drawing.Point(1253, 17);
             this.lbLogout.Name = "lbLogout";
             this.lbLogout.Size = new System.Drawing.Size(77, 35);
             this.lbLogout.TabIndex = 42;
@@ -71,7 +71,7 @@
             this.lbProjectName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbProjectName.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbProjectName.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbProjectName.Location = new System.Drawing.Point(43, 34);
+            this.lbProjectName.Location = new System.Drawing.Point(43, 22);
             this.lbProjectName.Name = "lbProjectName";
             this.lbProjectName.Size = new System.Drawing.Size(230, 25);
             this.lbProjectName.TabIndex = 43;
@@ -86,7 +86,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(287, 29);
+            this.label1.Location = new System.Drawing.Point(287, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 35);

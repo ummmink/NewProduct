@@ -380,35 +380,112 @@ namespace NewProduct
                     PreviewProductHamper();
                     #endregion
 
-                    if (variablePublic.user_group_id == "ACU" || variablePublic.user_group_id == "ACA")
+                    // Trade // Promotion Support
+                    if (variablePublic.user_group_id == "TDU" || variablePublic.user_group_id == "TDA" || variablePublic.user_group_id == "PSU" || variablePublic.user_group_id == "PSA")
                     {
-                        //Change button color when click
-                        btnProductID.Tag = "Blue";
+                        // Details
+                        btnDetails.Tag = "Blue";
+                        ChangeColorByTag("Blue");
+
+                        pnDetails.Tag = "PanelShow";
+                        ChangeVisibleByTag("PanelShow");
+
+                        // Short Name
+                        DisableShortNamePage();
+
+                        // Barcode 
+                        DisableBarcodePage();
+
+                        // Dimension
+                        DisableDimensionPage();
+
+                        // Product_ID
+                        DisableProductIDPage();
+                    }
+                    else if (variablePublic.user_group_id == "SAU" || variablePublic.user_group_id == "SAA") // Sales
+                    {
+                        // Details
+                        DisableDetailsPage();
+
+                        // Short Name
+                        btnShortName.Tag = "Blue";
                         ChangeColorByTag("Blue");
 
                         //Change panel visible is true when click
-                        pnProductID.Tag = "PanelShow";
+                        pnShortName.Tag = "PanelShow";
                         ChangeVisibleByTag("PanelShow");
 
-                        foreach (var c in pnDetailsSub1.Controls.OfType<Button>())
-                        {
-                            (c as Button).Enabled = false;
-                        }
+                        // Barcode 
+                        DisableBarcodePage();
 
-                        pbImageOfProduct.Enabled = false;
+                        // Dimension
+                        DisableDimensionPage();
 
-                        foreach (var c in pnChannel.Controls.OfType<Button>())
-                        {
-                            (c as Button).Enabled = false;
-                        }
+                        // Product_ID
+                        DisableProductIDPage();
+                    }
+                    else if (variablePublic.user_group_id == "MKU" || variablePublic.user_group_id == "MKA") // Marketing
+                    {
+                        // Details
+                        DisableDetailsPage();
 
-                        btnApproved.Visible = false;
-                        btnReject.Visible = false;
-                        btnCancel.Visible = false;
-                        btnSave.Visible = false;
-                        btnClose.Visible = false;
-                        btnComment.Visible = true;
-                        btnComment.Location= new Point(1159, 552);
+                        // Short Name
+                        DisableShortNamePage();
+
+                        // Barcode 
+                        btnBarcode.Tag = "Blue";
+                        ChangeColorByTag("Blue");
+
+                        pnBarcode.Tag = "PanelShow";
+                        ChangeVisibleByTag("PanelShow");
+
+                        // Dimension
+                        DisableDimensionPage();
+
+                        // Product_ID
+                        DisableProductIDPage();
+                    }
+                    else if (variablePublic.user_group_id == "ACU" || variablePublic.user_group_id == "ACA") // Accounting
+                    {
+                        // Details
+                        DisableDetailsPage();
+
+                        // Short Name
+                        DisableShortNamePage();
+
+                        // Barcode
+                        DisableBarcodePage();
+
+                        // Dimension
+                        DisableDimensionPage();
+
+                        // Product_ID
+                        btnProductID.Tag = "Blue";
+                        ChangeColorByTag("Blue");
+
+                        pnProductID.Tag = "PanelShow";
+                        ChangeVisibleByTag("PanelShow");
+                    }
+                    else if (variablePublic.user_group_id == "PDU" || variablePublic.user_group_id == "PDA") // Production
+                    {
+                        // Details
+                        DisableDetailsPage();
+
+                        // Short Name
+                        DisableShortNamePage();
+
+                        // Barcode
+                        DisableBarcodePage();
+
+                        // Dimension
+                        btnDimension.Tag = "Blue";
+                        ChangeColorByTag("Blue");
+
+                        pnDimention.Tag = "PanelShow";
+                        ChangeVisibleByTag("PanelShow");
+
+                        // Product_ID
+                        DisableProductIDPage();
                     }
                 }
                 else
@@ -416,6 +493,88 @@ namespace NewProduct
 
                 }
             }
+        }
+
+        private void DisableDetailsPage()
+        {
+            foreach (var c in pnDetailsSub1.Controls.OfType<Button>())
+            {
+                (c as Button).Enabled = false;
+            }
+
+            pbImageOfProduct.Enabled = false;
+
+            foreach (var c in pnChannel.Controls.OfType<Button>())
+            {
+                (c as Button).Enabled = false;
+            }
+
+            btnApproved.Visible = false;
+            btnReject.Visible = false;
+            btnCancel.Visible = false;
+            btnSave.Visible = false;
+            btnClose.Visible = false;
+            btnComment.Visible = true;
+            btnComment.Location = new Point(1159, 552);
+        }
+
+        private void DisableProductIDPage()
+        {
+            foreach (var c in pnProductDetails.Controls.OfType<Button>())
+            {
+                (c as Button).Enabled = false;
+            }
+
+            foreach (var c in pnProductChannel.Controls.OfType<Button>())
+            {
+                (c as Button).Enabled = false;
+            }
+
+            foreach (var c in pnProductProductID.Controls.OfType<Button>())
+            {
+                (c as Button).Enabled = false;
+            }
+
+            pbCostStructure.Enabled = false;
+
+            btnProductSave.Visible = false;
+            btnProductClose.Visible = false;
+            btnProductComment.Visible = true;
+            btnProductComment.Location = new Point(1097, 294);
+        }
+
+        private void DisableDimensionPage()
+        {
+            btnDimensionSave.Visible = false;
+            btnDimensionClose.Visible = false;
+            btnDimensionComment.Visible = true;
+            btnDimensionComment.Location = new Point(1036, 511);
+        }
+
+        private void DisableBarcodePage()
+        {
+            foreach (var c in pnDuplicateData.Controls.OfType<Button>())
+            {
+                (c as Button).Enabled = false;
+            }
+
+            foreach (var c in pnNewBarcode.Controls.OfType<Button>())
+            {
+                (c as Button).Enabled = false;
+            }
+
+            btnBarcodeSave.Visible = false;
+            btnBarcodeClose.Visible = false;
+            btnBarcodeComment.Visible = true;
+            btnBarcodeComment.Location = new Point(1156, 487);
+        }
+
+        private void DisableShortNamePage()
+        {
+            btnShortNameSave.Visible = false;
+            btnShortNameClose.Visible = false;
+            btnShortNameComment.Visible = true;
+            btnShortNameComment.Location = new Point(435, 87);
         }
 
         private void rdbNeedSample_Click(object sender, EventArgs e)

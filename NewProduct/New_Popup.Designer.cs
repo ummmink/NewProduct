@@ -234,6 +234,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.tbMatCode = new System.Windows.Forms.TextBox();
             this.pnDimention = new System.Windows.Forms.Panel();
+            this.btnDimensionComment = new System.Windows.Forms.Button();
             this.btnDimensionClose = new System.Windows.Forms.Button();
             this.btnDimensionSave = new System.Windows.Forms.Button();
             this.label92 = new System.Windows.Forms.Label();
@@ -317,6 +318,7 @@
             this.tbBottleWidth = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.pnProductID = new System.Windows.Forms.Panel();
+            this.btnProductComment = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
             this.pnProductChannel = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -457,8 +459,6 @@
             this.pnBarcode = new System.Windows.Forms.Panel();
             this.btnBarcodeComment = new System.Windows.Forms.Button();
             this.btnBarcodeClose = new System.Windows.Forms.Button();
-            this.btnDimensionComment = new System.Windows.Forms.Button();
-            this.btnProductComment = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCostStructure)).BeginInit();
             this.pnDetails.SuspendLayout();
@@ -2776,6 +2776,24 @@
             this.pnDimention.Tag = "PanelHide";
             this.pnDimention.Visible = false;
             // 
+            // btnDimensionComment
+            // 
+            this.btnDimensionComment.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnDimensionComment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDimensionComment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDimensionComment.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnDimensionComment.ForeColor = System.Drawing.Color.White;
+            this.btnDimensionComment.Image = ((System.Drawing.Image)(resources.GetObject("btnDimensionComment.Image")));
+            this.btnDimensionComment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDimensionComment.Location = new System.Drawing.Point(877, 511);
+            this.btnDimensionComment.Name = "btnDimensionComment";
+            this.btnDimensionComment.Size = new System.Drawing.Size(101, 35);
+            this.btnDimensionComment.TabIndex = 27;
+            this.btnDimensionComment.Tag = "";
+            this.btnDimensionComment.Text = "Comment";
+            this.btnDimensionComment.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDimensionComment.UseVisualStyleBackColor = false;
+            // 
             // btnDimensionClose
             // 
             this.btnDimensionClose.BackColor = System.Drawing.Color.Firebrick;
@@ -3745,6 +3763,24 @@
             this.pnProductID.TabIndex = 61;
             this.pnProductID.Tag = "PanelHide";
             this.pnProductID.Visible = false;
+            // 
+            // btnProductComment
+            // 
+            this.btnProductComment.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnProductComment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProductComment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductComment.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnProductComment.ForeColor = System.Drawing.Color.White;
+            this.btnProductComment.Image = ((System.Drawing.Image)(resources.GetObject("btnProductComment.Image")));
+            this.btnProductComment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductComment.Location = new System.Drawing.Point(937, 294);
+            this.btnProductComment.Name = "btnProductComment";
+            this.btnProductComment.Size = new System.Drawing.Size(101, 35);
+            this.btnProductComment.TabIndex = 32;
+            this.btnProductComment.Tag = "";
+            this.btnProductComment.Text = "Comment";
+            this.btnProductComment.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProductComment.UseVisualStyleBackColor = false;
             // 
             // label47
             // 
@@ -5331,50 +5367,14 @@
             this.btnBarcodeClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBarcodeClose.UseVisualStyleBackColor = false;
             // 
-            // btnDimensionComment
-            // 
-            this.btnDimensionComment.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnDimensionComment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDimensionComment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDimensionComment.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnDimensionComment.ForeColor = System.Drawing.Color.White;
-            this.btnDimensionComment.Image = ((System.Drawing.Image)(resources.GetObject("btnDimensionComment.Image")));
-            this.btnDimensionComment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDimensionComment.Location = new System.Drawing.Point(877, 511);
-            this.btnDimensionComment.Name = "btnDimensionComment";
-            this.btnDimensionComment.Size = new System.Drawing.Size(101, 35);
-            this.btnDimensionComment.TabIndex = 27;
-            this.btnDimensionComment.Tag = "";
-            this.btnDimensionComment.Text = "Comment";
-            this.btnDimensionComment.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDimensionComment.UseVisualStyleBackColor = false;
-            // 
-            // btnProductComment
-            // 
-            this.btnProductComment.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnProductComment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProductComment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductComment.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnProductComment.ForeColor = System.Drawing.Color.White;
-            this.btnProductComment.Image = ((System.Drawing.Image)(resources.GetObject("btnProductComment.Image")));
-            this.btnProductComment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductComment.Location = new System.Drawing.Point(937, 294);
-            this.btnProductComment.Name = "btnProductComment";
-            this.btnProductComment.Size = new System.Drawing.Size(101, 35);
-            this.btnProductComment.TabIndex = 32;
-            this.btnProductComment.Tag = "";
-            this.btnProductComment.Text = "Comment";
-            this.btnProductComment.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProductComment.UseVisualStyleBackColor = false;
-            // 
             // New_Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
-            this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnDimention);
+            this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnShortName);
             this.Controls.Add(this.pnBarcode);
             this.Controls.Add(this.pnDetails);

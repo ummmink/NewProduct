@@ -45,6 +45,7 @@ namespace NewProduct.Data
         private static string _NPD_INSERT_DK_PRODUCT_MAP_TEMP = "npd_insert_dk_product_map_temp";
         private static string _NPD_INSERT_PRODUCT_DIMENSION_TEMP = "npd_insert_product_dimension_temp";
         private static string _NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO = "npd_select_all_product_dimension_temp_by_reference_no";
+        private static string _NPD_SELECT_ALL_BARCODE_BY_BARCODE = "npd_select_all_barcode_by_barcode";
 
         public CommonDataSet select_product_all_status()
         {
@@ -861,6 +862,26 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO.TableName, _NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_all_barcode_by_barcode(string barcode)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[1];
+
+                pm[0] = new SqlParameter("@BARCODE", SqlDbType.VarChar);
+                pm[0].Value = barcode;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_ALL_BARCODE_BY_BARCODE.TableName, _NPD_SELECT_ALL_BARCODE_BY_BARCODE, pm, strConnCommon);
             }
             catch (Exception ex)
             {

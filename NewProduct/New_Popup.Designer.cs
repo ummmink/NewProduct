@@ -4887,13 +4887,13 @@
             this.pnDuplicateData.Controls.Add(this.label46);
             this.pnDuplicateData.Location = new System.Drawing.Point(11, 308);
             this.pnDuplicateData.Name = "pnDuplicateData";
-            this.pnDuplicateData.Size = new System.Drawing.Size(563, 174);
+            this.pnDuplicateData.Size = new System.Drawing.Size(563, 257);
             this.pnDuplicateData.TabIndex = 18;
             // 
             // button9
             // 
             this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(467, 127);
+            this.button9.Location = new System.Drawing.Point(467, 205);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 33;
@@ -4904,9 +4904,10 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(134, 127);
+            this.textBox3.Location = new System.Drawing.Point(134, 192);
+            this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(323, 22);
+            this.textBox3.Size = new System.Drawing.Size(323, 48);
             this.textBox3.TabIndex = 31;
             // 
             // label7
@@ -4914,7 +4915,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(9, 131);
+            this.label7.Location = new System.Drawing.Point(9, 209);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 14);
             this.label7.TabIndex = 32;
@@ -4923,7 +4924,7 @@
             // button10
             // 
             this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(467, 90);
+            this.button10.Location = new System.Drawing.Point(467, 145);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 30;
@@ -4933,7 +4934,7 @@
             // button11
             // 
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(467, 53);
+            this.button11.Location = new System.Drawing.Point(467, 86);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 29;
@@ -4943,7 +4944,7 @@
             // button12
             // 
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(467, 16);
+            this.button12.Location = new System.Drawing.Point(467, 27);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 28;
@@ -4953,9 +4954,10 @@
             // textBox6
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(134, 90);
+            this.textBox6.Location = new System.Drawing.Point(134, 132);
+            this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(323, 22);
+            this.textBox6.Size = new System.Drawing.Size(323, 48);
             this.textBox6.TabIndex = 24;
             // 
             // label8
@@ -4963,7 +4965,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(9, 94);
+            this.label8.Location = new System.Drawing.Point(9, 149);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 14);
             this.label8.TabIndex = 26;
@@ -4972,9 +4974,10 @@
             // textBox7
             // 
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(134, 53);
+            this.textBox7.Location = new System.Drawing.Point(134, 73);
+            this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(323, 22);
+            this.textBox7.Size = new System.Drawing.Size(323, 48);
             this.textBox7.TabIndex = 23;
             // 
             // label44
@@ -4982,7 +4985,7 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(9, 20);
+            this.label44.Location = new System.Drawing.Point(9, 31);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(22, 14);
             this.label44.TabIndex = 25;
@@ -4991,9 +4994,10 @@
             // textBox8
             // 
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(134, 16);
+            this.textBox8.Location = new System.Drawing.Point(134, 14);
+            this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(323, 22);
+            this.textBox8.Size = new System.Drawing.Size(323, 48);
             this.textBox8.TabIndex = 22;
             // 
             // label46
@@ -5001,7 +5005,7 @@
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(9, 57);
+            this.label46.Location = new System.Drawing.Point(9, 90);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(121, 14);
             this.label46.TabIndex = 21;
@@ -5279,7 +5283,7 @@
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(586, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(671, 454);
+            this.panel2.Size = new System.Drawing.Size(671, 513);
             this.panel2.TabIndex = 29;
             // 
             // dataGridView1
@@ -5297,9 +5301,9 @@
             this.BARCODE_PRODUCT_ID,
             this.BARCODE_PRODUCT_NAME,
             this.BARCODE});
-            this.dataGridView1.Location = new System.Drawing.Point(7, 7);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 7);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(658, 440);
+            this.dataGridView1.Size = new System.Drawing.Size(658, 496);
             this.dataGridView1.TabIndex = 0;
             // 
             // BARCODE_PRODUCT_ID

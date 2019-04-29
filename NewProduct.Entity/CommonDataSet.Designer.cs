@@ -37461,19 +37461,26 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BARCODE", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UNIT", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(CommonDataSet.NPD_SELECT_ALL_BARCODE_BY_BARCODEDataTable dataTable, string BARCODE) {
+        public virtual int Fill(CommonDataSet.NPD_SELECT_ALL_BARCODE_BY_BARCODEDataTable dataTable, string BARCODE, string UNIT) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((BARCODE == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(BARCODE));
+            }
+            if ((UNIT == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(UNIT));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -37486,13 +37493,19 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CommonDataSet.NPD_SELECT_ALL_BARCODE_BY_BARCODEDataTable GetData(string BARCODE) {
+        public virtual CommonDataSet.NPD_SELECT_ALL_BARCODE_BY_BARCODEDataTable GetData(string BARCODE, string UNIT) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((BARCODE == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(BARCODE));
+            }
+            if ((UNIT == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(UNIT));
             }
             CommonDataSet.NPD_SELECT_ALL_BARCODE_BY_BARCODEDataTable dataTable = new CommonDataSet.NPD_SELECT_ALL_BARCODE_BY_BARCODEDataTable();
             this.Adapter.Fill(dataTable);

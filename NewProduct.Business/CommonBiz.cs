@@ -375,11 +375,11 @@ namespace NewProduct.Business
             }
         }
 
-        public CommonDataSet npd_select_all_barcode_by_barcode(string barcode)
+        public CommonDataSet npd_select_all_barcode_by_barcode(string barcode, string unit)
         {
             try
             {
-                return commonData.npd_select_all_barcode_by_barcode(barcode);
+                return commonData.npd_select_all_barcode_by_barcode(barcode, unit);
             }
             catch (Exception ex)
             {

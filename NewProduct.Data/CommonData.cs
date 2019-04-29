@@ -869,14 +869,17 @@ namespace NewProduct.Data
             }
         }
 
-        public CommonDataSet npd_select_all_barcode_by_barcode(string barcode)
+        public CommonDataSet npd_select_all_barcode_by_barcode(string barcode, string unit)
         {
             try
             {
-                SqlParameter[] pm = new SqlParameter[1];
+                SqlParameter[] pm = new SqlParameter[2];
 
                 pm[0] = new SqlParameter("@BARCODE", SqlDbType.VarChar);
                 pm[0].Value = barcode;
+
+                pm[1] = new SqlParameter("@UNIT", SqlDbType.VarChar);
+                pm[1].Value = unit;
 
                 CommonDataSet ds = new CommonDataSet();
 

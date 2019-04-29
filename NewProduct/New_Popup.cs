@@ -2850,20 +2850,41 @@ namespace NewProduct
 
         private void btnBarcodeBoxCheck_Click(object sender, EventArgs e)
         {
-            CommonDataSet dsBar = commonBiz.npd_select_all_barcode_by_barcode(txtNewBarcodeBox.Text);
-
-            grdDuplicateBarcodeView.DataSource = null;
+            CommonDataSet dsBar = commonBiz.npd_select_all_barcode_by_barcode(txtNewBarcodeBox.Text, "ลัง");
 
             if (dsBar.NPD_SELECT_ALL_BARCODE_BY_BARCODE.Rows.Count > 0)
             {
-                txtDupBarcodeBox.Text = "มีข้อมูลซ้ำ";
+                txtNewBarcodeBox.BackColor = Color.FromArgb(255, 128, 128);
 
-                grdDuplicateBarcodeView.AutoGenerateColumns = false;
-                grdDuplicateBarcodeView.DataSource = dsBar.NPD_SELECT_ALL_BARCODE_BY_BARCODE;
+                txtDupBarcodeBox.BackColor = Color.FromArgb(255, 128, 128);
+                txtDupBarcodeBox.Text = "มีข้อมูลซ้ำ";
             }
             else
             {
+                txtNewBarcodeBox.BackColor = Color.FromArgb(192, 255, 192);
+
+                txtDupBarcodeBox.BackColor = Color.FromArgb(192, 255, 192);
                 txtDupBarcodeBox.Text = "ไม่มีข้อมูลซ้ำ";
+            }
+        }
+
+        private void btnBarcodeInnerBoxCheck_Click(object sender, EventArgs e)
+        {
+            CommonDataSet dsBar = commonBiz.npd_select_all_barcode_by_barcode(txtNewBarcodeInnerBox.Text, "ลังย่อย");
+
+            if (dsBar.NPD_SELECT_ALL_BARCODE_BY_BARCODE.Rows.Count > 0)
+            {
+                txtNewBarcodeInnerBox.BackColor = Color.FromArgb(255, 128, 128);
+
+                txtDupBarcodeInnerBox.BackColor = Color.FromArgb(255, 128, 128);
+                txtDupBarcodeInnerBox.Text = "มีข้อมูลซ้ำ";
+            }
+            else
+            {
+                txtNewBarcodeInnerBox.BackColor = Color.FromArgb(192, 255, 192);
+
+                txtDupBarcodeInnerBox.BackColor = Color.FromArgb(192, 255, 192);
+                txtDupBarcodeInnerBox.Text = "ไม่มีข้อมูลซ้ำ";
             }
         }
 

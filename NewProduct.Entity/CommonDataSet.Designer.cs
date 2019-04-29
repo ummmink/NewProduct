@@ -15293,6 +15293,8 @@ namespace NewProduct.Entity {
             
             private global::System.Data.DataColumn columnBARCODE;
             
+            private global::System.Data.DataColumn columnUNIT;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public NPD_SELECT_ALL_BARCODE_BY_BARCODEDataTable() {
@@ -15352,6 +15354,14 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UNITColumn {
+                get {
+                    return this.columnUNIT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -15387,12 +15397,13 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NPD_SELECT_ALL_BARCODE_BY_BARCODERow AddNPD_SELECT_ALL_BARCODE_BY_BARCODERow(string PRODUCT_ID, string PRODUCT_NAME_TH, string BARCODE) {
+            public NPD_SELECT_ALL_BARCODE_BY_BARCODERow AddNPD_SELECT_ALL_BARCODE_BY_BARCODERow(string PRODUCT_ID, string PRODUCT_NAME_TH, string BARCODE, string UNIT) {
                 NPD_SELECT_ALL_BARCODE_BY_BARCODERow rowNPD_SELECT_ALL_BARCODE_BY_BARCODERow = ((NPD_SELECT_ALL_BARCODE_BY_BARCODERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PRODUCT_ID,
                         PRODUCT_NAME_TH,
-                        BARCODE};
+                        BARCODE,
+                        UNIT};
                 rowNPD_SELECT_ALL_BARCODE_BY_BARCODERow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowNPD_SELECT_ALL_BARCODE_BY_BARCODERow);
                 return rowNPD_SELECT_ALL_BARCODE_BY_BARCODERow;
@@ -15418,6 +15429,7 @@ namespace NewProduct.Entity {
                 this.columnPRODUCT_ID = base.Columns["PRODUCT_ID"];
                 this.columnPRODUCT_NAME_TH = base.Columns["PRODUCT_NAME_TH"];
                 this.columnBARCODE = base.Columns["BARCODE"];
+                this.columnUNIT = base.Columns["UNIT"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15429,11 +15441,15 @@ namespace NewProduct.Entity {
                 base.Columns.Add(this.columnPRODUCT_NAME_TH);
                 this.columnBARCODE = new global::System.Data.DataColumn("BARCODE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBARCODE);
+                this.columnUNIT = new global::System.Data.DataColumn("UNIT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUNIT);
                 this.columnPRODUCT_ID.ReadOnly = true;
                 this.columnPRODUCT_ID.MaxLength = 15;
                 this.columnPRODUCT_NAME_TH.MaxLength = 350;
                 this.columnBARCODE.ReadOnly = true;
                 this.columnBARCODE.MaxLength = 8000;
+                this.columnUNIT.ReadOnly = true;
+                this.columnUNIT.MaxLength = 7;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -29567,6 +29583,23 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UNIT {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_BARCODE_BY_BARCODE.UNITColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UNIT\' in table \'NPD_SELECT_ALL_BARCODE_BY_BARCODE\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_BARCODE_BY_BARCODE.UNITColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPRODUCT_IDNull() {
                 return this.IsNull(this.tableNPD_SELECT_ALL_BARCODE_BY_BARCODE.PRODUCT_IDColumn);
             }
@@ -29599,6 +29632,18 @@ namespace NewProduct.Entity {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetBARCODENull() {
                 this[this.tableNPD_SELECT_ALL_BARCODE_BY_BARCODE.BARCODEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUNITNull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_BARCODE_BY_BARCODE.UNITColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUNITNull() {
+                this[this.tableNPD_SELECT_ALL_BARCODE_BY_BARCODE.UNITColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -37395,6 +37440,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("PRODUCT_ID", "PRODUCT_ID");
             tableMapping.ColumnMappings.Add("PRODUCT_NAME_TH", "PRODUCT_NAME_TH");
             tableMapping.ColumnMappings.Add("BARCODE", "BARCODE");
+            tableMapping.ColumnMappings.Add("UNIT", "UNIT");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

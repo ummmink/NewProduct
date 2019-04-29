@@ -2848,6 +2848,25 @@ namespace NewProduct
 
         }
 
+        private void btnBarcodeBoxCheck_Click(object sender, EventArgs e)
+        {
+            CommonDataSet dsBar = commonBiz.npd_select_all_barcode_by_barcode(txtNewBarcodeBox.Text);
+
+            grdDuplicateBarcodeView.DataSource = null;
+
+            if (dsBar.NPD_SELECT_ALL_BARCODE_BY_BARCODE.Rows.Count > 0)
+            {
+                txtDupBarcodeBox.Text = "มีข้อมูลซ้ำ";
+
+                grdDuplicateBarcodeView.AutoGenerateColumns = false;
+                grdDuplicateBarcodeView.DataSource = dsBar.NPD_SELECT_ALL_BARCODE_BY_BARCODE;
+            }
+            else
+            {
+                txtDupBarcodeBox.Text = "ไม่มีข้อมูลซ้ำ";
+            }
+        }
+
         private void lineNotify(string msg)
         {
             string token = "pBdAZm9ZyK6dJU8SYKeeEWM3uAjceuN2SO9tzueZsaK";

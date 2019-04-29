@@ -51,6 +51,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDetails = new System.Windows.Forms.Button();
             this.btnShortName = new System.Windows.Forms.Button();
             this.btnBarcode = new System.Windows.Forms.Button();
@@ -417,34 +422,34 @@
             this.bindingEditProduct = new System.Windows.Forms.BindingSource(this.components);
             this.bindingDimension = new System.Windows.Forms.BindingSource(this.components);
             this.pnDuplicateData = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnDupBarcodeBottleView = new System.Windows.Forms.Button();
+            this.txtDupBarcodeBottle = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnDupBarcodePackView = new System.Windows.Forms.Button();
+            this.btnDupBarcodeInnerBoxView = new System.Windows.Forms.Button();
+            this.btnDupBarcodeBoxView = new System.Windows.Forms.Button();
+            this.txtDupBarcodePack = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDupBarcodeInnerBox = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtDupBarcodeBox = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBarcodeSave = new System.Windows.Forms.Button();
             this.pnNewBarcode = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtNewBarcodeRemark = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.btnBarcodeBottleCheck = new System.Windows.Forms.Button();
+            this.txtNewBarcodeBottle = new System.Windows.Forms.TextBox();
             this.label111 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.btnBarcodePackCheck = new System.Windows.Forms.Button();
+            this.btnBarcodeInnerBoxCheck = new System.Windows.Forms.Button();
+            this.btnBarcodeBoxCheck = new System.Windows.Forms.Button();
+            this.txtNewBarcodePack = new System.Windows.Forms.TextBox();
             this.label157 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.txtNewBarcodeInnerBox = new System.Windows.Forms.TextBox();
             this.label158 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.txtNewBarcodeBox = new System.Windows.Forms.TextBox();
             this.label159 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.pnBarcode = new System.Windows.Forms.Panel();
@@ -452,10 +457,11 @@
             this.btnBarcodeClose = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdDuplicateBarcodeView = new System.Windows.Forms.DataGridView();
             this.BARCODE_PRODUCT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BARCODE_PRODUCT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BARCODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UNIT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCostStructure)).BeginInit();
             this.pnDetails.SuspendLayout();
@@ -492,7 +498,7 @@
             this.pnNewBarcode.SuspendLayout();
             this.pnBarcode.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDuplicateBarcodeView)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -2667,7 +2673,7 @@
             this.pnMatCodeDK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnMatCodeDK.Controls.Add(this.label13);
             this.pnMatCodeDK.Controls.Add(this.panel14);
-            this.pnMatCodeDK.Location = new System.Drawing.Point(46, 115);
+            this.pnMatCodeDK.Location = new System.Drawing.Point(113, 27);
             this.pnMatCodeDK.Name = "pnMatCodeDK";
             this.pnMatCodeDK.Size = new System.Drawing.Size(1270, 600);
             this.pnMatCodeDK.TabIndex = 63;
@@ -4725,7 +4731,7 @@
             this.pnCancelForm.Controls.Add(this.txtCancelDescription);
             this.pnCancelForm.Controls.Add(this.label145);
             this.pnCancelForm.Controls.Add(this.label146);
-            this.pnCancelForm.Location = new System.Drawing.Point(117, 9);
+            this.pnCancelForm.Location = new System.Drawing.Point(125, 9);
             this.pnCancelForm.Name = "pnCancelForm";
             this.pnCancelForm.Size = new System.Drawing.Size(390, 360);
             this.pnCancelForm.TabIndex = 66;
@@ -4873,139 +4879,139 @@
             // pnDuplicateData
             // 
             this.pnDuplicateData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnDuplicateData.Controls.Add(this.button9);
-            this.pnDuplicateData.Controls.Add(this.textBox3);
+            this.pnDuplicateData.Controls.Add(this.btnDupBarcodeBottleView);
+            this.pnDuplicateData.Controls.Add(this.txtDupBarcodeBottle);
             this.pnDuplicateData.Controls.Add(this.label7);
-            this.pnDuplicateData.Controls.Add(this.button10);
-            this.pnDuplicateData.Controls.Add(this.button11);
-            this.pnDuplicateData.Controls.Add(this.button12);
-            this.pnDuplicateData.Controls.Add(this.textBox6);
+            this.pnDuplicateData.Controls.Add(this.btnDupBarcodePackView);
+            this.pnDuplicateData.Controls.Add(this.btnDupBarcodeInnerBoxView);
+            this.pnDuplicateData.Controls.Add(this.btnDupBarcodeBoxView);
+            this.pnDuplicateData.Controls.Add(this.txtDupBarcodePack);
             this.pnDuplicateData.Controls.Add(this.label8);
-            this.pnDuplicateData.Controls.Add(this.textBox7);
+            this.pnDuplicateData.Controls.Add(this.txtDupBarcodeInnerBox);
             this.pnDuplicateData.Controls.Add(this.label44);
-            this.pnDuplicateData.Controls.Add(this.textBox8);
+            this.pnDuplicateData.Controls.Add(this.txtDupBarcodeBox);
             this.pnDuplicateData.Controls.Add(this.label46);
             this.pnDuplicateData.Location = new System.Drawing.Point(11, 308);
             this.pnDuplicateData.Name = "pnDuplicateData";
-            this.pnDuplicateData.Size = new System.Drawing.Size(563, 257);
+            this.pnDuplicateData.Size = new System.Drawing.Size(563, 279);
             this.pnDuplicateData.TabIndex = 18;
             // 
-            // button9
+            // btnDupBarcodeBottleView
             // 
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(467, 205);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 33;
-            this.button9.Text = "ดูข้อมูล";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btnDupBarcodeBottleView.ForeColor = System.Drawing.Color.Black;
+            this.btnDupBarcodeBottleView.Location = new System.Drawing.Point(470, 220);
+            this.btnDupBarcodeBottleView.Name = "btnDupBarcodeBottleView";
+            this.btnDupBarcodeBottleView.Size = new System.Drawing.Size(75, 23);
+            this.btnDupBarcodeBottleView.TabIndex = 33;
+            this.btnDupBarcodeBottleView.Text = "ดูข้อมูล";
+            this.btnDupBarcodeBottleView.UseVisualStyleBackColor = true;
+            this.btnDupBarcodeBottleView.Click += new System.EventHandler(this.button9_Click);
             // 
-            // textBox3
+            // txtDupBarcodeBottle
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(134, 192);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(323, 48);
-            this.textBox3.TabIndex = 31;
+            this.txtDupBarcodeBottle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDupBarcodeBottle.Location = new System.Drawing.Point(134, 207);
+            this.txtDupBarcodeBottle.Multiline = true;
+            this.txtDupBarcodeBottle.Name = "txtDupBarcodeBottle";
+            this.txtDupBarcodeBottle.Size = new System.Drawing.Size(323, 48);
+            this.txtDupBarcodeBottle.TabIndex = 31;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(9, 209);
+            this.label7.Location = new System.Drawing.Point(9, 224);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 14);
             this.label7.TabIndex = 32;
             this.label7.Text = "กล่องเดี่ยว";
             // 
-            // button10
+            // btnDupBarcodePackView
             // 
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(467, 145);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 30;
-            this.button10.Text = "ดูข้อมูล";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnDupBarcodePackView.ForeColor = System.Drawing.Color.Black;
+            this.btnDupBarcodePackView.Location = new System.Drawing.Point(470, 157);
+            this.btnDupBarcodePackView.Name = "btnDupBarcodePackView";
+            this.btnDupBarcodePackView.Size = new System.Drawing.Size(75, 23);
+            this.btnDupBarcodePackView.TabIndex = 30;
+            this.btnDupBarcodePackView.Text = "ดูข้อมูล";
+            this.btnDupBarcodePackView.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btnDupBarcodeInnerBoxView
             // 
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(467, 86);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 29;
-            this.button11.Text = "ดูข้อมูล";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnDupBarcodeInnerBoxView.ForeColor = System.Drawing.Color.Black;
+            this.btnDupBarcodeInnerBoxView.Location = new System.Drawing.Point(470, 94);
+            this.btnDupBarcodeInnerBoxView.Name = "btnDupBarcodeInnerBoxView";
+            this.btnDupBarcodeInnerBoxView.Size = new System.Drawing.Size(75, 23);
+            this.btnDupBarcodeInnerBoxView.TabIndex = 29;
+            this.btnDupBarcodeInnerBoxView.Text = "ดูข้อมูล";
+            this.btnDupBarcodeInnerBoxView.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnDupBarcodeBoxView
             // 
-            this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(467, 27);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 28;
-            this.button12.Text = "ดูข้อมูล";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnDupBarcodeBoxView.ForeColor = System.Drawing.Color.Black;
+            this.btnDupBarcodeBoxView.Location = new System.Drawing.Point(470, 31);
+            this.btnDupBarcodeBoxView.Name = "btnDupBarcodeBoxView";
+            this.btnDupBarcodeBoxView.Size = new System.Drawing.Size(75, 23);
+            this.btnDupBarcodeBoxView.TabIndex = 28;
+            this.btnDupBarcodeBoxView.Text = "ดูข้อมูล";
+            this.btnDupBarcodeBoxView.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // txtDupBarcodePack
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(134, 132);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(323, 48);
-            this.textBox6.TabIndex = 24;
+            this.txtDupBarcodePack.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDupBarcodePack.Location = new System.Drawing.Point(134, 144);
+            this.txtDupBarcodePack.Multiline = true;
+            this.txtDupBarcodePack.Name = "txtDupBarcodePack";
+            this.txtDupBarcodePack.Size = new System.Drawing.Size(323, 48);
+            this.txtDupBarcodePack.TabIndex = 24;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(9, 149);
+            this.label8.Location = new System.Drawing.Point(9, 161);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 14);
             this.label8.TabIndex = 26;
             this.label8.Text = "กล่องแพ็ค";
             // 
-            // textBox7
+            // txtDupBarcodeInnerBox
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(134, 73);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(323, 48);
-            this.textBox7.TabIndex = 23;
+            this.txtDupBarcodeInnerBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDupBarcodeInnerBox.Location = new System.Drawing.Point(134, 81);
+            this.txtDupBarcodeInnerBox.Multiline = true;
+            this.txtDupBarcodeInnerBox.Name = "txtDupBarcodeInnerBox";
+            this.txtDupBarcodeInnerBox.Size = new System.Drawing.Size(323, 48);
+            this.txtDupBarcodeInnerBox.TabIndex = 23;
             // 
             // label44
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(9, 31);
+            this.label44.Location = new System.Drawing.Point(9, 35);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(22, 14);
             this.label44.TabIndex = 25;
             this.label44.Text = "ลัง";
             // 
-            // textBox8
+            // txtDupBarcodeBox
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(134, 14);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(323, 48);
-            this.textBox8.TabIndex = 22;
+            this.txtDupBarcodeBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDupBarcodeBox.Location = new System.Drawing.Point(134, 18);
+            this.txtDupBarcodeBox.Multiline = true;
+            this.txtDupBarcodeBox.Name = "txtDupBarcodeBox";
+            this.txtDupBarcodeBox.Size = new System.Drawing.Size(323, 48);
+            this.txtDupBarcodeBox.TabIndex = 22;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(9, 90);
+            this.label46.Location = new System.Drawing.Point(9, 98);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(121, 14);
             this.label46.TabIndex = 21;
@@ -5043,130 +5049,131 @@
             // pnNewBarcode
             // 
             this.pnNewBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnNewBarcode.Controls.Add(this.textBox9);
+            this.pnNewBarcode.Controls.Add(this.txtNewBarcodeRemark);
             this.pnNewBarcode.Controls.Add(this.label64);
-            this.pnNewBarcode.Controls.Add(this.button3);
-            this.pnNewBarcode.Controls.Add(this.textBox24);
+            this.pnNewBarcode.Controls.Add(this.btnBarcodeBottleCheck);
+            this.pnNewBarcode.Controls.Add(this.txtNewBarcodeBottle);
             this.pnNewBarcode.Controls.Add(this.label111);
-            this.pnNewBarcode.Controls.Add(this.button8);
-            this.pnNewBarcode.Controls.Add(this.button13);
-            this.pnNewBarcode.Controls.Add(this.button16);
-            this.pnNewBarcode.Controls.Add(this.textBox25);
+            this.pnNewBarcode.Controls.Add(this.btnBarcodePackCheck);
+            this.pnNewBarcode.Controls.Add(this.btnBarcodeInnerBoxCheck);
+            this.pnNewBarcode.Controls.Add(this.btnBarcodeBoxCheck);
+            this.pnNewBarcode.Controls.Add(this.txtNewBarcodePack);
             this.pnNewBarcode.Controls.Add(this.label157);
-            this.pnNewBarcode.Controls.Add(this.textBox27);
+            this.pnNewBarcode.Controls.Add(this.txtNewBarcodeInnerBox);
             this.pnNewBarcode.Controls.Add(this.label158);
-            this.pnNewBarcode.Controls.Add(this.textBox28);
+            this.pnNewBarcode.Controls.Add(this.txtNewBarcodeBox);
             this.pnNewBarcode.Controls.Add(this.label159);
             this.pnNewBarcode.Location = new System.Drawing.Point(11, 28);
             this.pnNewBarcode.Name = "pnNewBarcode";
             this.pnNewBarcode.Size = new System.Drawing.Size(563, 253);
             this.pnNewBarcode.TabIndex = 25;
             // 
-            // textBox9
+            // txtNewBarcodeRemark
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(134, 156);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(323, 70);
-            this.textBox9.TabIndex = 19;
+            this.txtNewBarcodeRemark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNewBarcodeRemark.Location = new System.Drawing.Point(134, 160);
+            this.txtNewBarcodeRemark.Multiline = true;
+            this.txtNewBarcodeRemark.Name = "txtNewBarcodeRemark";
+            this.txtNewBarcodeRemark.Size = new System.Drawing.Size(323, 70);
+            this.txtNewBarcodeRemark.TabIndex = 19;
             // 
             // label64
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label64.ForeColor = System.Drawing.Color.White;
-            this.label64.Location = new System.Drawing.Point(9, 156);
+            this.label64.Location = new System.Drawing.Point(9, 160);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(59, 14);
             this.label64.TabIndex = 20;
             this.label64.Text = "หมายเหตุ";
             // 
-            // button3
+            // btnBarcodeBottleCheck
             // 
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(467, 119);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "ตรวจสอบ";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBarcodeBottleCheck.ForeColor = System.Drawing.Color.Black;
+            this.btnBarcodeBottleCheck.Location = new System.Drawing.Point(470, 123);
+            this.btnBarcodeBottleCheck.Name = "btnBarcodeBottleCheck";
+            this.btnBarcodeBottleCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnBarcodeBottleCheck.TabIndex = 18;
+            this.btnBarcodeBottleCheck.Text = "ตรวจสอบ";
+            this.btnBarcodeBottleCheck.UseVisualStyleBackColor = true;
             // 
-            // textBox24
+            // txtNewBarcodeBottle
             // 
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox24.Location = new System.Drawing.Point(134, 119);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(323, 22);
-            this.textBox24.TabIndex = 16;
+            this.txtNewBarcodeBottle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNewBarcodeBottle.Location = new System.Drawing.Point(134, 123);
+            this.txtNewBarcodeBottle.Name = "txtNewBarcodeBottle";
+            this.txtNewBarcodeBottle.Size = new System.Drawing.Size(323, 22);
+            this.txtNewBarcodeBottle.TabIndex = 16;
             // 
             // label111
             // 
             this.label111.AutoSize = true;
             this.label111.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label111.ForeColor = System.Drawing.Color.White;
-            this.label111.Location = new System.Drawing.Point(9, 123);
+            this.label111.Location = new System.Drawing.Point(9, 127);
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(64, 14);
             this.label111.TabIndex = 17;
             this.label111.Text = "กล่องเดี่ยว";
             // 
-            // button8
+            // btnBarcodePackCheck
             // 
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(467, 84);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 15;
-            this.button8.Text = "ตรวจสอบ";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnBarcodePackCheck.ForeColor = System.Drawing.Color.Black;
+            this.btnBarcodePackCheck.Location = new System.Drawing.Point(470, 86);
+            this.btnBarcodePackCheck.Name = "btnBarcodePackCheck";
+            this.btnBarcodePackCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnBarcodePackCheck.TabIndex = 15;
+            this.btnBarcodePackCheck.Text = "ตรวจสอบ";
+            this.btnBarcodePackCheck.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnBarcodeInnerBoxCheck
             // 
-            this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(467, 49);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "ตรวจสอบ";
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnBarcodeInnerBoxCheck.ForeColor = System.Drawing.Color.Black;
+            this.btnBarcodeInnerBoxCheck.Location = new System.Drawing.Point(470, 50);
+            this.btnBarcodeInnerBoxCheck.Name = "btnBarcodeInnerBoxCheck";
+            this.btnBarcodeInnerBoxCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnBarcodeInnerBoxCheck.TabIndex = 14;
+            this.btnBarcodeInnerBoxCheck.Text = "ตรวจสอบ";
+            this.btnBarcodeInnerBoxCheck.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btnBarcodeBoxCheck
             // 
-            this.button16.ForeColor = System.Drawing.Color.Black;
-            this.button16.Location = new System.Drawing.Point(467, 16);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 13;
-            this.button16.Text = "ตรวจสอบ";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnBarcodeBoxCheck.ForeColor = System.Drawing.Color.Black;
+            this.btnBarcodeBoxCheck.Location = new System.Drawing.Point(470, 16);
+            this.btnBarcodeBoxCheck.Name = "btnBarcodeBoxCheck";
+            this.btnBarcodeBoxCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnBarcodeBoxCheck.TabIndex = 13;
+            this.btnBarcodeBoxCheck.Text = "ตรวจสอบ";
+            this.btnBarcodeBoxCheck.UseVisualStyleBackColor = true;
+            this.btnBarcodeBoxCheck.Click += new System.EventHandler(this.btnBarcodeBoxCheck_Click);
             // 
-            // textBox25
+            // txtNewBarcodePack
             // 
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox25.Location = new System.Drawing.Point(134, 84);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(323, 22);
-            this.textBox25.TabIndex = 6;
+            this.txtNewBarcodePack.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNewBarcodePack.Location = new System.Drawing.Point(134, 86);
+            this.txtNewBarcodePack.Name = "txtNewBarcodePack";
+            this.txtNewBarcodePack.Size = new System.Drawing.Size(323, 22);
+            this.txtNewBarcodePack.TabIndex = 6;
             // 
             // label157
             // 
             this.label157.AutoSize = true;
             this.label157.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label157.ForeColor = System.Drawing.Color.White;
-            this.label157.Location = new System.Drawing.Point(9, 88);
+            this.label157.Location = new System.Drawing.Point(9, 90);
             this.label157.Name = "label157";
             this.label157.Size = new System.Drawing.Size(64, 14);
             this.label157.TabIndex = 11;
             this.label157.Text = "กล่องแพ็ค";
             // 
-            // textBox27
+            // txtNewBarcodeInnerBox
             // 
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Location = new System.Drawing.Point(134, 49);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(323, 22);
-            this.textBox27.TabIndex = 5;
+            this.txtNewBarcodeInnerBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNewBarcodeInnerBox.Location = new System.Drawing.Point(134, 50);
+            this.txtNewBarcodeInnerBox.Name = "txtNewBarcodeInnerBox";
+            this.txtNewBarcodeInnerBox.Size = new System.Drawing.Size(323, 22);
+            this.txtNewBarcodeInnerBox.TabIndex = 5;
             // 
             // label158
             // 
@@ -5179,20 +5186,20 @@
             this.label158.TabIndex = 8;
             this.label158.Text = "ลัง";
             // 
-            // textBox28
+            // txtNewBarcodeBox
             // 
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox28.Location = new System.Drawing.Point(134, 16);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(323, 22);
-            this.textBox28.TabIndex = 4;
+            this.txtNewBarcodeBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNewBarcodeBox.Location = new System.Drawing.Point(134, 16);
+            this.txtNewBarcodeBox.Name = "txtNewBarcodeBox";
+            this.txtNewBarcodeBox.Size = new System.Drawing.Size(323, 22);
+            this.txtNewBarcodeBox.TabIndex = 4;
             // 
             // label159
             // 
             this.label159.AutoSize = true;
             this.label159.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label159.ForeColor = System.Drawing.Color.White;
-            this.label159.Location = new System.Drawing.Point(9, 53);
+            this.label159.Location = new System.Drawing.Point(9, 54);
             this.label159.Name = "label159";
             this.label159.Size = new System.Drawing.Size(121, 14);
             this.label159.TabIndex = 3;
@@ -5280,14 +5287,17 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.grdDuplicateBarcodeView);
             this.panel2.Location = new System.Drawing.Point(586, 28);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(671, 513);
             this.panel2.TabIndex = 29;
             // 
-            // dataGridView1
+            // grdDuplicateBarcodeView
             // 
+            this.grdDuplicateBarcodeView.AllowUserToAddRows = false;
+            this.grdDuplicateBarcodeView.AllowUserToDeleteRows = false;
+            this.grdDuplicateBarcodeView.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle21.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
@@ -5295,34 +5305,68 @@
             dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdDuplicateBarcodeView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            this.grdDuplicateBarcodeView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDuplicateBarcodeView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BARCODE_PRODUCT_ID,
             this.BARCODE_PRODUCT_NAME,
-            this.BARCODE});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 7);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(658, 496);
-            this.dataGridView1.TabIndex = 0;
+            this.BARCODE,
+            this.UNIT});
+            this.grdDuplicateBarcodeView.Location = new System.Drawing.Point(6, 7);
+            this.grdDuplicateBarcodeView.Name = "grdDuplicateBarcodeView";
+            this.grdDuplicateBarcodeView.ReadOnly = true;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDuplicateBarcodeView.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            this.grdDuplicateBarcodeView.RowHeadersVisible = false;
+            this.grdDuplicateBarcodeView.Size = new System.Drawing.Size(658, 496);
+            this.grdDuplicateBarcodeView.TabIndex = 0;
             // 
             // BARCODE_PRODUCT_ID
             // 
+            this.BARCODE_PRODUCT_ID.DataPropertyName = "PRODUCT_ID";
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            this.BARCODE_PRODUCT_ID.DefaultCellStyle = dataGridViewCellStyle22;
             this.BARCODE_PRODUCT_ID.HeaderText = "PRODUCT ID";
             this.BARCODE_PRODUCT_ID.Name = "BARCODE_PRODUCT_ID";
-            this.BARCODE_PRODUCT_ID.Width = 120;
+            this.BARCODE_PRODUCT_ID.ReadOnly = true;
+            this.BARCODE_PRODUCT_ID.Width = 110;
             // 
             // BARCODE_PRODUCT_NAME
             // 
+            this.BARCODE_PRODUCT_NAME.DataPropertyName = "PRODUCT_NAME_TH";
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            this.BARCODE_PRODUCT_NAME.DefaultCellStyle = dataGridViewCellStyle23;
             this.BARCODE_PRODUCT_NAME.HeaderText = "PRODUCT NAME";
             this.BARCODE_PRODUCT_NAME.Name = "BARCODE_PRODUCT_NAME";
+            this.BARCODE_PRODUCT_NAME.ReadOnly = true;
             this.BARCODE_PRODUCT_NAME.Width = 320;
             // 
             // BARCODE
             // 
+            this.BARCODE.DataPropertyName = "BARCODE";
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            this.BARCODE.DefaultCellStyle = dataGridViewCellStyle24;
             this.BARCODE.HeaderText = "BARCODE";
             this.BARCODE.Name = "BARCODE";
-            this.BARCODE.Width = 150;
+            this.BARCODE.ReadOnly = true;
+            this.BARCODE.Width = 130;
+            // 
+            // UNIT
+            // 
+            this.UNIT.DataPropertyName = "UNIT";
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            this.UNIT.DefaultCellStyle = dataGridViewCellStyle25;
+            this.UNIT.HeaderText = "UNIT";
+            this.UNIT.Name = "UNIT";
+            this.UNIT.ReadOnly = true;
+            this.UNIT.Width = 70;
             // 
             // New_Popup
             // 
@@ -5331,14 +5375,14 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1366, 750);
             this.Controls.Add(this.pnBarcode);
+            this.Controls.Add(this.pnDetails);
+            this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnDimention);
             this.Controls.Add(this.pnShortName);
-            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnRejectForm);
             this.Controls.Add(this.pnRequestForm);
             this.Controls.Add(this.pnCancelForm);
-            this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.btnDimension);
             this.Controls.Add(this.btnProductID);
             this.Controls.Add(this.btnMatCodeDK);
@@ -5412,7 +5456,7 @@
             this.pnBarcode.ResumeLayout(false);
             this.pnBarcode.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDuplicateBarcodeView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5782,34 +5826,34 @@
         private System.Windows.Forms.Label label163;
         private System.Windows.Forms.Button btnShortNameComment;
         private System.Windows.Forms.Panel pnDuplicateData;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnDupBarcodeBottleView;
+        private System.Windows.Forms.TextBox txtDupBarcodeBottle;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnDupBarcodePackView;
+        private System.Windows.Forms.Button btnDupBarcodeInnerBoxView;
+        private System.Windows.Forms.Button btnDupBarcodeBoxView;
+        private System.Windows.Forms.TextBox txtDupBarcodePack;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDupBarcodeInnerBox;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtDupBarcodeBox;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnBarcodeSave;
         private System.Windows.Forms.Panel pnNewBarcode;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtNewBarcodeRemark;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.Button btnBarcodeBottleCheck;
+        private System.Windows.Forms.TextBox txtNewBarcodeBottle;
         private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Button btnBarcodePackCheck;
+        private System.Windows.Forms.Button btnBarcodeInnerBoxCheck;
+        private System.Windows.Forms.Button btnBarcodeBoxCheck;
+        private System.Windows.Forms.TextBox txtNewBarcodePack;
         private System.Windows.Forms.Label label157;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox txtNewBarcodeInnerBox;
         private System.Windows.Forms.Label label158;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox txtNewBarcodeBox;
         private System.Windows.Forms.Label label159;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel pnBarcode;
@@ -5819,9 +5863,10 @@
         private System.Windows.Forms.Button btnProductComment;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdDuplicateBarcodeView;
         private System.Windows.Forms.DataGridViewTextBoxColumn BARCODE_PRODUCT_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn BARCODE_PRODUCT_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn BARCODE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UNIT;
     }
 }

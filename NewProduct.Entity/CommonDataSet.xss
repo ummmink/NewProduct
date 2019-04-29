@@ -34,7 +34,7 @@
     <Shape ID="DesignTable:NPD_INSERT_DK_PRODUCT_MAP_TEMP" ZOrder="4" X="1553" Y="421" Height="96" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
     <Shape ID="DesignTable:NPD_INSERT_PRODUCT_DIMENSION_TEMP" ZOrder="3" X="1555" Y="524" Height="96" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
     <Shape ID="DesignTable:NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO" ZOrder="2" X="1557" Y="633" Height="305" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
-    <Shape ID="DesignTable:NPD_SELECT_ALL_BARCODE_BY_BARCODE" ZOrder="1" X="7" Y="951" Height="134" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
+    <Shape ID="DesignTable:NPD_SELECT_ALL_BARCODE_BY_BARCODE" ZOrder="1" X="7" Y="951" Height="153" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

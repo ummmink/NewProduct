@@ -47,6 +47,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO = "npd_select_all_product_dimension_temp_by_reference_no";
         private static string _NPD_SELECT_ALL_BARCODE_BY_BARCODE = "npd_select_all_barcode_by_barcode";
         private static string _NPD_SELECT_DUPLICATE_BARCODE_BY_BARCODE = "npd_select_duplicate_barcode_by_barcode";
+        private static string _NPD_INSERT_PRODUCT_BARCODE_TEMP = "npd_insert_product_barcode_temp";
 
         public CommonDataSet select_product_all_status()
         {
@@ -915,6 +916,49 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_DUPLICATE_BARCODE_BY_BARCODE.TableName, _NPD_SELECT_DUPLICATE_BARCODE_BY_BARCODE, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_insert_product_barcode_temp(string reference_no, string product_id, string barcode_box
+            , string barcode_subbox, string barcode_pack, string barcode_bottle, string remark, string emp_create)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[8];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                pm[1] = new SqlParameter("@PRODUCT_ID", SqlDbType.VarChar);
+                pm[1].Value = product_id;
+
+                pm[2] = new SqlParameter("@BARCODE_BOX", SqlDbType.VarChar);
+                pm[2].Value = barcode_box;
+
+                pm[3] = new SqlParameter("@BARCODE_SUBBOX", SqlDbType.VarChar);
+                pm[3].Value = barcode_subbox;
+
+                pm[4] = new SqlParameter("@BARCODE_PACK", SqlDbType.VarChar);
+                pm[4].Value = barcode_pack;
+
+                pm[5] = new SqlParameter("@BARCODE_BOTTLE", SqlDbType.VarChar);
+                pm[5].Value = barcode_bottle;
+
+                pm[6] = new SqlParameter("@REMARK", SqlDbType.VarChar);
+                pm[6].Value = remark;
+
+                pm[7] = new SqlParameter("@EMP_CREATE", SqlDbType.VarChar);
+                pm[7].Value = emp_create;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_INSERT_PRODUCT_BARCODE_TEMP.TableName, _NPD_INSERT_PRODUCT_BARCODE_TEMP, pm, strConnCommon);
+
             }
             catch (Exception ex)
             {

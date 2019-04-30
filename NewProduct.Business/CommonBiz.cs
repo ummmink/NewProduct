@@ -398,5 +398,19 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_insert_product_barcode_temp(string reference_no, string product_id, string barcode_box
+            , string barcode_subbox, string barcode_pack, string barcode_bottle, string remark, string emp_create)
+        {
+            try
+            {
+                return commonData.npd_insert_product_barcode_temp(reference_no, product_id, barcode_box
+                    , barcode_subbox, barcode_pack, barcode_bottle, remark, emp_create);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

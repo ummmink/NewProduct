@@ -2964,6 +2964,81 @@ namespace NewProduct
             }
         }
 
+        private void btnBarcodeSave_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("คุณต้องการจะบันทึกข้อมูล?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                #region Send Mail
+                try
+                {
+                    //Create the msg object to be sent
+                    MailMessage msg = new MailMessage();
+                    //Add your email address to the recipients             
+                    msg.To.Add("n.sarawana@gmail.com");
+                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                    MailAddress address = new MailAddress("noreply.scotch@gmail.com");
+                    msg.From = address;
+                    //Append their name in the beginning of the subject
+                    msg.Subject = "NPD : Barcode of Reference No. " + tbReferenceNo.Text + " >> Waiting for approval!!";
+                    msg.Body = "Reference No : " + tbReferenceNo.Text;
+
+                    //Configure an SmtpClient to send the mail.
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true; //only enable this if your provider requires it
+                                             //Setup credentials to login to our sender email address ("UserName", "Password")
+                    NetworkCredential credentials = new NetworkCredential("noreply.scotch@gmail.com", "masterkey@noreply");
+
+                    client.Credentials = credentials;
+
+                    //Send the msg
+                    client.Send(msg);
+
+                    //Display some feedback to the user to let them know it was sent
+                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    //If the message failed at some point, let the user know
+                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                #endregion
+
+                #region Save Barcode
+                CommonDataSet dsInsertBarcode = commonBiz.npd_insert_product_barcode_temp(tbReferenceNo.Text, "12345678XXXX"
+                    , txtNewBarcodeBottle.Text, txtNewBarcodePack.Text, txtNewBarcodeBox.Text, txtNewBarcodeInnerBox.Text
+                    , txtNewBarcodeRemark.Text, "Mink");
+
+                MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                #endregion
+
+                Form f = new Home_Trade();
+                f.MdiParent = this.ParentForm;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+        }
+
+        private void btnBarcodeClose_Click(object sender, EventArgs e)
+        {
+            Form f = new Home_Trade();
+            f.MdiParent = this.ParentForm;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void lineNotify(string msg)
         {
             string token = "pBdAZm9ZyK6dJU8SYKeeEWM3uAjceuN2SO9tzueZsaK";

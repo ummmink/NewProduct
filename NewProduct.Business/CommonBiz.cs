@@ -386,5 +386,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_duplicate_barcode_by_barcode(string barcode_box, string barcode_subbox, string barcode_pack, string barcode_bottle)
+        {
+            try
+            {
+                return commonData.npd_select_duplicate_barcode_by_barcode(barcode_box, barcode_subbox, barcode_pack, barcode_bottle);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

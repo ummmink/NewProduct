@@ -2888,6 +2888,57 @@ namespace NewProduct
             }
         }
 
+        private void btnBarcodePackCheck_Click(object sender, EventArgs e)
+        {
+            CommonDataSet dsBar = commonBiz.npd_select_all_barcode_by_barcode(txtNewBarcodePack.Text, "แพ็ค");
+
+            if (dsBar.NPD_SELECT_ALL_BARCODE_BY_BARCODE.Rows.Count > 0)
+            {
+                txtNewBarcodePack.BackColor = Color.FromArgb(255, 128, 128);
+
+                txtDupBarcodePack.BackColor = Color.FromArgb(255, 128, 128);
+                txtDupBarcodePack.Text = "มีข้อมูลซ้ำ";
+            }
+            else
+            {
+                txtNewBarcodePack.BackColor = Color.FromArgb(192, 255, 192);
+
+                txtDupBarcodePack.BackColor = Color.FromArgb(192, 255, 192);
+                txtDupBarcodePack.Text = "ไม่มีข้อมูลซ้ำ";
+            }
+        }
+
+        private void btnBarcodeBottleCheck_Click(object sender, EventArgs e)
+        {
+            CommonDataSet dsBar = commonBiz.npd_select_all_barcode_by_barcode(txtNewBarcodeBottle.Text, "ขวด");
+
+            if (dsBar.NPD_SELECT_ALL_BARCODE_BY_BARCODE.Rows.Count > 0)
+            {
+                txtNewBarcodeBottle.BackColor = Color.FromArgb(255, 128, 128);
+
+                txtDupBarcodeBottle.BackColor = Color.FromArgb(255, 128, 128);
+                txtDupBarcodeBottle.Text = "มีข้อมูลซ้ำ";
+            }
+            else
+            {
+                txtNewBarcodeBottle.BackColor = Color.FromArgb(192, 255, 192);
+
+                txtDupBarcodeBottle.BackColor = Color.FromArgb(192, 255, 192);
+                txtDupBarcodeBottle.Text = "ไม่มีข้อมูลซ้ำ";
+            }
+        }
+
+        private void btnDupBarcodeView_Click(object sender, EventArgs e)
+        {
+            CommonDataSet dsDup = commonBiz.npd_select_duplicate_barcode_by_barcode(txtNewBarcodeBox.Text
+                , txtNewBarcodeInnerBox.Text, txtNewBarcodePack.Text, txtNewBarcodeBottle.Text);
+
+            grdDuplicateBarcodeView.DataSource = null;
+
+            grdDuplicateBarcodeView.AutoGenerateColumns = false;
+            grdDuplicateBarcodeView.DataSource = dsDup.NPD_SELECT_DUPLICATE_BARCODE_BY_BARCODE;
+        }
+
         private void lineNotify(string msg)
         {
             string token = "pBdAZm9ZyK6dJU8SYKeeEWM3uAjceuN2SO9tzueZsaK";

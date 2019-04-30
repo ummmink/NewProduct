@@ -5198,6 +5198,7 @@
             this.grdDuplicateBarcodeView.RowHeadersVisible = false;
             this.grdDuplicateBarcodeView.Size = new System.Drawing.Size(658, 446);
             this.grdDuplicateBarcodeView.TabIndex = 0;
+            this.grdDuplicateBarcodeView.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.grdDuplicateBarcodeView_RowPrePaint);
             // 
             // btnBarcodeComment
             // 

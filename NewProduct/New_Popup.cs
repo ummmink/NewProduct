@@ -2939,6 +2939,31 @@ namespace NewProduct
             grdDuplicateBarcodeView.DataSource = dsDup.NPD_SELECT_DUPLICATE_BARCODE_BY_BARCODE;
         }
 
+        private void grdDuplicateBarcodeView_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            FormatRow(grdDuplicateBarcodeView.Rows[e.RowIndex]);
+        }
+
+        private void FormatRow(DataGridViewRow myrow)
+        {
+            if (Convert.ToString(myrow.Cells["UNIT"].Value) == "ลัง")
+            {
+                myrow.DefaultCellStyle.BackColor = Color.LightSalmon;
+            }
+            else if (Convert.ToString(myrow.Cells["UNIT"].Value) == "ลังย่อย")
+            {
+                myrow.DefaultCellStyle.BackColor = Color.LightYellow;
+            }
+            else if (Convert.ToString(myrow.Cells["UNIT"].Value) == "แพ็ค")
+            {
+                myrow.DefaultCellStyle.BackColor = Color.LightGreen;
+            }
+            else if (Convert.ToString(myrow.Cells["UNIT"].Value) == "ขวด")
+            {
+                myrow.DefaultCellStyle.BackColor = Color.LightSteelBlue;
+            }
+        }
+
         private void lineNotify(string msg)
         {
             string token = "pBdAZm9ZyK6dJU8SYKeeEWM3uAjceuN2SO9tzueZsaK";

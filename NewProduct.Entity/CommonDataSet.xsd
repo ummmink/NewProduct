@@ -796,7 +796,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NPD_INSERT_PRODUCT_TEMPTableAdapter" GeneratorDataComponentClassName="NPD_INSERT_PRODUCT_TEMPTableAdapter" Name="NPD_INSERT_PRODUCT_TEMP" UserDataComponentName="NPD_INSERT_PRODUCT_TEMPTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="COMMONConnectionString (Settings)" DbObjectName="COMMON.dbo.NPD_INSERT_PRODUCT_TEMP" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="COMMONConnectionString (Settings)" DbObjectName="COMMON.dbo.NPD_INSERT_PRODUCT_TEMP" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.NPD_INSERT_PRODUCT_TEMP</CommandText>

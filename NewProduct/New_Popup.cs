@@ -212,14 +212,19 @@ namespace NewProduct
                     tbReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
                     cmbProductType.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
                     cmbProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO");
+                    variablePublic.item_no = cmbProductItemNo.SelectedValue.ToString();
                     tbProductNameTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH");
                     tbProductNameEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG");
                     tbProductNameInvTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH_Invoice");
                     tbProductNameInvEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG_Invoice");
                     tbCaseQty.Text = "1"; // ลัง เป็น 1 เสมอ
+                    variablePublic.productCaseQty = 1;
                     tbInnerQty.DataBindings.Add("Text", bindingEditProduct, "INNER_BOX");
+                    variablePublic.productInnerBoxQty = Convert.ToInt32(tbInnerQty.Text);
                     tbPackQty.DataBindings.Add("Text", bindingEditProduct, "PACKING");
+                    variablePublic.productPackQty = Convert.ToInt32(tbPackQty.Text);
                     tbBottleQty.DataBindings.Add("Text", bindingEditProduct, "REAL_BOTTLE");
+                    variablePublic.productBottleQty = Convert.ToInt32(tbBottleQty.Text);
                     tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
                     tbPriceRecommend.DataBindings[0].FormatString = "c";
                     tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
@@ -236,6 +241,7 @@ namespace NewProduct
                     cmbChannel.DataBindings.Add("SelectedValue", bindingEditProduct, "SELL_ID");
                     cmbOther.DataBindings.Add("SelectedValue", bindingEditProduct, "OTHER_ID");
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
+                    variablePublic.productPrefix = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].PRODUCT_PREFIX.ToString();
 
                     if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_FLAG.ToString().Trim() == "0") // ไม่ต้องการตัวอย่าง
                     {

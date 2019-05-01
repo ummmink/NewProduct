@@ -412,5 +412,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_product_hamper_temp_by_reference_no_and_hamper_extra(string reference_no, int hamper_extra)
+        {
+            try
+            {
+                return commonData.npd_select_product_hamper_temp_by_reference_no_and_hamper_extra(reference_no, hamper_extra);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

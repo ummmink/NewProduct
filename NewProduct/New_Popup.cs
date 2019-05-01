@@ -219,7 +219,7 @@ namespace NewProduct
                     tbCaseQty.Text = "1"; // ลัง เป็น 1 เสมอ
                     tbInnerQty.DataBindings.Add("Text", bindingEditProduct, "INNER_BOX");
                     tbPackQty.DataBindings.Add("Text", bindingEditProduct, "PACKING");
-                    tbBottleQty.DataBindings.Add("Text", bindingEditProduct, "BOTTLE");
+                    tbBottleQty.DataBindings.Add("Text", bindingEditProduct, "REAL_BOTTLE");
                     tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
                     tbPriceRecommend.DataBindings[0].FormatString = "c";
                     tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
@@ -683,45 +683,101 @@ namespace NewProduct
 
         private void btnMixProducts_Click(object sender, EventArgs e)
         {
-            if (tbReferenceNo.Text == "")
+            if (variablePublic.editPassing == false) // New Case
             {
-                MessageBox.Show("กรุณาใส่เลขที่อ้างอิง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                tbReferenceNo.Focus();
-            }
-            else
-            {
-                if (tbCaseQty.Text == "")
+                if (tbReferenceNo.Text == "")
                 {
-                    MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    tbCaseQty.Focus();
+                    MessageBox.Show("กรุณาใส่เลขที่อ้างอิง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    tbReferenceNo.Focus();
                 }
                 else
                 {
-                    if (tbInnerQty.Text == "")
+                    if (tbCaseQty.Text == "")
                     {
                         MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        tbInnerQty.Focus();
+                        tbCaseQty.Focus();
                     }
                     else
                     {
-                        if (tbPackQty.Text == "")
+                        if (tbInnerQty.Text == "")
                         {
                             MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            tbPackQty.Focus();
+                            tbInnerQty.Focus();
                         }
                         else
                         {
-                            if (tbBottleQty.Text == "")
+                            if (tbPackQty.Text == "")
                             {
                                 MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                tbBottleQty.Focus();
+                                tbPackQty.Focus();
                             }
                             else
                             {
-                                pnDetailsSub1.Visible = false;
+                                if (tbBottleQty.Text == "")
+                                {
+                                    MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    tbBottleQty.Focus();
+                                }
+                                else
+                                {
+                                    pnDetailsSub1.Visible = false;
 
-                                pnDetailsProductMix.Visible = true;
-                                lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+                                    pnDetailsProductMix.Visible = true;
+                                    lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else if (variablePublic.editPassing == true)// Edit Case
+            {
+                if (tbReferenceNo.Text == "")
+                {
+                    MessageBox.Show("กรุณาใส่เลขที่อ้างอิง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    tbReferenceNo.Focus();
+                }
+                else
+                {
+                    if (tbCaseQty.Text == "")
+                    {
+                        MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        tbCaseQty.Focus();
+                    }
+                    else
+                    {
+                        if (tbInnerQty.Text == "")
+                        {
+                            MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            tbInnerQty.Focus();
+                        }
+                        else
+                        {
+                            if (tbPackQty.Text == "")
+                            {
+                                MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                tbPackQty.Focus();
+                            }
+                            else
+                            {
+                                if (tbBottleQty.Text == "")
+                                {
+                                    MessageBox.Show("กรุณาใส่ขนาดบรรจุ/ลัง ให้ครบก่อน!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    tbBottleQty.Focus();
+                                }
+                                else
+                                {
+                                    pnDetailsSub1.Visible = false;
+
+                                    pnDetailsProductMix.Visible = true;
+                                    lbProductDetails.Text = "รายละเอียดสินค้าประกอบ";
+
+                                    //// Main Product
+                                    //CommonDataSet dsHamper = commonBiz.npd_select_product_hamper_temp_by_reference_no_and_hamper_extra(tbReferenceNo.Text, 0);
+
+                                    //grdMainProduct.AutoGenerateColumns = false;
+                                    //grdMainProduct.DataSource = dsHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO_AND_HAMPER_EXTRA;
+                                }
                             }
                         }
                     }
@@ -1666,7 +1722,7 @@ namespace NewProduct
 
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
                 , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
-                , variablePublic.productPackQty, variablePublic.productBottleQty, 45, dtpOrderDate.Value
+                , variablePublic.productPackQty, (variablePublic.productBottleQty - variablePublic.productFreeQty), 45, dtpOrderDate.Value
                 , variablePublic.productInnerBoxQty, variablePublic.productFreeQty, "Mink", (variablePublic.item_no2).ToString()
                 , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
                 , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text
@@ -3037,6 +3093,11 @@ namespace NewProduct
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void grdMainProduct_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            //e.Cancel = true;
         }
 
         private void lineNotify(string msg)

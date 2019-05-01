@@ -211,8 +211,10 @@ namespace NewProduct
                     #region Details
                     tbReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
                     cmbProductType.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
+                    variablePublic.type_id = Convert.ToInt32(cmbProductType.SelectedValue.ToString());
                     cmbProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO");
                     variablePublic.item_no = cmbProductItemNo.SelectedValue.ToString();
+                    variablePublic.item_no2 = Convert.ToInt32(ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].ITEM_NO2.ToString());
                     tbProductNameTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH");
                     tbProductNameEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG");
                     tbProductNameInvTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH_Invoice");
@@ -225,6 +227,7 @@ namespace NewProduct
                     variablePublic.productPackQty = Convert.ToInt32(tbPackQty.Text);
                     tbBottleQty.DataBindings.Add("Text", bindingEditProduct, "REAL_BOTTLE");
                     variablePublic.productBottleQty = Convert.ToInt32(tbBottleQty.Text);
+                    //variablePublic.productFreeQty = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].FREE;
                     tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
                     tbPriceRecommend.DataBindings[0].FormatString = "c";
                     tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
@@ -239,9 +242,12 @@ namespace NewProduct
                     tbDecorationOtherDetails.DataBindings.Add("Text", bindingEditProduct, "DECORATION_OTHER_DETAILS");
                     pbImageOfProduct.DataBindings.Add("ImageLocation", bindingEditProduct, "IMAGE_PATH");
                     cmbChannel.DataBindings.Add("SelectedValue", bindingEditProduct, "SELL_ID");
+                    variablePublic.sell_id = Convert.ToInt32(cmbChannel.SelectedValue.ToString());
                     cmbOther.DataBindings.Add("SelectedValue", bindingEditProduct, "OTHER_ID");
+                    variablePublic.product_other_id = Convert.ToInt32(cmbOther.SelectedValue.ToString());
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
                     variablePublic.productPrefix = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].PRODUCT_PREFIX.ToString();
+                    variablePublic.imagePath = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].IMAGE_PATH.ToString();
 
                     if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_FLAG.ToString().Trim() == "0") // ไม่ต้องการตัวอย่าง
                     {

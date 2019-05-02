@@ -227,7 +227,8 @@ namespace NewProduct
                     variablePublic.productPackQty = Convert.ToInt32(tbPackQty.Text);
                     tbBottleQty.DataBindings.Add("Text", bindingEditProduct, "REAL_BOTTLE");
                     variablePublic.productBottleQty = Convert.ToInt32(tbBottleQty.Text);
-                    //variablePublic.productFreeQty = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].FREE;
+                    variablePublic.productMainQty = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].BOTTLE;
+                    variablePublic.productFreeQty = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].FREE;
                     tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
                     tbPriceRecommend.DataBindings[0].FormatString = "c";
                     tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
@@ -744,6 +745,8 @@ namespace NewProduct
             }
             else if (variablePublic.editPassing == true)// Edit Case
             {
+                variablePublic.productFreeQty = 0;
+
                 if (tbReferenceNo.Text == "")
                 {
                     MessageBox.Show("กรุณาใส่เลขที่อ้างอิง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -1734,7 +1737,7 @@ namespace NewProduct
 
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
                 , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
-                , variablePublic.productPackQty, (variablePublic.productBottleQty - variablePublic.productFreeQty), 45, dtpOrderDate.Value
+                , variablePublic.productPackQty, variablePublic.productMainQty, 45, dtpOrderDate.Value
                 , variablePublic.productInnerBoxQty, variablePublic.productFreeQty, "Mink", (variablePublic.item_no2).ToString()
                 , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
                 , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text

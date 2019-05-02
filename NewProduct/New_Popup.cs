@@ -3115,6 +3115,24 @@ namespace NewProduct
             //e.Cancel = true;
         }
 
+        private void pbImageOfCostStructure_Click(object sender, EventArgs e)
+        {
+            // open file dialog   
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.png)|*.jpg; *.jpeg; *.gif; *.png";
+            open.FilterIndex = 1;
+            open.RestoreDirectory = true;
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                pbImageOfCostStructure.Image = new Bitmap(open.FileName);
+                // image file path  
+                variablePublic.imageCostStructurePath = open.FileName;
+                //MessageBox.Show(variablePublic.imagePath);
+            }
+        }
+
         private void lineNotify(string msg)
         {
             string token = "pBdAZm9ZyK6dJU8SYKeeEWM3uAjceuN2SO9tzueZsaK";

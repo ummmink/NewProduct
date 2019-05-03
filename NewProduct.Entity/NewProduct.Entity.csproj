@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonDataSet.cs">
+      <DependentUpon>CommonDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CommonDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

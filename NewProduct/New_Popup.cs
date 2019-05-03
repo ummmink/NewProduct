@@ -242,6 +242,7 @@ namespace NewProduct
                     tbDecorationRemarkableOfBox.DataBindings.Add("Text", bindingEditProduct, "DECORATION_REMARKABLE_OF_BOX");
                     tbDecorationOtherDetails.DataBindings.Add("Text", bindingEditProduct, "DECORATION_OTHER_DETAILS");
                     pbImageOfProduct.DataBindings.Add("ImageLocation", bindingEditProduct, "IMAGE_PATH");
+                    pbImageOfCostStructure.DataBindings.Add("ImageLocation", bindingEditProduct, "COST_STRUCTURE_PATH");
                     cmbChannel.DataBindings.Add("SelectedValue", bindingEditProduct, "SELL_ID");
                     variablePublic.sell_id = Convert.ToInt32(cmbChannel.SelectedValue.ToString());
                     cmbOther.DataBindings.Add("SelectedValue", bindingEditProduct, "OTHER_ID");
@@ -249,6 +250,7 @@ namespace NewProduct
                     tbScheduleDateAndDetails.DataBindings.Add("Text", bindingEditProduct, "SCHEDULE");
                     variablePublic.productPrefix = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].PRODUCT_PREFIX.ToString();
                     variablePublic.imagePath = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].IMAGE_PATH.ToString();
+                    variablePublic.imageCostStructurePath = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].COST_STRUCTURE_PATH.ToString();
 
                     if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SAMPLE_FLAG.ToString().Trim() == "0") // ไม่ต้องการตัวอย่าง
                     {
@@ -1640,7 +1642,7 @@ namespace NewProduct
             DialogResult dialogResult = MessageBox.Show("คุณต้องการจะบันทึกข้อมูล?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
-                #region Upload Image               
+                #region Upload Image Product               
                 try
                 {
                     using (var bitmap = new Bitmap(pbImageOfProduct.Width, pbImageOfProduct.Height))
@@ -1671,6 +1673,45 @@ namespace NewProduct
                         }
 
                         bitmap.Save(variablePublic.imagePath, imageFormat);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                #endregion
+
+                #region Upload Image Cost Structure             
+                try
+                {
+                    using (var bitmap = new Bitmap(pbImageOfCostStructure.Width, pbImageOfCostStructure.Height))
+                    {
+                        //string sPath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
+                        pbImageOfCostStructure.DrawToBitmap(bitmap, pbImageOfCostStructure.ClientRectangle);
+                        ImageFormat imageFormat = null;
+
+                        var extension = Path.GetExtension(variablePublic.imageCostStructurePath);
+                        variablePublic.imageCostStructurePath = variablePublic.saveImageCostStructurePath + "\\" + tbReferenceNo.Text + extension;
+                        switch (extension)
+                        {
+                            case ".bmp":
+                                imageFormat = ImageFormat.Bmp;
+                                break;
+                            case ".png":
+                                imageFormat = ImageFormat.Png;
+                                break;
+                            case ".jpeg":
+                            case ".jpg":
+                                imageFormat = ImageFormat.Jpeg;
+                                break;
+                            case ".gif":
+                                imageFormat = ImageFormat.Gif;
+                                break;
+                            default:
+                                throw new NotSupportedException("File extension is not supported");
+                        }
+
+                        bitmap.Save(variablePublic.imageCostStructurePath, imageFormat);
                     }
                 }
                 catch (Exception ex)
@@ -1747,7 +1788,7 @@ namespace NewProduct
                 , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
                 , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text
                 , rdbWholeYear.Checked == true ? 1 : rdbOneLot.Checked == true ? 2 : 3 
-                , wantSample);
+                , wantSample, variablePublic.imageCostStructurePath);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 

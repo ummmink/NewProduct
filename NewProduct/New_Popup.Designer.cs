@@ -612,7 +612,7 @@
             this.pbCostStructure.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbCostStructure.Location = new System.Drawing.Point(9, 8);
             this.pbCostStructure.Name = "pbCostStructure";
-            this.pbCostStructure.Size = new System.Drawing.Size(502, 373);
+            this.pbCostStructure.Size = new System.Drawing.Size(533, 373);
             this.pbCostStructure.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCostStructure.TabIndex = 0;
             this.pbCostStructure.TabStop = false;
@@ -3829,7 +3829,7 @@
             this.btnProductComment.ForeColor = System.Drawing.Color.White;
             this.btnProductComment.Image = ((System.Drawing.Image)(resources.GetObject("btnProductComment.Image")));
             this.btnProductComment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductComment.Location = new System.Drawing.Point(937, 553);
+            this.btnProductComment.Location = new System.Drawing.Point(972, 538);
             this.btnProductComment.Name = "btnProductComment";
             this.btnProductComment.Size = new System.Drawing.Size(101, 35);
             this.btnProductComment.TabIndex = 32;
@@ -4317,7 +4317,7 @@
             this.btnProductClose.ForeColor = System.Drawing.Color.White;
             this.btnProductClose.Image = ((System.Drawing.Image)(resources.GetObject("btnProductClose.Image")));
             this.btnProductClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductClose.Location = new System.Drawing.Point(1131, 553);
+            this.btnProductClose.Location = new System.Drawing.Point(1166, 538);
             this.btnProductClose.Name = "btnProductClose";
             this.btnProductClose.Size = new System.Drawing.Size(67, 35);
             this.btnProductClose.TabIndex = 28;
@@ -4335,7 +4335,7 @@
             this.btnProductSave.ForeColor = System.Drawing.Color.White;
             this.btnProductSave.Image = ((System.Drawing.Image)(resources.GetObject("btnProductSave.Image")));
             this.btnProductSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductSave.Location = new System.Drawing.Point(1045, 553);
+            this.btnProductSave.Location = new System.Drawing.Point(1080, 538);
             this.btnProductSave.Name = "btnProductSave";
             this.btnProductSave.Size = new System.Drawing.Size(80, 35);
             this.btnProductSave.TabIndex = 27;
@@ -4372,15 +4372,15 @@
             this.pnProductProductID.Controls.Add(this.button18);
             this.pnProductProductID.Controls.Add(this.tbProductID);
             this.pnProductProductID.Controls.Add(this.label53);
-            this.pnProductProductID.Location = new System.Drawing.Point(676, 439);
+            this.pnProductProductID.Location = new System.Drawing.Point(679, 439);
             this.pnProductProductID.Name = "pnProductProductID";
-            this.pnProductProductID.Size = new System.Drawing.Size(523, 56);
+            this.pnProductProductID.Size = new System.Drawing.Size(554, 56);
             this.pnProductProductID.TabIndex = 20;
             // 
             // button18
             // 
             this.button18.ForeColor = System.Drawing.Color.Black;
-            this.button18.Location = new System.Drawing.Point(271, 13);
+            this.button18.Location = new System.Drawing.Point(369, 16);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(75, 23);
             this.button18.TabIndex = 13;
@@ -4390,9 +4390,9 @@
             // tbProductID
             // 
             this.tbProductID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbProductID.Location = new System.Drawing.Point(87, 13);
+            this.tbProductID.Location = new System.Drawing.Point(158, 16);
             this.tbProductID.Name = "tbProductID";
-            this.tbProductID.Size = new System.Drawing.Size(169, 22);
+            this.tbProductID.Size = new System.Drawing.Size(198, 22);
             this.tbProductID.TabIndex = 1;
             // 
             // label53
@@ -4400,7 +4400,7 @@
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label53.ForeColor = System.Drawing.Color.White;
-            this.label53.Location = new System.Drawing.Point(18, 17);
+            this.label53.Location = new System.Drawing.Point(89, 20);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(60, 14);
             this.label53.TabIndex = 12;
@@ -4411,7 +4411,7 @@
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label58.Location = new System.Drawing.Point(672, 8);
+            this.label58.Location = new System.Drawing.Point(676, 8);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(98, 14);
             this.label58.TabIndex = 23;
@@ -4421,9 +4421,9 @@
             // 
             this.pnProductCostStructure.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnProductCostStructure.Controls.Add(this.pbCostStructure);
-            this.pnProductCostStructure.Location = new System.Drawing.Point(675, 25);
+            this.pnProductCostStructure.Location = new System.Drawing.Point(679, 25);
             this.pnProductCostStructure.Name = "pnProductCostStructure";
-            this.pnProductCostStructure.Size = new System.Drawing.Size(523, 391);
+            this.pnProductCostStructure.Size = new System.Drawing.Size(554, 391);
             this.pnProductCostStructure.TabIndex = 19;
             // 
             // pnRequestForm
@@ -5405,10 +5405,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1362, 742);
-            this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnDimention);
-            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnBarcode);
+            this.Controls.Add(this.pnProductID);
+            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnMatCodeDK);
             this.Controls.Add(this.pnShortName);
             this.Controls.Add(this.btnDimension);

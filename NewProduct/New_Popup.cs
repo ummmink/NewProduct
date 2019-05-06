@@ -581,7 +581,7 @@ namespace NewProduct
             btnBarcodeSave.Visible = false;
             btnBarcodeClose.Visible = false;
             btnBarcodeComment.Visible = true;
-            btnBarcodeComment.Location = new Point(1156, 487);
+            btnBarcodeComment.Location = new Point(1156, 552);
         }
 
         private void DisableShortNamePage()

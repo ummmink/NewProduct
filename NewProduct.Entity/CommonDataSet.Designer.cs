@@ -88,6 +88,8 @@ namespace NewProduct.Entity {
         
         private NPD_INSERT_PRODUCT_TEMPDataTable tableNPD_INSERT_PRODUCT_TEMP;
         
+        private NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -211,6 +213,9 @@ namespace NewProduct.Entity {
                 }
                 if ((ds.Tables["NPD_INSERT_PRODUCT_TEMP"] != null)) {
                     base.Tables.Add(new NPD_INSERT_PRODUCT_TEMPDataTable(ds.Tables["NPD_INSERT_PRODUCT_TEMP"]));
+                }
+                if ((ds.Tables["NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable(ds.Tables["NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -552,6 +557,16 @@ namespace NewProduct.Entity {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO {
+            get {
+                return this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -712,6 +727,9 @@ namespace NewProduct.Entity {
                 }
                 if ((ds.Tables["NPD_INSERT_PRODUCT_TEMP"] != null)) {
                     base.Tables.Add(new NPD_INSERT_PRODUCT_TEMPDataTable(ds.Tables["NPD_INSERT_PRODUCT_TEMP"]));
+                }
+                if ((ds.Tables["NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO"] != null)) {
+                    base.Tables.Add(new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable(ds.Tables["NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -938,6 +956,12 @@ namespace NewProduct.Entity {
                     this.tableNPD_INSERT_PRODUCT_TEMP.InitVars();
                 }
             }
+            this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO = ((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable)(base.Tables["NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO"]));
+            if ((initTable == true)) {
+                if ((this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO != null)) {
+                    this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1012,6 +1036,8 @@ namespace NewProduct.Entity {
             base.Tables.Add(this.tableNPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO_AND_HAMPER_EXTRA);
             this.tableNPD_INSERT_PRODUCT_TEMP = new NPD_INSERT_PRODUCT_TEMPDataTable();
             base.Tables.Add(this.tableNPD_INSERT_PRODUCT_TEMP);
+            this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO = new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable();
+            base.Tables.Add(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1208,6 +1234,12 @@ namespace NewProduct.Entity {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1356,6 +1388,9 @@ namespace NewProduct.Entity {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void NPD_INSERT_PRODUCT_TEMPRowChangeEventHandler(object sender, NPD_INSERT_PRODUCT_TEMPRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEventHandler(object sender, NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -16742,6 +16777,413 @@ namespace NewProduct.Entity {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable : global::System.Data.TypedTableBase<NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow> {
+            
+            private global::System.Data.DataColumn columnREFERENCE_NO;
+            
+            private global::System.Data.DataColumn columnPRODUCT_ID;
+            
+            private global::System.Data.DataColumn columnBARCODE_BOTTLE;
+            
+            private global::System.Data.DataColumn columnBARCODE_PACK;
+            
+            private global::System.Data.DataColumn columnBARCODE_BOX;
+            
+            private global::System.Data.DataColumn columnBARCODE_SUBBOX;
+            
+            private global::System.Data.DataColumn columnREMARK;
+            
+            private global::System.Data.DataColumn columnCREATE_DATE;
+            
+            private global::System.Data.DataColumn columnEMP_CREATE;
+            
+            private global::System.Data.DataColumn columnAPPROVE_DATE;
+            
+            private global::System.Data.DataColumn columnEMP_APPROVE;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable() {
+                this.TableName = "NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn REFERENCE_NOColumn {
+                get {
+                    return this.columnREFERENCE_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCT_IDColumn {
+                get {
+                    return this.columnPRODUCT_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BARCODE_BOTTLEColumn {
+                get {
+                    return this.columnBARCODE_BOTTLE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BARCODE_PACKColumn {
+                get {
+                    return this.columnBARCODE_PACK;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BARCODE_BOXColumn {
+                get {
+                    return this.columnBARCODE_BOX;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BARCODE_SUBBOXColumn {
+                get {
+                    return this.columnBARCODE_SUBBOX;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn REMARKColumn {
+                get {
+                    return this.columnREMARK;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CREATE_DATEColumn {
+                get {
+                    return this.columnCREATE_DATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EMP_CREATEColumn {
+                get {
+                    return this.columnEMP_CREATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn APPROVE_DATEColumn {
+                get {
+                    return this.columnAPPROVE_DATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EMP_APPROVEColumn {
+                get {
+                    return this.columnEMP_APPROVE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow this[int index] {
+                get {
+                    return ((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEventHandler NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow(NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow AddNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow(string REFERENCE_NO, string PRODUCT_ID, string BARCODE_BOTTLE, string BARCODE_PACK, string BARCODE_BOX, string BARCODE_SUBBOX, string REMARK, System.DateTime CREATE_DATE, string EMP_CREATE, System.DateTime APPROVE_DATE, string EMP_APPROVE) {
+                NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow rowNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow = ((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        REFERENCE_NO,
+                        PRODUCT_ID,
+                        BARCODE_BOTTLE,
+                        BARCODE_PACK,
+                        BARCODE_BOX,
+                        BARCODE_SUBBOX,
+                        REMARK,
+                        CREATE_DATE,
+                        EMP_CREATE,
+                        APPROVE_DATE,
+                        EMP_APPROVE};
+                rowNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow);
+                return rowNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow FindByREFERENCE_NO(string REFERENCE_NO) {
+                return ((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(this.Rows.Find(new object[] {
+                            REFERENCE_NO})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable cln = ((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnREFERENCE_NO = base.Columns["REFERENCE_NO"];
+                this.columnPRODUCT_ID = base.Columns["PRODUCT_ID"];
+                this.columnBARCODE_BOTTLE = base.Columns["BARCODE_BOTTLE"];
+                this.columnBARCODE_PACK = base.Columns["BARCODE_PACK"];
+                this.columnBARCODE_BOX = base.Columns["BARCODE_BOX"];
+                this.columnBARCODE_SUBBOX = base.Columns["BARCODE_SUBBOX"];
+                this.columnREMARK = base.Columns["REMARK"];
+                this.columnCREATE_DATE = base.Columns["CREATE_DATE"];
+                this.columnEMP_CREATE = base.Columns["EMP_CREATE"];
+                this.columnAPPROVE_DATE = base.Columns["APPROVE_DATE"];
+                this.columnEMP_APPROVE = base.Columns["EMP_APPROVE"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnREFERENCE_NO = new global::System.Data.DataColumn("REFERENCE_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnREFERENCE_NO);
+                this.columnPRODUCT_ID = new global::System.Data.DataColumn("PRODUCT_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCT_ID);
+                this.columnBARCODE_BOTTLE = new global::System.Data.DataColumn("BARCODE_BOTTLE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBARCODE_BOTTLE);
+                this.columnBARCODE_PACK = new global::System.Data.DataColumn("BARCODE_PACK", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBARCODE_PACK);
+                this.columnBARCODE_BOX = new global::System.Data.DataColumn("BARCODE_BOX", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBARCODE_BOX);
+                this.columnBARCODE_SUBBOX = new global::System.Data.DataColumn("BARCODE_SUBBOX", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBARCODE_SUBBOX);
+                this.columnREMARK = new global::System.Data.DataColumn("REMARK", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnREMARK);
+                this.columnCREATE_DATE = new global::System.Data.DataColumn("CREATE_DATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCREATE_DATE);
+                this.columnEMP_CREATE = new global::System.Data.DataColumn("EMP_CREATE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEMP_CREATE);
+                this.columnAPPROVE_DATE = new global::System.Data.DataColumn("APPROVE_DATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAPPROVE_DATE);
+                this.columnEMP_APPROVE = new global::System.Data.DataColumn("EMP_APPROVE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEMP_APPROVE);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnREFERENCE_NO}, true));
+                this.columnREFERENCE_NO.AllowDBNull = false;
+                this.columnREFERENCE_NO.Unique = true;
+                this.columnREFERENCE_NO.MaxLength = 20;
+                this.columnPRODUCT_ID.MaxLength = 15;
+                this.columnBARCODE_BOTTLE.MaxLength = 20;
+                this.columnBARCODE_PACK.MaxLength = 20;
+                this.columnBARCODE_BOX.MaxLength = 20;
+                this.columnBARCODE_SUBBOX.MaxLength = 20;
+                this.columnREMARK.MaxLength = 350;
+                this.columnEMP_CREATE.MaxLength = 50;
+                this.columnEMP_APPROVE.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow NewNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow() {
+                return ((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChanged != null)) {
+                    this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChanged(this, new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChanging != null)) {
+                    this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChanging(this, new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowDeleted != null)) {
+                    this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowDeleted(this, new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowDeleting != null)) {
+                    this.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowDeleting(this, new NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEvent(((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow(NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                CommonDataSet ds = new CommonDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class SELECT_PRODUCT_ALL_STATUSRow : global::System.Data.DataRow {
@@ -31471,6 +31913,322 @@ namespace NewProduct.Entity {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow : global::System.Data.DataRow {
+            
+            private NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO = ((NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string REFERENCE_NO {
+                get {
+                    return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.REFERENCE_NOColumn]));
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.REFERENCE_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PRODUCT_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.PRODUCT_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PRODUCT_ID\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_B" +
+                                "Y_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.PRODUCT_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string BARCODE_BOTTLE {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOTTLEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BARCODE_BOTTLE\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TE" +
+                                "MP_BY_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOTTLEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string BARCODE_PACK {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_PACKColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BARCODE_PACK\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP" +
+                                "_BY_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_PACKColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string BARCODE_BOX {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOXColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BARCODE_BOX\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_" +
+                                "BY_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOXColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string BARCODE_SUBBOX {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_SUBBOXColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BARCODE_SUBBOX\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TE" +
+                                "MP_BY_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_SUBBOXColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string REMARK {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.REMARKColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'REMARK\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_RE" +
+                                "FERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.REMARKColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime CREATE_DATE {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.CREATE_DATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CREATE_DATE\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_" +
+                                "BY_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.CREATE_DATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string EMP_CREATE {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_CREATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EMP_CREATE\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_B" +
+                                "Y_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_CREATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime APPROVE_DATE {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.APPROVE_DATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'APPROVE_DATE\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP" +
+                                "_BY_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.APPROVE_DATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string EMP_APPROVE {
+                get {
+                    try {
+                        return ((string)(this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_APPROVEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EMP_APPROVE\' in table \'NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_" +
+                                "BY_REFERENCE_NO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_APPROVEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPRODUCT_IDNull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.PRODUCT_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPRODUCT_IDNull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.PRODUCT_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBARCODE_BOTTLENull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOTTLEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBARCODE_BOTTLENull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOTTLEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBARCODE_PACKNull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_PACKColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBARCODE_PACKNull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_PACKColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBARCODE_BOXNull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOXColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBARCODE_BOXNull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_BOXColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBARCODE_SUBBOXNull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_SUBBOXColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBARCODE_SUBBOXNull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.BARCODE_SUBBOXColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsREMARKNull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.REMARKColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetREMARKNull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.REMARKColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCREATE_DATENull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.CREATE_DATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCREATE_DATENull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.CREATE_DATEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEMP_CREATENull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_CREATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEMP_CREATENull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_CREATEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAPPROVE_DATENull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.APPROVE_DATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAPPROVE_DATENull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.APPROVE_DATEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEMP_APPROVENull() {
+                return this.IsNull(this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_APPROVEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEMP_APPROVENull() {
+                this[this.tableNPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.EMP_APPROVEColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -32544,6 +33302,40 @@ namespace NewProduct.Entity {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public NPD_INSERT_PRODUCT_TEMPRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEvent : global::System.EventArgs {
+            
+            private NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORowChangeEvent(NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NORow Row {
                 get {
                     return this.eventRow;
                 }
@@ -40150,6 +40942,197 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
                 this.Adapter.SelectCommand.Parameters[42].Value = ((string)(COST_STRUCTURE_PATH));
             }
             CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable dataTable = new CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NOTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NOTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO";
+            tableMapping.ColumnMappings.Add("REFERENCE_NO", "REFERENCE_NO");
+            tableMapping.ColumnMappings.Add("PRODUCT_ID", "PRODUCT_ID");
+            tableMapping.ColumnMappings.Add("BARCODE_BOTTLE", "BARCODE_BOTTLE");
+            tableMapping.ColumnMappings.Add("BARCODE_PACK", "BARCODE_PACK");
+            tableMapping.ColumnMappings.Add("BARCODE_BOX", "BARCODE_BOX");
+            tableMapping.ColumnMappings.Add("BARCODE_SUBBOX", "BARCODE_SUBBOX");
+            tableMapping.ColumnMappings.Add("REMARK", "REMARK");
+            tableMapping.ColumnMappings.Add("CREATE_DATE", "CREATE_DATE");
+            tableMapping.ColumnMappings.Add("EMP_CREATE", "EMP_CREATE");
+            tableMapping.ColumnMappings.Add("APPROVE_DATE", "APPROVE_DATE");
+            tableMapping.ColumnMappings.Add("EMP_APPROVE", "EMP_APPROVE");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::NewProduct.Entity.Properties.Settings.Default.COMMONConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@REFERENCE_NO", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(CommonDataSet.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable dataTable, string REFERENCE_NO) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((REFERENCE_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(REFERENCE_NO));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual CommonDataSet.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable GetData(string REFERENCE_NO) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((REFERENCE_NO == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(REFERENCE_NO));
+            }
+            CommonDataSet.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable dataTable = new CommonDataSet.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NODataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

@@ -137,7 +137,7 @@ namespace NewProduct
 
         private void New_Load(object sender, EventArgs e)
         {
-            if (variablePublic.editPassing == false) // New Case
+             if (variablePublic.editPassing == false) // New Case
             {
                 if (rdbNoSample.Checked == true)
                 {
@@ -298,7 +298,14 @@ namespace NewProduct
                     #endregion
 
                     #region Barcode
+                    CommonDataSet dsBarcode = commonBiz.npd_select_all_product_barcode_temp_by_reference_no(variablePublic.referenceNO);
+                    bindingBarcode.DataSource = dsBarcode.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO;
 
+                    txtNewBarcodeBox.DataBindings.Add("Text", bindingBarcode, "BARCODE_BOX");
+                    txtNewBarcodeInnerBox.DataBindings.Add("Text", bindingBarcode, "BARCODE_SUBBOX");
+                    txtNewBarcodePack.DataBindings.Add("Text", bindingBarcode, "BARCODE_PACK");
+                    txtNewBarcodeBottle.DataBindings.Add("Text", bindingBarcode, "BARCODE_BOTTLE");
+                    txtNewBarcodeRemark.DataBindings.Add("Text", bindingBarcode, "REMARK");
                     #endregion
 
                     #region Dimension

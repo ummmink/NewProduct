@@ -31,6 +31,7 @@ namespace NewProduct
         CommonBiz commonBiz = new CommonBiz();
 
         int y, z = 2; // y = axis y of Main Product, z = axis y of Free Product 
+        int a, b = 2; // a = axis y of Main Product on Product ID, b = axis y of Free Product on Product ID
 
         public New_Popup()
         {
@@ -420,6 +421,8 @@ namespace NewProduct
                     ClearPanel();
 
                     PreviewProductHamper();
+
+                    PreviewProductIDHamper();
                     #endregion
 
                     // Trade // Promotion Support
@@ -533,6 +536,125 @@ namespace NewProduct
                 else
                 {
 
+                }
+            }
+        }
+
+        private void PreviewProductIDHamper()
+        {
+            CommonDataSet dsProductHamper = commonBiz.npd_select_product_hamper_temp_by_reference_no(tbReferenceNo.Text);
+
+            for (int i = 0; i < dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO.Count; i++)
+            {
+                if (dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].HAMPER_EXTRA == 0) //Main Product
+                {
+                    //Label Product_Id
+                    Label dtProductId = new Label();
+                    string headerProductId = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString();
+                    dtProductId.Text = headerProductId;
+                    dtProductId.Location = new System.Drawing.Point(7, a);
+                    dtProductId.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtProductId.Size = new System.Drawing.Size(91, 14);
+                    dtProductId.AutoSize = true;
+                    dtProductId.ForeColor = Color.White;
+                    dtProductId.TextAlign = ContentAlignment.MiddleCenter;
+                    pnProductIDMainProduct.Controls.Add(dtProductId);
+
+                    //Label Product_Name_TH
+                    CommonDataSet dsProductName = commonBiz.npd_select_product_name_th_by_product_id(dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString());
+                    Label dtProductNameTH = new Label();
+                    string headerProductNameTH = dsProductName.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID[0].PRODUCT_NAME_TH.ToString();
+                    dtProductNameTH.Text = headerProductNameTH;
+                    dtProductNameTH.Location = new System.Drawing.Point(106, a);
+                    dtProductNameTH.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtProductNameTH.Size = new System.Drawing.Size(317, 14);
+                    dtProductNameTH.AutoSize = true;
+                    dtProductNameTH.ForeColor = Color.White;
+                    dtProductNameTH.TextAlign = ContentAlignment.MiddleLeft;
+                    dtProductNameTH.UseMnemonic = false;
+                    pnProductIDMainProduct.Controls.Add(dtProductNameTH);
+
+                    //Label Quantity
+                    Label dtQuantity = new Label();
+                    string headerQuantity = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].QUANTITY.ToString();
+                    dtQuantity.Text = String.Format("{0:#,##0}", double.Parse(headerQuantity));
+                    dtQuantity.Location = new System.Drawing.Point(430, a);
+                    dtQuantity.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtQuantity.Size = new System.Drawing.Size(76, 14);
+                    dtQuantity.AutoSize = false;
+                    dtQuantity.ForeColor = Color.White;
+                    dtQuantity.TextAlign = ContentAlignment.MiddleRight;
+                    pnProductIDMainProduct.Controls.Add(dtQuantity);
+
+                    //Label Unit
+                    Label dtUnit = new Label();
+                    //string headerMedia = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].MEDIA_NAME.ToString();
+                    dtUnit.Text = "ขวด";
+                    dtUnit.Location = new System.Drawing.Point(510, a);
+                    dtUnit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtUnit.Size = new System.Drawing.Size(27, 14);
+                    dtUnit.AutoSize = false;
+                    dtUnit.ForeColor = Color.White;
+                    dtUnit.TextAlign = ContentAlignment.MiddleLeft;
+                    dtUnit.UseMnemonic = false;
+                    pnProductIDMainProduct.Controls.Add(dtUnit);
+
+                    a = dtProductId.Location.Y + 21;
+                }
+                else if (dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].HAMPER_EXTRA == 1) //Free Product
+                {
+                    //Label Product_Id
+                    Label dtProductId = new Label();
+                    string headerProductId = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString();
+                    dtProductId.Text = headerProductId;
+                    dtProductId.Location = new System.Drawing.Point(7, b);
+                    dtProductId.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtProductId.Size = new System.Drawing.Size(91, 14);
+                    dtProductId.AutoSize = true;
+                    dtProductId.ForeColor = Color.FromArgb(255, 128, 0);
+                    dtProductId.TextAlign = ContentAlignment.MiddleCenter;
+                    pnProductIDFreeProduct.Controls.Add(dtProductId);
+
+                    //Label Product_Name_TH
+                    CommonDataSet dsProductName = commonBiz.npd_select_product_name_th_by_product_id(dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString());
+                    Label dtProductNameTH = new Label();
+                    string headerProductNameTH = dsProductName.NPD_SELECT_PRODUCT_NAME_TH_BY_PRODUCT_ID[0].PRODUCT_NAME_TH.ToString();
+                    dtProductNameTH.Text = headerProductNameTH;
+                    dtProductNameTH.Location = new System.Drawing.Point(106, b);
+                    dtProductNameTH.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtProductNameTH.Size = new System.Drawing.Size(317, 14);
+                    dtProductNameTH.AutoSize = true;
+                    dtProductNameTH.ForeColor = Color.FromArgb(255, 128, 0);
+                    dtProductNameTH.TextAlign = ContentAlignment.MiddleLeft;
+                    dtProductNameTH.UseMnemonic = false;
+                    pnProductIDFreeProduct.Controls.Add(dtProductNameTH);
+
+                    //Label Quantity
+                    Label dtQuantity = new Label();
+                    string headerQuantity = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].QUANTITY.ToString();
+                    dtQuantity.Text = String.Format("{0:#,##0}", double.Parse(headerQuantity));
+                    dtQuantity.Location = new System.Drawing.Point(430, b);
+                    dtQuantity.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtQuantity.Size = new System.Drawing.Size(76, 14);
+                    dtQuantity.AutoSize = false;
+                    dtQuantity.ForeColor = Color.FromArgb(255, 128, 0);
+                    dtQuantity.TextAlign = ContentAlignment.MiddleRight;
+                    pnProductIDFreeProduct.Controls.Add(dtQuantity);
+
+                    //Label Unit
+                    Label dtUnit = new Label();
+                    //string headerMedia = dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].MEDIA_NAME.ToString();
+                    dtUnit.Text = "ขวด";
+                    dtUnit.Location = new System.Drawing.Point(510, b);
+                    dtUnit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+                    dtUnit.Size = new System.Drawing.Size(27, 14);
+                    dtUnit.AutoSize = false;
+                    dtUnit.ForeColor = Color.FromArgb(255, 128, 0);
+                    dtUnit.TextAlign = ContentAlignment.MiddleLeft;
+                    dtUnit.UseMnemonic = false;
+                    pnProductIDFreeProduct.Controls.Add(dtUnit);
+
+                    b = dtProductId.Location.Y + 21;
                 }
             }
         }
@@ -1384,7 +1506,7 @@ namespace NewProduct
 
                     SaveProductHamper();
 
-                    PreviewProductHamper();
+                    PreviewProductHamper();                    
 
                     tbBottleQty.Text = tbSumQtyTotal.Text;
                     variablePublic.productBottleQty = Int32.Parse(tbBottleQty.Text);
@@ -1405,6 +1527,9 @@ namespace NewProduct
             pnFreeProduct.Controls.Clear();
             y = 2;
             z = 2;
+
+            a = 2;
+            b = 2;
         }
 
         private void PreviewProductHamper()
@@ -1426,7 +1551,7 @@ namespace NewProduct
                     dtProductId.ForeColor = Color.White;
                     dtProductId.TextAlign = ContentAlignment.MiddleCenter;
                     pnMainProduct.Controls.Add(dtProductId);
-                    pnProductIDMainProduct.Controls.Add(dtProductId);
+                    //pnProductIDMainProduct.Controls.Add(dtProductId);
 
                     //Label Product_Name_TH
                     CommonDataSet dsProductName = commonBiz.npd_select_product_name_th_by_product_id(dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString());
@@ -1441,7 +1566,7 @@ namespace NewProduct
                     dtProductNameTH.TextAlign = ContentAlignment.MiddleLeft;
                     dtProductNameTH.UseMnemonic = false;
                     pnMainProduct.Controls.Add(dtProductNameTH);
-                    pnProductIDMainProduct.Controls.Add(dtProductNameTH);
+                    //pnProductIDMainProduct.Controls.Add(dtProductNameTH);
 
                     //Label Quantity
                     Label dtQuantity = new Label();
@@ -1454,7 +1579,7 @@ namespace NewProduct
                     dtQuantity.ForeColor = Color.White;
                     dtQuantity.TextAlign = ContentAlignment.MiddleRight;
                     pnMainProduct.Controls.Add(dtQuantity);
-                    pnProductIDMainProduct.Controls.Add(dtQuantity);
+                    //pnProductIDMainProduct.Controls.Add(dtQuantity);
 
                     //Label Unit
                     Label dtUnit = new Label();
@@ -1468,7 +1593,7 @@ namespace NewProduct
                     dtUnit.TextAlign = ContentAlignment.MiddleLeft;
                     dtUnit.UseMnemonic = false;
                     pnMainProduct.Controls.Add(dtUnit);
-                    pnProductIDMainProduct.Controls.Add(dtUnit);
+                    //pnProductIDMainProduct.Controls.Add(dtUnit);
 
                     y = dtProductId.Location.Y + 21;
                 }
@@ -1485,6 +1610,7 @@ namespace NewProduct
                     dtProductId.ForeColor = Color.FromArgb(255, 128, 0);
                     dtProductId.TextAlign = ContentAlignment.MiddleCenter;
                     pnFreeProduct.Controls.Add(dtProductId);
+                    //pnProductIDFreeProduct.Controls.Add(dtProductId);
 
                     //Label Product_Name_TH
                     CommonDataSet dsProductName = commonBiz.npd_select_product_name_th_by_product_id(dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString());
@@ -1499,6 +1625,7 @@ namespace NewProduct
                     dtProductNameTH.TextAlign = ContentAlignment.MiddleLeft;
                     dtProductNameTH.UseMnemonic = false;
                     pnFreeProduct.Controls.Add(dtProductNameTH);
+                    //pnProductIDFreeProduct.Controls.Add(dtProductNameTH);
 
                     //Label Quantity
                     Label dtQuantity = new Label();
@@ -1511,6 +1638,7 @@ namespace NewProduct
                     dtQuantity.ForeColor = Color.FromArgb(255, 128, 0);
                     dtQuantity.TextAlign = ContentAlignment.MiddleRight;
                     pnFreeProduct.Controls.Add(dtQuantity);
+                    //pnProductIDFreeProduct.Controls.Add(dtQuantity);
 
                     //Label Unit
                     Label dtUnit = new Label();
@@ -1524,6 +1652,7 @@ namespace NewProduct
                     dtUnit.TextAlign = ContentAlignment.MiddleLeft;
                     dtUnit.UseMnemonic = false;
                     pnFreeProduct.Controls.Add(dtUnit);
+                    //pnProductIDFreeProduct.Controls.Add(dtUnit);
 
                     z = dtProductId.Location.Y + 21;
                 }

@@ -393,6 +393,15 @@ namespace NewProduct
                     tbProductIDReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
                     cmbProductIDProductType.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
                     cmbProductIDProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO");
+                    tbProductIDProductNameTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH");
+                    tbProductIDProductNameEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG");
+                    tbProductIDProductNameInvTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH_Invoice");
+                    tbProductIDProductNameInvEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG_Invoice");
+                    tbProductIDCaseQty.Text = "1"; // ลัง เป็น 1 เสมอ
+                    tbProductIDInnerQty.DataBindings.Add("Text", bindingEditProduct, "INNER_BOX");
+                    tbProductIDPackQty.DataBindings.Add("Text", bindingEditProduct, "PACKING");
+                    tbProductIDBottleQty.DataBindings.Add("Text", bindingEditProduct, "REAL_BOTTLE");
+
                     #endregion
 
                     #region Mat Code
@@ -1417,6 +1426,7 @@ namespace NewProduct
                     dtProductId.ForeColor = Color.White;
                     dtProductId.TextAlign = ContentAlignment.MiddleCenter;
                     pnMainProduct.Controls.Add(dtProductId);
+                    pnProductIDMainProduct.Controls.Add(dtProductId);
 
                     //Label Product_Name_TH
                     CommonDataSet dsProductName = commonBiz.npd_select_product_name_th_by_product_id(dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].PRODUCT_SUB_ID.ToString());
@@ -1431,6 +1441,7 @@ namespace NewProduct
                     dtProductNameTH.TextAlign = ContentAlignment.MiddleLeft;
                     dtProductNameTH.UseMnemonic = false;
                     pnMainProduct.Controls.Add(dtProductNameTH);
+                    pnProductIDMainProduct.Controls.Add(dtProductNameTH);
 
                     //Label Quantity
                     Label dtQuantity = new Label();
@@ -1443,6 +1454,7 @@ namespace NewProduct
                     dtQuantity.ForeColor = Color.White;
                     dtQuantity.TextAlign = ContentAlignment.MiddleRight;
                     pnMainProduct.Controls.Add(dtQuantity);
+                    pnProductIDMainProduct.Controls.Add(dtQuantity);
 
                     //Label Unit
                     Label dtUnit = new Label();
@@ -1456,6 +1468,7 @@ namespace NewProduct
                     dtUnit.TextAlign = ContentAlignment.MiddleLeft;
                     dtUnit.UseMnemonic = false;
                     pnMainProduct.Controls.Add(dtUnit);
+                    pnProductIDMainProduct.Controls.Add(dtUnit);
 
                     y = dtProductId.Location.Y + 21;
                 }

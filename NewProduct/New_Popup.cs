@@ -183,6 +183,11 @@ namespace NewProduct
                     cmbProductType.DisplayMember = "TYPE_DESC_ENG";
                     cmbProductType.ValueMember = "TYPE_ID";
                     cmbProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
+
+                    cmbProductIDProductType.DisplayMember = "TYPE_DESC_ENG";
+                    cmbProductIDProductType.ValueMember = "TYPE_ID";
+                    cmbProductIDProductType.DataSource = dsProductType.NPD_SELECT_PRODUCT_TYPE;
+
                     //cmbProductType.Text = "";
                     #endregion
 
@@ -191,6 +196,10 @@ namespace NewProduct
                     cmbProductItemNo.DisplayMember = "ITEM_NAME";
                     cmbProductItemNo.ValueMember = "ITEM_NO";
                     cmbProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
+
+                    cmbProductIDProductItemNo.DisplayMember = "ITEM_NAME";
+                    cmbProductIDProductItemNo.ValueMember = "ITEM_NO";
+                    cmbProductIDProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
                     #endregion
 
                     #region Binding Channel
@@ -381,7 +390,9 @@ namespace NewProduct
                     #endregion
 
                     #region Product ID
-
+                    tbProductIDReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
+                    cmbProductIDProductType.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
+                    cmbProductIDProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO");
                     #endregion
 
                     #region Mat Code

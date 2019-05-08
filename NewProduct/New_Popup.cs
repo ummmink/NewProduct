@@ -208,6 +208,10 @@ namespace NewProduct
                     cmbChannel.DisplayMember = "SELL_NAME";
                     cmbChannel.ValueMember = "SELL_ID";
                     cmbChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
+
+                    cmbProductIDChannel.DisplayMember = "SELL_NAME";
+                    cmbProductIDChannel.ValueMember = "SELL_ID";
+                    cmbProductIDChannel.DataSource = dsProductChannel.NPD_SELECT_PRODUCT_SELL_ALL_ACTIVE;
                     #endregion
 
                     #region Binding Product Other 
@@ -215,6 +219,10 @@ namespace NewProduct
                     cmbOther.DisplayMember = "OTHER_NAME";
                     cmbOther.ValueMember = "OTHER_ID";
                     cmbOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
+
+                    cmbProductIDOther.DisplayMember = "OTHER_NAME";
+                    cmbProductIDOther.ValueMember = "OTHER_ID";
+                    cmbProductIDOther.DataSource = dsProductOther.NPD_SELECT_PRODUCT_OTHER;
                     #endregion
 
                     #region Binding Edit Product
@@ -402,7 +410,12 @@ namespace NewProduct
                     tbProductIDInnerQty.DataBindings.Add("Text", bindingEditProduct, "INNER_BOX");
                     tbProductIDPackQty.DataBindings.Add("Text", bindingEditProduct, "PACKING");
                     tbProductIDBottleQty.DataBindings.Add("Text", bindingEditProduct, "REAL_BOTTLE");
+                    tbProductIDPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
+                    tbProductIDPriceRecommend.DataBindings[0].FormatString = "c";
+                    tbProductIDPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
+                    tbProductIDPrice.DataBindings[0].FormatString = "c";
 
+                    pbCostStructure.DataBindings.Add("ImageLocation", bindingEditProduct, "COST_STRUCTURE_PATH");
                     #endregion
 
                     #region Mat Code

@@ -9,10 +9,13 @@ namespace NewProduct
     class variablePublic
     {
         //Image
-        //public static string saveImagePath = @"E:\NewProductSystem\NPD_Images";
+        public static string saveImagePath = @"E:\Programming_Mink\NEWPRODUCT\NPD_Images";
+        public static string saveImageCostStructurePath = @"E:\Programming_Mink\NEWPRODUCT\NPD_CostStructure";
+
         //public static string saveImagePath = @"D:\Mink\My work\NPD\NPD_Images";
-        public static string saveImagePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
-        public static string saveImageCostStructurePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_CostStructure";
+
+        //public static string saveImagePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_Images";
+        //public static string saveImageCostStructurePath = @"E:\My Work\Programming\progress\NPD\NewProductSystem\NPD_CostStructure";
 
         public static string imagePath; // Product Picture
         public static string imageCostStructurePath; // Cost Structure

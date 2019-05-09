@@ -407,7 +407,7 @@ namespace NewProduct
                     #region Product ID
                     tbProductIDReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
                     cmbProductIDProductType.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
-                    cmbProductIDProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO");
+                    cmbProductIDProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO2");
                     tbProductIDProductNameTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH");
                     tbProductIDProductNameEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG");
                     tbProductIDProductNameInvTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH_Invoice");
@@ -1976,7 +1976,7 @@ namespace NewProduct
                 , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
                 , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text
                 , tbDecoration2.Text, tbDecoration3.Text, variablePublic.imagePath, variablePublic.product_other_id
-                , ConvertUtil.parseFloat(tbPrice.Text), variablePublic.productTotalCasePrice, variablePublic.productPrefix
+                , ConvertUtil.parseFloat(tbPrice.Text), ConvertUtil.parseFloat(tbPriceRecommend.Text), variablePublic.productPrefix
                 , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
                 , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
                 , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text

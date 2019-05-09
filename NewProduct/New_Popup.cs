@@ -3354,6 +3354,11 @@ namespace NewProduct
 
         }
 
+        private void btnGenProductID_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pbImageOfCostStructure_Click(object sender, EventArgs e)
         {
             // open file dialog   

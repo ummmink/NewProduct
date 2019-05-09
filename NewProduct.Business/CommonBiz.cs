@@ -438,5 +438,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_select_product_item_no_and_item_name_code_by_type_id(int type_id, int id)
+        {
+            try
+            {
+                return commonData.npd_select_product_item_no_and_item_name_code_by_type_id(type_id, id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

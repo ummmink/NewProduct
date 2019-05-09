@@ -50,6 +50,7 @@ namespace NewProduct.Data
         private static string _NPD_INSERT_PRODUCT_BARCODE_TEMP = "npd_insert_product_barcode_temp";
         private static string _NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO_AND_HAMPER_EXTRA = "npd_select_product_hamper_temp_by_reference_no_and_hamper_extra";
         private static string _NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO = "npd_select_all_product_barcode_temp_by_reference_no";
+        private static string _NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID = "npd_select_product_item_no_and_item_name_code_by_type_id";
 
         public CommonDataSet select_product_all_status()
         {
@@ -1011,6 +1012,29 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO.TableName, _NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_select_product_item_no_and_item_name_code_by_type_id(int type_id, int id)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[2];
+
+                pm[0] = new SqlParameter("@TYPE_ID", SqlDbType.Int);
+                pm[0].Value = type_id;
+
+                pm[1] = new SqlParameter("@ID", SqlDbType.Int);
+                pm[1].Value = id;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID.TableName, _NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID, pm, strConnCommon);
             }
             catch (Exception ex)
             {

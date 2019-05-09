@@ -193,14 +193,19 @@ namespace NewProduct
                     #endregion
 
                     #region Binding Item NO2
-                    CommonDataSet dsItemNO2 = commonBiz.npd_select_product_item_no2();
+                    //CommonDataSet dsItemNO2 = commonBiz.npd_select_product_item_no2();
+                    CommonDataSet dsItemNO2 = commonBiz.npd_select_product_item_no_and_item_name_code_by_type_id(
+                        ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].TYPE_ID, 
+                        Convert.ToInt32(ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].ITEM_NO2.ToString()));
                     cmbProductItemNo.DisplayMember = "ITEM_NAME";
                     cmbProductItemNo.ValueMember = "ITEM_NO";
-                    cmbProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
+                    //cmbProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
+                    cmbProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID;
 
                     cmbProductIDProductItemNo.DisplayMember = "ITEM_NAME";
                     cmbProductIDProductItemNo.ValueMember = "ITEM_NO";
-                    cmbProductIDProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
+                    //cmbProductIDProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO2;
+                    cmbProductIDProductItemNo.DataSource = dsItemNO2.NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID;
                     #endregion
 
                     #region Binding Channel
@@ -230,8 +235,8 @@ namespace NewProduct
                     tbReferenceNo.DataBindings.Add("Text", bindingEditProduct, "REFERENCE_NO");
                     cmbProductType.DataBindings.Add("SelectedValue", bindingEditProduct, "TYPE_ID");
                     variablePublic.type_id = Convert.ToInt32(cmbProductType.SelectedValue.ToString());
-                    cmbProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO");
-                    variablePublic.item_no = cmbProductItemNo.SelectedValue.ToString();
+                    cmbProductItemNo.DataBindings.Add("SelectedValue", bindingEditProduct, "ITEM_NO2");
+                    variablePublic.item_no = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].ITEM_NO.ToString();
                     variablePublic.item_no2 = Convert.ToInt32(ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].ITEM_NO2.ToString());
                     tbProductNameTH.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_TH");
                     tbProductNameEN.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_NAME_ENG");
@@ -1464,14 +1469,28 @@ namespace NewProduct
 
         private void cmbChannel_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString().Substring(0, cmbChannel.SelectedValue.ToString().IndexOf(':')));
-            variablePublic.channel = cmbChannel.SelectedValue.ToString().Substring(cmbChannel.SelectedValue.ToString().LastIndexOf(':') + 1);
+            if (variablePublic.editPassing == false)
+            {
+                variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString().Substring(0, cmbChannel.SelectedValue.ToString().IndexOf(':')));
+                variablePublic.channel = cmbChannel.SelectedValue.ToString().Substring(cmbChannel.SelectedValue.ToString().LastIndexOf(':') + 1);
+            }
+            else
+            {
+                variablePublic.sell_id = Int32.Parse(cmbChannel.SelectedValue.ToString());
+            }
         }
 
         private void cmbOther_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            variablePublic.product_other_id = Int32.Parse(cmbOther.SelectedValue.ToString().Substring(0, cmbOther.SelectedValue.ToString().IndexOf(':')));
-            variablePublic.product_other_name = cmbOther.SelectedValue.ToString().Substring(cmbOther.SelectedValue.ToString().LastIndexOf(':') + 1);
+            if (variablePublic.editPassing == false)
+            {
+                variablePublic.product_other_id = Int32.Parse(cmbOther.SelectedValue.ToString().Substring(0, cmbOther.SelectedValue.ToString().IndexOf(':')));
+                variablePublic.product_other_name = cmbOther.SelectedValue.ToString().Substring(cmbOther.SelectedValue.ToString().LastIndexOf(':') + 1);
+            }
+            else
+            {
+                variablePublic.product_other_id = Int32.Parse(cmbOther.SelectedValue.ToString());
+            }
         }
 
         private void grdMainProduct_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)

@@ -40331,6 +40331,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SHIPPING_TERMS_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WANT_SAMPLE", global::System.Data.SqlDbType.Bit, 1, global::System.Data.ParameterDirection.Input, 1, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@COST_STRUCTURE_PATH", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SHORT_NAME", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -40380,7 +40381,8 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
                     string REMARK, 
                     global::System.Nullable<int> SHIPPING_TERMS_ID, 
                     global::System.Nullable<bool> WANT_SAMPLE, 
-                    string COST_STRUCTURE_PATH) {
+                    string COST_STRUCTURE_PATH, 
+                    string SHORT_NAME) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((REFERENCE_NO == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40633,6 +40635,12 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[42].Value = ((string)(COST_STRUCTURE_PATH));
+            }
+            if ((SHORT_NAME == null)) {
+                this.Adapter.SelectCommand.Parameters[43].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[43].Value = ((string)(SHORT_NAME));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -40687,7 +40695,8 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
                     string REMARK, 
                     global::System.Nullable<int> SHIPPING_TERMS_ID, 
                     global::System.Nullable<bool> WANT_SAMPLE, 
-                    string COST_STRUCTURE_PATH) {
+                    string COST_STRUCTURE_PATH, 
+                    string SHORT_NAME) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((REFERENCE_NO == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40940,6 +40949,12 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[42].Value = ((string)(COST_STRUCTURE_PATH));
+            }
+            if ((SHORT_NAME == null)) {
+                this.Adapter.SelectCommand.Parameters[43].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[43].Value = ((string)(SHORT_NAME));
             }
             CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable dataTable = new CommonDataSet.NPD_INSERT_PRODUCT_TEMPDataTable();
             this.Adapter.Fill(dataTable);

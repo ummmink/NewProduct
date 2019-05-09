@@ -154,7 +154,8 @@ namespace NewProduct.Business
             , string decoration_other_details, string decoration_remarkable_of_box, string decoration1, string decoration2
             , string decoration3, string image_path, int other_id, float price_per_case, float price_recommend, string product_prefix
             , DateTime sample_date, int sample_qty_bottle, int sample_qty_box, string schedule, int sell_id, int sell_qty_bottle
-            , int sell_qty_box, string remark, int shipping_terms_id, bool want_sample, string cost_structure_path)
+            , int sell_qty_box, string remark, int shipping_terms_id, bool want_sample, string cost_structure_path
+            , string short_name)
         {
             try
             {
@@ -164,7 +165,7 @@ namespace NewProduct.Business
                     , decoration_other_details, decoration_remarkable_of_box, decoration1, decoration2, decoration3, image_path
                     , other_id, price_per_case, price_recommend, product_prefix, sample_date, sample_qty_bottle, sample_qty_box
                     , schedule, sell_id, sell_qty_bottle, sell_qty_box, remark, shipping_terms_id, want_sample
-                    , cost_structure_path);
+                    , cost_structure_path, short_name);
             }
             catch (Exception ex)
             {

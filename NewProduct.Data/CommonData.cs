@@ -288,11 +288,11 @@ namespace NewProduct.Data
             , string decoration2, string decoration3, string image_path, int other_id, float price_per_case, float price_recommend
             , string product_prefix, DateTime sample_date, int sample_qty_bottle, int sample_qty_box, string schedule, int sell_id
             , int sell_qty_bottle, int sell_qty_box, string remark, int shipping_terms_id, bool want_sample
-            , string cost_structure_path)
+            , string cost_structure_path, string short_name)
         {
             try
             {
-                SqlParameter[] pm = new SqlParameter[42];
+                SqlParameter[] pm = new SqlParameter[43];
 
                 pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
                 pm[0].Value = reference_no;
@@ -419,6 +419,9 @@ namespace NewProduct.Data
 
                 pm[41] = new SqlParameter("@COST_STRUCTURE_PATH", SqlDbType.VarChar);
                 pm[41].Value = cost_structure_path;
+
+                pm[42] = new SqlParameter("@SHORT_NAME", SqlDbType.VarChar);
+                pm[42].Value = short_name;
 
                 CommonDataSet ds = new CommonDataSet();
 

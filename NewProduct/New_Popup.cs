@@ -313,6 +313,7 @@ namespace NewProduct
 
                     #region Short Name
                     tbShortName.DataBindings.Add("Text", bindingEditProduct, "SHORT_NAME");
+                    variablePublic.shortName = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].SHORT_NAME.ToString();
                     #endregion
 
                     #region Barcode
@@ -1961,7 +1962,7 @@ namespace NewProduct
                 , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
                 , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text
                 , rdbWholeYear.Checked == true ? 1 : rdbOneLot.Checked == true ? 2 : 3 
-                , wantSample, variablePublic.imageCostStructurePath);
+                , wantSample, variablePublic.imageCostStructurePath, variablePublic.shortName);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
@@ -3327,6 +3328,11 @@ namespace NewProduct
         private void grdMainProduct_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             //e.Cancel = true;
+        }
+
+        private void btnProductSave_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void pbImageOfCostStructure_Click(object sender, EventArgs e)

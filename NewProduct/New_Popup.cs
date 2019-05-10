@@ -252,6 +252,8 @@ namespace NewProduct
                     variablePublic.productBottleQty = Convert.ToInt32(tbBottleQty.Text);
                     variablePublic.productMainQty = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].BOTTLE;
                     variablePublic.productFreeQty = ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].FREE;
+                    tbSize.DataBindings.Add("Text", bindingEditProduct, "SIZE");
+                    tbSize.DataBindings[0].FormatString = "c";
                     tbPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
                     tbPriceRecommend.DataBindings[0].FormatString = "c";
                     tbPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
@@ -416,6 +418,8 @@ namespace NewProduct
                     tbProductIDInnerQty.DataBindings.Add("Text", bindingEditProduct, "INNER_BOX");
                     tbProductIDPackQty.DataBindings.Add("Text", bindingEditProduct, "PACKING");
                     tbProductIDBottleQty.DataBindings.Add("Text", bindingEditProduct, "REAL_BOTTLE");
+                    tbProductIDSize.DataBindings.Add("Text", bindingEditProduct, "SIZE");
+                    tbProductIDSize.DataBindings[0].FormatString = "c";
                     tbProductIDPriceRecommend.DataBindings.Add("Text", bindingEditProduct, "PRICE_RECOMMEND", true);
                     tbProductIDPriceRecommend.DataBindings[0].FormatString = "c";
                     tbProductIDPrice.DataBindings.Add("Text", bindingEditProduct, "PRICE_PER_CASE", true);
@@ -1971,7 +1975,7 @@ namespace NewProduct
 
                 CommonDataSet dsInsertMainProduct = commonBiz.npd_insert_product_temp(tbReferenceNo.Text, "12345678XXXX", ""
                 , variablePublic.item_no, variablePublic.type_id, tbProductNameTH.Text, "", tbProductNameEN.Text
-                , variablePublic.productPackQty, variablePublic.productMainQty, 45, dtpOrderDate.Value
+                , variablePublic.productPackQty, variablePublic.productMainQty, ConvertUtil.parseFloat(tbSize.Text), dtpOrderDate.Value
                 , variablePublic.productInnerBoxQty, variablePublic.productFreeQty, "Mink", (variablePublic.item_no2).ToString()
                 , tbProductNameInvEN.Text, tbProductNameInvTH.Text, tbDecoratedArea1.Text, tbDecoratedArea2.Text
                 , tbDecoratedArea3.Text, tbDecorationOtherDetails.Text, tbDecorationRemarkableOfBox.Text, tbDecoration1.Text

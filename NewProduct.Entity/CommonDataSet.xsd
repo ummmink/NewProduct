@@ -1224,7 +1224,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NPD_GEN_PRODUCT_IDTableAdapter" GeneratorDataComponentClassName="NPD_GEN_PRODUCT_IDTableAdapter" Name="NPD_GEN_PRODUCT_ID" UserDataComponentName="NPD_GEN_PRODUCT_IDTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="COMMONConnectionString (Settings)" DbObjectName="COMMON.dbo.NPD_GEN_PRODUCT_ID" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="COMMONConnectionString (Settings)" DbObjectName="COMMON.dbo.NPD_GEN_PRODUCT_ID" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.NPD_GEN_PRODUCT_ID</CommandText>
@@ -1241,6 +1241,7 @@
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="PRODUCT_ID" DataSetColumn="PRODUCT_ID" />
+              <Mapping SourceColumn="HAVE_ID" DataSetColumn="HAVE_ID" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -3513,6 +3514,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="HAVE_ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHAVE_ID" msprop:Generator_ColumnPropNameInRow="HAVE_ID" msprop:Generator_ColumnPropNameInTable="HAVE_IDColumn" msprop:Generator_UserColumnName="HAVE_ID" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

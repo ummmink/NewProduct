@@ -17539,6 +17539,8 @@ namespace NewProduct.Entity {
             
             private global::System.Data.DataColumn columnPRODUCT_ID;
             
+            private global::System.Data.DataColumn columnHAVE_ID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public NPD_GEN_PRODUCT_IDDataTable() {
@@ -17582,6 +17584,14 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HAVE_IDColumn {
+                get {
+                    return this.columnHAVE_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -17617,10 +17627,11 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NPD_GEN_PRODUCT_IDRow AddNPD_GEN_PRODUCT_IDRow(string PRODUCT_ID) {
+            public NPD_GEN_PRODUCT_IDRow AddNPD_GEN_PRODUCT_IDRow(string PRODUCT_ID, int HAVE_ID) {
                 NPD_GEN_PRODUCT_IDRow rowNPD_GEN_PRODUCT_IDRow = ((NPD_GEN_PRODUCT_IDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        PRODUCT_ID};
+                        PRODUCT_ID,
+                        HAVE_ID};
                 rowNPD_GEN_PRODUCT_IDRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowNPD_GEN_PRODUCT_IDRow);
                 return rowNPD_GEN_PRODUCT_IDRow;
@@ -17644,6 +17655,7 @@ namespace NewProduct.Entity {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnPRODUCT_ID = base.Columns["PRODUCT_ID"];
+                this.columnHAVE_ID = base.Columns["HAVE_ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17651,8 +17663,11 @@ namespace NewProduct.Entity {
             private void InitClass() {
                 this.columnPRODUCT_ID = new global::System.Data.DataColumn("PRODUCT_ID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPRODUCT_ID);
+                this.columnHAVE_ID = new global::System.Data.DataColumn("HAVE_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHAVE_ID);
                 this.columnPRODUCT_ID.ReadOnly = true;
                 this.columnPRODUCT_ID.MaxLength = 15;
+                this.columnHAVE_ID.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32911,6 +32926,22 @@ namespace NewProduct.Entity {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int HAVE_ID {
+                get {
+                    try {
+                        return ((int)(this[this.tableNPD_GEN_PRODUCT_ID.HAVE_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HAVE_ID\' in table \'NPD_GEN_PRODUCT_ID\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableNPD_GEN_PRODUCT_ID.HAVE_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPRODUCT_IDNull() {
                 return this.IsNull(this.tableNPD_GEN_PRODUCT_ID.PRODUCT_IDColumn);
             }
@@ -32919,6 +32950,18 @@ namespace NewProduct.Entity {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPRODUCT_IDNull() {
                 this[this.tableNPD_GEN_PRODUCT_ID.PRODUCT_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsHAVE_IDNull() {
+                return this.IsNull(this.tableNPD_GEN_PRODUCT_ID.HAVE_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetHAVE_IDNull() {
+                this[this.tableNPD_GEN_PRODUCT_ID.HAVE_IDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -42232,6 +42275,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "NPD_GEN_PRODUCT_ID";
             tableMapping.ColumnMappings.Add("PRODUCT_ID", "PRODUCT_ID");
+            tableMapping.ColumnMappings.Add("HAVE_ID", "HAVE_ID");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

@@ -3365,6 +3365,25 @@ namespace NewProduct
                 , Convert.ToInt32(tbProductIDSize.Text), Convert.ToInt32(tbProductIDBottleQty.Text));
 
             tbProductID.Text = dsGen.NPD_GEN_PRODUCT_ID[0].PRODUCT_ID.ToString();
+            if (dsGen.NPD_GEN_PRODUCT_ID[0].HAVE_ID == 0) // ไม่มีข้อมูลซ้ำ
+            {
+                lbProductIDDuplicate.Visible = false;
+                tbProductID.BackColor = Color.FromArgb(192, 255, 192);
+            }
+            else // มีข้อมูลซ้ำ
+            {
+                lbProductIDDuplicate.Visible = true;
+                tbProductID.BackColor = Color.FromArgb(255, 128, 128);
+            }
+        }
+
+        private void btnProductClose_Click(object sender, EventArgs e)
+        {
+            Form f = new Home_Trade();
+            f.MdiParent = this.ParentForm;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+            f.Dock = DockStyle.Fill; //set form's dock property to fill
+            f.Show();
         }
 
         private void pbImageOfCostStructure_Click(object sender, EventArgs e)

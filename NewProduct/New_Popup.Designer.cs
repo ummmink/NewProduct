@@ -116,6 +116,9 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pnDetailsSub1 = new System.Windows.Forms.Panel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.tbSize = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
             this.tbDecorationOtherDetails = new System.Windows.Forms.TextBox();
             this.label189 = new System.Windows.Forms.Label();
             this.tbDecorationRemarkableOfBox = new System.Windows.Forms.TextBox();
@@ -329,6 +332,9 @@
             this.label80 = new System.Windows.Forms.Label();
             this.pnProductID = new System.Windows.Forms.Panel();
             this.pnProductDetails = new System.Windows.Forms.Panel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.tbProductIDSize = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
             this.cmbProductIDProductType = new System.Windows.Forms.ComboBox();
             this.cmbProductIDProductItemNo = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -465,12 +471,6 @@
             this.btnBarcodeComment = new System.Windows.Forms.Button();
             this.btnBarcodeClose = new System.Windows.Forms.Button();
             this.bindingBarcode = new System.Windows.Forms.BindingSource(this.components);
-            this.label50 = new System.Windows.Forms.Label();
-            this.tbProductIDSize = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.tbSize = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCostStructure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfCostStructure)).BeginInit();
@@ -1344,6 +1344,38 @@
             this.pnDetailsSub1.Name = "pnDetailsSub1";
             this.pnDetailsSub1.Size = new System.Drawing.Size(660, 564);
             this.pnDetailsSub1.TabIndex = 0;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label52.ForeColor = System.Drawing.Color.White;
+            this.label52.Location = new System.Drawing.Point(497, 178);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(27, 14);
+            this.label52.TabIndex = 72;
+            this.label52.Text = "มล.";
+            // 
+            // tbSize
+            // 
+            this.tbSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSize.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbSize.Location = new System.Drawing.Point(419, 174);
+            this.tbSize.Name = "tbSize";
+            this.tbSize.Size = new System.Drawing.Size(65, 22);
+            this.tbSize.TabIndex = 71;
+            this.tbSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label54.ForeColor = System.Drawing.Color.White;
+            this.label54.Location = new System.Drawing.Point(356, 178);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(49, 14);
+            this.label54.TabIndex = 70;
+            this.label54.Text = "ปริมาตร";
             // 
             // tbDecorationOtherDetails
             // 
@@ -3880,6 +3912,38 @@
             this.pnProductDetails.Size = new System.Drawing.Size(660, 470);
             this.pnProductDetails.TabIndex = 29;
             // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label51.ForeColor = System.Drawing.Color.White;
+            this.label51.Location = new System.Drawing.Point(492, 202);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(27, 14);
+            this.label51.TabIndex = 63;
+            this.label51.Text = "มล.";
+            // 
+            // tbProductIDSize
+            // 
+            this.tbProductIDSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductIDSize.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbProductIDSize.Location = new System.Drawing.Point(414, 196);
+            this.tbProductIDSize.Name = "tbProductIDSize";
+            this.tbProductIDSize.Size = new System.Drawing.Size(65, 22);
+            this.tbProductIDSize.TabIndex = 62;
+            this.tbProductIDSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label50.ForeColor = System.Drawing.Color.White;
+            this.label50.Location = new System.Drawing.Point(351, 200);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(49, 14);
+            this.label50.TabIndex = 61;
+            this.label50.Text = "ปริมาตร";
+            // 
             // cmbProductIDProductType
             // 
             this.cmbProductIDProductType.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -5494,78 +5558,14 @@
             this.btnBarcodeClose.UseVisualStyleBackColor = false;
             this.btnBarcodeClose.Click += new System.EventHandler(this.btnBarcodeClose_Click);
             // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label50.ForeColor = System.Drawing.Color.White;
-            this.label50.Location = new System.Drawing.Point(351, 200);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(49, 14);
-            this.label50.TabIndex = 61;
-            this.label50.Text = "ปริมาตร";
-            // 
-            // tbProductIDSize
-            // 
-            this.tbProductIDSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbProductIDSize.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.tbProductIDSize.Location = new System.Drawing.Point(414, 196);
-            this.tbProductIDSize.Name = "tbProductIDSize";
-            this.tbProductIDSize.Size = new System.Drawing.Size(65, 22);
-            this.tbProductIDSize.TabIndex = 62;
-            this.tbProductIDSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label51.ForeColor = System.Drawing.Color.White;
-            this.label51.Location = new System.Drawing.Point(492, 202);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(27, 14);
-            this.label51.TabIndex = 63;
-            this.label51.Text = "มล.";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label52.ForeColor = System.Drawing.Color.White;
-            this.label52.Location = new System.Drawing.Point(497, 178);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(27, 14);
-            this.label52.TabIndex = 72;
-            this.label52.Text = "มล.";
-            // 
-            // tbSize
-            // 
-            this.tbSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSize.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.tbSize.Location = new System.Drawing.Point(419, 174);
-            this.tbSize.Name = "tbSize";
-            this.tbSize.Size = new System.Drawing.Size(65, 22);
-            this.tbSize.TabIndex = 71;
-            this.tbSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label54.ForeColor = System.Drawing.Color.White;
-            this.label54.Location = new System.Drawing.Point(356, 178);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(49, 14);
-            this.label54.TabIndex = 70;
-            this.label54.Text = "ปริมาตร";
-            // 
             // New_Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1362, 742);
-            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnProductID);
+            this.Controls.Add(this.pnDetails);
             this.Controls.Add(this.pnBarcode);
             this.Controls.Add(this.pnDimention);
             this.Controls.Add(this.pnMatCodeDK);

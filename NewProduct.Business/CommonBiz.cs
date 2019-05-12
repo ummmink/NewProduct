@@ -450,5 +450,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_gen_product_id(string reference_no, int type_id, int product_size, int bottle)
+        {
+            try
+            {
+                return commonData.npd_gen_product_id(reference_no, type_id, product_size, bottle);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

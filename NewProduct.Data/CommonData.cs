@@ -51,6 +51,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO_AND_HAMPER_EXTRA = "npd_select_product_hamper_temp_by_reference_no_and_hamper_extra";
         private static string _NPD_SELECT_ALL_PRODUCT_BARCODE_TEMP_BY_REFERENCE_NO = "npd_select_all_product_barcode_temp_by_reference_no";
         private static string _NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID = "npd_select_product_item_no_and_item_name_code_by_type_id";
+        private static string _NPD_GEN_PRODUCT_ID = "npd_gen_product_id";
 
         public CommonDataSet select_product_all_status()
         {
@@ -1035,6 +1036,35 @@ namespace NewProduct.Data
 
                 return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
                     ds.NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID.TableName, _NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID, pm, strConnCommon);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_gen_product_id(string reference_no, int type_id, int product_size, int bottle)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[4];
+
+                pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[0].Value = reference_no;
+
+                pm[1] = new SqlParameter("@TYPE_ID", SqlDbType.Int);
+                pm[1].Value = type_id;
+
+                pm[2] = new SqlParameter("@PRODUCT_SIZE", SqlDbType.Int);
+                pm[2].Value = product_size;
+
+                pm[3] = new SqlParameter("@BOTTLE", SqlDbType.Int);
+                pm[3].Value = bottle;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_GEN_PRODUCT_ID.TableName, _NPD_GEN_PRODUCT_ID, pm, strConnCommon);
             }
             catch (Exception ex)
             {

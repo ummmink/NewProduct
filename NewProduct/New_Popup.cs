@@ -147,6 +147,7 @@ namespace NewProduct
                 }
 
                 dtpOrderDate.Value = Convert.ToDateTime(DateTime.Now.ToString("dd-MMMM-yyyy", UsaCulture), UsaCulture);
+                variablePublic.shortName = "";
 
                 #region Binding Product Type
                 CommonDataSet dsProductType = commonBiz.npd_select_product_type();
@@ -3360,7 +3361,10 @@ namespace NewProduct
 
         private void btnGenProductID_Click(object sender, EventArgs e)
         {
+            CommonDataSet dsGen = commonBiz.npd_gen_product_id(variablePublic.referenceNO, variablePublic.type_id
+                , Convert.ToInt32(tbProductIDSize.Text), Convert.ToInt32(tbProductIDBottleQty.Text));
 
+            tbProductID.Text = dsGen.NPD_GEN_PRODUCT_ID[0].PRODUCT_ID.ToString();
         }
 
         private void pbImageOfCostStructure_Click(object sender, EventArgs e)

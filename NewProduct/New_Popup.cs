@@ -3356,7 +3356,61 @@ namespace NewProduct
 
         private void btnProductSave_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("คุณต้องการจะบันทึกข้อมูล? ",
+                "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+                #region Update Product ID
+                int iUpdate = 0;
+                iUpdate = commonBiz.npd_update_product_id_in_product_temp(tbReferenceNo.Text, tbProductID.Text);
+                #endregion
 
+                if (iUpdate != 0)
+                {
+                    try
+                    {
+                        //Create the msg object to be sent
+                        MailMessage msg = new MailMessage();
+                        //Add your email address to the recipients             
+                        msg.To.Add("n.sarawana@gmail.com");
+                        //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                        MailAddress address = new MailAddress("noreply.scotch@gmail.com");
+                        msg.From = address;
+                        //Append their name in the beginning of the subject
+                        msg.Subject = "NPD : Product ID of Reference No. " + tbReferenceNo.Text + " : Successfully updated!!";
+                        msg.Body = "Reference No : " + tbReferenceNo.Text;
+
+
+                        //Configure an SmtpClient to send the mail.
+                        SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                        client.EnableSsl = true; //only enable this if your provider requires it
+                                                 //Setup credentials to login to our sender email address ("UserName", "Password")
+                        NetworkCredential credentials = new NetworkCredential("noreply.scotch@gmail.com", "masterkey@noreply");
+
+                        client.Credentials = credentials;
+
+                        //Send the msg
+                        client.Send(msg);
+
+                        //Display some feedback to the user to let them know it was sent
+                        MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        //If the message failed at some point, let the user know
+                        MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+
+                MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                lineNotify("มีการเพิ่ม Short Name" + Environment.NewLine + "Reference No : " + tbReferenceNo.Text);
+
+                Form f = new Home_Trade();
+                f.MdiParent = this.ParentForm;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
+                f.Dock = DockStyle.Fill; //set form's dock property to fill
+                f.Show();
+            }
         }
 
         private void btnGenProductID_Click(object sender, EventArgs e)

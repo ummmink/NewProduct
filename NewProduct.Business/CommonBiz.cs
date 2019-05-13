@@ -462,5 +462,17 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public int npd_update_product_id_in_product_temp(string reference_no, string product_id)
+        {
+            try
+            {
+                return commonData.npd_update_product_id_in_product_temp(reference_no, product_id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

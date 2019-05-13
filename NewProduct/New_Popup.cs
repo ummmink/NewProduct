@@ -2420,6 +2420,10 @@ namespace NewProduct
 
                 if (iUpdate != 0)
                 {
+                    int iUpdateStatus = 0;
+                    // Status = 5 รอบาร์โค้ด (Barcode) : Short Name เพิ่มชื่อย่อแล้ว รอเพิ่มบาร์โค้ด : ขั้นตอน Barcode
+                    iUpdateStatus = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 5);
+
                     try
                     {
                         //Create the msg object to be sent
@@ -2593,6 +2597,10 @@ namespace NewProduct
                     decimal.Parse(tbInnerNetWeight.Text), decimal.Parse(tbInnerGrossWeight.Text), decimal.Parse(tbCaseNetWeight.Text), decimal.Parse(tbCaseGrossWeight.Text),
                     tbShortNameFactory.Text, tbPackaging.Text, tbTechPrintCreatedDate.Text, tbPrintArea.Text, tbBarcodeArea.Text,
                     tbArranging.Text, tbArrangingPallet.Text, tbCapacity.Text, tbPackProduction.Text, tbInnerProduction.Text, tbCaseProduction.Text, tbOtherProduction.Text, tbOther.Text);
+
+                int iUpdateStatus = 0;
+                // Status = 11 รอรหัสสินค้า (Product ID) : Dimention อนุมัติแล้ว รอเพิ่มรหัสสินค้า : ขั้นตอน Product ID
+                iUpdateStatus = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 11);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
@@ -3319,6 +3327,10 @@ namespace NewProduct
                     , txtNewBarcodeBottle.Text, txtNewBarcodePack.Text, txtNewBarcodeBox.Text, txtNewBarcodeInnerBox.Text
                     , txtNewBarcodeRemark.Text, "Mink");
 
+                int iUpdateStatus = 0;
+                // Status = 7 รออนุมัติ (Barcode) : เพิ่มบาร์โค้ดใหม่ รออนุมัติ : ขั้นตอน Barcode
+                iUpdateStatus = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 7);
+
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 #endregion
@@ -3366,6 +3378,10 @@ namespace NewProduct
 
                 if (iUpdate != 0)
                 {
+                    int iUpdateStatus = 0;
+                    // Status = 18 อนุมัติแล้ว : อนุมัติแล้วทุกขั้นตอน
+                    iUpdateStatus = commonBiz.npd_update_temp_status_product_temp(tbReferenceNo.Text, 18);
+
                     try
                     {
                         //Create the msg object to be sent

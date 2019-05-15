@@ -427,6 +427,14 @@ namespace NewProduct
                     tbProductIDPrice.DataBindings[0].FormatString = "c";
 
                     pbCostStructure.DataBindings.Add("ImageLocation", bindingEditProduct, "COST_STRUCTURE_PATH");
+                    if (ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].PRODUCT_ID == "12345678XXXX")
+                    {
+                        tbProductID.Text = "";
+                    }
+                    else
+                    {
+                        tbProductID.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_ID");
+                    }
                     #endregion
 
                     #region Mat Code

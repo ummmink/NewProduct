@@ -42829,13 +42829,14 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@REFERENCE_NO", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_ID", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCT_ID_REMARK", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(CommonDataSet.NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMPDataTable dataTable, string REFERENCE_NO, string PRODUCT_ID) {
+        public virtual int Fill(CommonDataSet.NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMPDataTable dataTable, string REFERENCE_NO, string PRODUCT_ID, string PRODUCT_ID_REMARK) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((REFERENCE_NO == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42848,6 +42849,12 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PRODUCT_ID));
+            }
+            if ((PRODUCT_ID_REMARK == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(PRODUCT_ID_REMARK));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42860,7 +42867,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CommonDataSet.NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMPDataTable GetData(string REFERENCE_NO, string PRODUCT_ID) {
+        public virtual CommonDataSet.NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMPDataTable GetData(string REFERENCE_NO, string PRODUCT_ID, string PRODUCT_ID_REMARK) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((REFERENCE_NO == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42873,6 +42880,12 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PRODUCT_ID));
+            }
+            if ((PRODUCT_ID_REMARK == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(PRODUCT_ID_REMARK));
             }
             CommonDataSet.NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMPDataTable dataTable = new CommonDataSet.NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMPDataTable();
             this.Adapter.Fill(dataTable);

@@ -435,6 +435,8 @@ namespace NewProduct
                     {
                         tbProductID.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_ID");
                     }
+
+                    tbProductIDRemark.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_ID_REMARK");
                     #endregion
 
                     #region Mat Code
@@ -3381,7 +3383,7 @@ namespace NewProduct
             {
                 #region Update Product ID
                 int iUpdate = 0;
-                iUpdate = commonBiz.npd_update_product_id_in_product_temp(tbReferenceNo.Text, tbProductID.Text);
+                iUpdate = commonBiz.npd_update_product_id_in_product_temp(tbReferenceNo.Text, tbProductID.Text, tbProductIDRemark.Text);
                 #endregion
 
                 if (iUpdate != 0)

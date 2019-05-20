@@ -1073,19 +1073,22 @@ namespace NewProduct.Data
             }
         }
 
-        public int npd_update_product_id_in_product_temp(string reference_no, string product_id)
+        public int npd_update_product_id_in_product_temp(string reference_no, string product_id, string product_id_remark)
         {
             int row = 0;
 
             try
             {
-                SqlParameter[] pm = new SqlParameter[2];
+                SqlParameter[] pm = new SqlParameter[3];
 
                 pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
                 pm[0].Value = reference_no;
 
                 pm[1] = new SqlParameter("@PRODUCT_ID", SqlDbType.VarChar);
                 pm[1].Value = product_id;
+
+                pm[2] = new SqlParameter("@PRODUCT_ID_REMARK", SqlDbType.VarChar);
+                pm[2].Value = product_id_remark;
 
                 row = DAOFactory.getInstance().getDatabaseDAO().NonExcecute(_NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMP, pm,
                     strConnCommon);

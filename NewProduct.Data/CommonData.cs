@@ -740,11 +740,12 @@ namespace NewProduct.Data
             decimal bottle_grossweight, decimal pack_netweight, decimal pack_grossweight, decimal inner_netweight, decimal inner_grossweight,
             decimal case_netweight, decimal case_grossweight, string short_name_factory, string packaging, string techprint_create_date,
             string print_area, string barcode_area, string arranging, string arranging_pallet, string capacity,
-            string pack_production_by, string inner_production_by, string case_production_by, string other_production_by, string other)
+            string pack_production_by, string inner_production_by, string case_production_by, string other_production_by, string other,
+            string emp_create)
         {
             try
             {
-                SqlParameter[] pm = new SqlParameter[35];
+                SqlParameter[] pm = new SqlParameter[36];
 
                 pm[0] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
                 pm[0].Value = reference_no;
@@ -850,6 +851,9 @@ namespace NewProduct.Data
 
                 pm[34] = new SqlParameter("@OTHER", SqlDbType.VarChar);
                 pm[34].Value = other;
+
+                pm[35] = new SqlParameter("@EMP_CREATE", SqlDbType.VarChar);
+                pm[35].Value = emp_create;
 
                 CommonDataSet ds = new CommonDataSet();
 

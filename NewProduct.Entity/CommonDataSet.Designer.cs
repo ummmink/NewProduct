@@ -39645,6 +39645,7 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CASE_PRODUCTION_BY", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OTHER_PRODUCTION_BY", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OTHER", global::System.Data.SqlDbType.VarChar, 350, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EMP_CREATE", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -39687,7 +39688,8 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
                     string INNER_PRODUCTION_BY, 
                     string CASE_PRODUCTION_BY, 
                     string OTHER_PRODUCTION_BY, 
-                    string OTHER) {
+                    string OTHER, 
+                    string EMP_CREATE) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((REFERENCE_NO == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39898,6 +39900,12 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[35].Value = ((string)(OTHER));
+            }
+            if ((EMP_CREATE == null)) {
+                this.Adapter.SelectCommand.Parameters[36].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[36].Value = ((string)(EMP_CREATE));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -39945,7 +39953,8 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
                     string INNER_PRODUCTION_BY, 
                     string CASE_PRODUCTION_BY, 
                     string OTHER_PRODUCTION_BY, 
-                    string OTHER) {
+                    string OTHER, 
+                    string EMP_CREATE) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((REFERENCE_NO == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40156,6 +40165,12 @@ namespace NewProduct.Entity.CommonDataSetTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[35].Value = ((string)(OTHER));
+            }
+            if ((EMP_CREATE == null)) {
+                this.Adapter.SelectCommand.Parameters[36].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[36].Value = ((string)(EMP_CREATE));
             }
             CommonDataSet.NPD_INSERT_PRODUCT_DIMENSION_TEMPDataTable dataTable = new CommonDataSet.NPD_INSERT_PRODUCT_DIMENSION_TEMPDataTable();
             this.Adapter.Fill(dataTable);

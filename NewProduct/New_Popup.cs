@@ -2606,7 +2606,8 @@ namespace NewProduct
                     decimal.Parse(tbBottleNetWeight.Text), decimal.Parse(tbBottleGrossWeight.Text), decimal.Parse(tbPackNetWeight.Text), decimal.Parse(tbPackGrossWeight.Text),
                     decimal.Parse(tbInnerNetWeight.Text), decimal.Parse(tbInnerGrossWeight.Text), decimal.Parse(tbCaseNetWeight.Text), decimal.Parse(tbCaseGrossWeight.Text),
                     tbShortNameFactory.Text, tbPackaging.Text, tbTechPrintCreatedDate.Text, tbPrintArea.Text, tbBarcodeArea.Text,
-                    tbArranging.Text, tbArrangingPallet.Text, tbCapacity.Text, tbPackProduction.Text, tbInnerProduction.Text, tbCaseProduction.Text, tbOtherProduction.Text, tbOther.Text);
+                    tbArranging.Text, tbArrangingPallet.Text, tbCapacity.Text, tbPackProduction.Text, tbInnerProduction.Text, tbCaseProduction.Text, tbOtherProduction.Text, tbOther.Text,
+                    "Mink");
 
                 int iUpdateStatus = 0;
                 // Status = 11 รอรหัสสินค้า (Product ID) : Dimention อนุมัติแล้ว รอเพิ่มรหัสสินค้า : ขั้นตอน Product ID
@@ -3378,7 +3379,7 @@ namespace NewProduct
 
         private void btnProductSave_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("คุณต้องการจะบันทึกข้อมูล? ",
+             if (MessageBox.Show("คุณต้องการจะบันทึกข้อมูล? ",
                 "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 #region Update Product ID

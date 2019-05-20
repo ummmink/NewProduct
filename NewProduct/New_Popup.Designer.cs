@@ -5565,8 +5565,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1362, 742);
-            this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnDimention);
+            this.Controls.Add(this.pnProductID);
             this.Controls.Add(this.pnBarcode);
             this.Controls.Add(this.pnShortName);
             this.Controls.Add(this.pnDetails);

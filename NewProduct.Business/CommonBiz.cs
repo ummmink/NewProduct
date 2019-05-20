@@ -347,7 +347,8 @@ namespace NewProduct.Business
             decimal bottle_grossweight, decimal pack_netweight, decimal pack_grossweight, decimal inner_netweight, decimal inner_grossweight,
             decimal case_netweight, decimal case_grossweight, string short_name_factory, string packaging, string techprint_create_date,
             string print_area, string barcode_area, string arranging, string arranging_pallet, string capacity,
-            string pack_production_by, string inner_production_by, string case_production_by, string other_production_by, string other)
+            string pack_production_by, string inner_production_by, string case_production_by, string other_production_by, string other,
+            string emp_create)
         {
             try
             {
@@ -357,7 +358,7 @@ namespace NewProduct.Business
                     bottle_grossweight, pack_netweight, pack_grossweight, inner_netweight, inner_grossweight,
                     case_netweight, case_grossweight, short_name_factory, packaging, techprint_create_date,
                     print_area, barcode_area, arranging, arranging_pallet, capacity,
-                    pack_production_by, inner_production_by, case_production_by, other_production_by, other);
+                    pack_production_by, inner_production_by, case_production_by, other_production_by, other, emp_create);
             }
             catch (Exception ex)
             {

@@ -48,5 +48,11 @@ namespace NewProduct
         public static int product_other_id;
         public static bool editPassing; // for pass value from search.cs to new.cs (User want to edit data.)
         public static string shortName;
+        public static string shortNameFactory;
+        public static decimal caseWidth;
+        public static decimal caseLength;
+        public static decimal caseHeight;
+        public static decimal caseNetWeight;
+        public static decimal caseGrossWeight;
     }
 }

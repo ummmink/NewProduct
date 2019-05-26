@@ -438,17 +438,12 @@ namespace NewProduct
 
                     tbProductIDRemark.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_ID_REMARK");
 
-                    tbProductIDShortNameFactory.DataBindings.Add("Text", bindingDimension, "SHORT_NAME_FACTORY");
-                    tbProductIDCaseWidth.DataBindings.Add("Text", bindingDimension, "CASE_WIDTH", true);
-                    tbProductIDCaseWidth.DataBindings[0].FormatString = "c";
-                    tbProductIDCaseLength.DataBindings.Add("Text", bindingDimension, "CASE_LENGTH", true);
-                    tbProductIDCaseLength.DataBindings[0].FormatString = "c";
-                    tbProductIDCaseHeight.DataBindings.Add("Text", bindingDimension, "CASE_HEIGHT", true);
-                    tbProductIDCaseHeight.DataBindings[0].FormatString = "c";
-                    tbProductIDCaseNetWeight.DataBindings.Add("Text", bindingDimension, "CASE_NETWEIGHT", true);
-                    tbProductIDCaseNetWeight.DataBindings[0].FormatString = "c";
-                    tbProductIDCaseGrossWeight.DataBindings.Add("Text", bindingDimension, "CASE_GROSSWEIGHT", true);
-                    tbProductIDCaseGrossWeight.DataBindings[0].FormatString = "c";
+                    variablePublic.shortNameFactory = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].SHORT_NAME_FACTORY.ToString();
+                    variablePublic.caseWidth = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_WIDTH;
+                    variablePublic.caseLength = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_LENGTH;
+                    variablePublic.caseHeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_HEIGHT;
+                    variablePublic.caseNetWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_NETWEIGHT;
+                    variablePublic.caseGrossWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_GROSSWEIGHT;
                     #endregion
 
                     #region Mat Code
@@ -3397,13 +3392,13 @@ namespace NewProduct
                 #region Update Product ID
                 int iUpdate = 0;
                 iUpdate = commonBiz.npd_update_product_id_in_product_temp(tbProductIDReferenceNo.Text, tbProductID.Text
-                    , tbProductIDRemark.Text, tbProductIDShortNameFactory.Text);
+                    , tbProductIDRemark.Text, variablePublic.shortNameFactory);
                 #endregion
 
                 #region Insert Temp to Real Table
-                CommonDataSet dsRealInsert = commonBiz.npd_insert_all_table_of_product(Convert.ToDecimal(tbProductIDCaseNetWeight.Text), 
-                    Convert.ToDecimal(tbProductIDCaseGrossWeight.Text), Convert.ToDecimal(tbProductIDCaseWidth.Text), 
-                    Convert.ToDecimal(tbProductIDCaseLength.Text), Convert.ToDecimal(tbProductIDCaseHeight.Text), tbProductIDReferenceNo.Text);
+                CommonDataSet dsRealInsert = commonBiz.npd_insert_all_table_of_product(variablePublic.caseNetWeight,
+                    variablePublic.caseGrossWeight, variablePublic.caseWidth, variablePublic.caseLength, 
+                    variablePublic.caseHeight, tbProductIDReferenceNo.Text);
                 #endregion
 
                 if (iUpdate != 0)

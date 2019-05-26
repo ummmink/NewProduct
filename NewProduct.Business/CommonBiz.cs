@@ -464,11 +464,12 @@ namespace NewProduct.Business
             }
         }
 
-        public int npd_update_product_id_in_product_temp(string reference_no, string product_id, string product_id_remark)
+        public int npd_update_product_id_in_product_temp(string reference_no, string product_id
+            , string product_id_remark, string nickname)
         {
             try
             {
-                return commonData.npd_update_product_id_in_product_temp(reference_no, product_id, product_id_remark);
+                return commonData.npd_update_product_id_in_product_temp(reference_no, product_id, product_id_remark, nickname);
             }
             catch (Exception ex)
             {

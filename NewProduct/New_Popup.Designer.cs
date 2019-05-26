@@ -471,6 +471,14 @@
             this.btnBarcodeComment = new System.Windows.Forms.Button();
             this.btnBarcodeClose = new System.Windows.Forms.Button();
             this.bindingBarcode = new System.Windows.Forms.BindingSource(this.components);
+            this.tbProductIDCaseHeight = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.tbProductIDCaseLength = new System.Windows.Forms.TextBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.tbProductIDCaseWidth = new System.Windows.Forms.TextBox();
+            this.tbProductIDShortNameFactory = new System.Windows.Forms.TextBox();
+            this.tbProductIDCaseGrossWeight = new System.Windows.Forms.TextBox();
+            this.tbProductIDCaseNetWeight = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbCostStructure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageOfCostStructure)).BeginInit();
@@ -3850,6 +3858,14 @@
             // 
             this.pnProductID.BackColor = System.Drawing.Color.Black;
             this.pnProductID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnProductID.Controls.Add(this.tbProductIDCaseGrossWeight);
+            this.pnProductID.Controls.Add(this.tbProductIDCaseNetWeight);
+            this.pnProductID.Controls.Add(this.tbProductIDShortNameFactory);
+            this.pnProductID.Controls.Add(this.tbProductIDCaseHeight);
+            this.pnProductID.Controls.Add(this.label57);
+            this.pnProductID.Controls.Add(this.tbProductIDCaseLength);
+            this.pnProductID.Controls.Add(this.label62);
+            this.pnProductID.Controls.Add(this.tbProductIDCaseWidth);
             this.pnProductID.Controls.Add(this.pnProductDetails);
             this.pnProductID.Controls.Add(this.btnProductComment);
             this.pnProductID.Controls.Add(this.label47);
@@ -5559,6 +5575,81 @@
             this.btnBarcodeClose.UseVisualStyleBackColor = false;
             this.btnBarcodeClose.Click += new System.EventHandler(this.btnBarcodeClose_Click);
             // 
+            // tbProductIDCaseHeight
+            // 
+            this.tbProductIDCaseHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductIDCaseHeight.Location = new System.Drawing.Point(837, 501);
+            this.tbProductIDCaseHeight.Name = "tbProductIDCaseHeight";
+            this.tbProductIDCaseHeight.Size = new System.Drawing.Size(50, 22);
+            this.tbProductIDCaseHeight.TabIndex = 43;
+            this.tbProductIDCaseHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label57.ForeColor = System.Drawing.Color.White;
+            this.label57.Location = new System.Drawing.Point(816, 505);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(15, 14);
+            this.label57.TabIndex = 45;
+            this.label57.Text = "X";
+            // 
+            // tbProductIDCaseLength
+            // 
+            this.tbProductIDCaseLength.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductIDCaseLength.Location = new System.Drawing.Point(760, 501);
+            this.tbProductIDCaseLength.Name = "tbProductIDCaseLength";
+            this.tbProductIDCaseLength.Size = new System.Drawing.Size(50, 22);
+            this.tbProductIDCaseLength.TabIndex = 42;
+            this.tbProductIDCaseLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label62.ForeColor = System.Drawing.Color.White;
+            this.label62.Location = new System.Drawing.Point(739, 505);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(15, 14);
+            this.label62.TabIndex = 44;
+            this.label62.Text = "X";
+            // 
+            // tbProductIDCaseWidth
+            // 
+            this.tbProductIDCaseWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductIDCaseWidth.Location = new System.Drawing.Point(683, 501);
+            this.tbProductIDCaseWidth.Name = "tbProductIDCaseWidth";
+            this.tbProductIDCaseWidth.Size = new System.Drawing.Size(50, 22);
+            this.tbProductIDCaseWidth.TabIndex = 41;
+            this.tbProductIDCaseWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbProductIDShortNameFactory
+            // 
+            this.tbProductIDShortNameFactory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductIDShortNameFactory.Location = new System.Drawing.Point(683, 557);
+            this.tbProductIDShortNameFactory.Name = "tbProductIDShortNameFactory";
+            this.tbProductIDShortNameFactory.Size = new System.Drawing.Size(176, 22);
+            this.tbProductIDShortNameFactory.TabIndex = 46;
+            // 
+            // tbProductIDCaseGrossWeight
+            // 
+            this.tbProductIDCaseGrossWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductIDCaseGrossWeight.Location = new System.Drawing.Point(785, 529);
+            this.tbProductIDCaseGrossWeight.Name = "tbProductIDCaseGrossWeight";
+            this.tbProductIDCaseGrossWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbProductIDCaseGrossWeight.TabIndex = 48;
+            this.tbProductIDCaseGrossWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbProductIDCaseNetWeight
+            // 
+            this.tbProductIDCaseNetWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProductIDCaseNetWeight.Location = new System.Drawing.Point(683, 529);
+            this.tbProductIDCaseNetWeight.Name = "tbProductIDCaseNetWeight";
+            this.tbProductIDCaseNetWeight.Size = new System.Drawing.Size(70, 22);
+            this.tbProductIDCaseNetWeight.TabIndex = 47;
+            this.tbProductIDCaseNetWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // New_Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -6072,5 +6163,13 @@
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.TextBox tbSize;
         private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TextBox tbProductIDShortNameFactory;
+        private System.Windows.Forms.TextBox tbProductIDCaseHeight;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.TextBox tbProductIDCaseLength;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.TextBox tbProductIDCaseWidth;
+        private System.Windows.Forms.TextBox tbProductIDCaseGrossWeight;
+        private System.Windows.Forms.TextBox tbProductIDCaseNetWeight;
     }
 }

@@ -3387,6 +3387,12 @@ namespace NewProduct
                 iUpdate = commonBiz.npd_update_product_id_in_product_temp(tbReferenceNo.Text, tbProductID.Text, tbProductIDRemark.Text);
                 #endregion
 
+                #region Insert Temp to Real Table
+                CommonDataSet dsRealInsert = commonBiz.npd_insert_all_table_of_product(Convert.ToDecimal(tbCaseNetWeight.Text), 
+                    Convert.ToDecimal(tbCaseGrossWeight.Text), Convert.ToDecimal(tbCaseWidth.Text), 
+                    Convert.ToDecimal(tbCaseLength.Text), Convert.ToDecimal(tbCaseHeight.Text), variablePublic.referenceNO);
+                #endregion
+
                 if (iUpdate != 0)
                 {
                     int iUpdateStatus = 0;

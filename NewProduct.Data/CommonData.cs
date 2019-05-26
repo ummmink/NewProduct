@@ -53,6 +53,7 @@ namespace NewProduct.Data
         private static string _NPD_SELECT_PRODUCT_ITEM_NO_AND_ITEM_NAME_CODE_BY_TYPE_ID = "npd_select_product_item_no_and_item_name_code_by_type_id";
         private static string _NPD_GEN_PRODUCT_ID = "npd_gen_product_id";
         private static string _NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMP = "npd_update_product_id_in_product_temp";
+        private static string _NPD_INSERT_ALL_TABLE_OF_PRODUCT = "npd_insert_all_table_of_product";
 
         public CommonDataSet select_product_all_status()
         {
@@ -1097,6 +1098,43 @@ namespace NewProduct.Data
                 row = DAOFactory.getInstance().getDatabaseDAO().NonExcecute(_NPD_UPDATE_PRODUCT_ID_IN_PRODUCT_TEMP, pm,
                     strConnCommon);
                 return row;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public CommonDataSet npd_insert_all_table_of_product(decimal case_netweight, decimal case_grossweight
+            , decimal case_width, decimal case_length, decimal case_height, string reference_no)
+        {
+            try
+            {
+                SqlParameter[] pm = new SqlParameter[6];
+
+                pm[0] = new SqlParameter("@CASE_NETWEIGHT", SqlDbType.Decimal);
+                pm[0].Value = case_netweight;
+
+                pm[1] = new SqlParameter("@CASE_GROSSWEIGHT", SqlDbType.Decimal);
+                pm[1].Value = case_grossweight;
+
+                pm[2] = new SqlParameter("@CASE_WIDTH", SqlDbType.Decimal);
+                pm[2].Value = case_width;
+
+                pm[3] = new SqlParameter("@CASE_LENGTH", SqlDbType.Decimal);
+                pm[3].Value = case_length;
+
+                pm[4] = new SqlParameter("@CASE_HEIGHT", SqlDbType.Decimal);
+                pm[4].Value = case_height;
+
+                pm[5] = new SqlParameter("@REFERENCE_NO", SqlDbType.VarChar);
+                pm[5].Value = reference_no;
+
+                CommonDataSet ds = new CommonDataSet();
+
+                return (CommonDataSet)DAOFactory.getInstance().getDatabaseDAO().ExcecuteDataSet(ds,
+                    ds.NPD_INSERT_ALL_TABLE_OF_PRODUCT.TableName, _NPD_INSERT_ALL_TABLE_OF_PRODUCT, pm, strConnCommon);
 
             }
             catch (Exception ex)

@@ -475,5 +475,19 @@ namespace NewProduct.Business
                 throw ex;
             }
         }
+
+        public CommonDataSet npd_insert_all_table_of_product(decimal case_netweight, decimal case_grossweight
+            , decimal case_width, decimal case_length, decimal case_height, string reference_no)
+        {
+            try
+            {
+                return commonData.npd_insert_all_table_of_product(case_netweight, case_grossweight, case_width
+                    , case_length, case_height, reference_no);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

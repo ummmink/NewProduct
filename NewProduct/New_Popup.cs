@@ -1201,7 +1201,7 @@ namespace NewProduct
                 variablePublic.productTotalPackPrice = float.Parse(tbSumPriceTotal.Text);
 
                 //ราคาแนะนำ/ลัง
-                tbSumPriceCaseTotal.Text = (float.Parse(tbSumPrice.Text) * variablePublic.productPackQty).ToString("#,##0.00");
+                tbSumPriceCaseTotal.Text = (float.Parse(tbSumPrice.Text) * variablePublic.productPackQty * variablePublic.productInnerBoxQty).ToString("#,##0.00");
                 variablePublic.productTotalCasePrice = float.Parse(tbSumPriceCaseTotal.Text);
             }
         }
@@ -1748,6 +1748,14 @@ namespace NewProduct
             if (tbCaseQty.Text != "")
             {
                 variablePublic.productCaseQty = Int32.Parse(tbCaseQty.Text);
+
+                if (tbPriceRecommend.Text != "")
+                {
+                    tbPriceRecommend.Text = (variablePublic.productTotalPackPrice * variablePublic.productPackQty
+                        * variablePublic.productInnerBoxQty * variablePublic.productCaseQty).ToString("#,##0.00");
+                    tbSumPriceCaseTotal.Text = tbPriceRecommend.Text;
+                    variablePublic.productTotalCasePrice = float.Parse(tbSumPriceCaseTotal.Text);
+                }
             }
         }
 
@@ -1756,6 +1764,14 @@ namespace NewProduct
             if (tbInnerQty.Text != "")
             {
                 variablePublic.productInnerBoxQty = Int32.Parse(tbInnerQty.Text);
+
+                if (tbPriceRecommend.Text != "")
+                {
+                    tbPriceRecommend.Text = (variablePublic.productTotalPackPrice * variablePublic.productPackQty
+                        * variablePublic.productInnerBoxQty * variablePublic.productCaseQty).ToString("#,##0.00");
+                    tbSumPriceCaseTotal.Text = tbPriceRecommend.Text;
+                    variablePublic.productTotalCasePrice = float.Parse(tbSumPriceCaseTotal.Text);
+                }
             }
         }
 
@@ -1764,6 +1780,14 @@ namespace NewProduct
             if (tbPackQty.Text != "")
             {
                 variablePublic.productPackQty = Int32.Parse(tbPackQty.Text);
+
+                if (tbPriceRecommend.Text != "")
+                {
+                    tbPriceRecommend.Text = (variablePublic.productTotalPackPrice * variablePublic.productPackQty
+                        * variablePublic.productInnerBoxQty * variablePublic.productCaseQty).ToString("#,##0.00");
+                    tbSumPriceCaseTotal.Text = tbPriceRecommend.Text;
+                    variablePublic.productTotalCasePrice = float.Parse(tbSumPriceCaseTotal.Text);
+                }
             }
         }
 

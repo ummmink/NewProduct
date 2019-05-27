@@ -438,12 +438,15 @@ namespace NewProduct
 
                     tbProductIDRemark.DataBindings.Add("Text", bindingEditProduct, "PRODUCT_ID_REMARK");
 
-                    variablePublic.shortNameFactory = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].SHORT_NAME_FACTORY.ToString();
-                    variablePublic.caseWidth = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_WIDTH;
-                    variablePublic.caseLength = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_LENGTH;
-                    variablePublic.caseHeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_HEIGHT;
-                    variablePublic.caseNetWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_NETWEIGHT;
-                    variablePublic.caseGrossWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_GROSSWEIGHT;
+                    if (dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO.Rows.Count > 0)
+                    {
+                        variablePublic.shortNameFactory = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].SHORT_NAME_FACTORY.ToString();
+                        variablePublic.caseWidth = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_WIDTH;
+                        variablePublic.caseLength = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_LENGTH;
+                        variablePublic.caseHeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_HEIGHT;
+                        variablePublic.caseNetWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_NETWEIGHT;
+                        variablePublic.caseGrossWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_GROSSWEIGHT;
+                    }                    
                     #endregion
 
                     #region Mat Code

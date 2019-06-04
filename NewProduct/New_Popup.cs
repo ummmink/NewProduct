@@ -138,7 +138,7 @@ namespace NewProduct
 
         private void New_Load(object sender, EventArgs e)
         {
-             if (variablePublic.editPassing == false) // New Case
+            if (variablePublic.editPassing == false) // New Case
             {
                 if (rdbNoSample.Checked == true)
                 {
@@ -196,7 +196,7 @@ namespace NewProduct
                     #region Binding Item NO2
                     //CommonDataSet dsItemNO2 = commonBiz.npd_select_product_item_no2();
                     CommonDataSet dsItemNO2 = commonBiz.npd_select_product_item_no_and_item_name_code_by_type_id(
-                        ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].TYPE_ID, 
+                        ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].TYPE_ID,
                         Convert.ToInt32(ds.NPD_SELECT_ALL_PRODUCT_TEMP_BY_REFERENCE_NO[0].ITEM_NO2.ToString()));
                     cmbProductItemNo.DisplayMember = "ITEM_NAME";
                     cmbProductItemNo.ValueMember = "ITEM_NO";
@@ -446,7 +446,7 @@ namespace NewProduct
                         variablePublic.caseHeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_HEIGHT;
                         variablePublic.caseNetWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_NETWEIGHT;
                         variablePublic.caseGrossWeight = dsDimension.NPD_SELECT_ALL_PRODUCT_DIMENSION_TEMP_BY_REFERENCE_NO[0].CASE_GROSSWEIGHT;
-                    }                    
+                    }
                     #endregion
 
                     #region Mat Code
@@ -1564,7 +1564,7 @@ namespace NewProduct
 
                     SaveProductHamper();
 
-                    PreviewProductHamper();                    
+                    PreviewProductHamper();
 
                     tbBottleQty.Text = tbSumQtyTotal.Text;
                     variablePublic.productBottleQty = Int32.Parse(tbBottleQty.Text);
@@ -2000,6 +2000,9 @@ namespace NewProduct
                         ImageFormat imageFormat = null;
 
                         var extension = Path.GetExtension(variablePublic.imagePath);
+
+                        //if (extension != null)
+                        //{
                         variablePublic.imagePath = variablePublic.saveImagePath + "\\" + tbReferenceNo.Text + extension;
                         switch (extension)
                         {
@@ -2017,10 +2020,13 @@ namespace NewProduct
                                 imageFormat = ImageFormat.Gif;
                                 break;
                             default:
-                                throw new NotSupportedException("File extension is not supported");
+                                //throw new NotSupportedException("File extension is not supported");
+                                imageFormat = ImageFormat.Jpeg;
+                                break;
                         }
 
                         bitmap.Save(variablePublic.imagePath, imageFormat);
+                        //}                        
                     }
                 }
                 catch (Exception ex)
@@ -2039,7 +2045,11 @@ namespace NewProduct
                         ImageFormat imageFormat = null;
 
                         var extension = Path.GetExtension(variablePublic.imageCostStructurePath);
+
+                        //if (extension != null)
+                        //{
                         variablePublic.imageCostStructurePath = variablePublic.saveImageCostStructurePath + "\\" + tbReferenceNo.Text + extension;
+
                         switch (extension)
                         {
                             case ".bmp":
@@ -2056,10 +2066,13 @@ namespace NewProduct
                                 imageFormat = ImageFormat.Gif;
                                 break;
                             default:
-                                throw new NotSupportedException("File extension is not supported");
+                                //throw new NotSupportedException("File extension is not supported");
+                                imageFormat = ImageFormat.Jpeg;
+                                break;
                         }
 
                         bitmap.Save(variablePublic.imageCostStructurePath, imageFormat);
+                        //}
                     }
                 }
                 catch (Exception ex)
@@ -2135,7 +2148,7 @@ namespace NewProduct
                 , dtpSampleProductDate.Value, ConvertUtil.parseInt(tbQtySamplePiece.Text)
                 , ConvertUtil.parseInt(tbQtySampleCase.Text), tbScheduleDateAndDetails.Text, variablePublic.sell_id
                 , ConvertUtil.parseInt(tbQtyOrderPiece.Text), ConvertUtil.parseInt(tbQtyOrderCase.Text), tbRemark.Text
-                , rdbWholeYear.Checked == true ? 1 : rdbOneLot.Checked == true ? 2 : 3 
+                , rdbWholeYear.Checked == true ? 1 : rdbOneLot.Checked == true ? 2 : 3
                 , wantSample, variablePublic.imageCostStructurePath, variablePublic.shortName);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -2618,7 +2631,7 @@ namespace NewProduct
                 f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; //set form without maximize,minimize and close button
                 f.Dock = DockStyle.Fill; //set form's dock property to fill
                 f.Show();
-            }            
+            }
         }
 
         private void btnShortNameClose_Click(object sender, EventArgs e)
@@ -3519,8 +3532,8 @@ namespace NewProduct
 
         private void btnProductSave_Click(object sender, EventArgs e)
         {
-             if (MessageBox.Show("คุณต้องการจะบันทึกข้อมูล? ",
-                "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("คุณต้องการจะบันทึกข้อมูล? ",
+               "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 #region Update Product ID
                 int iUpdate = 0;
@@ -3530,7 +3543,7 @@ namespace NewProduct
 
                 #region Insert Temp to Real Table
                 CommonDataSet dsRealInsert = commonBiz.npd_insert_all_table_of_product(variablePublic.caseNetWeight,
-                    variablePublic.caseGrossWeight, variablePublic.caseWidth, variablePublic.caseLength, 
+                    variablePublic.caseGrossWeight, variablePublic.caseWidth, variablePublic.caseLength,
                     variablePublic.caseHeight, tbProductIDReferenceNo.Text);
                 #endregion
 

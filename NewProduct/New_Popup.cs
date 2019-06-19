@@ -2020,9 +2020,7 @@ namespace NewProduct
                                 imageFormat = ImageFormat.Gif;
                                 break;
                             default:
-                                //throw new NotSupportedException("File extension is not supported");
-                                imageFormat = ImageFormat.Jpeg;
-                                break;
+                                throw new NotSupportedException("ไม่ได้เพิ่มรูปภาพสินค้าสำเร็จรูปพร้อมตกแต่ง!");
                         }
 
                         bitmap.Save(variablePublic.imagePath, imageFormat);
@@ -2066,9 +2064,7 @@ namespace NewProduct
                                 imageFormat = ImageFormat.Gif;
                                 break;
                             default:
-                                //throw new NotSupportedException("File extension is not supported");
-                                imageFormat = ImageFormat.Jpeg;
-                                break;
+                                throw new NotSupportedException("ไม่ได้เพื่ม Cost Structure!");
                         }
 
                         bitmap.Save(variablePublic.imageCostStructurePath, imageFormat);

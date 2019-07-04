@@ -2086,41 +2086,6 @@ namespace NewProduct
                 //document.Close();
                 //#endregion
 
-                #region Send Mail
-                try
-                {
-                    //Create the msg object to be sent
-                    MailMessage msg = new MailMessage();
-                    //Add your email address to the recipients             
-                    msg.To.Add("n.sarawana@gmail.com");
-                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
-                    MailAddress address = new MailAddress("noreply.scotch@gmail.com");
-                    msg.From = address;
-                    //Append their name in the beginning of the subject
-                    msg.Subject = "NPD : Details of Reference No. " + tbReferenceNo.Text + " >> Waiting for approval!!";
-                    msg.Body = "Reference No : " + tbReferenceNo.Text;
-
-                    //Configure an SmtpClient to send the mail.
-                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                    client.EnableSsl = true; //only enable this if your provider requires it
-                                             //Setup credentials to login to our sender email address ("UserName", "Password")
-                    NetworkCredential credentials = new NetworkCredential("noreply.scotch@gmail.com", "masterkey@noreply");
-
-                    client.Credentials = credentials;
-
-                    //Send the msg
-                    client.Send(msg);
-
-                    //Display some feedback to the user to let them know it was sent
-                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch
-                {
-                    //If the message failed at some point, let the user know
-                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                #endregion
-
                 // Status = 2 บันทึก : เพิ่มข้อมูลใหม่ รออนุมัติ : ขั้นตอน Details
                 bool wantSample;
 
@@ -2148,6 +2113,50 @@ namespace NewProduct
                 , wantSample, variablePublic.imageCostStructurePath, variablePublic.shortName);
 
                 MessageBox.Show("บันทึกสำเร็จ!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                #region Send Mail
+                try
+                {
+                    string strMailBody = "";
+
+                    strMailBody += "<span style='font-weight:bold; color:Black'> *** Reference No : " + tbReferenceNo.Text + " *** </span><br/><br/>";
+                    strMailBody += "<span style='font-weight:bold; color:Green'> *** Details *** <br/><br/>";
+                    strMailBody += "Created by : " + "Mink" + "<br/>";
+                    strMailBody += "Created date : " + DateTime.Today.ToString("dd/MM/yyyy") + "<br/><br/>";
+                    strMailBody += "<b>********************</b></span><br/><br/>";
+
+                    //Create the msg object to be sent
+                    MailMessage msg = new MailMessage();
+                    //Add your email address to the recipients             
+                    msg.To.Add("n.sarawana@gmail.com");
+                    //Configure the address we are sending the mail from **- NOT SURE IF I NEED THIS OR NOT?**
+                    MailAddress address = new MailAddress("noreply.scotch@gmail.com");
+                    msg.From = address;
+                    //Append their name in the beginning of the subject
+                    msg.Subject = "NPD : Details of Reference No. " + tbReferenceNo.Text + " >> Waiting for approval!!";
+                    msg.Body = "<html>" + strMailBody + "</html>";
+                    msg.IsBodyHtml = true;
+
+                    //Configure an SmtpClient to send the mail.
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true; //only enable this if your provider requires it
+                                             //Setup credentials to login to our sender email address ("UserName", "Password")
+                    NetworkCredential credentials = new NetworkCredential("noreply.scotch@gmail.com", "masterkey@noreply");
+
+                    client.Credentials = credentials;
+
+                    //Send the msg
+                    client.Send(msg);
+
+                    //Display some feedback to the user to let them know it was sent
+                    MessageBox.Show("ส่ง Mail สำเร็จแล้ว", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    //If the message failed at some point, let the user know
+                    MessageBox.Show("E-mail หรือ Password ไม่ถูกต้อง!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                #endregion
 
                 lineNotify("มีการเพิ่ม NPD ใหม่" + Environment.NewLine + "Reference No : " + tbReferenceNo.Text);
 

@@ -696,8 +696,8 @@
             this.pnDetails.Controls.Add(this.pnChannel);
             this.pnDetails.Controls.Add(this.label24);
             this.pnDetails.Controls.Add(this.panel1);
-            this.pnDetails.Controls.Add(this.pnDetailsSub1);
             this.pnDetails.Controls.Add(this.pnDetailsProductMix);
+            this.pnDetails.Controls.Add(this.pnDetailsSub1);
             this.pnDetails.Location = new System.Drawing.Point(46, 115);
             this.pnDetails.Name = "pnDetails";
             this.pnDetails.Size = new System.Drawing.Size(1270, 600);

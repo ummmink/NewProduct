@@ -33,6 +33,8 @@ namespace NewProduct
         int y, z = 2; // y = axis y of Main Product, z = axis y of Free Product 
         int a, b = 2; // a = axis y of Main Product on Product ID, b = axis y of Free Product on Product ID
 
+        List<string> MainProductOnPanel = new List<string>();
+
         public New_Popup()
         {
             InitializeComponent();
@@ -1541,6 +1543,8 @@ namespace NewProduct
 
                 ClearPanel();
 
+                MainProductOnPanel.Clear();
+
                 SaveProductHamper();
 
                 PreviewProductHamper();
@@ -1653,6 +1657,7 @@ namespace NewProduct
                     pnMainProduct.Controls.Add(dtUnit);
                     //pnProductIDMainProduct.Controls.Add(dtUnit);
 
+                    MainProductOnPanel.Add(dtProductId.ToString().PadRight(10) + dtProductNameTH.ToString().PadRight(10) + dtQuantity.ToString().PadRight(10) + dtUnit);
                     y = dtProductId.Location.Y + 21;
                 }
                 else if (dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].HAMPER_EXTRA == 1) //Free Product
@@ -1712,6 +1717,7 @@ namespace NewProduct
                     pnFreeProduct.Controls.Add(dtUnit);
                     //pnProductIDFreeProduct.Controls.Add(dtUnit);
 
+                    MainProductOnPanel.Add(dtProductId.ToString().PadRight(10) + dtProductNameTH.ToString().PadRight(10) + dtQuantity.ToString().PadRight(10) + dtUnit);
                     z = dtProductId.Location.Y + 21;
                 }
             }
@@ -2120,9 +2126,24 @@ namespace NewProduct
                     string strMailBody = "";
 
                     strMailBody += "<span style='font-weight:bold; color:Black'> *** Reference No : " + tbReferenceNo.Text + " *** </span><br/><br/>";
-                    strMailBody += "<span style='font-weight:bold; color:Green'> *** Details *** <br/><br/>";
-                    strMailBody += "Created by : " + "Mink" + "<br/>";
-                    strMailBody += "Created date : " + DateTime.Today.ToString("dd/MM/yyyy") + "<br/><br/>";
+                    strMailBody += "<span style='font-weight:bold; color:Green'> *** Details *** </span><br/><br/>";
+                    strMailBody += "Created by : " + "<span style='font-weight:bold; color:Green'>Mink" + "</span><br/>";
+                    strMailBody += "Created date : " + "<span style='font-weight:bold; color:Green'>" + DateTime.Today.ToString("dd/MM/yyyy") + "</span><br/><br/>";
+                    strMailBody += "กลุ่มผลิตภัณฑ์ : " + "<span style='font-weight:bold; color:Green'>" + cmbProductType.Text + "</span><br/>";
+                    strMailBody += "ประเภท : " + "<span style='font-weight:bold; color:Green'>" + cmbProductItemNo.Text + "</span><br/>";
+                    strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (ไทย) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameTH.Text + "</span><br/>";
+                    strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (English) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameEN.Text + "</span><br/>";
+                    strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (ไทย) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameInvTH.Text + "</span><br/>";
+                    strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (English) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameInvEN.Text + "</span><br/>";
+                    strMailBody += "ขนาดบรรจุ/ลัง : " + "<span style='font-weight:bold; color:Green'>" + variablePublic.productCaseQty + "x" + variablePublic.productInnerBoxQty 
+                        + "x" + variablePublic.productPackQty + "x" + variablePublic.productBottleQty + "</span><br/>";
+                    strMailBody += "ปริมาตร : " + "<span style='font-weight:bold; color:Green'>" + tbSize.Text + "</span><br/>";
+                    strMailBody += "สินค้าปกติ : <br/>";
+                    foreach (var item in MainProductOnPanel)
+                    {
+                        strMailBody += "        <span style='font-weight:bold; color:Green'>" + item + "</span><br/>";
+                    }
+                        
                     strMailBody += "<b>********************</b></span><br/><br/>";
 
                     //Create the msg object to be sent

@@ -2140,6 +2140,7 @@ namespace NewProduct
                     strMailBody += "ขนาดบรรจุ/ลัง : " + "<span style='font-weight:bold; color:Green'>" + variablePublic.productCaseQty + "x" + variablePublic.productInnerBoxQty
                         + "x" + variablePublic.productPackQty + "x" + variablePublic.productBottleQty + "</span><br/>";
                     strMailBody += "ปริมาตร : " + "<span style='font-weight:bold; color:Green'>" + tbSize.Text + "</span>" + "  ml.<br/>";
+
                     strMailBody += "<br/>สินค้าปกติ : <br/>";
                     foreach (var item in MainProductOnPanel)
                     {
@@ -2153,6 +2154,7 @@ namespace NewProduct
 
                     strMailBody += "<br/>ราคาแนะนำ / ลัง : <span style='font-weight:bold; color:Green'>" + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbPriceRecommend.Text)) + "</span> บาท<br/>";
                     strMailBody += "ราคาขาย/ลัง (Ex-Vat) : <span style='font-weight:bold; color:Green'>" + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbPrice.Text)) + "</span> บาท<br/>";
+
                     strMailBody += "<br/>********************</b></span><br/><br/>";
 
                     //Create the msg object to be sent

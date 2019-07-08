@@ -2154,7 +2154,62 @@ namespace NewProduct
 
                     strMailBody += "<br/>ราคาแนะนำ / ลัง : <span style='font-weight:bold; color:Green'>" + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbPriceRecommend.Text)) + "</span> บาท<br/>";
                     strMailBody += "ราคาขาย/ลัง (Ex-Vat) : <span style='font-weight:bold; color:Green'>" + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbPrice.Text)) + "</span> บาท<br/>";
+                    strMailBody += "<br/>อุปกรณ์ตกแต่ง : <br/>";
+                    if (tbDecoration1.Text != "")
+                    {
+                        strMailBody += "<span style='font-weight:bold; color:Green'>1) " + tbDecoration1.Text + "</span>";
+                        if (tbDecoratedArea1.Text != "")
+                        {
+                            strMailBody += "<span style='font-weight:bold; color:Green'> บริเวณที่ติด : " + tbDecoratedArea1.Text + "</span><br/>";
+                        }
+                        else
+                        {
+                            strMailBody += "<br/>";
+                        }
+                    }
 
+                    if (tbDecoration2.Text != "")
+                    {
+                        strMailBody += "<span style='font-weight:bold; color:Green'>2) " + tbDecoration2.Text + "</span>";
+                        if (tbDecoratedArea2.Text != "")
+                        {
+                            strMailBody += "<span style='font-weight:bold; color:Green'> บริเวณที่ติด : " + tbDecoratedArea2.Text + "</span><br/>";
+                        }
+                        else
+                        {
+                            strMailBody += "<br/>";
+                        }
+                    }
+
+                    if (tbDecoration3.Text != "")
+                    {
+                        strMailBody += "<span style='font-weight:bold; color:Green'>3) " + tbDecoration3.Text + "</span>";
+                        if (tbDecoratedArea3.Text != "")
+                        {
+                            strMailBody += "<span style='font-weight:bold; color:Green'> บริเวณที่ติด : " + tbDecoratedArea3.Text + "</span><br/>";
+                        }
+                        else
+                        {
+                            strMailBody += "<br/>";
+                        }
+                    }
+
+                    strMailBody += "<br/>จุดสังเกตของลังลูกฟูก : <span style='font-weight:bold; color:Green'>" + tbDecorationRemarkableOfBox.Text + "</span><br/>";
+                    strMailBody += "รายละเอียดเพิ่มเติม : <span style='font-weight:bold; color:Green'>" + tbDecorationOtherDetails.Text + "</span><br/>";
+
+                    strMailBody += "<br/>ช่องทางจัดจำหน่าย : <span style='font-weight:bold; color:Green'>" + cmbChannel.Text + "</span><br/>";
+                    strMailBody += "ส่วนเพิ่มเติมบรรจุภัณฑ์ : <span style='font-weight:bold; color:Green'>" + cmbOther.Text + "</span><br/>";
+                    strMailBody += "ช่วงจัดรายการ : <span style='font-weight:bold; color:Green'>" + tbScheduleDateAndDetails.Text + "</span><br/>";
+                    if (rdbNoSample.Checked == true)
+                    {
+                        strMailBody += "สินค้าตัวอย่าง : <span style='font-weight:bold; color:Green'>ไม่ต้องการ</span><br/>";
+                    }
+                    else if (rdbNeedSample.Checked == true)
+                    {
+                        strMailBody += "สินค้าตัวอย่าง : <span style='font-weight:bold; color:Green'>ต้องการ  วันที่ " + dtpSampleProductDate.Value.ToString("dd/MM/yyyy") + "    จำนวน " + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbQtySamplePiece.Text)) + " ชิ้น    " + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbQtySampleCase.Text)) + " ลัง</span><br/>";
+                    }
+
+                    strMailBody += "วันที่ให้ Sale เปิด Order(สำหรับฝ่ายขาย) : <span style='font-weight:bold; color:Green'>วันที่ " + dtpOrderDate.Value.ToString("dd/MM/yyyy") + "    จำนวน " + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbQtyOrderPiece.Text)) + " ชิ้น    " + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbQtyOrderCase.Text)) + " ลัง</span><br/>";
                     strMailBody += "<br/>********************</b></span><br/><br/>";
 
                     //Create the msg object to be sent

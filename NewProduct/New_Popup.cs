@@ -34,6 +34,7 @@ namespace NewProduct
         int a, b = 2; // a = axis y of Main Product on Product ID, b = axis y of Free Product on Product ID
 
         List<string> MainProductOnPanel = new List<string>();
+        List<string> FreeProductOnPanel = new List<string>();
 
         public New_Popup()
         {
@@ -1544,6 +1545,7 @@ namespace NewProduct
                 ClearPanel();
 
                 MainProductOnPanel.Clear();
+                FreeProductOnPanel.Clear();
 
                 SaveProductHamper();
 
@@ -1657,7 +1659,7 @@ namespace NewProduct
                     pnMainProduct.Controls.Add(dtUnit);
                     //pnProductIDMainProduct.Controls.Add(dtUnit);
 
-                    MainProductOnPanel.Add(headerProductId + " : " + headerProductNameTH.PadRight(50) + " : " + String.Format("{0:#,##0}", double.Parse(headerQuantity)) + "     " + "ขวด");
+                    MainProductOnPanel.Add(headerProductId + " : " + headerProductNameTH + " : " + String.Format("{0:#,##0}", double.Parse(headerQuantity)) + "     " + "ขวด");
                     y = dtProductId.Location.Y + 21;
                 }
                 else if (dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].HAMPER_EXTRA == 1) //Free Product
@@ -1717,7 +1719,7 @@ namespace NewProduct
                     pnFreeProduct.Controls.Add(dtUnit);
                     //pnProductIDFreeProduct.Controls.Add(dtUnit);
 
-                    MainProductOnPanel.Add(headerProductId + " : " + headerProductNameTH.PadRight(50) + " : " + String.Format("{0:#,##0}", double.Parse(headerQuantity)) + "     " + "ขวด");
+                    FreeProductOnPanel.Add(headerProductId + " : " + headerProductNameTH + " : " + String.Format("{0:#,##0}", double.Parse(headerQuantity)) + "     " + "ขวด");
                     z = dtProductId.Location.Y + 21;
                 }
             }
@@ -2127,7 +2129,7 @@ namespace NewProduct
 
                     strMailBody += "<span style='font-weight:bold; color:Black'> *** Reference No : " + tbReferenceNo.Text + " *** </span><br/><br/>";
                     strMailBody += "<span style='font-weight:bold; color:Green'> *** Details *** </span><br/><br/>";
-                    strMailBody += "Created by : " + "<span style='font-weight:bold; color:Green'>Mink" + "</span><br/>";
+                    strMailBody += "<b>Created by : " + "<span style='font-weight:bold; color:Green'>Mink" + "</span><br/>";
                     strMailBody += "Created date : " + "<span style='font-weight:bold; color:Green'>" + DateTime.Today.ToString("dd/MM/yyyy") + "</span><br/><br/>";
                     strMailBody += "กลุ่มผลิตภัณฑ์ : " + "<span style='font-weight:bold; color:Green'>" + cmbProductType.Text + "</span><br/>";
                     strMailBody += "ประเภท : " + "<span style='font-weight:bold; color:Green'>" + cmbProductItemNo.Text + "</span><br/>";
@@ -2135,16 +2137,23 @@ namespace NewProduct
                     strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบนกล่องสินค้า (English) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameEN.Text + "</span><br/>";
                     strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (ไทย) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameInvTH.Text + "</span><br/>";
                     strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (English) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameInvEN.Text + "</span><br/>";
-                    strMailBody += "ขนาดบรรจุ/ลัง : " + "<span style='font-weight:bold; color:Green'>" + variablePublic.productCaseQty + "x" + variablePublic.productInnerBoxQty 
+                    strMailBody += "ขนาดบรรจุ/ลัง : " + "<span style='font-weight:bold; color:Green'>" + variablePublic.productCaseQty + "x" + variablePublic.productInnerBoxQty
                         + "x" + variablePublic.productPackQty + "x" + variablePublic.productBottleQty + "</span><br/>";
                     strMailBody += "ปริมาตร : " + "<span style='font-weight:bold; color:Green'>" + tbSize.Text + "</span>" + "  ml.<br/>";
-                    strMailBody += "สินค้าปกติ : <br/>";
+                    strMailBody += "<br/>สินค้าปกติ : <br/>";
                     foreach (var item in MainProductOnPanel)
                     {
                         strMailBody += "<span style='font-weight:bold; color:Green'>" + item + "</span><br/>";
                     }
-                        
-                    strMailBody += "<b>********************</b></span><br/><br/>";
+                    strMailBody += "<br/>สินค้าแถม : <br/>";
+                    foreach (var item in FreeProductOnPanel)
+                    {
+                        strMailBody += "<span style='font-weight:bold; color:Green'>" + item + "</span><br/>";
+                    }
+
+                    strMailBody += "<br/>ราคาแนะนำ / ลัง : <span style='font-weight:bold; color:Green'>" + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbPriceRecommend.Text)) + "</span> บาท<br/>";
+                    strMailBody += "ราคาขาย/ลัง (Ex-Vat) : <span style='font-weight:bold; color:Green'>" + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbPrice.Text)) + "</span> บาท<br/>";
+                    strMailBody += "<br/>********************</b></span><br/><br/>";
 
                     //Create the msg object to be sent
                     MailMessage msg = new MailMessage();

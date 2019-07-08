@@ -1657,7 +1657,7 @@ namespace NewProduct
                     pnMainProduct.Controls.Add(dtUnit);
                     //pnProductIDMainProduct.Controls.Add(dtUnit);
 
-                    MainProductOnPanel.Add(dtProductId.ToString().PadRight(10) + dtProductNameTH.ToString().PadRight(10) + dtQuantity.ToString().PadRight(10) + dtUnit);
+                    MainProductOnPanel.Add(headerProductId + " : " + headerProductNameTH.PadRight(50) + " : " + String.Format("{0:#,##0}", double.Parse(headerQuantity)) + "     " + "ขวด");
                     y = dtProductId.Location.Y + 21;
                 }
                 else if (dsProductHamper.NPD_SELECT_PRODUCT_HAMPER_TEMP_BY_REFERENCE_NO[i].HAMPER_EXTRA == 1) //Free Product
@@ -1717,7 +1717,7 @@ namespace NewProduct
                     pnFreeProduct.Controls.Add(dtUnit);
                     //pnProductIDFreeProduct.Controls.Add(dtUnit);
 
-                    MainProductOnPanel.Add(dtProductId.ToString().PadRight(10) + dtProductNameTH.ToString().PadRight(10) + dtQuantity.ToString().PadRight(10) + dtUnit);
+                    MainProductOnPanel.Add(headerProductId + " : " + headerProductNameTH.PadRight(50) + " : " + String.Format("{0:#,##0}", double.Parse(headerQuantity)) + "     " + "ขวด");
                     z = dtProductId.Location.Y + 21;
                 }
             }
@@ -2137,11 +2137,11 @@ namespace NewProduct
                     strMailBody += "ชื่อผลิตภัณฑ์สำหรับแสดงบน Invoice (English) : " + "<span style='font-weight:bold; color:Green'>" + tbProductNameInvEN.Text + "</span><br/>";
                     strMailBody += "ขนาดบรรจุ/ลัง : " + "<span style='font-weight:bold; color:Green'>" + variablePublic.productCaseQty + "x" + variablePublic.productInnerBoxQty 
                         + "x" + variablePublic.productPackQty + "x" + variablePublic.productBottleQty + "</span><br/>";
-                    strMailBody += "ปริมาตร : " + "<span style='font-weight:bold; color:Green'>" + tbSize.Text + "</span><br/>";
+                    strMailBody += "ปริมาตร : " + "<span style='font-weight:bold; color:Green'>" + tbSize.Text + "</span>" + "  ml.<br/>";
                     strMailBody += "สินค้าปกติ : <br/>";
                     foreach (var item in MainProductOnPanel)
                     {
-                        strMailBody += "        <span style='font-weight:bold; color:Green'>" + item + "</span><br/>";
+                        strMailBody += "<span style='font-weight:bold; color:Green'>" + item + "</span><br/>";
                     }
                         
                     strMailBody += "<b>********************</b></span><br/><br/>";

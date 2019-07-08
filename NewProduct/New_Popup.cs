@@ -2210,7 +2210,23 @@ namespace NewProduct
                     }
 
                     strMailBody += "วันที่ให้ Sale เปิด Order(สำหรับฝ่ายขาย) : <span style='font-weight:bold; color:Green'>วันที่ " + dtpOrderDate.Value.ToString("dd/MM/yyyy") + "    จำนวน " + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbQtyOrderPiece.Text)) + " ชิ้น    " + String.Format("{0:#,##0.00}", ConvertUtil.parseFloat(tbQtyOrderCase.Text)) + " ลัง</span><br/>";
+                    if (rdbWholeYear.Checked == true)
+                    {
+                        strMailBody += "เงื่อนไขการส่งสินค้า : <span style='font-weight:bold; color:Green'>ทั้งปี</span><br/>";
+                    }
+                    else if (rdbOneLot.Checked == true)
+                    {
+                        strMailBody += "เงื่อนไขการส่งสินค้า : <span style='font-weight:bold; color:Green'>One Lot</span><br/>";
+                    }
+                    else if (rdbOutOfStock.Checked == true)
+                    {
+                        strMailBody += "เงื่อนไขการส่งสินค้า : <span style='font-weight:bold; color:Green'>ส่งจนกว่า Stock จะหมด</span><br/>";
+                    }
+
+                    strMailBody += "รายละเอียดอื่น : <span style='font-weight:bold; color:Green'>" + tbRemark.Text + "</span><br/>";
                     strMailBody += "<br/>********************</b></span><br/><br/>";
+
+                    strMailBody += "<span style='font-weight:bold; color:Blue'>อนุมัติ </span>คลิ๊กที่นี่ --> " + "http://www.sales-order.com/";
 
                     //Create the msg object to be sent
                     MailMessage msg = new MailMessage();

@@ -2226,7 +2226,7 @@ namespace NewProduct
                     strMailBody += "รายละเอียดอื่น : <span style='font-weight:bold; color:Green'>" + tbRemark.Text + "</span><br/>";
                     strMailBody += "<br/>********************</b></span><br/><br/>";
 
-                    strMailBody += "<span style='font-weight:bold; color:Blue'>อนุมัติ </span>คลิ๊กที่นี่ --> " + "http://www.sales-order.com/";
+                    strMailBody += "<span style='font-weight:bold; color:Blue'>อนุมัติ </span>คลิ๊กที่นี่ --> " + "http://www.sales-order.com/NPDConfirm";
 
                     //Create the msg object to be sent
                     MailMessage msg = new MailMessage();
